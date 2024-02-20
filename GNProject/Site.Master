@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GN Project</title>
+
     <!--Scripts para configuración de perfiles-->
     <script type="text/javascript" src="/Scripts/ctrl/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="/Scripts/ctrl/jquery-ui-1.12.1.min.js"></script>
@@ -21,7 +22,7 @@
     <link rel="stylesheet" href="Assets/Css/jqTreeView/docs.css" />
     <link rel="stylesheet" type="text/css" href="Assets/Css/JqGrid/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="Assets/Css/JqGrid/ui.jqgrid.css" />
-
+    <link rel="stylesheet" type="text/css" href="Assets/Css/multiple-select.css" />
     <script type="text/javascript" src="/Scripts/ctrl/jquery.multiple.select.js"></script>
 
     <%--<script src="../../Scripts/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>--%>

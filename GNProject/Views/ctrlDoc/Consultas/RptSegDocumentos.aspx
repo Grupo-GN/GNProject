@@ -491,7 +491,7 @@
         function fn_dblClickBandeja(rowID) {
             fn_Editar(rowID, undefined);
         }
-        var pageMntDoc = "../Maestros/MntDocumentos.aspx";
+        var pageMntDoc = "../../../Views/ctrlDoc/Maestros/MntDocumentos.aspx";
         function fn_Editar(rowID, idDocumento) {
             var rowData;
             if (rowID == undefined && idDocumento == undefined) {
