@@ -125,9 +125,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -194,6 +191,8 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Views\ctrlDoc\Consultas\RptSegDocumentos.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntAreas.aspx" />
     <Content Include="Views\Login\Login.aspx" />
     <Content Include="Views\Security\CPerfiles.aspx" />
     <Content Include="Views\Security\CUsuarios.aspx" />
@@ -251,6 +250,20 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Consultas\RptSegDocumentos.aspx.cs">
+      <DependentUpon>RptSegDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Consultas\RptSegDocumentos.aspx.designer.cs">
+      <DependentUpon>RptSegDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntAreas.aspx.cs">
+      <DependentUpon>MntAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntAreas.aspx.designer.cs">
+      <DependentUpon>MntAreas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Login\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -312,6 +325,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\capas\ctrlDoc\CtrlDocumentos.BE\CtrlDocumentos.BE.csproj">
+      <Project>{dbe59363-ac46-4cff-98f8-430eb1d35e43}</Project>
+      <Name>CtrlDocumentos.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\ctrlDoc\CtrlDocumentos.BL\CtrlDocumentos.BL.csproj">
+      <Project>{268e6881-6668-4009-a0b6-a00ef3e32ebf}</Project>
+      <Name>CtrlDocumentos.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\ctrlDoc\CtrlDocumentos.DA\CtrlDocumentos.DA.csproj">
+      <Project>{408d5df8-7601-4cee-b88b-7e83ae303aaa}</Project>
+      <Name>CtrlDocumentos.DA</Name>
+    </ProjectReference>
     <ProjectReference Include="..\capas\Presistence\Persistence.csproj">
       <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
       <Name>Persistence</Name>

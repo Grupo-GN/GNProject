@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 namespace GNProject
@@ -17,7 +18,14 @@ namespace GNProject
         {
             if (!Page.IsPostBack)
             {
-                lblNomUsuario_MP.Text = ClaseGlobal.Get_nombrecompleto_usuario();
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    lblNomUsuario_MP.Text = ClaseGlobal.Get_nombrecompleto_usuario();
+                }
+                else
+                {
+                    HttpContext.Current.Response.Redirect("~/Views/Login/Login.aspx");
+                }
 
                 //Int32 id_usuario = ClaseGlobal.Get_IdUsuario_usuario();
                 //Int32 retorno; String msg_retorno;
@@ -145,7 +153,7 @@ namespace GNProject
             Session.Abandon();
             FormsAuthentication.SignOut();
             //FormsAuthentication.RedirectToLoginPage();
-            Response.Redirect("~/Login.aspx");
+            Response.Redirect("~/Views/Login/Login.aspx");
         }
     }
 }
