@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{408D5DF8-7601-4CEE-B88B-7E83AE303AAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CtrlDocumentos.DA</RootNamespace>
+    <AssemblyName>CtrlDocumentos.DA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboDA.cs" />
+    <Compile Include="Consultas\ReportesDA.cs" />
+    <Compile Include="DataBaseHelper.cs" />
+    <Compile Include="EnviarMailDA.cs" />
+    <Compile Include="Maestros\AreaDA.cs" />
+    <Compile Include="Maestros\CargoDA.cs" />
+    <Compile Include="Maestros\CorreoDA.cs" />
+    <Compile Include="Maestros\DocumentoDA.cs" />
+    <Compile Include="Maestros\EmpresaDA.cs" />
+    <Compile Include="Maestros\LocalidadDA.cs" />
+    <Compile Include="Maestros\ParametroDA.cs" />
+    <Compile Include="Maestros\PersonaDA.cs" />
+    <Compile Include="Maestros\PlanillaDA.cs" />
+    <Compile Include="Maestros\PlantillaDocDA.cs" />
+    <Compile Include="Maestros\SeccionDA.cs" />
+    <Compile Include="Maestros\TipoContratoDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\JobsDA.cs" />
+    <Compile Include="Seguridad\MenuDA.cs" />
+    <Compile Include="Seguridad\PerfilDA.cs" />
+    <Compile Include="Seguridad\UsuarioDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CtrlDocumentos.BE\CtrlDocumentos.BE.csproj">
+      <Project>{dbe59363-ac46-4cff-98f8-430eb1d35e43}</Project>
+      <Name>CtrlDocumentos.BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
