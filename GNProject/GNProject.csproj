@@ -144,6 +144,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Css\ctrldocdefault.css" />
     <Content Include="Assets\Css\JqGrid\jquery-ui.css" />
     <Content Include="Assets\Css\JqGrid\jquery-ui.min.css" />
     <Content Include="Assets\Css\JqGrid\ui.jqgrid.css" />

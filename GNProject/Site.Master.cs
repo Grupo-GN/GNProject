@@ -115,7 +115,7 @@ namespace GNProject
         {
             foreach (MenuBE ent in oMenuBEList)
             {
-                if (ent.id_padre == id_menu && ent.id_seccion == id_seccion)
+                if (ent.id_padre == id_menu && ent.id_seccion == id_seccion && ent.fl_activo =="1")
                 {
                     if (oMenuBEList.Any(x => x.id_padre == ent.id_menu && x.id_seccion == id_seccion))
                     {

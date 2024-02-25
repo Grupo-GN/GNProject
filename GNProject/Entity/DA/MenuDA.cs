@@ -135,6 +135,8 @@ namespace GNProject.Entity.DA
             indice = DReader.GetOrdinal("id_seccion");
             oMenuBE.id_seccion = DReader.IsDBNull(indice) ? 0 : DReader.GetInt32(indice);
 
+            indice = DReader.GetOrdinal("fl_activo");
+            oMenuBE.fl_activo = DReader.IsDBNull(indice) ? string.Empty : DReader.GetString(indice);
             return oMenuBE;
         }
 
