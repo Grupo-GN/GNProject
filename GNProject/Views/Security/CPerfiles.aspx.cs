@@ -5,6 +5,10 @@ using GNProject.Entity.Menu;
 using GNProject.Entity.Security;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.EntityClient;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
@@ -17,7 +21,29 @@ namespace GNProject.Views.Security
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                string[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+                int idUsuario;
 
+                // Verificar si el arreglo tiene al menos un elemento y si el primer elemento es un número válido
+                if (arr_Usuario_Perfil.Length > 0 && int.TryParse(arr_Usuario_Perfil[4], out idUsuario))
+                {
+                    // Comprobar si el ID de usuario es igual a 1
+                    if (idUsuario == 1)
+                    {
+                        // Si el ID de usuario es 1, habilitar el DropDownList
+                        AdminConfiguration.Visible = true;
+                        ddlMenus.DataSource = Get_MenusActivables();
+                        ddlMenus.DataBind();
+                    }
+                    else
+                    {
+                        // Si el ID de usuario no es 1, ocultar el DropDownList
+                        ddlMenus.Visible = false;
+                    }
+                }
+            }
         }
         [System.Web.Script.Services.ScriptMethod(ResponseFormat = System.Web.Script.Services.ResponseFormat.Json)]
         [WebMethod]
@@ -221,5 +247,139 @@ namespace GNProject.Views.Security
             return serializer.Serialize(oTreeViewBEList);
         }
 
+        private List<string> Get_MenusActivables()
+        {
+            MenuBL oMenuBL = new MenuBL();
+            MenuBEList oMenuBEList = new MenuBEList();
+            oMenuBEList = oMenuBL.Get_Menu();
+            List<string> nombresMenus = new List<string>();
+            foreach (MenuBE ent in oMenuBEList)
+            {
+                if (ent.id_padre == 0)
+                {
+                    nombresMenus.Add(ent.tx_descripcion);
+                }
+            }
+
+            return nombresMenus;
+
+        }
+        protected void btnActivar_Click(object sender, EventArgs e)
+        {
+            string valorSeleccionado = ddlMenus.SelectedValue;
+            int valor = 1;
+            int seccion = 0;
+            switch (valorSeleccionado)
+            {
+                case "Control Documentario":
+                    seccion = 1;
+                    break;
+                case "Control de Asistencia":
+                    seccion = 2;
+                    break;
+                case "Portal":
+                    seccion = 3;
+                    break;
+                case "Planillas":
+                    seccion = 4;
+                    break;
+                case "Capacitación":
+                    seccion = 5;
+                    break;
+                case "Incidencia":
+                    seccion = 6;
+                    break;
+            }
+            confVisibilidadMenu(seccion, valor);
+        }
+
+        protected void btnDesactivar_Click(object sender, EventArgs e)
+        {
+            string valorSeleccionado = ddlMenus.SelectedValue;
+            int valor = 0;
+            int seccion = 0;
+            switch (valorSeleccionado)
+            {
+                case "Control Documentario":
+                    seccion = 1;
+                    break;
+                case "Control de Asistencia":
+                    seccion = 2;
+                    break;
+                case "Portal":
+                    seccion = 3;
+                    break;
+                case "Planillas":
+                    seccion = 4;
+                    break;
+                case "Capacitación":
+                    seccion = 5;
+                    break;
+                case "Incidencia":
+                    seccion = 6;
+                    break;
+            }
+            confVisibilidadMenu(seccion, valor);
+        }
+
+        protected void confVisibilidadMenu(int seccion, int valor)
+        {
+            SqlCommand SqlCommand;
+            SqlTransaction SqlTran = null;
+            string ruc = ClaseGlobal.Get_RUC_usuario();
+            String codEmpresaConnection = "ContextMaestro_" + ruc;
+            string connectionString = ConfigurationManager.ConnectionStrings[codEmpresaConnection].ConnectionString;
+            string sqlConnectionString = ConvertEntityConnectionStringToSqlConnection(connectionString);
+            using (SqlConnection Conex = new SqlConnection(sqlConnectionString))
+            {
+                try
+                {
+                    /* Abrir la Conexion*/
+                    if (Conex.State != ConnectionState.Open)
+                        Conex.Open();
+
+                    /* Comenzamos la Transaccion*/
+                    SqlTran = Conex.BeginTransaction();
+
+                    /*Propiedades del SqlCommand*/
+                    SqlCommand = new SqlCommand();
+                    SqlCommand.CommandText = "gn_spu_menu_state";
+                    SqlCommand.Connection = Conex;
+                    SqlCommand.CommandType = CommandType.StoredProcedure;
+
+                    /*Agregar Parametros al SqlCommand */
+                    SqlCommand.Parameters.AddWithValue("@vi_seccion", seccion);
+                    SqlCommand.Parameters.AddWithValue("@vi_valor", valor);
+                    SqlCommand.Transaction = SqlTran;
+
+                    // Ejecutar el comando
+                    SqlCommand.ExecuteNonQuery();
+
+                    // Confirmar la transacción
+                    SqlTran.Commit();
+                }
+                catch (Exception ex)
+                {
+                    if (SqlTran != null)
+                    {
+                        // Si algo fallo deshacemos todo
+                        SqlTran.Rollback();
+                    }
+                    throw ex;
+                }
+                
+            }
+        }
+        static string ConvertEntityConnectionStringToSqlConnection(string entityConnectionString)
+        {
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+
+            EntityConnectionStringBuilder entityBuilder = new EntityConnectionStringBuilder(entityConnectionString);
+            string providerConnectionString = entityBuilder.ProviderConnectionString;
+
+            builder.ConnectionString = providerConnectionString;
+
+            return builder.ConnectionString;
+        }
     }
 }

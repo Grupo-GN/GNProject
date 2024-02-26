@@ -70,7 +70,7 @@ namespace GNProject.Acceso
                     SqlParameter SqlPara;
                     using (SqlConnection connection = new SqlConnection(sqlConnectionString))
                     {
-                        SqlCommand command = new SqlCommand("cdoc_sps_GetUsuarioxLogin", connection);
+                        SqlCommand command = new SqlCommand("gn_sps_GetUsuarioxLogin", connection);
                         command.CommandType = CommandType.StoredProcedure;
                         SqlPara = new SqlParameter("@vi_login", SqlDbType.VarChar, 25);
                         SqlPara.Direction = ParameterDirection.Input;

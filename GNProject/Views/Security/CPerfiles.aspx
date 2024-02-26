@@ -123,6 +123,17 @@
             </div>
         </div>
     </div>
+    <div runat="server" ID="AdminConfiguration" visible="false">
+        <div class="row titulo_section">
+            Activación de modulos:
+        </div>
+        <asp:DropDownList ID="ddlMenus" runat="server">
+            <asp:ListItem Text="Seleccione una opción" Value=""></asp:ListItem>
+        </asp:DropDownList>
+        <asp:Button ID="btnActivar" runat="server" Text="Activar" OnClick="btnActivar_Click" />
+        <asp:Button ID="btnDesactivar" runat="server" Text="Desactivar" OnClick="btnDesactivar_Click" />
+    </div>
+
 
     <script type="text/javascript">
         //#region - Variables Grilla Bandeja
