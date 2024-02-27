@@ -1,0 +1,13 @@
+﻿
+
+.deleteAcc
+{
+	background: transparent url('../icon/Delete1.ico')  center no-repeat;
+	background-size:20px 20px;
+	height:20px;
+	width:20px;
+	border:none;
+	cursor:pointer;
+	
+	}
+	
