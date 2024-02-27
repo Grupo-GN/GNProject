@@ -15,7 +15,8 @@
     <AssemblyName>GNProject</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
     <IISExpressSSLPort>44338</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -44,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.3.0.20820.3.0.20820\lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
@@ -95,6 +99,18 @@
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Runtime.WebForms.12.0.2402.15\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ScriptManager.WebForms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
     </Reference>
@@ -143,7 +159,88 @@
     <Content Include="Assets\Css\login.css" />
     <Content Include="Assets\Css\MasterPage.css" />
     <Content Include="Assets\Css\navbar.css" />
+    <Content Include="Assets\Css\PortalCss\Estilo.css" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\jquery-ui.css" />
+    <Content Include="Assets\Css\PortalCss\JqGrid\ui.jqgrid.css" />
+    <Content Include="Assets\Css\PortalCss\Menu.css" />
     <Content Include="Assets\images\bg.jpg" />
+    <Content Include="Assets\images\imgPortal\blueslate_backgroundOVER.gif" />
+    <Content Include="Assets\images\imgPortal\btnIngresar.png" />
+    <Content Include="Assets\images\imgPortal\certificaciones\14001.png" />
+    <Content Include="Assets\images\imgPortal\certificaciones\18001.png" />
+    <Content Include="Assets\images\imgPortal\certificaciones\9001.png" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\70_anios.png" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\Central.jpg" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\IMG-20180801-WA0004.jpg" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\IMG_20170424_130942.jpg" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\IMG_9109 %28Copy%29.jpg" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\IMG_9111 %28Copy%29.jpg" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\IMG_9122 %28Copy%29.jpg" />
+    <Content Include="Assets\images\imgPortal\collage_empresa\Veritas.png" />
+    <Content Include="Assets\images\imgPortal\contenido_ancho.png" />
+    <Content Include="Assets\images\imgPortal\fondogris.png" />
+    <Content Include="Assets\images\imgPortal\fondo_login.jpg" />
+    <Content Include="Assets\images\imgPortal\header.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\btnBuscar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\btnGuardar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\btnImprimir.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\btnSeleccionar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_agregar_archivo.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_agregar_cruz.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_cerrar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_checklist.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_continuar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_editar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_eliminar_archivo.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_grabar_enviar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_historial.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_historial2.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_horario.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_limpiar.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_ot.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_reloj.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_reporte.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_ubicacion.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_ver_archivos.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_ver_detalle.png" />
+    <Content Include="Assets\images\imgPortal\img_buttons\icono_volver.png" />
+    <Content Include="Assets\images\imgPortal\input_login.png" />
+    <Content Include="Assets\images\imgPortal\loading.gif" />
+    <Content Include="Assets\images\imgPortal\login.png" />
+    <Content Include="Assets\images\imgPortal\logo.png" />
+    <Content Include="Assets\images\imgPortal\logo_empresa.png" />
+    <Content Include="Assets\images\imgPortal\log_off.png" />
+    <Content Include="Assets\images\imgPortal\main_block.png" />
+    <Content Include="Assets\images\imgPortal\Noticias.gif" />
+    <Content Include="Assets\images\imgPortal\pie.png" />
+    <Content Include="Assets\lightbox_portal\css\b_respond.png" />
+    <Content Include="Assets\lightbox_portal\css\lightbox.css" />
+    <Content Include="Assets\lightbox_portal\css\style.css" />
+    <Content Include="Assets\lightbox_portal\images\closelabel.gif" />
+    <Content Include="Assets\lightbox_portal\images\loading.gif" />
+    <Content Include="Assets\lightbox_portal\images\nextlabel.gif" />
+    <Content Include="Assets\lightbox_portal\images\prevlabel.gif" />
+    <Content Include="Assets\lightbox_portal\js\builder.js" />
+    <Content Include="Assets\lightbox_portal\js\effects.js" />
+    <Content Include="Assets\lightbox_portal\js\lightbox.js" />
+    <Content Include="Assets\lightbox_portal\js\prototype.js" />
+    <Content Include="Assets\lightbox_portal\js\scriptaculous.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -184,6 +281,13 @@
     <Content Include="Scripts\jquery\session.js" />
     <Content Include="Scripts\MasterPage\Log_Script.js" />
     <Content Include="Scripts\MasterPage\projectmaster.js" />
+    <Content Include="Scripts\Portal\Funciones.min.js" />
+    <Content Include="Scripts\Portal\jqGrid-4.5.2\grid.locale-en.min.js" />
+    <Content Include="Scripts\Portal\jqGrid-4.5.2\jquery.jqGrid.src.min.js" />
+    <Content Include="Scripts\Portal\jqGrid-4.5.2\jsonIE7.js" />
+    <Content Include="Scripts\Portal\jquery-1.11.1-ui.min.js" />
+    <Content Include="Scripts\Portal\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\Portal\Validaciones.min.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -195,11 +299,58 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Views\Login\Login.aspx" />
+    <Content Include="Views\portal\Inicio\Default.aspx" />
+    <Content Include="Views\portal\Inicio\Prueba.aspx" />
+    <Content Include="Views\portal\Intranet\Anuncios.aspx" />
+    <Content Include="Views\portal\Intranet\Boletines.aspx" />
+    <Content Include="Views\portal\Intranet\Contenidos.aspx" />
+    <Content Include="Views\portal\Intranet\CronogramaMes.aspx" />
+    <Content Include="Views\portal\Intranet\DirColaboradores.aspx" />
+    <Content Include="Views\portal\Intranet\DistribucionxArea.aspx" />
+    <Content Include="Views\portal\Intranet\Encuestas.aspx" />
+    <Content Include="Views\portal\Intranet\Eventos.aspx" />
+    <Content Include="Views\portal\Intranet\Formatos.aspx" />
+    <Content Include="Views\portal\Intranet\Manuales.aspx" />
+    <Content Include="Views\portal\Intranet\PreguntasFrecuentes.aspx" />
+    <Content Include="Views\portal\Intranet\Procedimientos.aspx" />
+    <Content Include="Views\portal\Intranet\ReservSalas.aspx" />
+    <Content Include="Views\portal\Intranet\ServiciosyBeneficios.aspx" />
+    <Content Include="Views\portal\Intranet\Videos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantAnuncios.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantBoletines.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantContenidos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantCorreos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantCronogramaMes.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantDocumentos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantEncuestas.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantEnlaces.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantEventos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantFormatos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantPregFrecuentes.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantProcedimientos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantReservacionSalas.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantServiciosBeneficios.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantUsuarios.aspx" />
+    <Content Include="Views\portal\Mantenimientos\MantVideos.aspx" />
+    <Content Include="Views\portal\Mantenimientos\OHSAS.aspx" />
+    <Content Include="Views\portal\OHSAS\OHSAS_Detalle.aspx" />
     <Content Include="Views\Security\CPerfiles.aspx" />
     <Content Include="Views\Security\CUsuarios.aspx" />
     <Content Include="wsGenerales.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceso\App_code_portal\ClaseGlobal.cs" />
+    <Compile Include="Acceso\App_code_portal\CorreoElectronico.cs" />
+    <Compile Include="Acceso\App_code_portal\dsResultadoEncuestas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsResultadoEncuestas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso\App_code_portal\Parametros.cs" />
+    <Compile Include="Acceso\App_code_portal\UtilsScript.cs" />
+    <Compile Include="Acceso\App_code_portal\wsGenerales.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Acceso\ClaseGlobal.cs" />
     <Compile Include="Acceso\controllerEncriptar.cs" />
     <Compile Include="Acceso\controller_AccesoSistema.cs" />
@@ -259,6 +410,272 @@
     <Compile Include="Views\Login\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\portal\Inicio\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Inicio\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Inicio\Prueba.aspx.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Inicio\Prueba.aspx.designer.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Anuncios.aspx.cs">
+      <DependentUpon>Anuncios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Anuncios.aspx.designer.cs">
+      <DependentUpon>Anuncios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Boletines.aspx.cs">
+      <DependentUpon>Boletines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Boletines.aspx.designer.cs">
+      <DependentUpon>Boletines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Contenidos.aspx.cs">
+      <DependentUpon>Contenidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Contenidos.aspx.designer.cs">
+      <DependentUpon>Contenidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\CronogramaMes.aspx.cs">
+      <DependentUpon>CronogramaMes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\CronogramaMes.aspx.designer.cs">
+      <DependentUpon>CronogramaMes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\DirColaboradores.aspx.cs">
+      <DependentUpon>DirColaboradores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\DirColaboradores.aspx.designer.cs">
+      <DependentUpon>DirColaboradores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\DistribucionxArea.aspx.cs">
+      <DependentUpon>DistribucionxArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\DistribucionxArea.aspx.designer.cs">
+      <DependentUpon>DistribucionxArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Encuestas.aspx.cs">
+      <DependentUpon>Encuestas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Encuestas.aspx.designer.cs">
+      <DependentUpon>Encuestas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Eventos.aspx.cs">
+      <DependentUpon>Eventos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Eventos.aspx.designer.cs">
+      <DependentUpon>Eventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Formatos.aspx.cs">
+      <DependentUpon>Formatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Formatos.aspx.designer.cs">
+      <DependentUpon>Formatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Manuales.aspx.cs">
+      <DependentUpon>Manuales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Manuales.aspx.designer.cs">
+      <DependentUpon>Manuales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\PreguntasFrecuentes.aspx.cs">
+      <DependentUpon>PreguntasFrecuentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\PreguntasFrecuentes.aspx.designer.cs">
+      <DependentUpon>PreguntasFrecuentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Procedimientos.aspx.cs">
+      <DependentUpon>Procedimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Procedimientos.aspx.designer.cs">
+      <DependentUpon>Procedimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\ReservSalas.aspx.cs">
+      <DependentUpon>ReservSalas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\ReservSalas.aspx.designer.cs">
+      <DependentUpon>ReservSalas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\ServiciosyBeneficios.aspx.cs">
+      <DependentUpon>ServiciosyBeneficios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\ServiciosyBeneficios.aspx.designer.cs">
+      <DependentUpon>ServiciosyBeneficios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Videos.aspx.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Intranet\Videos.aspx.designer.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Maestros\MasterIntranet.Master.cs">
+      <DependentUpon>MasterIntranet.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Maestros\MasterIntranet.Master.designer.cs">
+      <DependentUpon>MasterIntranet.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Maestros\MasterIntranetDefault.Master.cs">
+      <DependentUpon>MasterIntranetDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Maestros\MasterIntranetDefault.Master.designer.cs">
+      <DependentUpon>MasterIntranetDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Maestros\MasterPageEventos.Master.cs">
+      <DependentUpon>MasterPageEventos.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Maestros\MasterPageEventos.Master.designer.cs">
+      <DependentUpon>MasterPageEventos.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantAnuncios.aspx.cs">
+      <DependentUpon>MantAnuncios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantAnuncios.aspx.designer.cs">
+      <DependentUpon>MantAnuncios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantBoletines.aspx.cs">
+      <DependentUpon>MantBoletines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantBoletines.aspx.designer.cs">
+      <DependentUpon>MantBoletines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantContenidos.aspx.cs">
+      <DependentUpon>MantContenidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantContenidos.aspx.designer.cs">
+      <DependentUpon>MantContenidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantCorreos.aspx.cs">
+      <DependentUpon>MantCorreos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantCorreos.aspx.designer.cs">
+      <DependentUpon>MantCorreos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantCronogramaMes.aspx.cs">
+      <DependentUpon>MantCronogramaMes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantCronogramaMes.aspx.designer.cs">
+      <DependentUpon>MantCronogramaMes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantDocumentos.aspx.cs">
+      <DependentUpon>MantDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantDocumentos.aspx.designer.cs">
+      <DependentUpon>MantDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantEncuestas.aspx.cs">
+      <DependentUpon>MantEncuestas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantEncuestas.aspx.designer.cs">
+      <DependentUpon>MantEncuestas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantEnlaces.aspx.cs">
+      <DependentUpon>MantEnlaces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantEnlaces.aspx.designer.cs">
+      <DependentUpon>MantEnlaces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantEventos.aspx.cs">
+      <DependentUpon>MantEventos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantEventos.aspx.designer.cs">
+      <DependentUpon>MantEventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantFormatos.aspx.cs">
+      <DependentUpon>MantFormatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantFormatos.aspx.designer.cs">
+      <DependentUpon>MantFormatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantPregFrecuentes.aspx.cs">
+      <DependentUpon>MantPregFrecuentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantPregFrecuentes.aspx.designer.cs">
+      <DependentUpon>MantPregFrecuentes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantProcedimientos.aspx.cs">
+      <DependentUpon>MantProcedimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantProcedimientos.aspx.designer.cs">
+      <DependentUpon>MantProcedimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantReservacionSalas.aspx.cs">
+      <DependentUpon>MantReservacionSalas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantReservacionSalas.aspx.designer.cs">
+      <DependentUpon>MantReservacionSalas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantServiciosBeneficios.aspx.cs">
+      <DependentUpon>MantServiciosBeneficios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantServiciosBeneficios.aspx.designer.cs">
+      <DependentUpon>MantServiciosBeneficios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantUsuarios.aspx.cs">
+      <DependentUpon>MantUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantUsuarios.aspx.designer.cs">
+      <DependentUpon>MantUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantVideos.aspx.cs">
+      <DependentUpon>MantVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\MantVideos.aspx.designer.cs">
+      <DependentUpon>MantVideos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\OHSAS.aspx.cs">
+      <DependentUpon>OHSAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Mantenimientos\OHSAS.aspx.designer.cs">
+      <DependentUpon>OHSAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\OHSAS\OHSAS_Detalle.aspx.cs">
+      <DependentUpon>OHSAS_Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\OHSAS\OHSAS_Detalle.aspx.designer.cs">
+      <DependentUpon>OHSAS_Detalle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Security\CPerfiles.aspx.cs">
       <DependentUpon>CPerfiles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -295,6 +712,17 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Acceso\App_code_portal\dsResultadoEncuestas.xsc">
+      <DependentUpon>dsResultadoEncuestas.xsd</DependentUpon>
+    </Content>
+    <None Include="Acceso\App_code_portal\dsResultadoEncuestas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsResultadoEncuestas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Acceso\App_code_portal\dsResultadoEncuestas.xss">
+      <DependentUpon>dsResultadoEncuestas.xsd</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
@@ -304,6 +732,10 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Site.Master" />
     <Content Include="web.config" />
+    <Content Include="Views\portal\Maestros\MasterIntranet.Master" />
+    <Content Include="Views\portal\Maestros\MasterIntranetDefault.Master" />
+    <Content Include="Views\portal\Maestros\MasterPageEventos.Master" />
+    <Content Include="Views\portal\Reportes\rptResultadoEncuestas.rdlc" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -316,8 +748,33 @@
       <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
       <Name>Persistence</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{024c6ee5-3576-4259-bb48-00aa9208b820}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{30a79b6c-3425-4a68-b70f-f23d07abaabb}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Portal\FileServer\docBeneficios\" />
+    <Folder Include="Assets\Portal\FileServer\docBoletines\" />
+    <Folder Include="Assets\Portal\FileServer\docFormatos\" />
+    <Folder Include="Assets\Portal\FileServer\docOHSAS\" />
+    <Folder Include="Assets\Portal\FileServer\DocProcedimientos\" />
+    <Folder Include="Assets\Portal\FileServer\Documentos\" />
+    <Folder Include="Assets\Portal\FileServer\ImgAnuncios\" />
+    <Folder Include="Assets\Portal\FileServer\ImgContenidos\" />
+    <Folder Include="Assets\Portal\FileServer\ImgCronogramaMes\" />
+    <Folder Include="Assets\Portal\FileServer\imgEventos\" />
+    <Folder Include="Assets\Portal\FileServer\imgPlantillaCorreo\" />
+    <Folder Include="Assets\Portal\FileServer\ImgUsers\" />
+    <Folder Include="Assets\Portal\FileServer\Videos\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

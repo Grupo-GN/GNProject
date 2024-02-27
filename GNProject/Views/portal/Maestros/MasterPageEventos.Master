@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageEventos.master.cs" Inherits="GNProject.Views.portal.Maestros.MasterPageEventos" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>.::<%=GNProject.Acceso.App_code_portal.Parametros.I_NombreProyecto %> <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreEmpresa %>::.</title>
+    <link href="css/Estilo.css" rel="stylesheet" type="text/css" />
+    <link href="css/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="css/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.11.1-ui.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--<form id="form1" runat="server" defaultbutton="DoNothing">--%>
+    <form id="form1" runat="server">
+    <center>
+        <div>
+            <asp:Button ID="DoNothing" runat="server" Enabled="false" Style="display: none;" />
+            <asp:ScriptManager ID="ScriptManager1" EnableScriptGlobalization="true" runat="server">
+            </asp:ScriptManager>
+            <script language="jscript" type="text/jscript">
+                Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(beginReq);
+                Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endReq);
+                function beginReq(sender, args) {
+                    try {
+                        jQuery('#divProgress').show();
+                    }
+                    catch (ex) { alert("beginReq: " + ex); }
+                }
+                function endReq(sender, args) {
+                    try {
+                        jQuery('#divProgress').hide();
+
+                        /*Para controlar un error inesperado*/
+                        if (args.get_error()) {
+                            var error = args.get_error();
+                            document.getElementById("errorMessageLabel").innerText = error.httpStatusCode + " - " + error.name + ", " + error.message + ", " + error.description;
+                            args.set_errorHandled(true);
+
+                            alert(args.get_error().description);
+
+                            if (error.description == undefined && args.get_error().httpStatusCode == '0') {
+                                //alert('Authentication expired, redirecting to login page');
+                                //location.href = './Login.aspx'; // Whatever your login page is
+                                //location.reload();
+                            }
+                        }
+
+                        //aplica CSS de JQuery
+                        jQuery("input[type=button]").button();
+                        jQuery("input[type=submit]").button();
+                    }
+                    catch (ex) { alert("endReq: " + ex); }
+                }
+
+                /*IE10 - Se reemplaza el método existente, pisos de las coordenadas X e Y, esto para no se genere error en los ImageButton*/
+                if (navigator.appName.indexOf("Internet Explorer") != -1) {
+                    var badBrowser = (
+                    navigator.appVersion.indexOf("MSIE 1") != -1  //v10, 11, 12, etc. is fine too
+                );
+                    if (badBrowser == true) {
+                        /*Cambia las coordenadas a boton tipo imagen*/
+                        Sys.WebForms.PageRequestManager.getInstance()._origOnFormActiveElement = Sys.WebForms.PageRequestManager.getInstance()._onFormElementActive;
+                        Sys.WebForms.PageRequestManager.getInstance()._onFormElementActive = function (element, offsetX, offsetY) {
+                            if (element.tagName.toUpperCase() === 'INPUT' && element.type === 'image') {
+                                offsetX = Math.floor(offsetX);
+                                offsetY = Math.floor(offsetY);
+                            }
+                            this._origOnFormActiveElement(element, offsetX, offsetY);
+                        };
+                    }
+                }
+            </script>
+            <div id="errorMessageLabel" runat="server">
+            </div>
+            <div id="cabecera">
+            </div>
+            <div id="contenedor">
+                <table cellpadding="0px" cellspacing="0px" style="width: 992px;">
+                    <tr>
+                        <td class="Menu" style="text-align: left;">
+                            <asp:Menu ID="mnuPrincipal" runat="server" Orientation="Horizontal" CssClass="Menu"
+                                Font-Names="Arial" RenderingMode="Table">
+                                <StaticMenuItemStyle CssClass="MenuStatic" Height="25px" />
+                                <DynamicMenuItemStyle CssClass="MenuItem" Height="25px" />
+                                <DynamicHoverStyle CssClass="MenuItemhover" />
+                                <StaticHoverStyle CssClass="MenuHover" />
+                            </asp:Menu>
+                        </td>
+                        <td class="Menu" style="text-align: right;">
+                            <asp:ImageButton ID="ibtnCerrarSesion" ToolTip="Cerrar sesión" runat="server" Height="20px"
+                                ImageUrl="~/img/log_off.png" OnClientClick="return confirm('Está Seguro de Cerrar Sesión?');"
+                                OnClick="ibtnCerrarSesion_Click" />
+                        </td>
+                    </tr>
+                </table>
+                <div id="contenidos">
+                    <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+                        <tr>
+                            <td valign="top" id="columna1_">
+                                <div class="MenuLeft">
+                                    <span class="upperframe"><span></span></span>
+                                    <div class="roundframe">
+                                        <div style="text-align: center;">
+                                            <img id="imgUsuario" alt="" title="" style="border: solid 1px #000;
+                                                width: 100px; height: 140px;" src="<%=(GNProject.Acceso.App_code_portal.Parametros.I_FileServer_RutaImgUsers.Replace("~", "..") + GNProject.Acceso.App_code_portal.ClaseGlobal.Get_RutaFoto(this.Page))%>" />
+                                            <br />
+                                            Bienvenido(a)
+                                            <%=GNProject.Acceso.App_code_portal.ClaseGlobal.Get_UserName(this.Page)%>
+                                            <br />
+                                        </div>
+                                        <br /><br />
+                                        <div class="MenuVertical">
+                                            <asp:Menu ID="mnuVertical" runat="server" Orientation="Vertical" CssClass="MenuVertical" Font-Names="Arial"
+                                                RenderingMode="Table">
+                                                <StaticMenuItemStyle CssClass="MenuVerticalStatic" Height="25px" />
+                                                <DynamicMenuItemStyle CssClass="MenuVerticalItem" Height="25px" />
+                                                <DynamicHoverStyle CssClass="MenuVerticalItemhover" />
+                                                <StaticHoverStyle CssClass="MenuVerticalHover" />
+                                            </asp:Menu>
+                                        </div>
+                                    </div>
+                                    <span class="lowerframe"><span></span></span>
+                                </div>
+                            </td>
+                            <td valign="top" id="columna2_">
+                                <div class="MenuCenter">
+                                    <span class="upperframe"><span></span></span>
+                                    <div class="roundframe">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+                                    <span class="lowerframe"><span></span></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="pie">
+            <div style="text-align: center; font-size: 10px; padding-top: 0px;">
+                © <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreProyecto %> <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreEmpresa %> <%= DateTime.Now.Year.ToString() %>
+            </div>
+            <div style="text-align:right;padding-right:5px;">
+                <a class="linkWeb" href="http://www.gestiondenegociosrs.com.pe" target="_blank">Desarrollado por: Gestión de Negocios S.A.C.</a>
+            </div>
+        </div>
+        
+        <%--</div>--%>
+        <div id='divProgress'>
+            <img alt="...Cargando..." src="../img/loading.gif" style="position: absolute; left: 50%;
+                top: 50%; margin-top: -125px; margin-left: -180px; vertical-align: middle;" />
+        </div>
+    </center>
+    </form>
+    <script type="text/javascript">
+        jQuery('#divProgress').css("display", "block");
+        jQuery('#divProgress').hide();
+
+        //aplica CSS de JQuery
+        jQuery("input[type=button]").button();
+        jQuery("input[type=submit]").button();
+    </script>
+</body>
+</html>

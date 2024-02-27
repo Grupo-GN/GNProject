@@ -22,7 +22,8 @@
     <link rel="stylesheet" type="text/css" href="Assets/Css/JqGrid/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="Assets/Css/JqGrid/ui.jqgrid.css" />
 
-
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
     <%--<script src="../../Scripts/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>--%>
     <%--<script src="../../Scripts/jquery/session.js" type="text/javascript"></script>--%>
     <script src="/Scripts/GN/GN_script.js" type="text/javascript"></script>
@@ -58,6 +59,9 @@
   <!--  -->
 </head>
 <body class="sb-nav-fixed">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnableScriptGlobalization="true" runat="server">
+            </asp:ScriptManager>
     <%@ Import Namespace="GNProject.Acceso" %>
     <script type="text/ecmascript">
         var page = this.location.pathname;
@@ -70,12 +74,12 @@
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 slow-link text-warning" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" runat="server">
+            <div class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" runat="server">
                 <div class="input-group">   
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
-            </form>
+            </div>
             <asp:Label id="lblNomUsuario_MP" style="margin-left:20px;margin-right:20px;color:white;font-weight:bold;" runat="server">-</asp:Label>
 
             <!-- Navbar-->
@@ -365,10 +369,10 @@
                </a>                                                                                                                                                                
                <div class="collapse" id="pagesCollapseAuthf3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                
                    <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                       <a class="nav-link" href="login.html">Login</a>                                                                                                             
+                       <a class="nav-link" href="/Views/portal/Inicio/Prueba.aspx">Inicio</a>                                                                                                    
                    </nav>                                                                                                                                                          
                </div>                                                                                                                                                              
-           </nav> --%>     
+           </nav>    --%> 
         <asp:Literal ID="MenuPortal" runat="server"></asp:Literal>  
        </div>                                                                                                                                                                      
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
@@ -500,6 +504,7 @@
                 </main>                
             </div>
         </div>
+        </form>
 </body>
 </html>
 <%--Script para que aparesca y desaparesca el nav izquierdo--%>
@@ -519,6 +524,22 @@
                 localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
             });
         }
+
+        // Obtenemos todos los enlaces de la barra de navegación
+        var enlaces = document.querySelectorAll('.navbar-nav .nav-link');
+
+        // Iteramos sobre cada enlace
+        enlaces.forEach(function (enlace) {
+            // Agregamos un listener para el evento 'click'
+            enlace.addEventListener('click', function () {
+                // Quitamos la clase 'active' de todos los enlaces
+                enlaces.forEach(function (e) {
+                    e.classList.remove('active');
+                });
+                // Agregamos la clase 'active' solo al enlace clicado
+                this.classList.add('active');
+            });
+        });
 
     });
 </script>

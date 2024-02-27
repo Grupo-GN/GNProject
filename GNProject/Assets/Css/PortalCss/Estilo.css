@@ -1,0 +1,592 @@
+﻿body
+{
+    scrollbar-face-color: #eaeffd;
+    scrollbar-highlight-color: #3b83cb;
+    scrollbar-shadow-color: #3b83cb;
+    scrollbar-3dlight-color: white;
+    scrollbar-arrow-color: #3b83cb;
+    scrollbar-track-color: #eaeffd;
+    scrollbar-darkshadow-color: #ffffff;
+    background-color: #E9EEF2;
+    background-image: url(/Assets/images/imgPortal/fondogris.png);
+    background-repeat: repeat-x;
+    margin: 0px;
+    font-family: verdana;
+    font-size: 11px;
+    /*color: #000066;*/
+    color: #666777;
+}
+
+/*[INICIO] - Estilo para LOGIN*/
+.div_login
+{
+    /*background: transparent url('../img/fondo_empresa.jpg') center top no-repeat;*/    
+    width: 760px;
+    /*height: 560px;*/
+    height: 460px;
+    /*border: 4px solid #fff;*/
+    margin-top: 10px;
+    color: #113057;
+    font-weight: bold;
+    text-align: left;    
+}
+.div_form_login
+{
+    width: 590px;
+    height: 300px;
+    /*background: transparent url('../img/login_transparente.png') center top no-repeat;*/
+    background: transparent url('../img/login.png') center top no-repeat;
+    margin-left: 100px;
+    margin-top: 120px;    
+}
+.form_login
+{
+    padding-left: 320px;
+    padding-top: 130px;
+}
+.input_login
+{
+    background: url('../img/input_login.png') left no-repeat;
+    width: 100px;
+    height: 20px;
+    border: 0 none !important;
+    color: #666666 !important;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+/*[FIN] - Estilo para LOGIN*/
+
+#cabecera
+{	
+    background: url(../img/header.png);
+	margin: 0px;
+	padding: 0px;
+	width: 1000px;
+	height: 100px;	
+}
+#contenedor
+{
+	width: 1000px;
+	margin-top:0px;
+	background: url(../img/contenido_ancho.png) repeat-y;
+	/*padding-top:5px;*/
+	padding-bottom:10px;
+}
+#pie
+{	
+	margin: 0px;
+	padding: 5px;
+	width: 990px;
+	background: url('../img/pie.png') no-repeat;
+	height: 10px;
+	/*color: #444;*/
+	color: #FFF;
+	height: 25px;
+}
+.divPagina
+{
+    text-align: left;
+    background: #FFF;
+    width: 970px;
+    margin-top: 13px;
+    position: relative;
+}
+.textoGeneral
+{
+    font-family: verdana;
+    font-size: 11px;
+    color: #666777;
+}
+
+/*[INICIO] - Estilos para JqGrid*/
+/*
+ui.jqgrid.css =>
+    CSS Filas Row: .ui-jqgrid tr.jqgrow td
+    CSS TD Border Left: .ui-jqgrid tr.ui-row-ltr td
+    CSS TD Border Right: .ui-jqgrid tr.ui-row-rtl td
+jquery-ui.css =>
+    CSS Cabeceras: .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+    CSS Hover: .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+    CSS al seleccionar fila: .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+    CSS Alternate Row: .ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary
+*/
+/*Para filas de una tabla */
+table tbody tr[role="row"]
+{
+    cursor: pointer;
+}
+/*Ajusta texto de celda en cabecera y filas*/
+tr[role="rowheader"] th div {
+    word-wrap: break-word;
+    white-space: normal !important;
+    height: auto !important;
+}
+tr[role="row"] td {
+    word-wrap: break-word;
+    white-space: normal !important;
+}
+/*[FIN] - Estilo para filas de tabla JqGrid*/
+
+/*Estilo por defecto a los controles tipo TextBox*/
+input[type="password"]
+{
+    border: 1px solid #95a6c6;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #555b6c;
+}
+input[type="text"]
+{
+    border: 1px solid #95a6c6;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #555b6c;
+}
+input[type="text"]:focus
+{
+    border: 1px solid #378DFF;
+}
+input[type="text"][readonly="readonly"]
+{
+    border: 1px Groove #d2d2d4;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #555b6c;
+    background-color: #f0f1f1;
+}
+input[type="text"][disabled]
+{
+    border: 1px solid #d2d2d4;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #555b6c;
+    background-color: #f0f1f1;
+}
+/*Estilo por defecto a los controles tipo TextArea*/
+textarea
+{
+    border: 1px solid #95a6c6;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #555b6c;
+}
+textarea:focus
+{
+    border: 1px solid #378DFF;
+}
+textarea[readonly="readonly"]
+{
+    border: 1px Groove #d2d2d4;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #555b6c;
+    background-color: #f0f1f1;
+}
+textarea[disabled]
+{
+    border: 1px solid #d2d2d4;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #555b6c;
+    background-color: #f0f1f1;
+}
+/*Estilo por defecto a los controles tipo DropDownList*/
+select
+{
+    border: 1px solid #95a6c6;
+    font-size: 11px;
+    font-family: Arial;
+    color: #555b6c;
+    font-weight: bold;
+}
+select:focus
+{
+    border: 1px solid #378DFF;
+}
+select[disabled]
+{
+    border: 1px solid #d2d2d4;
+    font-size: 11px;
+    font-family: Arial;
+    color: #555b6c;
+    font-weight: bold;
+    background-color: #f0f1f1;
+}
+select option[disabled]
+{
+    background-color: #DBDBDB;
+    color: #676767;
+    font-weight: normal;
+}
+/*Estilo por defecto a los controles tipo CheckBox*/
+input[type="checkbox"]
+{
+}
+input[type="checkbox"]:hover
+{
+    cursor: pointer;
+}
+/*Estilo por defecto a los controles tipo Radio*/
+input[type="radio"]
+{
+}
+input[type="radio"]:hover
+{
+    cursor: pointer;
+}
+a
+{
+	color: #4682B4;/*#191970*/
+	text-decoration: none;
+}
+a:hover
+{
+	color: #444;
+	text-decoration: underline;
+}
+.link
+{
+    cursor: pointer;
+	color: #4682B4 !important;/*#191970*/
+	text-decoration: none !important;
+}
+.link:hover
+{
+	color: #444 !important;
+	text-decoration: underline !important;
+}
+.linkWeb
+{
+	color: DarkOrange !important;/*#191970*/
+	text-decoration: none !important;
+	font-style: italic;
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 9px;
+}
+.linkWeb:hover
+{
+	text-decoration: underline !important;
+}
+/**************************************************/
+.iconosBotones
+{
+    position: absolute;
+    right: 5px;
+}
+
+.td_cargando
+{
+    font-family: verdana;
+    font-size: 10px;
+    font-style: oblique;
+    color: #1F497D;
+    height: 20px;
+}
+
+.lineadatos
+{
+    margin-top:5px;
+    border-bottom: #d4dfff 2px solid;
+    width: 100%;
+    padding: 0px;
+    height: 22px;
+}
+.txtLineaDatos
+{
+    font-family: Verdana;
+    font-size: 11px;
+    color: #000;
+    background-color: #d4dfff;
+    width: 150px;
+    padding: 3px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.iconosBotonesLineaDatos
+{
+    position: absolute;
+    right: 5px;
+    margin: -25px 25px;
+}
+
+/*Estilos para el ModalPopUpExtender*/
+#divProgress
+{
+width: 100%;
+height: 100%;
+top: 0px;
+left: 0px;
+position: fixed;
+display: none;
+opacity: 0.5;
+background-color: #313131;
+z-index: 9999999;
+text-align: center;
+font-style: italic;
+}
+/*Estilos para el ModalPopUpExtender*/
+
+.cboDivision{
+	
+	background: #eaeffd;
+	color: #313131;
+	padding: 3px;
+	font-size: 11px;
+	line-height: 100%;
+	border: 1px solid #C1C1C1;
+	border-radius: 0;
+	margin: 2px;
+	-webkit-appearance: none;
+}
+
+/*[INICIO] - DIV CON BORDES REDONDEADO*/
+/* Used for sections that need somewhat larger corners.
+----------------------------------------------------------- */
+
+#Welcome {
+    background-image: url(/Assets/images/imgPortal/collage_empresa/BackgroundWelvome.jpg);
+    background-size: cover;
+    background-position: center; /* Ajusta la posición de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.roundframe {
+    padding: 0 10px;
+    background: #f5f5f5;
+    border-left: 1px solid #c5c5c5;
+    border-right: 1px solid #c5c5c5;
+    text-align: left;
+    border-radius: 10px;
+}
+.roundframe dl, .roundframe dt, .roundframe p
+{
+	margin: 0;
+}
+.roundframe p
+{
+	padding: 0.5em;
+}
+span.upperframe
+{
+	display: block;
+	background: url('../img/main_block.png') no-repeat 0 -90px;
+	padding-left: 20px;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+span.upperframe span
+{
+	padding: 0;
+	height: 12px;
+	display: block;
+	background: url('../img/main_block.png') no-repeat 100% -90px;
+}
+span.lowerframe
+{
+	display: block;
+	background: url('../img/main_block.png') no-repeat 0 -102px;
+	padding-left: 20px;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+span.lowerframe span
+{
+	padding: 0;
+	height: 12px;
+	display: block;
+	background: url('../img/main_block.png') no-repeat 100% -102px;
+}
+/*[FIN] - DIV CON BORDES REDONDEADO*/
+/*[INICIO] - CONTENIDO CON 3 TABLAS*/
+#columna1, #columna3
+{	
+	/*display: table-cell;*/
+	width: 250px;
+	margin: 0px;
+	padding: 5px;
+	border: solid 0px #000000;
+	vertical-align: top;
+}
+#columna2
+{
+	/*display: table-cell;*/
+	/*width: 50%;*/
+	width: 98%;
+	margin: 0px;
+	padding: 5px;
+	border: solid 0px #000000;
+	vertical-align: top;	
+}
+/*[FIN] - CONTENIDO CON 3 TABLAS*/
+/* Contenido con 2 Columnas*/
+#contenedor2
+{
+	display: table;
+	width: 1000px;
+	background: url(../Img/contenido_ancho.png) repeat-y;
+	padding-top:10px;
+	padding-bottom:40px;	
+}
+#contenidos2
+{
+	display: table-row;
+}
+#columna1_
+{	
+	display: table-cell;
+	width: 20%;
+	padding: 5px 0px 5px 5px;
+	border: solid 0px #000000;
+	vertical-align: top;
+}
+#columna2_
+{
+	display: table-cell;
+	width: 80%;
+	padding: 5px 8px 0px 5px;
+	border: solid 0px #000000;
+	vertical-align: top;	
+}
+/* Fin Contenido con 2 Columnas*/
+.MenuLeft
+{	
+	width: 220px;
+	border: solid 0px;
+	padding: 3px;	
+}
+.MenuRight
+{	
+	width: 220px;
+	border: solid 0px;
+	padding: 3px;	
+	margin: 0 auto;
+}
+.title
+{
+	color: #003C71;
+	font-weight: bold;
+	font-size: 11px;
+	border-bottom: 1px solid DarkOrange;
+	text-transform: uppercase;
+}
+.titleLink
+{
+	color: #003C71;
+	font-weight: bold;
+	font-size: 11px;
+}
+.titleLink:hover
+{
+	color: #444 !important;
+	text-decoration: underline;
+}
+/*------------------------*/
+.Row1
+{
+	margin-top: 5px;
+	/*width: 550px;*/
+	width: 100%;
+}
+.col1
+{
+    clear: left;
+    width: 25%;
+    display: block;
+    line-height: 14px;
+    vertical-align: middle;
+}
+.fl
+{
+    float: left;
+}
+.fr
+{
+    float: right;
+}
+.al
+{
+    text-align: left;
+}
+.ar
+{
+    text-align: right;
+}
+.mgl10
+{
+    margin-left: 10px;
+}
+.pdt5
+{
+    padding-top: 5px;
+}
+.Clear
+{
+    clear: both;
+    font-size: 0px;
+    line-height: 0px;
+    height: 0px;
+}
+/*------------------------*/
+
+/*Estilos para los detalles*/
+.rowDetalle
+{
+    vertical-align:top;
+    border-top: solid 1px Gray;
+    text-align:left
+}
+.rowDetalleSombra
+{
+    vertical-align:top;
+    border-top: solid 1px Gray;
+    background:#DCDCDC;
+    text-align:left;
+}
+
+/* Calendario */
+.calendar_Theme1 .ajax__calendar_container
+{
+background-color: #e2e2e2; border:solid 1px #cccccc;
+z-index:1;
+}
+.calendar_Theme1 .ajax__calendar_header
+{
+background-color: #ffffff; margin-bottom: 4px;
+} 
+.calendar_Theme1 .ajax__calendar_title,
+.calendar_Theme1 .ajax__calendar_next,
+.calendar_Theme1 .ajax__calendar_prev
+{
+color: #004080; padding-top: 3px;
+}
+.calendar_Theme1 .ajax__calendar_body
+{
+background-color: #e9e9e9; border: solid 1px #cccccc;
+}
+ .calendar_Theme1 .ajax__calendar_dayname
+{
+text-align:center; font-weight:bold; margin-bottom: 4px; margin-top: 2px;
+} 
+.calendar_Theme1 .ajax__calendar_day
+{
+text-align:center;
+}
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_day,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_month,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_year,
+.calendar_Theme1 .ajax__calendar_active
+{
+color: #004080; font-weight:bold; background-color: #ffffff;
+}
+.calendar_Theme1 .ajax__calendar_today
+{
+font-weight:bold;
+}
+.calendar_Theme1 .ajax__calendar_other,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_today,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_title
+{
+color: #bbbbbb;
+}

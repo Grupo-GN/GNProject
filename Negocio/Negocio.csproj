@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30A79B6C-3425-4A68-B70F-F23D07ABAABB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Negocio</RootNamespace>
+    <AssemblyName>Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUSAnuncios.cs" />
+    <Compile Include="BUSAuxStringConexion.cs" />
+    <Compile Include="BUSBeneficios.cs" />
+    <Compile Include="BUSBlog.cs" />
+    <Compile Include="BUSBoletines.cs" />
+    <Compile Include="BUSBuzonSugerencia.cs" />
+    <Compile Include="BUSCalendario.cs" />
+    <Compile Include="BUSCategoria_Auxiliar.cs" />
+    <Compile Include="BUSCategoria_Auxiliar2.cs" />
+    <Compile Include="BUSCommentBlog.cs" />
+    <Compile Include="BUSContenidos.cs" />
+    <Compile Include="BUSCorreo.cs" />
+    <Compile Include="BUSCorreos.cs" />
+    <Compile Include="BUSCronogramaMes.cs" />
+    <Compile Include="BUSDocumentos.cs" />
+    <Compile Include="BUSEncuesta.cs" />
+    <Compile Include="BUSEncuestaOpciones.cs" />
+    <Compile Include="BUSEncuestaRespuestas.cs" />
+    <Compile Include="BUSEnlaces.cs" />
+    <Compile Include="BUSEvento.cs" />
+    <Compile Include="BUSEventoFotos.cs" />
+    <Compile Include="BUSFaq.cs" />
+    <Compile Include="BUSInducAprob.cs" />
+    <Compile Include="BUSInducCategoria.cs" />
+    <Compile Include="BUSInducDocumento.cs" />
+    <Compile Include="BUSLocalidad.cs" />
+    <Compile Include="BUSNormativas.cs" />
+    <Compile Include="BUSOHSAS.cs" />
+    <Compile Include="BUSOHSAS_Detalle.cs" />
+    <Compile Include="BUSPermisos.cs" />
+    <Compile Include="BUSPersonal.cs" />
+    <Compile Include="BUSPlanilla.cs" />
+    <Compile Include="BUSProcedimientos.cs" />
+    <Compile Include="BUSProgInduccion.cs" />
+    <Compile Include="BUSUsuarios.cs" />
+    <Compile Include="BUSVideos.cs" />
+    <Compile Include="ComboBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{df929121-fac1-4889-ac85-65a4260b7744}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{024c6ee5-3576-4259-bb48-00aa9208b820}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

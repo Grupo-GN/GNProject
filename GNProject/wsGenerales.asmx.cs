@@ -64,5 +64,37 @@ namespace GNProject
             System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
             return serializer.Serialize(lstCadena);
         }
+        /// <summary>
+        /// //PORTAL
+        /// </summary>
+        /// <param name="codigo"></param>
+        /// <returns></returns>
+        //Los siguientes servicios son para portal
+        [WebMethod]
+        [System.Web.Script.Services.ScriptMethod(ResponseFormat = System.Web.Script.Services.ResponseFormat.Json)]
+        public object Get_ListaCombo(String codigo)
+        {
+            Capas.Portal.Negocio.ComboBL oComboBL = new Capas.Portal.Negocio.ComboBL();
+            Capas.Portal.Entidad.ComboBE ComboBE = new Capas.Portal.Entidad.ComboBE();
+            Capas.Portal.Entidad.ComboBEList oComboBEList = new Capas.Portal.Entidad.ComboBEList();
+
+            oComboBEList = oComboBL.Get_ListaCombo(codigo, "", "");
+
+            System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+            return serializer.Serialize(oComboBEList);
+        }
+        public object Get_ListaComboxPadre(String codigo, String co_padre)
+        {
+            Capas.Portal.Negocio.ComboBL oComboBL = new Capas.Portal.Negocio.ComboBL();
+            Capas.Portal.Entidad.ComboBE ComboBE = new Capas.Portal.Entidad.ComboBE();
+            Capas.Portal.Entidad.ComboBEList oComboBEList = new Capas.Portal.Entidad.ComboBEList();
+
+            oComboBEList = oComboBL.Get_ListaCombo(codigo, co_padre, "");
+
+            System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+            return serializer.Serialize(oComboBEList);
+        }
+
+        //END PORTAL
     }
 }

@@ -1,0 +1,41 @@
+﻿.b_ampliar {
+	background-image: url(b_respond.png);
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 52px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	margin-top: -20px;
+	margin-left: 88px;
+	position: absolute;
+	padding-left: 2px;
+	display: block;
+}
+
+a.b_ampliar:link {
+	background-image: url(b_respond.png);
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 52px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	margin-top: -20px;
+	margin-left: 88px;
+	position: absolute;
+	padding-left: 2px;
+	text-decoration: none;
+}
+
+a.b_ampliar:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #C7DBED;
+}
+
+a.b_ampliar:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #C7DBED;
+}
