@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_Reportes" targetNamespace="http://tempuri.org/ds_Reportes.xsd" xmlns:mstns="http://tempuri.org/ds_Reportes.xsd" xmlns="http://tempuri.org/ds_Reportes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_Reportes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_Reportes" msprop:Generator_UserDSName="ds_Reportes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ReporteGeneral" msprop:Generator_TableClassName="ReporteGeneralDataTable" msprop:Generator_TableVarName="tableReporteGeneral" msprop:Generator_TablePropName="ReporteGeneral" msprop:Generator_RowDeletingName="ReporteGeneralRowDeleting" msprop:Generator_RowChangingName="ReporteGeneralRowChanging" msprop:Generator_RowEvHandlerName="ReporteGeneralRowChangeEventHandler" msprop:Generator_RowDeletedName="ReporteGeneralRowDeleted" msprop:Generator_UserTableName="ReporteGeneral" msprop:Generator_RowChangedName="ReporteGeneralRowChanged" msprop:Generator_RowEvArgName="ReporteGeneralRowChangeEvent" msprop:Generator_RowClassName="ReporteGeneralRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Planilla" msprop:Generator_ColumnVarNameInTable="columnPlanilla" msprop:Generator_ColumnPropNameInRow="Planilla" msprop:Generator_ColumnPropNameInTable="PlanillaColumn" msprop:Generator_UserColumnName="Planilla" type="xs:string" minOccurs="0" />
+              <xs:element name="PERSONAL" msprop:Generator_ColumnVarNameInTable="columnPERSONAL" msprop:Generator_ColumnPropNameInRow="PERSONAL" msprop:Generator_ColumnPropNameInTable="PERSONALColumn" msprop:Generator_UserColumnName="PERSONAL" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="DNI" msprop:Generator_ColumnVarNameInTable="columnDNI" msprop:Generator_ColumnPropNameInRow="DNI" msprop:Generator_ColumnPropNameInTable="DNIColumn" msprop:Generator_UserColumnName="DNI" type="xs:string" minOccurs="0" />
+              <xs:element name="HIM" msprop:Generator_ColumnVarNameInTable="columnHIM" msprop:Generator_ColumnPropNameInRow="HIM" msprop:Generator_ColumnPropNameInTable="HIMColumn" msprop:Generator_UserColumnName="HIM" type="xs:string" minOccurs="0" />
+              <xs:element name="HIR" msprop:Generator_ColumnVarNameInTable="columnHIR" msprop:Generator_ColumnPropNameInRow="HIR" msprop:Generator_ColumnPropNameInTable="HIRColumn" msprop:Generator_UserColumnName="HIR" type="xs:string" minOccurs="0" />
+              <xs:element name="HFR" msprop:Generator_ColumnVarNameInTable="columnHFR" msprop:Generator_ColumnPropNameInRow="HFR" msprop:Generator_ColumnPropNameInTable="HFRColumn" msprop:Generator_UserColumnName="HFR" type="xs:string" minOccurs="0" />
+              <xs:element name="HSM" msprop:Generator_ColumnVarNameInTable="columnHSM" msprop:Generator_ColumnPropNameInRow="HSM" msprop:Generator_ColumnPropNameInTable="HSMColumn" msprop:Generator_UserColumnName="HSM" type="xs:string" minOccurs="0" />
+              <xs:element name="HET" msprop:Generator_ColumnVarNameInTable="columnHET" msprop:Generator_ColumnPropNameInRow="HET" msprop:Generator_ColumnPropNameInTable="HETColumn" msprop:Generator_UserColumnName="HET" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,136 @@
+﻿.table {
+	width: 100%;
+	border-collapse:collapse;
+	border:1px solid #1E90FF;
+}
+
+.table2 {
+	width: 100%;
+	border-collapse:collapse;
+	border:1px solid #1E90FF;
+    text-align: center;
+}
+
+.caption {
+	font: 1.8em/1.8em Arial, Helvetica, sans-serif;
+	text-align: left;
+	text-indent: 10px;
+	background: url(ImgTabla/bg_caption.jpg) right top;
+	height: 35px;
+	color: #FFAA00;
+}
+
+
+.theadth{
+	background-color:#2C6B8D;
+	height: 28px;
+	font-family:AENOR Fontana ND;
+	text-transform:uppercase;
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0px 7px;
+	margin: 20px 0px 0px;
+	text-align: left;
+	/*-webkit-gradient:(linear, 0% 0%, 0% 100%, from(#000000), to(#ffffff));*/
+	/*border-right: 1px solid #FCF1D4;*/
+}
+
+
+.tbodytr {
+background: url(ImgTabla/bg_td1.jpg) repeat-x top;
+}
+.tbodytr.odd {
+	background: #FFF8E8 url(ImgTabla/bg_td2.jpg) repeat-x;
+}
+
+.tbody th,td {
+	font-size: 1em;
+	line-height: 1.7em;
+	font-family: AENOR Fontana ND;
+	color: #777777;
+	padding: 2px 3px;
+	border-top: 1px solid #1E90FF;
+	border-right: 1px solid #DDDDDD;
+	text-align: center;
+}
+
+.tbody tr:hover  
+{
+ /*background:#99BCBF;
+ border:1px solid #03476F;
+ color:#000000;*/
+  /* background: #FFD800;
+  border: 1px solid #03476F;
+  color: #FFFFFF;*/
+ /* background: #0E0E0E;*/
+background-color: #DAE5FB;
+}
+
+.tbodyLink {
+	font-size: 1em;
+	line-height: 1.4em;
+	font-family: AENOR Fontana ND;
+	color: #777777;
+	padding: 4px 4px;
+	border-top: 1px solid #1E90FF;
+	border-right: 1px solid #DDDDDD;
+	text-align: left;
+	width: 10px;
+	text-align:center;
+}
+
+
+.a {
+	color: #777777;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.a:hover {
+	color: #F8A704;
+	text-decoration: underline;
+}
+.tfootth {
+	background: url(ImgTabla/bg_total.jpg) repeat-x bottom;
+	color: #FFFFFF;
+	height: 12px;
+}
+.tfoottd {
+	background-color:#2C6B8D;
+	color: #FFFFFF;
+	height: 10px;
+	padding:-7px 0 -3px 0;
+	margin:-7px 0 -3px 0;
+	text-align:right;
+}
+
+.submitPager
+{
+	border:none;
+	color:White;
+	font-family:"open_sans_lightregular";
+	font-size:13px;
+	cursor:pointer;
+	background-color:#003958;
+
+}
+.submitPager:hover
+{
+	transition:0.2s all ease;
+	-webkit-transition:0.2s all ease;
+	color:White;
+	background-color:#0099ab;
+
+}
+
+.TextPage
+{
+    color: #777777;
+    width:42px;
+    height:11px;    
+    font-family:AENOR Fontana ND; 
+    text-align:center;
+    font-weight:bold;  
+    font-size: 1em; 
+    margin:0 -2px 0 0;
+}

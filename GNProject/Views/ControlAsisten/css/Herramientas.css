@@ -1,0 +1,43 @@
+﻿
+.elBotonAdd
+{
+   background-color:#2C5295;
+   color:White; 
+   margin:1px auto 1px auto;
+   font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    width:120px;   
+    height:36px;
+    border:none;
+    text-align:center;
+
+}
+
+
+.submit
+{
+	background-color:#2d87ef;
+    color:White; 
+  
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	 
+    
+    margin: 1px 0px 0px 0;   
+    height:25px; 
+    width:90px;
+}
+
+.submit:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+   .submit[disabled]
+ {
+	border:none;
+	

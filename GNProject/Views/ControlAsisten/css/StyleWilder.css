@@ -1,0 +1,597 @@
+﻿.btnPasar
+{
+	background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    
+       cursor:pointer;
+    width:30px;
+    height:30px;
+    
+    
+}
+
+.btnQuitar
+{
+	background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    cursor:pointer;
+   
+    width:30px;
+    height:30px;
+}
+
+
+
+
+.btnActualizar
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+
+    
+    width:115px;   
+    height:27px;
+
+
+    
+   
+}
+
+ .btnActualizar:hover:enabled
+{
+
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+
+ }
+ 
+ .miLabelStock
+{
+text-transform:uppercase;
+font-family:AENOR Fontana ND;
+font-weight:bold;	
+font-size:10px;
+}
+
+
+.miTitulo
+{
+ font-weight:bold; 
+font-family :AENOR Fontana ND;
+font-size:medium;
+/*color:#0066FF;*/
+/*color:#4682B4;*/
+color:#336699;
+text-decoration:underline;
+}
+
+.FieldsetTab
+{
+ width:98%;
+ margin:auto;
+ padding:0 10px 0 10px;
+}
+
+.btnGrabarOnTab
+{
+    background:transparent url(../Icon/Ok.ico) center center no-repeat;
+    font-weight: bold;
+    background-position:10px 3px;
+    padding: 0 0 0 10px;
+    margin: 1px 0px 0px 0;
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:x-small;
+    text-transform:uppercase;
+    height:25px;
+	background-color:#E6E8FA ; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+	border-radius: 4px 4px 4px 4px;
+	width:80px; 
+}
+
+  .btnGrabarOnTab:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+
+.btnEditarCamp
+{
+   background:transparent url(../Icon/Modify.gif) center center no-repeat;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnEditarCamp:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ 
+     .borde
+    {
+    	border-width:1px;
+    	border-color:#467aa7;
+    	border-style:solid;
+    }
+    
+    .borde td
+    {
+       border: 0;    
+    }
+    
+        .titulo
+    {
+            background: #467aa7;
+            font-weight: bold;
+            border-bottom-width: 1px;
+            border-bottom-color: Black;
+            border-bottom-style: solid;
+            color: White;
+    }
+    
+.tdRight
+{
+text-align:right;
+}
+    	
+.tdLeft
+{
+text-align:left;    	
+}
+
+
+.tdRightS
+{
+text-align:right;
+border-width:0px;
+}
+    	
+.tdLeftS
+{
+text-align:left;    	
+border-width:0px;
+}
+
+.cssTablaOnTab
+{
+	width:100%;
+    border:0px;  
+    border-width:0px;
+    border-top:0px;
+}
+
+
+
+
+
+/* --- estilos para los botones - mantenimiento Institucion --- */
+
+.btnInstEdit
+{
+   background:transparent url(../Icon/Modify.gif) center center no-repeat;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnInstEdit:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+  .btnInstDel
+{
+   background:transparent url(../Icon/delete.gif) center center no-repeat;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnInstDel:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ 
+  
+  .btnAsigGrup
+{
+   background:transparent url(../Icon/png/AgregeGrupo.png) center center no-repeat;
+      background-size:15px 16px;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnAsigGrup:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ 
+.btnEditContac
+{
+   background:transparent url(../Icon/Edit.ico) center center no-repeat;
+   background-size:15px 16px;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnEditContac:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ 
+ 
+ .btnSaveContact
+{
+   background:transparent url(../Icon/DataEdit.ico) center center no-repeat;
+   background-size:18px 20px;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:19px;   
+    height:21px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnSaveContact:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ 
+ 
+ /*LIMITE*/
+ 
+  .btnSaveLimt
+{
+   background:transparent url(../Icon/png/Save.png) center center no-repeat;
+   background-size:15px 16px;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnSaveLimt:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ .TextLimite_Grid
+{	
+	border: 1px solid #B1B1B1;
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	text-transform:uppercase;
+	width:100%;
+}
+
+
+.btnPasarLimites
+{
+    background:transparent url(../Icon/DataProcess.ico) center center no-repeat;
+    background-size:18px 19px;
+    font-weight: bold;
+    background-position:10px 2px;
+    padding: 0 0 0 10px;
+    margin: 0 0px 0px 0;
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:x-small;
+    color:Red;
+    text-transform:uppercase;
+    height:25px;
+	background-color:#FCCA16 ; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+	border-radius: 4px 4px 4px 4px;
+	text-align:right;
+	width:180px;
+}
+
+.btnPasarLimites:hover:enabled {
+     background-color  :#F6E39E ;
+     cursor:pointer;
+     color:#B22222; 
+     border: 1px solid #4169E1;
+     box-shadow: 1px 1px 4px #000;
+}
+ .btnPasarLimites[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+ 
+ .labelTitulo{
+
+	font-family:AENOR Fontana ND;
+	text-transform:uppercase;
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0px 7px;
+	margin: 20px 0px 0px;
+
+}
+
+
+.btnAgendar
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;
+	width:90px;
+}
+
+.btnAgendar:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+ .btnAgendar[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+ 
+ 
+ .btnAgendarSubmit
+{
+   background:transparent url(../Icon/Agendar.ico) center center no-repeat;
+   background-size:15px 16px;
+   color:#505050; 
+    width:15px;   
+    height:16px;
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .btnAgendarSubmit:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ 
+ /* listado agendar */
+ 
+         #ULAge
+        {
+        	  background: #F4F4F4;
+              border: 1px solid #7C7C7C;
+              list-style: none;
+              margin: 0;
+              padding: 0;
+        	}
+        #ULAge.menu li a {
+          color: #333;
+          display: block;
+          padding: .3em;
+          text-decoration: none;
+        }
+           #ULAge li{
+       list-style:square;
+       
+    }
+    
+    .Listdiv {
+      width: 100%;
+    }
+ 
+.Listdiv h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+.Listdiv ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.Listdiv li {
+  font: 200 15px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  text-align:left;
+}
+ 
+.Listdiv li:last-child {
+  border: none;
+}
+ 
+.Listdiv li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+.Listdiv li a:hover {
+  font-size: 20px;
+  background: #f6f6f6;
+}
+
+
+/*-.-*/
+
+
+.miLabelLimite
+{
+	text-transform:uppercase;
+	font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	color:#FD6B75;
+	font-weight:bold;
+	/*text-transform:uppercase;
+	font-size:x-small;
+	font-family:AENOR Fontana ND;
+	font-weight:bold;	
+	color:#FD6B75;*/
+}
+
+.estiloTablaDelgada
+{
+    width:100%;
+    /*list-style-type:none;*/   
+    border:0;  
+}
+.estiloTablaDelgada td
+{
+	height:5px;
+	}
+	
+	
+.miLabelAgendar
+{
+	font-weight:bold;
+	font-family:Eras Medium ITC;
+	font-size:x-small;
+}
+
+
+
+
+.milblAgenda
+{
+text-transform:uppercase;
+font-size:x-small;
+ font-family:AENOR Fontana ND;	
+ font-weight:bold;	
+color:#78797A;
+}
+
+
+.tdBorder
+{
+   
+    
+border-left:1px solid #1E90FF;
+border-right:1px solid #1E90FF;
+    }
+    
+    
+    
+   .tituloModalW
+    {
+  font-weight:bold;
+  Font-Size:Large;
+  font-family:AENOR Fontana ND;
+    }
+    .bordeModal
+    {
+    	border-width:1px;
+    	border-color:#467aa7;
+    	border-style:solid;
+    }
+    
+    .bordeModal td
+    {
+       border: 0;    
+    }
+    
+    .derechaModal
+    {
+     text-align:right;
+    }
