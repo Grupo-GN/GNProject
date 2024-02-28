@@ -12483,11 +12483,11 @@ body {
     }
 
     .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
-        transform: translateX(-225px);
+        transform: translateX(-350px);
     }
 
     .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content {
-        margin-left: -225px;
+        margin-left: -350px;
     }
 
         .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before {
@@ -12500,7 +12500,7 @@ body {
 }
 
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav {
-    width: 225px;
+    width: 350px;
     height: 100vh;
     z-index: 1038;
 }
@@ -12514,7 +12514,7 @@ body {
         }
 
 .sb-nav-fixed #layoutSidenav #layoutSidenav_content {
-    padding-left: 225px;
+    padding-left: 350px;
     top: 56px;
 }
 

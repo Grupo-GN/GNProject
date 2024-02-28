@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34407.143
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNProject", "GNProject\GNProject.csproj", "{F67608EE-1F31-438C-B38E-7E7AC821222A}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNProject", "GNProject\GNPr
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "capas\Presistence\Persistence.csproj", "{716553A8-1C7B-4763-AE75-53BFFB115731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{0DABDB0B-A082-4E43-BC25-3F556DFDB248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{716553A8-1C7B-4763-AE75-53BFFB115731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{716553A8-1C7B-4763-AE75-53BFFB115731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{716553A8-1C7B-4763-AE75-53BFFB115731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DABDB0B-A082-4E43-BC25-3F556DFDB248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DABDB0B-A082-4E43-BC25-3F556DFDB248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DABDB0B-A082-4E43-BC25-3F556DFDB248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DABDB0B-A082-4E43-BC25-3F556DFDB248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

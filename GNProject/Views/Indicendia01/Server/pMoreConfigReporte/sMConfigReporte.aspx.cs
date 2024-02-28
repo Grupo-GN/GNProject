@@ -1,5 +1,5 @@
 ﻿using BusinessLogic.oConfigReporte;
-using PersistenceInci;
+using Presistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;

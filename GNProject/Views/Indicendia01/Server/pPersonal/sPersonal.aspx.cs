@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using PersistenceInci;
+using Presistence;
 using BusinessLogic.oPersonal;
 using System.Web.Services;
 using System.Collections;

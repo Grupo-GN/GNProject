@@ -249,6 +249,8 @@
     <Content Include="Views\Indicendia01\jsCanvas1.3\canvasjs.min.js" />
     <Content Include="Views\Indicendia01\jsExportExcel\ScriptExportarExcel.js" />
     <Content Include="Views\Indicendia01\jsSession\session.js" />
+    <Content Include="Views\Indicendia01\Login\Acceso.aspx" />
+    <Content Include="Views\Indicendia01\Login\Script_Acceso.js" />
     <Content Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx" />
     <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesDeprobados.aspx" />
     <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesFFecha.aspx" />
@@ -331,6 +333,8 @@
     <Content Include="Views\Indicendia01\Server\Reportes\Script_IndicesMultiples.js" />
     <Content Include="Views\Indicendia01\Server\ViewGerencia\Script_ViewReporte.js" />
     <Content Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx" />
+    <Content Include="Views\Indicendia01\ViewGerencia\Script_ViewReporte.js" />
+    <Content Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx" />
     <Content Include="Views\Login\Login.aspx" />
     <Content Include="Views\Security\CPerfiles.aspx" />
     <Content Include="Views\Security\CUsuarios.aspx" />
@@ -389,140 +393,170 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Views\Indicendia01\Login\Acceso.aspx.cs">
+      <DependentUpon>Acceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Login\Acceso.aspx.designer.cs">
+      <DependentUpon>Acceso.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx.cs">
       <DependentUpon>InicioSis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx.designer.cs">
       <DependentUpon>InicioSis.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesDeprobados.aspx.cs">
       <DependentUpon>sAccionesDeprobados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesDeprobados.aspx.designer.cs">
       <DependentUpon>sAccionesDeprobados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFFecha.aspx.cs">
       <DependentUpon>sAccionesFFecha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFFecha.aspx.designer.cs">
       <DependentUpon>sAccionesFFecha.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFin.aspx.cs">
       <DependentUpon>sAccionesFin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFin.aspx.designer.cs">
       <DependentUpon>sAccionesFin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesRevisar.aspx.cs">
       <DependentUpon>sAccionesRevisar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesRevisar.aspx.designer.cs">
       <DependentUpon>sAccionesRevisar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAlertOsigermin.aspx.cs">
       <DependentUpon>sAlertOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sAlertOsigermin.aspx.designer.cs">
       <DependentUpon>sAlertOsigermin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sNuevos.aspx.cs">
       <DependentUpon>sNuevos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sNuevos.aspx.designer.cs">
       <DependentUpon>sNuevos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sPendientes.aspx.cs">
       <DependentUpon>sPendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pAlertas\sPendientes.aspx.designer.cs">
       <DependentUpon>sPendientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCapacitacionRealizar\sCapacitacionRealizar.aspx.cs">
       <DependentUpon>sCapacitacionRealizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCapacitacionRealizar\sCapacitacionRealizar.aspx.designer.cs">
       <DependentUpon>sCapacitacionRealizar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCargo\sCargo.aspx.cs">
       <DependentUpon>sCargo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCargo\sCargo.aspx.designer.cs">
       <DependentUpon>sCargo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar2\sCategoriaAuxiliar2.aspx.cs">
       <DependentUpon>sCategoriaAuxiliar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar2\sCategoriaAuxiliar2.aspx.designer.cs">
       <DependentUpon>sCategoriaAuxiliar2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar\sCategoriaAuxiliar.aspx.cs">
       <DependentUpon>sCategoriaAuxiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar\sCategoriaAuxiliar.aspx.designer.cs">
       <DependentUpon>sCategoriaAuxiliar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pChangePass\sChangePass.aspx.cs">
       <DependentUpon>sChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pChangePass\sChangePass.aspx.designer.cs">
       <DependentUpon>sChangePass.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pComentGerencia\sComentGerencia.aspx.cs">
       <DependentUpon>sComentGerencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pComentGerencia\sComentGerencia.aspx.designer.cs">
       <DependentUpon>sComentGerencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pConfigReporte\sConfigReporte.aspx.cs">
       <DependentUpon>sConfigReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pConfigReporte\sConfigReporte.aspx.designer.cs">
       <DependentUpon>sConfigReporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pEditFileIncidente\sEditFileIncidente.aspx.cs">
       <DependentUpon>sEditFileIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pEditFileIncidente\sEditFileIncidente.aspx.designer.cs">
       <DependentUpon>sEditFileIncidente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pEditReporteIncidente\sEditReporteIncidente.aspx.cs">
       <DependentUpon>sEditReporteIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pEditReporteIncidente\sEditReporteIncidente.aspx.designer.cs">
       <DependentUpon>sEditReporteIncidente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pEditRepPlanta\sEditRepPlanta.aspx.cs">
       <DependentUpon>sEditRepPlanta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pEditRepPlanta\sEditRepPlanta.aspx.designer.cs">
       <DependentUpon>sEditRepPlanta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pInformeGerencia\sInformeGerencia.aspx.cs">
       <DependentUpon>sInformeGerencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pInformeGerencia\sInformeGerencia.aspx.designer.cs">
       <DependentUpon>sInformeGerencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pListReportesPlanta\sListReportesPlanta.aspx.cs">
       <DependentUpon>sListReportesPlanta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pListReportesPlanta\sListReportesPlanta.aspx.designer.cs">
       <DependentUpon>sListReportesPlanta.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pListReportes\ListReportes.aspx.cs">
       <DependentUpon>ListReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pListReportes\ListReportes.aspx.designer.cs">
       <DependentUpon>ListReportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pLocalidad\sLocalidad.aspx.cs">
       <DependentUpon>sLocalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pLocalidad\sLocalidad.aspx.designer.cs">
       <DependentUpon>sLocalidad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pMoreConfigReporte\sMConfigReporte.aspx.cs">
       <DependentUpon>sMConfigReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pMoreConfigReporte\sMConfigReporte.aspx.designer.cs">
       <DependentUpon>sMConfigReporte.aspx</DependentUpon>
@@ -532,92 +566,114 @@
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pPersonal\sPersonal.aspx.cs">
       <DependentUpon>sPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pPersonal\sPersonal.aspx.designer.cs">
       <DependentUpon>sPersonal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRealizarAccionADM\sRealizarAccionADM.aspx.cs">
       <DependentUpon>sRealizarAccionADM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRealizarAccionADM\sRealizarAccionADM.aspx.designer.cs">
       <DependentUpon>sRealizarAccionADM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRealizarAccion\sRealizarAccion.aspx.cs">
       <DependentUpon>sRealizarAccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRealizarAccion\sRealizarAccion.aspx.designer.cs">
       <DependentUpon>sRealizarAccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pReporteIncidente\sReporteIncidente.aspx.cs">
       <DependentUpon>sReporteIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pReporteIncidente\sReporteIncidente.aspx.designer.cs">
       <DependentUpon>sReporteIncidente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRepOsigermin\sRepOsigermin.aspx.cs">
       <DependentUpon>sRepOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRepOsigermin\sRepOsigermin.aspx.designer.cs">
       <DependentUpon>sRepOsigermin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRepPendientesADM\sRepPendientesADM.aspx.cs">
       <DependentUpon>sRepPendientesADM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRepPendientesADM\sRepPendientesADM.aspx.designer.cs">
       <DependentUpon>sRepPendientesADM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRepPendientes\sRepPendientes.aspx.cs">
       <DependentUpon>sRepPendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pRepPendientes\sRepPendientes.aspx.designer.cs">
       <DependentUpon>sRepPendientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sFileOsigermin.aspx.cs">
       <DependentUpon>sFileOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sFileOsigermin.aspx.designer.cs">
       <DependentUpon>sFileOsigermin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sSendOsigermin.aspx.cs">
       <DependentUpon>sSendOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sSendOsigermin.aspx.designer.cs">
       <DependentUpon>sSendOsigermin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSubirFileAccion\sSubirFileAccion.aspx.cs">
       <DependentUpon>sSubirFileAccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSubirFileAccion\sSubirFileAccion.aspx.designer.cs">
       <DependentUpon>sSubirFileAccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSubirFileIncidente\sSubirFile.aspx.cs">
       <DependentUpon>sSubirFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pSubirFileIncidente\sSubirFile.aspx.designer.cs">
       <DependentUpon>sSubirFile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pViewReporte\sViewReporte.aspx.cs">
       <DependentUpon>sViewReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\pViewReporte\sViewReporte.aspx.designer.cs">
       <DependentUpon>sViewReporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\Reportes\IndicesMultriples.aspx.cs">
       <DependentUpon>IndicesMultriples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\Reportes\IndicesMultriples.aspx.designer.cs">
       <DependentUpon>IndicesMultriples.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\Reportes\rHistorial.aspx.cs">
       <DependentUpon>rHistorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\Reportes\rHistorial.aspx.designer.cs">
       <DependentUpon>rHistorial.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx.cs">
       <DependentUpon>ViewReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx.designer.cs">
+      <DependentUpon>ViewReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx.cs">
+      <DependentUpon>ViewReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx.designer.cs">
       <DependentUpon>ViewReporte.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Login\Login.aspx.cs">
@@ -688,6 +744,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{0dabdb0b-a082-4e43-bc25-3f556dfdb248}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\capas\Presistence\Persistence.csproj">
       <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
       <Name>Persistence</Name>

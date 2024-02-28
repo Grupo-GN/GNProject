@@ -5,6 +5,7 @@
     <link href="../../jqueryui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
         type="text/css" />
     <link href="../../css/cssReporte.css" rel="stylesheet" type="text/css" />
+    <%@ Import Namespace="GNProject.Acceso" %>
     <table style="width:100%;border-collapse:collapse;" id="tblOtro">
     <tbody>
         <tr>

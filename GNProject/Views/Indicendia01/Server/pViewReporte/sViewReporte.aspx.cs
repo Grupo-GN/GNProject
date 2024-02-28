@@ -1,6 +1,6 @@
 ﻿using BusinessLogic.oReporteIncidente;
 using BusinessLogic.oViewReporte;
-using PersistenceInci;
+using Presistence;
 using System;
 using System.Collections;
 using System.Collections.Generic;

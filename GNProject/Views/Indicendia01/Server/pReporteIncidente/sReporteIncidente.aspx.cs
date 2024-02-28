@@ -1,7 +1,7 @@
 ﻿using BusinessLogic.oConfigReporte;
 using BusinessLogic.oPersonal;
 using BusinessLogic.oReporteIncidente;
-using PersistenceInci;
+using Presistence;
 using System;
 using System.Collections;
 using System.Collections.Generic;
