@@ -10,7 +10,7 @@
 <fieldset>
 <legend class="miTituloField">Datos</legend>
 <label class="miLabel">Periodo Vigente: </label>&nbsp;
-<input id="txtcodigo" class="estiloCajaCodigo" readonly="readonly" type="text" runat="server" style="font-size:12;"/>
+<input id="txtcodigo" class="estiloCajaCodigo" readonly="readonly" type="text" runat="server" style="font-size:12px;"/>
 &nbsp;&nbsp;&nbsp;
 <label class="miLabel">Fecha Inicio: </label>&nbsp;
 <input id="txtfi" runat="server" style="background-color: #FFFFCC; color: #2B60DE;
