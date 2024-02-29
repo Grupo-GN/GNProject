@@ -24,5 +24,20 @@ namespace GNProject.Entity.BL
             {
             }
         }
+        public ComboBEList Get_Combogn(String codigo, String co_padre = "", Int32 id_usuario = 0)
+        {
+            try
+            {
+                ComboBEList oComboBEList = oComboDA.Get_Combogn(codigo, co_padre, id_usuario);
+                return oComboBEList;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+            }
+        }
     }
 }

@@ -253,7 +253,7 @@
 
             var parametros = "{'codigo':'<%=Parametros.Combo.PERFIL %>'"
                 + ",'co_padre': ''}";
-            var urlService = "/wsGenerales.asmx/getCombo";
+            var urlService = "/wsGenerales.asmx/getCombogn";
             this.fc_CallService(parametros, urlService, function (objResponse) {
                 this.fc_FillCombo("cboPerfil_Busqueda", objResponse, textTodos);
                 this.fc_FillCombo("cboPerfil", objResponse, textSeleccione);
@@ -261,7 +261,7 @@
 
             var parametros = "{'codigo':'<%=Parametros.Combo.SEXO %>'"
                 + ",'co_padre': ''}";
-            var urlService = "/wsGenerales.asmx/getCombo";
+            var urlService = "/wsGenerales.asmx/getCombogn";
             this.fc_CallService(parametros, urlService, function (objResponse) {
                 this.fc_FillCombo("cboSexo", objResponse, textSeleccione);
             });

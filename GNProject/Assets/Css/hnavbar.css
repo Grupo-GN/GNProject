@@ -1,0 +1,185 @@
+﻿.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.dropend .dropdown-toggle {
+    color: black;
+    margin-left: 1em;
+}
+
+
+
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+}
+
+@media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+
+    .dropend .dropdown-toggle {
+        margin-left: 0.5em;
+    }
+}
+
+
+/* slows link animar */
+.slow-link {
+    animation-duration: 4s;
+    transition-timing-function: ease-in-out;
+}
+
+    .slow-link:hover,
+    .animated-link:hover {
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+
+
+
+/* desplazamiento suave */
+
+.dropdown:hover .qwe {
+    display: block;
+    animation: fadeIn 1.7s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 10;
+        transform: translateY(1px);
+    }
+}
+
+
+
+
+
+/* button customize */
+button {
+    margin: 5px 8px 1px 8px;
+}
+
+.custom-btn {
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+
+.btn-14 {
+    position: relative;
+    color: #00aced;
+    border: none;
+    z-index: 2;
+}
+
+    .btn-14:before,
+    .btn-14:after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        border: 1px solid;
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+
+    .btn-14:before {
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: #00aced;
+        border-left-color: #00aced;
+    }
+
+    .btn-14:after {
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: #00aced;
+        border-right-color: #00aced;
+    }
+
+    .btn-14:hover:before,
+    .btn-14:hover:after {
+        border-color: #00aced;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+    }
+
+
+/* 4 */
+.btn-4 {
+    color: #8ce436;
+    padding: 0;
+    border: 1px solid #8ce436;
+    box-shadow: 0 0 5px #8ce436, 0 0 5px inset;
+}
+
+    .btn-4:after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 6px;
+        width: 90%;
+        height: 70%;
+        border: 1px solid #8ce436;
+        box-shadow: 0 0 5px #8ce436 inset;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .btn-4:hover:after {
+        opacity: 1;
+    }
+
+
+.dash123 {
+    margin: 2px 0px 0px 24px;
+}
+
+.dash12 {
+    margin: 3px 0px 0px 4px;
+}
+
+.asdr {
+    margin: 5px 0px 0px 0px;
+}

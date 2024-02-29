@@ -33,6 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous" type="text/javascript"></script>
     <link href="~/Assets/Css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Css/hnavbar.css" rel="stylesheet" type="text/css" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" type="text/javascript"></script>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
         <style type="text/css">
@@ -73,7 +74,7 @@
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3 slow-link" href="index.html">Start Bootstrap</a>
             <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 slow-link text-warning" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <button runat="server" class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 slow-link text-warning" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <div class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" runat="server">
                 <div class="input-group">   
@@ -94,16 +95,343 @@
                         <li><hr class="dropdown-divider" /></li>
                         
                        <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnCerrarSesion_Click" CssClass="dropdown-item">Logout</asp:LinkButton>
-
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="TMenu" CssClass="dropdown-item" >CambiarMenu</asp:LinkButton>
+                      
                     </ul>
                 </li>
             </ul>
         </nav>
 
+        <%-- NAVBAR HORIZONTAL --%>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; padding-top:56px;" ID="hnav" runat="server">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand fw-bold" href="#">Coding Yaar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+             
+              <li class="nav-item dropdown">
+                <button class="nav-link  dropdown-toggle custom-btn btn-14 slow-link"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
+                    Administrador
+                </button>
+                <ul class="dropdown-menu qwe">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li class="nav-item dropend">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
 
+              <li class="nav-item asdr">
+                <a class="nav-link active slow-link" aria-current="page" href="#">Dashboard</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <button class="nav-link  dropdown-toggle custom-btn btn-14 slow-link"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
+                  Gerencia
+                </button>
+                <ul class="dropdown-menu qwe">
+                  <li><a class="dropdown-item" href="#">POR DEFINIR</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li class="nav-item dropend">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown slow-link">
+                <button class="nav-link  dropdown-toggle custom-btn btn-14"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
+                  Financiero
+                </button>
+                <ul class="dropdown-menu qwe">
+                  <li><a class="dropdown-item" href="#">JP</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li class="nav-item dropend">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <button class="nav-link  dropdown-toggle custom-btn btn-14 slow-link"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
+                  Administrativo
+                </button>
+                <ul class="dropdown-menu qwe">
+                  <li><a class="dropdown-item" href="#">JP</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li class="nav-item dropend">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <button class="nav-link  dropdown-toggle custom-btn btn-14 slow-link"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
+                  Comercial
+                </button>
+                <ul class="dropdown-menu qwe">
+                  <li><a class="dropdown-item" href="#">NO</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li class="nav-item dropend">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <button class="nav-link  dropdown-toggle custom-btn btn-14 slow-link"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
+                  Operaciones
+               </button>
+                <ul class="dropdown-menu qwe">
+                  <li><a class="dropdown-item" href="#">Mantenimineto de Equipo</a></li>
+                  <li><a class="dropdown-item" href="#">Distribucion Vehicular</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li class="nav-item dropend">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li class="nav-item dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li class="nav-item dropend">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <button class="nav-link  dropdown-toggle custom-btn btn-14 slow-link"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
+                  RRHH
+               </button>
+                  <asp:Literal ID="MenuHCtrlDoc" runat="server"></asp:Literal>    
+              </li>
+            </ul>
+          </div>
+        </div> 
+
+        </nav>
+        <%-- FINAL NAVBAR HORIZONTAL --%>
          <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" ID="vnav" runat="server" >
                     <div class="sb-sidenav-menu bg-black">
                         <div class="nav" id="nav11">
                             <div class="nav">
@@ -529,6 +857,22 @@
                 localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
             });
         }
+
+        const sidebarToggle1 = document.body.querySelector('#LinkButton1');
+        if (sidebarToggle1) {
+            // Obtener el valor de Session["tipomenu"]
+            const tipomenu = <%= Session["tipomenu"] %>;
+        // Verificar si tipomenu es igual a 1 para ocultar la barra lateral
+        if (tipomenu === 1) {
+            document.body.classList.add('sb-sidenav-toggled'); // Ocultar la barra lateral
+            localStorage.setItem('sb|sidebar-toggle', true); // Guardar el estado en el almacenamiento local
+        } else {
+            document.body.classList.remove('sb-sidenav-toggled'); // Mostrar la barra lateral
+            localStorage.setItem('sb|sidebar-toggle', false); // Guardar el estado en el almacenamiento local
+        }
+    }
+        
+
 
     });
  
