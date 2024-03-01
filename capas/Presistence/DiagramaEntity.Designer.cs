@@ -224,11 +224,38 @@ namespace Presistence
         #region Métodos parciales
     
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region Propiedades de ObjectSet
-    
+        public ObjectSet<AccionCorrectiva> AccionCorrectiva
+        {
+            get
+            {
+                if ((_AccionCorrectiva == null))
+                {
+                    _AccionCorrectiva = base.CreateObjectSet<AccionCorrectiva>("AccionCorrectiva");
+                }
+                return _AccionCorrectiva;
+            }
+        }
+        private ObjectSet<AccionCorrectiva> _AccionCorrectiva;
+        /// <summary>
+        /// No hay documentación de metadatos disponible.
+        /// </summary>
+        public ObjectSet<CausaIncidente> CausaIncidente
+        {
+            get
+            {
+                if ((_CausaIncidente == null))
+                {
+                    _CausaIncidente = base.CreateObjectSet<CausaIncidente>("CausaIncidente");
+                }
+                return _CausaIncidente;
+            }
+        }
+        private ObjectSet<CausaIncidente> _CausaIncidente;
+
         /// <summary>
         /// No hay documentación de metadatos disponible.
         /// </summary>
@@ -6456,7 +6483,7 @@ namespace Presistence
         #endregion
 
         #region Métodos AddTo
-    
+
         /// <summary>
         /// Método desusado para agregar un nuevo objeto al EntitySet AccionCorrectiva. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet&lt;T&gt; asociada.
         /// </summary>
@@ -10064,6 +10091,7 @@ namespace Presistence
 
     }
     
+
     /// <summary>
     /// No hay documentación de metadatos disponible.
     /// </summary>
