@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="cAsignarHVariable.aspx.cs" Inherits="GNProject.Views.ControlAsisten.CA.caAsignarHVariable.cAsignarHVariable" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
@@ -130,8 +131,9 @@
         });
     </script>
    <script src="Script_AsignarHVariable.js"></script>
-</asp:Content>
-<asp:Content ID="Content3" runat="server" contentplaceholderid="head">
+
+
+
     <style type="text/css">
         .auto-style1 {
             background: white repeat-x left bottom /*url(../img/input_text.gif)*/;
@@ -159,3 +161,5 @@
     <select class="auto-style1" id="cboLocalidad" disabled="disabled" name="D1" size="1"></select>
 
 </asp:Content>
+    
+

@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MAsignarHorarioPersona.aspx.cs" Inherits="GNProject.Views.ControlAsisten.CA.Matenimientos.MAsignarHorarioPersona" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
  <link href="../../css/index.css" rel="stylesheet" />

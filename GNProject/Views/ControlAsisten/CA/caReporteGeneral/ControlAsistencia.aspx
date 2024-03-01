@@ -151,9 +151,10 @@
         });
 
     </script>
-</asp:Content>
-<asp:Content ID="Content3" runat="server" contentplaceholderid="head">
-    <style type="text/css">
+
+
+
+      <style type="text/css">
         .auto-style1 {
             width: 86px;
         }
@@ -203,4 +204,6 @@
 
     </style>
 
+
 </asp:Content>
+

@@ -900,17 +900,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CAxEmpresal\BusienssLogic\BusienssLogic.csproj">
+    <Folder Include="Views\ControlAsisten\CA\Matenimientos\UploadMarcacionExcel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capas\ctrlAsis\BusienssLogic\BusienssLogic.csproj">
       <Project>{93a64888-efc8-4763-949a-9ac8dfdb20ba}</Project>
       <Name>BusienssLogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\CAxEmpresal\Presistence\Persistence.csproj">
+    <ProjectReference Include="..\capas\ctrlAsis\Presistence\Persistence.csproj">
       <Project>{667698b7-dc69-486e-b654-240505f4258d}</Project>
       <Name>Persistence</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\ControlAsisten\CA\Matenimientos\UploadMarcacionExcel\" />
+    <ProjectReference Include="..\capas\ctrlAsis\Servicios\Servicios.csproj">
+      <Project>{b763b05a-f8d1-40f3-b6c9-0e433e433977}</Project>
+      <Name>Servicios</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

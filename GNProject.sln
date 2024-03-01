@@ -14,11 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "capas", "capas", "{B46C7552
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CntrlAsis", "CntrlAsis", "{90BF5075-9D17-4DEA-8D51-11510BB11302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusienssLogic", "..\..\CAxEmpresal\BusienssLogic\BusienssLogic.csproj", "{93A64888-EFC8-4763-949A-9AC8DFDB20BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusienssLogic", "capas\ctrlAsis\BusienssLogic\BusienssLogic.csproj", "{93A64888-EFC8-4763-949A-9AC8DFDB20BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "..\..\CAxEmpresal\Presistence\Persistence.csproj", "{667698B7-DC69-486E-B654-240505F4258D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "capas\ctrlAsis\Presistence\Persistence.csproj", "{667698B7-DC69-486E-B654-240505F4258D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "..\..\CAxEmpresal\Servicios\Servicios.csproj", "{B763B05A-F8D1-40F3-B6C9-0E433E433977}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "capas\ctrlAsis\Servicios\Servicios.csproj", "{B763B05A-F8D1-40F3-B6C9-0E433E433977}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

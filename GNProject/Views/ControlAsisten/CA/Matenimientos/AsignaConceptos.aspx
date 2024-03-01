@@ -90,7 +90,7 @@
                 <HeaderStyle HorizontalAlign="Center" />
                 <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:CommandField ButtonType="Image" SelectImageUrl="~/Icon/Modify.gif" ShowSelectButton="True" />
+            <asp:CommandField ButtonType="Image" SelectImageUrl="\Icon\Modify.gif" ShowSelectButton="True" />
         </Columns>
         <EditRowStyle BackColor="#7C6F57" />
         <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />

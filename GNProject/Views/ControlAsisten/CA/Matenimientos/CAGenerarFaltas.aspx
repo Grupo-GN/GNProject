@@ -299,9 +299,10 @@
   
  
     </script>
-</asp:Content>
-<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="head">
-    <style type="text/css">
+
+
+
+      <style type="text/css">
         .style1 {
             background-color: #2C6B8D;
             height: 28px;
@@ -321,5 +322,7 @@
             height: 380px;
         }
     </style>
-
 </asp:Content>
+
+  
+
