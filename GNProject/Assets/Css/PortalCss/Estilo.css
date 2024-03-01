@@ -1,20 +1,20 @@
 ﻿body
 {
-    scrollbar-face-color: #eaeffd;
+    /*scrollbar-face-color: #eaeffd;
     scrollbar-highlight-color: #3b83cb;
     scrollbar-shadow-color: #3b83cb;
     scrollbar-3dlight-color: white;
     scrollbar-arrow-color: #3b83cb;
     scrollbar-track-color: #eaeffd;
-    scrollbar-darkshadow-color: #ffffff;
-    background-color: #E9EEF2;
-    background-image: url(/Assets/images/imgPortal/fondogris.png);
-    background-repeat: repeat-x;
+    scrollbar-darkshadow-color: #ffffff;*/
+/*    background-color: #E9EEF2;
+    background-image: url(/Assets/images/imgPortal/fondogris.png);*/
+    /*background-repeat: repeat-x;
     margin: 0px;
     font-family: verdana;
-    font-size: 11px;
+    font-size: 11px;*/
     /*color: #000066;*/
-    color: #666777;
+    /*color: #666777;*/
 }
 
 /*[INICIO] - Estilo para LOGIN*/
@@ -56,32 +56,30 @@
 }
 /*[FIN] - Estilo para LOGIN*/
 
-#cabecera
-{	
-    background: url(../img/header.png);
-	margin: 0px;
-	padding: 0px;
-	width: 1000px;
-	height: 100px;	
+#cabecera {
+    background: url('/Assets/images/imgPortal/header.png');
+    margin: 0px;
+    padding: 0px;
+    width: 1000px;
+    height: 100px;
 }
-#contenedor
-{
-	width: 1000px;
-	margin-top:0px;
-	background: url(../img/contenido_ancho.png) repeat-y;
-	/*padding-top:5px;*/
-	padding-bottom:10px;
+#contenedor {
+    width: 1000px;
+    margin-top: 0px;
+    /*background: url('/Assets/images/imgPortal/contenido_ancho.png') repeat-y;*/
+    /*padding-top:5px;*/
+    padding-bottom: 10px;
 }
-#pie
-{	
-	margin: 0px;
-	padding: 5px;
-	width: 990px;
-	background: url('../img/pie.png') no-repeat;
-	height: 10px;
-	/*color: #444;*/
-	color: #FFF;
-	height: 25px;
+#pie {
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    /*background: url('/Assets/images/imgPortal/pie.png') no-repeat;*/
+    /*height: 10px;*/
+    /*color: #444;*/
+    color: #FFF;
+    background-color: darkblue;
+    border-radius: 0px 0px 10px 10px;
 }
 .divPagina
 {

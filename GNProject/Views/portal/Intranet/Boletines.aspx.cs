@@ -38,7 +38,7 @@ namespace GNProject.Views.portal.Intranet
             TreeNode nodo1 = new TreeNode();
             TreeNode nodo2 = new TreeNode();
 
-            String path = Parametros.I_FileServer_RutaBoletines.Replace("~", "..");
+            String path = Parametros.I_FileServer_RutaBoletines.Replace("~", "../../../");
 
             foreach (var Area in listaAreas)
             {

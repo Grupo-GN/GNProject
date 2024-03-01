@@ -55,8 +55,8 @@ namespace GNProject.Views.portal.Inicio
             String path_Raiz = Server.MapPath("~/");
             String[] arrFiles_Collage = System.IO.Directory.GetFiles(Server.MapPath("~/Assets/images/imgPortal/collage_empresa/"));
             String[] arrFiles_Certificaciones = System.IO.Directory.GetFiles(Server.MapPath("~/Assets/images/imgPortal/certificaciones/"));
-            hdfCollages.Value = String.Join(",", arrFiles_Collage);
-            hdfCertificaciones.Value = String.Join(",", arrFiles_Certificaciones);
+            hdfCollages.Value = String.Join(",", arrFiles_Collage).Replace(path_Raiz, "../../../");
+            hdfCertificaciones.Value = String.Join(",", arrFiles_Certificaciones).Replace(path_Raiz, "../../../");
         }
         protected void btnVerBarras_Click(object sender, EventArgs e)
         {
@@ -172,7 +172,7 @@ namespace GNProject.Views.portal.Inicio
 
             String html = String.Empty;
             //////String path_ImgUsers = Parametros.I_VirtualServer_ImgUsers;
-            String path_ImgUsers = Parametros.I_FileServer_RutaImgUsers.Replace("~", "../../../");
+            String path_ImgUsers = Parametros.I_FileServer_RutaImgUsers.Replace("~", "  ");
             String fila = "<tr><td>{0}</td><td valign='top'>{1}</td></tr>";
             String fila_modal = "<tr><td style='border-bottom: 1px solid #e5e5e5;'>{0}</td><td valign='top' style='text-align:left;border-bottom: 1px solid #e5e5e5;'>{1}</td></tr>";
             String img = "<img alt='' src={0} width='20px' height='25px' />";

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GNProject.Views.portal.Inicio.Default" %>
 
-<%@ Register assembly="Microsoft.ReportViewer.WebForms" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
+<%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
@@ -67,6 +67,9 @@
         }
     </script>
     <div id="contenerdorInicioPortal" style="width:100%;position:relative">
+        <div id="errorMessageLabel" runat="server">
+            </div>
+            
     <div id="contenedor" style="position:relative;width:100%">
                 <div id="Welcome" style="width:100%;height:200px;">
                     <div id="textWelcome" style="width:100%; text-align:center;top:50px;">
@@ -245,7 +248,7 @@
                     </table>
                 </div>
             </div>
-    <div id="pie" >
+    <div id="pie" style="width:100%">
             <div style="text-align: center; font-size: 10px; padding-top: 0px;">
                 © <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreProyecto %> <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreEmpresa %> <%= DateTime.Now.Year.ToString() %>
             </div>
@@ -606,5 +609,12 @@
             if (index_img_iso == lista_img_iso.length)
                 index_img_iso = 0;
         }
+
+        //para poner el Pie debajo del contenido principal
+        var divHeightContenidos = document.getElementById("contenidos").offsetHeight;
+        var divPie = document.getElementById("pie");
+        divHeightContenidos = parseInt(divHeightContenidos) + 20;
+        divPie.style.marginTop = divHeightContenidos + "px";
+        
     </script>
 </asp:Content>

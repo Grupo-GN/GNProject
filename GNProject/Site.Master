@@ -491,7 +491,7 @@
    </div>
                   
                     </div>
-                    
+                    </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
@@ -526,7 +526,7 @@
         }
 
         // Obtenemos todos los enlaces de la barra de navegación
-        var enlaces = document.querySelectorAll('.navbar-nav .nav-link');
+        var enlaces = document.querySelectorAll('.sb-sidenav-dark .sb-sidenav-menu .nav-link');
 
         // Iteramos sobre cada enlace
         enlaces.forEach(function (enlace) {
