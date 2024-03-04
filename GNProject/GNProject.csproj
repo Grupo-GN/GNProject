@@ -512,6 +512,8 @@
     <Content Include="web.config" />
     <Content Include="Views\ctrlDoc\Reportes\rptSegDocumentos.rdlc" />
     <Content Include="Views\ctrlDoc\Reportes\rptSegDocumentos_Det.rdlc" />
+    <Content Include="Views\ctrlDoc\FileUpload.ashx" />
+    <Content Include="Views\ctrlDoc\nicUpload.ashx" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

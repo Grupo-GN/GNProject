@@ -78,6 +78,15 @@ namespace GNProject
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl vnav;
 
         /// <summary>
+        /// Control MenuAdmin.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl MenuAdmin;
+
+        /// <summary>
         /// Control MenuPlanillas.
         /// </summary>
         /// <remarks>

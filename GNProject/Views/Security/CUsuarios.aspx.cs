@@ -83,21 +83,48 @@ namespace GNProject.Views.Security
                 //////if (flEditar && obj.codEstado == "001") imgOpciones += imgEditar;
                 //////if (flCambiarEstado) imgOpciones += (obj.codEstado == "001" ? imgInactivar : imgActivar);
                 //////if (flVerDetalle) imgOpciones += imgVerDetalle;
-
-                object filas = new
+                string[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+                int idusuario;
+                if(arr_Usuario_Perfil.Length > 0 && int.TryParse(arr_Usuario_Perfil[4], out idusuario))
                 {
-                    id_usuario = obj.id_usuario,
-                    ape_paterno = obj.ape_paterno,
-                    ape_materno = obj.ape_materno,
-                    no_usuario = obj.no_usuario,
-                    login = obj.login,
-                    no_perfil = obj.no_perfil,
-                    fl_activo = obj.fl_activo,
-                    no_estado = obj.no_estado
-                    //imgOpciones = imgOpciones
-                };
-                oJQGridJsonResponseRow.Row = filas;
-                responseJQGrid.Items.Add(oJQGridJsonResponseRow);
+                    if (idusuario == 1)
+                    {
+                        object filas = new
+                        {
+                            id_usuario = obj.id_usuario,
+                            ape_paterno = obj.ape_paterno,
+                            ape_materno = obj.ape_materno,
+                            no_usuario = obj.no_usuario,
+                            login = obj.login,
+                            no_perfil = obj.no_perfil,
+                            fl_activo = obj.fl_activo,
+                            no_estado = obj.no_estado
+                            //imgOpciones = imgOpciones
+                        };
+                        oJQGridJsonResponseRow.Row = filas;
+                        responseJQGrid.Items.Add(oJQGridJsonResponseRow);
+                    }
+                    else if(idusuario != 1 && obj.id_usuario !=1)
+                    {
+                        object filas = new
+                        {
+                            id_usuario = obj.id_usuario,
+                            ape_paterno = obj.ape_paterno,
+                            ape_materno = obj.ape_materno,
+                            no_usuario = obj.no_usuario,
+                            login = obj.login,
+                            no_perfil = obj.no_perfil,
+                            fl_activo = obj.fl_activo,
+                            no_estado = obj.no_estado
+                            //imgOpciones = imgOpciones
+                        };
+                        oJQGridJsonResponseRow.Row = filas;
+                        responseJQGrid.Items.Add(oJQGridJsonResponseRow);
+                    }
+                   
+                }
+                
+                
                 i++;
             }
 

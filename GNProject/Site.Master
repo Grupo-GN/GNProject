@@ -78,7 +78,7 @@
             <!-- Navbar Search-->
             <div class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" runat="server">
                 <div class="input-group">   
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+<%--                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />--%>
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
                 
@@ -437,7 +437,8 @@
                             <div class="nav">
 <%-- CONTENIDO NAVBAR --%>
        <div class="sb-sidenav-menu-heading text-danger">Interface</div>                                                                                                            
-	<a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">             
+	<div id="MenuAdmin" runat="server">
+        <a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">             
            <div class="sb-nav-link-icon"><i class="fas fa-user-shield text-info"></i></div>                                                                                        
            Administrador                                                                                                                                                           
            <div class="sb-sidenav-collapse-arrow text-warning"><i class="fas fa-angle-down"></i></div>                                                                             
@@ -545,7 +546,8 @@
                    </nav>                                                                                                                                                          
                </div>                                                                                                                                                              
            </nav>                                                                                                                                                                  
-       </div>                                                                                                                                                                      
+       </div> 
+	</div>                                                                                                                                                                     
        <a class="nav-link slow-link" href="index.html">                                                                                                                            
            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt text-info"></i></div>                                                                                     
            Dashboard                                                                                                                                                               
@@ -862,16 +864,17 @@
         if (sidebarToggle1) {
             // Obtener el valor de Session["tipomenu"]
             const tipomenu = <%= Session["tipomenu"] %>;
-        // Verificar si tipomenu es igual a 1 para ocultar la barra lateral
-        if (tipomenu === 1) {
-            document.body.classList.add('sb-sidenav-toggled'); // Ocultar la barra lateral
-            localStorage.setItem('sb|sidebar-toggle', true); // Guardar el estado en el almacenamiento local
-        } else {
-            document.body.classList.remove('sb-sidenav-toggled'); // Mostrar la barra lateral
-            localStorage.setItem('sb|sidebar-toggle', false); // Guardar el estado en el almacenamiento local
+            // Verificar si tipomenu es igual a 1 para ocultar la barra lateral
+            if (tipomenu === 1) {
+                document.body.classList.add('sb-sidenav-toggled'); // Ocultar la barra lateral
+                localStorage.setItem('sb|sidebar-toggle', true); // Guardar el estado en el almacenamiento local
+            } else {
+                document.body.classList.remove('sb-sidenav-toggled'); // Mostrar la barra lateral
+                localStorage.setItem('sb|sidebar-toggle', false); // Guardar el estado en el almacenamiento local
+            }
+
         }
-    }
-        
+       
 
 
     });

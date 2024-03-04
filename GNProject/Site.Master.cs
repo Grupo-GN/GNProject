@@ -47,6 +47,7 @@ namespace GNProject
                         sidebarToggle.Visible = false;
                         hnav.Visible = true;
                     }
+
                 }
                 else
                 {
@@ -92,6 +93,25 @@ namespace GNProject
                 sidebarToggle.Visible = false;
                 hnav.Visible = true;
             }
+            string[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+            int idUsuario;
+            int idPerfil;
+            // Verificar si el arreglo tiene al menos un elemento y si el primer elemento es un número válido
+            if (arr_Usuario_Perfil.Length > 0 && int.TryParse(arr_Usuario_Perfil[4], out idUsuario))
+            {
+                if (arr_Usuario_Perfil.Length > 0 && int.TryParse(arr_Usuario_Perfil[3], out idPerfil))
+                {
+                    // Comprobar si el ID de usuario es igual a 1
+                    if (idUsuario == 1 || idPerfil == 1)
+                    {
+                        MenuAdmin.Visible = true;
+                    }
+                    else
+                    {
+                        MenuAdmin.Visible = false;
+                    }
+                }
+            }
         }
 
         private void CargaMenu()
@@ -111,6 +131,7 @@ namespace GNProject
             MenuIncidencia.Text = AddMenu(oMenuBEList, 6);
             MenuHCtrlDoc.Text = AddMenuH(oMenuBEList, 1);
 
+            
         }
         private string AddMenu(MenuBEList oMenuBEList, int id_seccion)
         {
