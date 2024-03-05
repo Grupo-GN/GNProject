@@ -189,6 +189,8 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\Servicios.dll" />
+    <Content Include="bin\Servicios.pdb" />
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Optimization.xml" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -209,6 +211,9 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Helpert.aspx" />
+    <Content Include="obj\Debug\GNProject.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\GNProject.dll" />
+    <Content Include="obj\Debug\GNProject.pdb" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -841,6 +846,11 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\Servicios.dll.config" />
+    <Content Include="obj\Debug\GNProject.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\GNProject.csproj.CopyComplete" />
+    <Content Include="obj\Debug\GNProject.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
@@ -900,6 +910,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\ControlAsisten\CA\Matenimientos\UploadMarcacionExcel\" />
   </ItemGroup>
   <ItemGroup>
@@ -910,10 +921,6 @@
     <ProjectReference Include="..\capas\ctrlAsis\Presistence\Persistence.csproj">
       <Project>{667698b7-dc69-486e-b654-240505f4258d}</Project>
       <Name>Persistence</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\capas\ctrlAsis\Servicios\Servicios.csproj">
-      <Project>{b763b05a-f8d1-40f3-b6c9-0e433e433977}</Project>
-      <Name>Servicios</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

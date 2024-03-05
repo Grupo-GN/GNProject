@@ -45,6 +45,8 @@ namespace GNProject.Views.ControlAsisten.CA.Matenimientos
         [WebMethod]
         public static ArrayList Get_AsignarTurnoMasivos_List(string Periodo_id, string seccion, string area_id, int inicio, string Personal_Id, string Jefe_Id)
         {
+            Personal_Id = "000000";
+            Jefe_Id = "000000";
             return Controller_MantAsignarTurnoMasivos.GetInstance().Get_AsignarTurnoMasivos_List(Periodo_id, seccion, area_id, inicio, Personal_Id, Jefe_Id);
         }
         [WebMethod]

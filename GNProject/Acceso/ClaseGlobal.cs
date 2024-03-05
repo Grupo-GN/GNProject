@@ -59,7 +59,7 @@ namespace GNProject.Acceso
         public static Int32 Get_IdPerfil_usuario()
         {
             String[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
-            Int32 id_perfil = Convert.ToInt32(arr_Usuario_Perfil[4]);
+            Int32 id_perfil = Convert.ToInt32(arr_Usuario_Perfil[2]);
             return id_perfil;
         }
         public static String Get_NomPerfil_usuario()

@@ -124,6 +124,7 @@ namespace Presistence.Customs
                         }
                             rlist.Add(nov);
                         }
+                        dr.Close();
                         cmd.Parameters.Clear();
                         cn.Close();
                 }
@@ -165,6 +166,7 @@ namespace Presistence.Customs
                         nov.Estado= dr.GetValue(3).ToString();
                         rlist.Add(nov);
                     }
+                    dr.Close();
                     cmd.Parameters.Clear();
                     cn.Close();
                  }
