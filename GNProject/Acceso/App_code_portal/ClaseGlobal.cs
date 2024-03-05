@@ -17,6 +17,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 
+
 /// <summary>
 /// Descripción breve de ClaseGlobal
 /// </summary>
@@ -27,25 +28,32 @@ namespace GNProject.Acceso.App_code_portal
     {
         public static String Get_UserName(Page pg)
         {
-            String[] arr_Usuario_Perfil = pg.User.Identity.Name.Split('|');
+            string data = AuxAccesoLogin.UserData;
+            String[] arr_Usuario_Perfil = data.Split('|');
+            //String[] arr_Usuario_Perfil = pg.User.Identity.Name.Split('|');
             String user_name = arr_Usuario_Perfil[0].ToString();
             return user_name;
         }
         public static String Get_NombreCompleto(Page pg)
         {
-            String[] arr_Usuario_Perfil = pg.User.Identity.Name.Split('|');
+            string data = AuxAccesoLogin.UserData;
+            String[] arr_Usuario_Perfil = data.Split('|');
             String no_usuario = arr_Usuario_Perfil[1].ToString();
             return no_usuario;
         }
         public static Int32 Get_PermisoID(Page pg)
         {
-            String[] arr_Usuario_Perfil = pg.User.Identity.Name.Split('|');
+            string data = AuxAccesoLogin.UserData;
+            String[] arr_Usuario_Perfil = data.Split('|');
+            //String[] arr_Usuario_Perfil = pg.User.Identity.Name.Split('|');
             Int32 permiso_id = Convert.ToInt32(arr_Usuario_Perfil[2]);
             return permiso_id;
         }
         public static String Get_RutaFoto(Page pg)
         {
-            String[] arr_Usuario_Perfil = pg.User.Identity.Name.Split('|');
+            string data = AuxAccesoLogin.UserData;
+            String[] arr_Usuario_Perfil = data.Split('|');
+            //String[] arr_Usuario_Perfil = pg.User.Identity.Name.Split('|');
             String ruta_foto = arr_Usuario_Perfil[3].ToString();
             return ruta_foto;
         }
@@ -57,7 +65,9 @@ namespace GNProject.Acceso.App_code_portal
         //}
         public static String Get_UserID()
         {
-            String[] arr_Usuario_Perfil = HttpContext.Current.User.Identity.Name.Split('|');
+            string data = AuxAccesoLogin.UserData;
+            String[] arr_Usuario_Perfil = data.Split('|');
+            //String[] arr_Usuario_Perfil = HttpContext.Current.User.Identity.Name.Split('|');
             String User_Id = arr_Usuario_Perfil[4].ToString();
             return User_Id;
         }

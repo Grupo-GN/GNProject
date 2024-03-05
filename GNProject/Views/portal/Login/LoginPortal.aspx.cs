@@ -78,6 +78,7 @@ namespace GNProject.Views.portal.Login
                         , dtUsuario.Rows[0]["Ruta_Foto"].ToString()
                         , dtUsuario.Rows[0]["User_Id"].ToString());
                     Session["datosPortales"] = Usuario_Perfil;
+                    AuxAccesoLogin.UserData = (string)Session["datosPortales"];
                     Label1.Text=(string)Session["datosPortales"];
                     //FormsAuthentication.RedirectFromLoginPage(Usuario_Perfil, false);
                     Response.Redirect("/Views/portal/Inicio/Default.aspx");

@@ -208,7 +208,7 @@ namespace GNProject.Views.portal.Mantenimientos
                     Usuarios objEUsers = new Usuarios(Planilla_Id, Personal_Id, User_Name, Password, Ruta_Foto, Permiso_Id, Email, Categoria_Auxiliar_Id, Categoria_Auxiliar2_Id, Estado_Id,Fecha);
 
                     Int32 rpta;
-                    rpta = objNegUsers.AddUsers(objEUsers);
+                    rpta = objNegUsers.AddUsers(objEUsers)-3;
                     if (rpta == 1)
                     {
                         UtilsScript.fc_JavaScript(this, "fn_Buscar();", "__script1__");

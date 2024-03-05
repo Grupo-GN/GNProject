@@ -1,4 +1,5 @@
-﻿using GNProject.Acceso;
+﻿using Capas.Portal.Negocio;
+using GNProject.Acceso;
 using GNProject.Entity.BL;
 using GNProject.Entity.Menu;
 using System;
@@ -33,6 +34,7 @@ namespace GNProject
             if (!Page.IsPostBack)
             {
                 this.CargaMenu();
+                this.initportalsession();
                 if (Session["datosPortales"] == null)
                 {
                     sessionportal.Visible = false;
@@ -156,6 +158,40 @@ namespace GNProject
             FormsAuthentication.SignOut();
             //FormsAuthentication.RedirectToLoginPage();
             Response.Redirect("~/Login.aspx");
+        }
+        protected void initportalsession()
+        {
+            int dni;
+            string[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+            if (arr_Usuario_Perfil.Length > 0 && int.TryParse(arr_Usuario_Perfil[3], out dni))
+            {
+                Capas.Portal.Negocio.BUSUsuarios objNegUsuarios = new BUSUsuarios();
+
+                Capas.Portal.Entidad.Usuarios objEUsu = new Capas.Portal.Entidad.Usuarios();
+
+                System.Data.DataTable dtUsuario = new System.Data.DataTable();
+                dtUsuario = objNegUsuarios.ListaUserxDNI(dni);
+                if (dtUsuario.Rows.Count > 0)
+                {
+                    // Actualiza contador de visitas por usuario
+                    objNegUsuarios.ActualizaVisitasIntranet(dtUsuario.Rows[0]["User_Id"].ToString());
+
+                    String Usuario_Perfil;
+                    Usuario_Perfil = String.Format("{0}|{1}|{2}|{3}|{4}", dtUsuario.Rows[0]["User_Name"].ToString()
+                        , dtUsuario.Rows[0]["Nombre_Completo"].ToString()
+                        , dtUsuario.Rows[0]["Permiso_Id"].ToString()
+                        , dtUsuario.Rows[0]["Ruta_Foto"].ToString()
+                        , dtUsuario.Rows[0]["User_Id"].ToString());
+                    Session["datosPortales"] = Usuario_Perfil;
+                    Acceso.App_code_portal.AuxAccesoLogin.UserData = (string)Session["datosPortales"];
+                }
+                else
+                {
+                    // Si dtUsuario no tiene filas, puedes retornar aquí o realizar cualquier otra acción necesaria
+                    return; // Opcionalmente puedes agregar un mensaje de registro o manejo de errores
+                }
+            }
+            
         }
     }
 }

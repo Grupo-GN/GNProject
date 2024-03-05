@@ -103,6 +103,9 @@ namespace Capas.Portal.Negocio
         {
             return objDatos.ListaUserxUserName(objUsu);
         }
-
+        public DataTable ListaUserxDNI(int dni)
+        {
+            return objDatos.ListaUserxDNI(dni);
+        }
     }
 }

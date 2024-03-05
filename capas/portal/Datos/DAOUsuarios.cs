@@ -147,7 +147,11 @@ namespace Capas.Portal.Datos
             return SqlHelper.ExecuteDataTable(Conexion(), CommandType.Text, "select * from I_Users where Personal_Id='" + Personal_Id + "'");
         }
 
-
+        public DataTable ListaUserxDNI(int dni)
+        {
+            string dnistr = dni.ToString();
+            return SqlHelper.ExecuteDataTable(Conexion(), "usp_IListaUserxDNI", dnistr);
+        }
 
     }
 }
