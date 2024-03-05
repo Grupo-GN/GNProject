@@ -29,7 +29,7 @@ namespace Capas.Portal.Datos
 
         public Int32 UpdateUsers(Usuarios objUsu)
         {
-            return SqlHelper.ExecuteNonQuery(Conexion(), "usp_IUpdateUsers", objUsu.User_Id, objUsu.Password, objUsu.Ruta_Foto, objUsu.Permiso_Id, objUsu.Email, objUsu.Estado_Id);
+            return SqlHelper.ExecuteNonQuery(Conexion(), "usp_IUpdateUsers", objUsu.User_Id, objUsu.Password, objUsu.Ruta_Foto, objUsu.Permiso_Id, objUsu.Email, objUsu.Estado_Id, objUsu.Fecha);
         }
 
         public Int32 UpdateUsersFoto(String User_Id, String Ruta_Foto)

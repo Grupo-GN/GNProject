@@ -473,6 +473,7 @@ namespace GNProject.Views.portal.Mantenimientos
                 txtConfirmPassword.Text = dt.Rows[0]["Password"].ToString();
 
                 cboPermiso.SelectedValue = dt.Rows[0]["Permiso_Id"].ToString();
+                txtFechaIngreso.Text = dt.Rows[0]["Fecha_Ingreso"].ToString();
 
                 if (dt.Rows[0]["Ruta_Foto"].ToString().Trim() == "")
                 {

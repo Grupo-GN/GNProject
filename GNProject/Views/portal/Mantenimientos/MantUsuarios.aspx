@@ -230,7 +230,7 @@
                         <div class="Clear">
                         </div>
                     </div>
-                    
+                    <br />
                     <p>
                         <asp:Button ID="btnGrabar" runat="server" Text="Grabar" ValidationGroup="Valida"
                             OnClick="btnGrabar_Click" />
