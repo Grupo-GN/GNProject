@@ -14,11 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "capas", "capas", "{7A92295C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "portal", "portal", "{00D90FBA-B5F7-487A-94AB-A2F7B6BDC11D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{DF929121-FAC1-4889-AC85-65A4260B7744}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "capas\portal\Datos\Datos.csproj", "{DF929121-FAC1-4889-AC85-65A4260B7744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidad", "Entidad\Entidad.csproj", "{024C6EE5-3576-4259-BB48-00AA9208B820}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidad", "capas\portal\Entidad\Entidad.csproj", "{024C6EE5-3576-4259-BB48-00AA9208B820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{30A79B6C-3425-4A68-B70F-F23D07ABAABB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "capas\portal\Negocio\Negocio.csproj", "{30A79B6C-3425-4A68-B70F-F23D07ABAABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

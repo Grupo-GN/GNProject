@@ -33,6 +33,16 @@ namespace GNProject
             if (!Page.IsPostBack)
             {
                 this.CargaMenu();
+                if (Session["datosPortales"] == null)
+                {
+                    sessionportal.Visible = false;
+                    loginportal.Visible = true;
+                }
+                else
+                {
+                    sessionportal.Visible = true;
+                    loginportal.Visible = false;
+                }
             }
         }
 

@@ -191,6 +191,9 @@ namespace GNProject.Views.portal.Mantenimientos
                 Int32 Permiso_Id;
                 Permiso_Id = Convert.ToInt32(cboPermiso.SelectedValue);
 
+                DateTime Fecha;
+                Fecha = Convert.ToDateTime(txtFechaIngreso.Text);//DateTime.Now.Date;
+
                 //Ruta_Foto = imgFoto.ImageUrl; //FileUploadFoto.FileName;
 
                 if (FileUpload1.FileName.ToString() == "")
@@ -202,7 +205,7 @@ namespace GNProject.Views.portal.Mantenimientos
 
                 if (Ruta_Foto == "" || Ruta_Foto.Substring(0, 5) != "Error")
                 {
-                    Usuarios objEUsers = new Usuarios(Planilla_Id, Personal_Id, User_Name, Password, Ruta_Foto, Permiso_Id, Email, Categoria_Auxiliar_Id, Categoria_Auxiliar2_Id, Estado_Id);
+                    Usuarios objEUsers = new Usuarios(Planilla_Id, Personal_Id, User_Name, Password, Ruta_Foto, Permiso_Id, Email, Categoria_Auxiliar_Id, Categoria_Auxiliar2_Id, Estado_Id,Fecha);
 
                     Int32 rpta;
                     rpta = objNegUsers.AddUsers(objEUsers);
@@ -282,6 +285,7 @@ namespace GNProject.Views.portal.Mantenimientos
             ListaCatAuxiliar2(cboArea.SelectedValue);
             cboPersonal.Items.Clear();
             imgFoto.ImageUrl = "";
+            txtFechaIngreso.Text = (DateTime.Now.Date.ToShortDateString());
 
             txtEmail.Text = "";
             txtUsuario.Text = "";
@@ -309,6 +313,9 @@ namespace GNProject.Views.portal.Mantenimientos
 
                 String Estado_Id = "01";
 
+                DateTime Fecha;
+                Fecha = Convert.ToDateTime(txtFechaIngreso.Text);//DateTime.Now.Date;
+
                 if (FileUpload1.Visible == false)
                 {
                     Ruta_Foto = System.IO.Path.GetFileName(imgFoto.ImageUrl);
@@ -325,7 +332,7 @@ namespace GNProject.Views.portal.Mantenimientos
 
                 if (Ruta_Foto == "" || Ruta_Foto.Substring(0, 5) != "Error")
                 {
-                    Usuarios objEUser = new Usuarios(User_Id, txtPassword.Text, Ruta_Foto, Convert.ToInt32(cboPermiso.SelectedValue), txtEmail.Text, Estado_Id);
+                    Usuarios objEUser = new Usuarios(User_Id, txtPassword.Text, Ruta_Foto, Convert.ToInt32(cboPermiso.SelectedValue), txtEmail.Text, Estado_Id,Fecha);
 
                     rpta = objNegUsers.UpdateUsers(objEUser);
                     if (rpta == 1)

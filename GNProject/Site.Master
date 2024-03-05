@@ -362,18 +362,20 @@
            <asp:Literal ID="MenuCtrlAsis" runat="server"></asp:Literal>                                                                                                                                                                
        </div>                                                                                                                                                                      
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
-           <%--<nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
+           <nav class="sb-sidenav-menu-nested nav accordion" id="loginportal" runat="server">                                                                                           
                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuthf3" aria-expanded="false" aria-controls="pagesCollapseAuth">     
-                   Portal                                                                                                                                                          
+                   Portal Login                                                                                                                                                          
                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
                </a>                                                                                                                                                                
                <div class="collapse" id="pagesCollapseAuthf3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                
                    <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                       <a class="nav-link" href="/Views/portal/Inicio/Prueba.aspx">Inicio</a>                                                                                                    
+                       <a class="nav-link" href="/Views/portal/Login/LoginPortal.aspx">Inicio</a>                                                                                                    
                    </nav>                                                                                                                                                          
                </div>                                                                                                                                                              
-           </nav>    --%> 
-        <asp:Literal ID="MenuPortal" runat="server"></asp:Literal>  
+           </nav> 
+               <div id="sessionportal" runat="server">
+                    <asp:Literal ID="MenuPortal" runat="server"></asp:Literal>  
+               </div>
        </div>                                                                                                                                                                      
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
            <asp:Literal ID="MenuCtrlDoc" runat="server"></asp:Literal>                                                                                                                                                                 

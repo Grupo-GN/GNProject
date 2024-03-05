@@ -332,6 +332,7 @@
     <Content Include="Views\portal\Intranet\ReservSalas.aspx" />
     <Content Include="Views\portal\Intranet\ServiciosyBeneficios.aspx" />
     <Content Include="Views\portal\Intranet\Videos.aspx" />
+    <Content Include="Views\portal\Login\LoginPortal.aspx" />
     <Content Include="Views\portal\Mantenimientos\MantAnuncios.aspx" />
     <Content Include="Views\portal\Mantenimientos\MantBoletines.aspx" />
     <Content Include="Views\portal\Mantenimientos\MantContenidos.aspx" />
@@ -545,6 +546,13 @@
     </Compile>
     <Compile Include="Views\portal\Intranet\Videos.aspx.designer.cs">
       <DependentUpon>Videos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\portal\Login\LoginPortal.aspx.cs">
+      <DependentUpon>LoginPortal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\portal\Login\LoginPortal.aspx.designer.cs">
+      <DependentUpon>LoginPortal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\portal\Maestros\MasterIntranet.Master.cs">
       <DependentUpon>MasterIntranet.Master</DependentUpon>
@@ -761,17 +769,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\capas\Presistence\Persistence.csproj">
-      <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
-      <Name>Persistence</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Entidad\Entidad.csproj">
+    <ProjectReference Include="..\capas\portal\Entidad\Entidad.csproj">
       <Project>{024c6ee5-3576-4259-bb48-00aa9208b820}</Project>
       <Name>Entidad</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Negocio\Negocio.csproj">
+    <ProjectReference Include="..\capas\portal\Negocio\Negocio.csproj">
       <Project>{30a79b6c-3425-4a68-b70f-f23d07abaabb}</Project>
       <Name>Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\Presistence\Persistence.csproj">
+      <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
+      <Name>Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

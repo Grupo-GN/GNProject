@@ -219,7 +219,18 @@
                         <div class="Clear">
                         </div>
                     </div>
-                    <hr />
+                    <div class="Row1">
+                        <div class="col1 fl ar mgl10 pdt5">
+                            Fecha Ingreso:</div>
+                        <div class="fl mgl10 pdt5">
+                            <asp:TextBox ID="txtFechaIngreso" runat="server"></asp:TextBox>
+                                <cc1:CalendarExtender ID="txtFecha_CalendarExtender" runat="server" CssClass="calendar_Theme1"
+                                    Enabled="True" Format="dd/MM/yyyy" TargetControlID="txtFechaIngreso">
+                                </cc1:CalendarExtender>
+                        <div class="Clear">
+                        </div>
+                    </div>
+                    
                     <p>
                         <asp:Button ID="btnGrabar" runat="server" Text="Grabar" ValidationGroup="Valida"
                             OnClick="btnGrabar_Click" />

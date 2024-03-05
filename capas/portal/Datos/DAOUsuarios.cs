@@ -24,7 +24,7 @@ namespace Capas.Portal.Datos
 
         public Int32 AddUsers(Usuarios objUsu)
         {
-            return SqlHelper.ExecuteNonQuery(Conexion(), "usp_IAddUsers", objUsu.Planilla_Id, objUsu.Personal_Id, objUsu.User_Name, objUsu.Password, objUsu.Ruta_Foto, objUsu.Permiso_Id, objUsu.Email, objUsu.Categoria_Auxiliar_Id, objUsu.Categoria_Auxiliar2_Id, objUsu.Estado_Id);
+            return SqlHelper.ExecuteNonQuery(Conexion(), "usp_IAddUsers", objUsu.Planilla_Id, objUsu.Personal_Id, objUsu.User_Name, objUsu.Password, objUsu.Ruta_Foto, objUsu.Permiso_Id, objUsu.Email, objUsu.Categoria_Auxiliar_Id, objUsu.Categoria_Auxiliar2_Id, objUsu.Estado_Id,objUsu.Fecha);
         }
 
         public Int32 UpdateUsers(Usuarios objUsu)

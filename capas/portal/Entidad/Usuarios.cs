@@ -95,22 +95,31 @@ namespace Capas.Portal.Entidad
         public String Area { get; set; }
         public String Seccion { get; set; }
         public Int32 nu_ingresos { get; set; }
-        
+
+        private DateTime _Fecha;
+        public DateTime Fecha
+        {
+            get { return _Fecha; }
+            set { _Fecha = value; }
+        }
+
         //------- Zona de Constructores 
         //para insertar
         public Usuarios(String Planilla_Id, String Personal_Id, String User_Name, String Password, String Ruta_Foto,
-            Int32 Permiso_Id, String Email, String Categoria_Auxiliar_Id, String Categoria_Auxiliar2_Id, String Estado_Id)
+            Int32 Permiso_Id, String Email, String Categoria_Auxiliar_Id, String Categoria_Auxiliar2_Id, String Estado_Id, DateTime Fecha)
         {
             _Planilla_Id = Planilla_Id; _Personal_Id = Personal_Id; _User_Name = User_Name;
             _Password = Password; _Ruta_Foto = Ruta_Foto; _Permiso_Id = Permiso_Id; _Email = Email;
             _Categoria_Auxiliar_Id = Categoria_Auxiliar_Id; _Categoria_Auxiliar2_Id = Categoria_Auxiliar2_Id; _Estado_Id = Estado_Id;
+            _Fecha = Fecha;
         }
         //para actualizar
         public Usuarios(String User_Id, String Password, String Ruta_Foto,
-            Int32 Permiso_Id, String Email, String Estado_Id)
+            Int32 Permiso_Id, String Email, String Estado_Id, DateTime Fecha)
         {
             _User_Id = User_Id; _Password = Password; _Ruta_Foto = Ruta_Foto; _Permiso_Id = Permiso_Id; _Email = Email;
             _Estado_Id = Estado_Id;
+            _Fecha = Fecha;
         }
 
         public Usuarios(String User_Id)
