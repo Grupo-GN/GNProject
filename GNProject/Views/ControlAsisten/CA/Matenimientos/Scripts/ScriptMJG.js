@@ -297,7 +297,7 @@ function Procesar(id) {
     });
 }
 var proces = '';
-var Personal_Id = Session.get('UsuarioSistema').Personal_Id;
+var Personal_Id = '000000';   //Session.get('UsuarioSistema').Personal_Id;
 var comboloc = '';
 $(document).ready(function () {
 

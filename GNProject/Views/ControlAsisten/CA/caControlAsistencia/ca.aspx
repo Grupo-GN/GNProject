@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ca.aspx.cs" Inherits="GNProject.Views.ControlAsisten.CA.caControlAsistencia.ca" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
     <link href="../../css/cssTablas.css" rel="stylesheet" type="text/css" />
     <link href="../../jqueryui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"  type="text/css" />
   
-
-        <style>
+<style>
 
 input[type=text], select {
   width: 80%;
@@ -95,7 +95,7 @@ input[type=text], select {
              <td class="auto-style1">
                  <asp:CheckBox ID="chkreprocesar" runat="server"  Text="Reprocesar Faltas" /> &nbsp;<asp:Button  runat="server" class="submit" Text="...." id="btnmos" style="width:10%"    OnClick="btnmos_Click" /><br />
                 <asp:Button ID="btnFalta" runat="server"  class="submit" Text="Reasignar Falta" 
-                    Width="233px" OnClick="btnFalta_Click"    />
+                    Width="233px" OnClick="btnFalta_Click"/>
             </td>
         </tr>
         <tr>
