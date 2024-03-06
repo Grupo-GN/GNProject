@@ -20,6 +20,9 @@
 
 
 <body id="login">
+
+  <form id="form1" runat="server">
+
     <div class="container">
         <div class="login-logo">
             <a href="index.html">
@@ -27,7 +30,7 @@
         </div>
         <h2 class="form-heading">login</h2>
         <div class="app-cam">
-            <form  action="" method="" runat="server">
+            
                 <input type="text" class="text" value="RUC" id="txtruc" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'RUC';}" name="Ruc" />
                 <input required type="text" class="text" value="Username" id="txtUsuario1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" runat="server" />
                 <input required type="password" value="Password" id="txtContraseña1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" runat="server" />
@@ -38,9 +41,10 @@
                     <input type="button" value="Siguiente" class="btnLogin" style="width: 150px;" id="btnSiguiente" />
                 </div>
 
-            </form>
+            
         </div>
     </div>
+</form>
 </body>
 </html>
 <script src="../../Scripts/MasterPage/Log_Script.js" type="text/javascript"></script>

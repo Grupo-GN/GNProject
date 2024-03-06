@@ -494,7 +494,7 @@ namespace GNProject.Acceso
                         obj.SaveChanges();
                         return true;
                     }
-                    return false;
+                   
                 }
             }
             catch (Exception ex) { throw ex; }

@@ -1,0 +1,84 @@
+﻿.ElLinkEliminar
+{
+   background:transparent url(../Icon/delete.gif) center center no-repeat;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.ElLinkEditar
+{
+   background:transparent url(../Icon/Modify.gif) center center no-repeat;
+   
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .ElLinkEditar:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+ 
+ .ElLinkSelect
+{
+   background:transparent url(../Icon/detail.gif) center center no-repeat;
+   background-size: 15px 16px;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .ElLinkSelect:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }
+ 
+  .ElLinkGrabar
+{
+   background:transparent url(../Icon/Save.gif) center center no-repeat;
+   background-size: 15px 16px;
+   color:#505050; 
+    font-family:AENOR Fontana ND;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:15px;   
+    height:16px;
+    /*border:solid 1px #708090;*/
+     border: 0px solid #4169E1;
+    border-radius: 4px 4px 4px 4px;
+}
+
+  .ElLinkGrabar:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; 
+	   background-color  :#C0D9D9 ;
+ }

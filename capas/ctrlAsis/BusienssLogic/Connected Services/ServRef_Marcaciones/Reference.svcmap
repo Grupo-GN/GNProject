@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3c8c4338-9f3d-4fd6-a3db-b92f13424763" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://148.102.56.83:82/Marcaciones.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Marcaciones.xsd" MetadataType="Schema" ID="07e1316b-b4a6-44a0-90fd-5865545055ac" SourceId="1" SourceUrl="http://148.102.56.83:82/Marcaciones.svc?xsd=xsd2" />
+    <MetadataFile FileName="Marcaciones1.xsd" MetadataType="Schema" ID="a9362985-23aa-48e5-a5cc-2311b8e40ca1" SourceId="1" SourceUrl="http://148.102.56.83:82/Marcaciones.svc?xsd=xsd0" />
+    <MetadataFile FileName="Marcaciones.wsdl" MetadataType="Wsdl" ID="8c85ed80-19c3-4402-ae83-21ced5eb580b" SourceId="1" SourceUrl="http://148.102.56.83:82/Marcaciones.svc?wsdl" />
+    <MetadataFile FileName="Marcaciones.disco" MetadataType="Disco" ID="17d92cfd-18c0-4166-98c2-790f7d7d5a88" SourceId="1" SourceUrl="http://148.102.56.83:82/Marcaciones.svc?disco" />
+    <MetadataFile FileName="Marcaciones2.xsd" MetadataType="Schema" ID="a0f41dd8-7767-4f70-adad-24bfa346cbcc" SourceId="1" SourceUrl="http://148.102.56.83:82/Marcaciones.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

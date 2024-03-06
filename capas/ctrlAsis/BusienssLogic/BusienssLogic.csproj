@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93A64888-EFC8-4763-949A-9AC8DFDB20BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusienssLogic</RootNamespace>
+    <AssemblyName>BusienssLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso\controllerEncriptar.cs" />
+    <Compile Include="Acceso\controller_AccesoSistema.cs" />
+    <Compile Include="CA\Marcas\Empleado_Dispositivo.cs" />
+    <Compile Include="CA\Marcas\Marcas.cs" />
+    <Compile Include="CA\oAccesoJustificaciones\controller_AccesoJustificaciones.cs" />
+    <Compile Include="CA\oAprobarJustandPermRRHH\controller_AprobarJustandPermRRHH.cs" />
+    <Compile Include="CA\oAprobarJustandPerm\controller_AprobarJustanPerm.cs" />
+    <Compile Include="CA\oAsignarCodigo\Controller_AsignarCodigo.cs" />
+    <Compile Include="CA\oAsignarHorarioMasivo\Controller_MantAsignarHorarioMasivo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oAsignarHorarioPersona\Controller_MantAsignarHorarioPersona.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oAsignarHVariable\controller_AsignarHVariable.cs" />
+    <Compile Include="CA\oAsignarTurnoMasivos\Controller_MantAsignarTurnoMasivos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oAsignarTurnoPersona\Controller_MantAsignarTurnoPersona.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oCompensaciones\ControllerCompensaciones.cs" />
+    <Compile Include="CA\oControlAsistencia\controller_ca.cs" />
+    <Compile Include="CA\oCorreoPersonal\Controller_MantCorreoPersonal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oFeriados\Controller_MantFeriados.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oFiltros\controller_FiltrosCA.cs" />
+    <Compile Include="CA\oGenerarFaltas\Controller_CAGenerarFaltas.cs" />
+    <Compile Include="CA\oGenerarJustificacion\controller_GenerarJustificacion.cs" />
+    <Compile Include="CA\oGenerarPermisos\controller_GenerarPermisos.cs" />
+    <Compile Include="CA\oHorarios\Controller_MantHorarios.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oIndicadoresMultiples\controller_IndicadoresMultiples.cs" />
+    <Compile Include="CA\oInfoMarcaciones\controller_InfoMarcaciones.cs" />
+    <Compile Include="CA\oJefePersonal\controller_JefePersonal.cs" />
+    <Compile Include="CA\oJefePersonal\controller_jg.cs" />
+    <Compile Include="CA\oParametrosPersona\Controller_MantParametrosPersona.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oParametros\Controller_MantParametros.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oParametros\Controller_MantParametroxConcepto.cs" />
+    <Compile Include="CA\oPasarPlanilla\controller_PasarPlanilla.cs" />
+    <Compile Include="CA\oPeriodoAsistencia\Controller_MantPeriodoAsistencia.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oProcesarMarcaciones\controller_ProcesarMarcaciones.cs" />
+    <Compile Include="CA\oRegistrarMarcaciones\Controller_RegistrarMarcaciones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oReporteGeneral\ControllerReporteAsistenciaDiario.cs" />
+    <Compile Include="CA\oReporteGeneral\Controller_Indicadores.cs" />
+    <Compile Include="CA\oReporteGeneral\controller_ReporteGeneral.cs" />
+    <Compile Include="CA\oTurnos\Controller_MantTurnos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CA\oVerBoleta\controller_VerBoleta.cs" />
+    <Compile Include="Connected Services\ServRef_Marcaciones\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPersonal\oDescargarBoleta\controller_DownloadBoleta.cs" />
+    <Compile Include="ConsultaPersonal\oInformarPersonal\controller_InformarPersonal.cs" />
+    <Compile Include="ConsultaPersonal\oMisBoletas\controller_MisBoletas.cs" />
+    <Compile Include="CustomEntity\Compensacion.cs" />
+    <Compile Include="CustomEntity\Compensacion_Det.cs" />
+    <Compile Include="CustomEntity\General.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\controller_SendSMTP.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\ServRef_Marcaciones\BusienssLogic.ServRef_Marcaciones.eMarcacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServRef_Marcaciones\Marcaciones.wsdl" />
+    <None Include="Connected Services\ServRef_Marcaciones\Marcaciones.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServRef_Marcaciones\Marcaciones1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServRef_Marcaciones\Marcaciones2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServRef_Marcaciones\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServRef_Marcaciones\Marcaciones.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServRef_Marcaciones\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServRef_Marcaciones\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServRef_Marcaciones\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Presistence\Persistence.csproj">
+      <Project>{667698B7-DC69-486E-B654-240505F4258D}</Project>
+      <Name>Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

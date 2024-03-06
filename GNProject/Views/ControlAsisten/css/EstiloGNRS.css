@@ -1,0 +1,929 @@
+﻿
+.estiloList
+{
+  height: 180px;
+  border: solid 1px #B1B1B1;
+  border-radius: 4px 4px 4px 4px;
+  text-transform:uppercase;
+  font-family:AENOR Fontana ND;
+  font-size:10px;
+}
+
+.estiloListBig
+{
+  height: 240px;
+  border: solid 1px #B1B1B1;
+  border-radius: 4px 4px 4px 4px;
+  text-transform:uppercase;
+  font-family:AENOR Fontana ND;
+  font-size:10px;
+}
+
+.estiloCabeceraTabla
+{
+	font-family:AENOR Fontana ND;
+	text-transform:uppercase;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding: 0px 7px;
+	margin: 20px 0px 0px;
+	text-align: left;
+}
+
+
+.miFieldsetTab
+{
+ width:96%;
+ margin:auto;
+ padding:0 10px 0 10px;
+}
+
+.miFieldsetTabGrupo
+{
+ width:99%;
+ margin:auto;
+ padding:0 10px 0 10px;
+}
+
+.estiloTablaOnTab
+{
+    width:100%;
+    /*list-style-type:none;*/
+    border:0;  
+    margin:auto;
+}
+
+.estiloTablaOnTabSistema
+{
+    width:98%;
+    /*list-style-type:none;*/
+    border:0;  
+}
+.estiloTablaOnTabSistema td 
+{
+      border:0px;
+}
+
+.estiloTablaOnTabSinWidth
+{
+    /*list-style-type:none;*/
+    border:0;  
+}
+
+.estiloTablaOnTabSinWidth td 
+{
+      border:0px;
+}
+
+.estiloTablaOnTab td 
+{
+      border:0px;
+}
+
+.estiloTablaOnTabDerechaSistema
+{
+    text-align:right;
+    width:250px;
+}
+
+.estiloTablaOnTabDerecha
+{
+    text-align:right;
+    width:120px;
+}
+
+.estiloTablaOnTabIzquierda
+{
+    text-align:left;
+    width: 300px;
+}
+
+
+.estiloCajaCodigo
+{
+   background-color: #FFFFCC; 
+   color: #2B60DE;
+   font-family:AENOR Fontana ND Demibold;
+   font-weight:bold;
+   text-align:center;
+	min-height: 16px;
+	border: #B1B1B1 1px solid;
+	text-transform:uppercase;
+	font-size:10px;
+	width:85px;
+}
+
+.estiloCajaAreaCodigo
+{
+   background-color: #FFFFCC; 
+   color: #2B60DE;
+   font-family:AENOR Fontana ND Demibold;
+   font-weight:bold;
+   text-align:center;
+	min-height: 16px;
+	border: #B1B1B1 1px solid;
+	text-transform:uppercase;
+	font-size:10px;
+	width:85px;
+}
+
+
+.tituloModal
+{
+  font-weight:bold;
+  Font-Size:Large;
+  font-family:AENOR Fontana ND;
+}
+
+.miTitulo
+{
+ font-weight:bold; 
+font-family :AENOR Fontana ND;
+font-size:medium;
+/*color:#0066FF;*/
+/*color:#4682B4;*/
+color:#336699;
+text-decoration:underline;
+}
+
+.txt
+{
+	font-family:Arial;
+	
+	background: white /*url(../img/input_text.gif)*/ repeat-x bottom left;
+	min-height: 16px;
+	border: #B1B1B1 1px solid;
+	color: #000000;
+	text-transform:uppercase;
+	font-size:10px;
+	text-align:left; 
+}
+
+.ddl
+{	
+	border: 1px solid #B1B1B1;
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	text-transform:uppercase;
+	width:120px;
+}
+
+
+.miTituloTab
+{
+	font-weight:bold;
+	font-family :AENOR Fontana ND;
+}
+
+.miLabelSuma
+{
+	font-weight:bold;
+	font-family:AENOR Fontana ND;
+	font-size:medium;
+}
+
+.miLabelSumaNumeros
+{
+	font-weight:bold;
+	font-family:AENOR Fontana ND;
+	font-size:small;
+}
+
+.miTituloOnTab
+{
+	text-align:left;
+	color:#336699;
+	font-weight:bold;
+	font-family:AENOR Fontana ND;
+	font-size:x-small;
+    text-transform:uppercase;
+}
+
+.miTituloOnTab2
+{
+	text-align:left;
+	color:#336699;
+	font-weight:bold;
+	font-family:AENOR Fontana ND;
+	font-size:small;
+    text-transform:uppercase;
+}
+
+.miPage
+{
+    width: 960px;
+    margin:20px auto 0px 1px;
+}
+
+.miTextBox{
+	width: 221px;
+	background: transparent url('images/bg.jpg') no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:0px;
+}
+
+.miBotonGrande{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 0px 0px 0;
+    /*border: 1px solid #ccc;*/
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:small;
+    text-transform:uppercase;
+    /*background: #eee;*/
+    /*background:#e1fcfc;*/
+    background: #cde7ff; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+   border-radius: 8px 8px 8px 8px;
+}
+
+.miBotonGrande:hover {
+    background:#e1fcfc;
+    color:#B22222;
+    border: 1px solid #4169E1;
+}
+
+.submit
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	background-color:#2d87ef;
+    color:White; 
+  
+    text-transform:uppercase;
+    font-weight:bold;  
+    text-align:center;	 
+    
+    margin: 1px 0px 0px 0;   
+    height:25px; 
+    width:56px;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 12px;
+	line-height: 1.5;
+	font-family: "Droid Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+.submit:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+   .submit[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitDarBaja
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;
+    width:100px;
+}
+
+.submitDarBaja:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+
+}
+   .submitDarBaja[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitSelectAll
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;
+    width:140px;
+}
+
+.submitSelectAll:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+   .submitSelectAll[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+ 
+ .submitDeselectAll
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;   
+    width:150px;
+}
+
+.submitDeselectAll:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+
+}
+   .submitDeselectAll[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitRechazar
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;  
+   width:92px;
+}
+
+.submitRechazar:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+
+}
+   .submitRechazar[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitPerfil
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;  
+    height:25px;
+    width:90px;
+}
+
+.submitPerfil:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+   .submitPerfil[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitActualizar
+{
+	background-color:#2d87ef;
+    color:White; 
+  
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;  
+    width:100px;
+}
+.submitActualizar:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+
+ .submitActualizar[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitTest
+{
+    background:transparent url(../Icon/Test.ico) center center no-repeat;
+    font-weight: bold;
+    background-position:10px 3px;
+    padding: 0 0 0 10px;
+    margin: 0 0px 0px 0;
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:x-small;
+    text-transform:uppercase;
+    height:25px;
+   background-color:#E6E8FA ; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+   border-radius: 4px 4px 4px 4px;
+   width:100px;
+}
+.submitTest:hover:enabled {
+     background-color  :#C0D9D9 ;
+     cursor:pointer;
+     color:#B22222; 
+     border: 1px solid #4169E1;
+}
+   .submitTest[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+
+.submitReporte
+{
+    background:transparent url(../Icon/fileprint.ico) center center no-repeat;
+    font-weight: bold;
+    background-position:10px 3px;
+    padding: 0 0 0 10px;
+    margin: 0 0px 0px 0;
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:x-small;
+    text-transform:uppercase;
+    height:25px;
+   background-color:#E6E8FA ; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+   border-radius: 4px 4px 4px 4px;
+   width:100px;
+}
+.submitReporte:hover:enabled {
+     background-color  :#C0D9D9 ;
+     cursor:pointer;
+     color:#B22222; 
+     border: 1px solid #4169E1;
+}
+   .submitReporte[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+
+.submitGrabar
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	background-color:#2d87ef;
+    color:White; 
+  
+    text-transform:uppercase;
+    font-weight:bold;  
+    text-align:center;	 
+    
+    margin: 1px 0px 0px 0;   
+    font-style: normal;
+	font-variant: normal;
+	font-size: 12px;
+	line-height: 1.5;
+	font-family: "Droid Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+.submitGrabar:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+
+   .submitGrabar[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitSal
+{
+	background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;
+    width :90px;
+}
+
+.submitSal:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+   .submitSal[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitElimina
+{
+	background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;
+    width :90px;
+}
+
+.submitElimina:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+   .submitElimina[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+ 
+.submitRefresh
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+    height:25px;  
+    width:90px;
+}
+
+.submitRefresh:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+
+}
+  .submitRefresh[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitAgrupar
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;  
+    height:25px;
+
+   width:90px;
+}
+
+.submitAgrupar:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+  .submitAgrupar[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitListo
+{
+	background-color:#2d87ef;
+    color:White; 
+  
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+
+    height:25px;
+    width:60px; 
+}
+
+.submitListo:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+  .submitListo[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitPhone
+{
+	background-color:#2d87ef;
+    color:White; 
+  
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;   
+
+    height:25px;  
+    width:130px;
+}
+
+.submitPhone:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+  .submitPhone[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+.submitPreg
+{
+    background:transparent url(../Icon/Pencil.ico) center center no-repeat;
+    font-weight: bold;
+    background-position:10px 3px;
+    padding: 0 0 0 10px;
+    margin: 0 0px 0px 0;
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:x-small;
+    text-transform:uppercase;
+    height:25px;
+   background-color:#E6E8FA ; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+   border-radius: 4px 4px 4px 4px;
+   width:95px;
+}
+
+.submitPreg:hover:enabled {
+     background-color  :#C0D9D9 ;
+     cursor:pointer;
+     color:#B22222; 
+     border: 1px solid #4169E1;
+}
+  .submitPreg[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+ 
+ .submitTransferencia
+{
+    background-color:#2d87ef;
+    color:White;   
+    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;  
+    border:none;
+    text-align:center;	     
+    margin: 1px 0px 0px 0;
+    height:25px;
+    width:105px;
+}
+
+.submitTransferencia:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+  .submitTransferencia[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }
+
+ .FormatFontGridView
+ {
+font-size:x-small;
+ font-family:AENOR Fontana ND;
+}
+
+.tituloGrilla
+{
+font-size:x-small;
+ font-family:AENOR Fontana ND;
+font-weight:bold;	
+    /*color:#0066FF;*/
+/*color:#4682B4;*/
+color:#336699;
+}
+
+.titulocontrolUser
+{
+font-size:small;
+ font-family:AENOR Fontana ND;
+font-weight:bold;	
+    /*color:#0066FF;*/
+/*color:#4682B4;*/
+color:#336699;
+}
+
+.miLabelHerramientas
+{
+text-transform:uppercase;
+font-size:small;
+ font-family:AENOR Fontana ND;
+font-weight:bold;	
+}
+
+.miLabel
+{
+text-transform:uppercase;
+font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-weight:bold;	
+}
+
+.miLabelDerecha
+{
+text-transform:uppercase;
+font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-weight:bold;	
+text-align:right;
+}
+
+.txtTextArea
+{
+	font-family:Arial;
+	min-height: 80px;
+	border: #B1B1B1 1px solid;
+	color: #000000;
+	text-transform:uppercase;
+	font-size:10px;
+	text-align:left; 
+	height:80px;
+}
+
+.miTextboxs
+{
+	border: 2px solid black;
+	width: 400px;
+	height: 400px;
+	-moz-border-radius: 10px 200px 200px 10px;
+}
+.miLabelError
+{
+ font-weight:bold; 
+ font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+/*color:#0066FF;*/
+/*color:#4682B4;*/
+color:Red;
+}
+.miComboBox
+{
+	font-family:AENOR Fontana ND;
+	font-size :small;	
+}
+
+
+
+/*DIEGO*/
+
+ .submitGenerar_Reporte
+{
+    background:transparent url(../Icon/Generar_Tabla.ico) center center no-repeat;
+    font-weight: bold;
+    background-position:10px 3px;
+    padding: 0 0 0 10px;
+    margin: 0 0px 0px 0;
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:x-small;
+    text-transform:uppercase;
+    height:25px;
+   background-color:#E6E8FA ; 
+   border-radius: 4px 4px 4px 4px;
+   width:100px;
+}
+.submitGenerar_Reporte:hover:enabled {
+     background-color  :#C0D9D9 ;
+     cursor:pointer;
+     color:#B22222; 
+     border: 1px solid #4169E1;
+}
+   .submitGenerar_Reporte[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+ 
+  .submitExportarExcel
+{
+    background:transparent url(../Icon/Excel.ico) center center no-repeat;
+    font-weight: bold;
+    background-position:10px 3px;
+    padding: 0 0 0 10px;
+    margin: 0 0px 0px 0;
+    border: 1px solid #708090;
+    font-family:AENOR Fontana ND;
+    font-size:x-small;
+    text-transform:uppercase;
+    height:25px;
+   background-color:#E6E8FA ; 
+   border-radius: 4px 4px 4px 4px;
+   width:100px;
+}
+.submitExportarExcel:hover:enabled {
+     background-color  :#C0D9D9 ;
+     cursor:pointer;
+     color:#B22222; 
+     border: 1px solid #4169E1;
+}
+   .submitExportarExcel[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+
+
+
+.submitGeneral
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	background-color:#2d87ef;
+    color:White; 
+  
+    text-transform:uppercase;
+    font-weight:bold;  
+    text-align:center;	 
+    
+    margin: 1px 0px 0px 0;   
+    font-style: normal;
+	font-variant: normal;
+	
+	line-height: 1.5;
+	font-family: "Droid Sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+.submitGrabar:hover:enabled {
+	border:none;
+	cursor:pointer;
+	color:#226FC6;
+	background-color:#78B2F4;
+}
+
+   .submitGrabar[disabled]
+ {
+	border:none;
+	opacity:0.5;
+ }

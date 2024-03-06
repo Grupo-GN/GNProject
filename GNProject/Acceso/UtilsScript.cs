@@ -13,7 +13,7 @@ namespace GNProject.Acceso
             // TODO: Add constructor logic here
             //
         }
-
+        
         public static void fc_DisplayAlert(Page c, String Msj, String strKey = "__AlertRpta__")
         {
             /*Dentro de un ScriptManager*/
