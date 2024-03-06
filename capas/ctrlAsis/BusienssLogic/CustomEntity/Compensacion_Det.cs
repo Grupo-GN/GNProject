@@ -14,10 +14,6 @@ namespace BusienssLogic.CustomEntity
         public DateTime fecha_falta { get; set; }
         public string modo_compensacion { get; set; }
         public int can_horas_compensadas { get; set; }
-        public int Asistencia_Id { get; set; }
-     
-
-
-
+        public int Asistencia_Id { get; set; }  
     }
 }

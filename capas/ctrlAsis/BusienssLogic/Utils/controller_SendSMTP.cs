@@ -42,7 +42,7 @@ namespace BusienssLogic.Utils
                 email.Subject = subject;
                 email.Body = body;
                 email.BodyEncoding = System.Text.Encoding.UTF8;
-                email.IsBodyHtml = true;
+                email.IsBodyHtml = true;    
                 email.Priority = MailPriority.Normal;
 
                 SmtpClient smtp = new SmtpClient(host, int.Parse(puerto));

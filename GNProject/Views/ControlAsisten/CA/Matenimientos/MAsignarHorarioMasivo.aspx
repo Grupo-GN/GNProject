@@ -250,8 +250,8 @@ class="estiloCajaCodigo" value="???" />
     <script src="Scripts/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
         var Personal_Proc = '<%= Session["Usuario_Id"] %>';
-        var usuarioSes = Session.get('UsuarioSistema');
-        var Rol = usuarioSes.NivelAcc;
+        /*var usuarioSes = Session.get('UsuarioSistema');*/
+        var Rol = '01';           //usuarioSes.NivelAcc;
         $(document).ready(function () {
             var inicio = 0;
 

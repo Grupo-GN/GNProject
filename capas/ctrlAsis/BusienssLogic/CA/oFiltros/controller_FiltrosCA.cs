@@ -315,7 +315,8 @@ namespace BusienssLogic.CA.oFiltros
         }
         public ArrayList Get_Personal_By_Filtros(string Periodo_Id, string Localidad_Id, string CategoriaAux, string CategoriaAux2, string Categoria
             , string Personal_Id = "")
-        { 
+        {
+            Personal_Id = "000000";
             using(ContextMaestro obj=new ContextMaestro("name=" + Presistence.Customs.Conexion.getCodEmpresaConnection())){
 
                 string nivel = "";

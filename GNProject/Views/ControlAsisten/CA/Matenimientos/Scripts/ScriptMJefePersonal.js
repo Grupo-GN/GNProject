@@ -289,7 +289,7 @@ function AsignarGerente() {
     });
 }
 
-var Personal_Id = Session.get('UsuarioSistema').Personal_Id;
+var Personal_Id = "000000";   //Session.get('UsuarioSistema').Personal_Id
 $(document).ready(function () {
     Get_Localidad_List();
     Get_Categoria_Auxiliar_List();
