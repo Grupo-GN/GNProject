@@ -14,7 +14,6 @@ namespace GNProject.Acceso
             // TODO: Agregar aquí la lógica del constructor
             //
         }
-
         public static String emailAdminSistema = ConfigurationManager.AppSettings["emailAdminSistema"].ToString();
         public static String CDOC_Ruta_LogoEmpresa = HttpContext.Current.Server.MapPath("~") + "\\img\\logo_empresa.png";
         public static String CDOC_FileServerPath = ConfigurationManager.AppSettings["CDOC_FileServerPath"].ToString();
@@ -22,7 +21,7 @@ namespace GNProject.Acceso
         public static String CDOC_VirtualServer_Personas = ConfigurationManager.AppSettings["RutaServidor"].ToString() + CDOC_FileServerPath.Replace("~/", "") + ConfigurationManager.AppSettings["CDOC_Ruta_Personas"].ToString();
         public static String CDOC_FileServer_RutaImgPersonas = CDOC_FileServerPath + ConfigurationManager.AppSettings["CDOC_Ruta_ImgPersonas"].ToString();
         public static String CDOC_VirtualServer_ImgPersonas = ConfigurationManager.AppSettings["RutaServidor"].ToString() + CDOC_FileServerPath.Replace("~/", "") + ConfigurationManager.AppSettings["CDOC_Ruta_ImgPersonas"].ToString();
-        public static String CDOC_FileServer_RutaDocumentos = CDOC_FileServerPath + ConfigurationManager.AppSettings["CDOC_Ruta_Documentos"].ToString();
+        public static String CDOC_FileServer_RutaDocumentos = CDOC_FileServerPath + ConfigurationManager.AppSettings["CDOC_Ruta_Documentos"].ToString() +"_" + ClaseGlobal.Get_RUC_usuario()+"/";
         public static String CDOC_VirtualServer_Documentos = ConfigurationManager.AppSettings["RutaServidor"].ToString() + CDOC_FileServerPath.Replace("~/", "") + ConfigurationManager.AppSettings["CDOC_Ruta_Documentos"].ToString();
 
         public static Int32 CDOC_Max_Upload_File = Convert.ToInt32(ConfigurationManager.AppSettings["CDOC_Max_Upload_File"].ToString());

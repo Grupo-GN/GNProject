@@ -35,7 +35,7 @@
                 <input required type="text" class="text" value="Username" id="txtUsuario1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" runat="server" />
                 <input required type="password" value="Password" id="txtContraseña1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" runat="server" />
                 <asp:Button ID="btnIngresar1" runat="server" Text="Ingresar" CssClass="submit" OnClick="btnIngresar1_Click" />
-                    <p><a href="#">Forgot Password ?</a></p>
+                   <%-- <p><a href="#">Forgot Password ?</a></p>--%>
                     <label style="color: Red;" id="lblError1" runat="server">&nbsp;</label>
                 <div style="display: none;" id="Presenta" class="box login">
                     <input type="button" value="Siguiente" class="btnLogin" style="width: 150px;" id="btnSiguiente" />

@@ -30,6 +30,23 @@ namespace GNProject
         {
             return "Hola a todos";
         }
+        [WebMethod]
+        [System.Web.Script.Services.ScriptMethod(ResponseFormat = System.Web.Script.Services.ResponseFormat.Json)]
+        public object getCombogn(String codigo, String co_padre = "")
+        {
+            return getComboxUsuariogn(codigo, co_padre, 0);
+        }
+        [WebMethod]
+        [System.Web.Script.Services.ScriptMethod(ResponseFormat = System.Web.Script.Services.ResponseFormat.Json)]
+        public object getComboxUsuariogn(String codigo, String co_padre = "", Int32 id_usuario = 0)
+        {
+            ComboBL oComboBL = new ComboBL();
+            ComboBE oComboBE = new ComboBE();
+            ComboBEList oComboBEList = oComboBL.Get_Combogn(codigo, co_padre, id_usuario);
+
+            System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+            return serializer.Serialize(oComboBEList);
+        }
 
         [WebMethod]
         [System.Web.Script.Services.ScriptMethod(ResponseFormat = System.Web.Script.Services.ResponseFormat.Json)]

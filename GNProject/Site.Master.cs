@@ -5,8 +5,10 @@ using GNProject.Entity.Menu;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Security;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 namespace GNProject
@@ -16,9 +18,42 @@ namespace GNProject
 
         protected void Page_Init(object sender, EventArgs e)
         {
+            
             if (!Page.IsPostBack)
             {
-                lblNomUsuario_MP.Text = ClaseGlobal.Get_nombrecompleto_usuario();
+                int tipomenu;
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    lblNomUsuario_MP.Text = ClaseGlobal.Get_nombrecompleto_usuario();
+                    if (Session["tipomenu"] != null)
+                    {
+                        tipomenu = (int)Session["tipomenu"];
+                        // Realiza alguna acción basada en el valor de tipomenu si es necesario
+                    }
+                    else
+                    {
+                        // Si la variable de sesión no existe, establece tipomenu en 0
+                        Session["tipomenu"] = 0;
+                        tipomenu = (int)Session["tipomenu"];
+                    }
+                    if (tipomenu == 0)
+                    {
+                        vnav.Visible = true;
+                        sidebarToggle.Visible = true;
+                        hnav.Visible = false;
+                    }
+                    else
+                    {
+                        vnav.Visible = false;
+                        sidebarToggle.Visible = false;
+                        hnav.Visible = true;
+                    }
+
+                }
+                else
+                {
+                    HttpContext.Current.Response.Redirect("~/Views/Login/Login.aspx");
+                }
 
                 //Int32 id_usuario = ClaseGlobal.Get_IdUsuario_usuario();
                 //Int32 retorno; String msg_retorno;
@@ -47,6 +82,51 @@ namespace GNProject
                 }
             }
         }
+            }
+            int tipomenu;
+            if (Session["tipomenu"] != null)
+            {
+                tipomenu = (int)Session["tipomenu"];
+                // Realiza alguna acción basada en el valor de tipomenu si es necesario
+            }
+            else
+            {
+                // Si la variable de sesión no existe, establece tipomenu en 0
+                Session["tipomenu"] = 0;
+                tipomenu = (int)Session["tipomenu"];
+            }
+            if (tipomenu == 0)
+            {
+                vnav.Visible = true;
+                sidebarToggle.Visible = true;
+                hnav.Visible = false;
+            }
+            else
+            {
+                vnav.Visible = false;
+                sidebarToggle.Visible = false;
+                hnav.Visible = true;
+            }
+            string[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+            int idUsuario;
+            int idPerfil;
+            // Verificar si el arreglo tiene al menos un elemento y si el primer elemento es un número válido
+            if (arr_Usuario_Perfil.Length > 0 && int.TryParse(arr_Usuario_Perfil[4], out idUsuario))
+            {
+                if (arr_Usuario_Perfil.Length > 0 && int.TryParse(arr_Usuario_Perfil[3], out idPerfil))
+                {
+                    // Comprobar si el ID de usuario es igual a 1
+                    if (idUsuario == 1 || idPerfil == 1)
+                    {
+                        MenuAdmin.Visible = true;
+                    }
+                    else
+                    {
+                        MenuAdmin.Visible = false;
+                    }
+                }
+            }
+        }
 
         private void CargaMenu()
         {
@@ -63,8 +143,9 @@ namespace GNProject
             MenuPlanillas.Text = AddMenu(oMenuBEList, 4);
             MenuCapacitacion.Text = AddMenu(oMenuBEList, 5);
             MenuIncidencia.Text = AddMenu(oMenuBEList, 6);
+            MenuHCtrlDoc.Text = AddMenuH(oMenuBEList, 1);
 
-
+            
         }
         private string AddMenu(MenuBEList oMenuBEList, int id_seccion)
         {
@@ -119,7 +200,7 @@ namespace GNProject
         {
             foreach (MenuBE ent in oMenuBEList)
             {
-                if (ent.id_padre == id_menu && ent.id_seccion == id_seccion)
+                if (ent.id_padre == id_menu && ent.id_seccion == id_seccion && ent.fl_activo =="1")
                 {
                     if (oMenuBEList.Any(x => x.id_padre == ent.id_menu && x.id_seccion == id_seccion))
                     {
@@ -157,7 +238,70 @@ namespace GNProject
             Session.Abandon();
             FormsAuthentication.SignOut();
             //FormsAuthentication.RedirectToLoginPage();
-            Response.Redirect("~/Login.aspx");
+            Response.Redirect("~/Views/Login/Login.aspx");
+        }
+        protected void TMenu(object sender, EventArgs e)
+        {
+            int tipomenu = (int)Session["tipomenu"];
+            if(tipomenu == 0)
+            {
+                tipomenu = 1;
+            }
+            else
+            {
+                tipomenu = 0;
+            }
+            Session["tipomenu"] = tipomenu;
+            Response.Redirect(Request.RawUrl);
+        }
+        private string AddMenuH(MenuBEList oMenuBEList, int id_seccion)
+        {
+            StringBuilder html_menu = new StringBuilder();
+            html_menu.Append("<ul class=\"dropdown-menu\">");
+
+            foreach (MenuBE ent in oMenuBEList)
+            {
+                if (ent.id_padre == 0 && ent.id_seccion == id_seccion)
+                {
+                    html_menu.Append("<li class=\"nav-item dropend\">");
+                    html_menu.Append($"<a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">{ent.tx_descripcion}</a>");
+
+                    html_menu.Append("<ul class=\"dropdown-menu\">");
+                    html_menu = AddMenuItemH(html_menu, oMenuBEList, ent.id_menu, id_seccion);
+                    html_menu.Append("</ul>");
+
+                    html_menu.Append("</li>");
+                }
+            }
+
+            html_menu.Append("</ul>");
+            return html_menu.ToString();
+        }
+
+        private StringBuilder AddMenuItemH(StringBuilder html_menu, MenuBEList oMenuBEList, int id_menu, int id_seccion)
+        {
+            foreach (MenuBE ent in oMenuBEList)
+            {
+                if (ent.id_padre == id_menu && ent.id_seccion == id_seccion && ent.fl_activo == "1")
+                {
+                    if (oMenuBEList.Any(x => x.id_padre == ent.id_menu && x.id_seccion == id_seccion))
+                    {
+                        html_menu.Append("<li class=\"nav-item dropend\">");
+                        html_menu.Append($"<a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">{ent.tx_descripcion}</a>");
+
+                        html_menu.Append("<ul class=\"dropdown-menu\">");
+                        html_menu = AddMenuItemH(html_menu, oMenuBEList, ent.id_menu, id_seccion);
+                        html_menu.Append("</ul>");
+
+                        html_menu.Append("</li>");
+                    }
+                    else
+                    {
+                        html_menu.Append($"<li><a class=\"dropdown-item\" href=\"{ent.url_pagina}\">{ent.tx_descripcion}</a></li>");
+                    }
+                }
+            }
+            return html_menu;
         }
         protected void initportalsession()
         {
