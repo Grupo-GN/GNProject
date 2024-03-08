@@ -43,7 +43,7 @@ namespace BusienssLogic.CA.oGenerarFaltas
                   
                     foreach (var item in rselec)
                     {
-                        dt = Class1.GetInstance().RUNTABLA("Sp_DeleteControl_Asistencia", vi_fecha_inicio, vi_fecha_fin,  item.ToString());
+                        //dt = Class1.GetInstance().RUNTABLA("Sp_DeleteControl_Asistencia", vi_fecha_inicio, vi_fecha_fin,  item.ToString());
 
                     }
 

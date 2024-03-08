@@ -53,7 +53,7 @@ namespace GNProject.Acceso
         public static String Get_nombrecompleto_usuario()
         {
             String[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
-            String no_usuario = arr_Usuario_Perfil[0].ToString();
+            String no_usuario = arr_Usuario_Perfil[1].ToString();
             return no_usuario;
         }
         public static Int32 Get_IdPerfil_usuario()

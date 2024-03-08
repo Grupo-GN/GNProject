@@ -753,7 +753,7 @@
 
     <script type="text/javascript">
 
-        var Personal_IdG = '<%= Session["Usuario_Id"] %>';
+        var Personal_IdG = "000000";
         var Nombre_IdG = '';
         var Periodo_IdG = '';
         var FechaIniPer = '';
@@ -764,7 +764,7 @@
         var PermisoH_Proc = 0;
         var FileArr = [];
         var Asistencia_Proc = '';
-        var Jefe_Proc = '<%= Session["Usuario_Id"] %>';
+        var Jefe_Proc = "000000";
         var Periodo_Des = '';
         $(document).ready(function () {
 
@@ -772,7 +772,7 @@
             //    setTimeout('window.location="Acceso.aspx"', 50);
             //}
             var usuarioSes = Session.get('UsuarioSistema');
-            var Rol = usuarioSes.NivelAcc;
+            var Rol = "01"
             $('#dialog-detallecomp').css('display', 'none');
             if (Rol == "01" || Rol == "03") {
                 $('#tblDato1').hide(); //muestro mediante id
@@ -821,7 +821,7 @@
             if (Rol=="04") {
                 $('#tblDato2').hide(); //muestro mediante id
                 $('#tblDato1').show(); //muestro mediante clase
-                   Personal_IdG = '<%= Session["Usuario_Id"] %>';
+                   Personal_IdG = "000000";
             }
 
             $('#dialog-Justificacion').hide();

@@ -23,10 +23,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         {
             if (!Page.IsPostBack)
             {
-                if (Session["Usuario_Id"] == null)
-                {
-                    Response.Redirect("~/Login.aspx");
-                }
+
 
                 cboPlanilla.DataSource = Get_Planilla_List();
                 cboPlanilla.DataValueField = "Planilla_Id";
@@ -36,7 +33,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
                 CargarPeriodo();
                 //txtfechaini.Text = DateTime.Now.ToShortDateString();
                 //txtfechafin.Text = DateTime.Now.ToShortDateString();
-                string usuario = Session["Usuario_Id"].ToString();
+                string usuario = "000000";
                 //Cargar Localidad
                 cboLocalidad.DataSource = controller_FiltrosCA.Get_Instance().Get_Localidad_List(usuario);
                 cboLocalidad.DataValueField = "Area_Id";
@@ -84,7 +81,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         }
         private void ListarAsistencias()
         {
-            string usuario = Session["Usuario_Id"].ToString();
+            string usuario = "000000";
             DateTime fecha_inicio = DateTime.Parse(txtfechaini.Text);
             DateTime fecha_fin = DateTime.Parse(txtfechafin.Text);
             if (controller_ca.getInstance().Get_ListarAsistencias(fecha_inicio, fecha_fin) <= 0)
@@ -142,7 +139,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         }
         private void cargarPersonal()
         {
-            string usuario = Session["Usuario_Id"].ToString();
+            string usuario = "000000";
             cboPersonal.DataSource = controller_ca.getInstance().Get_Personal_By_Filtros(cboLocalidad.SelectedValue, usuario, CmbPeridos.SelectedValue, cboPlanilla.SelectedValue);
             cboPersonal.DataValueField = "Personal_Id";
             cboPersonal.DataTextField = "Nombres";

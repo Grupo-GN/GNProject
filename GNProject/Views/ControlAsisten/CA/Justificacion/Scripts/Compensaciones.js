@@ -982,8 +982,8 @@ function addZero(i) {
 }
 $(document).ready(function () {
     var usuarioSes = Session.get('UsuarioSistema');
-    var Rol = usuarioSes.NivelAcc;
-    var rol = usuarioSes.NivelAcc;
+    var Rol = "01";
+    var rol = "01";
    
   
 

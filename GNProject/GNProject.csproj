@@ -83,7 +83,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+      <HintPath>..\packages\CrystalReports.ReportAppServer.DataSetConversion.13.0.4001\lib\net40\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalReports.ReportAppServer.ObjectFactory.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
@@ -105,10 +105,13 @@
       <HintPath>..\packages\CrystalDecisions.ReportSource.1.0.0\lib\CrystalDecisions.ReportSource.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrystalReports.Shared.13.0.4003\lib\net40\CrystalDecisions.Shared.dll</HintPath>
+      <HintPath>..\packages\CrystalReports.Shared.13.0.4001\lib\net40\CrystalDecisions.Shared.dll</HintPath>
     </Reference>
     <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data">
       <HintPath>..\Microsoft.ApplicationBlocks.Data.dll</HintPath>
@@ -264,6 +267,7 @@
     <Content Include="Assets\lightbox_portal\js\scriptaculous.js" />
     <Content Include="bin\GNProject.dll" />
     <Content Include="bin\GNProject.pdb" />
+    <Content Include="bin\log4net.dll" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -325,6 +329,19 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\ControlAsisten\assets\css\fontawesome-all.min.css" />
     <Content Include="Views\ControlAsisten\assets\css\main.css" />
     <Content Include="Views\ControlAsisten\assets\js\bootstrap.min.css" />
@@ -511,6 +528,20 @@
     <Content Include="Views\ControlAsisten\jsCanvas1.3\canvasjs.min.js" />
     <Content Include="Views\ControlAsisten\jsExportExcel\ScriptExportarExcel.js" />
     <Content Include="Views\ControlAsisten\jsSession\session.js" />
+    <Content Include="Views\ctrlDoc\Consultas\RptSegDocumentos.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntAreas.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntCargos.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntDocumentos.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntEmpresas.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntLocalidad.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntParametros.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntPersonas.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntPlanilla.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntPlantillaCorreos.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntPlantillaDoc.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntSecciones.aspx" />
+    <Content Include="Views\ctrlDoc\Maestros\MntTipoContrato.aspx" />
+    <Content Include="Views\ctrlDoc\Reportes\FrmPrint.aspx" />
     <Content Include="Views\Login\Login.aspx" />
     <Content Include="Views\portal\Inicio\Default.aspx" />
     <Content Include="Views\portal\Inicio\Prueba.aspx" />
@@ -573,6 +604,11 @@
     <Compile Include="Acceso\Parametros.cs" />
     <Compile Include="Acceso\UtilsScript.cs" />
     <Compile Include="Assets\ctrlDoc\resources\dsEmpresa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmpresa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\ctrlDoc\resources\dsEmpresa1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsEmpresa.xsd</DependentUpon>
@@ -929,6 +965,104 @@
     <Compile Include="Views\ControlAsisten\DataSets\dsBoletaPago.Designer.cs" />
     <Compile Include="Views\ControlAsisten\DataSets\ds_Reportes.Designer.cs" />
     <Compile Include="Views\ControlAsisten\DataSets\ds_Reportes1.Designer.cs" />
+    <Compile Include="Views\ctrlDoc\Consultas\RptSegDocumentos.aspx.cs">
+      <DependentUpon>RptSegDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Consultas\RptSegDocumentos.aspx.designer.cs">
+      <DependentUpon>RptSegDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntAreas.aspx.cs">
+      <DependentUpon>MntAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntAreas.aspx.designer.cs">
+      <DependentUpon>MntAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntCargos.aspx.cs">
+      <DependentUpon>MntCargos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntCargos.aspx.designer.cs">
+      <DependentUpon>MntCargos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntDocumentos.aspx.cs">
+      <DependentUpon>MntDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntDocumentos.aspx.designer.cs">
+      <DependentUpon>MntDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntEmpresas.aspx.cs">
+      <DependentUpon>MntEmpresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntEmpresas.aspx.designer.cs">
+      <DependentUpon>MntEmpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntLocalidad.aspx.cs">
+      <DependentUpon>MntLocalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntLocalidad.aspx.designer.cs">
+      <DependentUpon>MntLocalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntParametros.aspx.cs">
+      <DependentUpon>MntParametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntParametros.aspx.designer.cs">
+      <DependentUpon>MntParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPersonas.aspx.cs">
+      <DependentUpon>MntPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPersonas.aspx.designer.cs">
+      <DependentUpon>MntPersonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPlanilla.aspx.cs">
+      <DependentUpon>MntPlanilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPlanilla.aspx.designer.cs">
+      <DependentUpon>MntPlanilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPlantillaCorreos.aspx.cs">
+      <DependentUpon>MntPlantillaCorreos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPlantillaCorreos.aspx.designer.cs">
+      <DependentUpon>MntPlantillaCorreos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPlantillaDoc.aspx.cs">
+      <DependentUpon>MntPlantillaDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntPlantillaDoc.aspx.designer.cs">
+      <DependentUpon>MntPlantillaDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntSecciones.aspx.cs">
+      <DependentUpon>MntSecciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntSecciones.aspx.designer.cs">
+      <DependentUpon>MntSecciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntTipoContrato.aspx.cs">
+      <DependentUpon>MntTipoContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Maestros\MntTipoContrato.aspx.designer.cs">
+      <DependentUpon>MntTipoContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Reportes\FrmPrint.aspx.cs">
+      <DependentUpon>FrmPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ctrlDoc\Reportes\FrmPrint.aspx.designer.cs">
+      <DependentUpon>FrmPrint.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1256,6 +1390,39 @@
     <Content Include="Acceso\App_code_portal\dsResultadoEncuestas.xss">
       <DependentUpon>dsResultadoEncuestas.xsd</DependentUpon>
     </Content>
+    <Content Include="Assets\ctrlDoc\resources\dsSegDocumentos_Det.xsc">
+      <DependentUpon>dsSegDocumentos_Det.xsd</DependentUpon>
+    </Content>
+    <Content Include="Assets\ctrlDoc\resources\dsEmpresa.xsc">
+      <DependentUpon>dsEmpresa.xsd</DependentUpon>
+    </Content>
+    <None Include="Assets\ctrlDoc\resources\dsEmpresa.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmpresa1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Assets\ctrlDoc\resources\dsEmpresa.xss">
+      <DependentUpon>dsEmpresa.xsd</DependentUpon>
+    </Content>
+    <Content Include="Assets\ctrlDoc\resources\dsSegDocumentos.xsc">
+      <DependentUpon>dsSegDocumentos.xsd</DependentUpon>
+    </Content>
+    <None Include="Assets\ctrlDoc\resources\dsSegDocumentos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSegDocumentos1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Assets\ctrlDoc\resources\dsSegDocumentos.xss">
+      <DependentUpon>dsSegDocumentos.xsd</DependentUpon>
+    </Content>
+    <None Include="Assets\ctrlDoc\resources\dsSegDocumentos_Det.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSegDocumentos_Det1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Assets\ctrlDoc\resources\dsSegDocumentos_Det.xss">
+      <DependentUpon>dsSegDocumentos_Det.xsd</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
@@ -1303,6 +1470,10 @@
     <Content Include="Views\ControlAsisten\DataSets\ds_Reportes.xss">
       <DependentUpon>ds_Reportes.xsd</DependentUpon>
     </Content>
+    <Content Include="Views\ctrlDoc\FileUpload.ashx" />
+    <Content Include="Views\ctrlDoc\nicUpload.ashx" />
+    <Content Include="Views\ctrlDoc\Reportes\rptSegDocumentos.rdlc" />
+    <Content Include="Views\ctrlDoc\Reportes\rptSegDocumentos_Det.rdlc" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -1323,6 +1494,18 @@
       <Project>{b763b05a-f8d1-40f3-b6c9-0e433e433977}</Project>
       <Name>Servicios</Name>
     </ProjectReference>
+    <ProjectReference Include="..\capas\ctrlDoc\CtrlDocumentos.BE\CtrlDocumentos.BE.csproj">
+      <Project>{dbe59363-ac46-4cff-98f8-430eb1d35e43}</Project>
+      <Name>CtrlDocumentos.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\ctrlDoc\CtrlDocumentos.BL\CtrlDocumentos.BL.csproj">
+      <Project>{268e6881-6668-4009-a0b6-a00ef3e32ebf}</Project>
+      <Name>CtrlDocumentos.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\ctrlDoc\CtrlDocumentos.DA\CtrlDocumentos.DA.csproj">
+      <Project>{408d5df8-7601-4cee-b88b-7e83ae303aaa}</Project>
+      <Name>CtrlDocumentos.DA</Name>
+    </ProjectReference>
     <ProjectReference Include="..\capas\portal\Entidad\Entidad.csproj">
       <Project>{024c6ee5-3576-4259-bb48-00aa9208b820}</Project>
       <Name>Entidad</Name>
@@ -1336,6 +1519,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\ctrlDoc\FileServer\Documentos\Documentos\" />
+    <Folder Include="Assets\ctrlDoc\FileServer\Documentos\ImgPersonas\" />
+    <Folder Include="Assets\ctrlDoc\FileServer\Documentos\Personas\" />
     <Folder Include="Assets\Portal\FileServer\docBeneficios\" />
     <Folder Include="Assets\Portal\FileServer\docBoletines\" />
     <Folder Include="Assets\Portal\FileServer\docFormatos\" />
@@ -1373,6 +1559,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties content_4bootstrap-reboot_1css_1map__JsonSchema="" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

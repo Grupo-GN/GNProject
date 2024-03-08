@@ -65,9 +65,7 @@
   <!--  -->
 </head>
 <body class="sb-nav-fixed">
-    <form id="form1" runat="server">
-        <asp:ScriptManager ID="ScriptManager1" EnableScriptGlobalization="true" runat="server">
-            </asp:ScriptManager>
+       
     <%@ Import Namespace="GNProject.Acceso" %>
     <script type="text/ecmascript">
         var page = this.location.pathname;
@@ -75,6 +73,8 @@
         var textTodos = "<%=Parametros.OBJECTO_TODOS%>";
         </script>
     <form runat="server">
+         <asp:ScriptManager ID="ScriptManager1" EnableScriptGlobalization="true" runat="server">
+            </asp:ScriptManager>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-black" >
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3 slow-link" href="index.html">Start Bootstrap</a>
