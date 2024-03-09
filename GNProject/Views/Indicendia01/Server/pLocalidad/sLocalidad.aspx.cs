@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Presistence;
+using Persistence;
 namespace GNProject.Views.Indicendia01.Server.pLocalidad
 {
     public partial class sLocalidad : System.Web.UI.Page

@@ -1,7 +1,7 @@
 ﻿using BusinessLogic.oConfigReporte;
 using BusinessLogic.oPersonal;
 using BusinessLogic.oReporteIncidente;
-using Presistence;
+using Persistence;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,8 +13,15 @@ using System.Web.UI.WebControls;
 
 namespace GNProject.Views.Indicendia01.Server.pReporteIncidente
 {
+
     public partial class sReporteIncidente : System.Web.UI.Page
     {
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    String[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+        //    String no_usuario = arr_Usuario_Perfil[1].ToString();
+        //    lblUsuarioReg.InnerText = no_usuario;
+        //}
         [WebMethod]
         public static string Get_Codigo_Generado()
         {

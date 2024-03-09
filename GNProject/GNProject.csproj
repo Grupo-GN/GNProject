@@ -251,6 +251,9 @@
     <Content Include="Views\Indicendia01\jsSession\session.js" />
     <Content Include="Views\Indicendia01\Login\Acceso.aspx" />
     <Content Include="Views\Indicendia01\Login\Script_Acceso.js" />
+    <Content Include="Views\Indicendia01\MasterPage\HelpASP.aspx" />
+    <Content Include="Views\Indicendia01\MasterPage\img\wall1.png" />
+    <Content Include="Views\Indicendia01\MasterPage\Script\Script_AccesosGeneral.js" />
     <Content Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx" />
     <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesDeprobados.aspx" />
     <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesFFecha.aspx" />
@@ -331,8 +334,6 @@
     <Content Include="Views\Indicendia01\Server\Reportes\rHistorial.aspx" />
     <Content Include="Views\Indicendia01\Server\Reportes\Script_HistorialMultiple.js" />
     <Content Include="Views\Indicendia01\Server\Reportes\Script_IndicesMultiples.js" />
-    <Content Include="Views\Indicendia01\Server\ViewGerencia\Script_ViewReporte.js" />
-    <Content Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx" />
     <Content Include="Views\Indicendia01\ViewGerencia\Script_ViewReporte.js" />
     <Content Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx" />
     <Content Include="Views\Login\Login.aspx" />
@@ -399,6 +400,13 @@
     </Compile>
     <Compile Include="Views\Indicendia01\Login\Acceso.aspx.designer.cs">
       <DependentUpon>Acceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\MasterPage\HelpASP.aspx.cs">
+      <DependentUpon>HelpASP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\MasterPage\HelpASP.aspx.designer.cs">
+      <DependentUpon>HelpASP.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx.cs">
       <DependentUpon>InicioSis.aspx</DependentUpon>
@@ -662,13 +670,6 @@
     <Compile Include="Views\Indicendia01\Server\Reportes\rHistorial.aspx.designer.cs">
       <DependentUpon>rHistorial.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx.cs">
-      <DependentUpon>ViewReporte.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx.designer.cs">
-      <DependentUpon>ViewReporte.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx.cs">
       <DependentUpon>ViewReporte.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -744,13 +745,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+    <ProjectReference Include="..\capas\Incidencias\BusinessLogic\BusinessLogic.csproj">
       <Project>{0dabdb0b-a082-4e43-bc25-3f556dfdb248}</Project>
       <Name>BusinessLogic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\capas\Presistence\Persistence.csproj">
-      <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
+    <ProjectReference Include="..\capas\Incidencias\Persistence\Persistence.csproj">
+      <Project>{e7776e9c-ad9a-4166-b3b8-d0d88b9aae20}</Project>
       <Name>Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\Presistence\Presistence.csproj">
+      <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
+      <Name>Presistence</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

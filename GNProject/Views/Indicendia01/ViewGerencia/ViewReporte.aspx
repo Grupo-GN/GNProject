@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ViewReporte.aspx.cs" Inherits="GNProject.Views.Indicendia01.ViewGerencia.ViewReporte" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-<table style="width:100%;border-collapse:collapse;" id="tblOtro">
+    <table style="width:100%;border-collapse:collapse;" id="tblOtro">
     <tbody>
         <tr>
             <td colspan="9" rowspan="2" 
@@ -602,7 +601,5 @@
     }
 
 </script>
-
-
 
 </asp:Content>

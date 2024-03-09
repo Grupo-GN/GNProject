@@ -1,11 +1,14 @@
-﻿using GNProject.Acceso;
+﻿using BusinessLogic.oLogin;
+using GNProject.Acceso;
 using GNProject.Entity.BL;
 using GNProject.Entity.Menu;
+using Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 namespace GNProject
@@ -18,7 +21,7 @@ namespace GNProject
             if (!Page.IsPostBack)
             {
                 lblNomUsuario_MP.Text = ClaseGlobal.Get_nombrecompleto_usuario();
-
+                this.initIncidenciaSession();
                 //Int32 id_usuario = ClaseGlobal.Get_IdUsuario_usuario();
                 //Int32 retorno; String msg_retorno;
                 //SeguridadBL oSeguridadBL = new SeguridadBL();
@@ -33,6 +36,7 @@ namespace GNProject
             if (!Page.IsPostBack)
             {
                 this.CargaMenu();
+               
             }
         }
 
@@ -147,5 +151,21 @@ namespace GNProject
             //FormsAuthentication.RedirectToLoginPage();
             Response.Redirect("~/Login.aspx");
         }
+        protected void initIncidenciaSession()
+        {
+            
+            string dni;
+            string[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+            if (arr_Usuario_Perfil.Length > 0)
+            {
+                dni = arr_Usuario_Perfil[3]; // Asigna el DNI como cadena sin necesidad de convertirlo
+                string personal_id = controller_Login.Get_Instance().getPersonalId(dni);
+                Session["loginId"] = personal_id;
+
+
+
+            }
+        }
+       
     }
 }

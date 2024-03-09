@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="rHistorial.aspx.cs" Inherits="GNProject.Views.Indicendia01.Server.Reportes.rHistorial" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-        <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
+            <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
     <link href="../../css/cssTablas.css" rel="stylesheet" type="text/css" />
     <link href="../../jqueryui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
         type="text/css" />
@@ -253,7 +253,6 @@
 
 
         });
-    
-    </script>
 
+    </script>
 </asp:Content>

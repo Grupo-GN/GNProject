@@ -1,11 +1,45 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="sReporteIncidente.aspx.cs" Inherits="GNProject.Views.Indicendia01.Server.pReporteIncidente.sReporteIncidente" %>
+    
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
     <link href="../../css/cssTablas.css" rel="stylesheet" type="text/css" />
     <link href="../../jqueryui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
         type="text/css" />
+
+    <script src="../../jsSession/session.js" type="text/javascript"></script>
+    <script src="../../MasterPage/Script/Script_AccesosGeneral.js" type="text/javascript"></script>
+
+
     <link href="../../css/cssReporte.css" rel="stylesheet" type="text/css" />
-    <%@ Import Namespace="GNProject.Acceso" %>
+
+     <script type="text/javascript">
+            var UsuarioG = null;
+            function Get_Session() {
+                UsuarioG = '<%= Session["loginId"] %>';
+            if (!UsuarioG) {
+                setTimeout("location.href='../../Login/Acceso.aspx'", 5);
+            } else {
+                Get_PersonalLogin_Datos(UsuarioG);
+                Redireccionar_Rol();
+                Get_Alertas_By_Rol();
+                window.setInterval("ValidaSession()", 700);
+                //window.setInterval("Get_Alertas_By_Rol()", 1700);
+                
+            }
+
+        }
+
+        function ValidaSession() {
+            var valiusu = '<%= Session["loginId"] %>';
+                if (valiusu == '') {
+                    setTimeout("location.href='../../Login/Acceso.aspx'", 5);
+                }
+            }
+
+            function HideBarra() {
+                $('#barMensaje').hide();
+            }
+        </script>
     <table style="width:100%;border-collapse:collapse;" id="tblOtro">
     <tbody>
         <tr>
@@ -551,7 +585,15 @@
     var CausasIn = 0;
 
     $(document).ready(function () {
+        var UsuarioG = null;
+     
+        UsuarioG = '<%= Session["loginId"] %>';
+
+        Get_PersonalLogin_Datos(UsuarioG);
+      
+    
         UsuarioLogin = Session.get('Usuario');
+        console.log(UsuarioLogin);
         Area_Id = UsuarioLogin.Area_Id;
 
         $('#dialog-Accion').hide();

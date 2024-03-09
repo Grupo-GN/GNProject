@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Acceso.aspx.cs" Inherits="GNProject.Views.Indicendia01.Login.Acceso" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-    <link href="../css/login.css" rel="stylesheet" type="text/css" />
+        <link href="../css/login.css" rel="stylesheet" type="text/css" />
     
 	<div id="block">
 		<label id="user" for="name">p</label>
@@ -21,10 +20,10 @@
     $(document).ready(function () {
         Session.set('Usuario', null);
         $('#submit').click(function () {
-            $('#pIngreso').html('');
+           $('#pIngreso').html('');
             var usuario = $('#name').val();
             var contraseña = $('#password').val();
-            if (!usuario) {
+            if ( !usuario) {
                 $('#pIngreso').html('Campo Requerido.');
                 $('#name').focus();
                 return false;
@@ -37,8 +36,7 @@
             Get_AccesoSistema(usuario, contraseña);
         });
     });
-
+   
 
 </script>
-
 </asp:Content>

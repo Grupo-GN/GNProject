@@ -10,6 +10,7 @@ using GNProject.Acceso;
 using static Presistence.Customs.Conexion;
 using Presistence;
 using GNProject.Entity.Security;
+using BusinessLogic.oLogin;
 
 namespace GNProject.Views.Login
 {
@@ -80,7 +81,7 @@ namespace GNProject.Views.Login
                         {
                             String Usuario_Perfil;
                             Usuario_Perfil = String.Format("{0}|{1}|{2}|{3}|{4}|{5}", oUsuarioBE.login.Trim(), oUsuarioBE.nombrecompleto
-                                , oUsuarioBE.id_perfil.ToString(), oUsuarioBE.no_perfil, oUsuarioBE.id_usuario.ToString(),rucEmpresa);
+                                , oUsuarioBE.id_perfil.ToString(), oUsuarioBE.nu_dni, oUsuarioBE.id_usuario.ToString(),rucEmpresa);
                             FormsAuthentication.RedirectFromLoginPage(Usuario_Perfil, false);
                         }
                         else
@@ -132,6 +133,8 @@ namespace GNProject.Views.Login
                 ClientScript.RegisterStartupScript(GetType(), "hwa", "comprueba();", true);
             }
         }
+       
+
 
     }
 }

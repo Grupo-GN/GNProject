@@ -22,6 +22,8 @@
 
 function DatosDelUsuario() {
     var UsLog = Session.get('Usuario');
+
+
     if (UsLog) {
         $('#txtResponsable').val(UsLog.Nombres + ', ' + UsLog.Apellido_Paterno + ' ' + UsLog.Apellido_Materno);
 

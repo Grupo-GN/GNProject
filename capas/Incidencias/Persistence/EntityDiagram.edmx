@@ -1,0 +1,1158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SIS_INCIDENCIAModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="SIS_INCIDENCIAModelStoreContainer">
+          <EntitySet Name="AccionCorrectiva" EntityType="SIS_INCIDENCIAModel.Store.AccionCorrectiva" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="AfectadoInc" EntityType="SIS_INCIDENCIAModel.Store.AfectadoInc" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CapacitacionIncidente" EntityType="SIS_INCIDENCIAModel.Store.CapacitacionIncidente" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Cargo" EntityType="SIS_INCIDENCIAModel.Store.Cargo" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Categoria_Auxiliar" EntityType="SIS_INCIDENCIAModel.Store.Categoria_Auxiliar" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Categoria_Auxiliar2" EntityType="SIS_INCIDENCIAModel.Store.Categoria_Auxiliar2" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CausaIncidente" EntityType="SIS_INCIDENCIAModel.Store.CausaIncidente" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CausaReporte_Detalle" EntityType="SIS_INCIDENCIAModel.Store.CausaReporte_Detalle" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="CodigoGenerado" EntityType="SIS_INCIDENCIAModel.Store.CodigoGenerado" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ComentGerencia" EntityType="SIS_INCIDENCIAModel.Store.ComentGerencia" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="File_Accion" EntityType="SIS_INCIDENCIAModel.Store.File_Accion" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="File_Incidencia" EntityType="SIS_INCIDENCIAModel.Store.File_Incidencia" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="File_Osigermin" EntityType="SIS_INCIDENCIAModel.Store.File_Osigermin" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="File_ReCapacitacion" EntityType="SIS_INCIDENCIAModel.Store.File_ReCapacitacion" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="FotoPersonal" EntityType="SIS_INCIDENCIAModel.Store.FotoPersonal" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Gerentes" EntityType="SIS_INCIDENCIAModel.Store.Gerentes" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Intensidad" EntityType="SIS_INCIDENCIAModel.Store.Intensidad" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RH_Area" EntityType="SIS_INCIDENCIAModel.Store.RH_Area" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Origen" EntityType="SIS_INCIDENCIAModel.Store.Origen" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Parametros_Sistema" EntityType="SIS_INCIDENCIAModel.Store.Parametros_Sistema" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Personal" EntityType="SIS_INCIDENCIAModel.Store.Personal" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Planilla" EntityType="SIS_INCIDENCIAModel.Store.Planilla" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Procedencia" EntityType="SIS_INCIDENCIAModel.Store.Procedencia" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RealizaCapacitacion" EntityType="SIS_INCIDENCIAModel.Store.RealizaCapacitacion" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ReporteIncidente" EntityType="SIS_INCIDENCIAModel.Store.ReporteIncidente" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Severidad" EntityType="SIS_INCIDENCIAModel.Store.Severidad" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Tipo" EntityType="SIS_INCIDENCIAModel.Store.Tipo" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="TipoIncidente" EntityType="SIS_INCIDENCIAModel.Store.TipoIncidente" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Usuario" EntityType="SIS_INCIDENCIAModel.Store.Usuario" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <AssociationSet Name="FK_REALIZA_REPINCIDENCIA" Association="SIS_INCIDENCIAModel.Store.FK_REALIZA_REPINCIDENCIA">
+            <End Role="CapacitacionIncidente" EntitySet="CapacitacionIncidente" />
+            <End Role="RealizaCapacitacion" EntitySet="RealizaCapacitacion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPINCIDENCIA" Association="SIS_INCIDENCIAModel.Store.FK_REPINCIDENCIA">
+            <End Role="ReporteIncidente" EntitySet="ReporteIncidente" />
+            <End Role="CapacitacionIncidente" EntitySet="CapacitacionIncidente" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AccionCorrectiva">
+          <Key>
+            <PropertyRef Name="Accion_Id" />
+            <PropertyRef Name="Incidente_Id" />
+          </Key>
+          <Property Name="Accion_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Incidente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="400" />
+          <Property Name="Tipo_Responsable" Type="varchar" MaxLength="2" />
+          <Property Name="Responsable_Id" Type="varchar" MaxLength="6" />
+          <Property Name="FechaIni" Type="datetime" />
+          <Property Name="FechaFin" Type="datetime" />
+          <Property Name="Estado_Id" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="AfectadoInc">
+          <Key>
+            <PropertyRef Name="Afec_Id" />
+          </Key>
+          <Property Name="Afec_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="CapacitacionIncidente">
+          <Key>
+            <PropertyRef Name="Capacitacion_Id" />
+          </Key>
+          <Property Name="Capacitacion_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Incidente_Id" Type="varchar" MaxLength="6" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+          <Property Name="Observaciones" Type="varchar" MaxLength="500" />
+          <Property Name="FechaRegistro" Type="datetime" />
+          <Property Name="Estado" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Cargo">
+          <Key>
+            <PropertyRef Name="Cargo_id" />
+          </Key>
+          <Property Name="Cargo_id" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Estado_id" Type="char" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Categoria_Auxiliar">
+          <Key>
+            <PropertyRef Name="Categoria_Auxiliar_Id" />
+          </Key>
+          <Property Name="Categoria_Auxiliar_Id" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Categoria_Auxiliar2">
+          <Key>
+            <PropertyRef Name="Categoria_Auxiliar2_Id" />
+          </Key>
+          <Property Name="Categoria_Auxiliar2_Id" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Categoria_Auxiliar_id" Type="varchar" Nullable="false" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="CausaIncidente">
+          <Key>
+            <PropertyRef Name="Causa_Id" />
+          </Key>
+          <Property Name="Causa_Id" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Causa_Name" Type="varchar" MaxLength="100" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="300" />
+          <Property Name="Tipo" Type="varchar" MaxLength="2" />
+          <Property Name="Estado" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="CausaReporte_Detalle">
+          <Key>
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Causa_Id" />
+          </Key>
+          <Property Name="Incidente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Causa_Id" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Tipo" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="CodigoGenerado">
+          <Key>
+            <PropertyRef Name="Generado_Id" />
+          </Key>
+          <Property Name="Generado_Id" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Fecha" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ComentGerencia">
+          <Key>
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Gerente_Id" />
+            <PropertyRef Name="Coment_Id" />
+          </Key>
+          <Property Name="Incidente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Gerente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Coment_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="EventoComentario" Type="varchar" MaxLength="30" />
+          <Property Name="Comentario" Type="varchar" MaxLength="600" />
+          <Property Name="FechaRegistro" Type="datetime" />
+        </EntityType>
+        <EntityType Name="File_Accion">
+          <Key>
+            <PropertyRef Name="FileA_Id" />
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Accion_Id" />
+          </Key>
+          <Property Name="FileA_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Incidente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Accion_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="File_NameI" Type="varchar" MaxLength="30" />
+          <Property Name="File_URL" Type="varchar" MaxLength="70" />
+          <Property Name="Fecha_Registro" Type="datetime" />
+        </EntityType>
+        <EntityType Name="File_Incidencia">
+          <Key>
+            <PropertyRef Name="FileI_Id" />
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Codigo_Gen" />
+          </Key>
+          <Property Name="FileI_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Incidente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Codigo_Gen" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="File_NameI" Type="varchar" MaxLength="30" />
+          <Property Name="File_URL" Type="varchar" MaxLength="70" />
+          <Property Name="Fecha_Registro" Type="datetime" />
+        </EntityType>
+        <EntityType Name="File_Osigermin">
+          <Key>
+            <PropertyRef Name="FileI_Id" />
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Tipo" />
+          </Key>
+          <Property Name="FileI_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Incidente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Tipo" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="File_NameI" Type="varchar" MaxLength="30" />
+          <Property Name="File_URL" Type="varchar" MaxLength="70" />
+          <Property Name="Fecha_Registro" Type="datetime" />
+        </EntityType>
+        <EntityType Name="File_ReCapacitacion">
+          <Key>
+            <PropertyRef Name="FileR_Id" />
+            <PropertyRef Name="Realizacion_Id" />
+            <PropertyRef Name="Capacitacion_Id" />
+          </Key>
+          <Property Name="FileR_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Realizacion_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Capacitacion_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="NameFile" Type="varchar" MaxLength="20" />
+          <Property Name="RutaFile" Type="varchar" MaxLength="60" />
+          <Property Name="FechaRegistro" Type="datetime" />
+          <Property Name="Estado" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="FotoPersonal">
+          <Key>
+            <PropertyRef Name="Personal_Id" />
+          </Key>
+          <Property Name="Personal_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="NameFoto" Type="varchar" MaxLength="30" />
+          <Property Name="UrlFot" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Gerentes">
+          <Key>
+            <PropertyRef Name="Gerente_Id" />
+          </Key>
+          <Property Name="Gerente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Apellido_Paterno" Type="varchar" MaxLength="40" />
+          <Property Name="Apellido_Materno" Type="varchar" MaxLength="40" />
+          <Property Name="Nombres" Type="varchar" MaxLength="50" />
+          <Property Name="Area_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="GerenciaDes" Type="varchar" MaxLength="100" />
+          <Property Name="Correo" Type="varchar" MaxLength="150" />
+          <Property Name="Informar" Type="varchar" MaxLength="2" />
+          <Property Name="Codigo_LG" Type="varchar" MaxLength="6" />
+          <Property Name="Estado" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Intensidad">
+          <Key>
+            <PropertyRef Name="Intensidad_Id" />
+          </Key>
+          <Property Name="Intensidad_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+          <Property Name="ReportarGerencia" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="RH_Area">
+          <Key>
+            <PropertyRef Name="Area_Id" />
+          </Key>
+          <Property Name="Area_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Direccion" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="Origen">
+          <Key>
+            <PropertyRef Name="Origen_Id" />
+          </Key>
+          <Property Name="Origen_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Parametros_Sistema">
+          <Key>
+            <PropertyRef Name="Parametro_Id" />
+          </Key>
+          <Property Name="Parametro_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+          <Property Name="Valor" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Personal">
+          <Key>
+            <PropertyRef Name="Personal_Id" />
+          </Key>
+          <Property Name="Personal_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Planilla_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Apellido_Paterno" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Apellido_Materno" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Nombres" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Fecha_Nacimiento" Type="datetime" />
+          <Property Name="Nro_Doc" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="email" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Cargo_Id" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="Area_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Categoria_Auxiliar_Id" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Categoria_Auxiliar2_Id" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="CodigoLG" Type="varchar" MaxLength="6" />
+          <Property Name="Estado_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="RolSistema" Type="varchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Planilla">
+          <Key>
+            <PropertyRef Name="Planilla_Id" />
+          </Key>
+          <Property Name="Planilla_Id" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Estado_Id" Type="char" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Procedencia">
+          <Key>
+            <PropertyRef Name="Procedencia_Id" />
+          </Key>
+          <Property Name="Procedencia_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="RealizaCapacitacion">
+          <Key>
+            <PropertyRef Name="Realizacion_Id" />
+            <PropertyRef Name="Capacitacion_Id" />
+          </Key>
+          <Property Name="Realizacion_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Capacitacion_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Area_Id" Type="varchar" MaxLength="2" />
+          <Property Name="Responsable_Id" Type="varchar" MaxLength="6" />
+          <Property Name="Observaciones" Type="varchar" MaxLength="500" />
+          <Property Name="FechaRegistro" Type="datetime" />
+          <Property Name="Estado" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="ReporteIncidente">
+          <Key>
+            <PropertyRef Name="Incidente_Id" />
+          </Key>
+          <Property Name="Incidente_Id" Type="varchar" Nullable="false" MaxLength="6" />
+          <Property Name="Personal_Registro" Type="varchar" MaxLength="6" />
+          <Property Name="Area_Id" Type="varchar" MaxLength="6" />
+          <Property Name="Categoria_Auxiliar_Id" Type="varchar" MaxLength="5" />
+          <Property Name="Categoria_Auxiliar2_Id" Type="varchar" MaxLength="5" />
+          <Property Name="Actividad_Propia" Type="varchar" MaxLength="2" />
+          <Property Name="Actividad_Rutinaria" Type="varchar" MaxLength="2" />
+          <Property Name="Intensidad_Id" Type="varchar" MaxLength="3" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+          <Property Name="Informar_Gerencia" Type="varchar" MaxLength="2" />
+          <Property Name="Informar_Osigermin" Type="varchar" MaxLength="2" />
+          <Property Name="FechaHora_Incidente" Type="datetime" />
+          <Property Name="FechaHora_Reporte" Type="datetime" />
+          <Property Name="Lugar_Incidente" Type="varchar" MaxLength="500" />
+          <Property Name="Tipo" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Origen" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Severidad_Id" Type="varchar" MaxLength="3" />
+          <Property Name="LesionesPerdidas" Type="varchar" MaxLength="500" />
+          <Property Name="PosiblesCausas" Type="varchar" MaxLength="500" />
+          <Property Name="AccionInmediata" Type="varchar" MaxLength="500" />
+          <Property Name="Estado_Id" Type="varchar" MaxLength="2" />
+          <Property Name="SendMailGerencia" Type="varchar" MaxLength="2" />
+          <Property Name="SendPreliminar" Type="varchar" MaxLength="2" />
+          <Property Name="SendFinal" Type="varchar" MaxLength="2" />
+          <Property Name="TipoI_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Afec_Id" Type="varchar" Nullable="false" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="Severidad">
+          <Key>
+            <PropertyRef Name="Severidad_Id" />
+          </Key>
+          <Property Name="Severidad_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="Tipo_Id" />
+          </Key>
+          <Property Name="Tipo_Id" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="TipoIncidente">
+          <Key>
+            <PropertyRef Name="TipoI_Id" />
+          </Key>
+          <Property Name="TipoI_Id" Type="varchar" Nullable="false" MaxLength="3" />
+          <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Personal_Id" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="10" />
+          <Property Name="Password" Type="varchar" MaxLength="30" />
+          <Property Name="Estado" Type="varchar" MaxLength="2" />
+          <Property Name="Personal_Id" Type="varchar" Nullable="false" MaxLength="6" />
+        </EntityType>
+        <Association Name="FK_REALIZA_REPINCIDENCIA">
+          <End Role="CapacitacionIncidente" Type="SIS_INCIDENCIAModel.Store.CapacitacionIncidente" Multiplicity="1" />
+          <End Role="RealizaCapacitacion" Type="SIS_INCIDENCIAModel.Store.RealizaCapacitacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CapacitacionIncidente">
+              <PropertyRef Name="Capacitacion_Id" />
+            </Principal>
+            <Dependent Role="RealizaCapacitacion">
+              <PropertyRef Name="Capacitacion_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPINCIDENCIA">
+          <End Role="ReporteIncidente" Type="SIS_INCIDENCIAModel.Store.ReporteIncidente" Multiplicity="0..1" />
+          <End Role="CapacitacionIncidente" Type="SIS_INCIDENCIAModel.Store.CapacitacionIncidente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ReporteIncidente">
+              <PropertyRef Name="Incidente_Id" />
+            </Principal>
+            <Dependent Role="CapacitacionIncidente">
+              <PropertyRef Name="Incidente_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SIS_INCIDENCIAModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="ContextMaestro" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="AccionCorrectiva" EntityType="SIS_INCIDENCIAModel.AccionCorrectiva" />
+          <EntitySet Name="Cargo" EntityType="SIS_INCIDENCIAModel.Cargo" />
+          <EntitySet Name="Categoria_Auxiliar" EntityType="SIS_INCIDENCIAModel.Categoria_Auxiliar" />
+          <EntitySet Name="Categoria_Auxiliar2" EntityType="SIS_INCIDENCIAModel.Categoria_Auxiliar2" />
+          <EntitySet Name="CausaIncidente" EntityType="SIS_INCIDENCIAModel.CausaIncidente" />
+          <EntitySet Name="CodigoGenerado" EntityType="SIS_INCIDENCIAModel.CodigoGenerado" />
+          <EntitySet Name="File_Accion" EntityType="SIS_INCIDENCIAModel.File_Accion" />
+          <EntitySet Name="File_Incidencia" EntityType="SIS_INCIDENCIAModel.File_Incidencia" />
+          <EntitySet Name="File_Osigermin" EntityType="SIS_INCIDENCIAModel.File_Osigermin" />
+          <EntitySet Name="Gerentes" EntityType="SIS_INCIDENCIAModel.Gerentes" />
+          <EntitySet Name="Intensidad" EntityType="SIS_INCIDENCIAModel.Intensidad" />
+          <EntitySet Name="RH_Area" EntityType="SIS_INCIDENCIAModel.RH_Area" />
+          <EntitySet Name="Origen" EntityType="SIS_INCIDENCIAModel.Origen" />
+          <EntitySet Name="Parametros_Sistema" EntityType="SIS_INCIDENCIAModel.Parametros_Sistema" />
+          <EntitySet Name="Personal" EntityType="SIS_INCIDENCIAModel.Personal" />
+          <EntitySet Name="Planilla" EntityType="SIS_INCIDENCIAModel.Planilla" />
+          <EntitySet Name="Procedencia" EntityType="SIS_INCIDENCIAModel.Procedencia" />
+          <EntitySet Name="Severidad" EntityType="SIS_INCIDENCIAModel.Severidad" />
+          <EntitySet Name="Tipo" EntityType="SIS_INCIDENCIAModel.Tipo" />
+          <EntitySet Name="TipoIncidente" EntityType="SIS_INCIDENCIAModel.TipoIncidente" />
+          <EntitySet Name="Usuario" EntityType="SIS_INCIDENCIAModel.Usuario" />
+          <EntitySet Name="AfectadoInc" EntityType="SIS_INCIDENCIAModel.AfectadoInc" />
+          <EntitySet Name="ReporteIncidente" EntityType="SIS_INCIDENCIAModel.ReporteIncidente" />
+          <EntitySet Name="CausaReporte_Detalle" EntityType="SIS_INCIDENCIAModel.CausaReporte_Detalle" />
+          <EntitySet Name="FotoPersonal" EntityType="SIS_INCIDENCIAModel.FotoPersonal" />
+          <EntitySet Name="ComentGerencia" EntityType="SIS_INCIDENCIAModel.ComentGerencia" />
+          <EntitySet Name="CapacitacionIncidente" EntityType="SIS_INCIDENCIAModel.CapacitacionIncidente" />
+          <EntitySet Name="File_ReCapacitacion" EntityType="SIS_INCIDENCIAModel.File_ReCapacitacion" />
+          <EntitySet Name="RealizaCapacitacion" EntityType="SIS_INCIDENCIAModel.RealizaCapacitacion" />
+          <AssociationSet Name="FK_REALIZA_REPINCIDENCIA" Association="SIS_INCIDENCIAModel.FK_REALIZA_REPINCIDENCIA">
+            <End Role="CapacitacionIncidente" EntitySet="CapacitacionIncidente" />
+            <End Role="RealizaCapacitacion" EntitySet="RealizaCapacitacion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REPINCIDENCIA" Association="SIS_INCIDENCIAModel.FK_REPINCIDENCIA">
+            <End Role="ReporteIncidente" EntitySet="ReporteIncidente" />
+            <End Role="CapacitacionIncidente" EntitySet="CapacitacionIncidente" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AccionCorrectiva">
+          <Key>
+            <PropertyRef Name="Accion_Id" />
+            <PropertyRef Name="Incidente_Id" />
+          </Key>
+          <Property Type="String" Name="Accion_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Incidente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Tipo_Responsable" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Responsable_Id" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaIni" />
+          <Property Type="DateTime" Name="FechaFin" />
+          <Property Type="String" Name="Estado_Id" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Cargo">
+          <Key>
+            <PropertyRef Name="Cargo_id" />
+          </Key>
+          <Property Type="String" Name="Cargo_id" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Estado_id" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Categoria_Auxiliar">
+          <Key>
+            <PropertyRef Name="Categoria_Auxiliar_Id" />
+          </Key>
+          <Property Type="String" Name="Categoria_Auxiliar_Id" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Categoria_Auxiliar2">
+          <Key>
+            <PropertyRef Name="Categoria_Auxiliar2_Id" />
+          </Key>
+          <Property Type="String" Name="Categoria_Auxiliar2_Id" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Categoria_Auxiliar_id" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CausaIncidente">
+          <Key>
+            <PropertyRef Name="Causa_Id" />
+          </Key>
+          <Property Type="String" Name="Causa_Id" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Causa_Name" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Tipo" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Estado" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CodigoGenerado">
+          <Key>
+            <PropertyRef Name="Generado_Id" />
+          </Key>
+          <Property Type="String" Name="Generado_Id" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha" />
+        </EntityType>
+        <EntityType Name="File_Accion">
+          <Key>
+            <PropertyRef Name="FileA_Id" />
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Accion_Id" />
+          </Key>
+          <Property Type="String" Name="FileA_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Incidente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Accion_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="File_NameI" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="File_URL" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha_Registro" />
+        </EntityType>
+        <EntityType Name="File_Incidencia">
+          <Key>
+            <PropertyRef Name="FileI_Id" />
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Codigo_Gen" />
+          </Key>
+          <Property Type="String" Name="FileI_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Incidente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Codigo_Gen" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="File_NameI" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="File_URL" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha_Registro" />
+        </EntityType>
+        <EntityType Name="File_Osigermin">
+          <Key>
+            <PropertyRef Name="FileI_Id" />
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Tipo" />
+          </Key>
+          <Property Type="String" Name="FileI_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Incidente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Tipo" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="File_NameI" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="File_URL" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha_Registro" />
+        </EntityType>
+        <EntityType Name="Gerentes">
+          <Key>
+            <PropertyRef Name="Gerente_Id" />
+          </Key>
+          <Property Type="String" Name="Gerente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Apellido_Paterno" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Apellido_Materno" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Nombres" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Area_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GerenciaDes" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Correo" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Informar" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Codigo_LG" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Estado" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Intensidad">
+          <Key>
+            <PropertyRef Name="Intensidad_Id" />
+          </Key>
+          <Property Type="String" Name="Intensidad_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ReportarGerencia" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RH_Area">
+          <Key>
+            <PropertyRef Name="Area_Id" />
+          </Key>
+          <Property Type="String" Name="Area_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Direccion" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Origen">
+          <Key>
+            <PropertyRef Name="Origen_Id" />
+          </Key>
+          <Property Type="String" Name="Origen_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Parametros_Sistema">
+          <Key>
+            <PropertyRef Name="Parametro_Id" />
+          </Key>
+          <Property Type="Int32" Name="Parametro_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Nombre" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Valor" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Personal">
+          <Key>
+            <PropertyRef Name="Personal_Id" />
+          </Key>
+          <Property Type="String" Name="Personal_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Planilla_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Apellido_Paterno" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Apellido_Materno" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Nombres" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="Fecha_Nacimiento" />
+          <Property Type="String" Name="Nro_Doc" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="email" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Cargo_Id" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Area_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Categoria_Auxiliar_Id" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Categoria_Auxiliar2_Id" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CodigoLG" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Estado_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RolSistema" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Planilla">
+          <Key>
+            <PropertyRef Name="Planilla_Id" />
+          </Key>
+          <Property Type="String" Name="Planilla_Id" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Estado_Id" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Procedencia">
+          <Key>
+            <PropertyRef Name="Procedencia_Id" />
+          </Key>
+          <Property Type="String" Name="Procedencia_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Severidad">
+          <Key>
+            <PropertyRef Name="Severidad_Id" />
+          </Key>
+          <Property Type="String" Name="Severidad_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="Tipo_Id" />
+          </Key>
+          <Property Type="String" Name="Tipo_Id" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TipoIncidente">
+          <Key>
+            <PropertyRef Name="TipoI_Id" />
+          </Key>
+          <Property Type="String" Name="TipoI_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Personal_Id" />
+          </Key>
+          <Property Type="String" Name="Name" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Password" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Estado" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Personal_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="AfectadoInc">
+          <Key>
+            <PropertyRef Name="Afec_Id" />
+          </Key>
+          <Property Type="String" Name="Afec_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ReporteIncidente">
+          <Key>
+            <PropertyRef Name="Incidente_Id" />
+          </Key>
+          <Property Type="String" Name="Incidente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Personal_Registro" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Area_Id" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Categoria_Auxiliar_Id" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Categoria_Auxiliar2_Id" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Actividad_Propia" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Actividad_Rutinaria" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Intensidad_Id" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Informar_Gerencia" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Informar_Osigermin" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaHora_Incidente" />
+          <Property Type="DateTime" Name="FechaHora_Reporte" />
+          <Property Type="String" Name="Lugar_Incidente" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Tipo" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Origen" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Severidad_Id" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LesionesPerdidas" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PosiblesCausas" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="AccionInmediata" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Estado_Id" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SendMailGerencia" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SendPreliminar" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SendFinal" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TipoI_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Afec_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CapacitacionIncidente" Relationship="SIS_INCIDENCIAModel.FK_REPINCIDENCIA" FromRole="ReporteIncidente" ToRole="CapacitacionIncidente" />
+        </EntityType>
+        <EntityType Name="CausaReporte_Detalle">
+          <Key>
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Causa_Id" />
+          </Key>
+          <Property Type="String" Name="Incidente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Causa_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Tipo" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FotoPersonal">
+          <Key>
+            <PropertyRef Name="Personal_Id" />
+          </Key>
+          <Property Type="String" Name="Personal_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NameFoto" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UrlFot" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ComentGerencia">
+          <Key>
+            <PropertyRef Name="Incidente_Id" />
+            <PropertyRef Name="Gerente_Id" />
+            <PropertyRef Name="Coment_Id" />
+          </Key>
+          <Property Type="String" Name="Incidente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Gerente_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Coment_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EventoComentario" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Comentario" MaxLength="600" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaRegistro" />
+        </EntityType>
+        <EntityType Name="CapacitacionIncidente">
+          <Key>
+            <PropertyRef Name="Capacitacion_Id" />
+          </Key>
+          <Property Type="String" Name="Capacitacion_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Incidente_Id" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Observaciones" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaRegistro" />
+          <Property Type="String" Name="Estado" MaxLength="2" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="RealizaCapacitacion" Relationship="SIS_INCIDENCIAModel.FK_REALIZA_REPINCIDENCIA" FromRole="CapacitacionIncidente" ToRole="RealizaCapacitacion" />
+          <NavigationProperty Name="ReporteIncidente" Relationship="SIS_INCIDENCIAModel.FK_REPINCIDENCIA" FromRole="CapacitacionIncidente" ToRole="ReporteIncidente" />
+        </EntityType>
+        <EntityType Name="File_ReCapacitacion">
+          <Key>
+            <PropertyRef Name="FileR_Id" />
+            <PropertyRef Name="Realizacion_Id" />
+            <PropertyRef Name="Capacitacion_Id" />
+          </Key>
+          <Property Type="String" Name="FileR_Id" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Realizacion_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Capacitacion_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NameFile" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RutaFile" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaRegistro" />
+          <Property Type="String" Name="Estado" MaxLength="2" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RealizaCapacitacion">
+          <Key>
+            <PropertyRef Name="Realizacion_Id" />
+            <PropertyRef Name="Capacitacion_Id" />
+          </Key>
+          <Property Type="String" Name="Realizacion_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Capacitacion_Id" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Area_Id" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Responsable_Id" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Observaciones" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaRegistro" />
+          <Property Type="String" Name="Estado" MaxLength="2" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CapacitacionIncidente" Relationship="SIS_INCIDENCIAModel.FK_REALIZA_REPINCIDENCIA" FromRole="RealizaCapacitacion" ToRole="CapacitacionIncidente" />
+        </EntityType>
+        <Association Name="FK_REALIZA_REPINCIDENCIA">
+          <End Type="SIS_INCIDENCIAModel.CapacitacionIncidente" Role="CapacitacionIncidente" Multiplicity="1" />
+          <End Type="SIS_INCIDENCIAModel.RealizaCapacitacion" Role="RealizaCapacitacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CapacitacionIncidente">
+              <PropertyRef Name="Capacitacion_Id" />
+            </Principal>
+            <Dependent Role="RealizaCapacitacion">
+              <PropertyRef Name="Capacitacion_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REPINCIDENCIA">
+          <End Type="SIS_INCIDENCIAModel.ReporteIncidente" Role="ReporteIncidente" Multiplicity="0..1" />
+          <End Type="SIS_INCIDENCIAModel.CapacitacionIncidente" Role="CapacitacionIncidente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ReporteIncidente">
+              <PropertyRef Name="Incidente_Id" />
+            </Principal>
+            <Dependent Role="CapacitacionIncidente">
+              <PropertyRef Name="Incidente_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SIS_INCIDENCIAModelStoreContainer" CdmEntityContainer="ContextMaestro">
+          <EntitySetMapping Name="AccionCorrectiva">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.AccionCorrectiva">
+              <MappingFragment StoreEntitySet="AccionCorrectiva">
+                <ScalarProperty Name="Estado_Id" ColumnName="Estado_Id" />
+                <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+                <ScalarProperty Name="FechaIni" ColumnName="FechaIni" />
+                <ScalarProperty Name="Responsable_Id" ColumnName="Responsable_Id" />
+                <ScalarProperty Name="Tipo_Responsable" ColumnName="Tipo_Responsable" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+                <ScalarProperty Name="Accion_Id" ColumnName="Accion_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cargo">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Cargo">
+              <MappingFragment StoreEntitySet="Cargo">
+                <ScalarProperty Name="Estado_id" ColumnName="Estado_id" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Cargo_id" ColumnName="Cargo_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categoria_Auxiliar">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Categoria_Auxiliar">
+              <MappingFragment StoreEntitySet="Categoria_Auxiliar">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Categoria_Auxiliar_Id" ColumnName="Categoria_Auxiliar_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categoria_Auxiliar2">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Categoria_Auxiliar2">
+              <MappingFragment StoreEntitySet="Categoria_Auxiliar2">
+                <ScalarProperty Name="Categoria_Auxiliar_id" ColumnName="Categoria_Auxiliar_id" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Categoria_Auxiliar2_Id" ColumnName="Categoria_Auxiliar2_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CausaIncidente">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.CausaIncidente">
+              <MappingFragment StoreEntitySet="CausaIncidente">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Causa_Name" ColumnName="Causa_Name" />
+                <ScalarProperty Name="Causa_Id" ColumnName="Causa_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CodigoGenerado">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.CodigoGenerado">
+              <MappingFragment StoreEntitySet="CodigoGenerado">
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Generado_Id" ColumnName="Generado_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="File_Accion">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.File_Accion">
+              <MappingFragment StoreEntitySet="File_Accion">
+                <ScalarProperty Name="Fecha_Registro" ColumnName="Fecha_Registro" />
+                <ScalarProperty Name="File_URL" ColumnName="File_URL" />
+                <ScalarProperty Name="File_NameI" ColumnName="File_NameI" />
+                <ScalarProperty Name="Accion_Id" ColumnName="Accion_Id" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+                <ScalarProperty Name="FileA_Id" ColumnName="FileA_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="File_Incidencia">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.File_Incidencia">
+              <MappingFragment StoreEntitySet="File_Incidencia">
+                <ScalarProperty Name="Fecha_Registro" ColumnName="Fecha_Registro" />
+                <ScalarProperty Name="File_URL" ColumnName="File_URL" />
+                <ScalarProperty Name="File_NameI" ColumnName="File_NameI" />
+                <ScalarProperty Name="Codigo_Gen" ColumnName="Codigo_Gen" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+                <ScalarProperty Name="FileI_Id" ColumnName="FileI_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="File_Osigermin">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.File_Osigermin">
+              <MappingFragment StoreEntitySet="File_Osigermin">
+                <ScalarProperty Name="Fecha_Registro" ColumnName="Fecha_Registro" />
+                <ScalarProperty Name="File_URL" ColumnName="File_URL" />
+                <ScalarProperty Name="File_NameI" ColumnName="File_NameI" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+                <ScalarProperty Name="FileI_Id" ColumnName="FileI_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Gerentes">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Gerentes">
+              <MappingFragment StoreEntitySet="Gerentes">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Codigo_LG" ColumnName="Codigo_LG" />
+                <ScalarProperty Name="Informar" ColumnName="Informar" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="GerenciaDes" ColumnName="GerenciaDes" />
+                <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellido_Materno" ColumnName="Apellido_Materno" />
+                <ScalarProperty Name="Apellido_Paterno" ColumnName="Apellido_Paterno" />
+                <ScalarProperty Name="Gerente_Id" ColumnName="Gerente_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Intensidad">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Intensidad">
+              <MappingFragment StoreEntitySet="Intensidad">
+                <ScalarProperty Name="ReportarGerencia" ColumnName="ReportarGerencia" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Intensidad_Id" ColumnName="Intensidad_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RH_Area">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.RH_Area">
+              <MappingFragment StoreEntitySet="RH_Area">
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Origen">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Origen">
+              <MappingFragment StoreEntitySet="Origen">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Origen_Id" ColumnName="Origen_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parametros_Sistema">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Parametros_Sistema">
+              <MappingFragment StoreEntitySet="Parametros_Sistema">
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Parametro_Id" ColumnName="Parametro_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personal">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Personal">
+              <MappingFragment StoreEntitySet="Personal">
+                <ScalarProperty Name="RolSistema" ColumnName="RolSistema" />
+                <ScalarProperty Name="Estado_Id" ColumnName="Estado_Id" />
+                <ScalarProperty Name="CodigoLG" ColumnName="CodigoLG" />
+                <ScalarProperty Name="Categoria_Auxiliar2_Id" ColumnName="Categoria_Auxiliar2_Id" />
+                <ScalarProperty Name="Categoria_Auxiliar_Id" ColumnName="Categoria_Auxiliar_Id" />
+                <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+                <ScalarProperty Name="Cargo_Id" ColumnName="Cargo_Id" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="Nro_Doc" ColumnName="Nro_Doc" />
+                <ScalarProperty Name="Fecha_Nacimiento" ColumnName="Fecha_Nacimiento" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellido_Materno" ColumnName="Apellido_Materno" />
+                <ScalarProperty Name="Apellido_Paterno" ColumnName="Apellido_Paterno" />
+                <ScalarProperty Name="Planilla_Id" ColumnName="Planilla_Id" />
+                <ScalarProperty Name="Personal_Id" ColumnName="Personal_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Planilla">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Planilla">
+              <MappingFragment StoreEntitySet="Planilla">
+                <ScalarProperty Name="Estado_Id" ColumnName="Estado_Id" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Planilla_Id" ColumnName="Planilla_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Procedencia">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Procedencia">
+              <MappingFragment StoreEntitySet="Procedencia">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Procedencia_Id" ColumnName="Procedencia_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Severidad">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Severidad">
+              <MappingFragment StoreEntitySet="Severidad">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Severidad_Id" ColumnName="Severidad_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipo">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Tipo">
+              <MappingFragment StoreEntitySet="Tipo">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Tipo_Id" ColumnName="Tipo_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoIncidente">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.TipoIncidente">
+              <MappingFragment StoreEntitySet="TipoIncidente">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="TipoI_Id" ColumnName="TipoI_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="Personal_Id" ColumnName="Personal_Id" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AfectadoInc">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.AfectadoInc">
+              <MappingFragment StoreEntitySet="AfectadoInc">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Afec_Id" ColumnName="Afec_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ReporteIncidente">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.ReporteIncidente">
+              <MappingFragment StoreEntitySet="ReporteIncidente">
+                <ScalarProperty Name="Afec_Id" ColumnName="Afec_Id" />
+                <ScalarProperty Name="TipoI_Id" ColumnName="TipoI_Id" />
+                <ScalarProperty Name="SendFinal" ColumnName="SendFinal" />
+                <ScalarProperty Name="SendPreliminar" ColumnName="SendPreliminar" />
+                <ScalarProperty Name="SendMailGerencia" ColumnName="SendMailGerencia" />
+                <ScalarProperty Name="Estado_Id" ColumnName="Estado_Id" />
+                <ScalarProperty Name="AccionInmediata" ColumnName="AccionInmediata" />
+                <ScalarProperty Name="PosiblesCausas" ColumnName="PosiblesCausas" />
+                <ScalarProperty Name="LesionesPerdidas" ColumnName="LesionesPerdidas" />
+                <ScalarProperty Name="Severidad_Id" ColumnName="Severidad_Id" />
+                <ScalarProperty Name="Origen" ColumnName="Origen" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Lugar_Incidente" ColumnName="Lugar_Incidente" />
+                <ScalarProperty Name="FechaHora_Reporte" ColumnName="FechaHora_Reporte" />
+                <ScalarProperty Name="FechaHora_Incidente" ColumnName="FechaHora_Incidente" />
+                <ScalarProperty Name="Informar_Osigermin" ColumnName="Informar_Osigermin" />
+                <ScalarProperty Name="Informar_Gerencia" ColumnName="Informar_Gerencia" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Intensidad_Id" ColumnName="Intensidad_Id" />
+                <ScalarProperty Name="Actividad_Rutinaria" ColumnName="Actividad_Rutinaria" />
+                <ScalarProperty Name="Actividad_Propia" ColumnName="Actividad_Propia" />
+                <ScalarProperty Name="Categoria_Auxiliar2_Id" ColumnName="Categoria_Auxiliar2_Id" />
+                <ScalarProperty Name="Categoria_Auxiliar_Id" ColumnName="Categoria_Auxiliar_Id" />
+                <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+                <ScalarProperty Name="Personal_Registro" ColumnName="Personal_Registro" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CausaReporte_Detalle">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.CausaReporte_Detalle">
+              <MappingFragment StoreEntitySet="CausaReporte_Detalle">
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Causa_Id" ColumnName="Causa_Id" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FotoPersonal">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.FotoPersonal">
+              <MappingFragment StoreEntitySet="FotoPersonal">
+                <ScalarProperty Name="UrlFot" ColumnName="UrlFot" />
+                <ScalarProperty Name="NameFoto" ColumnName="NameFoto" />
+                <ScalarProperty Name="Personal_Id" ColumnName="Personal_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ComentGerencia">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.ComentGerencia">
+              <MappingFragment StoreEntitySet="ComentGerencia">
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+                <ScalarProperty Name="EventoComentario" ColumnName="EventoComentario" />
+                <ScalarProperty Name="Coment_Id" ColumnName="Coment_Id" />
+                <ScalarProperty Name="Gerente_Id" ColumnName="Gerente_Id" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CapacitacionIncidente">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.CapacitacionIncidente">
+              <MappingFragment StoreEntitySet="CapacitacionIncidente">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Incidente_Id" ColumnName="Incidente_Id" />
+                <ScalarProperty Name="Capacitacion_Id" ColumnName="Capacitacion_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="File_ReCapacitacion">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.File_ReCapacitacion">
+              <MappingFragment StoreEntitySet="File_ReCapacitacion">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="RutaFile" ColumnName="RutaFile" />
+                <ScalarProperty Name="NameFile" ColumnName="NameFile" />
+                <ScalarProperty Name="Capacitacion_Id" ColumnName="Capacitacion_Id" />
+                <ScalarProperty Name="Realizacion_Id" ColumnName="Realizacion_Id" />
+                <ScalarProperty Name="FileR_Id" ColumnName="FileR_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RealizaCapacitacion">
+            <EntityTypeMapping TypeName="SIS_INCIDENCIAModel.RealizaCapacitacion">
+              <MappingFragment StoreEntitySet="RealizaCapacitacion">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="Responsable_Id" ColumnName="Responsable_Id" />
+                <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+                <ScalarProperty Name="Capacitacion_Id" ColumnName="Capacitacion_Id" />
+                <ScalarProperty Name="Realizacion_Id" ColumnName="Realizacion_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="False" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="EntityDiagram">
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.AccionCorrectiva" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Cargo" Width="1.5" PointX="2.75" PointY="0.75" Height="1.5956835937500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Categoria_Auxiliar" Width="1.5" PointX="2.75" PointY="3.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Categoria_Auxiliar2" Width="1.5" PointX="4.75" PointY="0.75" Height="1.5956835937500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.CausaIncidente" Width="1.5" PointX="4.75" PointY="3.75" Height="1.9802864583333246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.CodigoGenerado" Width="1.5" PointX="6.75" PointY="0.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.File_Accion" Width="1.5" PointX="0.75" PointY="6.75" Height="2.1725878906250102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.File_Incidencia" Width="1.5" PointX="2.75" PointY="6.75" Height="2.1725878906250102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.File_Osigermin" Width="1.5" PointX="6.75" PointY="3.75" Height="2.1725878906250102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Gerentes" Width="1.5" PointX="4.75" PointY="6.75" Height="2.9417936197916674" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Intensidad" Width="1.5" PointX="6.75" PointY="6.75" Height="1.5956835937500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.RH_Area" Width="1.5" PointX="8.75" PointY="0.75" Height="1.5956835937500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Origen" Width="1.5" PointX="8.75" PointY="3.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Parametros_Sistema" Width="1.5" PointX="8.75" PointY="6.75" Height="1.7879850260416674" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Personal" Width="1.5" PointX="0.75" PointY="9.75" Height="3.9033007812500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Planilla" Width="1.5" PointX="6.75" PointY="9.75" Height="1.5956835937500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Procedencia" Width="1.5" PointX="8.75" PointY="9.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Severidad" Width="1.5" PointX="2.75" PointY="10.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Tipo" Width="1.5" PointX="10.75" PointY="7.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.TipoIncidente" Width="1.5" PointX="10.75" PointY="10.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.Usuario" Width="1.5" PointX="12.75" PointY="0.75" Height="1.7879850260416674" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.AfectadoInc" Width="1.5" PointX="11.375" PointY="3.75" Height="1.4033821614583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.ReporteIncidente" Width="1.5" PointX="5.375" PointY="12.75" Height="6.0186165364583246" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.CausaReporte_Detalle" Width="1.5" PointX="7.375" PointY="12.75" Height="1.5956835937500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.FotoPersonal" Width="1.5" PointX="13.375" PointY="3.75" Height="1.5956835937500102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.ComentGerencia" Width="1.5" PointX="13.375" PointY="6.75" Height="2.1725878906250102" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.CapacitacionIncidente" Width="1.5" PointX="7.625" PointY="15.625" Height="2.5571907552083388" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.File_ReCapacitacion" Width="1.5" PointX="13.375" PointY="9.75" Height="2.3648893229166674" />
+        <edmx:EntityTypeShape EntityType="SIS_INCIDENCIAModel.RealizaCapacitacion" Width="1.5" PointX="9.875" PointY="15.625" Height="2.5571907552083246" />
+        <edmx:AssociationConnector Association="SIS_INCIDENCIAModel.FK_REALIZA_REPINCIDENCIA">
+          <edmx:ConnectorPoint PointX="9.125" PointY="16.903595377604162" />
+          <edmx:ConnectorPoint PointX="9.875" PointY="16.903595377604162" />
+        </edmx:AssociationConnector>
+        <edmx:AssociationConnector Association="SIS_INCIDENCIAModel.FK_REPINCIDENCIA">
+          <edmx:ConnectorPoint PointX="6.875" PointY="16.903595377604169" />
+          <edmx:ConnectorPoint PointX="7.625" PointY="16.903595377604169" />
+        </edmx:AssociationConnector>
+      </edmx:Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
