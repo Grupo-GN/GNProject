@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34407.143
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNProject", "GNProject\GNProject.csproj", "{F67608EE-1F31-438C-B38E-7E7AC821222A}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -11,7 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNProject", "GNProject\GNPr
 		{408D5DF8-7601-4CEE-B88B-7E83AE303AAA} = {408D5DF8-7601-4CEE-B88B-7E83AE303AAA}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "capas\Presistence\Persistence.csproj", "{716553A8-1C7B-4763-AE75-53BFFB115731}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presistence", "capas\Presistence\Presistence.csproj", "{716553A8-1C7B-4763-AE75-53BFFB115731}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capas", "Capas", "{FF4CFBCF-CD6A-447C-81BA-B6C9867CC8FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Incidencias", "Incidencias", "{52247F47-C0AB-45FD-BDF0-A98DBF60CE1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "capas\Incidencias\BusinessLogic\BusinessLogic.csproj", "{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "capas\Incidencias\Persistence\Persistence.csproj", "{E7776E9C-AD9A-4166-B3B8-D0D88B9AAE20}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "capas", "capas", "{7A92295C-026D-4C37-978A-7E34D36B9C4B}"
 EndProject

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DABDB0B-A082-4E43-BC25-3F556DFDB248}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="oAcceso\controller_Acceso.cs" />
+    <Compile Include="oAlertas\controller_Alertas.cs" />
+    <Compile Include="oCapacitacionRealizar\controller_CapacitacionRealizar.cs" />
+    <Compile Include="oCargo\controller_Cargo.cs" />
+    <Compile Include="oCategoriaAuxiliar2\controller_CategoriaAuxiliar2.cs" />
+    <Compile Include="oCategoriaAuxiliar\controller_CategoriaAuxiliar.cs" />
+    <Compile Include="oChangePass\controller_ChangePass.cs" />
+    <Compile Include="oComentGerencia\controller_ComentGerencia.cs" />
+    <Compile Include="oConfigReporte\controller_CofigReporte.cs" />
+    <Compile Include="oEditReporteIncidentePlanta\controller_EditReportePlanta.cs" />
+    <Compile Include="oEditReporteIncidente\controller_EditReporteIncidente.cs" />
+    <Compile Include="oIndicesMultiples\controller_IndicesMultiples.cs" />
+    <Compile Include="oInformeGerencia\controller_InformeGerencia.cs" />
+    <Compile Include="oListReportes\controller_ListarReporte.cs" />
+    <Compile Include="oLocalidad\controller_Localidad.cs" />
+    <Compile Include="oLogin\controller_Login.cs" />
+    <Compile Include="oPersonal\controller_DatosPersonal.cs" />
+    <Compile Include="oPersonal\controller_Personal.cs" />
+    <Compile Include="oReporteIncidente\controller_ReporteIncidente.cs" />
+    <Compile Include="oReportes\controller_Filtros.cs" />
+    <Compile Include="oReportes\controller_HistorialMultiple.cs" />
+    <Compile Include="oRepPendientes\controller_RepPendientes.cs" />
+    <Compile Include="oSendEmail\controller_SendEmail.cs" />
+    <Compile Include="oSendOsigermin\controller_SenOsigermin.cs" />
+    <Compile Include="oViewReporte\controller_ViewReporte.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capas\Presistence\Persistence.csproj">
+      <Project>{716553a8-1c7b-4763-ae75-53bffb115731}</Project>
+      <Name>Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

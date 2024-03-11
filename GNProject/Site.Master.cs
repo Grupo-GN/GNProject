@@ -1,7 +1,9 @@
 ﻿using Capas.Portal.Negocio;
+using BusinessLogic.oLogin;
 using GNProject.Acceso;
 using GNProject.Entity.BL;
 using GNProject.Entity.Menu;
+using Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +27,7 @@ namespace GNProject
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
                     lblNomUsuario_MP.Text = ClaseGlobal.Get_nombrecompleto_usuario();
+                    this.initIncidenciaSession();
                     if (Session["tipomenu"] != null)
                     {
                         tipomenu = (int)Session["tipomenu"];
@@ -336,5 +339,21 @@ namespace GNProject
             }
             
         }
+        protected void initIncidenciaSession()
+        {
+            
+            string dni;
+            string[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+            if (arr_Usuario_Perfil.Length > 0)
+            {
+                dni = arr_Usuario_Perfil[3]; // Asigna el DNI como cadena sin necesidad de convertirlo
+                string personal_id = controller_Login.Get_Instance().getPersonalId(dni);
+                Session["loginId"] = personal_id;
+
+
+
+            }
+        }
+       
     }
 }

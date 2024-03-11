@@ -10,6 +10,7 @@ using GNProject.Acceso;
 using static Presistence.Customs.Conexion;
 using Presistence;
 using GNProject.Entity.Security;
+using BusinessLogic.oLogin;
 
 namespace GNProject.Views.Login
 {
@@ -132,6 +133,8 @@ namespace GNProject.Views.Login
                 ClientScript.RegisterStartupScript(GetType(), "hwa", "comprueba();", true);
             }
         }
+       
+
 
     }
 }

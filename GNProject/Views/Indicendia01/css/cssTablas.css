@@ -1,0 +1,140 @@
+﻿.table {
+	width: 100%;
+	border-collapse:collapse;
+	border:1px solid #2C6B8D;
+}
+
+
+
+.table thead tr th{
+	background-color:#2C6B8D;
+	height: 28px;
+	font-family:AENOR Fontana ND;
+	text-transform:uppercase;
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0px 7px;
+	margin: 20px 0px 0px;
+	text-align: left;
+	text-align:center;
+	
+}
+
+.table tbody tr td
+{
+	font-size: 12px;
+	color: #777777;
+	padding: 2px 3px;
+	border-top: 1px solid #2C6B8D;
+	border-right: 1px solid #DDDDDD;
+	text-align: left;
+	}
+.table tbody tr:hover
+{
+	background-color: #DAE5FB;
+	}
+	
+	
+.table tfoot tr td
+{
+	background-color:#2C6B8D;
+	color: #FFFFFF;
+	height: 10px;
+	padding:-7px 0 -3px 0;
+	margin:-7px 0 -3px 0;
+	text-align:right;	
+	font-size: 12px;	
+	}
+.table tfoot tr td label
+{
+	
+	color: #FFFFFF;
+
+	}
+.table tfoot tr td input[type="text"]
+{
+    color: #777777;
+    width:42px;
+    height:11px;    
+    font-family:AENOR Fontana ND; 
+    text-align:center;
+    font-weight:bold;  
+    font-size: 1em; 
+    margin:0 -2px 0 0;
+
+}	
+.table tfoot tr td input[type="button"]
+{
+	border:none;
+	color:White;
+	font-family:"open_sans_lightregular";
+	font-size:13px;
+	cursor:pointer;
+	background-color:#003958;
+
+	}	
+.table tfoot tr td input[type="button"]:hover
+{
+	transition:0.2s all ease;
+	-webkit-transition:0.2s all ease;	
+	color:White;
+	background-color:#0099ab;
+
+	}	
+
+
+
+
+/* DIALOG */
+
+.tableDialog
+{
+	width: 100%;
+	border-collapse:collapse;
+	
+	}
+
+.tableDialog tbody tr td
+{
+	font-size: 14px;
+	color: #777777;
+	padding: 2px 3px;
+	/*border-top: 1px solid #1E90FF;
+	border-right: 1px solid #DDDDDD;*/
+	text-align: left;
+	}
+	
+	
+.tableReporte
+{
+		width: 100%;
+	border-collapse:collapse;
+	/*border:1px solid #2C6B8D;*/
+	border:none;
+	max-width:100%;
+	}
+.tableReporte tbody tr td
+{	
+	font-size: 14px;
+	color: #777777;
+	padding: 2px 3px;
+	/*border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;*/
+	text-align: left;
+	
+	}
+
+	
+.tableReporte .tdTableRe
+{
+	font-size: 12px;
+	color: #777777;
+	padding: 2px 3px;
+	border-top: 1px solid #2C6B8D;
+	border-right: 1px solid #DDDDDD;
+	text-align: left;
+	}
+	
