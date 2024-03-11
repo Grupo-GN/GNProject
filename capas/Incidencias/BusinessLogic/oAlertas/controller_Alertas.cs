@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Persistence;
 using System.Collections;
+using PersistenceI;
+
 namespace BusinessLogic.oAlertas
 {
     public class controller_Alertas

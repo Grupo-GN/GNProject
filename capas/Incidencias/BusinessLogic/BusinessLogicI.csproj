@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E7776E9C-AD9A-4166-B3B8-D0D88B9AAE20}</ProjectGuid>
+    <ProjectGuid>{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Persistence</RootNamespace>
-    <AssemblyName>Persistence</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>BusinessLogicI</RootNamespace>
+    <AssemblyName>BusinessLogicI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -35,11 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,22 +45,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="eConexion\conex.cs" />
-    <Compile Include="EntityDiagram.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EntityDiagram.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="oAcceso\controller_Acceso.cs" />
+    <Compile Include="oAlertas\controller_Alertas.cs" />
+    <Compile Include="oCapacitacionRealizar\controller_CapacitacionRealizar.cs" />
+    <Compile Include="oCargo\controller_Cargo.cs" />
+    <Compile Include="oCategoriaAuxiliar2\controller_CategoriaAuxiliar2.cs" />
+    <Compile Include="oCategoriaAuxiliar\controller_CategoriaAuxiliar.cs" />
+    <Compile Include="oChangePass\controller_ChangePass.cs" />
+    <Compile Include="oComentGerencia\controller_ComentGerencia.cs" />
+    <Compile Include="oConfigReporte\controller_CofigReporte.cs" />
+    <Compile Include="oEditReporteIncidentePlanta\controller_EditReportePlanta.cs" />
+    <Compile Include="oEditReporteIncidente\controller_EditReporteIncidente.cs" />
+    <Compile Include="oIndicesMultiples\controller_IndicesMultiples.cs" />
+    <Compile Include="oInformeGerencia\controller_InformeGerencia.cs" />
+    <Compile Include="oListReportes\controller_ListarReporte.cs" />
+    <Compile Include="oLocalidad\controller_Localidad.cs" />
+    <Compile Include="oLogin\controller_Login.cs" />
+    <Compile Include="oPersonal\controller_DatosPersonal.cs" />
+    <Compile Include="oPersonal\controller_Personal.cs" />
+    <Compile Include="oReporteIncidente\controller_ReporteIncidente.cs" />
+    <Compile Include="oReportes\controller_Filtros.cs" />
+    <Compile Include="oReportes\controller_HistorialMultiple.cs" />
+    <Compile Include="oRepPendientes\controller_RepPendientes.cs" />
+    <Compile Include="oSendEmail\controller_SendEmail.cs" />
+    <Compile Include="oSendOsigermin\controller_SenOsigermin.cs" />
+    <Compile Include="oViewReporte\controller_ViewReporte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="EntityDiagram.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EntityDiagram.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
+    <ProjectReference Include="..\Persistence\PersistenceI.csproj">
+      <Project>{d1e1afe9-617b-43ab-bf9a-b2a033bbc40c}</Project>
+      <Name>PersistenceI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

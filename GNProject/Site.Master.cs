@@ -3,7 +3,7 @@ using BusinessLogic.oLogin;
 using GNProject.Acceso;
 using GNProject.Entity.BL;
 using GNProject.Entity.Menu;
-using Persistence;
+using PersistenceI;
 using System;
 using System.Collections.Generic;
 using System.Linq;

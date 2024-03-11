@@ -1,6 +1,6 @@
 ﻿using BusinessLogic.oReportes;
 using BusinessLogic.oSendEmail;
-using Persistence;
+using PersistenceI;
 using System;
 using System.Collections;
 using System.Collections.Generic;

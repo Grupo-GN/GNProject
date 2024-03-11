@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34202.233
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34407.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNProject", "GNProject\GNProject.csproj", "{F67608EE-1F31-438C-B38E-7E7AC821222A}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -17,11 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capas", "Capas", "{FF4CFBCF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Incidencias", "Incidencias", "{52247F47-C0AB-45FD-BDF0-A98DBF60CE1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "capas\Incidencias\BusinessLogic\BusinessLogic.csproj", "{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "capas\Incidencias\Persistence\Persistence.csproj", "{E7776E9C-AD9A-4166-B3B8-D0D88B9AAE20}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "capas", "capas", "{7A92295C-026D-4C37-978A-7E34D36B9C4B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "capas (2)", "capas (2)", "{7A92295C-026D-4C37-978A-7E34D36B9C4B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "portal", "portal", "{00D90FBA-B5F7-487A-94AB-A2F7B6BDC11D}"
 EndProject
@@ -47,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrlDocumentos.BL", "capas\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrlDocumentos.DA", "capas\ctrlDoc\CtrlDocumentos.DA\CtrlDocumentos.DA.csproj", "{408D5DF8-7601-4CEE-B88B-7E83AE303AAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicI", "capas\Incidencias\BusinessLogic\BusinessLogicI.csproj", "{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenceI", "capas\Incidencias\Persistence\PersistenceI.csproj", "{D1E1AFE9-617B-43AB-BF9A-B2A033BBC40C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{716553A8-1C7B-4763-AE75-53BFFB115731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{716553A8-1C7B-4763-AE75-53BFFB115731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{716553A8-1C7B-4763-AE75-53BFFB115731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7776E9C-AD9A-4166-B3B8-D0D88B9AAE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7776E9C-AD9A-4166-B3B8-D0D88B9AAE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7776E9C-AD9A-4166-B3B8-D0D88B9AAE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7776E9C-AD9A-4166-B3B8-D0D88B9AAE20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DF929121-FAC1-4889-AC85-65A4260B7744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF929121-FAC1-4889-AC85-65A4260B7744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF929121-FAC1-4889-AC85-65A4260B7744}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -97,6 +103,14 @@ Global
 		{408D5DF8-7601-4CEE-B88B-7E83AE303AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{408D5DF8-7601-4CEE-B88B-7E83AE303AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{408D5DF8-7601-4CEE-B88B-7E83AE303AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E1AFE9-617B-43AB-BF9A-B2A033BBC40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E1AFE9-617B-43AB-BF9A-B2A033BBC40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E1AFE9-617B-43AB-BF9A-B2A033BBC40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E1AFE9-617B-43AB-BF9A-B2A033BBC40C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +128,8 @@ Global
 		{DBE59363-AC46-4CFF-98F8-430EB1D35E43} = {E3CDC33F-0C85-4885-9F30-A3528945D021}
 		{268E6881-6668-4009-A0B6-A00EF3E32EBF} = {E3CDC33F-0C85-4885-9F30-A3528945D021}
 		{408D5DF8-7601-4CEE-B88B-7E83AE303AAA} = {E3CDC33F-0C85-4885-9F30-A3528945D021}
+		{6F359DE6-9E18-4CA0-9D54-59C96F50F3F5} = {52247F47-C0AB-45FD-BDF0-A98DBF60CE1F}
+		{D1E1AFE9-617B-43AB-BF9A-B2A033BBC40C} = {52247F47-C0AB-45FD-BDF0-A98DBF60CE1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB56270B-96DD-4177-B0D6-E7A12D30DF03}

@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Persistence;
+using PersistenceI;
 using System.Collections;
 
 namespace GNProject.Views.Indicendia01.Server.pCargo

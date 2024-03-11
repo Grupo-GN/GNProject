@@ -3,7 +3,7 @@ using BusinessLogic.oEditReporteIncidente;
 using BusinessLogic.oEditReporteIncidentePlanta;
 using BusinessLogic.oPersonal;
 using BusinessLogic.oReporteIncidente;
-using Persistence;
+using PersistenceI;
 using System;
 using System.Collections;
 using System.Collections.Generic;

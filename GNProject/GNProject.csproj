@@ -541,6 +541,150 @@
     <Content Include="Views\ctrlDoc\Maestros\MntSecciones.aspx" />
     <Content Include="Views\ctrlDoc\Maestros\MntTipoContrato.aspx" />
     <Content Include="Views\ctrlDoc\Reportes\FrmPrint.aspx" />
+    <Content Include="Views\Indicendia01\css\cssHerramientas.css" />
+    <Content Include="Views\Indicendia01\css\cssReporte.css" />
+    <Content Include="Views\Indicendia01\css\cssTablas.css" />
+    <Content Include="Views\Indicendia01\css\login.css" />
+    <Content Include="Views\Indicendia01\fonts\pictos-regular-webfont.svg" />
+    <Content Include="Views\Indicendia01\FotosPersonal\000567.jpeg" />
+    <Content Include="Views\Indicendia01\FotosPersonal\000773.jpeg" />
+    <Content Include="Views\Indicendia01\FotosPersonal\000780.jpeg" />
+    <Content Include="Views\Indicendia01\FotosPersonal\UserNoPhoto.png" />
+    <Content Include="Views\Indicendia01\icon\Activar.ico" />
+    <Content Include="Views\Indicendia01\icon\aprobar.ico" />
+    <Content Include="Views\Indicendia01\icon\cofig.ico" />
+    <Content Include="Views\Indicendia01\icon\Delete1.ico" />
+    <Content Include="Views\Indicendia01\icon\Desactivar.ico" />
+    <Content Include="Views\Indicendia01\icon\Detalis.ico" />
+    <Content Include="Views\Indicendia01\icon\filter.ico" />
+    <Content Include="Views\Indicendia01\icon\filter2.png" />
+    <Content Include="Views\Indicendia01\icon\osigermin.ico" />
+    <Content Include="Views\Indicendia01\icon\pencilEdit1.ico" />
+    <Content Include="Views\Indicendia01\icon\pencilEdit2.ico" />
+    <Content Include="Views\Indicendia01\icon\preliminar.ico" />
+    <Content Include="Views\Indicendia01\icon\process.ico" />
+    <Content Include="Views\Indicendia01\icon\process2.ico" />
+    <Content Include="Views\Indicendia01\icon\process3.ico" />
+    <Content Include="Views\Indicendia01\icon\upFile.ico" />
+    <Content Include="Views\Indicendia01\icon\valaccion.ico" />
+    <Content Include="Views\Indicendia01\icon\Valida.ico" />
+    <Content Include="Views\Indicendia01\img\LimagasLogo.png" />
+    <Content Include="Views\Indicendia01\img\OsigerminLogon.png" />
+    <Content Include="Views\Indicendia01\jquery1.10\jquery-1.10.2.js" />
+    <Content Include="Views\Indicendia01\jquery1.10\jquery-1.10.2.min.js" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\animated-overlay.gif" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_diagonals-medium_80_e1e1e2_40x40.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_diagonals-thick_0_aaaaaa_40x40.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_dots-small_80_ffffff_2x2.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_glass_90_e6e6e6_1x400.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-icons_080809_256x240.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Views\Indicendia01\jqueryui\css\custom-theme\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Views\Indicendia01\jqueryui\js\jquery-1.9.1.js" />
+    <Content Include="Views\Indicendia01\jqueryui\js\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Views\Indicendia01\jqueryui\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Views\Indicendia01\jsCanvas1.3\canvasjs.min.js" />
+    <Content Include="Views\Indicendia01\jsExportExcel\ScriptExportarExcel.js" />
+    <Content Include="Views\Indicendia01\jsSession\session.js" />
+    <Content Include="Views\Indicendia01\Login\Acceso.aspx" />
+    <Content Include="Views\Indicendia01\Login\Script_Acceso.js" />
+    <Content Include="Views\Indicendia01\MasterPage\HelpASP.aspx" />
+    <Content Include="Views\Indicendia01\MasterPage\img\wall1.png" />
+    <Content Include="Views\Indicendia01\MasterPage\Script\Script_AccesosGeneral.js" />
+    <Content Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesDeprobados.aspx" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesFFecha.aspx" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesFin.aspx" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\sAccionesRevisar.aspx" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\sAlertOsigermin.aspx" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\Script_AccionesDesprobados.js" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\Script_AccionesFFecha.js" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\Script_AccionesFin.js" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\Script_AccionesRevisar.js" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\Script_Nuevos.js" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\Script_Pendientes.js" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\Script_ReportesOsigermin.js" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\sNuevos.aspx" />
+    <Content Include="Views\Indicendia01\Server\pAlertas\sPendientes.aspx" />
+    <Content Include="Views\Indicendia01\Server\pCapacitacionRealizar\sCapacitacionRealizar.aspx" />
+    <Content Include="Views\Indicendia01\Server\pCargo\sCargo.aspx" />
+    <Content Include="Views\Indicendia01\Server\pCargo\Script_Cargo.js" />
+    <Content Include="Views\Indicendia01\Server\pCategoriaAuxiliar2\sCategoriaAuxiliar2.aspx" />
+    <Content Include="Views\Indicendia01\Server\pCategoriaAuxiliar2\Script_CategoriaAuxliar2.js" />
+    <Content Include="Views\Indicendia01\Server\pCategoriaAuxiliar\sCategoriaAuxiliar.aspx" />
+    <Content Include="Views\Indicendia01\Server\pCategoriaAuxiliar\Script_CategoriaAuxiliar.js" />
+    <Content Include="Views\Indicendia01\Server\pChangePass\sChangePass.aspx" />
+    <Content Include="Views\Indicendia01\Server\pChangePass\Script_ChangePass.js" />
+    <Content Include="Views\Indicendia01\Server\pComentGerencia\sComentGerencia.aspx" />
+    <Content Include="Views\Indicendia01\Server\pComentGerencia\Script_ComentGerencia.js" />
+    <Content Include="Views\Indicendia01\Server\pConfigReporte\sConfigReporte.aspx" />
+    <Content Include="Views\Indicendia01\Server\pConfigReporte\Script_ConfigReporte.js" />
+    <Content Include="Views\Indicendia01\Server\pEditFileIncidente\Script_EditFileIncidente.js" />
+    <Content Include="Views\Indicendia01\Server\pEditFileIncidente\sEditFileIncidente.aspx" />
+    <Content Include="Views\Indicendia01\Server\pEditReporteIncidente\Script_DatosCofigReporte.js" />
+    <Content Include="Views\Indicendia01\Server\pEditReporteIncidente\Script_DatosReporteFind.js" />
+    <Content Include="Views\Indicendia01\Server\pEditReporteIncidente\Script_EditarReporte_ADM.js" />
+    <Content Include="Views\Indicendia01\Server\pEditReporteIncidente\Script_EditReporteIncidente.js" />
+    <Content Include="Views\Indicendia01\Server\pEditReporteIncidente\sEditReporteIncidente.aspx" />
+    <Content Include="Views\Indicendia01\Server\pEditRepPlanta\Script_DatosCofigReporte.js" />
+    <Content Include="Views\Indicendia01\Server\pEditRepPlanta\Script_DatosReporteFind.js" />
+    <Content Include="Views\Indicendia01\Server\pEditRepPlanta\Script_EditRepPlanta.js" />
+    <Content Include="Views\Indicendia01\Server\pEditRepPlanta\sEditRepPlanta.aspx" />
+    <Content Include="Views\Indicendia01\Server\pInformeGerencia\Script_InformeGerencia.js" />
+    <Content Include="Views\Indicendia01\Server\pInformeGerencia\sInformeGerencia.aspx" />
+    <Content Include="Views\Indicendia01\Server\pListReportesPlanta\Script_ListReportesPlanta.js" />
+    <Content Include="Views\Indicendia01\Server\pListReportesPlanta\sListReportesPlanta.aspx" />
+    <Content Include="Views\Indicendia01\Server\pListReportes\ListReportes.aspx" />
+    <Content Include="Views\Indicendia01\Server\pListReportes\Script_ListReportes.js" />
+    <Content Include="Views\Indicendia01\Server\pLocalidad\Script_Localidad.js" />
+    <Content Include="Views\Indicendia01\Server\pLocalidad\sLocalidad.aspx" />
+    <Content Include="Views\Indicendia01\Server\pMoreConfigReporte\Script_AfectadoInc.js" />
+    <Content Include="Views\Indicendia01\Server\pMoreConfigReporte\Script_MoreConfigReporte.js" />
+    <Content Include="Views\Indicendia01\Server\pMoreConfigReporte\Script_TipoIncidente.js" />
+    <Content Include="Views\Indicendia01\Server\pMoreConfigReporte\sMConfigReporte.aspx" />
+    <Content Include="Views\Indicendia01\Server\pPersonal\Script_HelpDatos.js" />
+    <Content Include="Views\Indicendia01\Server\pPersonal\Script_Personal.js" />
+    <Content Include="Views\Indicendia01\Server\pPersonal\sPersonal.aspx" />
+    <Content Include="Views\Indicendia01\Server\pRealizarAccionADM\Script_RealizarAccionADM.js" />
+    <Content Include="Views\Indicendia01\Server\pRealizarAccionADM\sRealizarAccionADM.aspx" />
+    <Content Include="Views\Indicendia01\Server\pRealizarAccion\Script_RealizarAccion.js" />
+    <Content Include="Views\Indicendia01\Server\pRealizarAccion\sRealizarAccion.aspx" />
+    <Content Include="Views\Indicendia01\Server\pReporteIncidente\Script_DatosCofigReporte.js" />
+    <Content Include="Views\Indicendia01\Server\pReporteIncidente\Script_ReporteIncidente.js" />
+    <Content Include="Views\Indicendia01\Server\pReporteIncidente\sReporteIncidente.aspx" />
+    <Content Include="Views\Indicendia01\Server\pRepOsigermin\Script_RepOsigermin.js" />
+    <Content Include="Views\Indicendia01\Server\pRepOsigermin\sRepOsigermin.aspx" />
+    <Content Include="Views\Indicendia01\Server\pRepPendientesADM\Script_RepPendientesADM.js" />
+    <Content Include="Views\Indicendia01\Server\pRepPendientesADM\sRepPendientesADM.aspx" />
+    <Content Include="Views\Indicendia01\Server\pRepPendientes\Script_RepPendientes.js" />
+    <Content Include="Views\Indicendia01\Server\pRepPendientes\sRepPendientes.aspx" />
+    <Content Include="Views\Indicendia01\Server\pSendOsigermin\Script_SendFileOsigermin.js" />
+    <Content Include="Views\Indicendia01\Server\pSendOsigermin\sFileOsigermin.aspx" />
+    <Content Include="Views\Indicendia01\Server\pSendOsigermin\sSendOsigermin.aspx" />
+    <Content Include="Views\Indicendia01\Server\pSubirFileAccion\Script_SubirFileAccion.js" />
+    <Content Include="Views\Indicendia01\Server\pSubirFileAccion\sSubirFileAccion.aspx" />
+    <Content Include="Views\Indicendia01\Server\pSubirFileIncidente\Script_SubirArchivo.js" />
+    <Content Include="Views\Indicendia01\Server\pSubirFileIncidente\sSubirFile.aspx" />
+    <Content Include="Views\Indicendia01\Server\pViewReporte\Script_ViewReporte.js" />
+    <Content Include="Views\Indicendia01\Server\pViewReporte\sViewReporte.aspx" />
+    <Content Include="Views\Indicendia01\Server\Reportes\IndicesMultriples.aspx" />
+    <Content Include="Views\Indicendia01\Server\Reportes\rHistorial.aspx" />
+    <Content Include="Views\Indicendia01\Server\Reportes\Script_HistorialMultiple.js" />
+    <Content Include="Views\Indicendia01\Server\Reportes\Script_IndicesMultiples.js" />
+    <Content Include="Views\Indicendia01\Server\ViewGerencia\Script_ViewReporte.js" />
+    <Content Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx" />
+    <Content Include="Views\Indicendia01\ViewGerencia\Script_ViewReporte.js" />
+    <Content Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx" />
     <Content Include="Views\Login\Login.aspx" />
     <Content Include="Views\portal\Inicio\Default.aspx" />
     <Content Include="Views\portal\Inicio\Prueba.aspx" />
@@ -1062,6 +1206,296 @@
     <Compile Include="Views\ctrlDoc\Reportes\FrmPrint.aspx.designer.cs">
       <DependentUpon>FrmPrint.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Indicendia01\Login\Acceso.aspx.cs">
+      <DependentUpon>Acceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Login\Acceso.aspx.designer.cs">
+      <DependentUpon>Acceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\MasterPage\HelpASP.aspx.cs">
+      <DependentUpon>HelpASP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\MasterPage\HelpASP.aspx.designer.cs">
+      <DependentUpon>HelpASP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx.cs">
+      <DependentUpon>InicioSis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\Inicio\InicioSis.aspx.designer.cs">
+      <DependentUpon>InicioSis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesDeprobados.aspx.cs">
+      <DependentUpon>sAccionesDeprobados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesDeprobados.aspx.designer.cs">
+      <DependentUpon>sAccionesDeprobados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFFecha.aspx.cs">
+      <DependentUpon>sAccionesFFecha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFFecha.aspx.designer.cs">
+      <DependentUpon>sAccionesFFecha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFin.aspx.cs">
+      <DependentUpon>sAccionesFin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesFin.aspx.designer.cs">
+      <DependentUpon>sAccionesFin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesRevisar.aspx.cs">
+      <DependentUpon>sAccionesRevisar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAccionesRevisar.aspx.designer.cs">
+      <DependentUpon>sAccionesRevisar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAlertOsigermin.aspx.cs">
+      <DependentUpon>sAlertOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sAlertOsigermin.aspx.designer.cs">
+      <DependentUpon>sAlertOsigermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sNuevos.aspx.cs">
+      <DependentUpon>sNuevos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sNuevos.aspx.designer.cs">
+      <DependentUpon>sNuevos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sPendientes.aspx.cs">
+      <DependentUpon>sPendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pAlertas\sPendientes.aspx.designer.cs">
+      <DependentUpon>sPendientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCapacitacionRealizar\sCapacitacionRealizar.aspx.cs">
+      <DependentUpon>sCapacitacionRealizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCapacitacionRealizar\sCapacitacionRealizar.aspx.designer.cs">
+      <DependentUpon>sCapacitacionRealizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCargo\sCargo.aspx.cs">
+      <DependentUpon>sCargo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCargo\sCargo.aspx.designer.cs">
+      <DependentUpon>sCargo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar2\sCategoriaAuxiliar2.aspx.cs">
+      <DependentUpon>sCategoriaAuxiliar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar2\sCategoriaAuxiliar2.aspx.designer.cs">
+      <DependentUpon>sCategoriaAuxiliar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar\sCategoriaAuxiliar.aspx.cs">
+      <DependentUpon>sCategoriaAuxiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pCategoriaAuxiliar\sCategoriaAuxiliar.aspx.designer.cs">
+      <DependentUpon>sCategoriaAuxiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pChangePass\sChangePass.aspx.cs">
+      <DependentUpon>sChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pChangePass\sChangePass.aspx.designer.cs">
+      <DependentUpon>sChangePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pComentGerencia\sComentGerencia.aspx.cs">
+      <DependentUpon>sComentGerencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pComentGerencia\sComentGerencia.aspx.designer.cs">
+      <DependentUpon>sComentGerencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pConfigReporte\sConfigReporte.aspx.cs">
+      <DependentUpon>sConfigReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pConfigReporte\sConfigReporte.aspx.designer.cs">
+      <DependentUpon>sConfigReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pEditFileIncidente\sEditFileIncidente.aspx.cs">
+      <DependentUpon>sEditFileIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pEditFileIncidente\sEditFileIncidente.aspx.designer.cs">
+      <DependentUpon>sEditFileIncidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pEditReporteIncidente\sEditReporteIncidente.aspx.cs">
+      <DependentUpon>sEditReporteIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pEditReporteIncidente\sEditReporteIncidente.aspx.designer.cs">
+      <DependentUpon>sEditReporteIncidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pEditRepPlanta\sEditRepPlanta.aspx.cs">
+      <DependentUpon>sEditRepPlanta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pEditRepPlanta\sEditRepPlanta.aspx.designer.cs">
+      <DependentUpon>sEditRepPlanta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pInformeGerencia\sInformeGerencia.aspx.cs">
+      <DependentUpon>sInformeGerencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pInformeGerencia\sInformeGerencia.aspx.designer.cs">
+      <DependentUpon>sInformeGerencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pListReportesPlanta\sListReportesPlanta.aspx.cs">
+      <DependentUpon>sListReportesPlanta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pListReportesPlanta\sListReportesPlanta.aspx.designer.cs">
+      <DependentUpon>sListReportesPlanta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pListReportes\ListReportes.aspx.cs">
+      <DependentUpon>ListReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pListReportes\ListReportes.aspx.designer.cs">
+      <DependentUpon>ListReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pLocalidad\sLocalidad.aspx.cs">
+      <DependentUpon>sLocalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pLocalidad\sLocalidad.aspx.designer.cs">
+      <DependentUpon>sLocalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pMoreConfigReporte\sMConfigReporte.aspx.cs">
+      <DependentUpon>sMConfigReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pMoreConfigReporte\sMConfigReporte.aspx.designer.cs">
+      <DependentUpon>sMConfigReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pPersonal\AjaxUploadFile.ashx.cs">
+      <DependentUpon>AjaxUploadFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pPersonal\sPersonal.aspx.cs">
+      <DependentUpon>sPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pPersonal\sPersonal.aspx.designer.cs">
+      <DependentUpon>sPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRealizarAccionADM\sRealizarAccionADM.aspx.cs">
+      <DependentUpon>sRealizarAccionADM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRealizarAccionADM\sRealizarAccionADM.aspx.designer.cs">
+      <DependentUpon>sRealizarAccionADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRealizarAccion\sRealizarAccion.aspx.cs">
+      <DependentUpon>sRealizarAccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRealizarAccion\sRealizarAccion.aspx.designer.cs">
+      <DependentUpon>sRealizarAccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pReporteIncidente\sReporteIncidente.aspx.cs">
+      <DependentUpon>sReporteIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pReporteIncidente\sReporteIncidente.aspx.designer.cs">
+      <DependentUpon>sReporteIncidente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRepOsigermin\sRepOsigermin.aspx.cs">
+      <DependentUpon>sRepOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRepOsigermin\sRepOsigermin.aspx.designer.cs">
+      <DependentUpon>sRepOsigermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRepPendientesADM\sRepPendientesADM.aspx.cs">
+      <DependentUpon>sRepPendientesADM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRepPendientesADM\sRepPendientesADM.aspx.designer.cs">
+      <DependentUpon>sRepPendientesADM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRepPendientes\sRepPendientes.aspx.cs">
+      <DependentUpon>sRepPendientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pRepPendientes\sRepPendientes.aspx.designer.cs">
+      <DependentUpon>sRepPendientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sFileOsigermin.aspx.cs">
+      <DependentUpon>sFileOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sFileOsigermin.aspx.designer.cs">
+      <DependentUpon>sFileOsigermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sSendOsigermin.aspx.cs">
+      <DependentUpon>sSendOsigermin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSendOsigermin\sSendOsigermin.aspx.designer.cs">
+      <DependentUpon>sSendOsigermin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSubirFileAccion\sSubirFileAccion.aspx.cs">
+      <DependentUpon>sSubirFileAccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSubirFileAccion\sSubirFileAccion.aspx.designer.cs">
+      <DependentUpon>sSubirFileAccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSubirFileIncidente\sSubirFile.aspx.cs">
+      <DependentUpon>sSubirFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pSubirFileIncidente\sSubirFile.aspx.designer.cs">
+      <DependentUpon>sSubirFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pViewReporte\sViewReporte.aspx.cs">
+      <DependentUpon>sViewReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\pViewReporte\sViewReporte.aspx.designer.cs">
+      <DependentUpon>sViewReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\Reportes\IndicesMultriples.aspx.cs">
+      <DependentUpon>IndicesMultriples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\Reportes\IndicesMultriples.aspx.designer.cs">
+      <DependentUpon>IndicesMultriples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\Reportes\rHistorial.aspx.cs">
+      <DependentUpon>rHistorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\Reportes\rHistorial.aspx.designer.cs">
+      <DependentUpon>rHistorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx.cs">
+      <DependentUpon>ViewReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\Server\ViewGerencia\ViewReporte.aspx.designer.cs">
+      <DependentUpon>ViewReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx.cs">
+      <DependentUpon>ViewReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Indicendia01\ViewGerencia\ViewReporte.aspx.designer.cs">
+      <DependentUpon>ViewReporte.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1473,6 +1907,14 @@
     <Content Include="Views\ctrlDoc\nicUpload.ashx" />
     <Content Include="Views\ctrlDoc\Reportes\rptSegDocumentos.rdlc" />
     <Content Include="Views\ctrlDoc\Reportes\rptSegDocumentos_Det.rdlc" />
+    <Content Include="Views\Indicendia01\fonts\fontLogin.woff" />
+    <Content Include="Views\Indicendia01\fonts\pictos-regular-webfont.otf" />
+    <Content Include="Views\Indicendia01\fonts\pictos-regular-webfont.ttf" />
+    <Content Include="Views\Indicendia01\Manuales\Manual de Usuario Administrador_Sistema de Incidencia.docx" />
+    <Content Include="Views\Indicendia01\Manuales\Manual de Usuario Administrador_Sistema de Incidencia.pdf" />
+    <Content Include="Views\Indicendia01\Manuales\Manual de Usuario Jefe_Sistema de Incidencia.docx" />
+    <Content Include="Views\Indicendia01\Manuales\Manual de Usuario Jefe_Sistema de Incidencia.pdf" />
+    <Content Include="Views\Indicendia01\Server\pPersonal\AjaxUploadFile.ashx" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -1504,6 +1946,14 @@
     <ProjectReference Include="..\capas\ctrlDoc\CtrlDocumentos.DA\CtrlDocumentos.DA.csproj">
       <Project>{408d5df8-7601-4cee-b88b-7e83ae303aaa}</Project>
       <Name>CtrlDocumentos.DA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\Incidencias\BusinessLogic\BusinessLogicI.csproj">
+      <Project>{6f359de6-9e18-4ca0-9d54-59c96f50f3f5}</Project>
+      <Name>BusinessLogicI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\Incidencias\Persistence\PersistenceI.csproj">
+      <Project>{d1e1afe9-617b-43ab-bf9a-b2a033bbc40c}</Project>
+      <Name>PersistenceI</Name>
     </ProjectReference>
     <ProjectReference Include="..\capas\portal\Entidad\Entidad.csproj">
       <Project>{024c6ee5-3576-4259-bb48-00aa9208b820}</Project>

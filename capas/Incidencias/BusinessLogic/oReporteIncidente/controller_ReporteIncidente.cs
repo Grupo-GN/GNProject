@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using Persistence.eConexion;
 using System.Data;
 using System.Collections;
-
+using PersistenceI;
 
 namespace BusinessLogic.oReporteIncidente
 {

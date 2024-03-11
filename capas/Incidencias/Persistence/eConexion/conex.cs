@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web.Configuration;
 namespace Persistence.eConexion
 {
     public class conex
@@ -20,7 +24,10 @@ namespace Persistence.eConexion
 
         private static string buscaConexion()
         {
-            string cadena = System.Configuration.ConfigurationManager.ConnectionStrings["ContextEntityDiagram"].ConnectionString;
+            String[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+            String no_ruc = arr_Usuario_Perfil[5].ToString();
+            no_ruc = "ContextEntityDiagram_" + no_ruc;
+            string cadena = System.Configuration.ConfigurationManager.ConnectionStrings[no_ruc].ConnectionString;
             int extraer = cadena.IndexOf("data source", 0);
             string nuevaCadena = Mid(cadena, extraer, cadena.Length - extraer);
             nuevaCadena = nuevaCadena.Replace(";App=EntityFramework", "");

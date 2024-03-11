@@ -5,9 +5,10 @@ using System.Text;
 using System.Collections;
 using System.Data;
 using System.Data.SqlClient;
-using Persistence;
-using Persistence.eConexion;
+using PersistenceI;
 using BusinessLogic.oSendEmail;
+using Persistence.eConexion;
+
 namespace BusinessLogic.oEditReporteIncidente
 {
     public class controller_EditReporteIncidente

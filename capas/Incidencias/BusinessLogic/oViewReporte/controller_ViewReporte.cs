@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Collections;
 using Persistence;
+using PersistenceI;
 
 namespace BusinessLogic.oViewReporte
 {

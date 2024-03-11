@@ -8,6 +8,7 @@ using BusinessLogic.oSendEmail;
 using System.Data.SqlClient;
 using System.Data;
 using Persistence.eConexion;
+using PersistenceI;
 
 namespace BusinessLogic.oEditReporteIncidentePlanta
 {

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using Persistence;
 using System.Collections;
+using PersistenceI;
+
 namespace BusinessLogic.oListReportes
 {
     public class controller_ListarReporte

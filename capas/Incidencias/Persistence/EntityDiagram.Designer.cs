@@ -19,12 +19,12 @@ using System.Xml.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region Metadatos de relaciones en EDM
 
-[assembly: EdmRelationshipAttribute("SIS_INCIDENCIAModel", "FK_REALIZA_REPINCIDENCIA", "CapacitacionIncidente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Persistence.CapacitacionIncidente), "RealizaCapacitacion", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Persistence.RealizaCapacitacion), true)]
-[assembly: EdmRelationshipAttribute("SIS_INCIDENCIAModel", "FK_REPINCIDENCIA", "ReporteIncidente", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(Persistence.ReporteIncidente), "CapacitacionIncidente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Persistence.CapacitacionIncidente), true)]
+[assembly: EdmRelationshipAttribute("SIS_INCIDENCIAModel", "FK_REALIZA_REPINCIDENCIA", "CapacitacionIncidente", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(PersistenceI.CapacitacionIncidente), "RealizaCapacitacion", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(PersistenceI.RealizaCapacitacion), true)]
+[assembly: EdmRelationshipAttribute("SIS_INCIDENCIAModel", "FK_REPINCIDENCIA", "ReporteIncidente", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(PersistenceI.ReporteIncidente), "CapacitacionIncidente", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(PersistenceI.CapacitacionIncidente), true)]
 
 #endregion
 
-namespace Persistence
+namespace PersistenceI
 {
     #region Contextos
     
@@ -38,12 +38,17 @@ namespace Persistence
         /// <summary>
         /// Inicializa un nuevo objeto ContextMaestro usando la cadena de conexión encontrada en la sección 'ContextMaestro' del archivo de configuración de la aplicación.
         /// </summary>
-        public ContextMaestro() : base("name=ContextEntityDiagram", "ContextMaestro")
+        public ContextMaestro() : base("name=ContextEntityDiagram_"+ getruc(), "ContextMaestro")
         {
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+        private static string getruc()
+        {
+            String[] arr_Usuario_Perfil = System.Web.HttpContext.Current.User.Identity.Name.Split('|');
+            String no_ruc = arr_Usuario_Perfil[5].ToString();
+            return no_ruc;
+        }
         /// <summary>
         /// Inicializar un nuevo objeto ContextMaestro.
         /// </summary>

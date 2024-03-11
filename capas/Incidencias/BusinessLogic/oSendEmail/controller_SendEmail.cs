@@ -8,6 +8,8 @@ using Persistence.eConexion;
 using System.Data;
 using System.Data.SqlClient;
 using Persistence;
+using PersistenceI;
+
 namespace BusinessLogic.oSendEmail
 {
     public class controller_SendEmail

@@ -1,6 +1,6 @@
 ﻿using BusinessLogic.oInformeGerencia;
 using BusinessLogic.oListReportes;
-using Persistence;
+using PersistenceI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
