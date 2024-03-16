@@ -122,6 +122,7 @@ tr[role="rowheader"] th div {
 tr[role="row"] td {
     word-wrap: break-word;
     white-space: normal !important;
+
 }
 /*[FIN] - Estilo para filas de tabla JqGrid*/
 

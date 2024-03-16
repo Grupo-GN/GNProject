@@ -36,7 +36,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous" type="text/javascript"></script>
     <link href="~/Assets/Css/navbar.css" rel="stylesheet" type="text/css" />
-    <link href="~/Assets/Css/hnavbar.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Css/tables.css" rel="stylesheet" type="text/css" />
+    <%--<link href="~/Assets/Css/hnavbar.css" rel="stylesheet" type="text/css" />--%>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" type="text/javascript"></script>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
         <style type="text/css">
@@ -78,23 +79,23 @@
             </asp:ScriptManager>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-black" >
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3 slow-link" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand ps-3 slow-link" style="color:white" href="index.html">Start Bootstrap</a>
             <!-- Sidebar Toggle-->
-            <button runat="server" class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 slow-link text-warning" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <button runat="server" class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 slow-link text-warning"  id="sidebarToggle" href="#!"><i class="fas fa-bars" style="color:white"></i></button>
             <!-- Navbar Search-->
             <div class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0" runat="server">
                 <div class="input-group">   
 <%--                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />--%>
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                    <%--<button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>--%>
                 </div>
                 
             </div>
-            <asp:Label id="lblNomUsuario_MP" style="margin-left:20px;margin-right:20px;color:white;font-weight:bold;" runat="server">-</asp:Label>
+            <asp:Label id="lblNomUsuario_MP" style="margin-left:20px;margin-right:20px;color:white;font-weight:bold;font-size:20px" runat="server">-</asp:Label>
 
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw" style="color:rgb(255 193 7) !important"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
@@ -225,7 +226,7 @@
 
               <li class="nav-item dropdown slow-link">
                 <button class="nav-link  dropdown-toggle custom-btn btn-14"  type="button" typdata-bs-toggle="dropdown" aria-expanded="false">
-                  Financiero
+                  Finanzas
                 </button>
                 <ul class="dropdown-menu qwe">
                   <li><a class="dropdown-item" href="#">JP</a></li>
@@ -438,11 +439,11 @@
          <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" ID="vnav" runat="server" >
-                    <div class="sb-sidenav-menu bg-black">
+                    <div class="sb-sidenav-menu bg-white">
                         <div class="nav" id="nav11">
                             <div class="nav">
 <%-- CONTENIDO NAVBAR --%>
-       <div class="sb-sidenav-menu-heading text-danger">Interface</div>                                                                                                            
+      <%-- <div class="sb-sidenav-menu-heading text-danger">Interface</div>   --%>                                                                                                         
 	<div id="MenuAdmin" runat="server">
         <a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">             
            <div class="sb-nav-link-icon"><i class="fas fa-user-shield text-info"></i></div>                                                                                        
@@ -583,17 +584,12 @@
            <div class="sb-sidenav-collapse-arrow text-warning"><i class="fas fa-angle-down"></i></div>                                                                             
        </a>                                                                                                                                                                        
        <div class="collapse" id="collapsePages2a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
+             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
+               <a class="nav-link collapsed" href="#">Dashboard</a>                                                                                                                                                                                                                                                                                                                            
+           </nav>
            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-               <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                   JP                                                                                                                                                              
-                   <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-               </a>                                                                                                                                                                
-               <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                   <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                       <a class="nav-link" href="login.html">Usuarios</a>                                                                                                          
-                   </nav>                                                                                                                                                          
-               </div>                                                                                                                                                              
-           </nav>                                                                                                                                                                  
+               <a class="nav-link collapsed" href="#">Flujo de Caja</a>                                                                                                                                                                                                                                                                                                                            
+           </nav>     
        </div>                                                                                                                                                                      
 	<a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages3a" aria-expanded="false" aria-controls="collapsePages">           
            <div class="sb-nav-link-icon text-info"><i class="fa fa-user"></i></div>                                                                                                
@@ -682,180 +678,7 @@
                </div>                                                                                                                                                              
            </nav>                                                                                                                                                                  
        </div>
-                                
-
-
-<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordionPages">                                                                 
-     <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-             Control de Incidencia                                                                                                                                                       
-             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-         </a>         
-         
-         <div class="collapse" id="pagesCollapseAuth15" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-               <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                   <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-1" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                       Administador                                                                                                                                                     
-                       <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                   </a>         
- 
-                   <div class="collapse" id="pagesCollapseAuth15-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-                       <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-1-1" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                               ACCESO                                                                                                                                                     
-                               <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                           </a>         
-                           <div class="collapse" id="pagesCollapseAuth15-1-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                               <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                                   <a class="nav-link" href="/Views/Indicendia01/Server/pChangePass/sChangePass.aspx">Cambiar Contraseña</a>                                                                                                                                                                                                      
-                               </nav>                                                                                                                                                          
-                           </div>                                                                                                                                                              
-                       </nav>                                                                                                                                                                  
-                  </div>
-
-                  <div class="collapse" id="pagesCollapseAuth15-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-                      <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-1-2" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                              CONFIGURAR REPORTE                                                                                                                                                  
-                              <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                          </a>         
-                          <div class="collapse" id="pagesCollapseAuth15-1-2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                              <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pConfigReporte/sConfigReporte.aspx">Datos para el Reporte</a>
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pMoreConfigReporte/sMConfigReporte.aspx">Configuraciones Adicionales</a> 
-                              </nav>                                                                                                                                                          
-                          </div>                                                                                                                                                              
-                      </nav>                                                                                                                                                                  
-                 </div>
-
-                 <div class="collapse" id="pagesCollapseAuth15-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-                      <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-1-3" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                              PERSONAL                                                                                                                                                 
-                              <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                          </a>         
-                          <div class="collapse" id="pagesCollapseAuth15-1-3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                              <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pPersonal/sPersonal.aspx">Personal</a>                                                                                                                                                                                                      
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pInformeGerencia/sInformeGerencia.aspx">Gerentes</a>                                                                                                                                                                                                      
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pCargo/sCargo.aspx">Cargo</a>                                                                                                                                                                                                      
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pCategoriaAuxiliar/sCategoriaAuxiliar.aspx">Area</a>                                                                                                                                                                                                      
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pCategoriaAuxiliar2/sCategoriaAuxiliar2.aspx">Sección</a>                                                                                                                                                                                                      
-                              </nav>                                                                                                                                                          
-                          </div>                                                                                                                                                              
-                      </nav>                                                                                                                                                                  
-                 </div>
-
-
-                 <div class="collapse" id="pagesCollapseAuth15-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-                      <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-1-4" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                              UBICACION                                                                                                                                                     
-                              <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                          </a>         
-                          <div class="collapse" id="pagesCollapseAuth15-1-4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                              <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                                  <a class="nav-link" href="/Views/Indicendia01/Server/pLocalidad/sLocalidad.aspx">Localidad</a>                                                                                                                                                                                                      
-                              </nav>                                                                                                                                                          
-                          </div>                                                                                                                                                              
-                      </nav>                                                                                                                                                                  
-                 </div>
-                   
-               </nav>                                                                                                                                                                  
-          </div>   
-         
-         <div class="collapse" id="pagesCollapseAuth15" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-               <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                   <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-2" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                       Procesos                                                                                                                                                     
-                       <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                   </a>         
- 
-                   <div class="collapse" id="pagesCollapseAuth15-2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-                       <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-2-1" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                               INCIDENCIAS                                                                                                                                                     
-                               <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                           </a>         
-                           <div class="collapse" id="pagesCollapseAuth15-2-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                               <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                                   <a class="nav-link" href="/Views/Indicendia01/Server/pReporteIncidente/sReporteIncidente.aspx">Reportar Incidencia</a>                                                                                                                                                                                                      
-                                   <a class="nav-link" href="/Views/Indicendia01/Server/pListReportes/ListReportes.aspx">Todos los Reportes de Incidencia</a>                                                                                                                                                                                                      
-                                   <a class="nav-link" href="/Views/Indicendia01/Server/pRepPendientes/sRepPendientes.aspx">En Cursos como Jefe</a>                                                                                                                                                                                                      
-                                   <a class="nav-link" href="/Views/Indicendia01/Server/pRepPendientesADM/sRepPendientesADM.aspx">En Cursos como Administrador</a>                                                                                                                                                                                                      
-                               </nav>                                                                                                                                                          
-                           </div>                                                                                                                                                              
-                       </nav>                                                                                                                                                                  
-                  </div>
-               </nav>                                                                                                                                                                  
-          </div>  
-
-         <div class="collapse" id="pagesCollapseAuth15" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-               <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                   <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-3" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                       Reportes                                                                                                                                                     
-                       <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                   </a>         
- 
-                   <div class="collapse" id="pagesCollapseAuth15-3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-                       <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-3-1" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                               MULTIPLES                                                                                                                                                     
-                               <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                           </a>         
-                           <div class="collapse" id="pagesCollapseAuth15-3-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                               <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                                   <a class="nav-link" href="/Views/Indicendia01/Server/Reportes/rHistorial.aspx">Historial Multiple</a>                                                                                                                                                                                                      
-                                   <a class="nav-link" href="/Views/Indicendia01/Server/Reportes/IndicesMultriples.aspx">Indices Multiple</a>                                                                                                                                                                                                                                                                                                                                                                                                          
-                               </nav>                                                                                                                                                          
-                           </div>                                                                                                                                                              
-                       </nav>                                                                                                                                                                  
-                  </div>
-               </nav>                                                                                                                                                                  
-          </div>
-
-         <div class="collapse" id="pagesCollapseAuth15" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-               <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                   <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-4" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                       Ayuda                                                                                                                                                     
-                       <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                   </a>         
- 
-                   <div class="collapse" id="pagesCollapseAuth15-4" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                                 
-                       <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-                           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth15-4-1" aria-expanded="false" aria-controls="pagesCollapseAuth">       
-                               MANUALES                                                                                                                                                     
-                               <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-                           </a>         
-                           <div class="collapse" id="pagesCollapseAuth15-4-1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                  
-                               <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                                   <a class="nav-link" href="../Views/Indicendia01/Manuales/Manual de Usuario Administrador_Sistema de Incidencia.docx">Para el Administrador</a>                                                                                                                                                                                                      
-                                   <a class="nav-link" href="../Views/Indicendia01/Manuales/Manual de Usuario Jefe_Sistema de Incidencia.docx">Para el Jefe</a>                                                                                                                                                                                                                                                                                                                                                                                                          
-                                   <a class="nav-link" href="login.html">Como desarrollar un acción correctiva</a>                                                                                                                                                                                                                                                                                                                                                                                                          
-                               </nav>                                                                                                                                                          
-                           </div>                                                                                                                                                              
-                       </nav>                                                                                                                                                                  
-                  </div>
-               </nav>                                                                                                                                                                  
-          </div>
-
-     </nav>                                                                                                                                                                  
-</div>  
-
-	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
-           <%--<nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-               <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuthf1" aria-expanded="false" aria-controls="pagesCollapseAuth">     
-                   Planillas                                                                                                                                                       
-                   <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-               </a>                                                                                                                                                                
-               <div class="collapse" id="pagesCollapseAuthf1" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                
-                   <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                       <a class="nav-link" href="login.html">Login</a>                                                                                                             
-                       <a class="nav-link" href="register.html">Register</a>                                                                                                       
-                       <a class="nav-link" href="password.html">Forgot Password</a>                                                                                                
-                   </nav>                                                                                                                                                          
-               </div>                                                                                                                                                              
-           </nav>       --%>
+	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                  
         <asp:Literal ID="MenuPlanillas" runat="server"></asp:Literal> 
        </div>                                                                                                                                                                      
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
@@ -881,31 +704,9 @@
            <asp:Literal ID="MenuCtrlDoc" runat="server"></asp:Literal>                                                                                                                                                                 
     </div>                                                                                                                                                                      
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
-           <%--<nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-               <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuthf5" aria-expanded="false" aria-controls="pagesCollapseAuth">     
-                   Capacitacion                                                                                                                                                    
-                   <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-               </a>                                                                                                                                                                
-               <div class="collapse" id="pagesCollapseAuthf5" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                
-                   <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                       <a class="nav-link" href="login.html">Login</a>                                                                                                             
-                   </nav>                                                                                                                                                          
-               </div>                                                                                                                                                              
-           </nav> --%>
         <asp:Literal ID="MenuCapacitacion" runat="server"></asp:Literal>
        </div>                                                                                                                                                                      
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
-           <%--<nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">                                                                                           
-               <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuthf6" aria-expanded="false" aria-controls="pagesCollapseAuth">     
-                   Incidencia                                                                                                                                                      
-                   <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>                                                                                  
-               </a>                                                                                                                                                                
-               <div class="collapse" id="pagesCollapseAuthf6" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">                                                
-                   <nav class="sb-sidenav-menu-nested nav">                                                                                                                        
-                       <a class="nav-link" href="login.html">Login</a>                                                                                                             
-                   </nav>                                                                                                                                                          
-               </div>                                                                                                                                                              
-           </nav>   --%>
         <asp:Literal ID="MenuIncidencia" runat="server"></asp:Literal>
        </div>                                                                                                                                                                      
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                 
@@ -1044,8 +845,6 @@
         }
        
 
-
-
         // Obtenemos todos los enlaces de la barra de navegación
         var enlaces = document.querySelectorAll('.sb-sidenav-dark .sb-sidenav-menu .nav-link');
 
@@ -1062,7 +861,8 @@
             });
         });
 
+
+
     });
  
 </script>
-

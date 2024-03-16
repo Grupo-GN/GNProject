@@ -334,7 +334,7 @@ tr[role="rowheader"] th div {
 tr[role="row"] td {
     word-wrap: break-word;
     white-space: normal !important;
-    font-size: 12px !important;
+    font-size: 15px !important;
 }
 
 /* ui.jqgrid - Para cambiar los bordes de cada celda

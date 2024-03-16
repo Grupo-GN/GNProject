@@ -169,11 +169,11 @@ function Get_AsignarHorarioPersonas_List(Periodo_id, seccion, area_id, inicio) {
             var lengtDatos = Data.length - 1;
             for (var i = 0; i <= lengtDatos; i++) {
                 var html = '<tr>';
-                html += '<td class="tbodyLink"><input id="btnEdit' + Data[i].Personal_Id + '" type="button"  value=""  class="buttonEdit" title="Editar AsignarHorarioPersonas" /></td>';
                 html += '<td>' + Data[i].Localidad + '</td>';
                 html += '<td>' + Data[i].Seccion + '</td>';
                 html += '<td>' + Data[i].Nombres + '</td>';
                 html += '<td>' + Data[i].Horario + '</td>';
+                html += '<td class="tbodyLink"><input id="btnEdit' + Data[i].Personal_Id + '" type="button"  value=""  class="buttonEdit" title="Editar AsignarHorarioPersonas" /></td>';
                 html += '</tr>';
 
                 $(html).appendTo('#tbodyAsignarHorarioPersona');

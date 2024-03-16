@@ -6,15 +6,15 @@
             <div class="col l4 s12 titulo">Lista de Perfiles</div>
             <div class="col l8 s12" style="text-align: right;">
                 <button id="btnBuscar" type="button" onclick="fn_Buscar();" style="background: none; padding: 0 0 0 10px; border: none;">
-                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="../img/img_buttons/Busqueda-48.png" />Buscar</button>
+                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="/Views/ctrlDoc/img/img_buttons/Busqueda-48.png" />Buscar</button>
                 <button type="button" onclick="fn_Limpiar();" style="background: none; padding: 0 0 0 10px; border: none;">
-                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="../img/img_buttons/Escoba-48.png" />Limpiar</button>
+                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="/Views/ctrlDoc/img/img_buttons/Escoba-48.png" />Limpiar</button>
                 <button type="button" onclick="fn_Nuevo();" style="background: none; padding: 0 0 0 10px; border: none;">
-                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="../img/img_buttons/AñadirLista-48.png" />Nuevo</button>
+                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="/Views/ctrlDoc/img/img_buttons/AñadirLista-48.png" />Nuevo</button>
                 <button type="button" onclick="fn_Editar();" style="background: none; padding: 0 0 0 10px; border: none;">
-                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="../img/img_buttons/Editar-48.png" />Editar</button>
+                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="/Views/ctrlDoc/img/img_buttons/Editar-48.png" />Editar</button>
                 <button type="button" onclick="fn_Eliminar();" style="background: none; padding: 0 0 0 10px; border: none;">
-                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="../img/img_buttons/Cancelar-48.png" />Eliminar</button>
+                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="/Views/ctrlDoc/img/img_buttons/Cancelar-48.png" />Eliminar</button>
             </div>
         </div>
         <div class="row titulo_section">
@@ -59,9 +59,9 @@
             </div>
             <div class="col l8 s12" style="text-align: right;">
                 <button type="button" onclick="fn_Guardar();" style="background: none; padding: 0 0 0 10px; border: none;">
-                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="../img/img_buttons/Guardar-48.png" />Guardar</button>
+                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="/Views/ctrlDoc/img/img_buttons/Guardar-48.png" />Guardar</button>
                 <button type="button" onclick="fn_Volver();" style="background: none; padding: 0 0 0 10px; border: none;">
-                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="../img/img_buttons/Volver-48.png" />Volver</button>
+                    <img style="width: 30px; left: 50%; margin-left: -15px; display: block; position: relative;" src="/Views/ctrlDoc/img/img_buttons/Volver-48.png" />Volver</button>
             </div>
         </div>
         <div class="row titulo_section">

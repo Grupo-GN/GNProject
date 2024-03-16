@@ -2,6 +2,7 @@
 
 <%@ Import Namespace="GNProject.Acceso" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+     <link href="/Assets/Css/tables.css" rel="stylesheet" type="text/css" />
     <div id="pagina1">
         <div class="row linea-bottom">
             <div class="col l4 s12 titulo">Lista de Plantilla Documentos</div>
@@ -45,12 +46,13 @@
         <div class="row titulo_section">
             Resultados
         </div>
-        <div class="row" style="padding-right: 10px;">
+        <div class="row" style="padding-right: 10%;padding-left:10%;">
             <table id="grvBandeja">
             </table>
             <div id="grvBandeja_Pie">
             </div>
         </div>
+
     </div>
     <div id="pagina2" style="display: none;">
         <div class="row linea-bottom">
