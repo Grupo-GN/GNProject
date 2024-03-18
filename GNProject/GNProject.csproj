@@ -215,6 +215,7 @@
     <Content Include="Assets\Css\PortalCss\JqGrid\jquery-ui.css" />
     <Content Include="Assets\Css\PortalCss\JqGrid\ui.jqgrid.css" />
     <Content Include="Assets\Css\PortalCss\Menu.css" />
+    <Content Include="Assets\Css\PortalCss\NewStyle.css" />
     <Content Include="Assets\Css\tables.css" />
     <Content Include="Assets\images\bg.jpg" />
     <Content Include="Assets\images\imgPortal\blueslate_backgroundOVER.gif" />

@@ -31,7 +31,7 @@ namespace GNProject.Views.portal.Intranet
         {
             String Encuesta_Id = hdfID.Value;
 
-            ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/Reportes/rptResultadoEncuestas.rdlc");
+            ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/Views/portal/Reportes/rptResultadoEncuestas.rdlc");
 
             dtResultadoEncuestasTableAdapter tablaResultadoEncuestas = new dtResultadoEncuestasTableAdapter();
             dsResultadoEncuestas.dtResultadoEncuestasDataTable datosResultadoEncuestas = tablaResultadoEncuestas.GetData(Encuesta_Id);
@@ -90,7 +90,7 @@ namespace GNProject.Views.portal.Intranet
                 object filas = new
                 {
                     Encuesta_Id = obj.Encuesta_Id,
-                    Titulo = String.Format("<span class='link' title='Ver Detalle' onclick='fn_VerDetalle(&#39;{0}&#39;)'>{1}</span>", obj.Encuesta_Id, obj.Titulo),
+                    Titulo = String.Format("<span class='link-tabla' title='Ver Detalle' onclick='fn_VerDetalle(&#39;{0}&#39;)'>{1}</span>", obj.Encuesta_Id, obj.Titulo),
                     sFecha_Inicio = obj.sFecha_Inicio,
                     sFecha_Cierre = obj.sFecha_Cierre,
                     no_estado = obj.no_estado

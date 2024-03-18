@@ -200,7 +200,7 @@ namespace GNProject.Views.portal.Mantenimientos
                 String enlace_video = "<a class='link' target='_blank' href={0}{1}>{2}</a>";
                 object filas = new
                 {
-                    Accion = "<img title='Eliminar' src='/Assets/images/imgPortal/img_buttons/icono_cerrar.png' width='15px' onclick='fn_Eliminar(&#39;" + obj.Video_Id + "&#39;)'>",
+                    Accion = "<img title='Eliminar' src='/Assets/images/imgPortal/img_buttons/delete.png'class='icons-table deleteItem' width='15px' onclick='fn_Eliminar(&#39;" + obj.Video_Id + "&#39;)'>",
                     Video_Id = obj.Video_Id,
                     Titulo = obj.Titulo,
                     Nombre_Video = String.Format(enlace_video, Parametros.I_VirtualServer_Videos, obj.Nombre_Video.Replace(" ", "%20"), obj.Nombre_Video),

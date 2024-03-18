@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
@@ -36,6 +37,8 @@
             <asp:HiddenField ID="hdfUserID" runat="server" />
         </ContentTemplate>
     </asp:UpdatePanel>
+
+
     <div class="title">
         Mantenimiento de Usuarios</div>
     <br />
@@ -52,8 +55,8 @@
                         <asp:TextBox ID="txtBusca" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" />
-                        <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" OnClick="btnNuevo_Click" OnClientClick="return fn_Nuevo();" />
+                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();"class="EstiloGeneralBoton btn-buscar" />
+                        <asp:Button ID="btnNuevo" class="EstiloGeneralBoton btn-nuevo" runat="server" Text="Nuevo" OnClick="btnNuevo_Click" OnClientClick="return fn_Nuevo();" />
                     </td>
                 </tr>
             </table>
@@ -74,7 +77,7 @@
             <a href="#" onclick='return fn_Volver();'>Volver</a>
         </p>
         <hr />
-        <div style="clear: right; width: 550px">
+        <div >
             <asp:UpdatePanel ID="updTab2" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
                     <div class="Row1">
@@ -158,7 +161,7 @@
                         <div class="fl mgl10 pdt5">
                             <asp:Image ID="imgFoto" runat="server" Width="90" Height="100px" />
                             <asp:ImageButton ID="IbtnEliminarArchivo" runat="server" Width="20px" Height="25px"
-                                ImageUrl="~/img/img_buttons/icono_cerrar.png" OnClick="IbtnEliminarArchivo_Click" />
+                                ImageUrl="~/Assets/images/imgPortal/img_buttons/delete.png" OnClick="IbtnEliminarArchivo_Click" />
                         </div>
                         <div class="Clear">
                         </div>
@@ -231,10 +234,10 @@
                         </div>
                     </div>
                     <br />
-                    <p>
-                        <asp:Button ID="btnGrabar" runat="server" Text="Grabar" ValidationGroup="Valida"
+                    <p style="margin-top:16px">
+                        <asp:Button ID="btnGrabar" class="EstiloGeneralBoton btn-guardar" runat="server" Text="Grabar" ValidationGroup="Valida"
                             OnClick="btnGrabar_Click" />
-                        <asp:Button ID="btnUpdate" runat="server" ValidationGroup="Valida"
+                        <asp:Button ID="btnUpdate" class="EstiloGeneralBoton btn-actualizar" runat="server" ValidationGroup="Valida"
                             Text="Actualizar" OnClick="btnUpdate_Click" />
                     </p>
                 </ContentTemplate>
@@ -299,6 +302,9 @@
         function fn_Nuevo() {
             $("#Tab1").hide();
             $("#Tab2").show();
+
+            document.getElementById("<%= btnUpdate.ClientID %>").hide();
+            document.getElementById("<%= btnGrabar.ClientID %>").show();
             return true;
         }
         function fn_Volver() {
@@ -310,6 +316,10 @@
             document.getElementById("<%= hdfUserID.ClientID %>").value = id;
             $("#Tab1").hide();
             $("#Tab2").show();
+
+            document.getElementById("<%= btnUpdate.ClientID %>").show();
+            document.getElementById("<%= btnGrabar.ClientID %>").hide();
+
             document.getElementById("<%= btnEditar.ClientID %>").click();
         }
         function fn_Eliminar(id) {

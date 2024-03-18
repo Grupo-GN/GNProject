@@ -30,12 +30,12 @@
     font-weight: bold;
     text-align: left;    
 }
-.div_form_login
+/*.div_form_login
 {
     width: 590px;
-    height: 300px;
+    height: 300px;*/
     /*background: transparent url('../img/login_transparente.png') center top no-repeat;*/
-    background: transparent url('../img/login.png') center top no-repeat;
+    /*background: transparent url('../img/login.png') center top no-repeat;
     margin-left: 100px;
     margin-top: 120px;    
 }
@@ -43,17 +43,17 @@
 {
     padding-left: 320px;
     padding-top: 130px;
-}
-.input_login
-{
-    background: url('../img/input_login.png') left no-repeat;
-    width: 100px;
+}*/
+/*.input_login
+{*/
+    /*background: url('../img/input_login.png') left no-repeat;*/
+    /*width: 100px;
     height: 20px;
-    border: 0 none !important;
+    border: 1px solid !important;
     color: #666666 !important;
     padding-top: 3px;
     padding-left: 10px;
-}
+}*/
 /*[FIN] - Estilo para LOGIN*/
 
 #cabecera {
@@ -63,24 +63,24 @@
     width: 1000px;
     height: 100px;
 }
-#contenedor {
+/*#contenedor {
     width: 1000px;
-    margin-top: 0px;
+    margin-top: 0px;*/
     /*background: url('/Assets/images/imgPortal/contenido_ancho.png') repeat-y;*/
     /*padding-top:5px;*/
-    padding-bottom: 10px;
-}
-#pie {
+    /*padding-bottom: 10px;
+}*/
+/*#pie {
     margin: 0px;
     padding: 5px;
-    width: 100%;
+    width: 100%;*/
     /*background: url('/Assets/images/imgPortal/pie.png') no-repeat;*/
     /*height: 10px;*/
     /*color: #444;*/
-    color: #FFF;
+    /*color: #FFF;
     background-color: darkblue;
     border-radius: 0px 0px 10px 10px;
-}
+}*/
 .divPagina
 {
     text-align: left;
@@ -109,12 +109,12 @@ jquery-ui.css =>
     CSS Alternate Row: .ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary
 */
 /*Para filas de una tabla */
-table tbody tr[role="row"]
+/*table tbody tr[role="row"]
 {
     cursor: pointer;
-}
+}*/
 /*Ajusta texto de celda en cabecera y filas*/
-tr[role="rowheader"] th div {
+/*tr[role="rowheader"] th div {
     word-wrap: break-word;
     white-space: normal !important;
     height: auto !important;
@@ -122,8 +122,7 @@ tr[role="rowheader"] th div {
 tr[role="row"] td {
     word-wrap: break-word;
     white-space: normal !important;
-
-}
+}*/
 /*[FIN] - Estilo para filas de tabla JqGrid*/
 
 /*Estilo por defecto a los controles tipo TextBox*/
@@ -243,17 +242,17 @@ a:hover
 	color: #444;
 	text-decoration: underline;
 }
-.link
+/*.link
 {
     cursor: pointer;
-	color: #4682B4 !important;/*#191970*/
-	text-decoration: none !important;
+	color: #4682B4 !important;*//*#191970*/
+	/*text-decoration: none !important;
 }
 .link:hover
 {
 	color: #444 !important;
 	text-decoration: underline !important;
-}
+}*/
 .linkWeb
 {
 	color: DarkOrange !important;/*#191970*/
@@ -343,28 +342,28 @@ font-style: italic;
 /* Used for sections that need somewhat larger corners.
 ----------------------------------------------------------- */
 
-#Welcome {
+/*#Welcome {
     background-image: url(/Assets/images/imgPortal/collage_empresa/BackgroundWelvome.jpg);
     background-size: cover;
-    background-position: center; /* Ajusta la posición de la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-}
-.roundframe {
+    background-position: center;*/ /* Ajusta la posición de la imagen */
+    /*background-repeat: no-repeat;*/ /* Evita que la imagen se repita */
+/*}*/
+/*.roundframe {
     padding: 0 10px;
     background: #f5f5f5;
     border-left: 1px solid #c5c5c5;
     border-right: 1px solid #c5c5c5;
     text-align: left;
     border-radius: 10px;
-}
-.roundframe dl, .roundframe dt, .roundframe p
+}*/
+/*.roundframe dl, .roundframe dt, .roundframe p
 {
 	margin: 0;
 }
 .roundframe p
 {
 	padding: 0.5em;
-}
+}*/
 span.upperframe
 {
 	display: block;
@@ -530,19 +529,19 @@ span.lowerframe span
 /*------------------------*/
 
 /*Estilos para los detalles*/
-.rowDetalle
+/*.rowDetalle
 {
     vertical-align:top;
     border-top: solid 1px Gray;
     text-align:left
-}
-.rowDetalleSombra
+}*/
+/*.rowDetalleSombra
 {
     vertical-align:top;
     border-top: solid 1px Gray;
     background:#DCDCDC;
     text-align:left;
-}
+}*/
 
 /* Calendario */
 .calendar_Theme1 .ajax__calendar_container

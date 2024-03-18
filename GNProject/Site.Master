@@ -845,6 +845,7 @@
         }
        
 
+
         // Obtenemos todos los enlaces de la barra de navegación
         var enlaces = document.querySelectorAll('.sb-sidenav-dark .sb-sidenav-menu .nav-link');
 

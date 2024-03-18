@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
@@ -25,8 +26,8 @@
             <table>
                 <tr>
                     <td>
-                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" />
-                        <input type="button" id="btnNuevo" value="Nuevo" onclick="fn_Nuevo();" style="display:none;" />
+                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" class="EstiloGeneralBoton btn-buscar" />
+                        <input type="button" id="btnNuevo" value="Nuevo" onclick="fn_Nuevo();" class="EstiloGeneralBoton btn-nuevo"  />
                     </td>
                 </tr>
             </table>
@@ -44,7 +45,7 @@
             <a href="#" onclick='return fn_Volver();'>Volver</a>
         </p>
         <hr />
-        <div style="clear: right; width: 550px">
+        <div>
             <table style="width: 100%;">
                 <tr>
                     <td>
@@ -97,7 +98,7 @@
             </table>
             <hr />
             <p>
-                <input id="btnGrabar" type="button" value="Grabar" onclick="fn_Grabar();" />
+                <input id="btnGrabar" type="button" value="Grabar" onclick="fn_Grabar();"class="EstiloGeneralBoton btn-guardar" />
             </p>
             <table style="width:100%;" id="tblImagenes">   
                 <tr>
@@ -106,7 +107,7 @@
                     </td>
                     <td>
                         <asp:FileUpload Width="300px" ID="fuArchivo" runat="server" />
-                        <asp:Button ID="btnSubirArchivo" Text="Subir Imagen" runat="server" OnClick="btnSubirArchivo_Click" />
+                        <asp:Button ID="btnSubirArchivo" class="EstiloGeneralBoton btn-subirImagen" Text="Subir Imagen" runat="server" OnClick="btnSubirArchivo_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -186,6 +187,7 @@
             $("#Tab1").hide();
             $("#Tab2").show();
 
+            
             //Carga datos
             this.fn_LimpiarTab2();
             document.getElementById("<%= hdfID.ClientID %>").value = id;

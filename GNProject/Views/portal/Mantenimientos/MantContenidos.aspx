@@ -5,6 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
@@ -66,7 +67,7 @@
                     </div>
                     <div class="Row1">
                         <div class="col1 fl ar mgl10 pdt5">
-                            <asp:Button ID="btnSubirFoto" runat="server" Text="Subir Imagen"
+                            <asp:Button ID="btnSubirFoto" class="EstiloGeneralBoton btn-subirImagen" runat="server" Text="Subir Imagen"
                                 OnClick="btnSubirFoto_Click" />
                             <asp:Label ID="lblNombreFoto" runat="server" Visible="false"></asp:Label>
                             <p style="display: block; text-align: right; padding: 3px 0px; margin: 0px;">
@@ -85,7 +86,7 @@
                 </Triggers>
             </asp:UpdatePanel>
             <p>
-                <asp:Button ID="btnUpdate" class="button" runat="server" Text="Actualizar" ValidationGroup="Valida"
+                <asp:Button ID="btnUpdate" class="button EstiloGeneralBoton btn-actualizar" runat="server" Text="Actualizar" ValidationGroup="Valida"
                     OnClick="btnUpdate_Click" />
             </p>
         </div>

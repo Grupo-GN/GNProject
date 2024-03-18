@@ -89,7 +89,7 @@ namespace GNProject.Views.portal.Intranet
                 object filas = new
                 {
                     Calendario_Id = obj.Calendario_Id,
-                    Titulo = String.Format("<span class='link' title='Ver Detalle' onclick='fn_VerDetalle(&#39;{0}&#39;)'>{1}</span>", obj.Calendario_Id, obj.Titulo),
+                    Titulo = String.Format("<span class='link-tabla' title='Ver Detalle' onclick='fn_VerDetalle(&#39;{0}&#39;)'>{1}</span>", obj.Calendario_Id, obj.Titulo),
                     Descripcion = obj.Descripcion,
                     Ubicacion = obj.Ubicacion,
                     Area = obj.Area,

@@ -42,6 +42,15 @@ namespace GNProject.Views.portal.Intranet
         protected global::System.Web.UI.WebControls.HiddenField hdfID;
 
         /// <summary>
+        /// Control errorMessageLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl errorMessageLabel;
+
+        /// <summary>
         /// Control cboPlanilla.
         /// </summary>
         /// <remarks>

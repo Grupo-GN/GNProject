@@ -9,9 +9,9 @@ namespace GNProject
 {
     public partial class Default : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_LoadComplete(object sender, EventArgs e)
         {
-
+            Response.Redirect("/Views/portal/Inicio/Default.aspx");
         }
     }
 }

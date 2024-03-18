@@ -140,7 +140,7 @@ namespace GNProject
             String fl_con_padres = "1";
             oMenuBEList = oMenuBL.Get_MenuxPerfil(id_perfil, fl_con_padres);
             MenuCtrlDoc.Text = AddMenu(oMenuBEList, 1);
-            MenuCtrlAsis.Text = AddMenu(oMenuBEList,2);
+            MenuCtrlAsis.Text = AddMenu(oMenuBEList, 2);
             MenuPortal.Text = AddMenu(oMenuBEList, 3);
             MenuPlanillas.Text = AddMenu(oMenuBEList, 4);
             MenuCapacitacion.Text = AddMenu(oMenuBEList, 5);
@@ -337,7 +337,7 @@ namespace GNProject
                     return; // Opcionalmente puedes agregar un mensaje de registro o manejo de errores
                 }
             }
-            
+
         }
         protected void initIncidenciaSession()
         {

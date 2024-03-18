@@ -5,6 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
@@ -30,8 +31,8 @@
                 <tr>
                     <td>
                         Sistema Integrado de Gestión SIG: <select id="cboOHSAS_Busqueda"></select>
-                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" />
-                        <input type="button" id="btnNuevo" value="Nuevo" onclick="fn_Nuevo();" />
+                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();"class="EstiloGeneralBoton btn-buscar" />
+                        <input type="button" id="btnNuevo" value="Nuevo" onclick="fn_Nuevo();"class="EstiloGeneralBoton btn-nuevo" />
                     </td>
                 </tr>
             </table>
@@ -49,7 +50,7 @@
             <a href="#" onclick='return fn_Volver();'>Volver</a>
         </p>
         <hr />
-        <div style="clear: right; width: 550px">
+        <div >
             <table style="width: 100%;">
                 <tr>
                     <td>
@@ -91,7 +92,7 @@
                         <asp:FileUpload Width="300px" ID="fuArchivo" runat="server" />
                         <asp:Label ID="lblNomArchivo" runat="server" Text=""></asp:Label>
                         <asp:ImageButton ID="btnEliminarArchivo" runat="server" Width="15px" 
-                            ImageUrl="~/img/img_buttons/icono_cerrar.png" OnClientClick="return fn_EliminarArchivo();" />
+                            ImageUrl="~/Assets/images/imgPortal/img_buttons/delete.png" OnClientClick="return fn_EliminarArchivo();" />
                     </td>
                 </tr>                        
                 <tr>
@@ -115,9 +116,9 @@
             </table>
             <hr />
             <p>
-                <input id="btnGrabar" type="button" value="Grabar" onclick="fn_Grabar();" />
+                <input id="btnGrabar" type="button" value="Grabar" onclick="fn_Grabar();" class="EstiloGeneralBoton btn-guardar"/>
                 <asp:Button ID="btnSubirArchivo" runat="server" OnClick="btnSubirArchivo_Click" style="display:none;" />
-                <input id="btnUpdate" type="button" value="Actualizar" onclick="fn_Grabar();" />
+                <input id="btnUpdate" type="button" value="Actualizar" onclick="fn_Grabar();"class="EstiloGeneralBoton btn-actualizar" />
             </p>
         </div>
     </div>

@@ -5,6 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
@@ -25,7 +26,19 @@
             <asp:HiddenField ID="hdfID" runat="server" />
         </ContentTemplate>
     </asp:UpdatePanel>
-    <div class="title">
+
+    <div id="contenerdorInicioPortal" style="width:100%;position:relative">
+        <div id="errorMessageLabel" runat="server">
+            </div>
+        <div id="contenedor" >
+                <div id="Welcome" style="width:100%;height:200px;">
+                    <div id="textWelcome" style="width:100%; text-align:center;top:50px;">
+                        
+                    </div>
+                </div>
+            <div id="contenidos" >
+                <div class="roundframe vistaIntranet">
+                    <div class="title">
         <label id="lblTitle">Lista de Anuncios</label></div>
     <br />
     <div id="Tab1">
@@ -33,16 +46,16 @@
             <table>
                 <tr>
                     <td>
-                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" />
+                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" class="EstiloGeneralBoton btn-buscar" />
                     </td>
                 </tr>
             </table>
         </div>
         <br />
         <div>
-            <table id="grvBandeja">
+            <table id="grvBandeja" class="Ntable">
             </table>
-            <div id="grvBandeja_Pie">
+            <div id="grvBandeja_Pie"class="Ntable-pie">
             </div>
         </div>
     </div>
@@ -51,7 +64,7 @@
             <a href="#" onclick='return fn_Volver();'>Volver</a>
         </p>
         <hr />
-        <div style="clear: right; width: 550px">
+        <div >
             <asp:UpdatePanel ID="updTab2" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
                     <table style="width:100%;">
@@ -83,6 +96,20 @@
             </asp:UpdatePanel>
         </div>
     </div>
+
+                </div>
+            </div>
+            <div id="pie" style="width:100%">
+            <div style="text-align: center; font-size: 10px; padding-top: 0px;">
+                © <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreProyecto %> <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreEmpresa %> <%= DateTime.Now.Year.ToString() %>
+            </div>
+            <div style="text-align:right;padding-right:5px;">
+                <a class="linkWeb" href="http://www.gestiondenegociosrs.com.pe" target="_blank">Desarrollado por: Gestión de Negocios S.A.C.</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
         
     <script type="text/javascript">
         var no_pagina = "Anuncios.aspx";
@@ -91,10 +118,10 @@
         var idPieGrilla_Bandeja = "#grvBandeja_Pie";
         var strCabecera_Bandeja = ['ID Anuncio', 'Titulo', '<%=Parametros.I_Texto_CategoriaAuxiliar%>', 'Fecha'];
         var ModelCol_Bandeja = [
-            { name: 'Anuncio_Id', index: 'Anuncio_Id', width: 60, align: 'center', hidden: true },
-            { name: 'Titulo', index: 'Titulo', width: 200, align: 'left' },
-            { name: 'Area', index: 'Area', width: 95, align: 'left' },
-            { name: 'sFecha', index: 'sFecha', width: 70, align: 'center' }
+            { name: 'Anuncio_Id', index: 'Anuncio_Id', align: 'center', hidden: true },
+            { name: 'Titulo', index: 'Titulo', align: 'left' },
+            { name: 'Area', index: 'Area', align: 'left' },
+            { name: 'sFecha', index: 'sFecha', align: 'center' }
         ];
         /*[FIN] - Variables Grilla Bandeja*/
         function fn_dblClickBandeja(rowID) {
@@ -142,7 +169,8 @@
                 $("#Tab1").show();
                 $("#Tab2").hide();
                 $("#lblTitle").text("Lista de Anuncios");
-
+                //llamamos a la funcion para reposicionar pie
+                this.fn_reposicionarPie();
             }
             return false;
         }
@@ -152,6 +180,16 @@
             $("#Tab2").show();
             $("#lblTitle").text("Detalle del Anuncio");
             document.getElementById("<%= btnEditar.ClientID %>").click();
+            //llamamos a la funcion para reposicionar pie
+            this.fn_reposicionarPie();
+        }
+        this.fn_reposicionarPie();
+        function fn_reposicionarPie() {
+            //para poner el Pie debajo del contenido principal
+            var divHeightContenidos = document.getElementById("contenidos").offsetHeight;
+            var divPie = document.getElementById("pie");
+            divHeightContenidos = parseInt(divHeightContenidos) + 20;
+            divPie.style.marginTop = divHeightContenidos + "px";
         }
     </script>
 </asp:Content>

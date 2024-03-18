@@ -551,7 +551,7 @@ namespace GNProject.Views.portal.Mantenimientos
                 oJQGridJsonResponseRow.ID = (i + 1).ToString();
                 object filas = new
                 {
-                    Accion = "<img title='Editar' src='/Assets/images/imgPortal/img_buttons/icono_editar.png' width='15px' onclick='fn_Editar(&#39;" + obj.User_Id + "&#39;)'> <img title='Eliminar' src='/Assets/images/imgPortal/img_buttons/icono_cerrar.png' width='15px' onclick='fn_Eliminar(&#39;" + obj.User_Id + "&#39;)'>",
+                    Accion = "<img title='Editar' src='/Assets/images/imgPortal/img_buttons/edit.png'class='icons-table editItem' width='15px' onclick='fn_Editar(&#39;" + obj.User_Id + "&#39;)'> <img title='Eliminar' src='/Assets/images/imgPortal/img_buttons/delete.png' class='icons-table deleteItem' width='15px' onclick='fn_Eliminar(&#39;" + obj.User_Id + "&#39;)'>",
                     User_Id = obj.User_Id,
                     Nombre_Completo = obj.Nombre_Completo,
                     User_Name = obj.User_Name,
