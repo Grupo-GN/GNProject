@@ -3,9 +3,10 @@
 <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
-    <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <%--<link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />--%>
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
-    <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
+    <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" /> 
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
     <script type="text/javascript" src="/Scripts/Portal/Funciones.min.js"></script>
     <script type="text/javascript" src="/Scripts/Portal/jquery-1.11.1.min.js"></script>
@@ -70,13 +71,13 @@
         <div id="errorMessageLabel" runat="server">
             </div>
             
-    <div id="contenedor" style="position:relative;width:100%">
+    <div id="contenedor" >
                 <div id="Welcome" style="width:100%;height:200px;">
                     <div id="textWelcome" style="width:100%; text-align:center;top:50px;">
                         
                     </div>
                 </div>
-                <div id="contenidos" style="position:absolute; top:150px; left:20px">
+                <div id="contenidos" >
                     <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
                         <tr>
                             <td valign="top" id="columna1">
@@ -283,7 +284,7 @@
                             <input type="hidden" id="hdfSoloUnaOpc" />
                             <div id="divOpciones"></div>
                             <br />
-                            <input id="btnVotarEncuesta" type="button" value="Votar" onclick="fn_VotarEncuesta();" />
+                            <input id="btnVotarEncuesta" class="EstiloGeneralBoton" type="button" value="Votar" onclick="fn_VotarEncuesta();" />
                         </div>
                         <div id="divResultadoEncuesta">
                             <table style="width:100%;">

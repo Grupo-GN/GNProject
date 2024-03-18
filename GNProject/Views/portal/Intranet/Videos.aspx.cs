@@ -64,7 +64,7 @@ namespace GNProject.Views.portal.Intranet
             JQGridJsonResponseRow oJQGridJsonResponseRow;
             Int32 i = 0;
             String path = Parametros.I_FileServer_RutaVideos.Replace("~", "..");
-            String enlace_video = "<a title='Ver Video' class='link' target='_blank' href={0}{1}>{2}</a>";
+            String enlace_video = "<a title='Ver Video' class='link-tabla' target='_blank' href={0}{1}>{2}</a>";
             foreach (Capas.Portal.Entidad.Videos obj in sortedRecords)
             {
                 oJQGridJsonResponseRow = new JQGridJsonResponseRow();

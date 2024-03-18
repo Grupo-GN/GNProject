@@ -89,7 +89,7 @@ namespace GNProject.Views.portal.Mantenimientos
                 oJQGridJsonResponseRow.ID = (i + 1).ToString();
                 object filas = new
                 {
-                    Accion = "<img title='Editar' src='/Assets/images/imgPortal/img_buttons/icono_editar.png' width='15px' onclick='fn_Editar(&#39;" + obj.id_correo + "&#39;)'>",
+                    Accion = "<img title='Editar' src='/Assets/images/imgPortal/img_buttons/edit.png'class='icons-table editItem' width='15px' onclick='fn_Editar(&#39;" + obj.id_correo + "&#39;)'>",
                     id_correo = obj.id_correo,
                     co_correo = obj.co_correo,
                     no_asunto = obj.no_asunto,
@@ -123,7 +123,7 @@ namespace GNProject.Views.portal.Mantenimientos
             {
                 String[] arr_images = oCorreo.no_images.Split('|');
                 #region "INICIO - ARMA TABLA DE IMAGENES"
-                String a_HTML = "<div class='link' style='cursor:pointer;' onclick='fn_EliminarArchivo(&#39;{0}&#39;)'>Eliminar</div>";
+                String a_HTML = "<div class='link-tabla' style='cursor:pointer;' onclick='fn_EliminarArchivo(&#39;{0}&#39;)'>Eliminar</div>";
                 String img_HTML = "<img style='border: 5px solid #FFF; width:140px; height:110px;' src={0} />";
                 String table_HTML = "<table style='font-weight: bold;width: 100%;'>{0}</table>";
                 String tr_HTML = "<tr>{0}</tr>";
@@ -138,7 +138,7 @@ namespace GNProject.Views.portal.Mantenimientos
                 Int32 nu_images = arr_images.Length;
                 Int32 filas = nu_images <= 4 ? 1 : (nu_images / 4);
                 if (nu_images > 4) if ((nu_images % 4) > 0) filas += 1;
-                String path = Parametros.I_FileServer_RutaPlantillaCorreo.Replace("~", "..");
+                String path = Parametros.I_FileServer_RutaPlantillaCorreo.Replace("~", "../../../");
                 Int32 nro_item = 0;
                 for (Int32 i = 0; i < filas; i++)
                 {

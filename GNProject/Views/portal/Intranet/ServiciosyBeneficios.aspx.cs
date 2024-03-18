@@ -64,7 +64,7 @@ namespace GNProject.Views.portal.Intranet
             JQGridJsonResponseRow oJQGridJsonResponseRow;
             Int32 i = 0;
             String path = Parametros.I_FileServer_RutaBeneficios.Replace("~", "../../../");
-            String enlace_doc = "<a title='Ver Documento' class='link' target='_blank' href={0}{1}>{2}</a>";
+            String enlace_doc = "<a title='Ver Documento' class='link-tabla' target='_blank' href={0}{1}>{2}</a>";
             foreach (Beneficios obj in sortedRecords)
             {
                 oJQGridJsonResponseRow = new JQGridJsonResponseRow();

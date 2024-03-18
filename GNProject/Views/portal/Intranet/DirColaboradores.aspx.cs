@@ -141,7 +141,7 @@ namespace GNProject.Views.portal.Intranet
                 {
                     Foto = String.Format("<img alt='' src='{0}' width='25px' />", pathUser + obj.Ruta_Foto),
                     Personal_Id = obj.Personal_Id,
-                    Nombre_Completo = String.Format("<span class='link' title='Ver Detalle' onclick='fn_VerDetalle(&#39;{0}&#39;)'>{1}</span>", obj.Personal_Id, obj.Nombre_Completo),
+                    Nombre_Completo = String.Format("<span class='link-tabla' title='Ver Detalle' onclick='fn_VerDetalle(&#39;{0}&#39;)'>{1}</span>", obj.Personal_Id, obj.Nombre_Completo),
                     Telefono = obj.Telefono,
                     Telefono2 = obj.Telefono2,
                     Telefono3 = obj.Telefono3,

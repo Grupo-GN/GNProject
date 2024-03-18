@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
@@ -16,6 +17,18 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="contenerdorInicioPortal" style="width:100%;position:relative">
+        <div id="errorMessageLabel" runat="server">
+            </div>
+        <div id="contenedor" >
+                <div id="Welcome" style="width:100%;height:200px;">
+                    <div id="textWelcome" style="width:100%; text-align:center;top:50px;">
+                        
+                    </div>
+                </div>
+            <div id="contenidos" >
+                <div class="roundframe vistaIntranet">
+                    
     <div class="title">
         <label id="lblTitle">Lista de Servicios y Beneficios</label></div>
     <br />
@@ -24,7 +37,7 @@
             <table>
                 <tr>
                     <td>
-                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" />
+                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" class="EstiloGeneralBoton btn-buscar"/>
                     </td>
                 </tr>
             </table>
@@ -36,7 +49,25 @@
             <div id="grvBandeja_Pie">
             </div>
         </div>
-    </div>    
+    </div>  
+
+
+
+
+                </div>
+            </div>
+	<div id="pie" style="width:100%">
+            <div style="text-align: center; font-size: 10px; padding-top: 0px;">
+                © <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreProyecto %> <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreEmpresa %> <%= DateTime.Now.Year.ToString() %>
+            </div>
+            <div style="text-align:right;padding-right:5px;">
+                <a class="linkWeb" href="http://www.gestiondenegociosrs.com.pe" target="_blank">Desarrollado por: Gestión de Negocios S.A.C.</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  
     <script type="text/javascript">
         var no_pagina = "ServiciosyBeneficios.aspx";
         /*[INICIO] - Variables Grilla Bandeja*/
@@ -79,6 +110,14 @@
                 this.fc_GetJQGrid_Ajax(arr_parametros, strUrlServicio, idGrilla_Bandeja, idPieGrilla_Bandeja
                     , strCabecera_Bandeja, ModelCol_Bandeja, function () { }, fn_dblClickBandeja);
             }
-        }        
+        }
+        this.fn_reposicionarPie();
+        function fn_reposicionarPie() {
+            //para poner el Pie debajo del contenido principal
+            var divHeightContenidos = document.getElementById("contenidos").offsetHeight;
+            var divPie = document.getElementById("pie");
+            divHeightContenidos = parseInt(divHeightContenidos) + 20;
+            divPie.style.marginTop = divHeightContenidos + "px";
+        }
     </script>
 </asp:Content>

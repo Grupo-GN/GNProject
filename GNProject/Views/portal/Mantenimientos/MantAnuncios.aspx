@@ -6,7 +6,8 @@
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
-    <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
+    <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" /> 
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
     <script type="text/javascript" src="/Scripts/Portal/Funciones.min.js"></script>
     <script type="text/javascript" src="/Scripts/Portal/jquery-1.11.1.min.js"></script>
@@ -47,8 +48,8 @@
             <table>
                 <tr>
                     <td>
-                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" />
-                        <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" OnClick="btnNuevo_Click" OnClientClick="return fn_Nuevo();" />
+                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" class="EstiloGeneralBoton btn-buscar" />
+                        <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" OnClick="btnNuevo_Click" OnClientClick="return fn_Nuevo();" class="EstiloGeneralBoton btn-nuevo" />
                     </td>
                 </tr>
             </table>
@@ -66,7 +67,7 @@
             <a href="#" onclick='return fn_Volver();'>Volver</a>
         </p>
         <hr />
-        <div style="clear: right; width: 550px">
+        <div >
             <asp:UpdatePanel ID="updTab2" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
                     <table style="width: 100%;">
@@ -124,10 +125,11 @@
                                 Imagen:
                             </td>
                             <td>
-                                <asp:FileUpload ID="FileUpload1" runat="server" />
+                                <label for="FileUpload1" class="EstiloGeneralBoton btn-seleccionarArchi">Seleccionar Archivo</label>
+                                <asp:FileUpload ID="FileUpload1"  runat="server" />
                                 <asp:Image ID="imgFoto" runat="server" Width="90" Height="100px" />
-                                <asp:ImageButton ID="IbtnEliminarFoto" ToolTip="Eliminar Imagen" runat="server" ImageUrl="~/img/img_buttons/icono_cerrar.png"
-                                    Width="15px" Height="15px" OnClick="IbtnEliminarFoto_Click" />
+                                <asp:ImageButton ID="IbtnEliminarFoto" ToolTip="Eliminar Imagen" runat="server" ImageUrl="~/Assets/images/imgPortal/img_buttons/delete.png"
+                                    Width="15px" Height="15px" OnClick="IbtnEliminarFoto_Click" class='icons-table deleteItem' />
                                 <asp:Label ID="lblNombrFoto" runat="server" Visible="false"></asp:Label>
                             </td>
                         </tr>
@@ -135,9 +137,9 @@
                     <hr />
                     <p>
                         <asp:Button ID="btnGrabar" runat="server" Text="Grabar" ValidationGroup="Valida"
-                            OnClick="btnGrabar_Click" />
+                            OnClick="btnGrabar_Click" class="EstiloGeneralBoton btn-grabar" />
                         <asp:Button ID="btnUpdate" runat="server" ValidationGroup="Valida" Text="Actualizar"
-                            OnClick="btnUpdate_Click" />
+                            OnClick="btnUpdate_Click" class="EstiloGeneralBoton btn-actualizar" />
                     </p>
                 </ContentTemplate>
                 <Triggers>

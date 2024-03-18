@@ -5,6 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 <title>.::<%=Parametros.I_NombreProyecto %> <%=Parametros.I_NombreEmpresa %>::.</title>
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <script src="/Scripts/Portal/Validaciones.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/Scripts/Portal/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/Scripts/Portal/jquery-1.11.1-ui.min.js"></script>
@@ -20,7 +21,7 @@
 <div id="form1" runat="server">
     <center>
         <div class="div_login">
-            <div class="div_form_login">
+            <div class="div_form_login roundframe">
                 <table class="form_login" cellpadding="3px">
                     <tr>
                         <td>
@@ -44,7 +45,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" style="text-align:center; ">
-                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" />
+                            <asp:Button class="EstiloGeneralBoton btn-ingresar" ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click" />
                         </td>
                     </tr>
                     <tr>

@@ -101,7 +101,7 @@ namespace GNProject.Views.portal.Intranet
             JQGridJsonResponseRow oJQGridJsonResponseRow;
             Int32 i = 0;
             String path = Parametros.I_FileServer_RutaBoletines.Replace("~", "../../../");
-            String enlace_doc = "<a title='Ver Boletin' class='link' target='_blank' href={0}{1}>{2}</a>";
+            String enlace_doc = "<a title='Ver Boletin' class='link-tabla' target='_blank' href={0}{1}>{2}</a>";
             foreach (Capas.Portal.Entidad.Boletines obj in sortedRecords)
             {
                 oJQGridJsonResponseRow = new JQGridJsonResponseRow();

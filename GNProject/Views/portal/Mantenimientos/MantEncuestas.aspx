@@ -5,6 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="/Assets/Css/PortalCss/Estilo.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="/Assets/Css/PortalCss/NewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
     <link href="/Assets/Css/PortalCss/JqGrid/jquery-ui.css" rel="stylesheet" type="text/css" />    
     <script language="javascript">window.$q = []; window.$ = window.jQuery = function (a) { window.$q.push(a); };</script>
@@ -39,8 +40,8 @@
             <table>
                 <tr>
                     <td>
-                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();" />
-                        <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" OnClick="btnNuevo_Click" OnClientClick="return fn_Nuevo();" />
+                        <input type="button" id="btnBuscar" value="Buscar" onclick="fn_Buscar();"class="EstiloGeneralBoton btn-buscar" />
+                        <asp:Button ID="btnNuevo" class="EstiloGeneralBoton btn-nuevo" runat="server" Text="Nuevo" OnClick="btnNuevo_Click" OnClientClick="return fn_Nuevo();" />
                     </td>
                 </tr>
             </table>
@@ -137,8 +138,8 @@
                             </td>
                             <td>
                                 <asp:TextBox ID="txtNombreOpcion" runat="server" onkeydown="fc_PressKey(13, 'btnAgregarOpcion');"></asp:TextBox>                                
-                                <input id="btnAgregarOpcion" type="button" value="Agregar Opción" onclick="return fn_AddOpcion();" />
-                                <input type="button" value="Eliminar Opción" onclick="return fn_QuitarOpcion();" />                                
+                                <input id="btnAgregarOpcion" type="button" value="Agregar Opción" onclick="return fn_AddOpcion();"class="EstiloGeneralBoton btn-nuevo" />
+                                <input type="button" value="Eliminar Opción" onclick="return fn_QuitarOpcion();"class="EstiloGeneralBoton btn-eliminar" />                                
                             </td>
                         </tr>
                         <tr>
@@ -151,9 +152,9 @@
                     </table>
                     <hr />
                     <p>                        
-                        <asp:Button ID="btnGrabar" runat="server" ValidationGroup="Valida" Text="Grabar"
+                        <asp:Button ID="btnGrabar" class="EstiloGeneralBoton btn-guardar" runat="server" ValidationGroup="Valida" Text="Grabar"
                             OnClientClick="return fn_Grabar();" />
-                        <asp:Button ID="btnUpdate" runat="server" ValidationGroup="Valida" Text="Actualizar"
+                        <asp:Button ID="btnUpdate" class="EstiloGeneralBoton btn-actualizar" runat="server" ValidationGroup="Valida" Text="Actualizar"
                             OnClientClick="return fn_Grabar();" />
                     </p>
                 </ContentTemplate>

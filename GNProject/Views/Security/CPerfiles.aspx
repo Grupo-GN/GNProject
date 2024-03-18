@@ -1,5 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="CPerfiles.aspx.cs" Inherits="GNProject.Views.Security.CPerfiles" %>
 <%@ Import Namespace="GNProject.Acceso" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+   <link rel="stylesheet" type="text/css" href="/Assets/Css/JqGrid/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/Css/JqGrid/ui.jqgrid.css" />
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="pagina1">
         <div class="row linea-bottom">

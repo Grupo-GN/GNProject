@@ -1,0 +1,561 @@
+﻿/**Importamos para usar iconos de bootstrap*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+/* Estilo para la tabla */
+.ui-jqgrid {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    background-color: #fff !important;
+    /***/
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Evitar envolver texto en celdas */
+    width: auto !important; /* Ancho automático */
+}
+
+    /* Estilo para las celdas de encabezado */
+    .ui-jqgrid .ui-jqgrid-hdiv {
+        background-color: #1F3485 !important;
+        color: #fff !important;
+        text-align: center !important;
+        font-family: 'Roboto', sans-serif !important;
+        /**/
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        padding-right: 17px; /* compensar el ancho de la barra de desplazamiento */
+    }
+
+    /* Estilo para las celdas de datos */
+    .ui-jqgrid .ui-jqgrid-btable td {
+        text-align: center !important;
+        /*padding: 15px !important;*/
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    /* Estilo para las filas impares */
+    .ui-jqgrid .ui-jqgrid-btable tr.jqgrow:nth-child(odd) {
+        background-color: #F6FAF9 !important;
+    }
+
+    /* Estilo para las filas al pasar el ratón */
+    .ui-jqgrid .ui-jqgrid-btable tr.jqgrow:hover {
+        background-color: #116FB4 !important; /* Cambiar a otro color al pasar el ratón */
+        color: #fff !important;
+        
+       /* &.link{
+            color: #FFA92C;
+
+              }*/
+    }
+
+    /* Estilo para la paginación */
+    .ui-jqgrid .ui-pager-control {
+        text-align: center !important;
+        /*margin-top: 20px !important;*/
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    /* Estilo para los botones de paginación */
+    .ui-jqgrid .ui-pg-table .ui-pg-button {
+        /*background-color: #1F3485 !important;*/
+        color: #fff !important;
+        border: none !important;
+        border-radius: 5px !important;
+        /*padding: 8px 12px !important;*/
+        margin: 0 5px !important;
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    /* Estado activo de los botones de paginación */
+    .ui-jqgrid .ui-pg-table .ui-state-active {
+        background-color: #FFA92C !important;
+    }
+/***********************************/
+
+/**contenedor general*/
+    .ui-jqgrid .ui-jqgrid-view {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 0;
+        font-size: 11px;
+        width: 100% !important;
+    }
+/**contendor de header de las tablas*/
+    .ui-jqgrid .ui-jqgrid-hdiv {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        border-left: 0 none !important;
+        border-top: 0 none !important;
+        border-right: 0 none !important;
+        width: 100% !important;
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        /*border: 1px solid #c5dbec;*/
+        /*background: #dfeffc url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x;*/
+        font-weight: bold; /*color: #2e6e9e;*/
+    }
+.ui-widget-content {
+    /*border: 1px solid;*/ 
+    /*background: #fcfdfd url(images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x;*/
+    color: #222222;
+    background-color:#fff;
+}
+
+/*hover*/
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url(images/ui-icons_217bc0_256x240.png);
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    /* border: 1px solid #116FB4;*/
+    /*background-color: #116FB4;*/
+    /*    background: #d0e5f5 url(images/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x;*/
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(17, 111, 180, 0.7);
+}
+
+    .ui-state-hover a, .ui-state-hover a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+    margin: -1px;
+}
+
+/*cuando se hace click a una fila entera*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    /*border: 1px solid;*/
+    color: #fff;
+    background-color: rgba(17, 111, 180, 0.8);
+    /*color: #363636;*/
+}
+/*estilo de las lineas de la tabla*/
+.ui-jqgrid tr.jqgrow td {
+    font-weight: normal;
+    overflow: hidden;
+    white-space: pre;
+    height: 22px;
+    padding: 0 2px 0 2px;
+    /*border-bottom-width: 1px;*/
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+    /**/
+    white-space: normal; /* Permitir envolver texto en celdas */
+}
+.ui-jqgrid tr.ui-row-ltr td {
+    text-align: left;
+    /*border-right-width: 1px;*/
+    border-right-color: inherit;
+    border-right-style: solid;
+}
+/*contendor de las tablas*/
+.ui-jqgrid .ui-jqgrid-bdiv {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    text-align: left;
+    width: 100% !important;
+}
+/****Estilo de la -----------TABLA---------*/
+.ui-jqgrid .ui-jqgrid-btable {
+    width: 100% !important;
+    /*table-layout: fixed;*/
+    margin: 0;
+    outline-style: none;
+}
+/**encabexado de la tabla*/
+.ui-jqgrid .ui-jqgrid-htable {
+    /*table-layout: fixed;*/
+    margin: 0;
+    width:100% !important;
+    position:relative;
+}
+
+    .ui-jqgrid .ui-jqgrid-htable th {
+        height: 22px;
+        padding: 0 2px 0 2px;
+    }
+
+        .ui-jqgrid .ui-jqgrid-htable th div {
+            overflow: hidden;
+            position: relative;
+            height: 17px;
+        }
+
+        .ui-th-column, .ui-jqgrid .ui-jqgrid-htable th.ui-th-column {
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: center;
+            border-top: 0 none;
+            border-bottom: 0 none;
+        }
+
+        .ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr {
+            border-left: 0 none;
+            /*border-left: 1px solid #fff;*/
+        }
+
+        .ui-th-rtl, .ui-jqgrid .ui-jqgrid-htable th.ui-th-rtl {
+            border-right: 0 none;
+        }
+
+.ui-jqgrid .ui-jqgrid-hbox-rtl {
+    float: right;
+    padding-left: 20px;
+    position:relative;
+}
+/**PIE de la tabla*/
+
+.ui-jqgrid .ui-pg-table td {
+    /*font-weight: normal;*/
+    vertical-align: middle;
+    padding: 1px;
+}
+
+.ui-jqgrid .ui-jqgrid-pager {
+    border-left: 0 none !important;
+    border-right: 0 none !important;
+    border-bottom: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 11px;
+    width: 100% !important;
+}
+
+    .ui-jqgrid .ui-jqgrid-pager .ui-pg-div {
+        padding: 1px 0;
+        float: left;
+        position: relative;
+    }
+
+    .ui-jqgrid .ui-jqgrid-pager .ui-pg-button {
+        cursor: pointer;
+    }
+
+    .ui-jqgrid .ui-jqgrid-pager .ui-pg-div span.ui-icon {
+        float: left;
+        margin: 0 2px;
+    }
+
+/* Estilos para las celdas en pantalla pequeña */
+/*@media screen and (max-width: 600px) {
+    .ui-jqgrid {
+        box-shadow: none !important;
+    }
+
+        .ui-jqgrid .ui-jqgrid-btable td {
+            padding: 10px !important;
+        }
+}*/
+
+/*+++++++++++Estilo para botones*/
+input[type="file"] {
+    /* Ocultar el input real */
+    /*display: none;*/
+}
+.EstiloGeneralBoton, #MainContent_btnEliminarFoto  {
+    background-color: #116FB4;
+    margin: 10px;
+    padding: 5px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 5px;
+    /*display: block;*/
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.EstiloGeneralBoton:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.btn-buscar::before {
+    content: "\F52A"; /* Código Unicode del ícono de búsqueda */
+    font-family: "Bootstrap Icons"; /* Fuente que contiene los iconos */
+    margin-right: 3px; /* Espacio entre el ícono y el texto */
+}
+
+.btn-nuevo {
+    background-color: #FFA92C;
+}
+
+.btn-actualizar {
+    
+}
+.btn-guardar {
+
+}
+
+.btn-subirImagen {
+}
+#MainContent_btnEliminarFoto,.btn-eliminar {
+    background-color: #FF522C;
+}
+.btn-buscar::before {
+    content: "\F4FA"; /* Código Unicode del ícono de búsqueda */
+    font-family: "Bootstrap Icons"; /* Fuente que contiene los iconos */
+    margin-right: 3px; /* Espacio entre el ícono y el texto */
+}
+.btn-seleccionarArchi{
+
+}
+/*****Estilo para editar y actualizar registros*/
+#Tab2 {
+    border-radius: 5px;
+    padding: 20px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);*/
+}
+
+#Tab2 a {
+    color: #FFA92C;
+}
+
+/***Titulosss*/
+.title {
+    color: #FFA92C;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid DarkOrange;
+    text-transform: uppercase;
+}
+
+/*estilos de los contenedores intranet*/
+.roundframe {
+    padding: 0px 10px 10px 10px;
+    background-color: #fff;
+    /* border-left: 1px solid #c5c5c5; */
+    /* border-right: 1px solid #c5c5c5; */
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.vistaIntranet {
+    width: 95%;
+    margin: auto;
+}
+
+    .roundframe dl, .roundframe dt, .roundframe p {
+        margin: 0;
+    }
+
+    .roundframe p {
+        padding: 0.5em;
+    }
+
+#Welcome {
+    background-image: url(/Assets/images/imgPortal/collage_empresa/BackgroundWelvome.jpg);
+    background-size: cover;
+    background-position: center; /* Ajusta la posición de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/**Menu vertical Inicio intranet*/
+/*Menu Vertical*/
+#menuv {
+    text-align: left;
+}
+
+    #menuv ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+       /* width: 200px;*/
+    }
+
+        #menuv ul li {
+            /*background-color: Transparent;*/
+            background-color: #1F3485;
+        }
+
+            #menuv ul li a {
+                /*color: #CD853F;*/
+                color: #FFF;
+                text-decoration: none;
+                font-style: italic;
+                font-family: latoitalic;
+                font-size: 13px;
+                /*text-transform: uppercase;*/
+                display: block;
+                padding: 10px 10px 10px 10px;
+                /*height: 7px;*/
+                border-bottom: solid 1px #527089;
+                /*border-left: 5px solid #f9b718;*/
+            }
+
+                #menuv ul li a:hover {
+                    /*border-left: 5px solid #f9b718;*/
+                    background-color: #f9b718;
+                }
+/*Fin Menu Vertical*/
+
+/**Estilo contenidos del portal*/
+#contenidos {
+    position: absolute !important;
+    top: 150px !important;
+    width:100%;
+}
+
+#contenedor {
+    position:relative;
+    width: 100%;
+    margin-top: 0px;
+    /*background: url('/Assets/images/imgPortal/contenido_ancho.png') repeat-y;*/
+    /*padding-top:5px;*/
+    padding-bottom: 10px;
+}
+/**Estilo pie*/
+#pie {
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    background: url('/Assets/images/imgPortal/img-pie.jpg') no-repeat;
+    /*height: 10px;*/
+    /*color: #444;*/
+    color: #FFF;
+    background-color: darkblue;
+    /*border-radius: 0px 0px 10px 10px;*/
+}
+#divResultadoEncuesta {
+    /*background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;*/
+}
+
+.ui-widget-header {
+    /* border: 1px solid #4297d7; */
+    /* background: #5c9ccc url(images/ui-bg_gloss-wave_55_5c9ccc_500x100.png) 50% 50% repeat-x; */
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #1F3485;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+    .ui-widget-header a {
+        color: #ffffff;
+    }
+
+/***Estilos de las tablas para mostrar detalle*/
+#MainContent_updTab2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    border-radius: 10px;
+}
+.padre_updTab2 {
+    /* clear: right; */
+    width: 100%;
+    /* padding: 0px 0px; */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/**estilo detalle d ela tabla*/
+.rowDetalle {
+    vertical-align: top;
+    border: solid 1px Gray;
+    text-align: left;
+    padding: 0px 6px;
+    background-color: #116FB4;
+    color: #fff;
+    font-weight: bold;
+    /* box-shadow: 0 3px 4px rgba(0, 0, 0, 0.8) !important; */
+    /* box-shadow: 10px 0px 3px -7px rgba(0,0,0,0.75); */
+    border-right: solid 2px rgba(0, 0, 0, 0.8);
+}
+
+.rowDetalleSombra {
+    vertical-align: top;
+    border-top: solid 1px Gray;
+    /* background: #DCDCDC; */
+    text-align: left;
+}
+
+/****ESTILOS PARA BOTONES EDITAR Y ELIMINAR REGISTROS***++*/
+.icons-table {
+    cursor: pointer;
+    width:20px;
+}
+.editItem {
+    /*background-image:url('/Assets/images/imgPortal/img_buttons/edit.png');*/
+    
+}
+
+.deleteItem {
+   /* background-image: url('/Assets/images/imgPortal/img_buttons/delete.png');*/
+    
+}
+
+/****PARA MANEJAR LOS LINKS EN LA TABLA*/
+.link-tabla {
+    cursor: pointer;
+    color: #FFC570 !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+    .link-tabla:hover {
+        text-decoration: underline !important;
+    }
+
+/**Para manejar links del inicio*/
+.link
+{
+    cursor: pointer;
+	color: #4682B4 !important;
+text-decoration: none !important;
+}
+.link:hover
+{
+	color: #444 !important;
+	text-decoration: underline !important;
+}
+
+/***estilo para el login*/
+
+.div_form_login {
+    width: 590px;
+    height: 300px;
+    /*background: transparent url('../img/login_transparente.png') center top no-repeat;*/
+    /*background: transparent url('../img/login.png') center top no-repeat;*/
+    margin-left: 100px;
+    margin-top: 120px;
+    padding:40px;
+}
+
+.form_login {
+    padding-left: 320px;
+    padding-top: 130px;
+    margin:auto;
+}
+.input_login {
+    /*background: url('../img/input_login.png') left no-repeat;*/
+    width: 100px;
+    height: 20px;
+    border: 1px solid !important;
+    color: #666666 !important;
+    padding-top: 3px;
+    padding-left: 10px;
+}
