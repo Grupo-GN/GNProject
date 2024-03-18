@@ -246,7 +246,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
                 TextBox txt_hora_salida = (TextBox)gvAsistencia.Rows[e.RowIndex].FindControl("txtHraSalida");
                 TextBox txt_observacion = (TextBox)gvAsistencia.Rows[e.RowIndex].FindControl("txtObservaciones");
                 txt_observacion.Text = txt_observacion.Text.Split('|')[0];
-                txt_observacion.Text += "| Ultima Actualizacion por :" + Session["Usuario_Id"].ToString() + " Fecha: " + DateTime.Now.ToString();
+                txt_observacion.Text += "| Ultima Actualizacion por :" + "000000" + " Fecha: " + DateTime.Now.ToString();
 
                 //2018
                 DropDownList cboccosto = (DropDownList)gvAsistencia.Rows[e.RowIndex].FindControl("cboccosto");

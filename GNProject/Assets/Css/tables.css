@@ -1835,6 +1835,7 @@ pre {
     .table thead th {
         vertical-align: bottom;
         border-bottom: 2px solid #dee2e6;
+        padding:5px;
     }
 
     .table tbody + tbody {
@@ -11613,7 +11614,7 @@ h1, h2, h3, h4, h5,
 }
 .tableDialog {
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 600px; /* Tamaño máximo para evitar que los filtros se expandan demasiado */
+    /*max-width: 600px;*/ /* Tamaño máximo para evitar que los filtros se expandan demasiado */
     margin: 0 auto; /* Centra la tabla horizontalmente */
 }
 

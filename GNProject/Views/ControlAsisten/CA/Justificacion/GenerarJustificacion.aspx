@@ -1178,10 +1178,7 @@
     
 
 
-</asp:Content>
-
-<asp:Content ID="Content3" runat="server" contentplaceholderid="head">
-    <style type="text/css">
+<style type="text/css">
         .modalContainer {
 			display: none; 
 			position: fixed; 
@@ -1243,4 +1240,7 @@
         }
     </style>
 
+
 </asp:Content>
+
+  

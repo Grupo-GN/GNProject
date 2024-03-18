@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MAsignarHorarioMasivo.aspx.cs" Inherits="GNProject.Views.ControlAsisten.CA.Matenimientos.MAsignarHorarioMasivo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
- <link href="../../jqueryui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
+    <link href="../../jqueryui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
         type="text/css" />
     <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
     <link href="../../css/cssTablas.css" rel="stylesheet" type="text/css" />
@@ -11,14 +11,12 @@
 
 <table class="tableDialog">
 	<tr>
-		<td><label class="miLabel" style="width:50%;"> Planilla : </label></td>
+		<td><label class="miLabel" style="width:20%;"> Planilla: </label></td>
         <td>
-        <select name="Planilla" id="cboPlanilla"  class="cbo">
-        
-        </select> 
+        <select name="Planilla" id="cboPlanilla"  class="cbo" style:"margin: 10px 0 0 0;"></select> 
         </td>
 
-        <td><label class="miLabel" style="width:50%;"> Periodo : </label></td>
+        <td><label class="miLabel" style="width:50%;"> Periodo: </label></td>
 		<td>
         <select name="Periodo" id="cboPeriodo"  class="cbo">
         </select>
@@ -26,7 +24,7 @@
         <td rowspan="2"'><input id="btnVer" type="button" value="Ver" class="buttonHer" /></td>
 	</tr>
 	<tr>
-		<td><label class="miLabel" style="width:50%;">  Localidad : </label></td>
+		<td><label class="miLabel" style="width:50%;">  Localidad: </label></td>
 		<td>
          <select name="Localidad" id="cboLocalidad"  class="cbo">
         </select> 
@@ -52,23 +50,15 @@
 </table>
 
 
-
-
-
-
-
-
-
-
     <fieldset>
            <div id="HeaderDiv" style="overflow: auto; width: 100%; border: solid 1px #505050;height: 600px;">
 
-     <table id="tblCarac" class="table">
+     <table id="tblCarac" class="table table-hover">
 
-        <thead class="theadth"><tr>
+        <thead class="thead-yellow"><tr>
          <%--<th><input type="checkbox" id="chkAll" style="vertical-align:top;" /></th>--%>
-            <th  class="theadth"scope="col" style="text-align:left;"><input id="chkAll" type="checkbox" /></th>
-        <th>Localidad</th>
+            <th  class="theadth"scope="col" style="text-align:center;"><input id="chkAll" type="checkbox" /></th>
+        <th>Localidad</th>  
         <th>Area</th>
         <th>Seccion</th>
         <th>Nombres</th>

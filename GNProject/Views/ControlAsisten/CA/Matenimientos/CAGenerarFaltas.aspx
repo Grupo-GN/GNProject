@@ -12,16 +12,26 @@
     <br />
     <fieldset>
         <%--<legend ></legend>--%>
+        <div style:"display: flex">
+         
+        <div>
         <label class="miLabel">Planilla: </label>
-        &nbsp;&nbsp;
-    <select id="cboPlanilla" class="cbo" style="width: 150px;">
-    </select>&nbsp;&nbsp;
-    <label class="miLabel">Periodo: </label>
-        &nbsp;&nbsp;
-    <select id="cboPeriodo" class="cbo"></select>&nbsp;&nbsp;
-    <label class="miLabel">Localidad: </label>
-        &nbsp;&nbsp;
-    <select id="cboLocal" class="cbo"></select>
+        <label class="miLabel">Localidad: </label>
+        <label class="miLabel">Periodo: </label>
+        </div>
+    
+    <div style:"display:">
+    <div style:"width:200px; border: 3px solid gold"><select id="cboPlanilla" class=""></select></div>
+    
+    
+    <div style:"width:100px;"><select id="cboPeriodo" class="" ></select></div>
+    
+    
+    <div style:"width:200px;"><select id="cboLocal" class="" ></select></div>
+    
+    </div>
+    </div>
+           
         <br />
         <br />
         <label class="miLabel">Generar las Faltas Para: </label>

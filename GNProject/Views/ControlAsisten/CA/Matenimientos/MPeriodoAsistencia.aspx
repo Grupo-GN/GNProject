@@ -7,8 +7,8 @@
     <link href="../../css/Herramientas.css" rel="stylesheet" type="text/css" />
     <link href="../../css/Tablas.css" rel="stylesheet" type="text/css" />
     <link href="../../css/EstiloBarraHerramientas.css" rel="stylesheet" type="text/css" />
-    <link href="../../css/StyleWilder.css" rel="stylesheet" type="text/css" />
-    <link href="../../css/EstiloMaycol.css" rel="stylesheet" type="text/css" />
+<%--    <link href="../../css/StyleWilder.css" rel="stylesheet" type="text/css" />--%>
+<%--    <link href="../../css/EstiloMaycol.css" rel="stylesheet" type="text/css" />--%>
 
     <input id="btnNew" class="elBotonAdd" type="button"  onclick="return btnNew_onclick()" value="Nuevo" />
     <input id="btnListar" class="elBotonAdd" type="button"  onclick="return btnEdit_onclick()" value="Listar" />
@@ -21,7 +21,7 @@
 
      <table id="tblCarac" class="table">
 
-        <thead class="theadth"><tr>
+        <thead class="theadth" style:"padding: 8px !important;"><tr>
         <th  class="theadth"scope="col">Cambiar estado</th>
         <th class="theadth" scope="col">Eliminar</th>
         <th  class="theadth"scope="col">Periodo Asistencia Id</th>
@@ -40,18 +40,18 @@
 
  <div style="overflow: hidden; width: 100%; border: solid 1px #505050;">
     <table class="table">
-         <tfoot>
+         <tfoot style:"background:#116fb4 !important;">
         <tr>
-        <td class="tfoottd"  colspan="3">
+        <td class="tfoottd"  colspan="3" style="background: #116fb4;">
 
-            <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 1.1em;" >TOTAL REGISTROS: </label> &nbsp
+            <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 18px;" >TOTAL REGISTROS: </label> &nbsp
             <input id="txtnRegistros" type="text" value="0" class="TextPage" readonly="true" /> &nbsp &nbsp
-            <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 1.1em;" >PAGE: </label> &nbsp
+            <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 18px;" >PAGE: </label> &nbsp
             <input id="txtPaginaActual" type="text" value="1" class="TextPage" readonly="true" />
-             <input id="btnPrimero" type="button" value="|<" class="submitPager" />
-             <input id="btnAnterior" type="button" value="<<" class="submitPager" />
-             <input id="btnSiguiente" type="button" value=">>" class="submitPager" />
-             <input id="btnUltimo" type="button" value=">|" class="submitPager"/>
+             <input id="btnPrimero" type="button" value="|<" class="submitPager" style:"width:30px;heigth:20px;"/>
+             <input id="btnAnterior" type="button" value="<<" class="submitPager" style:"width:30px;heigth:20px;"/>
+             <input id="btnSiguiente" type="button" value=">>" class="submitPager" style:"width:30px;heigth:20px;"/>
+             <input id="btnUltimo" type="button" value=">|" class="submitPager" style:"width:30px;heigth:20px;"/>
         </td>
         </tr>
         </tfoot>

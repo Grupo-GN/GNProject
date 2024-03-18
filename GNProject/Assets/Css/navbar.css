@@ -8963,7 +8963,7 @@ textarea.form-control-lg {
     --bs-bg-opacity: 1;
     /*background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;*/
     background-color:#1f3485;
-    background-color:#1f3485;
+    background-color:#1f3485 !important;
 }
 
 .bg-white {

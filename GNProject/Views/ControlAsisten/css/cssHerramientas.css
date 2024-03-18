@@ -1,288 +1,261 @@
-﻿.buttonHer
-{
-background-color:#2C5295;
-   color:White; 
-   margin:1px auto 1px auto;
-   font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    font-weight:bold;  
-    width:120px;   
-    height:36px;
-    border:none;
-    text-align:center;
-    cursor:pointer;
+﻿.buttonHer {
+	background-color: #1F3485;
+	color: White;
+	margin: 15px 15px;
+	font: 12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 120px;
+	height: 36px;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+	.buttonHer:hover:enabled {
+		border: 1px solid #1F3485;
+		color: #2C5295;
+		background-color: #78B2F4;
 	}
-	
-	
-.buttonHer:hover:enabled
-{
-	border:1px solid #2C5295;	
-	color:#2C5295;
-	background-color:#78B2F4;
- }
- 
- .buttonHer[disabled]
-{	
-	opacity:0.5;
-	background-color:#78B2F4;
- }
- 
- .submit
-{
-	background-color:#2d87ef;
-    color:White; 
-  
-    font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    font-weight:bold;  
-    border:none;
-    text-align:center;	 
-    
-    margin: 1px 0px 0px 0;   
-    height:25px;
-    width:90px;
+
+	.buttonHer[disabled] {
+		opacity: 0.5;
+		background-color: #78B2F4;
+	}
+
+.submit {
+	background-color: #1F3485;
+	color: White;
+	font: 12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	text-align: center;
+	margin: 1px 0px 0px 0;
+	height: 25px;
+	width: 90px;
 }
 
-.submit:hover:enabled {
-	border:none;
-	cursor:pointer;
-	color:#226FC6;
-	background-color:#78B2F4;
-}
+	.submit:hover:enabled {
+		border: none;
+		cursor: pointer;
+		color: #226FC6;
+		background-color: #78B2F4;
+	}
 
-   .submit[disabled]
- {
-	border:none;
-	opacity:0.5;
- }
+	.submit[disabled] {
+		border: none;
+		opacity: 0.5;
+	}
 
 /* herramiento tabla */
 
-.buttonEdit
-{
-	background: transparent url('../icon/pencilEdit2.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-	
-.buttonActiva
-{
-	background: transparent url('../icon/Activar.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-
-.buttonDesactiva
-{
-	background: transparent url('../icon/Desactivar.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-	
-.buttonDelete
-{
-	background: transparent url('../icon/Delete1.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-.buttonValida
-{
-	background: transparent url('../icon/Valida.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-.buttonDetalle
-{
-	background: transparent url('../icon/Detalis.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-.buttonProcess
-{
-	background: transparent url('../icon/process3.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-	
-.buttonAprobar
-{
-	background: transparent url('../icon/aprobar.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-	
-.buttonGrabar
-{
-	background: transparent url('../Icon/Save.gif')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-.buttonSubirFile
-{
-	background: transparent url('../icon/upFile.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-.buttonAccionVal
-{
-	background: transparent url('../icon/valaccion.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-.buttonOsiger
-{
-	background: transparent url('../icon/osigermin.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
-.buttonPreliminar
-{
-	background: transparent url('../icon/preliminar.ico')  center no-repeat;
-	background-size:20px 20px;
-	height:20px;
-	width:20px;
-	border:none;
-	cursor:pointer;
-	}
- /* textbox */
- 
- .cbo
- {
-	
-	background: white /*url(../img/input_text.gif)*/ repeat-x bottom left;
-	min-height: 18px;
-	border: #B1B1B1 1px solid;
-	/**color: #000000;*/
-	text-transform:uppercase;
-	font-size:14px;
-	text-align:left; 
-
-	
-	font-weight: normal;
-	line-height: 10px;
-	font: 12px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #444;
-	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-moz-font-smoothing:antialiased;/* Mozilla */	
-	-webkit-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;/* Mozilla */
-
- 	}
- 
-.txt
-{
-	
-	background: white /*url(../img/input_text.gif)*/ repeat-x bottom left;
-	min-height: 18px;
-	border: #B1B1B1 1px solid;
-	/**color: #000000;*/
-	text-transform:uppercase;
-	font-size:14px;
-	text-align:left; 
-
-	
-	font-weight: normal;
-	line-height: 10px;
-	font: 12px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #444;
-	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-moz-font-smoothing:antialiased;/* Mozilla */	
-	-webkit-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;/* Mozilla */
+.buttonEdit {
+	background: transparent url('../icon/pencilEdit2.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
 }
 
-.txtCodigo{
+.buttonActiva {
+	background: transparent url('../icon/Activar.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
 
-   background-color: #FFFFCC; 
-   color: #2B60DE;
-   font-family:AENOR Fontana ND Demibold;
-   font-weight:bold;
-   text-align:center;
+.buttonDesactiva {
+	background: transparent url('../icon/Desactivar.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonDelete {
+	background: transparent url('../icon/Delete1.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonValida {
+	background: transparent url('../icon/Valida.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonDetalle {
+	background: transparent url('../icon/Detalis.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonProcess {
+	background: transparent url('../icon/process3.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonAprobar {
+	background: transparent url('../icon/aprobar.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonGrabar {
+	background: transparent url('../Icon/Save.gif') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonSubirFile {
+	background: transparent url('../icon/upFile.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonAccionVal {
+	background: transparent url('../icon/valaccion.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonOsiger {
+	background: transparent url('../icon/osigermin.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.buttonPreliminar {
+	background: transparent url('../icon/preliminar.ico') center no-repeat;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	border: none;
+	cursor: pointer;
+}
+/* textbox */
+
+.cbo {
+	background: white /*url(../img/input_text.gif)*/ repeat-x bottom left;
+	min-height: 18px;
+	border: #B1B1B1 1px solid;
+	/**color: #000000;*/
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: left;
+	font-weight: normal;
+	line-height: 10px;
+	font: 12px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-moz-font-smoothing: antialiased; /* Mozilla */
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%; /* Mozilla */
+	
+}
+
+.txt {
+	background: white /*url(../img/input_text.gif)*/ repeat-x bottom left;
+	min-height: 18px;
+	border: #B1B1B1 1px solid;
+	/**color: #000000;*/
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: left;
+	font-weight: normal;
+	line-height: 10px;
+	font: 12px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-moz-font-smoothing: antialiased; /* Mozilla */
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%; /* Mozilla */
+}
+
+.txtCodigo {
+	background-color: #FFFFCC;
+	color: #2B60DE;
+	font-family: AENOR Fontana ND Demibold;
+	font-weight: bold;
+	text-align: center;
 	min-height: 16px;
 	border: #B1B1B1 1px solid;
-	text-transform:uppercase;
-	font-size:10px;
-	width:100px;
-	
-	}
-textarea
-{
-	width:100%;
-	border: #B1B1B1 1px solid;	
+	text-transform: uppercase;
+	font-size: 10px;
+	width: 100px;
+}
+
+textarea {
+	width: 100%;
+	border: #B1B1B1 1px solid;
 	font-weight: normal;
 	line-height: 10px;
 	font: 12px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #444;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-moz-font-smoothing:antialiased;/* Mozilla */	
+	-moz-font-smoothing: antialiased; /* Mozilla */
 	-webkit-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;/* Mozilla */
-	
-	}
-	
+	-moz-text-size-adjust: 100%; /* Mozilla */
+}
+
 /*------------*/
 
-.labelError
-{
-	color:Red;
-	}
-	
-.miLabel
-{
-text-transform:uppercase;
-font-weight:bold;	
+.labelError {
+	color: Red;
 }
 
-.miTituloField
-{
-	font-weight:bold; 
-	font-size:12px;
-	color:#336699;
-	text-decoration:none;
+.miLabel {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 14px 10px 0 0;
+	padding: 15px
+}
+
+.miTituloField {
+	font-weight: bold;
+	font-size: 12px;
+	color: #336699;
+	text-decoration: none;
 }
 
 
-.miTitulo
-{
-	 
-	font-size:28px;
-	color:#336699;
-	text-decoration:underline;
-	text-transform:uppercase;
+.miTitulo {
+	font-size: 28px;
+	color: #336699;
+	text-decoration: underline;
+	text-transform: uppercase;
 }

@@ -10,22 +10,22 @@
  <br />
     <table class="tableDialog">
 	<tr>
-		<td><label class="miLabel" style="width:50%;"> Planilla : </label></td>
+		<td><label class="miLabel" style="width:50%;margin: 0 0 4px 0;"> Planilla: </label></td>
         <td>
         <select id="cboPlanilla" class="cbo" ></select> 
         </td>
-        <td><label class="miLabel" style="width:50%;"> Seccion : </label></td>
+        <td><label class="miLabel" style="width:50%;margin: 0 0 4px 0;"> Seccion: </label></td>
 		<td>
         <select id="cboSeccion" class="cbo" ></select>
         </td>
         <td rowspan="2"'><input id="btnVer" type="button"  value="Ver" class="buttonHer" /></td>
 	</tr>
 	<tr>
-		<td><label class="miLabel" style="width:50%;">  Localidad : </label></td>
+		<td><label class="miLabel" style="width:50%;margin: 0 0 4px 0;">  Localidad: </label></td>
 		<td>
          <select id="cboLocal"  class="cbo"></select> 
         </td>
-        <td><label class="miLabel" style="width:50%;"> Periodo : </label></td>
+        <td><label class="miLabel" style="width:50%;margin: 0 0 4px 0;"> Periodo: </label></td>
 		<td>
         <select id="cboPeriodo"  class="cbo" disabled="disabled"></select> 
         </td>
