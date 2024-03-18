@@ -7,34 +7,34 @@
         type="text/css" />
 
     <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
-    <link href="../../css/cssTablas.css" rel="stylesheet" type="text/css" />
-  
+    <%--<link href="../../css/cssTablas.css" rel="stylesheet" type="text/css" />--%>
+    <link href="/Assets/Css/tables.css" rel="stylesheet" type="text/css" />
 
 <table class="tableDialog">
 	<tr>
-		<td><label class="miLabel"> Planilla : </label></td>
+		<td><label class="miLabel" style="margin-top:-1px;"> Planilla: </label></td>
         <td>
-        <select name="Planilla" id="cboPlanilla" class="cbo">
+        <select name="Planilla" id="cboPlanilla" class="cbo" style="width:100px;">
         
         </select> 
         </td>
 
-        <td><label class="miLabel"> Periodo : </label></td>
+        <td><label class="miLabel" style="margin-top:-1px;"> Periodo: </label></td>
 		<td>
-        <select name="Periodo" id="cboPeriodo" class="cbo">
+        <select name="Periodo" id="cboPeriodo" class="cbo" style="width:100px;">
         </select>
         </td>
         <td rowspan="2"'><input id="btnVer" type="button" value="Ver" class="buttonHer" /></td>
 	</tr>
 	<tr>
-		<td><label class="miLabel">  Localidad : </label></td>
+		<td><label class="miLabel" style="margin-top:-1px;"> Localidad: </label></td>
 		<td>
-         <select name="Localidad" id="cboLocalidad" class="cbo">
+         <select name="Localidad" id="cboLocalidad" class="cbo" style="width:100px;">
         </select> 
         </td>
-        <td><label class="miLabel"> Área : </label></td>
+        <td><label class="miLabel" style="margin-top:-1px;"> Área: </label></td>
 		<td>
-        <select name="Area" id="cboArea" class="cbo">
+        <select name="Area" id="cboArea" class="cbo" style="width:100px;">
         </select> 
         </td>
 	</tr>
@@ -46,7 +46,7 @@
 
     <fieldset>
    <%-- modidga height: 380px--%>
-           <div id="HeaderDiv" style="overflow: auto; width: 100%; border: solid 1px #505050;height: 380px;">
+         <%--  <div id="HeaderDiv" style="overflow: auto; width: 100%; border: solid 1px #505050;height: 380px;">
 
      <table id="tblCarac" class="table" style="overflow: scroll;">
 
@@ -90,7 +90,29 @@
         </table>
  
     </div>
-  
+  --%>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="table-wrap">
+                <table class="table">
+                    <thead class="thead-primary" id="thead-primary">
+                        <tr>
+                            <th>Localidad</th>
+                            <th>Seccion</th>
+                            <th>Nombres</th>
+                            <th>Horarios</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                 
+                     <tbody class="tbody" id="tbodyAsignarHorarioPersona" >
+                      
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </section>
     </fieldset>
 
     
@@ -113,8 +135,10 @@ class="txtCodigo" value="???" />
                  <td>
                   <label class="miLabel">Horarios : </label></td>
                 <td>
-                    <select id="cboHorarios" class="cbo">
+                    
+                    <select id="cboHorarios" class="cbo"> 
                     </select>
+                    
                 </td>
             </tr>
 

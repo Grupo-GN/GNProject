@@ -15,7 +15,7 @@
 
             <table id="tblParametros" class="table">
 
-                <thead class="theadth">
+                <thead class="theadth" style:"background:#0c4d7e !important;">
                     <tr>
                         <th class="theadth" scope="col">Edit</th>
                         <th class="theadth" style="display:none;" scope="col">Concepto_Id</th>
@@ -35,7 +35,7 @@
 
         <div style="overflow: hidden; width: 100%; border: solid 1px #505050;">
             <table class="table">
-                <tfoot>
+                <tfoot style:"background:#0c4d7e !important;">
                     <tr>
                         <td class="tfoottd" colspan="3">
 

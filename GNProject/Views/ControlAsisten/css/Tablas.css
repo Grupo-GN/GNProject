@@ -21,19 +21,19 @@
 }
 
 
-.theadth{
-	background-color:#2C6B8D;
+.theadth {
+	background: #116fb4;
 	height: 28px;
-	font-family:AENOR Fontana ND;
-	text-transform:uppercase;
+	font-family: AENOR Fontana ND;
+	text-transform: uppercase;
 	color: #FFFFFF;
 	font-size: 1em;
 	font-weight: bold;
 	padding: 0px 7px;
 	margin: 20px 0px 0px;
 	text-align: left;
-	/*-webkit-gradient:(linear, 0% 0%, 0% 100%, from(#000000), to(#ffffff));*/
-	/*border-right: 1px solid #FCF1D4;*/
+	-webkit-gradient: (linear, 0% 0%, 0% 100%, from(#000000), to(#ffffff));
+	border-right: 5px solid #FCF1D4;
 }
 
 
@@ -45,14 +45,15 @@ background: url(ImgTabla/bg_td1.jpg) repeat-x top;
 }
 
 .tbody th,td {
-	font-size: 1em;
+	font-size: 2em;
 	line-height: 1.7em;
 	font-family: AENOR Fontana ND;
-	color: #777777;
+	color: white;
 	padding: 2px 3px;
 	border-top: 1px solid #1E90FF;
 	border-right: 1px solid #DDDDDD;
 	text-align: center;
+	font-weight: bold
 }
 
 .tbody tr:hover  
@@ -96,7 +97,7 @@ background-color: #DAE5FB;
 	height: 12px;
 }
 .tfoottd {
-	background-color:#2C6B8D;
+	background: #116fb4;
 	color: #FFFFFF;
 	height: 10px;
 	padding:-7px 0 -3px 0;

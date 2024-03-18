@@ -1,17 +1,15 @@
 ﻿
-.elBotonAdd
-{
-   background-color:#2C5295;
-   color:White; 
-   margin:1px auto 1px auto;
-   font:12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    font-weight:bold;  
-    width:120px;   
-    height:36px;
-    border:none;
-    text-align:center;
-
+.elBotonAdd {
+    background-color: #2C5295;
+    color: White;
+    margin: 20px 20px 0 0;
+    font: 12px/1.5 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 120px;
+    height: 36px;
+    border: none;
+    text-align: center;
 }
 
 

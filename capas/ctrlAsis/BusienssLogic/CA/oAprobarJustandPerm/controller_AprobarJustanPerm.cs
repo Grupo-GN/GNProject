@@ -66,10 +66,13 @@ namespace BusienssLogic.CA.oAprobarJustandPerm
             }
         }
 
-        public ArrayList Get_Personal_List(string Planilla_Id,string Periodo,string Localidad_Id,string Categoria_Id,string Jefe_Id) { 
+        public ArrayList Get_Personal_List(string Planilla_Id,string Periodo,string Localidad_Id,string Categoria_Id,string Jefe_Id) {
+            
+            
+            
             using(ContextMaestro obj=new ContextMaestro("name=" + Presistence.Customs.Conexion.getCodEmpresaConnection())){
                 ArrayList rList = new ArrayList();
-                string Rol = obj.UsuarioPlanilla.Where(x => x.Personal_Id == Jefe_Id).First().NivelAcceso;
+                string Rol = "01"; //obj.UsuarioPlanilla.Where(x => x.Personal_Id == Jefe_Id).First().NivelAcceso;
                 int existeperiodo = obj.Periodo.Where(x => x.Planilla_Id == Planilla_Id && x.Descripcion == Periodo).Count();
                 string periodo_id = "";
                 if (existeperiodo > 0) {

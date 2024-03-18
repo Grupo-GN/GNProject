@@ -29,9 +29,9 @@
         <table class="tableDialog">
             <tr>
                 <td style="width:100px;text-align:right;"><label>Gerente : </label></td>
-                <td><select id="cbogerente" class="cbo"></select></td>
-                <td style="width:100px;text-align:right;"><label>Jefe : </label></td>
-                <td><select id="cbojefe" class="cbo"><option value="">-SELECCIONE-</option></select></td>
+                <td><select id="cbogerente" class="cbo" style="width: 120px;"></select></td>
+                <td style="width: 120px;"><label>Jefe : </label></td>
+                <td><select id="cbojefe" class="cbo" style:"width:100px !important;"><option value="">-SELECCIONE-</option></select></td>
                 <td style="width:80px;text-align:right;"><label>Personal :</label></td>
                 <td><input type="text" id="txtFind" class="txt" /></td>
                 <%--pruebas    &nbsp;<input type="button" class="submit" value="Asignar Gerente" style="width:120px;" id="btnAply1" />--%>
@@ -58,7 +58,7 @@
     <br />
  <div style="overflow: hidden; width: 100%; border: solid 1px #505050;">
         <table class="table">
-            <tfoot>
+            <tfoot style:"background:#0c4d7e;">
                 <tr>
                     <td class="tfoottd" colspan="3">
                         <div id="indicador_paginas"></div>

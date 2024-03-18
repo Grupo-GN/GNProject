@@ -1,7 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ca.aspx.cs" Inherits="GNProject.Views.ControlAsisten.CA.caControlAsistencia.ca" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
     <link href="../../css/cssHerramientas.css" rel="stylesheet" type="text/css" />
     <link href="../../css/cssTablas.css" rel="stylesheet" type="text/css" />
     <link href="../../jqueryui/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"  type="text/css" />

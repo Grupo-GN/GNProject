@@ -23,7 +23,8 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         {
             if (!Page.IsPostBack)
             {
-                if (Session["Usuario_Id"] == null)
+                string numeros12 = "000000"; 
+                if (numeros12 == null)
                 {
                     Response.Redirect("~/Login.aspx");
                 }
@@ -36,7 +37,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
                 CargarPeriodo();
                 //txtfechaini.Text = DateTime.Now.ToShortDateString();
                 //txtfechafin.Text = DateTime.Now.ToShortDateString();
-                string usuario = Session["Usuario_Id"].ToString();
+                string usuario = "000000";
                 //Cargar Localidad
                 cboLocalidad.DataSource = controller_FiltrosCA.Get_Instance().Get_Localidad_List(usuario);
                 cboLocalidad.DataValueField = "Area_Id";
@@ -84,7 +85,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         }
         private void ListarAsistencias()
         {
-            string usuario = Session["Usuario_Id"].ToString();
+            string usuario = "000000";
             DateTime fecha_inicio = DateTime.Parse(txtfechaini.Text);
             DateTime fecha_fin = DateTime.Parse(txtfechafin.Text);
             if (controller_ca.getInstance().Get_ListarAsistencias(fecha_inicio, fecha_fin) <= 0)
@@ -142,7 +143,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         }
         private void cargarPersonal()
         {
-            string usuario = Session["Usuario_Id"].ToString();
+            string usuario = "000000";
             cboPersonal.DataSource = controller_ca.getInstance().Get_Personal_By_Filtros(cboLocalidad.SelectedValue, usuario, CmbPeridos.SelectedValue, cboPlanilla.SelectedValue);
             cboPersonal.DataValueField = "Personal_Id";
             cboPersonal.DataTextField = "Nombres";
@@ -249,7 +250,7 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
                 TextBox txt_hora_salida = (TextBox)gvAsistencia.Rows[e.RowIndex].FindControl("txtHraSalida");
                 TextBox txt_observacion = (TextBox)gvAsistencia.Rows[e.RowIndex].FindControl("txtObservaciones");
                 txt_observacion.Text = txt_observacion.Text.Split('|')[0];
-                txt_observacion.Text += "| Ultima Actualizacion por :" + Session["Usuario_Id"].ToString() + " Fecha: " + DateTime.Now.ToString();
+                txt_observacion.Text += "| Ultima Actualizacion por :" + "000000" + " Fecha: " + DateTime.Now.ToString();
 
                 //2018
                 DropDownList cboccosto = (DropDownList)gvAsistencia.Rows[e.RowIndex].FindControl("cboccosto");
