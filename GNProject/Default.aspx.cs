@@ -11,7 +11,10 @@ namespace GNProject
     {
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            Response.Redirect("/Views/portal/Inicio/Default.aspx");
+            if (!IsPostBack)
+            {
+                Response.Redirect("/Views/portal/Inicio/Default.aspx");
+            }
         }
     }
 }

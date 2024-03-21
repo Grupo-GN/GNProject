@@ -273,6 +273,7 @@ button,
     [type="reset"]:not(:disabled),
     [type="submit"]:not(:disabled) {
         cursor: pointer;
+        border-radius:20px;
     }
 
     button::-moz-focus-inner,

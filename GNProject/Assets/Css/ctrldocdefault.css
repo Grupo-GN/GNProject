@@ -8,8 +8,11 @@ body {
     background-repeat: repeat-x;
     background-color: rgb(233, 238, 242) /*Color gris*/;
 }
+#ui-datepicker-div {
+    top:70px !important;
 
-#txtID {
+}
+    #txtID {
     max-width: 100px;
 }
 
@@ -361,6 +364,7 @@ input[type=text].hasDatepicker {
     border: none;
     color: #FFF;
     cursor: pointer;
+    width: auto;
 }
 
 .ui-datepicker-month {
