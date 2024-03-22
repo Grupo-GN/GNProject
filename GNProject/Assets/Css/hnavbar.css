@@ -124,8 +124,8 @@ button {
         left: 0;
         border-bottom-color: transparent;
         border-right-color: transparent;
-        border-top-color: #00aced;
-        border-left-color: #00aced;
+        border-top-color: #ffc107;
+        border-left-color: #ffc107;
     }
 
     .btn-14:after {
@@ -133,16 +133,16 @@ button {
         right: 0;
         border-top-color: transparent;
         border-left-color: transparent;
-        border-bottom-color: #00aced;
-        border-right-color: #00aced;
+        border-bottom-color: #ffc107;
+        border-right-color: #ffc107;
     }
 
     .btn-14:hover:before,
     .btn-14:hover:after {
-        border-color: #00aced;
+        border-color: #ffc107;
         height: 100%;
         width: 100%;
-        box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+        box-shadow: 0 0 5px #ffc107, 0 0 5px #ffc107 inset;
     }
 
 

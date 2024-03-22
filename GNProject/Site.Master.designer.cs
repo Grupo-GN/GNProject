@@ -87,6 +87,51 @@ namespace GNProject
         protected global::System.Web.UI.WebControls.Literal MenuHCtrlDoc;
 
         /// <summary>
+        /// Control MenuHCtrlAsis.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal MenuHCtrlAsis;
+
+        /// <summary>
+        /// Control MenuHPortal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal MenuHPortal;
+
+        /// <summary>
+        /// Control MenuHPlanillas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal MenuHPlanillas;
+
+        /// <summary>
+        /// Control MenuHCapacitacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal MenuHCapacitacion;
+
+        /// <summary>
+        /// Control MenuHIncidencia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal MenuHIncidencia;
+
+        /// <summary>
         /// Control vnav.
         /// </summary>
         /// <remarks>

@@ -145,9 +145,15 @@ namespace GNProject
             MenuPlanillas.Text = AddMenu(oMenuBEList, 4);
             MenuCapacitacion.Text = AddMenu(oMenuBEList, 5);
             MenuIncidencia.Text = AddMenu(oMenuBEList, 6);
-            MenuHCtrlDoc.Text = AddMenuH(oMenuBEList, 1);
 
-            
+            MenuHCtrlDoc.Text = AddMenuH(oMenuBEList, 1);
+            MenuHCtrlAsis.Text = AddMenuH(oMenuBEList, 2);
+            MenuHPortal.Text = AddMenuH(oMenuBEList, 3);
+            MenuHPlanillas.Text = AddMenuH(oMenuBEList, 4);
+            MenuHCapacitacion.Text = AddMenuH(oMenuBEList, 5);
+            MenuHIncidencia.Text = AddMenuH(oMenuBEList, 6);
+
+
         }
         private string AddMenu(MenuBEList oMenuBEList, int id_seccion)
         {
@@ -259,14 +265,14 @@ namespace GNProject
         private string AddMenuH(MenuBEList oMenuBEList, int id_seccion)
         {
             StringBuilder html_menu = new StringBuilder();
-            html_menu.Append("<ul class=\"dropdown-menu\">");
+            //html_menu.Append("<ul class=\"dropdown-menu qwe\">");
 
             foreach (MenuBE ent in oMenuBEList)
             {
                 if (ent.id_padre == 0 && ent.id_seccion == id_seccion)
                 {
                     html_menu.Append("<li class=\"nav-item dropend\">");
-                    html_menu.Append($"<a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">{ent.tx_descripcion}</a>");
+                    html_menu.Append($"<a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" style=\"color: black;\">{ent.tx_descripcion}</a>");
 
                     html_menu.Append("<ul class=\"dropdown-menu\">");
                     html_menu = AddMenuItemH(html_menu, oMenuBEList, ent.id_menu, id_seccion);
@@ -276,7 +282,7 @@ namespace GNProject
                 }
             }
 
-            html_menu.Append("</ul>");
+            //html_menu.Append("</ul>");
             return html_menu.ToString();
         }
 
@@ -289,7 +295,7 @@ namespace GNProject
                     if (oMenuBEList.Any(x => x.id_padre == ent.id_menu && x.id_seccion == id_seccion))
                     {
                         html_menu.Append("<li class=\"nav-item dropend\">");
-                        html_menu.Append($"<a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">{ent.tx_descripcion}</a>");
+                        html_menu.Append($"<a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\" style=\"color: black;\">{ent.tx_descripcion}</a>");
 
                         html_menu.Append("<ul class=\"dropdown-menu\">");
                         html_menu = AddMenuItemH(html_menu, oMenuBEList, ent.id_menu, id_seccion);
