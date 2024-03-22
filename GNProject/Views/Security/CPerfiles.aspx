@@ -355,6 +355,8 @@
                     alert(objResponse[1]);
                 });
             }
+            localStorage.removeItem('menuHTML');
+            location.reload();
         }
 
         function fn_Volver() {

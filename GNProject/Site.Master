@@ -865,5 +865,51 @@
 
 
     });
- 
+    
+
+</script>
+<script>
+    // Función para guardar el HTML del menú en el sessionStorage
+    function guardarMenu() {
+        var menuHTML = document.getElementById('nav11').innerHTML;
+        sessionStorage.setItem('menuHTML', menuHTML);
+    }
+
+    // Función para cargar y restaurar el menú desde el sessionStorage
+    function cargarMenu() {
+        var menuHTML = sessionStorage.getItem('menuHTML');
+        if (menuHTML) {
+            document.getElementById('nav11').innerHTML = menuHTML;
+        }
+    }
+
+    // Evento que se dispara cuando se carga la página
+    window.addEventListener('load', cargarMenu);
+
+    // Obtener la URL de la página actual
+    var currentPageUrl = window.location.href;
+
+    // Verificar si la página actual coincide con la página específica
+    if (currentPageUrl.includes("/Views/Security/CPerfiles.aspx")) {
+        // Eliminar el sessionStorage si la página actual es la página específica
+        sessionStorage.removeItem('menuHTML');
+    }
+
+    // Obtener todos los elementos del menú que pueden cambiar dinámicamente
+    var elementosMenu = document.querySelectorAll('#nav11 a');
+
+    // Agregar un evento de clic a cada elemento del menú para guardar el menú antes de cualquier cambio
+    elementosMenu.forEach(function (elemento) {
+        elemento.addEventListener('click', function () {
+            setTimeout(guardarMenu, 0); // Se asegura de que se ejecute después de que se actualice el DOM
+            sessionStorage.removeItem('menuHTML'); // Elimina el menú actual para permitir que se actualice
+        });
+    });
+
+    // Evento que se dispara antes de cerrar la pestaña o refrescar la página
+    window.addEventListener('beforeunload', function () {
+        sessionStorage.removeItem('menuHTML'); // Elimina los datos del menú del sessionStorage
+        setTimeout(guardarMenu, 0);
+    });
+
 </script>
