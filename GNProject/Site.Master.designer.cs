@@ -222,6 +222,24 @@ namespace GNProject
         protected global::System.Web.UI.WebControls.Literal MenuIncidencia;
 
         /// <summary>
+        /// Control divFiltros.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divFiltros;
+
+        /// <summary>
+        /// Control ucFiltros1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::GNProject.ucFiltros ucFiltros1;
+
+        /// <summary>
         /// Control MainContent.
         /// </summary>
         /// <remarks>

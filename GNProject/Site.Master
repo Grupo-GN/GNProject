@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GNProject.Site" %>
 
 <!DOCTYPE html>
-
+<%@ Register Src="~/ucFiltros.ascx" TagName="ucFiltros" TagPrefix="uc1" %>
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -67,7 +67,7 @@
   <!--  -->
 </head>
 <body class="sb-nav-fixed">
-       
+    
     <%@ Import Namespace="GNProject.Acceso" %>
     <script type="text/ecmascript">
         var page = this.location.pathname;
@@ -808,6 +808,10 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
+                    <div id="divFiltros" runat="server" style="padding: 0px 0px; margin: 1%">
+                        <%-- Contenido dentro del div --%>
+                        <uc1:ucfiltros runat="server" id="ucFiltros1" />
+                    </div>
                     <div class="container-fluid px-4">
                          <asp:ContentPlaceHolder ID="MainContent" runat="server">
         

@@ -353,6 +353,7 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ucFiltros.ascx" />
     <Content Include="Views\ControlAsisten\assets\css\fontawesome-all.min.css" />
     <Content Include="Views\ControlAsisten\assets\css\main.css" />
     <Content Include="Views\ControlAsisten\assets\js\bootstrap.min.css" />
@@ -830,6 +831,27 @@
     <Content Include="Views\sistemaPlanillas\Icon\png\user_male_go.png" />
     <Content Include="Views\sistemaPlanillas\Icon\printer.gif" />
     <Content Include="Views\sistemaPlanillas\Icon\Save.gif" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\animated-overlay.gif" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_diagonals-medium_80_e1e1e2_40x40.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_diagonals-thick_0_aaaaaa_40x40.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_dots-small_80_ffffff_2x2.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_glass_90_e6e6e6_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-icons_080809_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\js\jquery-1.9.1.js" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\js\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Views\sistemaPlanillas\jqueriUI\js\jquery-ui-1.10.3.custom.min.js" />
     <Content Include="Views\sistemaPlanillas\JQuery\Funciones.min.js" />
     <Content Include="Views\sistemaPlanillas\JQuery\jqGrid-4.5.2\grid.locale-en.min.js" />
     <Content Include="Views\sistemaPlanillas\JQuery\jqGrid-4.5.2\jquery.jqGrid.src.min.js" />
@@ -851,6 +873,15 @@
     <Content Include="Views\sistemaPlanillas\js\Script.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptAsignarcc.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptDatosBancarios.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptImportPersonal.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptMantPermiso.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_HelperMaestroPersonal.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonal.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonalActivo.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MntSeccion.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.min.js" />
     <None Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1-vsdoc.js" />
@@ -964,6 +995,12 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ucFiltros.ascx.cs">
+      <DependentUpon>ucFiltros.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ucFiltros.ascx.designer.cs">
+      <DependentUpon>ucFiltros.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Views\ControlAsisten\CA\caAsignarHVariable\cAsignarHVariable.aspx.cs">
       <DependentUpon>cAsignarHVariable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1942,6 +1979,7 @@
     <Compile Include="Views\sistemaPlanillas\code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\ControlMantenimientos.cs" />
     <Compile Include="Views\sistemaPlanillas\code\Utils.cs" />
     <Compile Include="Views\sistemaPlanillas\Controles\BarraHerramientas.ascx.cs">
       <DependentUpon>BarraHerramientas.ascx</DependentUpon>
@@ -1964,6 +2002,13 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx.designer.cs">
       <DependentUpon>FrmMntConceptosShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx.cs">
+      <DependentUpon>MaestroPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx.designer.cs">
+      <DependentUpon>MaestroPersonal.aspx</DependentUpon>
     </Compile>
     <Compile Include="wsGenerales.asmx.cs">
       <DependentUpon>wsGenerales.asmx</DependentUpon>
