@@ -1,0 +1,60 @@
+﻿
+/* MENU VERTICAL */
+
+ul {
+	margin: 0;
+	padding: 0;
+	width: 150px; /* Width of Menu Items */
+	border-bottom: 2px solid  #8FBC8F;/*#ccc;*/
+	list-style: none;
+	}
+
+ul li {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+	
+li ul {
+	position: absolute;
+	left: 149px; /* Set 1px less than menu width */
+	top: 0;
+	display: none;
+	}
+
+/* Styles for Menu Items */
+ul li a {
+	display: block;
+	text-decoration: none;
+	color: #CCCCCC;
+	background: #07479C; /*#fff*//* IE6 Bug */
+	padding: 5px;
+	border: 1px solid #05367E;/*#ccc;*/
+	border-right-width: 2px;
+	border-bottom: 0;	
+	}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+
+ul li a:hover { color: #05367E; background: #CCCCCC;/*#F0F8FF;*/ } /* Hover Styles */
+		
+li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+		
+li:hover ul, li.over ul { display: block; } /* The magic */
+
+
+.MenuTitulo
+{
+	background: #05367E;
+	text-align: center ;
+	font-size: 12px;
+	font-weight: bold;
+	color: #B38600;		
+}
+.MenuTitulo:hover
+{
+	text-decoration: underline;
+}

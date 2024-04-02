@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{281EE688-67BB-4B87-B54B-5AFCCD761F5A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAPA_LOGICO</RootNamespace>
+    <AssemblyName>CAPA_LOGICO</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUSParametros.cs" />
+    <Compile Include="BUSPersonal.cs" />
+    <Compile Include="CalculosBL.cs" />
+    <Compile Include="Calculos_PermBL.cs" />
+    <Compile Include="CompaniaBL.cs" />
+    <Compile Include="ConceptosBL.cs" />
+    <Compile Include="EjecucionScriptBL.cs" />
+    <Compile Include="FormulasBL.cs" />
+    <Compile Include="InterfacesBL.cs" />
+    <Compile Include="InterfacesExportacion.cs" />
+    <Compile Include="LasMonedas.cs" />
+    <Compile Include="LoginUser.cs" />
+    <Compile Include="Log_AFP.cs" />
+    <Compile Include="Log_AperturaCierrePeriodo.cs" />
+    <Compile Include="Log_Asiento.cs" />
+    <Compile Include="Log_Asiento_Cuentas.cs" />
+    <Compile Include="Log_Bancos.cs" />
+    <Compile Include="Log_Calculos_Perm.cs" />
+    <Compile Include="Log_Cargo.cs" />
+    <Compile Include="Log_Cargo_Funciones.cs" />
+    <Compile Include="Log_Categoria.cs" />
+    <Compile Include="Log_Categoria2.cs" />
+    <Compile Include="Log_Categoria_Auxiliar.cs" />
+    <Compile Include="Log_Categoria_Auxiliar2.cs" />
+    <Compile Include="Log_Ccosto.cs" />
+    <Compile Include="Log_CIIU.cs" />
+    <Compile Include="Log_Compania.cs" />
+    <Compile Include="Log_Compania_Establecimiento.cs" />
+    <Compile Include="Log_Compania_Externa.cs" />
+    <Compile Include="Log_Compania_Externa_Establecimientos.cs" />
+    <Compile Include="Log_Conceptos.cs" />
+    <Compile Include="Log_Concepto_Remunerativo.cs" />
+    <Compile Include="Log_Contratos.cs" />
+    <Compile Include="Log_Correo_Usuario.cs" />
+    <Compile Include="Log_Ctacte_Motivo.cs" />
+    <Compile Include="Log_Ctacte_Operacion.cs" />
+    <Compile Include="Log_Ctas_Ctes.cs" />
+    <Compile Include="Log_Cuotas.cs" />
+    <Compile Include="Log_Cuotas_Estado_Pago.cs" />
+    <Compile Include="Log_Departamentos.cs" />
+    <Compile Include="Log_Distritos.cs" />
+    <Compile Include="Log_D_Directos.cs" />
+    <Compile Include="Log_D_Fijos.cs" />
+    <Compile Include="Log_D_Fijos_2.cs" />
+    <Compile Include="Log_D_Variables.cs" />
+    <Compile Include="Log_Ejercicio.cs" />
+    <Compile Include="Log_EPS.cs" />
+    <Compile Include="Log_E_Civil.cs" />
+    <Compile Include="Log_Familiares.cs" />
+    <Compile Include="Log_General.cs" />
+    <Compile Include="Log_Incidencias.cs" />
+    <Compile Include="Log_Mes.cs" />
+    <Compile Include="Log_Motivo_Fin_Per_Lab.cs" />
+    <Compile Include="Log_Nacionalidad.cs" />
+    <Compile Include="Log_Nivel_Educativo.cs" />
+    <Compile Include="Log_Ocupacion.cs" />
+    <Compile Include="Log_Periodicidad.cs" />
+    <Compile Include="Log_Periodo.cs" />
+    <Compile Include="Log_Personal.cs" />
+    <Compile Include="Log_Personal_Anexo.cs" />
+    <Compile Include="Log_Personal_Anexo2.cs" />
+    <Compile Include="Log_Personal_Establecimientos.cs" />
+    <Compile Include="Log_Planilla.cs" />
+    <Compile Include="Log_Plan_De_Cuentas.cs" />
+    <Compile Include="Log_PptoPersonal.cs" />
+    <Compile Include="Log_Prm_Afp.cs" />
+    <Compile Include="Log_Prm_CategoriaAux.cs" />
+    <Compile Include="Log_Prm_Cia.cs" />
+    <Compile Include="Log_Prm_Periodo.cs" />
+    <Compile Include="Log_Prm_Planilla.cs" />
+    <Compile Include="Log_Prm_SubcategoriaAux.cs" />
+    <Compile Include="Log_Procesos.cs" />
+    <Compile Include="Log_Provincias.cs" />
+    <Compile Include="Log_Proyecto.cs" />
+    <Compile Include="Log_Regimen_Laboral.cs" />
+    <Compile Include="Log_Reportes.cs" />
+    <Compile Include="Log_Reportes_Incidencias.cs" />
+    <Compile Include="Log_RH_Area.cs" />
+    <Compile Include="Log_Sexos.cs" />
+    <Compile Include="Log_Situacion.cs" />
+    <Compile Include="Log_Sustentos.cs" />
+    <Compile Include="Log_TDoc_Identidad.cs" />
+    <Compile Include="Log_Tipo_Contrato.cs" />
+    <Compile Include="Log_Tipo_Cta_Bancaria.cs" />
+    <Compile Include="Log_Tipo_Establecimiento.cs" />
+    <Compile Include="Log_Tipo_Trabajador.cs" />
+    <Compile Include="Log_Tipo_Via.cs" />
+    <Compile Include="Log_Tipo_Zona.cs" />
+    <Compile Include="Log_Vacaciones.cs" />
+    <Compile Include="Log_Vacaciones_Pagadas.cs" />
+    <Compile Include="PanelControlBL.cs" />
+    <Compile Include="PeriodoBL.cs" />
+    <Compile Include="PersonalBL.cs" />
+    <Compile Include="PlanillasBL.cs" />
+    <Compile Include="ProcesosBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteBL.cs" />
+    <Compile Include="Reporte_DetalleBL.cs" />
+    <Compile Include="Tipo_ConceptoBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPA_DATOS\CAPA_DATOS.csproj">
+      <Project>{F2EE77E4-8A1C-4C78-91F1-7DA8E02D829D}</Project>
+      <Name>CAPA_DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAPA_ENTIDAD\CAPA_ENTIDAD.csproj">
+      <Project>{5ECE30DF-22FB-4424-8703-DB1215EEB78F}</Project>
+      <Name>CAPA_ENTIDAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

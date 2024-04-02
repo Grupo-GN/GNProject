@@ -1,0 +1,64 @@
+.well
+      {
+         padding-top: 0px;
+         padding-left: 20px;
+         box-shadow: 0 0 50px #666666;
+         margin: 7% auto 0;
+         width: 350px;
+         background: rgba(0.4, 0, 0, 0.4);
+      }
+
+.well{
+    background-color:white;
+}
+
+      .btn1
+      {
+         background-color: #f57421;
+         color: white;
+         transition: all 0.5s;
+         
+      }
+      .btn1:hover, .btn1:focus
+      {
+         background-color: white;
+         color: black;
+         border: 1px solid;
+         border-color: black;
+         transition: 0.5s;
+      }
+      a:hover
+      {
+         color: black;
+      }
+
+      body
+      {
+         
+      }
+
+      .well-header
+      {
+         background-color: white;
+      }
+
+      .input-group-addon
+      {
+          background-color: #d61129;
+          border-color: white;
+          color: black;
+      }
+
+      .btn2
+      {
+         transition: all 0.5s;
+      }
+
+
+      .btn2:hover, .btn2:focus
+      {
+         border-color: red;
+         color: black;
+         background-color: red;
+         transition: 0.5s;
+      }

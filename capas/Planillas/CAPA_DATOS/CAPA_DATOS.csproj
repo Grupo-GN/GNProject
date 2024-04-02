@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2EE77E4-8A1C-4C78-91F1-7DA8E02D829D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAPA_DATOS</RootNamespace>
+    <AssemblyName>CAPA_DATOS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Web\Bin\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.1402.18797, Culture=neutral, PublicKeyToken=b1c3870a8ed11c44">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Microsoft.VisualStudio.TeamSystem.Data.UnitTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculosDA.cs" />
+    <Compile Include="Calculos_PermDA.cs" />
+    <Compile Include="CompaniaDA.cs" />
+    <Compile Include="ConceptosDA.cs" />
+    <Compile Include="Conex.cs" />
+    <Compile Include="controllerAsignarCentroCosto.cs" />
+    <Compile Include="controllerConcepto.cs" />
+    <Compile Include="controllerCtaCompania.cs" />
+    <Compile Include="controllerEncriptar.cs" />
+    <Compile Include="controllerGenerarDatosPersonal.cs" />
+    <Compile Include="controllerGenerarTRegistro.cs" />
+    <Compile Include="controllerImportarDatosPersonal.cs" />
+    <Compile Include="controllerImportCalculos.cs" />
+    <Compile Include="ControllerInterfacesExp.cs" />
+    <Compile Include="ControllerMaestroPersonal.cs" />
+    <Compile Include="ControllerMaestroPersonalActivo.cs" />
+    <Compile Include="ControllerMenus.cs" />
+    <Compile Include="ControllerMoneda.cs" />
+    <Compile Include="controllerMotivoCtaCte.cs" />
+    <Compile Include="ControllerPermiso.cs" />
+    <Compile Include="ControllerPermisoDetalle.cs" />
+    <Compile Include="ControllerPlanillaGeneral.cs" />
+    <Compile Include="ControllerRoles.cs" />
+    <Compile Include="controllerSeguridad.cs" />
+    <Compile Include="ControllerUser.cs" />
+    <Compile Include="controller_CambiarPlanilla.cs" />
+    <Compile Include="controller_ConcarReport.cs" />
+    <Compile Include="controller_datosbancarios.cs" />
+    <Compile Include="controller_GenerarArchivoBancos.cs" />
+    <Compile Include="controller_GenerarArchivoEstado.cs" />
+    <Compile Include="controller_GenerarAsientos.cs" />
+    <Compile Include="controller_GenerarAsientoSap.cs" />
+    <Compile Include="controller_MntSeccion.cs" />
+    <Compile Include="controller_ReporteIncidencias.cs" />
+    <Compile Include="DAOParametros.cs" />
+    <Compile Include="DAOPersonal.cs" />
+    <Compile Include="Dao_AFP.cs" />
+    <Compile Include="Dao_AperturaCierrePeriodo.cs" />
+    <Compile Include="Dao_Asiento.cs" />
+    <Compile Include="Dao_Asiento_Cuentas.cs" />
+    <Compile Include="Dao_Bancos.cs" />
+    <Compile Include="Dao_Calculos_Perm.cs" />
+    <Compile Include="Dao_Cargo.cs" />
+    <Compile Include="Dao_Cargo_Funciones.cs" />
+    <Compile Include="Dao_Categoria.cs" />
+    <Compile Include="Dao_Categoria2.cs" />
+    <Compile Include="Dao_Categoria_Auxiliar.cs" />
+    <Compile Include="Dao_Categoria_Auxiliar2.cs" />
+    <Compile Include="Dao_Ccosto.cs" />
+    <Compile Include="Dao_CIIU.cs" />
+    <Compile Include="Dao_Compania.cs" />
+    <Compile Include="Dao_Compania_Establecimiento.cs" />
+    <Compile Include="Dao_Compania_Externa.cs" />
+    <Compile Include="Dao_Compania_Externa_Establecimientos.cs" />
+    <Compile Include="Dao_Conceptos.cs" />
+    <Compile Include="Dao_Concepto_Remunerativo.cs" />
+    <Compile Include="Dao_Contratos.cs" />
+    <Compile Include="Dao_Correo_Usuario.cs" />
+    <Compile Include="Dao_Ctacte_Motivo.cs" />
+    <Compile Include="Dao_Ctacte_Operacion.cs" />
+    <Compile Include="Dao_Ctas_Ctes.cs" />
+    <Compile Include="Dao_Cuotas.cs" />
+    <Compile Include="Dao_Cuotas_Estado_Pago.cs" />
+    <Compile Include="Dao_Departamentos.cs" />
+    <Compile Include="Dao_Distritos.cs" />
+    <Compile Include="Dao_D_Directos.cs" />
+    <Compile Include="Dao_D_Fijos.cs" />
+    <Compile Include="Dao_D_Fijos_2.cs" />
+    <Compile Include="Dao_D_Variables.cs" />
+    <Compile Include="Dao_Ejercicio.cs" />
+    <Compile Include="Dao_EPS.cs" />
+    <Compile Include="Dao_E_Civil.cs" />
+    <Compile Include="Dao_Familiares.cs" />
+    <Compile Include="Dao_General.cs" />
+    <Compile Include="Dao_Incidencias.cs" />
+    <Compile Include="Dao_Mes.cs" />
+    <Compile Include="Dao_Motivo_Fin_Per_Lab.cs" />
+    <Compile Include="Dao_Nacionalidad.cs" />
+    <Compile Include="Dao_Nivel_Educativo.cs" />
+    <Compile Include="Dao_Ocupacion.cs" />
+    <Compile Include="Dao_Periodicidad.cs" />
+    <Compile Include="Dao_Periodo.cs" />
+    <Compile Include="Dao_Personal.cs" />
+    <Compile Include="Dao_Personal_Anexo.cs" />
+    <Compile Include="Dao_Personal_Anexo2.cs" />
+    <Compile Include="Dao_Personal_Establecimientos.cs" />
+    <Compile Include="Dao_Planilla.cs" />
+    <Compile Include="Dao_Plan_De_Cuentas.cs" />
+    <Compile Include="Dao_PptoPersonal.cs" />
+    <Compile Include="Dao_Prm_Afp.cs" />
+    <Compile Include="Dao_Prm_CategoriaAux.cs" />
+    <Compile Include="Dao_Prm_Cia.cs" />
+    <Compile Include="Dao_Prm_Periodo.cs" />
+    <Compile Include="Dao_Prm_Planilla.cs" />
+    <Compile Include="Dao_Prm_SubcategoriaAux.cs" />
+    <Compile Include="Dao_Procesos.cs" />
+    <Compile Include="Dao_Provincias.cs" />
+    <Compile Include="Dao_Proyecto.cs" />
+    <Compile Include="Dao_Regimen_Laboral.cs" />
+    <Compile Include="Dao_Reportes.cs" />
+    <Compile Include="Dao_Reporte_Incidencias.cs" />
+    <Compile Include="Dao_RH_Area.cs" />
+    <Compile Include="Dao_Sexos.cs" />
+    <Compile Include="Dao_Situacion.cs" />
+    <Compile Include="Dao_Sustentos.cs" />
+    <Compile Include="Dao_TDoc_Identidad.cs" />
+    <Compile Include="Dao_Tipo_Contrato.cs" />
+    <Compile Include="Dao_Tipo_Cta_Bancaria.cs" />
+    <Compile Include="Dao_Tipo_Establecimiento.cs" />
+    <Compile Include="Dao_Tipo_Trabajador.cs" />
+    <Compile Include="Dao_Tipo_Via.cs" />
+    <Compile Include="Dao_Tipo_Zona.cs" />
+    <Compile Include="Dao_Vacaciones.cs" />
+    <Compile Include="Dao_Vacaciones_Pagadas.cs" />
+    <Compile Include="EjecucionScriptDA.cs" />
+    <Compile Include="FormulasDA.cs" />
+    <Compile Include="InterfacesDA.cs" />
+    <Compile Include="oAsientoValid\controller_AsientosValidar.cs" />
+    <Compile Include="oCA\controllerMantPermisos.cs" />
+    <Compile Include="oCA\controllerPermisos.cs" />
+    <Compile Include="oFormulas\controller_ConfigFormula.cs" />
+    <Compile Include="oFormulas\controller_RepGeneral.cs" />
+    <Compile Include="oFormulas\controller_ValidarFormula.cs" />
+    <Compile Include="oRepPlanillaGeneral\controller_RepPlanillageneral.cs" />
+    <Compile Include="oRRHH\controllerContratoNuevo.cs" />
+    <Compile Include="oRRHH\controllerContratosPlantilla.cs" />
+    <Compile Include="oRRHH\controllerDocumentoElectronico.cs" />
+    <Compile Include="PanelControlDA.cs" />
+    <Compile Include="ParametrosDA.cs" />
+    <Compile Include="PeriodoDA.cs" />
+    <Compile Include="PersonalDA.cs" />
+    <Compile Include="PlanillasDA.cs" />
+    <Compile Include="ProcesosDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteDA.cs" />
+    <Compile Include="Reporte_DetalleDA.cs" />
+    <Compile Include="Tipo_ConceptoDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPA_ENTIDAD\CAPA_ENTIDAD.csproj">
+      <Project>{5ECE30DF-22FB-4424-8703-DB1215EEB78F}</Project>
+      <Name>CAPA_ENTIDAD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

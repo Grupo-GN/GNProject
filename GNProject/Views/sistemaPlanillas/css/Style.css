@@ -1,0 +1,284 @@
+﻿body 
+{
+	background-color: #FFF;
+	scrollbar-face-color: #F4F4F4;
+	scrollbar-shadow-color: #999999;
+	scrollbar-highlight-color: #999999;
+	scrollbar-3dlight-color: #F4F4F4;
+	scrollbar-darkshadow-color: #F4F4F4;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #FF8E00;	
+	font-family: Arial;
+	font-size: 11px;
+	color: #000;
+}
+
+.textbox
+{
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #a0a0a0;
+	color:#444444;
+    font-size: 11px;
+	
+}
+.textbox:hover
+{
+	border: solid 1px Green;	
+	color: Green;
+    font-size: 11px;	
+}
+
+.link 
+{	
+    color:#003300; 
+    font-family:Arial; 
+    font-size:11px;
+    cursor: pointer;
+}
+.link:hover
+{
+	color: #c0c0c0;	
+	font-family: Arial;
+	font-size: 11px;
+    text-decoration: underline; 
+}
+
+.linkCeleste
+{	
+    color: #5F9EA0; 
+    font-family:Arial; 
+    font-size:11px;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.linkCeleste:hover
+{
+	color: #c0c0c0;	
+	font-family: Arial;
+	font-size: 11px;
+    text-decoration: underline; 
+}
+
+/*Imagenes de Botones*/
+.ImgNuevo
+{
+	background-image: url(../Img/NuevoSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgNuevo:hover
+{
+	background-image: url(../Img/New.png);	
+}
+
+.ImgEliminar
+{
+	background-image: url(../Img/EliminarSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgEliminar:hover
+{
+	background-image: url(../Img/Delete.png);	
+}
+
+
+.ImgGrabar
+{
+	background-image: url(../Img/GrabarSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgGrabar:hover
+{
+	background-image: url(../Img/Save.png);	
+}
+
+.ImgActualizar
+{
+	background-image: url(../Img/ActualizarSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgActualizar:hover
+{
+	background-image: url(../Img/Update.png);	
+}
+
+.ImgEditar
+{
+	background-image: url(../Img/EditarSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgEditar:hover
+{
+	background-image: url(../Img/Editar.png);	
+}
+
+.ImgImprimir
+{
+	background-image: url(../Img/ImprimirSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgImprimir:hover
+{
+	background-image: url(../Img/Print.png);	
+}
+
+.ImgImprimirFicha
+{
+	background-image: url(../Img/ImprimirFichaSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgImprimirFicha:hover
+{
+	background-image: url(../Img/ImprimirFicha.png);	
+}
+
+.ImgImprimirContrato
+{
+	background-image: url(../Img/ImprimirContratoSombra.png);
+	background-repeat: no-repeat;	
+}
+.ImgImprimirContrato:hover
+{
+	background-image: url(../Img/ImprimirContrato.png);	
+}
+
+/*Grilla negro*/
+.mGrid     
+{	
+    width: 100%;    
+    background-color: #fff;    
+    margin: 5px 0 10px 0;    
+    border: solid 1px #525252;    
+    border-collapse:collapse;    
+}   
+.mGrid td {    
+    padding: 2px;    
+    border: solid 1px #c1c1c1;    
+    color: #717171;
+    
+}   
+.mGrid th {    
+    padding: 4px 2px;    
+    color: #fff;    
+    background: #424242 url(Img_grilla_negro/grd_head.png) repeat-x top;    
+    border-left: solid 1px #525252;    
+    font-size: 0.9em;    
+}   
+.mGrid .alt { background: #fcfcfc url(Img_grilla_negro/grd_alt.png) repeat-x top; }   
+.mGrid .pgr { background: #424242 url(Img_grilla_negro/grd_pgr.png) repeat-x top; }   
+.mGrid .pgr table { margin: 5px 0; }   
+.mGrid .pgr td {    
+    border-width: 0;    
+    padding: 0 6px;    
+    border-left: solid 1px #666;    
+    font-weight: bold;    
+    color: #fff;    
+    line-height: 12px;    
+ }      
+.mGrid .pgr a { color: #666; text-decoration: none; }   
+.mGrid .pgr a:hover { color: #000; text-decoration: none; }
+
+
+/* Grilla Azul */
+.GridFPSAzul
+{
+    font-size: 11px;     
+}
+.GridFPSAzul th
+{
+    /*background-image: url(Images/Gridview/BG_GridHeader1.gif);*/
+    background-image: url(Img_grilla_azul/BG_GridHeader1.gif);
+    background-repeat: repeat-x;
+    border: solid 1px #ffffff;
+    height: 25px;    
+}
+.GridFPSAzul td
+{
+    background-color : White ;    
+    background-repeat: repeat-x;
+    border: solid 1px #ffffff; 
+    color: #717171;   
+}
+
+
+/*----------------------- Modal PopUp Extender ----------------------------*/
+.popupControl 
+{
+	background-color: #eeeeee;
+    border:outset 1px #c0c0c0;
+    color: #444444;
+    position:absolute;
+    visibility:visible;
+    width: 500px;
+    text-align: center;
+}
+.popupControlAncho
+{
+	background-color: #eeeeee;
+    border:outset 1px #c0c0c0;
+    color: #444444;
+    position:absolute;
+    visibility:visible;
+    width: 500px;
+    text-align: center;
+}
+.modalBackground1	/*--- Blanco ---*/
+{
+	background-color:#cccccc;
+    filter:alpha(opacity=60);
+    opacity:0.6; 
+}
+.modalBackground	/*--- Oscuro ---*/
+{
+	background-color:#000000;
+    filter:alpha(opacity=50);
+    opacity:0.5; 
+}
+
+
+
+.drag
+{
+	background-color: #dddddd;
+    cursor: move;
+    border:solid 1px gray;
+}
+
+
+
+/*--- UpdateProgress ---*/
+.UpdateProgressPanel
+{
+       z-index: 99999999;
+       /*---background-color:#fff; ---*/
+       font-family: Arial;
+       font-size: 11px;
+       color:#fff;
+       font-weight: bold;
+       width: 200px;
+       text-align: center;
+       vertical-align: middle;
+       position: fixed;
+       top: 30%;
+       /* bottom: 50%; */
+       left: 45%;
+       padding: 10px;
+       /*---border: solid 2px #5D7B9D; ---*/
+} 
+
+.UpdateProgressModalBackground
+{
+    z-index: 99999998;
+    background-color: #000000; /* 6D7B8D */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+}

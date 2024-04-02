@@ -1,0 +1,451 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+@font-face { font-family: AENOR Fontana ND; src: url('../fonts/AEFONBOL.ttf'); } 
+@font-face { font-family: AENOR Fontana ND; src: url('../fonts/AEFonDmB.ttf'); } 
+@font-face { font-family: AENOR Fontana ND; src: url('../fonts/AEFONITA.ttf'); } 
+@font-face { font-family: AENOR Fontana ND; src: url('../fonts/AEFONREG.ttf'); } 
+@font-face { font-family: AENOR Fontana ND; src: url('../fonts/AEFONSEC.ttf'); } 
+@font-face { font-family: AENOR Fontana ND; src: url('../fonts/AEFONTIT.ttf'); } 
+
+body   
+{
+	/*background:#eee url(img/bg.jpg) top center no-repeat;
+    font-size: .80em;
+     font: normal .80em arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+     color:#555;*/
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size:1em/6em;
+	color:#000000;
+    background:#8b8b8b;
+    margin:0;
+    padding:0;
+    text-align:left;
+    background-image:url('../ImgJMA/calidad.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    -o-background-size:100% 100%;  
+}
+
+a:link, a:visited
+{
+    color:White;
+}
+
+a:hover
+{
+    /*color: #1d60ff;*/
+    text-decoration: none;
+}
+
+a:active
+{
+   /* color: #034af3;*/
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.6em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-family:AENOR Fontana ND;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+
+.page
+{
+    width: 99.8%;
+    /*1000px*/
+    /*background-color: #fff;*/
+   /* background-color: #edede2;* esto decomentar/
+    /*margin: 20px auto 0px auto;   #496077*/
+    margin:0px auto 0px auto;
+  /*  border: 1px solid black;*/
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+   /* background: #4b6c9e;*/
+   /*background:#475e72;*/
+   /* background:#255888;*/
+    width: 100%;
+    
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2.2em;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+}
+
+.main
+{
+    padding: 0px 2px;
+    margin: 8px 8px 8px 8px;
+    /*445*/
+    /*min-height: 80%;*/
+    min-height:550px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+}
+
+/*div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.30em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background:#C0D9D9;
+    color:#4285AE;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}*/
+
+/* pruebas menu nuevo*/
+
+/* Main */
+#Menu {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;
+    background-color: #111;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 50px;
+    box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#Menu li {
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#Menu a {
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#Menu li:hover > a {
+    color: #fafafa;
+}
+
+
+
+#Menu li:hover > ul {
+    display: block;
+}
+
+/* Sub-menu */
+#Menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background-color: #444;
+    background-image: linear-gradient(#444, #111);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#Menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-shadow: 0 1px 0 #111111,
+                0 2px 0 #777777;
+}
+
+#Menu ul li:last-child {
+    box-shadow: none;
+}
+
+#Menu ul a {
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+
+ 
+
+#Menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+
+#Menu ul li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+#Menu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#Menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec;
+}
+
+#Menu ul li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#Menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+
+/* fin menu*/
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}

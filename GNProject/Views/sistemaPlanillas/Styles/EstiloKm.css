@@ -1,0 +1,209 @@
+﻿
+.miTitulo
+{
+ font-weight:bold; 
+font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-size:medium;
+/*color:#0066FF;*/
+/*color:#4682B4;*/
+color:#336699;
+text-decoration:underline;
+}
+
+
+
+.ddl
+{	
+	border: 1px solid #B1B1B1;
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	text-transform:uppercase;
+}
+
+.txt
+{
+	font-family:Arial;
+	min-height: 16px;
+	border: #B1B1B1 1px solid;
+	color: #000000;
+	text-transform:uppercase;
+	font-size:10px;
+	text-align:left; 
+}
+
+.miTituloTab
+{
+	font-weight:bold;
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+}
+
+.miLabelSuma
+{
+	font-weight:bold;
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size:medium;
+}
+
+.miLabelSumaNumeros
+{
+	font-weight:bold;
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size:small;
+}
+
+.miTituloOnTab
+{
+	text-align:left;
+	color:#336699;
+	font-weight:bold;
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size:x-small;
+    text-transform:uppercase;
+}
+
+.miPage
+{
+    width: 960px;
+    margin:20px auto 0px 1px;
+}
+
+.miTextBox{
+	width: 221px;
+	background: transparent url('images/bg.jpg') no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:0px;
+}
+
+.miBotonGrande{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 0px 0px 0;
+    /*border: 1px solid #ccc;*/
+    border: 1px solid #708090;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-size:small;
+    text-transform:uppercase;
+    /*background: #eee;*/
+    /*background:#e1fcfc;*/
+    background: #cde7ff; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+   border-radius: 8px 8px 8px 8px;
+}
+
+.miBotonGrande:hover {
+    background:#e1fcfc;
+    color:#B22222;
+    border: 1px solid #4169E1;
+}
+
+.submit{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    /*border: 1px solid #ccc;*/
+    border: 1px solid #708090;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-size:x-small;
+    text-transform:uppercase;
+    /*background: #eee;*/
+    /*background:#e1fcfc;*/
+    background: #cde7ff; /*COLOR DEL BOTON CIERRE DE APERTURA*/
+   border-radius: 8px 8px 8px 8px;
+	margin-left: 0;
+	margin-right: 0px;
+	margin-top: 0;
+}
+
+.submit:hover {
+    /*background: #ddd;*/
+    /*background: #F0F8FF;*/
+    background:#e1fcfc;
+    /*color:#0066FF;*/
+   /*color:#4682B4;*/
+    color:#B22222;
+    border: 1px solid #4169E1;
+}
+
+ .FormatFontGridView
+ {
+ font-size:x-small;
+ font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+}
+
+.tituloGrilla
+{
+font-size:x-small;
+font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-weight:bold;	
+    /*color:#0066FF;*/
+/*color:#4682B4;*/
+color:#336699;
+}
+
+.titulocontrolUser
+{
+font-size:small;
+ font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-weight:bold;	
+    /*color:#0066FF;*/
+/*color:#4682B4;*/
+color:#336699;
+
+}
+
+.miLabel
+{
+text-transform:uppercase;
+font-size:x-small;
+font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-weight:bold;	
+}
+
+.miLabelDerecha
+{
+text-transform:uppercase;
+font-size:x-small;
+font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-weight:bold;	
+text-align:right;
+}
+
+.txtTextArea
+{
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	min-height: 80px;
+	border: #B1B1B1 1px solid;
+	color: #000000;
+	text-transform:uppercase;
+	font-size:10px;
+	text-align:left; 
+	height:80px;
+}
+
+.miTextboxs
+{
+	border: 2px solid black;
+	width: 400px;
+	height: 400px;
+	-moz-border-radius: 10px 200px 200px 10px;
+}
+.miLabelError
+{
+ font-weight:bold; 
+ font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+font-size:x-small;
+/*color:#0066FF;*/
+/*color:#4682B4;*/
+color:Red;
+}
+.miComboBox
+{
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size :small;	
+}

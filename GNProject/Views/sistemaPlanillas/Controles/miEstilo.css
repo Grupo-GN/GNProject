@@ -1,0 +1,179 @@
+﻿
+.elBotonAdd
+{
+   background:transparent url(../Icon/Save.gif) center center no-repeat;
+   background-position:17px 6px;
+   background-color:White;
+   padding: 18px 0 0 0;
+   margin:1px auto 1px auto;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:50px;   
+    height:40px;
+    /*border:solid 1px #708090;*/
+    border: 1px solid #4169E1;
+    border-radius: 8px 8px 8px 8px;
+}
+
+
+
+.elBotonUpdate
+{
+   background:transparent url(../Icon/Modify.gif) center center no-repeat;
+   background-position:17px 6px;
+   background-color:White;
+   padding: 18px 0 0 0;
+   margin:1px auto 1px auto;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:70px;   
+    height:40px;
+    border: 1px solid #4169E1;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.elBotonDelete
+{
+   background:transparent url(../Icon/delete.gif) center center no-repeat;
+   background-position:17px 6px;
+   background-color:White;
+   padding: 18px 0 0 0;
+   margin:1px auto 1px auto;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:50px;   
+    height:40px;
+       border: 1px solid #4169E1;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.elBotonNew
+{
+   background:transparent url(../Icon/add.gif) center center no-repeat;
+   background-position:17px 6px;
+   background-color:White;
+   padding: 18px 0 0 0;
+   margin:1px auto 1px auto;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:50px;   
+    height:40px;
+    /*border:solid 1px #708090;*/
+       border: 1px solid #4169E1;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.elBotonCancel
+{
+   background:transparent url(../Icon/cancel.gif) center center no-repeat;
+   background-position:17px 6px;
+   background-color:White;
+   padding: 18px 0 0 0;
+   margin:1px auto 1px auto;
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:x-small;
+    width:50px;   
+    height:40px;
+       border: 1px solid #4169E1;
+    border-radius: 8px 8px 8px 8px;
+}
+ 
+ 
+   .elBotonAdd[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+   .elBotonDelete[disabled]
+ {
+	border:solid 1px #708090;
+		background-color:#DCDCDC;
+ }
+   .elBotonNew[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+   .elBotonUpdate[disabled]
+ {
+	border:solid 1px #708090;
+	background-color:#DCDCDC;
+ }
+   .elBotonCancel[disabled]
+ {
+	border:solid 1px #708090;
+    background-color:#DCDCDC;
+ }
+ 
+ .elBotonAdd:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; border: 1px solid #4169E1;
+		background-position:17px 6px;
+		background-color:#e1fcfc;
+       padding: 18px 0 0 0;
+ }
+ 
+ .elBotonNew:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; border: 1px solid #4169E1;
+		background-position:17px 6px;
+		background-color:#e1fcfc;
+       padding: 18px 0 0 0;
+ }
+ 
+ .elBotonUpdate:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; border: 1px solid #4169E1;
+   background-position:17px 6px;
+		background-color:#e1fcfc;
+       padding: 18px 0 0 0;
+ }
+ 
+ .elBotonDelete:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; border: 1px solid #4169E1;
+		background-position:17px 6px;
+		background-color:#e1fcfc;
+       padding: 18px 0 0 0;
+ }
+ 
+ .elBotonCancel:hover:enabled
+{
+       cursor:pointer;
+       color:#B22222; border: 1px solid #4169E1;
+		background-position:17px 6px;
+		background-color:#e1fcfc;
+       padding: 18px 0 0 0;
+ }
+ 
+
+.elPanel
+{
+	background-color:White;
+   border:solid 1px #708090;   
+   width:280px;
+   border-radius: 8px 8px 8px 8px;
+}
+
+ /*.elBotonAdd:focus
+{
+		cursor:auto;
+       color:blue; border: 1px solid #4169E1;
+       background-position:17px 4px;
+       background-color:yellow;
+       padding: 18px 0 0 0;
+ }*/

@@ -1,0 +1,17 @@
+﻿body {
+}
+
+
+input[type=checkbox] {display: none;}
+input[type=checkbox] + label {
+    background: #fff;
+    /*display: inline-block;*/
+    display:block;
+    width: 16px;
+    height: 16px;
+    background: url('check_02.png') 0px 0px no-repeat;
+    text-indent: -1000em;
+}
+input[type=checkbox]:checked + label {
+background: url('check_02.png') 0px -16px no-repeat;
+}

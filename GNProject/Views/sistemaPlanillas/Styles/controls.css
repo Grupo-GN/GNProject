@@ -1,0 +1,673 @@
+﻿/********************************
+Colores de la empresa
+********************************
+sombreado --- #BCD0FE
+suave --- #4B9BFC
+fuerte -- #005B88
+
+00007E
+********************************
+plomo fondo suave	DEDEDE
+plomo suave		B1B1B1
+plomo medio		7B7B7B
+plomo fuerte	575757
+*/
+body   
+{
+    /*font-size: .80em;*/
+    font-size: 11px;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+    
+    /*Estilo para las barras de desplazamiento*/
+    scrollbar-face-color: #F4F4F4;
+	scrollbar-shadow-color: #999999;
+	scrollbar-highlight-color: #999999;
+	scrollbar-3dlight-color: #F4F4F4;
+	scrollbar-darkshadow-color: #F4F4F4;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #999999;/*#FF8E00;*/
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+FIELDSET /*Panel*/
+{
+	margin-top: 0px; padding-top: 0px;
+}
+
+.nombre {padding-left:20px;}
+/*****************************************************************
+			font-size:10px;				GRIDS
+******************************************************************/
+.grid {font-size:10px;background-color: #fff;margin: 5px 0 10px 0;border: solid 1px #B1B1B1;border-collapse:collapse;}   
+.grid th {padding: 5px 10px 5px 10px;color: #000000;font-weight:normal;background: #DEDEDE ; /*#6F6F6F url(../img/grd_head.png) repeat-x top*/   
+    border-left: solid 1px #B1B1B1;text-transform:capitalize; text-align:center;}  
+
+.grid .row td {font-size:10px;padding: 2px 5px 2px 5px ;text-transform:uppercase; border: solid 1px #c1c1c1; color: #000000;} 
+.grid .sel td {font-size:10px;padding: 2px 5px 2px 5px ;text-transform:uppercase; border: solid 1px #c1c1c1; background-color:#BCD0FE;  color: #000000;}
+
+.grid .pgr { font-size:10px;background:#DEDEDE; text-align:center; }/* #424242 url(../img/grd_pgr.png) repeat-x top*/ 
+.grid .pgr table { margin: 5px 0; }   
+.grid .pgr td {border-width: 0; padding: 0 6px;border-left: solid 1px #575757;font-weight: bold;color: #000000;line-height: 12px;}
+.grid .pgr a { color: #000000; text-decoration:underline; }   
+
+.grid .pgr a:hover { color: #000000; text-decoration: none; }
+.grid .row:hover { background-color:#BCD0FE;    /*empresa suave*/} 
+
+.grid .vacio
+{ 
+	padding:5px 10px 5px 10px;
+	color:#000000;
+	width:150px;
+	vertical-align:middle;
+}
+/******************************************************************/
+.gridSmallCabecera {margin-top:10px;font-size:10px;background-color: #fff;border: solid 1px #B1B1B1;border-collapse:collapse;font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;}
+.gridSmallCabecera th {padding: 3px 3.5px 3px 3.5px;color: #000000;font-weight:normal;background: #DEDEDE;
+	border-left: solid 1px #B1B1B1; text-align:center;line-height: 14px;font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;}
+
+.gridSmallPiePagina {margin-top:0px;font-size:10px;background-color: #fff;border: solid 1px #B1B1B1;border-collapse:collapse;}
+.gridSmallPiePagina th {padding: 3px 3.5px 3px 3.5px;color: #000000;font-weight:normal;background: #DEDEDE;
+	border-left: solid 1px #B1B1B1; text-align:center;line-height: 14px;}
+
+.gridSmall {font-size:10px;background-color: #fff;margin: 0px 0 10px 0;border: solid 1px #B1B1B1;border-collapse:collapse;}   
+.gridSmall th {padding: 3px 5px 3px 5px;color: #000000;font-weight:normal;background: #DEDEDE; /*#6F6F6F url(../img/grd_head.png) repeat-x top*/   
+    border-left: solid 1px #B1B1B1; text-align:center;line-height: 14px;font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;}  
+.gridSmall tbody tr td{font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;}
+
+.gridSmall .row td {font-size:10px;padding: 2px 5px 2px 5px ;text-transform:uppercase; border: solid 1px #c1c1c1; color: #000000;font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;} 
+.gridSmall .rowNormal td {font-size:10px;padding: 2px 5px 2px 5px ;border: solid 1px #c1c1c1; color: #000000;} 
+
+.gridSmall .sel td {background-color:#00007E;  color: White; font-size:10px;padding: 2px 5px 2px 5px ;text-transform:uppercase; border: solid 1px #c1c1c1;}
+.gridSmall .selNormal td {background-color:#00007E;  color: White; font-size:10px;padding: 2px 5px 2px 5px ;border: solid 1px #c1c1c1;}
+
+.gridSmall .sel a {color: White;}
+
+
+.gridSmall .pgr { font-size:10px;background:#DEDEDE; text-align:center; } 
+.gridSmall .pgr table { margin: 5px 0; }   
+.gridSmall .pgr td {border-width: 0; padding: 0 6px;border-left: solid 1px #575757;
+	line-height: 12px;font-weight: bold;color: #000000;}/**/
+.gridSmall .pgr a { color: #000000; text-decoration: underline; }   
+
+.gridSmall .pgr a:hover { color: #000000; text-decoration: none; }
+
+.gridSmall .row:hover { background-color:#BCD0FE;  /*empresa fuerte*/  } 
+/*.gridSmall .row:hover td { color:White ;} 
+.gridSmall .row:hover a { color:White ;} */
+
+.gridSmall .vacio
+{ 
+	padding:5px 10px 5px 10px;
+	color:#000000;
+	width:150px;
+	vertical-align:middle;
+	text-align:center;
+}
+/*****************************************************************
+							BUTTONS
+******************************************************************/
+.btn
+{
+	/*border: 1px solid #73C293; 
+	background-color: #363837;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: x-small;
+	color: #FFFFFF; 
+	cursor: pointer;*/
+	background: #cde7ff; /*url('../../images/theme/submit_bg.png') no-repeat;*/
+	border: 1px solid #aaa;
+	cursor: pointer;
+	/*font-weight: normal;
+	font-family: Arial;
+	font-size: 11px;*/
+	font-weight:bold;
+	font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size:small;
+	padding: 3px 5px 3px 5px;
+	text-transform:uppercase;
+}
+.btn:hover
+{
+	/*border: 1px solid #73C293; 
+	background-color: #365535;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: x-small;
+	color: #FFFFFF;*/
+	border: 1px solid #708090;/*#aaa;*/
+	background: #F0F8FF /*url('../../images/theme/submit_bg.png') no-repeat 0 -140px;*/;
+}
+/*****************************************************************
+							LISTOBOX
+******************************************************************/
+.lbox
+{
+	color: #000000;font-size:11px;
+}
+
+/*****************************************************************
+							LABELS
+******************************************************************/
+.rbl
+{
+	color: #000000;font-size:11px;
+}
+.lbl
+{
+	color: #000000;font-size:11px; text-transform:none;
+}
+.lblError
+{
+	color: Red;font-size:11px;
+	font-weight:bold;
+}
+.lblDato
+{
+	color: #000000;font-size:11px;text-transform:uppercase;font-style:italic;
+}
+.lblComplemento
+{color:#000000;font-size:11px;text-transform:uppercase;
+	}
+/*
+.lblComplemento
+{	
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 12px;
+	font-style: italic;
+	color: #9A9A9A;
+}
+.lblFiltro
+{	
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	color: #7B7B7B;
+}
+	.lblError
+{
+	color:Red;font-size:11px;
+}
+*/
+/*****************************************************************
+							DROPDOWNLISTS
+******************************************************************/
+
+.ddl
+{	
+	border: 1px solid #B1B1B1;
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 10px;
+	font-style: normal;
+	color: #000000;
+	text-transform:uppercase;
+}
+/*
+.ddlfiltro
+{	
+	border: #D2691E 1px solid;
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	color: #575757;
+	width:100px;
+}
+*/
+/*****************************************************************
+							LINKBUTTON
+******************************************************************/
+a.lkbtn
+{	
+	color: #00007E;
+	text-decoration:underline;
+	font-style:italic;
+	font-size:11px;
+	font-weight:normal;
+}
+
+a.lkbtn2
+{	
+	color: Red;
+	text-decoration:underline;
+	font-style:italic;
+	font-size:11px;
+	font-weight:normal;
+}
+
+/*****************************************************************
+							TEXTBOX
+******************************************************************/
+
+.txt
+{
+	font-family:Arial;
+	
+	min-height: 16px;
+	border: #B1B1B1 1px solid;
+	color: #000000;
+	text-transform:uppercase;
+	font-size:10px;
+	text-align:left; 
+}
+
+.txt_align_derecha
+{
+	font-family:Arial;
+	background: white url(../img/input_text.gif) repeat-x bottom left;
+	min-height: 16px;
+	border: #B1B1B1 1px solid;
+	color: #000000;
+	text-transform:uppercase;
+	font-size:10px;
+	text-align:right; 
+}
+
+/********************************************************************
+				   COMBOBOX AJAXTOOLKIT --  solo funciona con ajax 3 vs 2008
+.combobox .ajax__combobox_textboxcontainer input {
+    background-color: #ADD8E6;
+    border: solid 1px Blue;
+    border-right: 0px none;
+}
+.combobox .ajax__combobox_buttoncontainer button {
+    background-color: #ADD8E6;
+    border: solid 1px Blue;
+}
+********************************************************************/
+
+/********************************************************************
+						TABLAS Y CELDAS
+.tcDato
+{
+	font-size: 12px;
+	color: #575757;
+}
+.tcEstatico
+{
+	background-color:#BEBEBE;
+	font-size: 12px;
+	color: #8A8A8A;	
+}
+********************************************************************/
+.form
+{ width:100%;
+}
+.form table
+{
+	color: #000000;font-size:11px;	
+	padding:10px 0px 10px 0px;	
+	display: inline;
+	text-align:left;
+	/*margin-bottom:2px;*/
+	vertical-align:middle;
+}
+.form .estatico
+{ }
+
+
+td.titulo
+{background-color:#DEDEDE;
+	text-align:center;
+	border-left:solid 1px #B1B1B1;
+	border-top:solid 1px #B1B1B1;
+	border-right:solid 1px #B1B1B1;	
+	border-bottom:solid 1px #B1B1B1;
+	}
+
+td.celda
+{padding-left:20px;
+	padding-right:20px;
+	}	
+
+td.sombreado
+{background-color:#DEDEDE; padding:0px 5px 0px 5px;	}
+.lboxTitulo
+{background-color:#DEDEDE;
+	line-height: 14px;
+	text-align:center;
+	border-left:solid 1px #B1B1B1;
+	border-top:solid 1px #B1B1B1;
+	border-right:solid 1px #B1B1B1;	
+	border-bottom:solid 1px #B1B1B1;
+	}
+/*****************************************************************
+							TAB CONTAINER
+******************************************************************/
+/* ajax__tab_yuitabview-theme theme (img/yui/sprite.png) 
+.tabCont 
+{width:800px;
+	}*/
+.tabCont .ajax__tab_header /*LINEA DE LA CABECERA*/
+{   
+	
+	font: normal normal normal 11px Arial;
+    border-bottom:solid 3px #000000;/*linea del cuadro*/
+    padding:0px 0px 0px 0px;
+}
+.tabCont .ajax__tab_header .ajax__tab_outer /*BORDES DE CADA TAB*/
+{
+    background: #ffffff;
+    margin:0px 0px 0px 0px; /*espacio entre tabs*/
+    vertical-align:bottom;
+    border:solid 1px #a3a3a3;
+    border-bottom-width:0px;
+}
+.tabCont .ajax__tab_header .ajax__tab_tab /*TAB EN ESTADO NATURAL*/
+{    
+    color:#000000;
+    padding:5px 10px 5px 10px;
+}
+.tabCont .ajax__tab_hover .ajax__tab_outer /*CELDA SELECCIONADA CON EL MOUSE*/
+{
+    background: #E7E7E7;
+    color:#575757;
+}
+.tabCont .ajax__tab_active .ajax__tab_tab /*TAB ABIERTO*/
+{
+	background:#000000;
+    color:#ffffff;
+}
+.tabCont .ajax__tab_active .ajax__tab_outer /* filo DERECHO DEL TAB ABIERTO*/
+{
+    background:#000000/* -1400px;*/
+}
+.tabCont .ajax__tab_body 
+{    
+    padding:20px 10px 0px 10px;
+    background-color:#FFFFFF; /*edf5ff font-family:verdana,tahoma,helvetica;    font-size:10pt;*/   
+    border:solid 1px #808080;
+    border-top-width:0px;
+}
+
+/*****************************************************************
+							CALENDARIO AJAX
+******************************************************************/
+/*
+.ajax__calendar_container {background-color:red;padding:0px;position:absolute;cursor:default;width:200px;font-size:11px;text-align:center;font-family:tahoma,verdana,helvetica;}
+.ajax__calendar_body {height:139px;width:200px;position:relative;overflow:hidden;margin:auto;}
+.ajax__calendar_days, 
+.ajax__calendar_months, 
+.ajax__calendar_years {top:0px;left:0px;height:139px;width:200px;position:absolute;text-align:center;margin:auto;}
+.ajax__calendar_container table {font-size:11px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;border-spacing:0;background-color:#DEDEDE;}
+.ajax__calendar_container tc {margin:0;padding:0;}
+.ajax__calendar_header {height:20px;width:100%;}
+.ajax__calendar_prev {cursor:pointer;width:15px;height:15px;float:left;background-repeat:no-repeat;background-position:50% 50%;background-image:url(<%=WebResource("AjaxControlToolkit.Calendar.arrow-left.gif")%>);}
+.ajax__calendar_next {cursor:pointer;width:15px;height:15px;float:right;background-repeat:no-repeat;background-position:50% 50%;background-image:url(<%=WebResource("AjaxControlToolkit.Calendar.arrow-right.gif")%>);}
+.ajax__calendar_title {cursor:pointer;font-weight:bold;}
+.ajax__calendar_footer {height:15px;}
+.ajax__calendar_today {cursor:pointer;padding-top:3px;}
+.ajax__calendar_dayname {height:17px;width:17px;text-align:right;padding:0 2px;}
+.ajax__calendar_day {height:14px;width:14px;text-align:right;padding:0 2px;cursor:pointer;}
+.ajax__calendar_month {height:44px;width:40px;text-align:center;cursor:pointer;overflow:hidden;}
+.ajax__calendar_year {height:44px;width:40px;text-align:center;cursor:pointer;overflow:hidden;}
+.ajax__calendar .ajax__calendar_container {border:1px solid #646464;background-color:#ffffff;color:#000000;}
+.ajax__calendar .ajax__calendar_footer {border-top:1px solid #f5f5f5;}
+.ajax__calendar .ajax__calendar_dayname {border-bottom:1px solid #f5f5f5;}
+.ajax__calendar .ajax__calendar_day {border:0px solid #ffffff;}
+.ajax__calendar .ajax__calendar_month {border:0px solid #ffffff;}
+.ajax__calendar .ajax__calendar_year {border:0px solid #ffffff;}
+.ajax__calendar .ajax__calendar_active .ajax__calendar_day {background-color:green;border-color:#0066cc;color:#0066cc;}
+.ajax__calendar .ajax__calendar_active .ajax__calendar_month {background-color:green;border-color:#0066cc;color:#0066cc;}
+.ajax__calendar .ajax__calendar_active .ajax__calendar_year {background-color:green;border-color:#0066cc;color:#0066cc;}
+.ajax__calendar .ajax__calendar_other .ajax__calendar_day {background-color:#ffffff;border-color:#ffffff;color:#646464;}
+.ajax__calendar .ajax__calendar_other .ajax__calendar_year {background-color:#ffffff;border-color:#ffffff;color:#646464;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_day {background-color:green;border-color:#daf2fc;color:#0066cc;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_month {background-color:green;border-color:#daf2fc;color:#0066cc;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_year {background-color:green;border-color:#daf2fc;color:#0066cc;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_title {color:#0066cc;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_today {color:#0066cc;}
+
+*/
+
+
+.ajax__calendar_container{background-color: #ffffff;}
+.ajax__calendar_container table{background-color: #e2e2e2;}
+.ajax__calendar_container td {border-spacing:0;padding:0px 0px 0px 0px;font-size:11px;border:none 0px;}
+
+.ajax__calendar_header{background-color: #ffffff; margin-bottom: 4px;} 
+
+.ajax__calendar_title,
+.ajax__calendar_next,
+.ajax__calendar_prev{color: #004080; padding-top: 3px;}
+
+.ajax__calendar_body{background-color: #e9e9e9; border: solid 1px #cccccc; padding:0px 0px 0px 0px;}
+.ajax__calendar_body td{border-spacing:0;padding:0px 0px 0px 0px;font-size:11px;border:none 0px;}
+
+ .ajax__calendar_dayname{text-align:center; font-weight:bold; margin-bottom: 4px; margin-top: 2px;} 
+
+.ajax__calendar_day{text-align:center;}
+
+.ajax__calendar_today{font-weight:bold;}
+
+.ajax__calendar_hover .ajax__calendar_day,
+.ajax__calendar_hover .ajax__calendar_month,
+.ajax__calendar_hover .ajax__calendar_year,
+.ajax__calendar_active{color: #004080; font-weight:bold; background-color: #ffffff;}
+
+.ajax__calendar_other,
+.ajax__calendar_hover .ajax__calendar_today,
+.ajax__calendar_hover .ajax__calendar_title{color: #CECECE;}
+
+
+
+/*----------------------- Modal PopUp Extender ----------------------------*/
+.modalBackground	/*--- Oscuro ---*/
+{
+	background-color:#000000;
+    filter:alpha(opacity=50);
+    opacity:0.5; 
+}
+.popupControl 
+{
+	background-color: #eeeeee;
+    border: outset 1px #c0c0c0;
+    color: #444444;
+    position: absolute;
+    /*visibility: visible;*/
+    /*text-align: center;*/
+    top: 50%;
+	left: 50%;
+	/*padding: 25px;*/
+}
+
+.centrado
+{width:100%;text-align:center;
+	}
+/**/
+.popup{
+/* margin-top: -175px; la mitad del alto del objeto a centrat */
+/* margin-left: -250px; la mitad del ancho del objeto a centrar */
+padding:25px;
+background-color:White;
+position: absolute;
+top: 50%;
+left: 50%;
+/*width: 500px;  ancho del objeto a centrar */
+/* height: 350px; alto del objeto a centrar */
+}
+
+.accordionHeader
+{	
+	padding:5px 5px 5px 35px;
+	background: #DEDEDE; /*url(../img/header_cerrado.png) no-repeat;*/
+/*	color:#ffffff;*/
+	cursor:pointer;
+	border:solid 1px #B1B1B1;
+	/*font-weight:bold;
+	width:550px;*/
+}
+.accordionHeader:hover,.accordionHeaderSelected{
+	padding:5px 5px 5px 35px;
+	border:solid 1px #B1B1B1;
+	background: #B1B1B1; /*url(../img/header_abierto.png) no-repeat;*/
+/*	color:#000000;*/
+	cursor:pointer;
+	font-weight:bold;
+	/*width:550px;*/
+}
+.accordionContent
+{padding:20px 20px 10px 20px;
+	border:solid 1px #B1B1B1;
+	}
+
+
+.modalPopup {
+	background-color:White;
+    border-right : #004080 1px solid;
+	border-top: #004080 1px solid;
+	border-left: #004080 1px solid;
+	border-bottom: #004080 1px solid;
+}
+
+
+.lbxTitulo
+{
+	background-color:#DEDEDE;
+	border: solid 1px #004080;
+	text-align:center;
+	vertical-align:middle;
+	color: #000000;
+	font-size:11px;
+}
+
+/*FPS*/
+.textoGeneral
+{
+	/*font-size: 11px;*/
+   /* font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;*/
+  font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+   text-transform:uppercase;
+	font-size:x-small;
+    
+}
+
+.lblCod
+{
+	background: #CCCCCC;
+	font-weight: bold;
+	border: solid 1px #000000;
+	height: 18px;
+	width: 50px;
+}
+
+.ck
+{
+	cursor: pointer;
+}
+
+.rb
+{
+	cursor: pointer;
+}
+
+.ac
+{
+	text-align: center;
+}
+
+/*--- UpdateProgress ---*/
+.UpdateProgressPanel
+{
+       z-index: 99999999;
+       /*---background-color:#fff; ---*/
+       font-family: Arial;
+       font-size: 11px;
+       color:#fff;
+       font-weight: bold;
+       width: 200px;
+       text-align: center;
+       vertical-align: middle;
+       position: fixed;
+       top: 30%;
+       /* bottom: 50%; */
+       left: 45%;
+       padding: 10px;
+       /*---border: solid 2px #5D7B9D; ---*/
+} 
+
+.UpdateProgressModalBackground
+{
+    z-index: 99999998;
+    background-color: #000000; /* 6D7B8D */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+}
+
+.textbox
+{
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #a0a0a0;
+	color:#444444;
+    font-size: 11px;
+	
+}
+
+/*****************************************************************
+							CALENDAR EXTENDER
+******************************************************************/
+.calendar_Theme1 .ajax__calendar_container
+{
+background-color: #e2e2e2; border:solid 1px #cccccc;
+}
+.calendar_Theme1 .ajax__calendar_header
+{
+background-color: #ffffff; margin-bottom: 4px;
+} 
+.calendar_Theme1 .ajax__calendar_title,
+.calendar_Theme1 .ajax__calendar_next,
+.calendar_Theme1 .ajax__calendar_prev
+{
+color: #004080; padding-top: 3px;
+}
+.calendar_Theme1 .ajax__calendar_body
+{
+background-color: #e9e9e9; border: solid 1px #cccccc;
+}
+ .calendar_Theme1 .ajax__calendar_dayname
+{
+text-align:center; font-weight:bold; margin-bottom: 4px; margin-top: 2px;
+} 
+.calendar_Theme1 .ajax__calendar_day
+{
+text-align:center;
+}
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_day,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_month,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_year,
+.calendar_Theme1 .ajax__calendar_active
+{
+color: #004080; font-weight:bold; background-color: #ffffff;
+}
+.calendar_Theme1 .ajax__calendar_today
+{
+font-weight:bold;
+}
+.calendar_Theme1 .ajax__calendar_other,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_today,
+.calendar_Theme1 .ajax__calendar_hover .ajax__calendar_title
+{
+color: #bbbbbb;
+}

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ECE30DF-22FB-4424-8703-DB1215EEB78F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAPA_ENTIDAD</RootNamespace>
+    <AssemblyName>CAPA_ENTIDAD</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculosBE.cs" />
+    <Compile Include="Calculos_PermBE.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="EjecucionScriptBE.cs" />
+    <Compile Include="EntMs\Exportacion.cs" />
+    <Compile Include="EntMs\ListaPersonal.cs" />
+    <Compile Include="EntMs\Moneda.cs" />
+    <Compile Include="EntMs\PermisoDetalle.cs" />
+    <Compile Include="EntMs\Permisos.cs" />
+    <Compile Include="Ent_AFP.cs" />
+    <Compile Include="Ent_AperturaCierrePerido.cs" />
+    <Compile Include="Ent_ArchivoBancos.cs" />
+    <Compile Include="Ent_Asiento.cs" />
+    <Compile Include="Ent_Asiento_Cuentas.cs" />
+    <Compile Include="Ent_Bancos.cs" />
+    <Compile Include="Ent_Calculos_Perm.cs" />
+    <Compile Include="Ent_Cargo.cs" />
+    <Compile Include="Ent_Cargo_Funciones.cs" />
+    <Compile Include="Ent_Categoria.cs" />
+    <Compile Include="Ent_Categoria2.cs" />
+    <Compile Include="Ent_Categoria_Auxiliar.cs" />
+    <Compile Include="Ent_Categoria_Auxiliar2.cs" />
+    <Compile Include="Ent_Ccosto.cs" />
+    <Compile Include="Ent_CIIU.cs" />
+    <Compile Include="Ent_Compania.cs" />
+    <Compile Include="Ent_Compania_Establecimiento.cs" />
+    <Compile Include="Ent_Compania_Externa.cs" />
+    <Compile Include="Ent_Compania_Externa_Establecimientos.cs" />
+    <Compile Include="Ent_Conceptos.cs" />
+    <Compile Include="Ent_Contratos.cs" />
+    <Compile Include="Ent_Correo_Usuario.cs" />
+    <Compile Include="Ent_Ctas_Ctes.cs" />
+    <Compile Include="Ent_Cuotas.cs" />
+    <Compile Include="Ent_Departamentos.cs" />
+    <Compile Include="Ent_Distritos.cs" />
+    <Compile Include="Ent_D_Directos.cs" />
+    <Compile Include="Ent_D_Fijos.cs" />
+    <Compile Include="Ent_D_Variables.cs" />
+    <Compile Include="Ent_Ejercicio.cs" />
+    <Compile Include="Ent_EPS.cs" />
+    <Compile Include="Ent_EstablecimientoExterno.cs" />
+    <Compile Include="Ent_E_Civil.cs" />
+    <Compile Include="Ent_Familiares.cs" />
+    <Compile Include="Ent_General.cs" />
+    <Compile Include="Ent_GenerarArchivoEstado.cs" />
+    <Compile Include="Ent_Incidencias.cs" />
+    <Compile Include="Ent_Mes.cs" />
+    <Compile Include="Ent_MotivoCtaCte.cs" />
+    <Compile Include="Ent_Motivo_Fin_Per_Lab.cs" />
+    <Compile Include="Ent_Nacionalidad.cs" />
+    <Compile Include="Ent_Nivel_Educativo.cs" />
+    <Compile Include="Ent_Ocupacion.cs" />
+    <Compile Include="Ent_Periodo.cs" />
+    <Compile Include="Ent_Personal.cs" />
+    <Compile Include="Ent_Personal_Activo.cs" />
+    <Compile Include="Ent_Personal_Anexo.cs" />
+    <Compile Include="Ent_Personal_Anexo2.cs" />
+    <Compile Include="Ent_Personal_Establecimientos.cs" />
+    <Compile Include="Ent_Planilla.cs" />
+    <Compile Include="Ent_Plan_De_Cuentas.cs" />
+    <Compile Include="Ent_PptoPersonal.cs" />
+    <Compile Include="Ent_Prm_Afp.cs" />
+    <Compile Include="Ent_Prm_CategoriaAux.cs" />
+    <Compile Include="Ent_Prm_Cia.cs" />
+    <Compile Include="Ent_Prm_Periodo.cs" />
+    <Compile Include="Ent_Prm_Planilla.cs" />
+    <Compile Include="Ent_Prm_SubcategoriaAux.cs" />
+    <Compile Include="Ent_Procesos.cs" />
+    <Compile Include="Ent_Provincias.cs" />
+    <Compile Include="Ent_Proyecto.cs" />
+    <Compile Include="Ent_Regimen_Laboral.cs" />
+    <Compile Include="Ent_ReporteAsientoSap.cs" />
+    <Compile Include="Ent_Reporte_Incidencias.cs" />
+    <Compile Include="Ent_RH_Area.cs" />
+    <Compile Include="Ent_Sexos.cs" />
+    <Compile Include="Ent_Situacion.cs" />
+    <Compile Include="Ent_Sustentos.cs" />
+    <Compile Include="Ent_TDoc_Identidad.cs" />
+    <Compile Include="Ent_TipoCtaBancaria.cs" />
+    <Compile Include="Ent_Tipo_Contrato.cs" />
+    <Compile Include="Ent_Tipo_Cta_Bancaria.cs" />
+    <Compile Include="Ent_Tipo_Establecimiento.cs" />
+    <Compile Include="Ent_Tipo_Trabajador.cs" />
+    <Compile Include="Ent_Tipo_Via.cs" />
+    <Compile Include="Ent_Tipo_Zona.cs" />
+    <Compile Include="Ent_Vacaciones.cs" />
+    <Compile Include="Ent_Vacaciones_Pagadas.cs" />
+    <Compile Include="FormulasBE.cs" />
+    <Compile Include="PanelControlBE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteBE.cs" />
+    <Compile Include="Reportes_DetalleBE.cs" />
+    <Compile Include="Reporte_DetalleBE.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

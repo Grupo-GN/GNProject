@@ -111,9 +111,6 @@
     <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data">
       <HintPath>..\Microsoft.ApplicationBlocks.Data.dll</HintPath>
     </Reference>
@@ -761,6 +758,121 @@
     <Content Include="Views\portal\OHSAS\OHSAS_Detalle.aspx" />
     <Content Include="Views\Security\CPerfiles.aspx" />
     <Content Include="Views\Security\CUsuarios.aspx" />
+    <Content Include="Views\sistemaPlanillas\Controles\BarraHerramientas.ascx" />
+    <Content Include="Views\sistemaPlanillas\Controles\miEstilo.css" />
+    <Content Include="Views\sistemaPlanillas\Controles\PruebaControl.aspx" />
+    <Content Include="Views\sistemaPlanillas\css\ajax-loader.gif" />
+    <Content Include="Views\sistemaPlanillas\css\bootstrap.css" />
+    <Content Include="Views\sistemaPlanillas\css\bootstrap.min.css" />
+    <Content Include="Views\sistemaPlanillas\css\bootstrap\bootstrap.min.css" />
+    <Content Include="Views\sistemaPlanillas\css\check_02.png" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap-theme.css" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap-theme.min.css" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap.css" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap.min.css" />
+    <Content Include="Views\sistemaPlanillas\css\css\estilos.css" />
+    <Content Include="Views\sistemaPlanillas\css\css\EstilosDiego.css" />
+    <Content Include="Views\sistemaPlanillas\css\img\bg.jpg" />
+    <Content Include="Views\sistemaPlanillas\css\img\logotype.jpg" />
+    <Content Include="Views\sistemaPlanillas\css\img_grilla_azul\BG_GridHeader1.gif" />
+    <Content Include="Views\sistemaPlanillas\css\img_grilla_negro\grd_alt.png" />
+    <Content Include="Views\sistemaPlanillas\css\img_grilla_negro\grd_head.png" />
+    <Content Include="Views\sistemaPlanillas\css\img_grilla_negro\grd_pgr.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\jquery-ui.css" />
+    <Content Include="Views\sistemaPlanillas\css\JqGrid\ui.jqgrid.css" />
+    <Content Include="Views\sistemaPlanillas\css\jquery.bootgrid.css" />
+    <Content Include="Views\sistemaPlanillas\css\jquery.bootgrid.min.css" />
+    <Content Include="Views\sistemaPlanillas\css\login-box.css" />
+    <Content Include="Views\sistemaPlanillas\css\MenuVertical.css" />
+    <Content Include="Views\sistemaPlanillas\css\multiple-select.css" />
+    <Content Include="Views\sistemaPlanillas\css\multiple-select.png" />
+    <Content Include="Views\sistemaPlanillas\css\principal.css" />
+    <Content Include="Views\sistemaPlanillas\css\prueba.css" />
+    <Content Include="Views\sistemaPlanillas\css\prueba2.css" />
+    <Content Include="Views\sistemaPlanillas\css\Style.css" />
+    <Content Include="Views\sistemaPlanillas\css\StyleWilder.css" />
+    <Content Include="Views\sistemaPlanillas\Icon\add.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\back.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\cancel.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\delete.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\Eliminar.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\forward.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\Modify.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\back.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\Delete.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\detail.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\document-save-as.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\edit-delete.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\edit_add.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\forward.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\Go.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\Modify.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\Save.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\Select.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\Select2.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\Select3.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\png\user_male_go.png" />
+    <Content Include="Views\sistemaPlanillas\Icon\printer.gif" />
+    <Content Include="Views\sistemaPlanillas\Icon\Save.gif" />
+    <Content Include="Views\sistemaPlanillas\JQuery\Funciones.min.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jqGrid-4.5.2\grid.locale-en.min.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jqGrid-4.5.2\jquery.jqGrid.src.min.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jquery-1.10.1.min.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jquery-1.11.1-ui.min.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jquery-1.11.1.min.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jquery-1.8.2.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jquery-1.8.2.min.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\jquery.multiple.select.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\nicEdit\nicEdit.js" />
+    <Content Include="Views\sistemaPlanillas\JQuery\nicEdit\nicEditorIcons.gif" />
+    <Content Include="Views\sistemaPlanillas\js\amcharts4\charts.js" />
+    <Content Include="Views\sistemaPlanillas\js\amcharts4\core.js" />
+    <Content Include="Views\sistemaPlanillas\js\amcharts4\deps\canvg.js" />
+    <Content Include="Views\sistemaPlanillas\js\amcharts4\deps\pdfmake.js" />
+    <Content Include="Views\sistemaPlanillas\js\amcharts4\deps\xlsx.js" />
+    <Content Include="Views\sistemaPlanillas\js\amcharts4\themes\animated.js" />
+    <Content Include="Views\sistemaPlanillas\js\custom-form-elements.js" />
+    <Content Include="Views\sistemaPlanillas\js\Script.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
+    <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.min.js" />
+    <None Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery.bootgrid.fa.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery.bootgrid.fa.min.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery.bootgrid.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery.bootgrid.min.js" />
+    <Content Include="Views\sistemaPlanillas\Scripts\jquery.treeview.js" />
+    <Content Include="Views\sistemaPlanillas\Styles\controls.css" />
+    <Content Include="Views\sistemaPlanillas\Styles\EstiloKm.css" />
+    <Content Include="Views\sistemaPlanillas\Styles\estiloLogueo.css" />
+    <Content Include="Views\sistemaPlanillas\Styles\images\bg.jpg" />
+    <Content Include="Views\sistemaPlanillas\Styles\images\treeview-default-line.gif" />
+    <Content Include="Views\sistemaPlanillas\Styles\images\treeview-default.gif" />
+    <Content Include="Views\sistemaPlanillas\Styles\img\bg.jpg" />
+    <Content Include="Views\sistemaPlanillas\Styles\img\logotype.jpg" />
+    <Content Include="Views\sistemaPlanillas\Styles\jquery.treeview.css" />
+    <Content Include="Views\sistemaPlanillas\Styles\Site.css" />
+    <Content Include="Views\sistemaPlanillas\Styles\Sitess.css" />
     <Content Include="wsGenerales.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -1827,6 +1939,32 @@
     <Compile Include="Views\Security\CUsuarios.aspx.designer.cs">
       <DependentUpon>CUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\Utils.cs" />
+    <Compile Include="Views\sistemaPlanillas\Controles\BarraHerramientas.ascx.cs">
+      <DependentUpon>BarraHerramientas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Controles\PruebaControl.aspx.cs">
+      <DependentUpon>PruebaControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx.cs">
+      <DependentUpon>FrmMntConceptos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx.designer.cs">
+      <DependentUpon>FrmMntConceptos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx.cs">
+      <DependentUpon>FrmMntConceptosShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx.designer.cs">
+      <DependentUpon>FrmMntConceptosShow.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wsGenerales.asmx.cs">
       <DependentUpon>wsGenerales.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -1952,6 +2090,10 @@
     <Content Include="Views\Indicendia01\Manuales\Manual de Usuario Jefe_Sistema de Incidencia.docx" />
     <Content Include="Views\Indicendia01\Manuales\Manual de Usuario Jefe_Sistema de Incidencia.pdf" />
     <Content Include="Views\Indicendia01\Server\pPersonal\AjaxUploadFile.ashx" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap-theme.css.map" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap-theme.min.css.map" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap.css.map" />
+    <Content Include="Views\sistemaPlanillas\css\css\bootstrap.min.css.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -1991,6 +2133,18 @@
     <ProjectReference Include="..\capas\Incidencias\Persistence\PersistenceI.csproj">
       <Project>{d1e1afe9-617b-43ab-bf9a-b2a033bbc40c}</Project>
       <Name>PersistenceI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\Planillas\CAPA_DATOS\CAPA_DATOS.csproj">
+      <Project>{f2ee77e4-8a1c-4c78-91f1-7da8e02d829d}</Project>
+      <Name>CAPA_DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\Planillas\CAPA_ENTIDAD\CAPA_ENTIDAD.csproj">
+      <Project>{5ece30df-22fb-4424-8703-db1215eeb78f}</Project>
+      <Name>CAPA_ENTIDAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\capas\Planillas\CAPA_LOGICO\CAPA_LOGICO.csproj">
+      <Project>{281ee688-67bb-4b87-b54b-5afccd761f5a}</Project>
+      <Name>CAPA_LOGICO</Name>
     </ProjectReference>
     <ProjectReference Include="..\capas\portal\Entidad\Entidad.csproj">
       <Project>{024c6ee5-3576-4259-bb48-00aa9208b820}</Project>

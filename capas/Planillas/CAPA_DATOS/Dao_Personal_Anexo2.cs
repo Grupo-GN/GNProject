@@ -1,0 +1,64 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using System.Data;
+using CAPA_ENTIDAD;
+using Microsoft.ApplicationBlocks.Data;
+
+namespace CAPA_DATOS
+{
+    public static class Dao_Personal_Anexo2
+    {
+        /*FPS*/
+        public static DataTable Lista_Personal_Anexo2(Ent_Personal_Anexo2 objE)
+        {
+            try
+            {
+                return SqlHelper.ExecuteDataTable(Conex.CadCon(), "fps_sps_Personal_Anexo2", objE.Personal_Anexo2_Id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public static DataTable Inserta_Personal_Anexo2(Ent_Personal_Anexo2 objE)
+        {
+            try
+            {
+                return SqlHelper.ExecuteDataTable(Conex.CadCon(), "fps_spi_Personal_Anexo2", objE.Descripcion);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public static DataTable Actualiza_Personal_Anexo2(Ent_Personal_Anexo2 objE)
+        {
+            try
+            {
+                return SqlHelper.ExecuteDataTable(Conex.CadCon(), "fps_spu_Personal_Anexo2", objE.Personal_Anexo2_Id, objE.Descripcion);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public static DataTable Elimina_Personal_Anexo2(Ent_Personal_Anexo2 objE)
+        {
+            try
+            {
+                return SqlHelper.ExecuteDataTable(Conex.CadCon(), "fps_spd_Personal_Anexo2", objE.Personal_Anexo2_Id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+    }
+}
