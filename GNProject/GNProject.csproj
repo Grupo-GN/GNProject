@@ -873,6 +873,7 @@
     <Content Include="Views\sistemaPlanillas\js\Script.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptAsignarcc.js" />
@@ -2004,6 +2005,13 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx.designer.cs">
       <DependentUpon>FrmMntConceptosShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx.cs">
+      <DependentUpon>FrmMntPersonalxEstablecimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx.designer.cs">
+      <DependentUpon>FrmMntPersonalxEstablecimiento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx.cs">
       <DependentUpon>MaestroPersonal.aspx</DependentUpon>
