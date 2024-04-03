@@ -138,6 +138,7 @@ namespace GNProject
                 if (cboEjercicio.Items.Count <= 0)
                     LlenarAnio();
 
+                
                 //Para los Meses
                 if (Session["Planilla_Id"] != null && cboPlanilla.Items.Count > 0)
                 {
@@ -173,6 +174,7 @@ namespace GNProject
                             }
                         }
                     }
+                    
                 }
                 else
                 {
@@ -229,6 +231,11 @@ namespace GNProject
                         && cboMes.Items.Count > 0)
                         LlenarPeriodo(cboEmpresa.SelectedValue, cboEjercicio.SelectedValue, cboPlanilla.SelectedValue, cboMes.SelectedValue);
                 }
+                Session["EmpresaPlanilla"] = cboEmpresa.SelectedValue;
+                Session["PeriodoPlanilla"] = cboPeriodo.SelectedValue;
+                Session["planillaPlanilla"] = cboPlanilla.SelectedValue;
+                var a = (string)Session["EmpresaPlanilla"];
+                var b = (string)Session["PeriodoPlanilla"];
             }
         }
 

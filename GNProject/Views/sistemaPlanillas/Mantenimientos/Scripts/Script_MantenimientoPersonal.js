@@ -1413,7 +1413,7 @@ function ListaTipoPlanilla(Compania_Id) {
                 var html = '<option value="' + Datos[i][0] + '">' + Datos[i][1] + '</option>';
                 $(html).appendTo('#cboTipoPlanilla');
             }
-            var PlanillaCab = document.getElementById('ctl00_ucFiltros1_cboPlanilla').value;
+            var PlanillaCab = document.getElementById('planillaSession').value;
             $('#cboTipoPlanilla').val(PlanillaCab)
         },
         error:

@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="MaestroPersonal.aspx.cs" Inherits="GNProject.Views.sistemaPlanillas.Mantenimientos.MaestroPersonal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  MasterPageFile="~/Site.Master" CodeBehind="MaestroPersonalActivo.aspx.cs" Inherits="GNProject.Views.sistemaPlanillas.Mantenimientos.MaestroPersonalActivo" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
-    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+<link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
     <link href="../Controles/miEstilo.css" rel="stylesheet" type="text/css" />
-    <link href="../jqueriUI/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="../jqueriUI/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
+        type="text/css" />
     <link href="../css/StyleWilder.css" rel="stylesheet" type="text/css" />
-        
+
     <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;
            border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
@@ -17,7 +18,7 @@
         <table width="100%">
             <tr>
                 <td style="width:90%;">
-                    <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE PERSONAL" CssClass="miTitulo" Width="300px"></asp:Label>
+                    <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE PERSONAL POR PERIODO" CssClass="miTitulo" Width="300px"></asp:Label>
                 </td>
                 <td style="text-align:right;width:28px;"><input type="button" class="elBotonNew" id="btnNew" value="Nuevo" title="Para Agregar un Nuevo Registro" /></td>
                 <td style="text-align:right;width:28px;"><input type="button" class="elBotonAdd" id="btnAdd" value="Grabar" title="Para Grabar un Nuevo Registro" /></td>
@@ -38,14 +39,16 @@
             <li><a href="#Tab4">Tab / Pensionista</a></li>
             <li><a href="#Tab5">4Ta / M.F. / Ter.</a></li>
             <li><a href="#Tab6">Otros Datos</a></li>            
-        </ul>    
+        </ul>
+    
     <div id="Tab1">
         <fieldset>
             <legend>BUSQUEDA</legend>
             <label class="miLabel">Filtrar Por:</label>
             <select id="cboBusquedaEn" class="ddl" style="width:150px;"> </select>
             <label class="miLabel">Digite la Persona a Buscar:</label>
-            <input type="text" class="miTextBox" id="txtBuscar" />
+            <input type="text" class="miTextBox" id="txtBuscar" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" id="btnAdicionar" class="submit" value="Adicionar" />
         </fieldset>
         <div  style="overflow: hidden; width: 100%; border: solid 1px #505050;height: 260px;">
         <table class="gridSmall" style="width:100%;">
@@ -66,7 +69,7 @@
                     <th>PROYECTO</th>
                     <th>NRO CTA</th>
                     <th>NRO CTA CTS</th>
-                    <th>TELÉFONO</th>
+                    <th>TELÉFONO</th>        
                 </tr>
             </thead>
             <tbody id="tbodyPersonal" class="tbodyPer">
@@ -81,9 +84,9 @@
                 <tr>
                 <td class="tfoottd"  colspan="3">
 
-                    <label style="font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 1.1em;" >TOTAL REGISTROS: </label> &nbsp
+                    <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 1.1em;" >TOTAL REGISTROS: </label> &nbsp
                     <input id="txtnRegistros" type="text" value="0" class="TextPage" readonly="true" /> &nbsp &nbsp
-                    <label style="font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 1.1em;" >PAGE: </label> &nbsp
+                    <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 1.1em;" >PAGE: </label> &nbsp
                     <input id="txtPaginaActual" type="text" value="1" class="TextPage" readonly="true" />
                      <input id="btnPrimero" type="button" value="|<" class="submitPager" />
                      <input id="btnAnterior" type="button" value="<<" class="submitPager" />
@@ -94,6 +97,7 @@
                 </tfoot>
             </table>
             </div>
+            
     </div>
     <div id="Tab2" style="overflow:auto;height:363px;">
     <fieldset>
@@ -173,7 +177,7 @@
             <td><input type="checkbox" id="ckDomiciliado"/>Domiciliado?</td>
             <td></td>
             <td></td>
-        </tr> 
+        </tr>
         <tr>
             <td>Email Personal</td>
             <td><input type="text" class="ddl" id="txtemailp" style="width:180px;" /></td>
@@ -190,6 +194,15 @@
             <td></td>
             <td></td>
         </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> 
+   
     </table>
     </fieldset>
     <fieldset>
@@ -297,7 +310,7 @@
                 <td></td>
             </tr>
             <tr>
-                <td>Planilla</td>
+                <td>PlanPlanilla</td>
                 <td><select id="cboTipoPlanilla" class="ddl" style="width:180px;"></select></td>
                 <td></td>
                 <td></td>
@@ -313,7 +326,7 @@
                 <td></td>
             </tr>
             <tr>
-                <td>Centro Costo</td>
+                <td>Centro Costo>
                 <td><select id="cboCCosto" class="ddl" style="width:280px;"></select></td>
                 <td></td>
                 <td></td>
@@ -321,7 +334,7 @@
                 <td></td>
             </tr>
             <tr>
-                <td>Categoría</td>
+                <td>CateCategoría</td>
                 <td><select id="cboCategoria" class="ddl" style="width:180px;"></select></td>
                 <td style="width:100px;">Área</td>
                 <td><select id="cboCatAuxiliar" class="ddl" style="width:180px;"></select></td>
@@ -339,7 +352,7 @@
             <tr>
                 <td>Gerencia / Proyecto</td>
                 <td><select id="cboProyecto" class="ddl" style="width:180px;"></select></td>
-                <td>Anexo</td>
+                <td>Anexo>
                 <td><select id="cboAnexo" class="ddl" style="width:180px;"></select></td>
                 <td></td>
                 <td></td>
@@ -511,7 +524,7 @@
             <tr>
                 <td>Fec Ini Aportación</td>
                 <td><input type="text" id="txtFecIniAportacion" class="ddl" /></td>
-                <td style="width:60px;text-align:right;">C.U.S.P.P.</td>
+                <td style="width:60px;text-align:right;"">C.U.S.P.P.</td>
                 <td><input type="text" id="txtCUSPP" class="ddl" /></td>
                 <td></td>
                 <td></td>
@@ -655,7 +668,7 @@
     </fieldset>
     <fieldset>
         <legend><label class="miTituloOnTab">SubSidios</label></legend>
-        <table style="width:100%;">
+        <table style="width;100%;">
             <tr>
                 <td style="width:100px;">Nro CITT</td>
                 <td><input type="text" id="txtNroCITT" class="ddl"/></td>
@@ -756,16 +769,44 @@
     
     </fieldset>
 
+<div id="dialog-PersonalOut">
+    <fieldset>
+        <legend><label class="miTituloOnTab">BUSCAR </label></legend>
+        <label class="miLabel">Personal Id :</label> <input type="text" id="txtCodigoFind" class="ddl" />
+        <label class="miLabel">Nombre y Apellidos :</label><input type="text" id="txtPersonalFind" class="ddl" />
+    </fieldset>
+    
+    <fieldset style="height:275px;width:95%;overflow:auto;">
+    <table class="gridSmall" style="width:100%;">
+    <thead>
+            <tr>
+                <th></th>
+                <th>Personal Id</th>
+                <th>Apellidos y Nombres</th>
+            </tr>
+            </thead>
+            <tbody id="tbodyAgregaPer">
+            
+            </tbody>
+    </table>
+    
+    </fieldset>
+</div>
+
 <div id="divError"></div>
+
+
     
     <script src="../JQuery/jquery-1.10.1.min.js" type="text/javascript"></script>
-    <script src="../jqueriUI/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="../jqueriUI/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
     <script src="Scripts/Script_MantenimientoPersonal.js?v0.1.2" type="text/javascript"></script>
     <script src="Scripts/Script_HelperMaestroPersonal.js?v0.1.1" type="text/javascript"></script>
+
+    <script src="Scripts/Script_MantenimientoPersonalActivo.js" type="text/javascript"></script>
 <script type="text/javascript">
     var inicio = 0;
     var PROCESO = '';
-
+    
     var DatosP = 0;
     var DatosS = 0;
     var TabPensio = 0;
@@ -780,25 +821,28 @@
     var PCuartaMF = 0;
     var POtrosD = 0;
 
-    var disNew;
+    var disNew = null;
     var disGrabar;
     var disCancel;
     var disUpdate;
     var disDelete;
-
+    
     var TotalPaginador = 12;
     var TOTALREGISTROS;
     var PAGINAACTUAL = 1;
+
+    var PeriodoCab = '';
     var SessionUsuarioAcceso = '';
     $(document).ready(function () {
+        
         $('#TabContainer').tabs();
         $('#TabContainer').tabs({ disabled: [1, 2, 3, 4, 5] });
-
+        $('#dialog-PersonalOut').hide();
         //VARIABLES DISABLED
         var I_Compania;
         I_Compania = setInterval(function () {
             document.getElementById('cboCompania').disabled = true;
-            document.getElementById('cboTipoPlanilla').disabled = true;
+            //////document.getElementById('cboTipoPlanilla').disabled = true;
             document.getElementById('fieldDatosPen').disabled = true;
             document.getElementById('fielPrestador').disabled = true;
             document.getElementById('fielPrestServi').disabled = true;
@@ -806,6 +850,10 @@
 
         }, 1000);
 
+
+        window.setInterval(function () {
+            Disable_btnNew(true);
+        }, 100);
 
         disGrabar = window.setInterval(function () {
             Disable_btnGrabar(true);
@@ -866,75 +914,41 @@
 
 
         ListaColumnPersonal();
-        Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
-
-        $('#ctl00_ucFiltros1_cboEmpresa').change(function () {
-            Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
-            window.clearInterval(disNew);
-            window.clearInterval(disGrabar);
-            window.clearInterval(disCancel);
-            window.clearInterval(disUpdate);
-            window.clearInterval(disDelete);
-
-            Disable_btnNew(false);
-
-            disGrabar = window.setInterval(function () {
-                Disable_btnGrabar(true);
-            }, 100);
-
-            disCancel = window.setInterval(function () {
-                Disable_btnCancelar(true);
-            }, 100);
-
-            disUpdate = window.setInterval(function () {
-                Disable_btnActualizar(true);
-            }, 100);
-
-            disDelete = window.setInterval(function () {
-                Disable_btnEliminar(true);
-            }, 100);
-            Personal_IdProceso = '';
-            Personal = [];
-            PROCESO = '';
-            $('#TabContainer').tabs({ disabled: [1, 2, 3, 4, 5] });
-            $('#TabContainer').tabs({ active: 0 });
-        });
+        Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
 
         $('#cboBusquedaEn').change(function () {
             inicio = 0;
-            Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+            Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
         });
         $('#txtBuscar').keyup(function () {
             if ($('#cboBusquedaEn').val() != 'Todos') {
                 inicio = 0;
-                Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+                Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
             }
         });
+        //20180611
+        /*$('#TabContainer').on("tabsactivate", function(event, ui) {
+        var curTab = $('.ui-tabs-active');
+        var curTabIndex = curTab.index();
+        switch (curTabIndex) {
+        case 1: if (DatosP == 0) { CargarCombosDatosPrincipales(); DatosP = 1 }; break;
+        case 2: if (DatosS == 0) { CargarCombosDatosSecundarios(); DatosS = 1 }; break;
+        case 3: if (TabPensio == 0) { CargarCombosTrabPensionario(); TabPensio = 1 }; break;
+        case 4: if (CuartaMF == 0) { CargarCombosCuartaMF(); CuartaMF = 1 }; break;
+        case 5: if (OtrosD == 0) { CargarComboOtrosDatos(); OtrosD = 1 }; break;
+        }
 
-        //@001 I
-        //$('#TabContainer').on("tabsactivate", function (event, ui) {
-        //    var curTab = $('.ui-tabs-active');
-        //    var curTabIndex = curTab.index();
-        //    switch (curTabIndex) {
-        //        case 1: if (DatosP == 0) { CargarCombosDatosPrincipales(); DatosP = 1 }; break;
-        //        case 2: if (DatosS == 0) { CargarCombosDatosSecundarios(); DatosS = 1 }; break;
-        //        case 3: if (TabPensio == 0) { CargarCombosTrabPensionario(); TabPensio = 1 }; break;
-        //        case 4: if (CuartaMF == 0) { CargarCombosCuartaMF(); CuartaMF = 1 }; break;
-        //        case 5: if (OtrosD == 0) { CargarComboOtrosDatos(); OtrosD = 1 }; break;
-        //    }
+        if (Personal_IdProceso) {
 
-        //    if (Personal_IdProceso) {
-
-        //        switch (curTabIndex) {
-        //            case 1: if (PDatosP == 0) { CargarDatosPrincipales_Personal(); PDatosP = 1; }; break;
-        //            case 2: if (PDatosS == 0) { CargarDatosSecundarios_Personal(); PDatosS = 1 }; break;
-        //            case 3: if (PTabPensio == 0) { CargarDatosTrabPensionista_Personal(); PTabPensio = 1 }; break;
-        //            case 4: if (PCuartaMF == 0) { CargarCombosCuartaMF(); PCuartaMF = 1 }; break;
-        //            case 5: if (POtrosD == 0) { CargarComboOtrosDatos(); POtrosD = 1 }; break;
-        //        }
-        //    }
-        //});
-        //@001 F
+        switch (curTabIndex) {
+        case 1: if (PDatosP == 0) { CargarDatosPrincipales_Personal(); PDatosP = 1; }; break;
+        case 2: if (PDatosS == 0) { CargarDatosSecundarios_Personal(); PDatosS = 1 }; break;
+        case 3: if (PTabPensio == 0) { CargarDatosTrabPensionista_Personal(); PTabPensio = 1 }; break;
+        case 4: if (PCuartaMF == 0) { CargarCombosCuartaMF(); PCuartaMF = 1 }; break;
+        case 5: if (POtrosD == 0) { CargarComboOtrosDatos(); POtrosD = 1 }; break;
+        }
+        }
+        });*/
 
         $('#tbodyPersonal').on('click', '.linkEditar', function () {
             var personal_id = this.id.substring(3);
@@ -944,12 +958,13 @@
             PTabPensio = 0;
             PCuartaMF = 0;
             POtrosD = 0;
-            //CargarDatos(); //@001 I/F
+            //20180611
+            //CargarDatos();
             clearDocumento();
 
             Lista_Personal(personal_id, null);
 
-            window.clearInterval(disNew);
+
             window.clearInterval(disGrabar);
             window.clearInterval(disCancel);
             window.clearInterval(disUpdate);
@@ -958,9 +973,7 @@
             Disable_btnActualizar(false);
             Disable_btnCancelar(false);
 
-            disNew = window.setInterval(function () {
-                Disable_btnNew(true);
-            }, 100);
+
 
             disGrabar = window.setInterval(function () {
                 Disable_btnGrabar(true);
@@ -996,9 +1009,7 @@
         //EVENTOS
 
         $('#btnNew').click(function () {
-            disNew = window.setInterval(function () {
-                Disable_btnNew(true);
-            }, 100);
+
 
             window.clearInterval(disGrabar);
             window.clearInterval(disCancel);
@@ -1015,21 +1026,16 @@
             $('#TabContainer').tabs({ active: 1 });
             clearDocumento();
             //CargarDatos(); //@001 I/F
-
-            //Por defecto
-            $("#cboTipoDoc").val("01");
-            $("#cboNacionalidad").val("9589");
         });
 
         $('#btnCancel').click(function () {
 
-            window.clearInterval(disNew);
+
             window.clearInterval(disGrabar);
             window.clearInterval(disCancel);
             window.clearInterval(disUpdate);
             window.clearInterval(disDelete);
 
-            Disable_btnNew(false);
 
             disGrabar = window.setInterval(function () {
                 Disable_btnGrabar(true);
@@ -1051,16 +1057,10 @@
             PROCESO = '';
             $('#TabContainer').tabs({ disabled: [1, 2, 3, 4, 5] });
             $('#TabContainer').tabs({ active: 0 });
-            Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+            Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
         });
 
-        $('#btnAdd').click(function () {
-            if (PROCESO == '01') {
-                if (Valida_Datos()) {
-                    Insert_Personal();
-                }
-            }
-        });
+
 
         $('#btnUpdate').click(function () {
             if (PROCESO == '02') {
@@ -1076,13 +1076,28 @@
         });
         $('#tbodyPersonal').on('click', '.linkEliminar', function () {
 
-            if (confirm('¿Esta seguro de eliminar al personal?')) {
+            if (confirm('¿Esta seguro de quitar al personal?')) {
                 var personal_id = this.id.substring(3);
-                Delete_Personal(personal_id);
+                Elimina_Personal_de_Periodo(Get_Periodo(), personal_id);
 
             }
 
         });
+        $('#btnAdicionar').click(function () {
+            Lista_Personal_Faltante_Periodo(Get_Periodo(), '');
+            $("#dialog-PersonalOut").dialog({
+                height: 400, width: 600, modal: true, autoOpen: true,
+                appendTo: "form", title: "AGREGAR PERSONAL AL PERIODO",
+                show: { effect: "fade", duration: 800 },
+                hide: { effect: "fold", duration: 800 }
+            });
+
+        });
+        $('#tbodyAgregaPer').on('click', 'label', function () {
+            var PersonalCodigo = this.id.substring(3);
+            Agrega_Personal_al_Periodo(Get_Periodo(), PersonalCodigo);
+        });
+
 
         //NAVEGACION
 
@@ -1110,12 +1125,12 @@
             if (guardaPagina == inicio) {
                 inicio = inicio - TotalPaginador;
                 PAGINAACTUAL = Math.ceil(laPaginaActual);
-                Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+                Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
                 setPaginaActual(PAGINAACTUAL);
 
             } else if (guardaPagina != TotalPaginador) {
                 PAGINAACTUAL = Math.ceil(laPaginaActual);
-                Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+                Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
                 setPaginaActual(PAGINAACTUAL);
             } else {
                 inicio = 0;
@@ -1126,7 +1141,7 @@
         $('#btnPrimero').click(function () {  //metodos para actualizar
             inicio = 0;         //Primer Registro
             PAGINAACTUAL = 1;   //Primera Pagina
-            Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+            Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
             setPaginaActual(PAGINAACTUAL);
         });
 
@@ -1134,7 +1149,7 @@
             if (inicio > 0) {
                 inicio = parseInt(inicio) - TotalPaginador;
                 PAGINAACTUAL = parseInt(PAGINAACTUAL) - 1;
-                Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+                Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
                 setPaginaActual(PAGINAACTUAL);
             }
 
@@ -1144,7 +1159,7 @@
             if (parseInt($('#txtnRegistros').val()) > (parseInt(inicio) + parseInt(TotalPaginador))) {
                 inicio = parseInt(inicio) + parseInt(TotalPaginador);
                 PAGINAACTUAL = parseInt(PAGINAACTUAL) + 1;
-                Lista_Personal_x_Filtro_Columna(Get_Compania(), null, Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+                Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
                 setPaginaActual(PAGINAACTUAL);
             }
 
@@ -1152,15 +1167,69 @@
 
         function setPaginaActual(nPagina) { //Pintar la pagina actual visitada
             $('#txtPaginaActual').val(nPagina);
-
         }
-        $('#ctl00_ucFiltros1_cboPlanilla').change(function () {
-            $('#cboTipoPlanilla').val($(this).val());
-        });
-        //CargarCombosCuartaMF(); //@001 I/F
-        //CargarComboOtrosDatos(); //@001 I/F
+
+        //20180611
+        //@001 I
+        //CargarDatos(); 
+        //if (PCuartaMF == 0) { CargarCombosCuartaMF(); PCuartaMF = 1 };
+        //if (POtrosD == 0) { CargarComboOtrosDatos(); POtrosD = 1 };
+        //@001 F
+
     });
+    function CargarChangeCab() {
+        window.clearInterval(disNew);
+        window.clearInterval(disGrabar);
+        window.clearInterval(disCancel);
+        window.clearInterval(disUpdate);
+        window.clearInterval(disDelete);
+
+        Disable_btnNew(false);
+
+        disGrabar = window.setInterval(function() {
+            Disable_btnGrabar(true);
+        }, 100);
+
+        disCancel = window.setInterval(function() {
+            Disable_btnCancelar(true);
+        }, 100);
+
+        disUpdate = window.setInterval(function() {
+            Disable_btnActualizar(true);
+        }, 100);
+
+        disDelete = window.setInterval(function() {
+            Disable_btnEliminar(true);
+        }, 100);
+        Personal_IdProceso = '';
+        Personal = [];
+        PROCESO = '';
+        $('#TabContainer').tabs({ disabled: [1, 2, 3, 4, 5] });
+        $('#TabContainer').tabs({ active: 0 });
+        inicio = 0;
+        PAGINAACTUAL = 1;   //Primera Pagina
+        Lista_Personal_x_Filtro_Columna(Get_Compania(), Get_Periodo(), Get_ColumnaBusqueda(), Get_TextoBusqueda(), inicio);
+        
+    }
+
+    window.setInterval(function() {
+        var Period = document.getElementById('periodoSession').value;
+        if (!PeriodoCab) {
+            PeriodoCab = Period;
+        }
+        if (PeriodoCab != Period) {
+            CargarChangeCab();
+            PeriodoCab = Period;
+        }
+
+        
+    }, 1000);
+
+    
+   
 
 </script>
+
 </asp:Content>
+
 

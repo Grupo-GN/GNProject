@@ -874,6 +874,7 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptAsignarcc.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptDatosBancarios.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptImportPersonal.js" />
@@ -997,6 +998,7 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="ucFiltros.ascx.cs">
       <DependentUpon>ucFiltros.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ucFiltros.ascx.designer.cs">
       <DependentUpon>ucFiltros.ascx</DependentUpon>
@@ -2009,6 +2011,13 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx.designer.cs">
       <DependentUpon>MaestroPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx.cs">
+      <DependentUpon>MaestroPersonalActivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx.designer.cs">
+      <DependentUpon>MaestroPersonalActivo.aspx</DependentUpon>
     </Compile>
     <Compile Include="wsGenerales.asmx.cs">
       <DependentUpon>wsGenerales.asmx</DependentUpon>

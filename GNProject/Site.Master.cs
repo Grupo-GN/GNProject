@@ -70,7 +70,6 @@ namespace GNProject
         protected void Page_Load(object sender, EventArgs e)
         {
             string rutaActual = Request.Url.AbsolutePath;
-
             if (rutaActual.StartsWith("/Views/sistemaPlanillas/"))
             {
                 divFiltros.Style["display"] = "block"; // Muestra el div si la ruta está dentro de la carpeta especificada
@@ -370,6 +369,5 @@ namespace GNProject
 
             }
         }
-       
     }
 }
