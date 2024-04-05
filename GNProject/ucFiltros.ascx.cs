@@ -115,6 +115,11 @@ namespace GNProject
                     && cboMes.Items.Count > 0)
                     LlenarPeriodo(cboEmpresa.SelectedValue, cboEjercicio.SelectedValue, cboPlanilla.SelectedValue, cboMes.SelectedValue);
             }
+            Session["EmpresaPlanilla"] = cboEmpresa.SelectedValue;
+            Session["PeriodoPlanilla"] = cboPeriodo.SelectedValue;
+            Session["planillaPlanilla"] = cboPlanilla.SelectedValue;
+            var a = (string)Session["EmpresaPlanilla"];
+            var b = (string)Session["PeriodoPlanilla"];
         }
 
         protected void Page_Init(object sender, EventArgs e)
@@ -231,11 +236,7 @@ namespace GNProject
                         && cboMes.Items.Count > 0)
                         LlenarPeriodo(cboEmpresa.SelectedValue, cboEjercicio.SelectedValue, cboPlanilla.SelectedValue, cboMes.SelectedValue);
                 }
-                Session["EmpresaPlanilla"] = cboEmpresa.SelectedValue;
-                Session["PeriodoPlanilla"] = cboPeriodo.SelectedValue;
-                Session["planillaPlanilla"] = cboPlanilla.SelectedValue;
-                var a = (string)Session["EmpresaPlanilla"];
-                var b = (string)Session["PeriodoPlanilla"];
+                
             }
         }
 

@@ -831,6 +831,43 @@
     <Content Include="Views\sistemaPlanillas\Icon\png\user_male_go.png" />
     <Content Include="Views\sistemaPlanillas\Icon\printer.gif" />
     <Content Include="Views\sistemaPlanillas\Icon\Save.gif" />
+    <Content Include="Views\sistemaPlanillas\Imgs\1.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\11.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\62163.gif" />
+    <Content Include="Views\sistemaPlanillas\Imgs\add.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\back.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\btnDelete.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\btnNew.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\btnSave.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Buscar.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\buttons\derechas.gif" />
+    <Content Include="Views\sistemaPlanillas\Imgs\buttons\img_Calendar.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\calendar.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\checkbox.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\combo.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Delete.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\edit.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Editar.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Firma.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Frima.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\imagesCA4NT8HX.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\imagesCAIFFB87.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\LimaGas2.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\LogoEmpresa.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\New.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\nuevo fondo.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\qg2g4vlboyps.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\radio.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\RRHH.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\rst1294623903gb0HRo.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\rstcloudcomputingservicios.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\rstdeducir-nomina.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\rstenterprise.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\rsthc_05_03.jpg" />
+    <Content Include="Views\sistemaPlanillas\Imgs\rstinicio_administracione.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Save.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\select.png" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Update.png" />
     <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\animated-overlay.gif" />
     <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_diagonals-medium_80_e1e1e2_40x40.png" />
     <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_diagonals-thick_0_aaaaaa_40x40.png" />
@@ -873,6 +910,7 @@
     <Content Include="Views\sistemaPlanillas\js\Script.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx" />
@@ -886,6 +924,9 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MntSeccion.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.min.js" />
+    <Content Include="Views\sistemaPlanillas\Imgs\ArchivoPDF.pdf" />
+    <Content Include="Views\sistemaPlanillas\Imgs\buttons\Thumbs.db" />
+    <Content Include="Views\sistemaPlanillas\Imgs\Thumbs.db" />
     <None Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.min.js" />
@@ -906,6 +947,17 @@
     <Content Include="Views\sistemaPlanillas\Styles\jquery.treeview.css" />
     <Content Include="Views\sistemaPlanillas\Styles\Site.css" />
     <Content Include="Views\sistemaPlanillas\Styles\Sitess.css" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboArea.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboDepartamento.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboDistritos.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboEstados.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboPersonal.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboProvincias.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboSexos.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboTipoDocumento.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucComboTipo_Via.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucTextBoxFecha.ascx" />
+    <Content Include="Views\sistemaPlanillas\UserControl\ucTipo_Zona.ascx" />
     <Content Include="wsGenerales.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -2006,6 +2058,13 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx.designer.cs">
       <DependentUpon>FrmMntConceptosShow.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx.cs">
+      <DependentUpon>FrmMntFamiliares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx.designer.cs">
+      <DependentUpon>FrmMntFamiliares.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx.cs">
       <DependentUpon>FrmMntPersonalxEstablecimiento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2026,6 +2085,83 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx.designer.cs">
       <DependentUpon>MaestroPersonalActivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboArea.ascx.cs">
+      <DependentUpon>ucComboArea.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboArea.ascx.designer.cs">
+      <DependentUpon>ucComboArea.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboDepartamento.ascx.cs">
+      <DependentUpon>ucComboDepartamento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboDepartamento.ascx.designer.cs">
+      <DependentUpon>ucComboDepartamento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboDistritos.ascx.cs">
+      <DependentUpon>ucComboDistritos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboDistritos.ascx.designer.cs">
+      <DependentUpon>ucComboDistritos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboEstados.ascx.cs">
+      <DependentUpon>ucComboEstados.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboEstados.ascx.designer.cs">
+      <DependentUpon>ucComboEstados.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboPersonal.ascx.cs">
+      <DependentUpon>ucComboPersonal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboPersonal.ascx.designer.cs">
+      <DependentUpon>ucComboPersonal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboProvincias.ascx.cs">
+      <DependentUpon>ucComboProvincias.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboProvincias.ascx.designer.cs">
+      <DependentUpon>ucComboProvincias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboSexos.ascx.cs">
+      <DependentUpon>ucComboSexos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboSexos.ascx.designer.cs">
+      <DependentUpon>ucComboSexos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboTipoDocumento.ascx.cs">
+      <DependentUpon>ucComboTipoDocumento.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboTipoDocumento.ascx.designer.cs">
+      <DependentUpon>ucComboTipoDocumento.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboTipo_Via.ascx.cs">
+      <DependentUpon>ucComboTipo_Via.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucComboTipo_Via.ascx.designer.cs">
+      <DependentUpon>ucComboTipo_Via.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucTextBoxFecha.ascx.cs">
+      <DependentUpon>ucTextBoxFecha.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucTextBoxFecha.ascx.designer.cs">
+      <DependentUpon>ucTextBoxFecha.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucTipo_Zona.ascx.cs">
+      <DependentUpon>ucTipo_Zona.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\UserControl\ucTipo_Zona.ascx.designer.cs">
+      <DependentUpon>ucTipo_Zona.ascx</DependentUpon>
     </Compile>
     <Compile Include="wsGenerales.asmx.cs">
       <DependentUpon>wsGenerales.asmx</DependentUpon>

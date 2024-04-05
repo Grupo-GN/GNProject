@@ -20,9 +20,10 @@ namespace GNProject
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            ucFiltros1.fc_carga_Filtros();
+           
             if (!Page.IsPostBack)
             {
+                ucFiltros1.fc_carga_Filtros();
                 int tipomenu;
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
