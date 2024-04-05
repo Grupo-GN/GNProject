@@ -908,6 +908,7 @@
     <Content Include="Views\sistemaPlanillas\js\amcharts4\themes\animated.js" />
     <Content Include="Views\sistemaPlanillas\js\custom-form-elements.js" />
     <Content Include="Views\sistemaPlanillas\js\Script.js" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx" />
@@ -2053,6 +2054,13 @@
     <Compile Include="Views\sistemaPlanillas\Controles\PruebaControl.aspx.cs">
       <DependentUpon>PruebaControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx.cs">
+      <DependentUpon>AsigBancoPagoCia_Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx.designer.cs">
+      <DependentUpon>AsigBancoPagoCia_Personal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx.cs">
       <DependentUpon>FrmMntConceptos.aspx</DependentUpon>
