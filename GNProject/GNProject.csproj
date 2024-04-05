@@ -923,6 +923,14 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonal.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonalActivo.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MntSeccion.js" />
+    <Content Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_CambiarPlanilla.js" />
+    <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_ConfigFormula.js" />
+    <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarAsientos.js" />
+    <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarAsientosGroup.js" />
+    <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarDatosPersonal.js" />
+    <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarPago.js" />
+    <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarTRegistro.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.min.js" />
     <Content Include="Views\sistemaPlanillas\Imgs\ArchivoPDF.pdf" />
@@ -2093,6 +2101,13 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx.designer.cs">
       <DependentUpon>MaestroPersonalActivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx.cs">
+      <DependentUpon>FrmCambioPlanilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx.designer.cs">
+      <DependentUpon>FrmCambioPlanilla.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\UserControl\ucComboArea.ascx.cs">
       <DependentUpon>ucComboArea.ascx</DependentUpon>
