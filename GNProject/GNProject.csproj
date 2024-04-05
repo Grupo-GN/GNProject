@@ -909,6 +909,10 @@
     <Content Include="Views\sistemaPlanillas\js\custom-form-elements.js" />
     <Content Include="Views\sistemaPlanillas\js\Script.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAfp.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAreas.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntBancos.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCargo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria2.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
@@ -2065,6 +2069,34 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx.designer.cs">
       <DependentUpon>AsigBancoPagoCia_Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAfp.aspx.cs">
+      <DependentUpon>FrmMntAfp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAfp.aspx.designer.cs">
+      <DependentUpon>FrmMntAfp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAreas.aspx.cs">
+      <DependentUpon>FrmMntAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAreas.aspx.designer.cs">
+      <DependentUpon>FrmMntAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntBancos.aspx.cs">
+      <DependentUpon>FrmMntBancos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntBancos.aspx.designer.cs">
+      <DependentUpon>FrmMntBancos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCargo.aspx.cs">
+      <DependentUpon>FrmMntCargo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCargo.aspx.designer.cs">
+      <DependentUpon>FrmMntCargo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria.aspx.cs">
       <DependentUpon>FrmMntCategoria.aspx</DependentUpon>
