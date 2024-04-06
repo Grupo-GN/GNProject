@@ -909,26 +909,34 @@
     <Content Include="Views\sistemaPlanillas\js\custom-form-elements.js" />
     <Content Include="Views\sistemaPlanillas\js\Script.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmAsignarcc.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAfp.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAreas.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntBancos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCargo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria2.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria_Auxiliar.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria_Auxiliar2.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCcosto.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCompanias.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntEPS.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntE_Civil.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivo_Fin_Per_Lab.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonal_Anexo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonal_Anexo2.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProyecto.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntRegimen_Laboral.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntSituacion.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTDoc_Identidad.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Contrato.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Cta_Bancaria.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Trabajador.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntVacaciones.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\ImportPersonal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx" />
@@ -2078,6 +2086,13 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx.designer.cs">
       <DependentUpon>AsigBancoPagoCia_Personal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmAsignarcc.aspx.cs">
+      <DependentUpon>FrmAsignarcc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmAsignarcc.aspx.designer.cs">
+      <DependentUpon>FrmAsignarcc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAfp.aspx.cs">
       <DependentUpon>FrmMntAfp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2120,12 +2135,33 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria2.aspx.designer.cs">
       <DependentUpon>FrmMntCategoria2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria_Auxiliar.aspx.cs">
+      <DependentUpon>FrmMntCategoria_Auxiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria_Auxiliar.aspx.designer.cs">
+      <DependentUpon>FrmMntCategoria_Auxiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria_Auxiliar2.aspx.cs">
+      <DependentUpon>FrmMntCategoria_Auxiliar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCategoria_Auxiliar2.aspx.designer.cs">
+      <DependentUpon>FrmMntCategoria_Auxiliar2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCcosto.aspx.cs">
       <DependentUpon>FrmMntCcosto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCcosto.aspx.designer.cs">
       <DependentUpon>FrmMntCcosto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCompanias.aspx.cs">
+      <DependentUpon>FrmMntCompanias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCompanias.aspx.designer.cs">
+      <DependentUpon>FrmMntCompanias.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx.cs">
       <DependentUpon>FrmMntConceptos.aspx</DependentUpon>
@@ -2161,6 +2197,13 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx.designer.cs">
       <DependentUpon>FrmMntFamiliares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivo_Fin_Per_Lab.aspx.cs">
+      <DependentUpon>FrmMntMotivo_Fin_Per_Lab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivo_Fin_Per_Lab.aspx.designer.cs">
+      <DependentUpon>FrmMntMotivo_Fin_Per_Lab.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx.cs">
       <DependentUpon>FrmMntPersonalxEstablecimiento.aspx</DependentUpon>
@@ -2204,6 +2247,13 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntSituacion.aspx.designer.cs">
       <DependentUpon>FrmMntSituacion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTDoc_Identidad.aspx.cs">
+      <DependentUpon>FrmMntTDoc_Identidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTDoc_Identidad.aspx.designer.cs">
+      <DependentUpon>FrmMntTDoc_Identidad.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Contrato.aspx.cs">
       <DependentUpon>FrmMntTipo_Contrato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2217,6 +2267,20 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Cta_Bancaria.aspx.designer.cs">
       <DependentUpon>FrmMntTipo_Cta_Bancaria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Trabajador.aspx.cs">
+      <DependentUpon>FrmMntTipo_Trabajador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Trabajador.aspx.designer.cs">
+      <DependentUpon>FrmMntTipo_Trabajador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntVacaciones.aspx.cs">
+      <DependentUpon>FrmMntVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntVacaciones.aspx.designer.cs">
+      <DependentUpon>FrmMntVacaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\ImportPersonal.aspx.cs">
       <DependentUpon>ImportPersonal.aspx</DependentUpon>
