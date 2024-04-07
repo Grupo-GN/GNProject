@@ -759,6 +759,10 @@
     <Content Include="Views\portal\OHSAS\OHSAS_Detalle.aspx" />
     <Content Include="Views\Security\CPerfiles.aspx" />
     <Content Include="Views\Security\CUsuarios.aspx" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0000133601.jpg" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0010983801.jpg" />
+    <Content Include="Views\sistemaPlanillas\CA\frmRegPermiso.aspx" />
+    <Content Include="Views\sistemaPlanillas\CA\Scripts\ScriptRegPermisos.js" />
     <Content Include="Views\sistemaPlanillas\Controles\BarraHerramientas.ascx" />
     <Content Include="Views\sistemaPlanillas\Controles\miEstilo.css" />
     <Content Include="Views\sistemaPlanillas\Controles\PruebaControl.aspx" />
@@ -910,6 +914,8 @@
     <Content Include="Views\sistemaPlanillas\js\Script.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmAsignarcc.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmConfigCtaCte.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmConfig_Asiento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmCtaCompania.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAfp.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntAreas.aspx" />
@@ -926,13 +932,22 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntCompania_Externa_Establecimientos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntEjercicio.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntEPS.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntE_Civil.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntIncidencias.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMes.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivoCtaCte.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivo_Fin_Per_Lab.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPeriodo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonal_Anexo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonal_Anexo2.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlanilla.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlantillaSustento.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlan_De_Cuentas.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProcesos.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProyecto.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntRegimen_Laboral.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntSituacion.aspx" />
@@ -941,11 +956,14 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Cta_Bancaria.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Establecimiento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Trabajador.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Via.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Zona.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntVacaciones.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\ImportPersonal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonal.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MaestroPersonalActivo.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\MntDatosBancarios.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\ModalProceso.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptAsignarcc.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptDatosBancarios.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\ScriptImportPersonal.js" />
@@ -954,6 +972,7 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonal.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonalActivo.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MntSeccion.js" />
+    <Content Include="Views\sistemaPlanillas\PermisosSubisdio\ListarPermisosDetalle.aspx" />
     <Content Include="Views\sistemaPlanillas\PermisosSubisdio\MPermiso.aspx" />
     <Content Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_CambiarPlanilla.js" />
@@ -968,6 +987,16 @@
     <Content Include="Views\sistemaPlanillas\Imgs\ArchivoPDF.pdf" />
     <Content Include="Views\sistemaPlanillas\Imgs\buttons\Thumbs.db" />
     <Content Include="Views\sistemaPlanillas\Imgs\Thumbs.db" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0000415201.pdf" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0000415401.pdf" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0001555301.pdf" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0001555501.pdf" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0001664801.docx" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0001665001.xls" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0010983601.pdf" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0014064001.pdf" />
+    <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0016115301.pdf" />
+    <Content Include="Views\sistemaPlanillas\CA\AjaxUploadFilePermiso.ashx" />
     <None Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.min.js" />
@@ -2072,6 +2101,16 @@
     <Compile Include="Views\Security\CUsuarios.aspx.designer.cs">
       <DependentUpon>CUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\CA\AjaxUploadFilePermiso.ashx.cs">
+      <DependentUpon>AjaxUploadFilePermiso.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\CA\frmRegPermiso.aspx.cs">
+      <DependentUpon>frmRegPermiso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\CA\frmRegPermiso.aspx.designer.cs">
+      <DependentUpon>frmRegPermiso.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -2098,6 +2137,20 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmAsignarcc.aspx.designer.cs">
       <DependentUpon>FrmAsignarcc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmConfigCtaCte.aspx.cs">
+      <DependentUpon>FrmConfigCtaCte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmConfigCtaCte.aspx.designer.cs">
+      <DependentUpon>FrmConfigCtaCte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmConfig_Asiento.aspx.cs">
+      <DependentUpon>FrmConfig_Asiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmConfig_Asiento.aspx.designer.cs">
+      <DependentUpon>FrmConfig_Asiento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmCtaCompania.aspx.cs">
       <DependentUpon>FrmCtaCompania.aspx</DependentUpon>
@@ -2211,6 +2264,13 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntConceptosShow.aspx.designer.cs">
       <DependentUpon>FrmMntConceptosShow.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntEjercicio.aspx.cs">
+      <DependentUpon>FrmMntEjercicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntEjercicio.aspx.designer.cs">
+      <DependentUpon>FrmMntEjercicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntEPS.aspx.cs">
       <DependentUpon>FrmMntEPS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2232,12 +2292,40 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntFamiliares.aspx.designer.cs">
       <DependentUpon>FrmMntFamiliares.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntIncidencias.aspx.cs">
+      <DependentUpon>FrmMntIncidencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntIncidencias.aspx.designer.cs">
+      <DependentUpon>FrmMntIncidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMes.aspx.cs">
+      <DependentUpon>FrmMntMes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMes.aspx.designer.cs">
+      <DependentUpon>FrmMntMes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivoCtaCte.aspx.cs">
+      <DependentUpon>FrmMntMotivoCtaCte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivoCtaCte.aspx.designer.cs">
+      <DependentUpon>FrmMntMotivoCtaCte.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivo_Fin_Per_Lab.aspx.cs">
       <DependentUpon>FrmMntMotivo_Fin_Per_Lab.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntMotivo_Fin_Per_Lab.aspx.designer.cs">
       <DependentUpon>FrmMntMotivo_Fin_Per_Lab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPeriodo.aspx.cs">
+      <DependentUpon>FrmMntPeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPeriodo.aspx.designer.cs">
+      <DependentUpon>FrmMntPeriodo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonalxEstablecimiento.aspx.cs">
       <DependentUpon>FrmMntPersonalxEstablecimiento.aspx</DependentUpon>
@@ -2259,6 +2347,34 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPersonal_Anexo2.aspx.designer.cs">
       <DependentUpon>FrmMntPersonal_Anexo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlanilla.aspx.cs">
+      <DependentUpon>FrmMntPlanilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlanilla.aspx.designer.cs">
+      <DependentUpon>FrmMntPlanilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlantillaSustento.aspx.cs">
+      <DependentUpon>FrmMntPlantillaSustento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlantillaSustento.aspx.designer.cs">
+      <DependentUpon>FrmMntPlantillaSustento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlan_De_Cuentas.aspx.cs">
+      <DependentUpon>FrmMntPlan_De_Cuentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlan_De_Cuentas.aspx.designer.cs">
+      <DependentUpon>FrmMntPlan_De_Cuentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProcesos.aspx.cs">
+      <DependentUpon>FrmMntProcesos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProcesos.aspx.designer.cs">
+      <DependentUpon>FrmMntProcesos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProyecto.aspx.cs">
       <DependentUpon>FrmMntProyecto.aspx</DependentUpon>
@@ -2316,6 +2432,20 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Trabajador.aspx.designer.cs">
       <DependentUpon>FrmMntTipo_Trabajador.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Via.aspx.cs">
+      <DependentUpon>FrmMntTipo_Via.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Via.aspx.designer.cs">
+      <DependentUpon>FrmMntTipo_Via.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Zona.aspx.cs">
+      <DependentUpon>FrmMntTipo_Zona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTipo_Zona.aspx.designer.cs">
+      <DependentUpon>FrmMntTipo_Zona.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\FrmMntVacaciones.aspx.cs">
       <DependentUpon>FrmMntVacaciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2350,6 +2480,20 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\MntDatosBancarios.aspx.designer.cs">
       <DependentUpon>MntDatosBancarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\ModalProceso.aspx.cs">
+      <DependentUpon>ModalProceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Mantenimientos\ModalProceso.aspx.designer.cs">
+      <DependentUpon>ModalProceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\PermisosSubisdio\ListarPermisosDetalle.aspx.cs">
+      <DependentUpon>ListarPermisosDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\PermisosSubisdio\ListarPermisosDetalle.aspx.designer.cs">
+      <DependentUpon>ListarPermisosDetalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\PermisosSubisdio\MPermiso.aspx.cs">
       <DependentUpon>MPermiso.aspx</DependentUpon>
