@@ -70,6 +70,7 @@ namespace GNProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            ucFiltros1.PostBackPeriodoChangedEventHandler += new EventHandler(UcFiltros_PeriodoChangedEvent);
             string rutaActual = Request.Url.AbsolutePath;
             if (rutaActual.StartsWith("/Views/sistemaPlanillas/"))
             {
@@ -368,6 +369,14 @@ namespace GNProject
 
 
 
+            }
+        }
+        public event EventHandler UcFiltros_PostBackPeriodoChangedEventHandler;
+        private void UcFiltros_PeriodoChangedEvent(object sender, EventArgs e)
+        {
+            if (UcFiltros_PostBackPeriodoChangedEventHandler != null)
+            {
+                UcFiltros_PostBackPeriodoChangedEventHandler(null, null);
             }
         }
     }

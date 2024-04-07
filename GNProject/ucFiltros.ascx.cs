@@ -119,6 +119,7 @@ namespace GNProject
             Session["PeriodoPlanilla"] = cboPeriodo.SelectedValue;
             Session["planillaPlanilla"] = cboPlanilla.SelectedValue;
             Session["anioPlanilla"] = cboEjercicio.SelectedValue;
+            Session["mesPlanilla"] = cboMes.SelectedValue;
             var a = (string)Session["EmpresaPlanilla"];
             var b = (string)Session["PeriodoPlanilla"];
         }

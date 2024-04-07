@@ -763,6 +763,11 @@
     <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0010983801.jpg" />
     <Content Include="Views\sistemaPlanillas\CA\frmRegPermiso.aspx" />
     <Content Include="Views\sistemaPlanillas\CA\Scripts\ScriptRegPermisos.js" />
+    <Content Include="Views\sistemaPlanillas\Contrato_RRHH\FrmArchivoContratos.aspx" />
+    <Content Include="Views\sistemaPlanillas\Contrato_RRHH\FrmConsultarContratos.aspx" />
+    <Content Include="Views\sistemaPlanillas\Contrato_RRHH\FrmMntFunciones.aspx" />
+    <Content Include="Views\sistemaPlanillas\Contrato_RRHH\FrmRenovaContrato.aspx" />
+    <Content Include="Views\sistemaPlanillas\Contrato_RRHH\FrmSeguimientoContrato.aspx" />
     <Content Include="Views\sistemaPlanillas\Controles\BarraHerramientas.ascx" />
     <Content Include="Views\sistemaPlanillas\Controles\miEstilo.css" />
     <Content Include="Views\sistemaPlanillas\Controles\PruebaControl.aspx" />
@@ -982,6 +987,9 @@
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarDatosPersonal.js" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarPago.js" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarTRegistro.js" />
+    <Content Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx" />
+    <Content Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx" />
+    <Content Include="Views\sistemaPlanillas\RRHH\Scripts\Script_ContratoNuevo.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.min.js" />
     <Content Include="Views\sistemaPlanillas\Imgs\ArchivoPDF.pdf" />
@@ -1028,6 +1036,9 @@
     <Content Include="Views\sistemaPlanillas\UserControl\ucComboTipo_Via.ascx" />
     <Content Include="Views\sistemaPlanillas\UserControl\ucTextBoxFecha.ascx" />
     <Content Include="Views\sistemaPlanillas\UserControl\ucTipo_Zona.ascx" />
+    <Content Include="Views\sistemaPlanillas\Vacaciones\FrmDetVacaciones.aspx" />
+    <Content Include="Views\sistemaPlanillas\Vacaciones\FrmSaldoVacacional.aspx" />
+    <Content Include="Views\sistemaPlanillas\Vacaciones\FrmVacPorVencerIndemnizacion.aspx" />
     <Content Include="wsGenerales.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -2116,6 +2127,41 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\code\ControlMantenimientos.cs" />
     <Compile Include="Views\sistemaPlanillas\code\Utils.cs" />
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmArchivoContratos.aspx.cs">
+      <DependentUpon>FrmArchivoContratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmArchivoContratos.aspx.designer.cs">
+      <DependentUpon>FrmArchivoContratos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmConsultarContratos.aspx.cs">
+      <DependentUpon>FrmConsultarContratos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmConsultarContratos.aspx.designer.cs">
+      <DependentUpon>FrmConsultarContratos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmMntFunciones.aspx.cs">
+      <DependentUpon>FrmMntFunciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmMntFunciones.aspx.designer.cs">
+      <DependentUpon>FrmMntFunciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmRenovaContrato.aspx.cs">
+      <DependentUpon>FrmRenovaContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmRenovaContrato.aspx.designer.cs">
+      <DependentUpon>FrmRenovaContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmSeguimientoContrato.aspx.cs">
+      <DependentUpon>FrmSeguimientoContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmSeguimientoContrato.aspx.designer.cs">
+      <DependentUpon>FrmSeguimientoContrato.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Controles\BarraHerramientas.ascx.cs">
       <DependentUpon>BarraHerramientas.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2509,6 +2555,20 @@
     <Compile Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx.designer.cs">
       <DependentUpon>FrmCambioPlanilla.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx.cs">
+      <DependentUpon>FrmContratoNuevo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx.designer.cs">
+      <DependentUpon>FrmContratoNuevo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx.cs">
+      <DependentUpon>FrmPlantillaContratoTrab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx.designer.cs">
+      <DependentUpon>FrmPlantillaContratoTrab.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\UserControl\ucComboArea.ascx.cs">
       <DependentUpon>ucComboArea.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2585,6 +2645,27 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\UserControl\ucTipo_Zona.ascx.designer.cs">
       <DependentUpon>ucTipo_Zona.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Vacaciones\FrmDetVacaciones.aspx.cs">
+      <DependentUpon>FrmDetVacaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Vacaciones\FrmDetVacaciones.aspx.designer.cs">
+      <DependentUpon>FrmDetVacaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Vacaciones\FrmSaldoVacacional.aspx.cs">
+      <DependentUpon>FrmSaldoVacacional.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Vacaciones\FrmSaldoVacacional.aspx.designer.cs">
+      <DependentUpon>FrmSaldoVacacional.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Vacaciones\FrmVacPorVencerIndemnizacion.aspx.cs">
+      <DependentUpon>FrmVacPorVencerIndemnizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Vacaciones\FrmVacPorVencerIndemnizacion.aspx.designer.cs">
+      <DependentUpon>FrmVacPorVencerIndemnizacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="wsGenerales.asmx.cs">
       <DependentUpon>wsGenerales.asmx</DependentUpon>
