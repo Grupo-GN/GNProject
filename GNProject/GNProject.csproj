@@ -817,6 +817,12 @@
     <Content Include="Views\sistemaPlanillas\css\prueba2.css" />
     <Content Include="Views\sistemaPlanillas\css\Style.css" />
     <Content Include="Views\sistemaPlanillas\css\StyleWilder.css" />
+    <Content Include="Views\sistemaPlanillas\Datos\FrmCalculos_Perm.aspx" />
+    <Content Include="Views\sistemaPlanillas\Datos\FrmDatos_x_Persona.aspx" />
+    <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Afp.aspx" />
+    <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Compania.aspx" />
+    <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Periodo.aspx" />
+    <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Planilla.aspx" />
     <Content Include="Views\sistemaPlanillas\Icon\add.gif" />
     <Content Include="Views\sistemaPlanillas\Icon\back.gif" />
     <Content Include="Views\sistemaPlanillas\Icon\cancel.gif" />
@@ -2169,6 +2175,48 @@
     <Compile Include="Views\sistemaPlanillas\Controles\PruebaControl.aspx.cs">
       <DependentUpon>PruebaControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmCalculos_Perm.aspx.cs">
+      <DependentUpon>FrmCalculos_Perm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmCalculos_Perm.aspx.designer.cs">
+      <DependentUpon>FrmCalculos_Perm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmDatos_x_Persona.aspx.cs">
+      <DependentUpon>FrmDatos_x_Persona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmDatos_x_Persona.aspx.designer.cs">
+      <DependentUpon>FrmDatos_x_Persona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Afp.aspx.cs">
+      <DependentUpon>FrmPrm_x_Afp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Afp.aspx.designer.cs">
+      <DependentUpon>FrmPrm_x_Afp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Compania.aspx.cs">
+      <DependentUpon>FrmPrm_x_Compania.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Compania.aspx.designer.cs">
+      <DependentUpon>FrmPrm_x_Compania.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Periodo.aspx.cs">
+      <DependentUpon>FrmPrm_x_Periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Periodo.aspx.designer.cs">
+      <DependentUpon>FrmPrm_x_Periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Planilla.aspx.cs">
+      <DependentUpon>FrmPrm_x_Planilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Planilla.aspx.designer.cs">
+      <DependentUpon>FrmPrm_x_Planilla.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\AsigBancoPagoCia_Personal.aspx.cs">
       <DependentUpon>AsigBancoPagoCia_Personal.aspx</DependentUpon>
