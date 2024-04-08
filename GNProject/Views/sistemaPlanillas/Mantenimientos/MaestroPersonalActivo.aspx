@@ -93,6 +93,9 @@
                      <input id="btnAnterior" type="button" value="<<" class="submitPager" />
                      <input id="btnSiguiente" type="button" value=">>" class="submitPager" />
                      <input id="btnUltimo" type="button" value=">|" class="submitPager"/>
+
+
+
                 </td>
                 </tr>
                 </tfoot>
