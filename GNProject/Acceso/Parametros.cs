@@ -84,5 +84,42 @@ namespace GNProject.Acceso
             public const string RepSegDocumentos_Det = "BandejaListaPrecios_Det";
             //public const string BandejaListaPrecios_Temporal = "BandejaListaPrecios_Temporal";
         }
+
+        /*Planillas*/
+        private static string getFileServerPath_RUC()
+        {
+            return ConfigurationManager.AppSettings["P_FileServerPath"].ToString().Replace("{RUC}", ClaseGlobal.Get_RUC_usuario());
+        }
+        public static string FileServerPath
+        {
+            get
+            {
+                String path = getFileServerPath_RUC();
+                if (path.Substring(0, 1) == "~") { path = HttpContext.Current.Server.MapPath(path); } //Si la ruta es virtual, se obtiene ruta física
+                return path;
+            }
+        }
+
+        public static string FileServer_RutaPlantillas { get { return FileServerPath + ConfigurationManager.AppSettings["P_RutaPlantillas"].ToString(); } }
+        public static string FileServer_RutaDocumentos { get { return FileServerPath + ConfigurationManager.AppSettings["P_RutaDocumentos"].ToString(); } }
+        public static string VirtualServer_RutaDocumentos
+        {
+            get
+            {
+                return ConfigurationManager.AppSettings["P_RutaServidor"].ToString()
+                      + getFileServerPath_RUC().Replace("~/", "")
+                      + ConfigurationManager.AppSettings["P_RutaDocumentos"].ToString();
+            }
+        }
+
+        public static string FileServer_RutaEmpresa { get { return FileServerPath + ConfigurationManager.AppSettings["P_RutaEmpresa"].ToString(); } }
+        public static string VirtualServer_RutaEmpresa
+        {
+            get
+            {
+                return ConfigurationManager.AppSettings["P_RutaServidor"].ToString() + getFileServerPath_RUC().Replace("~/", "")
+                    + ConfigurationManager.AppSettings["P_RutaEmpresa"].ToString();
+            }
+        }
     }
 }

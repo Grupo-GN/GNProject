@@ -134,7 +134,8 @@ function Lista_Personal_CentroCosto() {
 
     var pagePath = window.location.pathname;
     var urlajax = pagePath + '/ListaPersonalCentroCosto';
-    var PeriodoId = $('#ctl00_ucFiltros1_cboPeriodo').val(), LocalidadId = $('#cboLocalidad').val(), ProyectoId = $('#cboProyecto').val()
+    var cbo = document.getElementById('periodoSession').value;
+    var PeriodoId = cbo, LocalidadId = $('#cboLocalidad').val(), ProyectoId = $('#cboProyecto').val()
         , AreaId = $('#cboArea').val();
     var params = {
         PeriodoId: PeriodoId,
@@ -201,7 +202,8 @@ function Lista_Personal_CentroCosto() {
 function Lista_Personal_CentroCosto_MaxRows() {
     var pagePath = window.location.pathname;
     var urlajax = pagePath + '/ListaPersonalCentroCosto_MaxRows';
-    var PeriodoId = $('#ctl00_ucFiltros1_cboPeriodo').val(), LocalidadId = $('#cboLocalidad').val(), ProyectoId = $('#cboProyecto').val()
+    var cbo = document.getElementById('periodoSession').value;
+    var PeriodoId = cbo, LocalidadId = $('#cboLocalidad').val(), ProyectoId = $('#cboProyecto').val()
         , AreaId = $('#cboArea').val();
     var params = {
         PeriodoId: PeriodoId,
@@ -308,7 +310,8 @@ function ListaArea() {
 function ListaCentroCosto(PersonalId) {
     var pagePath = window.location.pathname;
     var urlajax = pagePath + '/ListaCentroCosto';
-    var PeriodoId = $('#ctl00_ucFiltros1_cboPeriodo').val();
+    var cbo = document.getElementById('periodoSession').value;
+    var PeriodoId = cbo;
     var params = {
         PeriodoId: PeriodoId,
         PersonalId: PersonalId
@@ -369,7 +372,8 @@ function Buscar_Personal_CentroCosto(PersonalId) {
 
     var pagePath = window.location.pathname;
     var urlajax = pagePath + '/FindPersonalCentroCosto';
-    var PeriodoId = $('#ctl00_ucFiltros1_cboPeriodo').val();
+    var cbo = document.getElementById('periodoSession').value;
+    var PeriodoId = cbo;
     var params = {
         PeriodoId: PeriodoId,
         PersonalId: PersonalId
@@ -383,6 +387,7 @@ function Buscar_Personal_CentroCosto(PersonalId) {
         success: function (response) {
             var datos = response.d;
             var lengthD = datos.length - 1;
+            var cbop = document.getElementById('planillaSession').value;
             $('#tbodyDetalle').html('');
             var perso = '';
             centros = [];
@@ -392,7 +397,7 @@ function Buscar_Personal_CentroCosto(PersonalId) {
                     $('#lblpersonal').html(datos[0].APaterno + ' ' + datos[0].AMaterno + ', ' + datos[0].Nombre);
                     $('#idPersonal').val(datos[i].PersonalId);
                     $('#idPeriodo').val(PeriodoId);
-                    $('#idPlanilla').val($('#ctl00_ucFiltros1_cboPlanilla').val());
+                    $('#idPlanilla').val(cbop);
                 }
                 centros.push({ CcostoId: datos[i].CcostoId, NCcosto: datos[i].NCcosto, Porcentaje: datos[i].Porcentaje, Rem: datos[i].CcostoId2});                
             }

@@ -12,8 +12,9 @@
 function Lista_Personal_DatosBancarios(inicio) {
     Lista_SelectsMantDatosBancarios();
     var pagePath = window.location.pathname;
+    var cbo = document.getElementById('periodoSession').value;
     var urlajax = pagePath + '/Lista_Personal_DatosBancarios';
-    var Periodo_Id = $('#ctl00_ucFiltros1_cboPeriodo').val(), NPersonal = $('#txtBuscar').val()
+    var Periodo_Id = cbo, NPersonal = $('#txtBuscar').val()
         , Localidad = $('#cboLocalidad').val(), Proyecto = $('#cboProyecto').val(), Area = $('#cboArea').val();
     var params = {
         Periodo_Id: Periodo_Id,
