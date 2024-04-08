@@ -1,0 +1,89 @@
+﻿.ajax__tab_xp .ajax__tab_tab {
+    height: 30px !important; /*cambiado*/
+    padding: 4px;
+    margin: 0;
+    background: none !important;
+}
+
+.ajax__tab_xp .ajax__tab_active .ajax__tab_tab {
+    background: none !important;
+}
+.ajax__tab_xp .ajax__tab_hover .ajax__tab_tab {
+    background: none !important;
+}
+.ajax__tab_hover {
+    background: none !important;
+}
+
+.ajax__tab_xp .ajax__tab_active .ajax__tab_inner {
+    background: none !important;
+}
+
+.ajax__tab_xp .ajax__tab_inner {
+    padding-left: 3px;
+    background: none !important;
+}
+
+.ajax__tab_xp .ajax__tab_active .ajax__tab_outer {
+    background: none !important;
+}
+
+.ajax__tab_xp .ajax__tab_outer {
+    padding-right: 4px;
+    background: none !important;
+    height: 21px;
+}
+
+.ajax__tab_xp .ajax__tab_body {
+    font-family: verdana, tahoma, helvetica;
+    font-size: 10pt;
+    border: none !important;
+    border-top: 0;
+    padding: 8px;
+    background-color: #ffffff;
+}
+
+
+.elPanel {
+    background-color: White;
+    border:none !important;
+    width: 280px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+    border-radius: 8px !important;
+}
+
+/*++++++Estilos UIJquery GRID++++++++*/
+.ui-widget-header {
+    border: 1px solid #e9e4e4;
+    background: none !important;
+    color: #444;
+    font-weight: bold;
+}
+
+.ui-widget {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+/*++++Tabla++++++*/
+.table {
+    min-width: none !important;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+    text-align: center;
+}
+
+    .table th, .table td {
+        padding: 4px !important;
+        vertical-align: top;
+        border-top: none !important;
+    }
+

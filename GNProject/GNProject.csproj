@@ -904,6 +904,7 @@
     <Content Include="Views\sistemaPlanillas\Styles\img\bg.jpg" />
     <Content Include="Views\sistemaPlanillas\Styles\img\logotype.jpg" />
     <Content Include="Views\sistemaPlanillas\Styles\jquery.treeview.css" />
+    <Content Include="Views\sistemaPlanillas\Styles\nuevoEstiloPlanilla.css" />
     <Content Include="Views\sistemaPlanillas\Styles\Site.css" />
     <Content Include="Views\sistemaPlanillas\Styles\Sitess.css" />
     <Content Include="wsGenerales.asmx" />
@@ -2237,6 +2238,7 @@
     <Folder Include="Assets\Portal\FileServer\imgPlantillaCorreo\" />
     <Folder Include="Assets\Portal\FileServer\ImgUsers\" />
     <Folder Include="Assets\Portal\FileServer\Videos\" />
+    <Folder Include="Views\sistemaPlanillas\UserControl\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

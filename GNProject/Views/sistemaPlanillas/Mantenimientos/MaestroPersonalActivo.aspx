@@ -6,10 +6,11 @@
     <link href="../jqueriUI/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
         type="text/css" />
     <link href="../css/StyleWilder.css" rel="stylesheet" type="text/css" />
+     <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
 
     <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
     <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
     <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
@@ -31,7 +32,7 @@
     </fieldset>
     
     <label class="miLabelError" id="lblError" style="font-size:14px;" ></label>
-    <div id="TabContainer" style="height:415px;width:100%;">
+    <div id="TabContainer" style="/*height:415px;*/width:100%;">
         <ul>
             <li><a href="#Tab1">Lista</a></li>
             <li><a href="#Tab2">Datos Principales</a></li>
@@ -50,7 +51,7 @@
             <input type="text" class="miTextBox" id="txtBuscar" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="button" id="btnAdicionar" class="submit" value="Adicionar" />
         </fieldset>
-        <div  style="overflow: hidden; width: 100%; border: solid 1px #505050;height: 260px;">
+        <div  style="overflow: hidden; width: 100%; border: solid 1px #505050;height: 250px;">
         <table class="gridSmall" style="width:100%;">
             <thead>
                 <tr>
