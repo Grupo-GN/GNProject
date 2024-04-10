@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="FrmMntFunciones.aspx.cs" Inherits="GNProject.Views.sistemaPlanillas.Contrato_RRHH.FrmMntFunciones" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
 
     <table align="center" width="100%">
         <tr>

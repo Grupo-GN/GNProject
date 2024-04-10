@@ -959,7 +959,9 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlantillaSustento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlan_De_Cuentas.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProcesos.aspx" />
-    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProyecto.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProyecto.aspx">
+      <BrowseToURL>~/Views/sistemaPlanillas/Mantenimientos/FrmMntProyecto.aspx</BrowseToURL>
+    </Content>
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntRegimen_Laboral.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntSituacion.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTDoc_Identidad.aspx" />
@@ -2926,7 +2928,6 @@
     <Folder Include="Assets\Portal\FileServer\imgPlantillaCorreo\" />
     <Folder Include="Assets\Portal\FileServer\ImgUsers\" />
     <Folder Include="Assets\Portal\FileServer\Videos\" />
-    <Folder Include="Views\sistemaPlanillas\UserControl\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

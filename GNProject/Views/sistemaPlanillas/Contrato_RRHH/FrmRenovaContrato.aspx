@@ -3,6 +3,8 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="Server">
 
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
     <%--<script type="text/javascript">
 
         //funcion para los checkbox
