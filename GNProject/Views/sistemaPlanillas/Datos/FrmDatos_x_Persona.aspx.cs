@@ -489,7 +489,7 @@ namespace GNProject.Views.sistemaPlanillas.Datos
                 objED_Fijos.Valor_Masivo = valor_Masivo;
 
                 //20190809
-                objED_Fijos.Usuario = ClaseGlobal.Get_nombrecompleto_usuario().ToString();
+                objED_Fijos.Usuario = Acceso.ClaseGlobal.Get_nombrecompleto_usuario().ToString();
 
                 dtRpta = Log_D_Fijos.Actualiza_D_Fijos_Masivo(objED_Fijos, delimitador, cont);
                 string msj_rpta;

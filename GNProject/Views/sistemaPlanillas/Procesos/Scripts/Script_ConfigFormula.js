@@ -28,7 +28,7 @@ function ConfigFormulaGetProcesosSelect() {
 function ConfigFormulaGetFormulasPlanillaList() {
     var pagePath = window.location.pathname;
     var urlajax = pagePath + '/ConfigFormulaGetFormulasPlanillaList';
-    var Planilla = $('#ctl00_ucFiltros1_cboPlanilla').val(), Proceso = $('#cboProcesoFind').val(), FormulaFind = $('#txtFormulaFind').val();
+    var Planilla = document.getElementById('planillaSession').value, Proceso = $('#cboProcesoFind').val(), FormulaFind = $('#txtFormulaFind').val();
     if (!Planilla) {
         setTimeout(function () { ConfigFormulaGetFormulasPlanillaList(); }, 1000);
         return false;
@@ -124,7 +124,7 @@ function ConfigFormulaGetProcesoFuenteList() {
     });
 }
 function ConfigFormulaGetMaxPosicionFormula() {
-    var PlanillaCod = $('#ctl00_ucFiltros1_cboPlanilla').val();
+    var PlanillaCod = document.getElementById('empresaSession').value;
     if (!PlanillaCod) {
         setTimeout(function () { ConfigFormulaGetMaxPosicionFormula(); }, 1000);
         return false;
@@ -391,7 +391,7 @@ function ConfigFormulaGetLoadConceptosTreeView() {
 var Object_Proc = '';
 function ConfigFormulaProcInsertFormula() {
     var ProcesaBound = true;
-    var Concepto_Id = $('#cboConcepto').val(), Planilla_Id = $('#ctl00_ucFiltros1_cboPlanilla').val()
+    var Concepto_Id = $('#cboConcepto').val(), Planilla_Id = document.getElementById('planillaSession').value
     , Nro = parseInt($('#txtNroForm').val()), Formula_texto = $('#txtFormula').val()
     , Formula_condicion = $('#txtCodicion').val(), Fuente_Proceso_Id = $('#cboProcesoFuente').val()
     , ChangeLastNro = true, Proceso_Id = $('#cboProceso').val();
@@ -404,7 +404,7 @@ function ConfigFormulaProcInsertFormula() {
     }
     if (!Planilla_Id) {
         $('#lblError').html('.::Planilla no definida.');
-        $('#ctl00_ucFiltros1_cboPlanilla').focus();
+        document.getElementById('planillaSession').focus;
         ProcesaBound = false;
         return false;
     }

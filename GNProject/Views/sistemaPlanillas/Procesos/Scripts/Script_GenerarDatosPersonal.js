@@ -1,13 +1,13 @@
 ﻿// FILTRO CABECERA
 
 function Get_Compania() {
-    var cboCompa = document.getElementById('ctl00_ucFiltros1_cboEmpresa');
-    return cboCompa.value;
+    var cboCompa = document.getElementById('empresaSession').value;
+    return cboCompa;  
 }
 
 function Get_Periodo() {
-    var cbo = document.getElementById('ctl00_ucFiltros1_cboPeriodo');
-    return cbo.value;
+    var cbo = document.getElementById('periodoSession').value;
+    return cbo;
 }
 //OTROS FILTROS
 

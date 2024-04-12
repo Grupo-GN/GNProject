@@ -52,6 +52,9 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="ciloci.FormulaEngine, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ciloci.FormulaEngine.1.2.0\lib\net461\ciloci.FormulaEngine.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.CrystalReports.Engine.1.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
     </Reference>
@@ -110,6 +113,9 @@
     </Reference>
     <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data">
       <HintPath>..\Microsoft.ApplicationBlocks.Data.dll</HintPath>
@@ -819,10 +825,12 @@
     <Content Include="Views\sistemaPlanillas\css\StyleWilder.css" />
     <Content Include="Views\sistemaPlanillas\Datos\FrmCalculos_Perm.aspx" />
     <Content Include="Views\sistemaPlanillas\Datos\FrmDatos_x_Persona.aspx" />
+    <Content Include="Views\sistemaPlanillas\Datos\FrmImportCalculo.aspx" />
     <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Afp.aspx" />
     <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Compania.aspx" />
     <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Periodo.aspx" />
     <Content Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Planilla.aspx" />
+    <Content Include="Views\sistemaPlanillas\Datos\Script\ScriptImportCalculo.js" />
     <Content Include="Views\sistemaPlanillas\Icon\add.gif" />
     <Content Include="Views\sistemaPlanillas\Icon\back.gif" />
     <Content Include="Views\sistemaPlanillas\Icon\cancel.gif" />
@@ -846,6 +854,25 @@
     <Content Include="Views\sistemaPlanillas\Icon\png\user_male_go.png" />
     <Content Include="Views\sistemaPlanillas\Icon\printer.gif" />
     <Content Include="Views\sistemaPlanillas\Icon\Save.gif" />
+    <Content Include="Views\sistemaPlanillas\images\ActualizarSombra.png" />
+    <Content Include="Views\sistemaPlanillas\images\add.png" />
+    <Content Include="Views\sistemaPlanillas\images\back.png" />
+    <Content Include="Views\sistemaPlanillas\images\Buscar.png" />
+    <Content Include="Views\sistemaPlanillas\images\cancel.png" />
+    <Content Include="Views\sistemaPlanillas\images\delete.gif" />
+    <Content Include="Views\sistemaPlanillas\images\edit.png" />
+    <Content Include="Views\sistemaPlanillas\images\gn.jpg" />
+    <Content Include="Views\sistemaPlanillas\images\ImprimirContrato.png" />
+    <Content Include="Views\sistemaPlanillas\images\logo_paracas02.png" />
+    <Content Include="Views\sistemaPlanillas\images\save.png" />
+    <Content Include="Views\sistemaPlanillas\images\wall1.png" />
+    <Content Include="Views\sistemaPlanillas\images\wall11111.jpg" />
+    <Content Include="Views\sistemaPlanillas\images\wall11111.png" />
+    <Content Include="Views\sistemaPlanillas\images\wall1nnn.png" />
+    <Content Include="Views\sistemaPlanillas\images\wallLG2.jpg" />
+    <Content Include="Views\sistemaPlanillas\images\wallLG3.jpg" />
+    <Content Include="Views\sistemaPlanillas\images\wallLGnnn.jpg" />
+    <Content Include="Views\sistemaPlanillas\images\wallplanilla.jpg" />
     <Content Include="Views\sistemaPlanillas\Imgs\1.jpg" />
     <Content Include="Views\sistemaPlanillas\Imgs\11.jpg" />
     <Content Include="Views\sistemaPlanillas\Imgs\62163.gif" />
@@ -883,6 +910,16 @@
     <Content Include="Views\sistemaPlanillas\Imgs\Save.png" />
     <Content Include="Views\sistemaPlanillas\Imgs\select.png" />
     <Content Include="Views\sistemaPlanillas\Imgs\Update.png" />
+    <Content Include="Views\sistemaPlanillas\img\buttonlogin.png" />
+    <Content Include="Views\sistemaPlanillas\img\cargando.gif" />
+    <Content Include="Views\sistemaPlanillas\img\delivery-man.jpg" />
+    <Content Include="Views\sistemaPlanillas\img\delivery.jpg" />
+    <Content Include="Views\sistemaPlanillas\img\gradient.png" />
+    <Content Include="Views\sistemaPlanillas\img\icono_calendario.gif" />
+    <Content Include="Views\sistemaPlanillas\img\input_text.gif" />
+    <Content Include="Views\sistemaPlanillas\img\loading2.gif" />
+    <Content Include="Views\sistemaPlanillas\img\logo1-1.png" />
+    <Content Include="Views\sistemaPlanillas\img\logooficial.png" />
     <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\animated-overlay.gif" />
     <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_diagonals-medium_80_e1e1e2_40x40.png" />
     <Content Include="Views\sistemaPlanillas\jqueriUI\css\custom-theme\images\ui-bg_diagonals-thick_0_aaaaaa_40x40.png" />
@@ -983,9 +1020,24 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonal.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MantenimientoPersonalActivo.js" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\Scripts\Script_MntSeccion.js" />
+    <Content Include="Views\sistemaPlanillas\nuevaPlanilla\asset\bootstrap.min.css" />
+    <Content Include="Views\sistemaPlanillas\nuevaPlanilla\asset\bootstrap.min.js" />
+    <Content Include="Views\sistemaPlanillas\nuevaPlanilla\asset\NuevaPlanilla.js" />
+    <Content Include="Views\sistemaPlanillas\nuevaPlanilla\FrmProcesar_MS.aspx" />
+    <Content Include="Views\sistemaPlanillas\nuevaPlanilla\jsExportExcel\ScriptExportarExcel.js" />
+    <Content Include="Views\sistemaPlanillas\nuevaPlanilla\PlanillaNueva.aspx" />
     <Content Include="Views\sistemaPlanillas\PermisosSubisdio\ListarPermisosDetalle.aspx" />
     <Content Include="Views\sistemaPlanillas\PermisosSubisdio\MPermiso.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\configFormula.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\FrmAperturaCierrePeriodo.aspx" />
     <Content Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\FrmGenerarAsientos.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\FrmGenerarPago.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\FrmGenerarTRegistro.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\FrmViewCalculosPorPersona.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\FrmViewInterfaces.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\GenerarAsientos.aspx" />
+    <Content Include="Views\sistemaPlanillas\Procesos\GenerarDatosPersonal.aspx" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_CambiarPlanilla.js" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_ConfigFormula.js" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarAsientos.js" />
@@ -993,7 +1045,25 @@
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarDatosPersonal.js" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarPago.js" />
     <Content Include="Views\sistemaPlanillas\Procesos\Scripts\Script_GenerarTRegistro.js" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmConfigBoletaCubo.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmGenerarSustentoPlanilla.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmImprimirBoleta.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmImprimirReportes.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\frmPersonalExport.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmPlanillaGenDet.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmPlanillaGenDet2.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteCtasCtes.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteIncidencias.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteVacacionesDet.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\PlanillasGeneral.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\ReporteIncidencias.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\rptPlanilla.aspx" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\scripts\ScriptReporteIncidencias.js" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\scripts\ScriptReportePlanilla.js" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\scripts\Script_ExportExcel.js" />
+    <Content Include="Views\sistemaPlanillas\Reportes\FrmPrint.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx" />
+    <Content Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronico.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\Scripts\Script_ContratoNuevo.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.js" />
@@ -1011,6 +1081,421 @@
     <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0014064001.pdf" />
     <Content Include="Views\sistemaPlanillas\CA\ArchivoPermiso\0016115301.pdf" />
     <Content Include="Views\sistemaPlanillas\CA\AjaxUploadFilePermiso.ashx" />
+    <Content Include="Views\sistemaPlanillas\code\dsasienoscuentas.xsc">
+      <DependentUpon>dsasienoscuentas.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsasienoscuentas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsasienoscuentas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsasienoscuentas.xss">
+      <DependentUpon>dsasienoscuentas.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsAsientoContableCab_ConcarSql.xsc">
+      <DependentUpon>dsAsientoContableCab_ConcarSql.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsAsientoContableCab_ConcarSql.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsientoContableCab_ConcarSql.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsAsientoContableCab_ConcarSql.xss">
+      <DependentUpon>dsAsientoContableCab_ConcarSql.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsAsientoContableDet_ConcarSql.xsc">
+      <DependentUpon>dsAsientoContableDet_ConcarSql.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsAsientoContableDet_ConcarSql.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsientoContableDet_ConcarSql.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsAsientoContableDet_ConcarSql.xss">
+      <DependentUpon>dsAsientoContableDet_ConcarSql.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsAsientoCtaxTipoAgrupacion.xsc">
+      <DependentUpon>dsAsientoCtaxTipoAgrupacion.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsAsientoCtaxTipoAgrupacion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsientoCtaxTipoAgrupacion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsAsientoCtaxTipoAgrupacion.xss">
+      <DependentUpon>dsAsientoCtaxTipoAgrupacion.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsAsiento_Consisat.xsc">
+      <DependentUpon>dsAsiento_Consisat.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsAsiento_Consisat.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsiento_Consisat.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsAsiento_Consisat.xss">
+      <DependentUpon>dsAsiento_Consisat.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsAsiento_General2.xsc">
+      <DependentUpon>dsAsiento_General2.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsAsiento_General2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAsiento_General2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsAsiento_General2.xss">
+      <DependentUpon>dsAsiento_General2.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsBoletaPago.xsc">
+      <DependentUpon>dsBoletaPago.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsBoletaPago.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBoletaPago.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsBoletaPago.xss">
+      <DependentUpon>dsBoletaPago.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsCartaCTSBanco.xsc">
+      <DependentUpon>dsCartaCTSBanco.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsCartaCTSBanco.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCartaCTSBanco.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsCartaCTSBanco.xss">
+      <DependentUpon>dsCartaCTSBanco.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsCertifRetencion5ta.xsc">
+      <DependentUpon>dsCertifRetencion5ta.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsCertifRetencion5ta.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCertifRetencion5ta.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsCertifRetencion5ta.xss">
+      <DependentUpon>dsCertifRetencion5ta.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsCertifTrabajo.xsc">
+      <DependentUpon>dsCertifTrabajo.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsCertifTrabajo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCertifTrabajo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsCertifTrabajo.xss">
+      <DependentUpon>dsCertifTrabajo.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsDeterminacionDeudaPDT.xsc">
+      <DependentUpon>dsDeterminacionDeudaPDT.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsDeterminacionDeudaPDT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDeterminacionDeudaPDT.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsDeterminacionDeudaPDT.xss">
+      <DependentUpon>dsDeterminacionDeudaPDT.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsGenerarAsientos.xsc">
+      <DependentUpon>dsGenerarAsientos.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsGenerarAsientos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGenerarAsientos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsGenerarAsientos.xss">
+      <DependentUpon>dsGenerarAsientos.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsGenExcel.xsc">
+      <DependentUpon>dsGenExcel.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsGenExcel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGenExcel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsGenExcel.xss">
+      <DependentUpon>dsGenExcel.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsLiquidaBenefSociales.xsc">
+      <DependentUpon>dsLiquidaBenefSociales.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsLiquidaBenefSociales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLiquidaBenefSociales.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsLiquidaBenefSociales.xss">
+      <DependentUpon>dsLiquidaBenefSociales.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsLiquidaBeneSociales.xsc">
+      <DependentUpon>dsLiquidaBeneSociales.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsLiquidaBeneSociales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLiquidaBeneSociales.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsLiquidaBeneSociales.xss">
+      <DependentUpon>dsLiquidaBeneSociales.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsLiquidacionCTS.xsc">
+      <DependentUpon>dsLiquidacionCTS.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsLiquidacionCTS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLiquidacionCTS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsLiquidacionCTS.xss">
+      <DependentUpon>dsLiquidacionCTS.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsListaDiasyHorasTrab.xsc">
+      <DependentUpon>dsListaDiasyHorasTrab.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsListaDiasyHorasTrab.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsListaDiasyHorasTrab.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsListaDiasyHorasTrab.xss">
+      <DependentUpon>dsListaDiasyHorasTrab.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsListadoIngresos.xsc">
+      <DependentUpon>dsListadoIngresos.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsListadoIngresos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsListadoIngresos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsListadoIngresos.xss">
+      <DependentUpon>dsListadoIngresos.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsListadoNetos.xsc">
+      <DependentUpon>dsListadoNetos.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsListadoNetos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsListadoNetos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsListadoNetos.xss">
+      <DependentUpon>dsListadoNetos.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsPerContratado.xsc">
+      <DependentUpon>dsPerContratado.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsPerContratado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPerContratado.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsPerContratado.xss">
+      <DependentUpon>dsPerContratado.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaCts.xsc">
+      <DependentUpon>dsPlanillaCts.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsPlanillaCts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPlanillaCts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaCts.xss">
+      <DependentUpon>dsPlanillaCts.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaGeneral.xsc">
+      <DependentUpon>dsPlanillaGeneral.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsPlanillaGeneral.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPlanillaGeneral.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaGeneral.xss">
+      <DependentUpon>dsPlanillaGeneral.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaGratificacion.xsc">
+      <DependentUpon>dsPlanillaGratificacion.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsPlanillaGratificacion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPlanillaGratificacion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaGratificacion.xss">
+      <DependentUpon>dsPlanillaGratificacion.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaKincenas.xsc">
+      <DependentUpon>dsPlanillaKincenas.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsPlanillaKincenas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPlanillaKincenas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaKincenas.xss">
+      <DependentUpon>dsPlanillaKincenas.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaVacacions.xsc">
+      <DependentUpon>dsPlanillaVacacions.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsPlanillaVacacions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPlanillaVacacions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsPlanillaVacacions.xss">
+      <DependentUpon>dsPlanillaVacacions.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsProvisionesMs.xsc">
+      <DependentUpon>dsProvisionesMs.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsProvisionesMs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProvisionesMs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsProvisionesMs.xss">
+      <DependentUpon>dsProvisionesMs.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsPrueba.xsc">
+      <DependentUpon>dsPrueba.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsPrueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrueba.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsPrueba.xss">
+      <DependentUpon>dsPrueba.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsRepDocumentosEnvio.xsc">
+      <DependentUpon>dsRepDocumentosEnvio.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsRepDocumentosEnvio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRepDocumentosEnvio.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsRepDocumentosEnvio.xss">
+      <DependentUpon>dsRepDocumentosEnvio.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsReporteCtasCtes.xsc">
+      <DependentUpon>dsReporteCtasCtes.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsReporteCtasCtes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReporteCtasCtes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsReporteCtasCtes.xss">
+      <DependentUpon>dsReporteCtasCtes.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsReportePlanillaGeneral.xsc">
+      <DependentUpon>dsReportePlanillaGeneral.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsReportePlanillaGeneral.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportePlanillaGeneral.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsReportePlanillaGeneral.xss">
+      <DependentUpon>dsReportePlanillaGeneral.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsReportes.xsc">
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsReportes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsReportes.xss">
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsReporteVacacionesDet.xsc">
+      <DependentUpon>dsReporteVacacionesDet.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsReporteVacacionesDet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReporteVacacionesDet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsReporteVacacionesDet.xss">
+      <DependentUpon>dsReporteVacacionesDet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\code\dsTRegistro.xsc">
+      <DependentUpon>dsTRegistro.xsd</DependentUpon>
+    </Content>
+    <None Include="Views\sistemaPlanillas\code\dsTRegistro.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTRegistro.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\sistemaPlanillas\code\dsTRegistro.xss">
+      <DependentUpon>dsTRegistro.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\sistemaPlanillas\images\Thumbs.db" />
+    <Content Include="Views\sistemaPlanillas\Datos\Files\ImportCalculos.xlsm" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\ExcelInter\Sustento.xls" />
+    <Content Include="Views\sistemaPlanillas\ReportesyConsultas\ExcelInter\Sustento3.xlsx" />
+    <Content Include="Views\sistemaPlanillas\Reportes\Provisiones - Copia de seguridad.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\Provisiones.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\RemuneracionVariable.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\RepAsientoSap.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\RepAsientoStarSoft.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\RepDatosImporPersonal.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\RepIncDatosFijos.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\ResumenIngresosCentroCosto.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\ResumenIngresosCentroCosto2.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\ResumenIngresosLocalidad.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\ResumenIngresosLocalidad2.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptAsientoContableCab_ConcarSql.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptAsientoContableDet_ConcarSql.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptAsientoCtaxTipoAgrupacion.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptAsientosExDetalle.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptAsiento_Consisat.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptAsiento_General2.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptBoletaPago - Copia de seguridad.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptBoletaPago.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptBoletaPago_Disenio.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptBoletaPago_Disenio_AYN.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptBoletaPago_Disenio_AYN_Obrero.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptBoletaPago_Disenio_Obrero.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptCartaCTSBanco - Backup %282%29.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptCartaCTSBanco - Backup.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptCartaCTSBanco.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptCtasCtes.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptcuentasfindconceptos.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptGenerarAsientosEx.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptGenerarAsientosExDet.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptGenExcel.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptGenExcelAcum.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptGraficaPptoPersonal.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptHistorialDocumento.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptLiquidaBene.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptPerContratado.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptPersonalExport.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptPlanillaComparativo.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptPlanillaGeneral.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptPlanillaGeneralCentros.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptPlanillaGeneralDetalle.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptPlanillaResumen.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptTRegistroE11.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptTRegistroE17.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptTRegistroE29.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptTRegistroE4.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptTRegistroE5.rdlc" />
+    <Content Include="Views\sistemaPlanillas\Reportes\rptVacacionesDet.rdlc" />
     <None Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\jquery-1.4.1.min.js" />
@@ -2131,7 +2616,174 @@
     <Compile Include="Views\sistemaPlanillas\code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\ClaseGlobal.cs" />
     <Compile Include="Views\sistemaPlanillas\code\ControlMantenimientos.cs" />
+    <Compile Include="Views\sistemaPlanillas\code\dsasienoscuentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsasienoscuentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsAsientoContableCab_ConcarSql.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsientoContableCab_ConcarSql.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsAsientoContableDet_ConcarSql.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsientoContableDet_ConcarSql.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsAsientoCtaxTipoAgrupacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsientoCtaxTipoAgrupacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsAsiento_Consisat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsiento_Consisat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsAsiento_General2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAsiento_General2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsBoletaPago.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBoletaPago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsCartaCTSBanco.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCartaCTSBanco.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsCertifRetencion5ta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCertifRetencion5ta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsCertifTrabajo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCertifTrabajo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsDeterminacionDeudaPDT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDeterminacionDeudaPDT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsGenerarAsientos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGenerarAsientos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsGenExcel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGenExcel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsLiquidaBenefSociales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLiquidaBenefSociales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsLiquidaBeneSociales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLiquidaBeneSociales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsLiquidacionCTS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLiquidacionCTS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsListaDiasyHorasTrab.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsListaDiasyHorasTrab.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsListadoIngresos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsListadoIngresos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsListadoNetos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsListadoNetos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsPerContratado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPerContratado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsPlanillaCts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPlanillaCts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsPlanillaGeneral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPlanillaGeneral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsPlanillaGratificacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPlanillaGratificacion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsPlanillaKincenas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPlanillaKincenas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsPlanillaVacacions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPlanillaVacacions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsProvisionesMs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProvisionesMs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsPrueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsRepDocumentosEnvio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRepDocumentosEnvio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsReporteCtasCtes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReporteCtasCtes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsReportePlanillaGeneral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportePlanillaGeneral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsReportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsReporteVacacionesDet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReporteVacacionesDet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\dsTRegistro.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTRegistro.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\code\Encryptar.cs" />
     <Compile Include="Views\sistemaPlanillas\code\Utils.cs" />
     <Compile Include="Views\sistemaPlanillas\Contrato_RRHH\FrmArchivoContratos.aspx.cs">
       <DependentUpon>FrmArchivoContratos.aspx</DependentUpon>
@@ -2189,6 +2841,13 @@
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Datos\FrmDatos_x_Persona.aspx.designer.cs">
       <DependentUpon>FrmDatos_x_Persona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmImportCalculo.aspx.cs">
+      <DependentUpon>FrmImportCalculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Datos\FrmImportCalculo.aspx.designer.cs">
+      <DependentUpon>FrmImportCalculo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Datos\FrmPrm_x_Afp.aspx.cs">
       <DependentUpon>FrmPrm_x_Afp.aspx</DependentUpon>
@@ -2582,6 +3241,20 @@
     <Compile Include="Views\sistemaPlanillas\Mantenimientos\ModalProceso.aspx.designer.cs">
       <DependentUpon>ModalProceso.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\nuevaPlanilla\FrmProcesar_MS.aspx.cs">
+      <DependentUpon>FrmProcesar_MS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\nuevaPlanilla\FrmProcesar_MS.aspx.designer.cs">
+      <DependentUpon>FrmProcesar_MS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\nuevaPlanilla\PlanillaNueva.aspx.cs">
+      <DependentUpon>PlanillaNueva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\nuevaPlanilla\PlanillaNueva.aspx.designer.cs">
+      <DependentUpon>PlanillaNueva.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\PermisosSubisdio\ListarPermisosDetalle.aspx.cs">
       <DependentUpon>ListarPermisosDetalle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2596,6 +3269,20 @@
     <Compile Include="Views\sistemaPlanillas\PermisosSubisdio\MPermiso.aspx.designer.cs">
       <DependentUpon>MPermiso.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\configFormula.aspx.cs">
+      <DependentUpon>configFormula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\configFormula.aspx.designer.cs">
+      <DependentUpon>configFormula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmAperturaCierrePeriodo.aspx.cs">
+      <DependentUpon>FrmAperturaCierrePeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmAperturaCierrePeriodo.aspx.designer.cs">
+      <DependentUpon>FrmAperturaCierrePeriodo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx.cs">
       <DependentUpon>FrmCambioPlanilla.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2603,12 +3290,400 @@
     <Compile Include="Views\sistemaPlanillas\Procesos\FrmCambioPlanilla.aspx.designer.cs">
       <DependentUpon>FrmCambioPlanilla.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmGenerarAsientos.aspx.cs">
+      <DependentUpon>FrmGenerarAsientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmGenerarAsientos.aspx.designer.cs">
+      <DependentUpon>FrmGenerarAsientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmGenerarPago.aspx.cs">
+      <DependentUpon>FrmGenerarPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmGenerarPago.aspx.designer.cs">
+      <DependentUpon>FrmGenerarPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmGenerarTRegistro.aspx.cs">
+      <DependentUpon>FrmGenerarTRegistro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmGenerarTRegistro.aspx.designer.cs">
+      <DependentUpon>FrmGenerarTRegistro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmViewCalculosPorPersona.aspx.cs">
+      <DependentUpon>FrmViewCalculosPorPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmViewCalculosPorPersona.aspx.designer.cs">
+      <DependentUpon>FrmViewCalculosPorPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmViewInterfaces.aspx.cs">
+      <DependentUpon>FrmViewInterfaces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\FrmViewInterfaces.aspx.designer.cs">
+      <DependentUpon>FrmViewInterfaces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\GenerarAsientos.aspx.cs">
+      <DependentUpon>GenerarAsientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\GenerarAsientos.aspx.designer.cs">
+      <DependentUpon>GenerarAsientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\GenerarDatosPersonal.aspx.cs">
+      <DependentUpon>GenerarDatosPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Procesos\GenerarDatosPersonal.aspx.designer.cs">
+      <DependentUpon>GenerarDatosPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmConfigBoletaCubo.aspx.cs">
+      <DependentUpon>FrmConfigBoletaCubo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmConfigBoletaCubo.aspx.designer.cs">
+      <DependentUpon>FrmConfigBoletaCubo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmGenerarSustentoPlanilla.aspx.cs">
+      <DependentUpon>FrmGenerarSustentoPlanilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmGenerarSustentoPlanilla.aspx.designer.cs">
+      <DependentUpon>FrmGenerarSustentoPlanilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmImprimirBoleta.aspx.cs">
+      <DependentUpon>FrmImprimirBoleta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmImprimirBoleta.aspx.designer.cs">
+      <DependentUpon>FrmImprimirBoleta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmImprimirReportes.aspx.cs">
+      <DependentUpon>FrmImprimirReportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmImprimirReportes.aspx.designer.cs">
+      <DependentUpon>FrmImprimirReportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\frmPersonalExport.aspx.cs">
+      <DependentUpon>frmPersonalExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\frmPersonalExport.aspx.designer.cs">
+      <DependentUpon>frmPersonalExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmPlanillaGenDet.aspx.cs">
+      <DependentUpon>FrmPlanillaGenDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmPlanillaGenDet.aspx.designer.cs">
+      <DependentUpon>FrmPlanillaGenDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmPlanillaGenDet2.aspx.cs">
+      <DependentUpon>FrmPlanillaGenDet2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmPlanillaGenDet2.aspx.designer.cs">
+      <DependentUpon>FrmPlanillaGenDet2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteCtasCtes.aspx.cs">
+      <DependentUpon>FrmReporteCtasCtes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteCtasCtes.aspx.designer.cs">
+      <DependentUpon>FrmReporteCtasCtes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteIncidencias.aspx.cs">
+      <DependentUpon>FrmReporteIncidencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteIncidencias.aspx.designer.cs">
+      <DependentUpon>FrmReporteIncidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteVacacionesDet.aspx.cs">
+      <DependentUpon>FrmReporteVacacionesDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\FrmReporteVacacionesDet.aspx.designer.cs">
+      <DependentUpon>FrmReporteVacacionesDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\PlanillasGeneral.aspx.cs">
+      <DependentUpon>PlanillasGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\PlanillasGeneral.aspx.designer.cs">
+      <DependentUpon>PlanillasGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\ReporteIncidencias.aspx.cs">
+      <DependentUpon>ReporteIncidencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\ReporteIncidencias.aspx.designer.cs">
+      <DependentUpon>ReporteIncidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\rptPlanilla.aspx.cs">
+      <DependentUpon>rptPlanilla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\ReportesyConsultas\rptPlanilla.aspx.designer.cs">
+      <DependentUpon>rptPlanilla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpBoletaPago.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpBoletaPago.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpBoletaPago2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpBoletaPago2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpBoletaPagoPreview.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpBoletaPagoPreview.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpCartaCTSBanco.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpCartaCTSBanco.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpCertifRetencion5ta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpCertifRetencion5ta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpCertifTrabajo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpCertifTrabajo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpDeterminacionDeudaPDT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpDeterminacionDeudaPDT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpLiquidaBenefSociales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpLiquidaBenefSociales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpLiquidaBeneSociales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpLiquidaBeneSociales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpLiquidaBeneSociales_Obreros.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpLiquidaBeneSociales_Obreros.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpLiquidacionCTS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpLiquidacionCTS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpListaDiasyHorasTrab.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpListaDiasyHorasTrab.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpListadoIngresos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpListadoIngresos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpListadoNetos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpListadoNetos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpProvVac.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpProvVac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpPrueba.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpPrueba.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmPrint.aspx.cs">
+      <DependentUpon>FrmPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmPrint.aspx.designer.cs">
+      <DependentUpon>FrmPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Listado_ONP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Listado_ONP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\LISTAR_CTS_LEY.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LISTAR_CTS_LEY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\PersonalContratado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalContratado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Planilla_CTS2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_CTS2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Planilla_General.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_General.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Planilla_Gratificacion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_Gratificacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Planilla_Gratificacion2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_Gratificacion2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Planilla_Quincena2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_Quincena2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Planilla_Vacaciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_Vacaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Planilla_Vacaciones2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Planilla_Vacaciones2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Plla_Aport_Previs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Plla_Aport_Previs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Plla_Aport_Previs_adic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Plla_Aport_Previs_adic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Provision_CTS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Provision_CTS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Provision_Essalud.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Provision_Essalud.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Provision_EXTORNO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Provision_EXTORNO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Provision_Grat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Provision_Grat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Provision_Vac.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Provision_Vac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\REPORTE_ASIENTO_CONTABLES.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REPORTE_ASIENTO_CONTABLES.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Resumen_Planilla.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resumen_Planilla.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\RESUMEN_PLANILLA_DINAMICA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RESUMEN_PLANILLA_DINAMICA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\TRAB_CUENTAS_CORRIENTES.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TRAB_CUENTAS_CORRIENTES.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Utilidades.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Utilidades.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\Vencimiento_Contratos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vencimiento_Contratos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx.cs">
       <DependentUpon>FrmContratoNuevo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx.designer.cs">
       <DependentUpon>FrmContratoNuevo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronico.aspx.cs">
+      <DependentUpon>FrmDocumentoElectronico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronico.aspx.designer.cs">
+      <DependentUpon>FrmDocumentoElectronico.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx.cs">
       <DependentUpon>FrmPlantillaContratoTrab.aspx</DependentUpon>
@@ -2925,6 +4000,167 @@
     <Folder Include="Assets\Portal\FileServer\imgPlantillaCorreo\" />
     <Folder Include="Assets\Portal\FileServer\ImgUsers\" />
     <Folder Include="Assets\Portal\FileServer\Videos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpBoletaPago.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpBoletaPago.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpBoletaPago2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpBoletaPago2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpBoletaPagoPreview.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpBoletaPagoPreview.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpCartaCTSBanco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpCartaCTSBanco.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpCertifRetencion5ta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpCertifRetencion5ta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpCertifTrabajo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpCertifTrabajo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpDeterminacionDeudaPDT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpDeterminacionDeudaPDT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpLiquidaBenefSociales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpLiquidaBenefSociales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpLiquidaBeneSociales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpLiquidaBeneSociales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpLiquidaBeneSociales_Obreros.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpLiquidaBeneSociales_Obreros.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpLiquidacionCTS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpLiquidacionCTS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpListaDiasyHorasTrab.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpListaDiasyHorasTrab.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpListadoIngresos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpListadoIngresos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpListadoNetos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpListadoNetos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpProvVac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpProvVac.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpPrueba.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpPrueba.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Listado_ONP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Listado_ONP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\LISTAR_CTS_LEY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LISTAR_CTS_LEY.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\PersonalContratado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PersonalContratado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Planilla_CTS2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_CTS2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Planilla_General.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_General.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Planilla_Gratificacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_Gratificacion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Planilla_Gratificacion2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_Gratificacion2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Planilla_Quincena2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_Quincena2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Planilla_Vacaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_Vacaciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Planilla_Vacaciones2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Planilla_Vacaciones2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Plla_Aport_Previs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Plla_Aport_Previs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Plla_Aport_Previs_adic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Plla_Aport_Previs_adic.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Provision_CTS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Provision_CTS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Provision_Essalud.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Provision_Essalud.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Provision_EXTORNO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Provision_EXTORNO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Provision_Grat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Provision_Grat.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Provision_Vac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Provision_Vac.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\REPORTE_ASIENTO_CONTABLES.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>REPORTE_ASIENTO_CONTABLES.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Resumen_Planilla.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Resumen_Planilla.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\RESUMEN_PLANILLA_DINAMICA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RESUMEN_PLANILLA_DINAMICA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\TRAB_CUENTAS_CORRIENTES.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TRAB_CUENTAS_CORRIENTES.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Utilidades.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Utilidades.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\Vencimiento_Contratos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Vencimiento_Contratos.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

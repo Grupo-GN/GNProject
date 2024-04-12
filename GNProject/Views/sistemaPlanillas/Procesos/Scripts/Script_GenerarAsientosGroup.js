@@ -6,15 +6,15 @@ function initilize() {
 
     $('#btnGenerar').click(function () {
         if ($('#rbsap').prop('checked') == true) {
-            var parametros = $("#ctl00_ucFiltros1_cboPeriodo").val()
+            var parametros = document.getElementById('periodoSession').value
             fc_OpenReport("REPASIENTOSAP", parametros, "1");
         }
         if ($('#rbStar').prop('checked') == true) {
-            var parametros = $("#ctl00_ucFiltros1_cboPeriodo").val()
+            var parametros = document.getElementById('periodoSession').value
             fc_OpenReport("REPASIENTOSTAR", parametros, "1");
         }
         if ($('#rbExcel').prop('checked') == true) {
-            var parametros = $("#cboAsiento").val() + ":" + $("#ctl00_ucFiltros1_cboPeriodo").val();
+            var parametros = $("#cboAsiento").val() + ":" + document.getElementById('periodoSession').value;
             fc_OpenReport("REPASIENTOEXCEL", parametros, "1");
         }
         if ($('#rbGeneral2').prop('checked') == true) {
@@ -43,7 +43,7 @@ function initilize() {
 
     $('#btnGenerarDet').click(function () {
         if ($('#rbExcel').prop('checked') == true) {
-            var parametros = $("#cboAsiento").val() + ":" + $("#ctl00_ucFiltros1_cboPeriodo").val();
+            var parametros = $("#cboAsiento").val() + ":" + document.getElementById('periodoSession').value;
             fc_OpenReport("REPASIENTOEXCELDETALLE", parametros, "1");
         }
     });
@@ -52,7 +52,7 @@ function initilize() {
     $('#btnGuardarAsiento').click(function () {
         if (confirm('¿Está seguro(a) de continuar?')) {
             $('#btnGuardarAsiento').prop('disabled', true);
-            var xPeriodo = $('#ctl00_ucFiltros1_cboPeriodo').val();
+            var xPeriodo = document.getElementById('periodoSession').value;
             var xAsiento = $('#cboAsiento').val();
             var valueTipoAsiento = $("input[name='rbtipos']:checked").val();
             var params = {
@@ -112,7 +112,7 @@ function cargarCombo() {
     }
 }
 function CargarAsientos() {
-    var xEjercicio = $('#ctl00_ucFiltros1_cboEjercicio').val(), xPlanilla = $('#ctl00_ucFiltros1_cboPlanilla').val();
+    var xEjercicio = document.getElementById('anioSession').value, xPlanilla = document.getElementById('planilllaSession').value;
     var params = {
         xEjercicio: xEjercicio,
         xPlanilla: xPlanilla
@@ -146,9 +146,9 @@ function Lista_ConceptosNoConfigurados() {
 
     var params = {
         xAsiento: ($("#cboAsiento").val() != null ? $("#cboAsiento").val() : "")
-        , xEjercicio: $("#ctl00_ucFiltros1_cboEjercicio").val()
-        , xPlanilla: $("#ctl00_ucFiltros1_cboPlanilla").val()
-        , xPeriodo: $("#ctl00_ucFiltros1_cboPeriodo").val()
+        , xEjercicio: document.getElementById('anioSession').value
+        , xPlanilla: document.getElementById('planillaSession').value
+        , xPeriodo: document.getElementById('periodoSession').value
     };
     $.ajax({
         type: "POST",
