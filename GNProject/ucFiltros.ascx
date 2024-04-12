@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucFiltros.ascx.cs" Inherits="GNProject.ucFiltros" %>
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
-        <fieldset style="border: solid 1px #2f2b2b; background-color: White; border-radius: 8px 8px 8px 8px;
+        <fieldset style="/*border: solid 1px #2f2b2b;*/ background-color: White; border-radius: 8px 8px 8px 8px;
             padding: -3px 0 0 0; margin-top: -2px;">
             <table align="center" cellspacing="0" cellpadding="0" style="padding: 7px 0px 0 15px;"
                 width="100%">

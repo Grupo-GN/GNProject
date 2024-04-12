@@ -1,6 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="FrmContratoNuevo.aspx.cs" Inherits="GNProject.Views.sistemaPlanillas.RRHH.FrmContratoNuevo" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
     <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />

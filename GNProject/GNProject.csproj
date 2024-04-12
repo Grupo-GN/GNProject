@@ -996,7 +996,9 @@
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlantillaSustento.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntPlan_De_Cuentas.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProcesos.aspx" />
-    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProyecto.aspx" />
+    <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntProyecto.aspx">
+      <BrowseToURL>~/Views/sistemaPlanillas/Mantenimientos/FrmMntProyecto.aspx</BrowseToURL>
+    </Content>
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntRegimen_Laboral.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntSituacion.aspx" />
     <Content Include="Views\sistemaPlanillas\Mantenimientos\FrmMntTDoc_Identidad.aspx" />
@@ -1514,6 +1516,7 @@
     <Content Include="Views\sistemaPlanillas\Styles\img\bg.jpg" />
     <Content Include="Views\sistemaPlanillas\Styles\img\logotype.jpg" />
     <Content Include="Views\sistemaPlanillas\Styles\jquery.treeview.css" />
+    <Content Include="Views\sistemaPlanillas\Styles\nuevoEstiloPlanilla.css" />
     <Content Include="Views\sistemaPlanillas\Styles\Site.css" />
     <Content Include="Views\sistemaPlanillas\Styles\Sitess.css" />
     <Content Include="Views\sistemaPlanillas\UserControl\ucComboArea.ascx" />
