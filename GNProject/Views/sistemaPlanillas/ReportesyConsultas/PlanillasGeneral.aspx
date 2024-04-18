@@ -3,7 +3,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
     <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
-
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <script src="../JQuery/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script src="../JQuery/jquery-1.8.2.js" type="text/javascript"></script>
     
@@ -14,8 +14,8 @@
      <td>
         
         <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; border-radius:8px 8px 0px 0px; border-top: solid 1px black; overflow:auto;">
+          /* border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; */
+            min-height:500px; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/ overflow:auto;">
     
     <br />
 <asp:Label ID="Label9" runat="server" 

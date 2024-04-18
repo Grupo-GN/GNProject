@@ -9,6 +9,7 @@
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
     <input type="hidden" id="mesSession" value="<%= Session["mesPlanilla"] %>" />
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <div>
         <div style="border: 1px solid #ccc;">
             <table width="100%">

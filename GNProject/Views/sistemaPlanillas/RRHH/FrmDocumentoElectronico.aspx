@@ -14,6 +14,8 @@
         }
     </style>
 
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
     <div>
         <div style="font-weight: bold; font-size: 14px; padding-bottom: 20px; text-align: center;">CONTROL DE DOCUMENTOS ELECTRÓNICOS</div>
         <table style="width: 100%;">

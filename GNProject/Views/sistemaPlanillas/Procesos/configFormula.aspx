@@ -8,6 +8,8 @@
         type="text/css" />
     <link href="../css/StyleWilder.css" rel="stylesheet" type="text/css" />
     <link href="../Styles/jquery.treeview.css" rel="stylesheet" type="text/css" />
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         #tblFormulas tbody tr:hover
         {
@@ -15,8 +17,8 @@
             }
     </style>
     <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
         <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />

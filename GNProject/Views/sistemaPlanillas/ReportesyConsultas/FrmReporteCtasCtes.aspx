@@ -5,12 +5,13 @@
     <script type="text/javascript" src="../JQuery/jquery-1.10.1.min.js"></script>
     <script src="../jqueriUI/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="../css/multiple-select.css" />
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../JQuery/jquery.multiple.select.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
-    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; border-right: solid 1px black;
-        border-left: solid 1px black; border-bottom: solid 1px black; min-height: 500px;
-        overflow: hidden; border-radius: 8px 8px 0px 0px; border-top: solid 1px black;
+    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; /*border-right: solid 1px black;*/
+        /*border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height: 500px;
+        overflow: hidden; border-radius: 8px 8px 0px 0px; /*border-top: solid 1px black;*/
         font-size: 11px; font-family: Verdana;">
         <fieldset style="background-color: #FFF;">
             <legend>Filtrar</legend>

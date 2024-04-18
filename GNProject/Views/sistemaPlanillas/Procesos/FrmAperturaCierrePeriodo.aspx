@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
 
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     

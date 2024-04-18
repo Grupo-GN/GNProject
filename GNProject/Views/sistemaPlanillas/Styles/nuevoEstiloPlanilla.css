@@ -130,3 +130,49 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
     color: #fff !important;
 
 }
+
+#MainContent_PanelModalP, #MainContent_pnlAtributos {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px !important;
+}
+
+#btnAgregar {
+    background-color: #116FB4;
+    margin: 10px;
+    padding: 5px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 5px;
+    /*display: block;*/
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#btnAtributos {
+    background-color: #116FB4;
+    margin: 10px;
+    padding: 5px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 5px;
+    /*display: block;*/
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#MainContent_UpdatePanel1{
+    margin:5px;
+}
+
+.fielsetStyles {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
