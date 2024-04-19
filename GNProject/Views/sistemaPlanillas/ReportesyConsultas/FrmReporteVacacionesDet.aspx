@@ -8,11 +8,13 @@
 
     <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="../JQuery/jquery.multiple.select.js"></script>
+
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; /*border-right: solid 1px black;*/
         /*border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height: 500px;
-        border-radius: 8px 8px 0px 0px; border-top: solid 1px black;
+        border-radius: 8px 8px 0px 0px; /*border-top: solid 1px black;*/
         font-size: 11px; font-family: Verdana;">
         <fieldset style="background-color: #FFF;">
             <legend>Filtrar</legend>
@@ -61,7 +63,7 @@
                 </tr>
                 <tr>
                     <td colspan="6" style="text-align: center;">
-                        <input type="button" id="btnVerReporte" class="submit" value="Ver Reporte Vacaciones Detallado" />
+                        <input type="button" id="btnVerReporte" class="submit EstiloGeneralBoton" value="Ver Reporte Vacaciones Detallado" />
                     </td>
                 </tr>
             </table>

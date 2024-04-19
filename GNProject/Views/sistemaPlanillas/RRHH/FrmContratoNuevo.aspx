@@ -15,10 +15,10 @@
             <table width="100%">
                 <tr>
                     <td style="width:90%;">
-                        <asp:Label ID="Label9" runat="server" Text="FICHA DE CONDICIONES" CssClass="title" Width="300px"></asp:Label>
+                        <asp:Label ID="Label9" runat="server" Text="FICHA DE CONDICIONES" CssClass="miTitulo" Width="100%"></asp:Label>
                     </td>
-                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonNew" id="btnNew" value="Nuevo" title="Para Agregar un Nuevo Registro" /></td>
-                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonAdd" id="btnAdd" value="Grabar" title="Para Grabar un Nuevo Registro" /></td>
+                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonNew EstiloGeneralBoton btn-nuevo" id="btnNew" value="Nuevo" title="Para Agregar un Nuevo Registro" /></td>
+                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonAdd EstiloGeneralBoton" id="btnAdd" value="Grabar" title="Para Grabar un Nuevo Registro" /></td>
                 </tr>            
             </table>
         </div>

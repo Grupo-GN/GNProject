@@ -22,13 +22,12 @@
                 Text="EXPORTACION DE PLANILLAS" CssClass="miTitulo"></asp:Label> 
       
 <br />
-<br />
 
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
          
         
-            <fieldset style="overflow:auto; border-style: outset; border-width: thin; background-color: 
+            <fieldset style="overflow:auto; /*border-style: outset;*/ border-width: thin; background-color: 
                 White; min-height:430px; width:71%; position:absolute; ">
  
             <table width="100%" style="position :absolute;">

@@ -25,12 +25,12 @@
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
 <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
-            
+            <legend CssClass="miTitulo">MANTENIMIENTO DE INCIDENCIAS</legend>
                          <table width="100%">
     <tr>
     <td style="width:50%;" valign="middle">
-     <asp:Label ID="Label20" runat="server" 
-    Text="MANTENIMIENTO DE INCIDENCIAS" CssClass="miTitulo" Width="300px"></asp:Label>   
+     <%--<asp:Label ID="Label20" runat="server" 
+    Text="MANTENIMIENTO DE INCIDENCIAS" CssClass="miTitulo" Width="300px"></asp:Label>   --%>
     </td>
       <td style="width:50%;" align="right" valign="bottom">
     </td>
@@ -46,7 +46,7 @@
             <table>
                 <tr>
                     <td>
-                    <asp:Panel ID="Panel5" runat="server" GroupingText="Seleccione Personal" Width="415px">
+                    <asp:Panel ID="Panel5" runat="server" CssClass="notitulo" GroupingText="Seleccione Personal" Width="415px">
                     <table >                      
                     <tr>
                     <td><h2>Incidencias - Datos Fijos</h2></td> 
@@ -84,7 +84,7 @@
                 </table> 
                     </asp:Panel>
                         <td>
-                            <asp:Panel ID="Panel6" runat="server" GroupingText="Mostrar Personal" 
+                            <asp:Panel ID="Panel6" runat="server" CssClass="notitulo" GroupingText="Mostrar Personal" 
                                 Width="220px">
                                 <table>
                                     <tr>
@@ -100,7 +100,7 @@
                                 </table>
                             </asp:Panel>
                             <td>
-                                <asp:Panel ID="Panel7" runat="server" GroupingText="Exportar" Width="227px">
+                                <asp:Panel ID="Panel7" runat="server" CssClass="notitulo" GroupingText="Exportar" Width="227px">
                                     <table>
                                         <tr>
                                             <td>
@@ -111,7 +111,7 @@
                                             <tr>
                                            <td>
                                                <asp:Button ID="btnExportarTodo" runat="server" Text="Exportar General-Perido" 
-                                                   CssClass="submit" onclick="btnExportarTodo_Click" />
+                                                   CssClass="submit EstiloGeneralBoton" onclick="btnExportarTodo_Click" />
                                            </td>
                                         </tr>
                                     </table>

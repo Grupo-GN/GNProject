@@ -12,7 +12,7 @@
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
     <div>
-        <label class="title">PLANTILLA DE CONTRATOS</label>
+        <label class="miTitulo">PLANTILLA DE CONTRATOS</label>
         <br />
         <table style="width: 100%;">
             <tr>

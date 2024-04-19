@@ -18,15 +18,15 @@
         <legend>Filtrar</legend>
         <table>
             <tr>
-                <td style="text-align:right;width:100px;"><label>Proceso : </label></td>
+                <td style="text-align:right;width:120px;"><label>Proceso : </label></td>
                 <td><select class="miComboBox" id="cboProceso"></select></td>
-                <td style="text-align:right;width:100px;"><label>Periodo Inicio : </label></td>
+                <td style="text-align:right;width:120px;"><label>Periodo Inicio : </label></td>
                 <td><select class="miComboBox" id="cboPeriodoIni"></select></td>
-                <td style="text-align:right;width:100px;"><label>Periodo Final : </label></td>
+                <td style="text-align:right;width:120px;"><label>Periodo Final : </label></td>
                 <td><select class="miComboBox" id="cboPeriodoFin"></select></td>
                 <td>&nbsp;</td>
-                <td><input type="button" id="btngenerar" class="submit" value="Generar" style="width:90px;" /></td>
-                <td><input type="button" id="btnExcel" class="submit" value="Exportar" style="width:90px;" /></td>
+                <td><input type="button" id="btngenerar" class="submit EstiloGeneralBoton" value="Generar" style="width:90px;" /></td>
+                <td><input type="button" id="btnExcel" class="submit EstiloGeneralBoton" value="Exportar" style="width:90px;" /></td>
             </tr>
         </table>
     </fieldset>

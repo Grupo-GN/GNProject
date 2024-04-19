@@ -66,7 +66,7 @@
                 <td style="text-align:right;width:100px;"><label>Cat. Auxiliar : </label></td>
                 <td><select id="cboCatAuxiliar" class="ddl"></select></td>
                 <td></td>
-                <td><input type="button" id="btnGenerarReporteDetallado" class="submit" value="Generar Reporte" style="width:100px;" /></td>
+                <td><input type="button" id="btnGenerarReporteDetallado" class="submit EstiloGeneralBoton" value="Generar Reporte" style="width:100px;" /></td>
             </tr>
         </table>
     </fieldset>

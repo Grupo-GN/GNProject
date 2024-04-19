@@ -13,6 +13,19 @@
 }
 .ajax__tab_hover {
     background: none !important;
+    color: #1f3485 !important;
+    font-weight:bold !important;
+
+}
+
+.ajax__tab_active span {
+    color: #1f3485 !important;
+    font-weight: bold !important;
+}
+
+.ajax__tab_hover span {
+    color: #1f3485;
+    text-decoration: underline;
 }
 
 .ajax__tab_xp .ajax__tab_active .ajax__tab_inner {
@@ -175,4 +188,104 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .fielsetStyles {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     padding: 5px;
+}
+
+.fieldSetStyles {
+    width: 100%;
+    /*background-color: White;*/
+    /*margin: 0px 0px 0px 0px;*/
+    /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/
+    min-height: 500px;
+    overflow: hidden;
+   /* border-radius: 8px !important;*/ /*border-top: solid 1px black;*/
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+    border: 1px solid rgba(94, 94, 104, 0.22);
+}
+
+.EstiloGeneralBoton {
+    background-color: #116FB4;
+    margin: 10px;
+    padding: 5px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 5px;
+    /*display: block;*/
+    border: none;
+    font-size: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn-buscar {
+    background-color: rgba(64, 135, 236, 0.76) !important;
+}
+
+.btn-descargar {
+    background-color: rgba(6, 49, 111, 0.76) !important;
+}
+
+.btn-nuevo {
+    background-color: #FFA92C;
+}
+
+
+#divFiltros {
+    padding: 10px !important;
+    margin: 1%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    width: fit-content !important;
+    width:100%;
+}
+
+.divReport {
+    overflow: auto !important;
+    width: 100% !important;
+    height: 430px !important;
+    /*border: solid 1px #000;*/
+    color: Blue;
+}
+
+legend {
+    /* font-weight:bold;*/
+    font-family: 'Droid Sans', 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    font-size: medium;
+    /*color:#0066FF;*/
+    /*color:#4682B4;*/
+    /*color:#336699;
+text-decoration:underline;*/
+
+    color: #FFA92C !important;
+    font-weight: bold;
+    font-size: 15px !important;
+    border-bottom: 1px solid DarkOrange !important;
+    text-transform: uppercase !important;
+    display: block !important;
+}
+
+.notitulo legend {
+    border-bottom: none !important;
+}
+
+.ui-jqgrid .ui-jqgrid-hbox {
+    font-size: 10px !important;
+}
+.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr {
+    border-left: 0 none;
+     font-size: 10px !important;
+    width: 250px;
+}
+
+tr[role="row"] td {
+    word-wrap: break-word;
+    white-space: normal !important;
+    font-size: 10px !important;
+}
+
+ui-jqgrid-bdiv{
+
 }

@@ -43,11 +43,11 @@
         
         <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/" CssClass="fieldSetStyles">
             
-   <br />
+   
   <asp:Label ID="Label9" runat="server" Text="IMPRIMIR REPORTES" CssClass="miTitulo"></asp:Label>
-    <br />
+    
     <br />
 
           <asp:UpdatePanel ID="updPersonalCombo" runat="server" UpdateMode="Conditional">
@@ -66,7 +66,7 @@
                         <asp:Button ID="btnImprimir" runat="server" Text="Ver" CssClass="submit" 
                             onclick="btnImprimir_Click" Visible="False" />    </td>
                       <td>               
-                          <asp:Button ID="btnPreview" runat="server" CssClass="submit" 
+                          <asp:Button ID="btnPreview" runat="server" CssClass="submit EstiloGeneralBoton" 
                             onclick="btnPreview_Click" Text="Preview / Imprimir" /></td>
                 </tr>
              </table>               
@@ -78,8 +78,7 @@
                 </tr>
                 <tr>
                     <td colspan="4"> 
-                        <div style="overflow: auto; width: 100%; height: 430px; 
-                            border: solid 1px #000; color:Blue;">
+                        <div  class="divReport">
                            <div style="color:Red">
                             <asp:UpdatePanel ID="updTreeView" runat="server" UpdateMode="Conditional">
                                 <ContentTemplate>
