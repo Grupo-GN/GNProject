@@ -1,5 +1,5 @@
 ﻿function CargarAsientos() {
-    var xEjercicio = $('#ctl00_ucFiltros1_cboEjercicio').val(), xPlanilla = $('#ctl00_ucFiltros1_cboPlanilla').val();
+    var xEjercicio = document.getElementById('anioSession').value, xPlanilla = document.getElementById('planillaSession').value;
     var params = {
         xEjercicio: xEjercicio,
         xPlanilla: xPlanilla
@@ -35,7 +35,7 @@ function initilize() {
     $('#btnGenerar').click(function () {
 
         var parametros = $("#cboAsiento").val()
-        + ":" + $("#ctl00_ucFiltros1_cboPeriodo").val();
+            + ":" + document.getElementById('periodoSession').value;
         fc_OpenReport("REPASIENTOEXCEL", parametros, "1");
     });
 };

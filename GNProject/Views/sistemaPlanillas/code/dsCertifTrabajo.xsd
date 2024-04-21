@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCertifTrabajo" targetNamespace="http://tempuri.org/dsCertifTrabajo.xsd" xmlns:mstns="http://tempuri.org/dsCertifTrabajo.xsd" xmlns="http://tempuri.org/dsCertifTrabajo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCertifTrabajo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsCertifTrabajo" msprop:Generator_UserDSName="dsCertifTrabajo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CertifTrabajo" msprop:Generator_UserTableName="CertifTrabajo" msprop:Generator_RowEvArgName="CertifTrabajoRowChangeEvent" msprop:Generator_TableVarName="tableCertifTrabajo" msprop:Generator_TablePropName="CertifTrabajo" msprop:Generator_RowDeletingName="CertifTrabajoRowDeleting" msprop:Generator_RowChangingName="CertifTrabajoRowChanging" msprop:Generator_RowDeletedName="CertifTrabajoRowDeleted" msprop:Generator_RowEvHandlerName="CertifTrabajoRowChangeEventHandler" msprop:Generator_TableClassName="CertifTrabajoDataTable" msprop:Generator_RowChangedName="CertifTrabajoRowChanged" msprop:Generator_RowClassName="CertifTrabajoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nro" msprop:Generator_ColumnVarNameInTable="columnNro" msprop:Generator_ColumnPropNameInRow="Nro" msprop:Generator_ColumnPropNameInTable="NroColumn" msprop:Generator_UserColumnName="Nro" type="xs:string" minOccurs="0" />
+              <xs:element name="Trabajador" msprop:Generator_ColumnVarNameInTable="columnTrabajador" msprop:Generator_ColumnPropNameInRow="Trabajador" msprop:Generator_ColumnPropNameInTable="TrabajadorColumn" msprop:Generator_UserColumnName="Trabajador" type="xs:string" minOccurs="0" />
+              <xs:element name="Cargo" msprop:Generator_ColumnVarNameInTable="columnCargo" msprop:Generator_ColumnPropNameInRow="Cargo" msprop:Generator_ColumnPropNameInTable="CargoColumn" msprop:Generator_UserColumnName="Cargo" type="xs:string" minOccurs="0" />
+              <xs:element name="FecIni" msprop:Generator_ColumnVarNameInTable="columnFecIni" msprop:Generator_ColumnPropNameInRow="FecIni" msprop:Generator_ColumnPropNameInTable="FecIniColumn" msprop:Generator_UserColumnName="FecIni" type="xs:string" minOccurs="0" />
+              <xs:element name="FecFin" msprop:Generator_ColumnVarNameInTable="columnFecFin" msprop:Generator_ColumnPropNameInRow="FecFin" msprop:Generator_ColumnPropNameInTable="FecFinColumn" msprop:Generator_UserColumnName="FecFin" type="xs:string" minOccurs="0" />
+              <xs:element name="Contrato" msprop:Generator_ColumnVarNameInTable="columnContrato" msprop:Generator_ColumnPropNameInRow="Contrato" msprop:Generator_ColumnPropNameInTable="ContratoColumn" msprop:Generator_UserColumnName="Contrato" type="xs:string" minOccurs="0" />
+              <xs:element name="CIA" msprop:Generator_ColumnVarNameInTable="columnCIA" msprop:Generator_ColumnPropNameInRow="CIA" msprop:Generator_ColumnPropNameInTable="CIAColumn" msprop:Generator_UserColumnName="CIA" type="xs:string" minOccurs="0" />
+              <xs:element name="DistritoEmpresa" msprop:Generator_ColumnVarNameInTable="columnDistritoEmpresa" msprop:Generator_ColumnPropNameInRow="DistritoEmpresa" msprop:Generator_ColumnPropNameInTable="DistritoEmpresaColumn" msprop:Generator_UserColumnName="DistritoEmpresa" type="xs:string" minOccurs="0" />
+              <xs:element name="LogoEmpresa" msprop:Generator_ColumnVarNameInTable="columnLogoEmpresa" msprop:Generator_ColumnPropNameInRow="LogoEmpresa" msprop:Generator_ColumnPropNameInTable="LogoEmpresaColumn" msprop:Generator_UserColumnName="LogoEmpresa" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imgFirma" msprop:Generator_ColumnVarNameInTable="columnimgFirma" msprop:Generator_ColumnPropNameInRow="imgFirma" msprop:Generator_ColumnPropNameInTable="imgFirmaColumn" msprop:Generator_UserColumnName="imgFirma" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="RepresentanteLegal" msprop:Generator_ColumnVarNameInTable="columnRepresentanteLegal" msprop:Generator_ColumnPropNameInRow="RepresentanteLegal" msprop:Generator_ColumnPropNameInTable="RepresentanteLegalColumn" msprop:Generator_UserColumnName="RepresentanteLegal" type="xs:string" minOccurs="0" />
+              <xs:element name="RucEmpresa" msprop:Generator_ColumnVarNameInTable="columnRucEmpresa" msprop:Generator_ColumnPropNameInRow="RucEmpresa" msprop:Generator_ColumnPropNameInTable="RucEmpresaColumn" msprop:Generator_UserColumnName="RucEmpresa" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDocumento" msprop:Generator_ColumnVarNameInTable="columnFechaDocumento" msprop:Generator_ColumnPropNameInRow="FechaDocumento" msprop:Generator_ColumnPropNameInTable="FechaDocumentoColumn" msprop:Generator_UserColumnName="FechaDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado_Id" msprop:Generator_ColumnVarNameInTable="columnEstado_Id" msprop:Generator_ColumnPropNameInRow="Estado_Id" msprop:Generator_ColumnPropNameInTable="Estado_IdColumn" msprop:Generator_UserColumnName="Estado_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellido_Paterno" msprop:Generator_ColumnVarNameInTable="columnApellido_Paterno" msprop:Generator_ColumnPropNameInRow="Apellido_Paterno" msprop:Generator_ColumnPropNameInTable="Apellido_PaternoColumn" msprop:Generator_UserColumnName="Apellido_Paterno" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

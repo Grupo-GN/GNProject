@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPrueba" targetNamespace="http://tempuri.org/dsPrueba.xsd" xmlns:mstns="http://tempuri.org/dsPrueba.xsd" xmlns="http://tempuri.org/dsPrueba.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="conexion" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="conexion (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.conexion.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPrueba" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPrueba" msprop:Generator_DataSetName="dsPrueba">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Personal" msprop:Generator_UserTableName="Personal" msprop:Generator_RowDeletedName="PersonalRowDeleted" msprop:Generator_TableClassName="PersonalDataTable" msprop:Generator_RowChangedName="PersonalRowChanged" msprop:Generator_RowClassName="PersonalRow" msprop:Generator_RowChangingName="PersonalRowChanging" msprop:Generator_RowEvArgName="PersonalRowChangeEvent" msprop:Generator_RowEvHandlerName="PersonalRowChangeEventHandler" msprop:Generator_TablePropName="Personal" msprop:Generator_TableVarName="tablePersonal" msprop:Generator_RowDeletingName="PersonalRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nom" msprop:Generator_UserColumnName="Nom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInTable="NomColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ape" msprop:Generator_UserColumnName="Ape" msprop:Generator_ColumnPropNameInRow="Ape" msprop:Generator_ColumnVarNameInTable="columnApe" msprop:Generator_ColumnPropNameInTable="ApeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Dir" msprop:Generator_UserColumnName="Dir" msprop:Generator_ColumnPropNameInRow="Dir" msprop:Generator_ColumnVarNameInTable="columnDir" msprop:Generator_ColumnPropNameInTable="DirColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
