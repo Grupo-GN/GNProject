@@ -1,8 +1,10 @@
-﻿using CAPA_ENTIDAD;
+﻿using CAPA_DATOS;
+using CAPA_ENTIDAD;
 using CAPA_LOGICO;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -133,6 +135,8 @@ namespace GNProject.Views.sistemaPlanillas.ReportesyConsultas
                 if (txtBoleta_nro_orden != null)
                     txtBoleta_nro_orden.Attributes.Add("OnKeyPress", "return SoloNumeros(event)");
             }
+            iniciarQuintaCategoria(sender, e);
+            iniciarAfectoEssalud(sender, e);
         }
 
         protected void btnGrabar_Click(object sender, ImageClickEventArgs e)
@@ -209,7 +213,8 @@ namespace GNProject.Views.sistemaPlanillas.ReportesyConsultas
                 if (msj_rpta == String.Empty)
                     msj_rpta = dtRpta.Rows[0][1].ToString();
                 dtRpta.Dispose();
-
+                guardarQuintaCategoria(sender, e);
+                guardarAfectoEssalud(sender, e);
                 Lista_Ordenamiento_Conceptos(cboColumnaBoleta.SelectedValue, cboProceso.SelectedValue);
                 Utils.fc_DisplayAlert(this, msj_rpta);
             }
@@ -475,6 +480,172 @@ namespace GNProject.Views.sistemaPlanillas.ReportesyConsultas
             if (Convert.ToInt32(dtRpta.Rows[0][0].ToString()) > 0)
                 Lista_Conceptos_Atributos(Utils.fc_obtiene_Compania_Id(this), Utils.fc_obtiene_Planilla_Id(this), cboProceso_Atributo.SelectedValue);
             dtRpta.Dispose();
+        }
+        private void guardarQuintaCategoria(object sender, ImageClickEventArgs e)
+        {
+            /*nueva*/
+            string connectionString = Conex.CadCon_String();
+            string query = "UPDATE Conceptos SET QuintaCategoria = @Valor WHERE Concepto_Id = @ConceptoId";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                foreach (GridViewRow row in grvLista.Rows)
+                {
+                    CheckBox chkAfectoQuinta = (CheckBox)row.FindControl("chkafectoquinta");
+                    int conceptoId = Convert.ToInt32(grvLista.DataKeys[row.RowIndex].Value);
+                    Console.WriteLine("Estado del CheckBox para ConceptoId " + conceptoId + ": " + chkAfectoQuinta.Checked);
+
+                    // Determinar el valor que se actualizará en la base de datos
+                    int nuevoValor = chkAfectoQuinta.Checked ? 1 : 0;
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Valor", nuevoValor);
+                        command.Parameters.AddWithValue("@ConceptoId", conceptoId);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+        protected void iniciarQuintaCategoria(object sender, GridViewRowEventArgs e)
+        {
+            /*nueva columna*/
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                // Obtener el CheckBox
+                CheckBox chkAfectoQuinta = (CheckBox)e.Row.FindControl("chkafectoquinta");
+
+                // Obtener el ID del concepto
+                int conceptoId = Convert.ToInt32(grvLista.DataKeys[e.Row.RowIndex].Value);
+
+                // Aquí realizas la consulta a la base de datos para obtener la información necesaria
+                // Puedes modificar esta consulta según tus requerimientos
+                string connectionString = Conex.CadCon_String();
+                string query = "SELECT QuintaCategoria FROM Conceptos WHERE Concepto_Id = @ConceptoId";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ConceptoId", conceptoId);
+
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            // Aquí comparas los valores de las columnas recuperadas y tomas la decisión
+                            // sobre si el CheckBox debe estar marcado o desmarcado
+                            // Por ejemplo, si Columna1 es 0 y Columna2 no es null, entonces marcar el CheckBox
+                            int columna1Value = reader.IsDBNull(reader.GetOrdinal("QuintaCategoria")) ? 0 : Convert.ToInt32(reader["QuintaCategoria"]);
+
+
+                            if (columna1Value != 0)
+                            {
+                                chkAfectoQuinta.Checked = true; // Marcar
+                            }
+                            else
+                            {
+                                chkAfectoQuinta.Checked = false; // Desmarcar
+                            }
+                        }
+                        else
+                        {
+                            // Manejar el caso cuando no se encuentra el registro en la base de datos
+                            // Puedes dejar el CheckBox como desmarcado o manejarlo de otra manera según tus necesidades
+                            chkAfectoQuinta.Checked = false;
+                        }
+
+                        reader.Close();
+                    }
+
+                }
+            }
+        }
+        private void guardarAfectoEssalud(object sender, ImageClickEventArgs e)
+        {
+            /*nueva*/
+            string connectionString = Conex.CadCon_String();
+            string query = "UPDATE Conceptos SET EsSalud = @Valor WHERE Concepto_Id = @ConceptoId";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                foreach (GridViewRow row in grvLista.Rows)
+                {
+                    CheckBox chkAfectoEsSalud = (CheckBox)row.FindControl("chkafectoessalud");
+                    int conceptoId = Convert.ToInt32(grvLista.DataKeys[row.RowIndex].Value);
+                    Console.WriteLine("Estado del CheckBox para ConceptoId " + conceptoId + ": " + chkAfectoEsSalud.Checked);
+
+                    // Determinar el valor que se actualizará en la base de datos
+                    int nuevoValor = chkAfectoEsSalud.Checked ? 1 : 0;
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Valor", nuevoValor);
+                        command.Parameters.AddWithValue("@ConceptoId", conceptoId);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+        protected void iniciarAfectoEssalud(object sender, GridViewRowEventArgs e)
+        {
+            /*nueva columna*/
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                // Obtener el CheckBox
+                CheckBox chkAfectoEsSalud = (CheckBox)e.Row.FindControl("chkafectoessalud");
+
+                // Obtener el ID del concepto
+                int conceptoId = Convert.ToInt32(grvLista.DataKeys[e.Row.RowIndex].Value);
+
+                // Aquí realizas la consulta a la base de datos para obtener la información necesaria
+                // Puedes modificar esta consulta según tus requerimientos
+                string connectionString = Conex.CadCon_String();
+                string query = "SELECT EsSalud FROM Conceptos WHERE Concepto_Id = @ConceptoId";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@ConceptoId", conceptoId);
+
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            // Aquí comparas los valores de las columnas recuperadas y tomas la decisión
+                            // sobre si el CheckBox debe estar marcado o desmarcado
+                            // Por ejemplo, si Columna1 es 0 y Columna2 no es null, entonces marcar el CheckBox
+                            int columna1Value = reader.IsDBNull(reader.GetOrdinal("EsSalud")) ? 0 : Convert.ToInt32(reader["EsSalud"]);
+
+
+                            if (columna1Value != 0)
+                            {
+                                chkAfectoEsSalud.Checked = true; // Marcar
+                            }
+                            else
+                            {
+                                chkAfectoEsSalud.Checked = false; // Desmarcar
+                            }
+                        }
+                        else
+                        {
+                            // Manejar el caso cuando no se encuentra el registro en la base de datos
+                            // Puedes dejar el CheckBox como desmarcado o manejarlo de otra manera según tus necesidades
+                            chkAfectoEsSalud.Checked = false;
+                        }
+
+                        reader.Close();
+                    }
+
+                }
+            }
         }
     }
 }

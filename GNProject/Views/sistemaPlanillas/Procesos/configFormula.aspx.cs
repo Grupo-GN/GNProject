@@ -256,6 +256,30 @@ namespace GNProject.Views.sistemaPlanillas.Procesos
             this.Engine.DefineVariable("T_TOTAL_DIAS_NACIMIENTO");
             this.Engine.DefineVariable("T_PEREDAD");
             //@002 F
+            /*NUEVAS VARIABLES A AGREGAR*/
+            this.Engine.DefineVariable("T_REMU_ACUM_5TACATEGORIA");
+            this.Engine.DefineVariable("T_RETENCION_ACUM_5TACATEGORIA");
+
+            this.Engine.DefineVariable("T_PROMEDIO_HEXTRA_IMPORTE");
+            this.Engine.DefineVariable("T_PROMEDIO_HEXTRA_CANTIDAD");
+            this.Engine.DefineVariable("T_PROMEDIO_COMISIONES_IMPORTES");
+            this.Engine.DefineVariable("T_PROMEDIO_COMISIONES_CANTIDAD");
+            this.Engine.DefineVariable("T_PROMEDIO_BONIFICACIONES_IMPORTES");
+            this.Engine.DefineVariable("T_PROMEDIO_BONIFICACIONES_CONTAR");
+            this.Engine.DefineVariable("T_RETENCION_ACUM_ONP");
+            this.Engine.DefineVariable("T_RETENCION_ACUM_ESSALUD");
+            this.Engine.DefineVariable("T_RETENCION_ACUM_SSP");
+            this.Engine.DefineVariable("T_REMU_ACUM_ESSALUD_SPP");
+
+            this.Engine.DefineVariable("T_REMUN_MENSUAL_5TACATEGORIA");
+            this.Engine.DefineVariable("T_RETENCION_MENSUAL_5TACATEGORIA");
+            this.Engine.DefineVariable("T_REMUN_MENSUAL_ESSALUD_SPP");
+            this.Engine.DefineVariable("T_REMUN_MENSUAL_FONDO");
+            this.Engine.DefineVariable("T_REMUN_MENSUAL_SEGURO");
+            this.Engine.DefineVariable("T_REMUN_MENSUAL_COMISION");
+            this.Engine.DefineVariable("T_REMUN_MENSUAL_ONP");
+            this.Engine.DefineVariable("T_REMUN_MENSUAL_ESSALUD");
+            //FIN NUEVAS FORMULAS
         }
     }
 }
