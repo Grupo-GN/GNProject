@@ -2,12 +2,17 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
      <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
     <div>
-        <label class="title">PLANTILLA DE CONTRATOS</label>
+        <label class="miTitulo">PLANTILLA DE CONTRATOS</label>
         <br />
         <table style="width: 100%;">
             <tr>

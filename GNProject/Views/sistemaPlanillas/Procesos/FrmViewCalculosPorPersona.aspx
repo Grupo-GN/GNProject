@@ -4,6 +4,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     
     
     
@@ -12,8 +13,8 @@
      <td>
         
         <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
     <br />
     <asp:Label ID="Label9" runat="server" Text="VERIFICACION DE FORMULAS" CssClass="miTitulo"></asp:Label>

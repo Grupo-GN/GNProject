@@ -1,20 +1,24 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="FrmContratoNuevo.aspx.cs" Inherits="GNProject.Views.sistemaPlanillas.RRHH.FrmContratoNuevo" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
     <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
     <input type="hidden" id="mesSession" value="<%= Session["mesPlanilla"] %>" />
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <div>
         <div style="border: 1px solid #ccc;">
             <table width="100%">
                 <tr>
                     <td style="width:90%;">
-                        <asp:Label ID="Label9" runat="server" Text="FICHA DE CONDICIONES" CssClass="title" Width="300px"></asp:Label>
+                        <asp:Label ID="Label9" runat="server" Text="FICHA DE CONDICIONES" CssClass="miTitulo" Width="100%"></asp:Label>
                     </td>
-                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonNew" id="btnNew" value="Nuevo" title="Para Agregar un Nuevo Registro" /></td>
-                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonAdd" id="btnAdd" value="Grabar" title="Para Grabar un Nuevo Registro" /></td>
+                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonNew EstiloGeneralBoton btn-nuevo" id="btnNew" value="Nuevo" title="Para Agregar un Nuevo Registro" /></td>
+                    <td style="text-align:right;width:28px;"><input type="button" class="elBotonAdd EstiloGeneralBoton" id="btnAdd" value="Grabar" title="Para Grabar un Nuevo Registro" /></td>
                 </tr>            
             </table>
         </div>

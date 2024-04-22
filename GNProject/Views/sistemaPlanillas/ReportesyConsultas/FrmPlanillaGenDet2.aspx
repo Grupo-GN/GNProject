@@ -2,9 +2,22 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
     <link rel="stylesheet" type="text/css" href="../css/multiple-select.css" />
+
+     
+
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+    <link href="../Controles/miEstilo.css" rel="stylesheet" type="text/css" />
+    <link href="../jqueriUI/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="../css/StyleWilder.css" rel="stylesheet" type="text/css" />
+
+    
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
     <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/
             font-size:11px; font-family:Verdana;">
     <fieldset>
         <legend>Filtrar</legend>
@@ -79,22 +92,22 @@
             </tr>
             <tr>
                 <td colspan="6" style="text-align:center;">
-                    <input type="button" id="btnGenerarReporteDetallado_SinGrupo" class="submit" value="Ver Planilla General" style="width:200px;" />
+                    <input type="button" id="btnGenerarReporteDetallado_SinGrupo" class="submit EstiloGeneralBoton" value="Ver Planilla General" style="width:200px;" />
                     &nbsp;&nbsp;&nbsp;
-                    <input type="button" id="btnGenerarReporteDetallado" class="submit" value="Generar Reporte Detallado" style="width:200px;" />
+                    <input type="button" id="btnGenerarReporteDetallado" class="submit EstiloGeneralBoton" value="Generar Reporte Detallado" style="width:200px;" />
                     &nbsp;&nbsp;&nbsp;
-                    <input type="button" id="btnGenerarReporteDetalladoResumen" class="submit" value="Generar Reporte Resumen" style="width:200px;" />
+                    <input type="button" id="btnGenerarReporteDetalladoResumen" class="submit EstiloGeneralBoton" value="Generar Reporte Resumen" style="width:200px;" />
                     &nbsp;&nbsp;&nbsp;
-                    <input type="button" id="btnGenerarReporteDetalladoComparativo" class="submit" value="Generar Reporte Comparativo" style="width:200px;" />
+                    <input type="button" id="btnGenerarReporteDetalladoComparativo" class="submit EstiloGeneralBoton" value="Generar Reporte Comparativo" style="width:200px;" />
                 </td>
             </tr>
             <tr>
                 <td colspan="6" style="text-align:center;">
-                    <input type="button" id="btnGenerarRemuneracionDet" class="submit" value="Reporte Remuneración Variable" style="width:200px;" />
+                    <input type="button" id="btnGenerarRemuneracionDet" class="submit EstiloGeneralBoton" value="Reporte Remuneración Variable" style="width:200px;" />
                     &nbsp;&nbsp;&nbsp;
-                    <input type="button" id="btnGenerarResumenIng" class="submit" value="Reporte Ingresos CCosto" style="width:200px;" />
+                    <input type="button" id="btnGenerarResumenIng" class="submit EstiloGeneralBoton" value="Reporte Ingresos CCosto" style="width:200px;" />
                     &nbsp;&nbsp;&nbsp;
-                    <input type="button" id="btnGenerarResumenIngLocalidad" class="submit" value="Reporte Ingresos Localidad" style="width:200px;" />
+                    <input type="button" id="btnGenerarResumenIngLocalidad" class="submit EstiloGeneralBoton" value="Reporte Ingresos Localidad" style="width:200px;" />
                     
                 </td>
             </tr>

@@ -16,7 +16,7 @@
     <script type="text/javascript" src="../JQuery/jquery.multiple.select.js"></script>
 
     <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
-    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; min-height: 500px; border-radius: 8px 8px 0px 0px; border-top: solid 1px black;">
+    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height: 500px; border-radius: 8px 8px 0px 0px; /*border-top: solid 1px black;*/">
         <label class="miTitulo">Generar Archivo para Bancos</label>
         <br />
         <br />

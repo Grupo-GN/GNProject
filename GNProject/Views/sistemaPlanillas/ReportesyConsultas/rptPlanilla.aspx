@@ -6,9 +6,10 @@
     <link href="../jqueriUI/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet"
         type="text/css" />
     <link href="../css/StyleWilder.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     <fieldset>
          <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
@@ -17,15 +18,15 @@
         <legend>Filtrar</legend>
         <table>
             <tr>
-                <td style="text-align:right;width:100px;"><label>Proceso : </label></td>
+                <td style="text-align:right;width:120px;"><label>Proceso : </label></td>
                 <td><select class="miComboBox" id="cboProceso"></select></td>
-                <td style="text-align:right;width:100px;"><label>Periodo Inicio : </label></td>
+                <td style="text-align:right;width:120px;"><label>Periodo Inicio : </label></td>
                 <td><select class="miComboBox" id="cboPeriodoIni"></select></td>
-                <td style="text-align:right;width:100px;"><label>Periodo Final : </label></td>
+                <td style="text-align:right;width:120px;"><label>Periodo Final : </label></td>
                 <td><select class="miComboBox" id="cboPeriodoFin"></select></td>
                 <td>&nbsp;</td>
-                <td><input type="button" id="btngenerar" class="submit" value="Generar" style="width:90px;" /></td>
-                <td><input type="button" id="btnExcel" class="submit" value="Exportar" style="width:90px;" /></td>
+                <td><input type="button" id="btngenerar" class="submit EstiloGeneralBoton" value="Generar" style="width:90px;" /></td>
+                <td><input type="button" id="btnExcel" class="submit EstiloGeneralBoton" value="Exportar" style="width:90px;" /></td>
             </tr>
         </table>
     </fieldset>

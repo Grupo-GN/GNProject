@@ -16,9 +16,11 @@
 
     <link rel="stylesheet" type="text/css" href="../css/multiple-select.css" />
 
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
     <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     <fieldset>
         <legend>Filtrar</legend>
         <table>
@@ -64,7 +66,7 @@
                 <td style="text-align:right;width:100px;"><label>Cat. Auxiliar : </label></td>
                 <td><select id="cboCatAuxiliar" class="ddl"></select></td>
                 <td></td>
-                <td><input type="button" id="btnGenerarReporteDetallado" class="submit" value="Generar Reporte" style="width:100px;" /></td>
+                <td><input type="button" id="btnGenerarReporteDetallado" class="submit EstiloGeneralBoton" value="Generar Reporte" style="width:100px;" /></td>
             </tr>
         </table>
     </fieldset>

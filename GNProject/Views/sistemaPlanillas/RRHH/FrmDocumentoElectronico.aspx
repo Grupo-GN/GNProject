@@ -14,8 +14,12 @@
         }
     </style>
 
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+
     <div>
-        <div style="font-weight: bold; font-size: 14px; padding-bottom: 20px; text-align: center;">CONTROL DE DOCUMENTOS ELECTRÓNICOS</div>
+        <div style="font-weight: bold; font-size: 14px; padding-bottom: 20px; /*text-align: center;*/"><span class="miTitulo">DE DOCUMENTOS ELECTRÓNICOS</span> </div>
         <table style="width: 100%;">
             <tr>
                 <td>Planilla:
@@ -106,7 +110,7 @@
             <button id="btnGenerarReporte" type="button" onclick="fn_GenerarNuevoEnvio();">
                 Enviar Documento</button>
         </div>
-        <div style="padding-top: 10px;">
+        <div style="padding-top: 10px; margin-bottom: 10px;">
             <table id="grvBandeja">
             </table>
             <div id="grvBandeja_Pie">

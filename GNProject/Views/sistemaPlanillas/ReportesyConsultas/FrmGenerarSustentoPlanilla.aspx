@@ -10,6 +10,9 @@
     <link href="../Controles/miEstilo.css" rel="stylesheet" type="text/css" />
     <script src="../JQuery/jquery-1.8.2.js" type="text/javascript"></script>
     <script src="../JQuery/jquery-1.8.2.min.js" type="text/javascript"></script>
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
  <script type="text/javascript" language="javascript">
      function AbrirModal(pagina) {
          var vReturnValue;
@@ -29,8 +32,8 @@
         <tr>
             <td>                 
              <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;
-               border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-                min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+               /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
+                min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
             
             <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
             <ContentTemplate>

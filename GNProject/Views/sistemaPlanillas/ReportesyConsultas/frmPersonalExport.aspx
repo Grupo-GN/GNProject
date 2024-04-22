@@ -2,9 +2,11 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
     <link rel="stylesheet" type="text/css" href="../css/multiple-select.css" />
-    <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;font-size:11px; font-family:Verdana;">
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+    <fieldset style="width:100%; background-color: White; margin: 0px 0px 0px 0px;/*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/font-size:11px; font-family:Verdana;">
         <fieldset>
-        <legend>Filtrar</legend>
+        <legend CssClass="miTitulo">Filtrar</legend>
         <table>
         <tr>
         <td style="text-align:right;width:100px;"><label>Planilla : </label></td>
@@ -39,7 +41,7 @@
         </tr>
         <tr>
         <td colspan="6" style="text-align:center;">
-        <input type="button" id="btnGenerarReporteDetallado" class="submit" value="Generar Reporte Detallado" style="width:200px;" />
+        <input type="button" id="btnGenerarReporteDetallado" class="submit EstiloGeneralBoton" value="Generar Reporte Detallado" style="width:200px;" />
         &nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;
         </td>

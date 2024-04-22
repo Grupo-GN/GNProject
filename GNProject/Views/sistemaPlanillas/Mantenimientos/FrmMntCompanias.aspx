@@ -5,6 +5,11 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
 
+
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
     <table align="center" width="100%">
         <tr>
             <td>
@@ -52,7 +57,7 @@
                                         </table>
                                     </div>
 
-                                    <div style="overflow: auto; width: 890px; height: 350px; border: solid 0px;">
+                                    <div style="overflow: auto; /*width: 890px;*/ height: 350px; border: solid 0px;">
                                         <asp:GridView ID="grvCompania" runat="server" Width="1400px"
                                             AutoGenerateColumns="False" CellPadding="4" CssClass="gridSmall"
                                             DataKeyNames="Compania_Id" ForeColor="#333333"

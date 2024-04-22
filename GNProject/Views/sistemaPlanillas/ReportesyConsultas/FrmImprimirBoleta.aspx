@@ -16,14 +16,15 @@
 </script>
 
    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
    
      <table align="center" width="100%">
      <tr>
      <td>
         
         <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; */
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
     <br />
 <asp:Label ID="Label1" runat="server" Text="IMPRIMIR BOLETAS" CssClass="miTitulo" ></asp:Label> 
@@ -32,7 +33,7 @@
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-        <fieldset style="background-color:White; border-style: outset; border-width: thin; height:90%; min-height:310px;  width: 97%;">
+        <fieldset class="fielsetStyles" style="background-color:White; /*border-style: outset;*/ border-width: thin; height:90%; min-height:310px;  /*width: 97%;*/">
         <legend>
           <asp:Label ID="Label2" runat="server" Text="Filtros y Busquedas" CssClass="miTituloOnTab"></asp:Label>
         </legend>
@@ -176,7 +177,7 @@
     <%--        <asp:UpdatePanel ID="upVerBoleta" runat="server">
                 <ContentTemplate>--%>
                 
-      <fieldset style="background-color:White; border-style: outset; border-width: thin; ">
+      <fieldset class="fielsetStyles" style="background-color:White; /*border-style: outset;*/ border-width: thin; margin-top: 10px;">
         <legend>
           <asp:Label ID="Label8" runat="server" Text="IMPRESION" CssClass="miTituloOnTab"></asp:Label>
         </legend>  
