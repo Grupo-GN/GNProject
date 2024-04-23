@@ -22,6 +22,7 @@
                 Text="EXPORTACION DE PLANILLAS" CssClass="miTitulo"></asp:Label> 
       
 <br />
+<br />
 
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>

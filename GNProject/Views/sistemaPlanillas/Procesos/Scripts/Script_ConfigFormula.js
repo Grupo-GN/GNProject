@@ -380,6 +380,31 @@ function ConfigFormulaGetLoadConceptosTreeView() {
     htmlOther += "</ul>";
     htmlOther += "</li>";
 
+    htmlOther += "<li><div class='hitarea expandable-hitarea'></div><span>Nuevas Variables</span>";
+    htmlOther += "<ul style='display: none;'>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMU_ACUM_5TACATEGORIA</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_RETENCION_ACUM_5TACATEGORIA</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_PROMEDIO_HEXTRA_IMPORTE</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_PROMEDIO_HEXTRA_CANTIDAD</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_PROMEDIO_COMISIONES_IMPORTES</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_PROMEDIO_COMISIONES_CANTIDAD</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_PROMEDIO_BONIFICACIONES_IMPORTES</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_PROMEDIO_BONIFICACIONES_CONTAR</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_RETENCION_ACUM_ONP</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_RETENCION_ACUM_ESSALUD</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_RETENCION_ACUM_SSP</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMU_ACUM_ESSALUD_SPP</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_5TACATEGORIA</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_RETENCION_MENSUAL_5TACATEGORIA</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_ESSALUD_SPP</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_FONDO</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_SEGURO</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_COMISION</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_ONP</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_ESSALUD</span></li>";
+    htmlOther += "</ul>";
+    htmlOther += "</li>";
+
     $(htmlOther).appendTo('#tree');
     $('#tree').treeview({ collapsed: true,
         animated: 'fast',

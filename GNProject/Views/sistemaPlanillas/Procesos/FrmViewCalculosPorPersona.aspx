@@ -7,6 +7,7 @@
     <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     
     
+    
              <table align="center" width="100%">
      <tr>
      <td>

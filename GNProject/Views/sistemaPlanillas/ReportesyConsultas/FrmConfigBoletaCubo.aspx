@@ -84,7 +84,7 @@
     </tr>                    
 </table>
 
-<div style="overflow: hidden; width: 710px;">
+<div style="overflow: hidden; width: 750px;">
     <table class="gridSmallCabecera">
         <tr>
             <th width="30px"></th>
@@ -92,12 +92,14 @@
             <th width="25px">Nro</th>
             <th width="300px">Descripción</th>
             <th width="50px">Afecto</th> 
+            <th width="50px">Afecto a Quinta</th> 
+            <th width="50px">Afecto a Essalud</th> 
         </tr>
     </table>
 </div>
 <asp:UpdatePanel ID="upConceptos" runat="server" UpdateMode="Conditional">
     <ContentTemplate>
-<div style="overflow: auto; width: 710px; height: 400px;">
+<div style="overflow: auto; width: 750px; height: 400px;">
     <asp:GridView ID="grvLista" runat="server" 
         ShowHeader="False"
         AutoGenerateColumns="False" CellPadding="4" CssClass="gridSmall" 
@@ -137,6 +139,18 @@
             <asp:TemplateField HeaderText="Afecto">
                 <ItemTemplate>
                     <asp:CheckBox ID="chkafecto" runat="server" Checked='<%# Eval("flagAfecto") %>' />
+                </ItemTemplate>
+                <ItemStyle HorizontalAlign="Center" Width="50px" />
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Afecto a Quinta">
+                <ItemTemplate>
+                    <asp:CheckBox ID="chkafectoquinta" runat="server" AutoPostBack="true" />
+                </ItemTemplate>
+                <ItemStyle HorizontalAlign="Center" Width="50px" />
+            </asp:TemplateField>
+             <asp:TemplateField HeaderText="Afecto a ESSALUD">
+                <ItemTemplate>
+                    <asp:CheckBox ID="chkafectoessalud" runat="server" AutoPostBack="true" />
                 </ItemTemplate>
                 <ItemStyle HorizontalAlign="Center" Width="50px" />
             </asp:TemplateField>
