@@ -19,7 +19,7 @@
                 <td>
                     <select id="cboAsiento"></select>                    
                 </td>
-                <td><input id="btnGenerar" type="button" value="Generar" class="submit" /></td>
+                <td><input id="btnGenerar" type="button" value="Generar" class="submit EstiloGeneralBoton" /></td>
             </tr>
             <tr>
                 <td></td>

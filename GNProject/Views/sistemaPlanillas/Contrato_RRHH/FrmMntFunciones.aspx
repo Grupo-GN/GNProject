@@ -10,9 +10,8 @@
 
 
                     <br />
-                    <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE FUNCIONES" CssClass="title"></asp:Label>
-                    <br />
-                    <br />
+                    <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE FUNCIONES" CssClass="miTitulo"></asp:Label>
+                    
 
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                         <ContentTemplate>

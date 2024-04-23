@@ -17,8 +17,7 @@
 
     <br />
   <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE BANCOS" CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
@@ -45,7 +44,7 @@
                         ValidationGroup="ValidaGraba" Width="25px" onclick="btnGrabar_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="btnListar" runat="server" Text="Listar" CssClass="submit" 
+                    <asp:Button ID="btnListar" runat="server" Text="Listar" CssClass="submit EstiloGeneralBoton" 
                     onclick="btnListar_Click" />
                 </td>
             </tr>

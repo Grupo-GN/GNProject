@@ -11,12 +11,12 @@
 
     <table width="100%">
         <tr>
-            <td style="width: 50%">
-                <asp:Label ID="Label1" runat="server" Text="VACACIONES POR VENCER E INDEMNIZACIONES" CssClass="title"></asp:Label></td>
+            <td style="">
+                <asp:Label ID="Label1" runat="server" Text="VACACIONES POR VENCER E INDEMNIZACIONES" CssClass="miTitulo"></asp:Label></td>
             <td style="text-align: right;">
-                <asp:Button ID="btnBuscar" runat="server" CssClass="button" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="ValidaFiltros" />
+                <asp:Button ID="btnBuscar" runat="server" CssClass="button EstiloGeneralBoton btn-buscar" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="ValidaFiltros" />
                 &nbsp;
-                <asp:Button ID="btnExportar" runat="server" CssClass="button" Text="Exportar" OnClick="btnExportar_Click" ValidationGroup="ValidaFiltros" />
+                <asp:Button ID="btnExportar" runat="server" CssClass="button EstiloGeneralBoton btn-descargar" Text="Exportar" OnClick="btnExportar_Click" ValidationGroup="ValidaFiltros" />
             </td>
         </tr>
     </table>

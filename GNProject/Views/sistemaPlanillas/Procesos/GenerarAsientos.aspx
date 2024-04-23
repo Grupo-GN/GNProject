@@ -10,7 +10,6 @@
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
         <br />
-    <br />
     <label class="miTitulo">GENERAR ASIENTOS - EXCEL</label>
         <table style="border-collapse:collapse;width:100%;">
             <tr>
@@ -29,7 +28,7 @@
                 <td>
                     <select id="cboAsiento"></select>                    
                 </td>
-                <td><input id="btnGenerarDet" type="button" value="Ver Detalle" class="submit" /> &nbsp;&nbsp;&nbsp;<input id="btnGenerar" type="button" value="Generar" class="submit" />&nbsp;&nbsp;&nbsp;<input id="btnGuardarAsiento" type="button" value="Guardar Asiento" class="submit" /></td>
+                <td><input id="btnGenerarDet" type="button" value="Ver Detalle" class="submit EstiloGeneralBoton " /> &nbsp;&nbsp;&nbsp;<input id="btnGenerar" type="button" value="Generar" class="submit EstiloGeneralBoton btn-nuevo" />&nbsp;&nbsp;&nbsp;<input id="btnGuardarAsiento" type="button" value="Guardar Asiento" class="submit EstiloGeneralBoton" /></td>
             </tr>
             <tr> 
                 <td colspan="3"><label class="miTitulo">Conceptos no configurados en el Asiento</label></td>                

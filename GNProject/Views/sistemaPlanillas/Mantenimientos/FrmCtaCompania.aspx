@@ -14,7 +14,7 @@
 
             <table width="100%">
                 <tr>
-                    <td style="width:50%;" valign="middle"><asp:Label ID="Label20" runat="server" Text="Cta. Bancaria por Compañia" CssClass="miTitulo" Width="300px"></asp:Label>
+                    <td style="width:50%;" valign="middle"><asp:Label ID="Label20" runat="server" Text="Cta. Bancaria por Compañia" CssClass="miTitulo" Width="100%"></asp:Label>
                         <asp:HiddenField ID="CodigoCta" runat="server" />
                     </td>
                     <td style="width:50%;" align="right" valign="bottom">

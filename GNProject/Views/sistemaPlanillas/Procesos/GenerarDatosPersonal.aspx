@@ -8,7 +8,7 @@
 
     <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <link href="../css/StyleWilder.css" rel="stylesheet" type="text/css" />
-    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;/*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;/*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     <br />   
           <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
@@ -42,7 +42,7 @@
                         <input type="checkbox" id="chkGAcumulativos" checked="checked"/>D. Acumulativos&nbsp;
                         <input type="checkbox" id="chkTodos"/><label>Generar para todo el Personal</label>
                     </td>
-                    <td><input type="button" id="btnProcesar" class="submit" value="Generar Datos" />
+                    <td><input type="button" id="btnProcesar" class="submit EstiloGeneralBoton btn-nuevo" value="Generar Datos" />
                         <%--<input type="button" id="btnVer" class="submit" value="Ver Resultados" />--%>
                     </td>
                 </tr>
@@ -78,9 +78,9 @@
                 <tr>
                 <td class="tfoottd"  colspan="3">
 
-                    <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 1.1em;" >TOTAL REGISTROS: </label> &nbsp
+                    <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; /*font-size: 1.1em;*/" >TOTAL REGISTROS: </label> &nbsp
                     <input id="txtnRegistros" type="text" value="0" class="TextPage" readonly="true" /> &nbsp &nbsp
-                    <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 1.1em;" >PAGE: </label> &nbsp
+                    <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; /*font-size: 1.1em;*/" >PAGE: </label> &nbsp
                     <input id="txtPaginaActual" type="text" value="1" class="TextPage" readonly="true" />
                      <input id="btnPrimero" type="button" value="|<" class="submitPager" />
                      <input id="btnAnterior" type="button" value="<<" class="submitPager" />

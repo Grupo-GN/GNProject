@@ -17,8 +17,7 @@
     
     <br />
 <asp:Label ID="Label1" runat="server" Text="  ORDENAMIENTO DE CONCEPTOS" CssClass="miTitulo" ></asp:Label> 
-<br />
-<br />
+
 
 <div>
     <asp:Panel ID="pnlFiltro" runat="server">

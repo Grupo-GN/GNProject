@@ -10,10 +10,10 @@
     <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
     <table width="100%">
         <tr>
-            <td style="width: 50%">
-                <asp:Label ID="Label1" runat="server" Text="VACACIONES DETALLADA POR PERSONA" CssClass="title"></asp:Label></td>
+            <td style="">
+                <asp:Label ID="Label1" runat="server" Text="VACACIONES DETALLADA POR PERSONA" CssClass="miTitulo"></asp:Label></td>
             <td style="text-align: right;">
-                <asp:Button ID="btnBuscar" runat="server" CssClass="button" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="ValidaFiltros" />
+                <asp:Button ID="btnBuscar" runat="server" CssClass="button EstiloGeneralBoton btn-buscar" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="ValidaFiltros" />
             </td>
         </tr>
     </table>
@@ -108,7 +108,7 @@
                         <asp:BoundField DataField="SaldoIndemnizacion" HeaderText="Saldo Indemnizacion" />
                         <asp:TemplateField HeaderText="Cancelacion Indemnizacion">
                             <ItemTemplate>
-                                <asp:Button ID="btnAgregar" runat="server" Text="Agregar" CssClass="button"
+                                <asp:Button ID="btnAgregar" runat="server" Text="Agregar" CssClass="button EstiloGeneralBoton btn-agregar-en-tablas"
                                     OnClick="btnAgregar_Click" CommandName='<%#Eval("Vacaciones_Id")%>' />
                                 <cc1:ModalPopupExtender ID="btnAgregar_ModalPopupExtender" runat="server"
                                     DynamicServicePath="" Enabled="true" TargetControlID="btnAgregar"
@@ -177,7 +177,7 @@
                         <tr>
                             <td>&nbsp;</td>
                             <td>
-                                <asp:Button ID="btnCancelVaca" runat="server" CssClass="button" Text="Cerrar" />
+                                <asp:Button ID="btnCancelVaca" runat="server" CssClass="button EstiloGeneralBoton" Text="Cerrar" />
                             </td>
                             <td>&nbsp;</td>
                         </tr>
@@ -219,7 +219,7 @@
                                     </cc1:CalendarExtender>
                                 </td>
                                 <td>
-                                    <asp:Button ID="btnAgregarVacCan" runat="server" Text="Agregar" CssClass="button" />
+                                    <asp:Button ID="btnAgregarVacCan" runat="server" Text="Agregar" CssClass="button EstiloGeneralBoton" />
                                 </td>
                             </tr>
                             <tr>
@@ -255,7 +255,7 @@
 
                     </ContentTemplate>
                 </asp:UpdatePanel>
-                <asp:Button ID="btnCancelar" runat="server" CssClass="button" Text="Cerrar" />
+                <asp:Button ID="btnCancelar" runat="server" CssClass="button EstiloGeneralBoton" Text="Cerrar" />
                 <br />
             </asp:Panel>
 

@@ -19,7 +19,7 @@
       <fieldset>
       <legend>
        <center>
-        <asp:Label ID="lblPlanilla" runat="server" Text="Label" CssClass="miTituloOnTab">
+        <asp:Label ID="lblPlanilla" runat="server" Text="Label" CssClass="miTitulo">
        </asp:Label>
        </center>
         </legend>
@@ -33,14 +33,14 @@
             <table width="100%">
                 <tr>
                     <td>
-                        <asp:Button ID="btnApertura" runat="server" Text="" CssClass="miBotonGrande" 
+                        <asp:Button ID="btnApertura" runat="server" Text="" CssClass=" EstiloGeneralBoton" 
                             Width="500px" onclick="btnApertura_Click"
                             OnClientClick="return confirm('¿Está seguro de realizar Apertura para el Periodo?');" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="btnCierre" runat="server" Text="" CssClass="miBotonGrande" Width="500px" 
+                        <asp:Button ID="btnCierre" runat="server" Text="" CssClass=" EstiloGeneralBoton" Width="500px" 
                             onclick="btnCierre_Click" 
                             OnClientClick="return confirm('Está seguro de Cerrar el Periodo, tenga en cuenta que debe haber completado todas las tareas en el Periodo');" />
                     </td>
@@ -48,20 +48,20 @@
                 <tr>
                     <td>
                         <br />
-                        <asp:Button ID="btnActualizarAcum" runat="server" Text="" CssClass="miBotonGrande" 
+                        <asp:Button ID="btnActualizarAcum" runat="server" Text="" CssClass=" EstiloGeneralBoton" 
                             Width="500px" onclick="btnActualizarAcum_Click" 
                             OnClientClick="return confirm('Está seguro de Actualizar Información del Periodo, esta tarea vuelve a Recoger Información del Periodo Anterior');" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="btnLimpiarPeriodo" runat="server" Text="" CssClass="miBotonGrande" 
+                        <asp:Button ID="btnLimpiarPeriodo" runat="server" Text="" CssClass=" EstiloGeneralBoton" 
                             Width="500px" onclick="btnLimpiarPeriodo_Click"
                              />
                     </td>
                 </tr>
                 <tr>
-                    <td><asp:Button ID="btnConfigAsientos" runat="server" Text="" CssClass="miBotonGrande" 
+                    <td><asp:Button ID="btnConfigAsientos" runat="server" Text="" CssClass=" EstiloGeneralBoton" 
                             Width="500px" OnClick="btnConfigAsientos_Click" /></td>
                 </tr>
             </table>

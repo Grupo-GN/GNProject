@@ -9,10 +9,10 @@
     <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <table width="100%">
         <tr>
-            <td style="width: 50%">
-                <asp:Label ID="Label1" runat="server" Text="SALDO VACACIONAL" CssClass="title"></asp:Label></td>
+            <td style="">
+                <asp:Label ID="Label1" runat="server" Text="SALDO VACACIONAL" CssClass="miTitulo"></asp:Label></td>
             <td style="text-align: right;">
-                <asp:Button ID="btnBuscar" runat="server" CssClass="button" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="ValidaFiltros" />
+                <asp:Button ID="btnBuscar" runat="server" CssClass="button EstiloGeneralBoton" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="ValidaFiltros" />
             </td>
         </tr>
     </table>

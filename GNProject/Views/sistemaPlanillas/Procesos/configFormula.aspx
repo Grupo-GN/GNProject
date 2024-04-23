@@ -25,7 +25,7 @@
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
     <table style="width:100%;">
         <tr>
-            <td style="width:50px;"><input type="button" class="submit" value="NUEVO" id="btnNewConfig" /></td>
+            <td style="width:50px;"><input type="button" class="submit EstiloGeneralBoton btn-nuevo" value="NUEVO" id="btnNewConfig" /></td>
             <td></td>
         </tr>
     </table>
@@ -39,7 +39,7 @@
                 <legend class="titulocontrolUser">Filtrar</legend>
                 <table style="border-collapse:separate;width:100%;">
                     <tr>
-                        <td style="text-align:right;width:50px;"><label class="miLabel">Proceso : </label></td>
+                        <td style="text-align:right;width:60px;"><label class="miLabel">Proceso : </label></td>
                         <td><select id="cboProcesoFind" class="ddl"></select></td>
                         <td style="text-align:right;width:70px;"><label class="miLabel">Fórmula : </label></td>
                         <td><input type="text" class="ddl" id="txtFormulaFind" /></td>
@@ -65,7 +65,7 @@
         </table>
         </section>
         <section id="Tab2">
-        <input type="button" class="submit" value="Guardar" id="btnGuardarForm" />&nbsp;<input type="button" class="submit" value="Cancelar" id="btnCancelConfig" /><br /><br />
+        <input type="button" class="submit EstiloGeneralBoton btn-nuevo" value="Guardar" id="btnGuardarForm" />&nbsp;<input type="button" class="submit EstiloGeneralBoton" value="Cancelar" id="btnCancelConfig" /><br /><br />
             <table style="border-collapse:collapse;width:100%;">
                 <tr>
                     <td style="text-align:left;" colspan="2"><label id="lblError" class="lblError">&nbsp;</label></td>
@@ -127,7 +127,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td colspan="3"><input type="button" class="submit" value="Validar" id="btnValidarFormula" /></td>
+                    <td colspan="3"><input type="button" class="submit EstiloGeneralBoton" value="Validar" id="btnValidarFormula" /></td>
                 </tr>
                 <tr>
                     <td colspan="4">&nbsp;</td>

@@ -57,9 +57,8 @@
                 <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height: 500px; overflow: hidden; border-radius: 8px 8px 0px 0px; /*border-top: solid 1px black;*/">
 
                     <br />
-                    <asp:Label ID="Label9" runat="server" Text="HISTORIAL DE CONTRATOS" CssClass="title"></asp:Label>
-                    <br />
-                    <br />
+                    <asp:Label ID="Label9" runat="server" Text="HISTORIAL DE CONTRATOS" CssClass="miTitulo"></asp:Label>
+                    
 
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                         <ContentTemplate>

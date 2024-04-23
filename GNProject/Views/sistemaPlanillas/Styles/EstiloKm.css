@@ -78,7 +78,7 @@ text-decoration:underline;*/
 
 .miTextBox{
 	width: 221px;
-	background: transparent url('images/bg.jpg') no-repeat;
+	/*background: transparent url('images/bg.jpg') no-repeat;*/
 	color : #747862;
 	height:20px;
 	border:0;

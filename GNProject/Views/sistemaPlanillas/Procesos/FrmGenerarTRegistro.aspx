@@ -10,7 +10,7 @@
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
         <br />
-    <br />
+
         <label class="miTitulo">GENERAR ASIENTOS - EXCEL</label>
             <table style="border-collapse:collapse;width:100%;">
                 <tr>
@@ -31,9 +31,9 @@
                 <tr>
                     <td colspan="2">
                         &nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnGenerar" runat="server" Text="Generar Excel" CssClass="submit" OnClick="btnGenerar_Click" />
+                        <asp:Button ID="btnGenerar" runat="server" Text="Generar Excel" CssClass="submit EstiloGeneralBoton btn-nuevo" OnClick="btnGenerar_Click" />
                         &nbsp;&nbsp;
-                        <asp:Button ID="btnGenerarTXT" runat="server" Text="Generar Archivo Plano" CssClass="submit" OnClick="btnGenerarTXT_Click" />
+                        <asp:Button ID="btnGenerarTXT" runat="server" Text="Generar Archivo Plano" CssClass="submit EstiloGeneralBoton" OnClick="btnGenerarTXT_Click" />
                     </td>
                     <td><a target="_blank" href="Files/T-Registro-2 9.xlsm" style="color:Blue;" class="lbl" >Descargar Macro T-Registro</a></td>
                 </tr>

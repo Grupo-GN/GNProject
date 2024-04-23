@@ -44,7 +44,7 @@
                                 <table width="100%">
                                     <tr>
                                         <td colspan="2">
-                                            <asp:Label ID="Label1" runat="server" Text="RENOVAR CONTRATOS" CssClass="title"></asp:Label></td>
+                                            <asp:Label ID="Label1" runat="server" Text="RENOVAR CONTRATOS" CssClass="miTitulo"></asp:Label></td>
                                         <td align="right" colspan="4">&nbsp;</td>
                                     </tr>
                                     <tr>
@@ -96,7 +96,7 @@
 
                         <div style="overflow: auto; width: 100%;">
                             <div style="text-align:center;">
-                                <asp:Button ID="btnAbrirRenovarContratos" CssClass="button" runat="server" Text="Renovar Contratos" OnClientClick="return fn_AbrirRenovarContrato()" />
+                                <asp:Button ID="btnAbrirRenovarContratos" CssClass="EstiloGeneralBoton" runat="server" Text="Renovar Contratos" OnClientClick="return fn_AbrirRenovarContrato()" />
                             </div>
                             <asp:GridView ID="grvListaPersonal" runat="server"
                                 PageSize="13"
@@ -166,7 +166,7 @@
                                     <asp:TemplateField HeaderText="RENOVAR">
                                         <ItemTemplate>
                                             <asp:Button ID="btnModificar" runat="server" Text="Renovar"
-                                                OnClick="btnModificar_Click" CommandName='<%#Eval("Personal_Id") %>' />
+                                                OnClick="btnModificar_Click" CommandName='<%#Eval("Personal_Id") %>' CssClass="EstiloGeneralBoton btn-agregar-en-tablas" />
                                         </ItemTemplate>
                                         <HeaderStyle ForeColor="#336699" Font-Size="X-Small"
                                             Font-Bold="True" />
@@ -241,8 +241,8 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:right;"><asp:Button ID="btnRenovar" runat="server" Text="Renovar" CssClass="button" OnClientClick="return fn_Renovar()" /></td>
-                <td colspan="2" style="text-align:left;"><asp:Button ID="btnCerrar_RenovarContrato" runat="server" Text="Cerrar" CssClass="button" /></td>
+                <td colspan="2" style="text-align:right;"><asp:Button ID="btnRenovar" runat="server" Text="Renovar" CssClass="EstiloGeneralBoton btn-agregar-en-tablas" OnClientClick="return fn_Renovar()" /></td>
+                <td colspan="2" style="text-align:left;"><asp:Button ID="btnCerrar_RenovarContrato" runat="server" Text="Cerrar" CssClass="EstiloGeneralBoton btn-agregar-en-tablas"  /></td>
             </tr>
         </table>
     </asp:Panel>

@@ -79,19 +79,19 @@
                                     </td>
                                 </tr>
                             </table>
-                            <fieldset style="background-color: White; border-style: outset; border-width: thin;border-radius: 8px 8px 8px 8px; height: 470px;">
+                            <fieldset style="background-color: White; /*border-style: outset;*/ border-width: thin;border-radius: 8px 8px 8px 8px; height: 470px;">
                                 <p>
                                 </p>
                                 <table width="100%">
                                     <tr>
-                                        <td style="width: 105px;">
+                                        <td style="width: 115px;">
                                             <asp:Label ID="Label2" runat="server" Text="Digite los Nombres : " CssClass="miLabel"></asp:Label>
                                         </td>
                                         <td  style="width: 260px;">
                                             <asp:TextBox ID="txtNombrePersonal" CssClass="txt" runat="server" Width="250px"></asp:TextBox>
                                         </td>
                                         <td  style="width: 60px;">
-                                            <asp:Button ID="btnBuscarr" runat="server" Text="Buscar" CssClass="submit" onclick="btnBuscarr_Click" 
+                                            <asp:Button ID="btnBuscarr" runat="server" Text="Buscar" CssClass="submit EstiloGeneralBoton btn-buscar" onclick="btnBuscarr_Click" 
                                                 />
                                         </td>
                                         <td>

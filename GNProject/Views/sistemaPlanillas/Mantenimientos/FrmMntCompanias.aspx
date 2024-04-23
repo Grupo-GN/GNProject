@@ -15,11 +15,11 @@
             <td>
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                     <ContentTemplate>
-                        <div class="title">
+                        <div class="miTitulo">
                             MANTENIMIENTO DE COMPAÑIAS
                         </div>
 
-                        <br />
+                      
 
                         <table>
                             <tr>

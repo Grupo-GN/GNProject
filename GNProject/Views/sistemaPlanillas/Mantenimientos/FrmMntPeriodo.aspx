@@ -18,11 +18,9 @@
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; */
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
-    <br />
     
     <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE PERIODOS" CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+    
     
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
@@ -47,11 +45,11 @@ ScrollBars="Vertical" Width="100%">
             </td>
             <td>
                 <asp:Button ID="btnListar" runat="server" Text="Listar" 
-                    onclick="btnListar_Click"  CssClass="submit"/>
+                    onclick="btnListar_Click"  CssClass="submit EstiloGeneralBoton"/>
             </td>
             <td>
                 <asp:Button ID="btnNuevo" runat="server" onclick="btnNuevo_Click" 
-                    Text="Nuevo" CssClass="submit" />
+                    Text="Nuevo" CssClass="submit EstiloGeneralBoton btn-nuevo" />
             </td>
             
         </tr>
@@ -230,7 +228,7 @@ ScrollBars="Vertical" Width="100%">
                 <td colspan="4">
                     <asp:Button ID="btnCrearPeriodos" runat="server" 
                         OnClientClick="return confirm('Acontinuación Se Generaran Todos Los Periodos Correspondientes Al Ejercicio Seleccionado. ¿Esta Seguro De Realizar Esta Acción?');" 
-                        Text="Crear Periodos" onclick="btnCrearPeriodos_Click" />
+                        Text="Crear Periodos" onclick="btnCrearPeriodos_Click" CssClass="EstiloGeneralBoton" />
                 </td>
             </tr>
             <tr>
@@ -241,10 +239,10 @@ ScrollBars="Vertical" Width="100%">
             <tr>
                 <td colspan="4" align="center">
                     <asp:Button ID="btnGrabar" runat="server" OnClick="btnGrabar_Click" 
-                        Text="Grabar" ValidationGroup="ValidaGraba" />
+                        Text="Grabar" ValidationGroup="ValidaGraba" CssClass="EstiloGeneralBoton" />
                     &nbsp;
                     <asp:Button ID="btnActualizar" runat="server" OnClick="btnActualizar_Click" 
-                        Text="Actualizar" ValidationGroup="ValidaGraba" />
+                        Text="Actualizar" ValidationGroup="ValidaGraba" CssClass="EstiloGeneralBoton" />
                 </td>
             </tr>
             <tr>

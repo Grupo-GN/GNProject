@@ -16,7 +16,7 @@
         <table width="100%">
             <tr>
                 <td style="width:90%;">
-                    <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE DATOS BANCARIOS" CssClass="miTitulo" Width="300px"></asp:Label>
+                    <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE DATOS BANCARIOS" CssClass="miTitulo" Width="100%"></asp:Label>
                 </td>
                 <td style="text-align:right;width:28px;"><input type="button" class="elBotonUpdate" id="btnUpdate" value="Actualizar" title="Para Modificar el Registro" /></td>
             </tr>
@@ -39,7 +39,7 @@
             </table>     
             
         </fieldset>
-        <div  style="overflow: hidden; width: 100%; border: solid 1px #505050;height: 320px;">
+        <div  style="overflow: hidden; width: 100%; border: solid 1px #505050;/*height: 320px;*/">
             <table class="gridSmall" style="width:100%;">
                 <thead>
                     <tr>

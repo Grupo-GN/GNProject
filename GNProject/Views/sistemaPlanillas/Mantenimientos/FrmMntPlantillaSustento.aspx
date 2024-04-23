@@ -58,7 +58,7 @@
                     <tr>
                     <td style="width:50%;" valign="middle">
                      <asp:Label ID="Label20" runat="server" 
-                    Text="Mantenimiento de Plantilla para Sustentos" CssClass="miTitulo" Width="300px"></asp:Label>   
+                    Text="Mantenimiento de Plantilla para Sustentos" CssClass="miTitulo" Width="100%"></asp:Label>   
                     </td>
                       <td style="width:50%;"  valign="middle" align="right">
                           

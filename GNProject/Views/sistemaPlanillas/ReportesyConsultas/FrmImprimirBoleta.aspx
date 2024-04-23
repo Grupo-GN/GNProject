@@ -28,8 +28,7 @@
     
     <br />
 <asp:Label ID="Label1" runat="server" Text="IMPRIMIR BOLETAS" CssClass="miTitulo" ></asp:Label> 
-<br />
-<br />
+
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     

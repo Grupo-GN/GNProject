@@ -11,22 +11,21 @@
         <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; 
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
 
-    <br />
+    
     
     <asp:Label ID="Label9" runat="server" Text="MAESTRO DE ESTABLECIMIENTOS - PERSONAL POR PERIODO" 
     CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+    
     
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
 
 <div>
     <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" 
-        onclick="btnNuevo_Click"  CssClass="submit" />
+        onclick="btnNuevo_Click"  CssClass="submit EstiloGeneralBoton btn-nuevo" />
     &nbsp;
     <asp:Button ID="btnAsignacionMasiva" runat="server" 
-        onclick="btnAsignacionMasiva_Click" Text="Asignación Masiva"  CssClass="submit"/>
+        onclick="btnAsignacionMasiva_Click" Text="Asignación Masiva"  CssClass="submit EstiloGeneralBoton"/>
 </div>
 
 <br />

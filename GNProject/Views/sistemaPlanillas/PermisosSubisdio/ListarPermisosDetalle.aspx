@@ -130,7 +130,7 @@
                             <tr>
                                 <td>
                                     <asp:Button ID="btnFindPermisos" runat="server" Text="Buscar Historial Por Persona"
-                                        CssClass="submit" OnClick="btnFindPermisos_Click" />
+                                        CssClass="submit EstiloGeneralBoton" OnClick="btnFindPermisos_Click" />
                                 </td>
                             </tr>
                         </table>

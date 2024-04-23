@@ -209,7 +209,7 @@
     <tr>
     <td style="width:50%;" valign="middle">
      <asp:Label ID="Label9" runat="server" 
-    Text="MANTENIMIENTO DE DERECHO HABIENTES" CssClass="miTitulo" Width="300px"></asp:Label>   
+    Text="MANTENIMIENTO DE DERECHO HABIENTES" CssClass="miTitulo" Width="100%"></asp:Label>   
     </td>
       <td style="width:50%;" align="right" valign="bottom">
        <asp:Panel ID="Panel1" runat="server" CssClass="elPanel">
@@ -271,7 +271,7 @@
             </td>
             <td>
                 <asp:Button ID="btnFind" runat="server" Text="Buscar"
-                CssClass="submit" onclick="btnFind_Click" />
+                CssClass="submit EstiloGeneralBoton btn-buscar" onclick="btnFind_Click" />
             </td>
             <td>                
             </td>

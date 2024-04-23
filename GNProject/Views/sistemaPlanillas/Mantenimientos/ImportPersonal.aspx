@@ -12,7 +12,7 @@
         <table>
             <tr>
                 <td><input type="file" id="file-input" /></td>
-                <td><input type="button" class="submit" id="btnGuardar" value="Guardar Información" /></td>
+                <td><input type="button" class="submit EstiloGeneralBoton" id="btnGuardar" value="Guardar Información" /></td>
                 <td><a href="../ReportesyConsultas/frmPersonalExport.aspx" class="lbl" target="_blank" style="color:Blue;">Descargar Datos del Personal para la Plantilla</a> &nbsp;&nbsp;</td>
                 <td><a href="Files/Import.xlsm" class="lbl" target="_blank" style="color:Blue;">Descargar Generador</a></td>
                 <td>&nbsp;</td>

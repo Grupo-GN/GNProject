@@ -17,8 +17,7 @@
     
         <br />
   <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE ÁREA" CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+
     
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
@@ -45,7 +44,7 @@
                 </td>
                 <td>
                     <asp:Button ID="btnListar" runat="server" Text="Listar" 
-                    onclick="btnListar_Click" CssClass="submit" />
+                    onclick="btnListar_Click" CssClass="submit EstiloGeneralBoton" />
                 </td>
             </tr>
         </table>

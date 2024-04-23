@@ -15,7 +15,7 @@
             <table width="100%">
                 <tr>
                     <td style="width:90%;">
-                        <asp:Label ID="Label9" runat="server" Text="ASIGNACIÓN DE CENTROS DE COSTO" CssClass="miTitulo" Width="300px"></asp:Label>
+                        <asp:Label ID="Label9" runat="server" Text="ASIGNACIÓN DE CENTROS DE COSTO" CssClass="miTitulo" Width="90%"></asp:Label>
                     </td>                  
                     <td style="text-align:right;width:28px;"><input type="button" class="elBotonCancel" id="btnCancel" value="Cancelar" title="Para Cancelar la Informacion" /></td>
                     <td style="text-align:right;width:28px;"><input type="button" class="elBotonUpdate" id="btnUpdate" value="Actualizar" title="Para Modificar el Registro" /></td>
@@ -123,7 +123,7 @@
         <table style="border-collapse:collapse;">
             <tr>
                 <td><input type="file" id="file-input" /></td>
-                <td><input type="button" class="submit" id="btnGuardarImport" value="Guardar CCosto" /></td>
+                <td><input type="button" class="submit EstiloGeneralBoton btn-nuevo" id="btnGuardarImport" value="Guardar CCosto" /></td>
                 <td><a href="Files/ImportCCosto.xlsm" class="lbl" target="_blank" style="color:Blue;">Descargar Generador</a></td>
                 <td></td>
             </tr>

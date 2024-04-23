@@ -232,6 +232,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
     background-color: #FFA92C;
 }
 
+.btn-agregar-en-tablas {
+    margin: 3px;
+    background-color: #FFA92C;
+}
 
 #divFiltros {
     padding: 10px !important;
@@ -288,4 +292,9 @@ tr[role="row"] td {
 
 ui-jqgrid-bdiv{
 
+}
+/*estilo para el acalendario*/
+.ajax__calendar_container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+    background-color: white !important;
 }

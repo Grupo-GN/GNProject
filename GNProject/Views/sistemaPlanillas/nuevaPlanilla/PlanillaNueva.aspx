@@ -2,6 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link rel="stylesheet" type="text/css" href="../css/multiple-select.css" />
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
 
@@ -188,7 +191,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
-    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; min-height: 500px; overflow: hidden; border-radius: 8px 8px 0px 0px; border-top: solid 1px black; font-size: 11px; font-family: Verdana;">
+    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height: 500px; overflow: hidden; border-radius: 8px 8px 0px 0px; /*border-top: solid 1px black;*/ font-size: 11px; font-family: Verdana;">
         <fieldset>
         <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
@@ -346,13 +349,13 @@
                 </tr>
                 <tr>
                     <td colspan="9" style="text-align: center;">
-                        <input type="button" id="btnBuscar" class="myButton" value="Listar Pagos" style="width: 200px;" />
+                        <input type="button" id="btnBuscar" class="EstiloGeneralBoton" value="Listar Pagos" style="width: 200px;" />
                         &nbsp;&nbsp;&nbsp;
-                     <input type="button" id="btnGenerarRegistraPlanilla" class="myButton" value="Registrar Pagos" style="width: 250px;" />
+                     <input type="button" id="btnGenerarRegistraPlanilla" class="EstiloGeneralBoton btn-nuevo" value="Registrar Pagos" style="width: 250px;" />
                         &nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btnProcesarFormula" runat="server" class="myButton" Text="Procesar Formula" Style="width: 200px;" OnClick="btnProcesarFormula_Click" />
+                    <asp:Button ID="btnProcesarFormula" runat="server" class=" EstiloGeneralBoton" Text="Procesar Formula" Style="width: 200px;" OnClick="btnProcesarFormula_Click" />
                         &nbsp;&nbsp;&nbsp;
-                       <asp:Button ID="btnreporte" runat="server" class="myButton" Text="Generar Reporte" Style="width: 200px; display: none;" OnClick="btnreporte_Click" />
+                       <asp:Button ID="btnreporte" runat="server" class="EstiloGeneralBoton" Text="Generar Reporte" Style="width: 200px; display: none;" OnClick="btnreporte_Click" />
                         &nbsp;&nbsp;&nbsp;
                        <%--<input type="button" id="btnExportar" class="myButton" value="Exportar Excel" style="width: 200px;" />
                         &nbsp;&nbsp;&nbsp;--%>
@@ -360,9 +363,9 @@
                    
                     </td>
                     <td style="display: none;" colspan="6" style="text-align: center;">&nbsp;&nbsp;&nbsp;
-                    <input type="button" id="btnGenerarReporteDetalladoResumen" class="submit" value="Generar Reporte Resumen" style="width: 200px;" />
+                    <input type="button" id="btnGenerarReporteDetalladoResumen" class="submit EstiloGeneralBoton" value="Generar Reporte Resumen" style="width: 200px;" />
                         &nbsp;&nbsp;&nbsp;
-                    <input type="button" id="btnGenerarReporteDetalladoComparativo" class="submit" value="Generar Reporte Comparativo" style="width: 200px;" />
+                    <input type="button" id="btnGenerarReporteDetalladoComparativo" class="submit EstiloGeneralBoton" value="Generar Reporte Comparativo" style="width: 200px;" />
                     </td>
                 </tr>
                 <tr style="display: none;">
@@ -391,11 +394,11 @@
         <div id="barrprocess" style="display: none;">
             <img src="../img/loading2.gif" />
         </div>
-        <fieldset style="overflow: auto; max-height: 1000px; max-width: 1000px;">
+        <fieldset style="overflow: auto; max-height: 1000px; /*max-width: 1000px;*/">
             <legend>Lista de Pagos Liquidación</legend>
             <div id="divta"></div>
             <div style="width: 1150px; overflow: auto; height: 550px;">
-                <table id="TblPlanilla" class="rwd-table">
+                <table id="TblPlanilla" class="gridSmall">
                     <thead style="position: sticky; top: 0; z-index: 10;">
                         <tr>
 

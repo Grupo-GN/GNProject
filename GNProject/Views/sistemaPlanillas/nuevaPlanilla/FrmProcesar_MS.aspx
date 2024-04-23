@@ -30,21 +30,22 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
             <table align="center" width="100%">
      <tr>
      <td>
           <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;
-           border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; 
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+           /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; */
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
     <br />
     <asp:Label ID="Label9" runat="server" Text="PROCESAR PLANILLAS" CssClass="miTitulo"></asp:Label>
     <br />
-      <br />
-      
     <asp:UpdatePanel ID="Upd" runat="server">
         <ContentTemplate>
-        <fieldset style="overflow:auto; border-style: outset; border-width: thin; height:430px; width: 97.5%; background-color:White">
+        <fieldset style="overflow:auto; /*border-style: outset;*/ border-width: thin; height:430px; width: 97.5%; background-color:White">
             <table width="100%">
                 <tr>
                     <td style="width: 60px;">
@@ -76,9 +77,9 @@
                         </asp:DropDownList>                       
                     </td>
                     <td colspan="2">
-                        <asp:Button ID="btnVer" runat="server" Text="Ver Planilla" OnClick="btnVer_Click" CssClass="submit" />&nbsp;
+                        <asp:Button ID="btnVer" runat="server" Text="Ver Planilla" OnClick="btnVer_Click" CssClass="submit EstiloGeneralBoton" />&nbsp;
                         <asp:Button ID="btnProcesar" runat="server" Text="Procesar" OnClick="btnProcesar_Click"
-                            Enabled="False" CssClass="submit" />
+                            Enabled="False" CssClass="submit EstiloGeneralBoton btn-nuevo" />
                     </td>
                     <td colspan="2"><asp:Label ID="lblmsj" runat="server" Text="" CssClass="miLabelError"></asp:Label>
                     </td>

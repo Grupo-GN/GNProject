@@ -10,10 +10,10 @@
     <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
     <table width="100%">
         <tr>
-            <td style="width: 30%">
-                <asp:Label ID="Label1" runat="server" Text="SEGUIMIENTO DE CONTRATOS" CssClass="title"></asp:Label></td>
+            <td style="width: 100%">
+                <asp:Label ID="Label1" runat="server" Text="SEGUIMIENTO DE CONTRATOS" CssClass="miTitulo"></asp:Label></td>
             <td style="text-align:right;">
-                <asp:Button ID="btnGrabar" runat="server" Text="Grabar" ToolTip="Grabar" CssClass="elBotonAdd" OnClick="btnGenerar_Click" />
+                <asp:Button ID="btnGrabar" runat="server" Text="Grabar" ToolTip="Grabar" CssClass="EstiloGeneralBoton" OnClick="btnGenerar_Click" />
             </td>
         </tr>
     </table>

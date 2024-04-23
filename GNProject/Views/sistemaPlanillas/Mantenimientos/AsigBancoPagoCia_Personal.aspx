@@ -8,6 +8,11 @@
     <script src="../JQuery/jqGrid-4.5.2/grid.locale-en.min.js"></script>
     <script src="../JQuery/jqGrid-4.5.2/jquery.jqGrid.src.min.js"></script>
     <script src="../JQuery/Funciones.min.js"></script>
+
+    <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+
     <style type="text/css">
         .ui-jqgrid tr.jqgrow td {
             white-space: normal !important;
@@ -20,7 +25,7 @@
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
-        <div style="font-weight: bold; font-size: 14px; padding-bottom: 20px; text-align: center;">ASIGNACIÓN MASIVA DE BANCO DE PAGO DE LA COMPAÑÍA</div>
+        <div class="miTitulo" style="font-weight: bold; font-size: 14px; margin-bottom: 20px; text-align: center;">ASIGNACIÓN MASIVA DE BANCO DE PAGO DE LA COMPAÑÍA</div>
         <table style="width: 100%;">
             <tr>
                 <td>Localidad:

@@ -13,6 +13,9 @@
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
     <div>
         <label class="miTitulo">PLANTILLA DE CONTRATOS</label>
+
+
+
         <br />
         <table style="width: 100%;">
             <tr>

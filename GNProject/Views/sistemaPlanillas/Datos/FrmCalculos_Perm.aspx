@@ -15,21 +15,21 @@
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
-    <br />
+   
 <asp:Label ID="Label1" runat="server" Text="DATOS ACUMULATIVOS" CssClass="miTitulo" ></asp:Label> 
-<br />
+
 <br />
 <fieldset>
     <legend>Importar Datos</legend>
     <table style="width:100%;border-collapse:collapse;">
         <tr>
             <td>
-                <input type="button" id="btnopen" value="Generar Plantilla" class="submit" /><br />           
+                <input type="button" id="btnopen" value="Generar Plantilla" class="submit EstiloGeneralBoton" /><br />           
                 
             </td>
             <td>
                 <asp:FileUpload ID="FileUpload1" runat="server" accept=".xls"/>
-                <asp:Button ID="btnImportar" runat="server" Text="Procesar" ToolTip="Procesar información"    CssClass="submit" OnClick="btnImportar_Click"  />
+                <asp:Button ID="btnImportar" runat="server" Text="Procesar" ToolTip="Procesar información"    CssClass="submit EstiloGeneralBoton" OnClick="btnImportar_Click"  />
             </td>
         </tr>
         <tr>
@@ -40,7 +40,7 @@
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-<fieldset style="overflow:auto; border-style: outset; border-width: thin; height:90%; min-height:410px; width: 97%; background-color:White">
+<fieldset style="overflow:auto; /*border-style: outset;*/ border-width: thin; height:90%; min-height:410px; width: 97%; background-color:White">
 
 <table >
 <tr>
@@ -73,11 +73,11 @@
                                     ValidationGroup="ValidaGrabaVac" Width="25px" onclick="btnGrabar_Click" />
                             </td>
                             <td>
-                                <asp:Button ID="btnGenerar" runat="server" Text="Generar" CssClass="submit"
+                                <asp:Button ID="btnGenerar" runat="server" Text="Generar" CssClass="submit EstiloGeneralBoton btn-nuevo"
                                     onclick="btnGenerar_Click" />
                             </td>
                             <td>
-                                <asp:Button ID="btnGenerarTodos" runat="server" CssClass="submit" OnClick="btnGenerarTodos_Click" Text="Generar para Todos" />
+                                <asp:Button ID="btnGenerarTodos" runat="server" CssClass="submit EstiloGeneralBoton" OnClick="btnGenerarTodos_Click" Text="Generar para Todos" />
                             </td>
                         </tr>
                         <tr>

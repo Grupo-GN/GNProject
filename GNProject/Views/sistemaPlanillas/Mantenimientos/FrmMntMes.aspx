@@ -14,10 +14,9 @@
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
-    <br />
+
    <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE MESES" CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+  
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
@@ -38,16 +37,16 @@ ScrollBars="Horizontal" Width="100%">
             </td>
             <td>
                 <asp:Button ID="btnListar" runat="server" Text="Buscar" 
-                    onclick="btnListar_Click" CssClass="submit" />
+                    onclick="btnListar_Click" CssClass="submit EstiloGeneralBoton btn-buscar" />
             </td>
             <td>
                 <asp:Button ID="btnNuevo" runat="server" onclick="btnNuevo_Click" 
-                    Text="Nuevo" CssClass="submit" />
+                    Text="Nuevo" CssClass="submit EstiloGeneralBoton btn-nuevo" />
             </td>
             <td>
                 <asp:Button ID="btnCrearMeses" runat="server" onclick="btnCrearMeses_Click" 
                     OnClientClick="return confirm('Acontinuación Se Generaran Todos Los Meses Correspondientes Al Ejercicio Seleccionado. ¿Esta Seguro De Realizar Esta Acción?');" 
-                    Text="Crear Meses" CssClass="submit" />
+                    Text="Crear Meses" CssClass="submit EstiloGeneralBoton" />
             </td>
         </tr>
     </table>
@@ -179,10 +178,10 @@ ScrollBars="Horizontal" Width="100%">
             <tr>
                 <td colspan="2" align="center">
                     <asp:Button ID="btnGrabar" runat="server" onclick="btnGrabar_Click" 
-                        Text="Grabar" ValidationGroup="ValidaGraba" />
+                        Text="Grabar" ValidationGroup="ValidaGraba" CssClass="submit EstiloGeneralBoton" />
                     &nbsp;
                     <asp:Button ID="btnActualizar" runat="server" onclick="btnActualizar_Click"
-                        Text="Actualizar" ValidationGroup="ValidaGraba" />
+                        Text="Actualizar" ValidationGroup="ValidaGraba" CssClass="submit EstiloGeneralBoton" />
                 </td>
                 <td>
                     &nbsp;</td>

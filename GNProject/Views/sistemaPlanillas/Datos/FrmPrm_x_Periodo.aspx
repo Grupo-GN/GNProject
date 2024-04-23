@@ -15,12 +15,11 @@
 
     <br />
     <asp:Label ID="Label1" runat="server" Text="PARAMETROS POR PERIODO" CssClass="miTitulo" ></asp:Label> 
-<br />
-<br />
+
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-<fieldset style="overflow:auto; border-style: outset; border-width: thin; height:90%;
+<fieldset style="overflow:auto; /*border-style: outset;*/ border-width: thin; height:90%;
      min-height:410px; width: 97.5%; background-color:White">
 
 <table width="100%">
@@ -49,7 +48,7 @@
                         ValidationGroup="ValidaGrabaVac" Width="25px" onclick="btnGrabar_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="btnGenerar" runat="server" Text="Generar"  CssClass="submit"
+                    <asp:Button ID="btnGenerar" runat="server" Text="Generar"  CssClass="submit EstiloGeneralBoton"
                         onclick="btnGenerar_Click" ToolTip="Genera los Parametros por Periodo" />
                 </td>
             </tr>

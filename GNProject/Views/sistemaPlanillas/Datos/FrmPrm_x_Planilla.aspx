@@ -15,13 +15,12 @@
     
     <br />
 <asp:Label ID="Label1" runat="server" Text="PARAMETROS POR PLANILLA" CssClass="miTitulo" ></asp:Label> 
-<br />
-<br />
+
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-<fieldset style="overflow:auto; border-style: outset; border-width: thin; height:90%; min-height:410px; width: 97%; background-color:White">
+<fieldset style="overflow:auto; /*border-style: outset;*/ border-width: thin; height:90%; min-height:410px; width: 97%; background-color:White">
 
 <table>
 <tr>
@@ -52,7 +51,7 @@
                 </td>
                 <td>
                     <asp:Button ID="btnGenerar" runat="server" Text="Generar" 
-                        onclick="btnGenerar_Click"  CssClass="submit"/>
+                        onclick="btnGenerar_Click"  CssClass="submit EstiloGeneralBoton"/>
                 </td>
             </tr>
         </table>

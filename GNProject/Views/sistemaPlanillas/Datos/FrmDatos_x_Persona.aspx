@@ -24,9 +24,9 @@
         <td style="width:70%;">
             <fieldset>
                 <legend>Importar Datos</legend>
-                <input type="button" id="btnopen" value="Generar Plantilla" class="submit" />&nbsp;&nbsp;&nbsp;        
+                <input type="button" id="btnopen" value="Generar Plantilla" class="submit EstiloGeneralBoton btn-nuevo" />&nbsp;&nbsp;&nbsp;        
                 <asp:FileUpload ID="FileUpload1" runat="server" accept=".xls"/>
-                <asp:Button ID="btnImportar" runat="server" Text="Procesar" ToolTip="Procesar información"    CssClass="submit" OnClick="btnImportar_Click" />
+                <asp:Button ID="btnImportar" runat="server" Text="Procesar" ToolTip="Procesar información"    CssClass="submit EstiloGeneralBoton" OnClick="btnImportar_Click" />
                 <asp:Label ID="lblmensajefile" runat="server" CssClass="lblError" Text="-"></asp:Label>
             </fieldset>
         </td>
@@ -194,7 +194,7 @@
                             ValidationGroup="ValidaReemp_D_Fijos" onclick="btnReempValor_D_Fijos_Click"
                             
                             OnClientClick="return confirm('¿Esta Seguro De Reemplazar Todos los Valores de la Lista de Datos Fijos?');" 
-                            CssClass="submit" />
+                            CssClass="submit EstiloGeneralBoton" />
                     </td>
                     <td>
                         <asp:ImageButton ID="btnGrabar_D_Fijos" runat="server" Height="25px" ToolTip="Grabar Todo" 
@@ -203,7 +203,7 @@
                     </td>
                     <td>
                         <asp:Button ID="btnGenerar_D_Fijos" runat="server" Text="Generar" ToolTip="Sirve Para Generar"
-                            onclick="btnGenerar_D_Fijos_Click" CssClass="submit" />
+                            onclick="btnGenerar_D_Fijos_Click" CssClass="submit EstiloGeneralBoton btn-nuevo" />
                     </td>
                 </tr>
             </table>

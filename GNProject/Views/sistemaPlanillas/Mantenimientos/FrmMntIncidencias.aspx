@@ -36,9 +36,9 @@
             
                          <table width="100%">
     <tr>
-    <td style="width:50%;" valign="middle">
+    <td style="width:100%;" valign="middle">
      <asp:Label ID="Label20" runat="server" 
-    Text="MANTENIMIENTO DE INCIDENCIAS" CssClass="miTitulo" Width="300px"></asp:Label>   
+    Text="MANTENIMIENTO DE INCIDENCIAS" CssClass="miTitulo" Width="100%"></asp:Label>   
     </td>
       <td style="width:50%;" align="right" valign="bottom">
        <asp:Panel ID="Panel1" runat="server" CssClass="elPanel">
@@ -146,7 +146,7 @@
                     </tr> 
                      <tr>                    
                         <td align="left" colspan="3">
-                        <div style="width: 100%; border: solid 1px black; overflow: auto; height: 296px;">
+                        <div style="width: 100%; /*border: solid 1px black;*/ overflow: auto; height: 296px;padding: 10px;">
                           <asp:CheckBoxList ID="chbcamposPersonal" runat="server" RepeatLayout="Flow">
                             </asp:CheckBoxList>
                         </div>
@@ -200,7 +200,7 @@
                     </tr> 
                      <tr>                    
                         <td align="left">
-                        <div style="width: 100%; border: solid 1px black; overflow: auto; height: 296px;">
+                        <div style="width: 100%; /*border: solid 1px black;*/ overflow: auto; height: 296px; padding:10px;">
                           <asp:CheckBoxList ID="chbPersonalActivo" runat="server" RepeatLayout="Flow">
                             </asp:CheckBoxList>
                         </div>

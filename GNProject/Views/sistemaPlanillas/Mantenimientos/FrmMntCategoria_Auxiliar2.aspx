@@ -15,8 +15,7 @@
 
     <br />
   <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE SECCIÓN" CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+ 
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>

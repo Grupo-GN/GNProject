@@ -54,7 +54,7 @@
     <tr>
     <td style="width:50%;" valign="middle">
      <asp:Label ID="Label1" runat="server" 
-    Text="MANTENIMIENTO DE PROCESOS" CssClass="miTitulo" Width="300px"></asp:Label>   
+    Text="MANTENIMIENTO DE PROCESOS" CssClass="miTitulo" Width="100%"></asp:Label>   
     </td>
       <td style="width:50%;" align="right" valign="bottom">
        <asp:Panel ID="Panel1" runat="server" CssClass="elPanel">
@@ -85,7 +85,7 @@
    </tr>
     </table>
 
- <fieldset style=" background-color:White; border-style: outset; border-width: thin; 
+ <fieldset style=" background-color:White; /*border-style: outset;*/ border-width: thin; 
      border-radius:8px 8px 8px 8px; min-height:310px; height:auto;">
 <p>
 </p>
@@ -108,7 +108,7 @@
                 </td>
                 <td>
                     <asp:Button ID="btnListar" runat="server" Text="Buscar" 
-                    onclick="btnListar_Click" CssClass="submit" />
+                    onclick="btnListar_Click" CssClass="submit EstiloGeneralBoton" />
                 </td>
             </tr>
         </table>

@@ -34,10 +34,9 @@
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; */
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
-    <br />
+    
     <asp:Label ID="Label9" runat="server" Text="CONTROL DE VACACIONES" CssClass="miTitulo"></asp:Label>
-    <br />
-     <br />
+    
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
     
@@ -59,7 +58,7 @@
                                         </td>
                                         <td>
                                             <asp:Button ID="btnBuscar" runat="server" Text="Buscar" 
-                                            CssClass="submit" OnClick="btnBuscar_Click" 
+                                            CssClass="submit EstiloGeneralBoton" OnClick="btnBuscar_Click" 
                                             ToolTip="Digite Los Nombres de un Empleado y de Click en Buscar"/>
                                         </td>
                                     </tr>
@@ -145,7 +144,7 @@
                             </td>
                             <td>
                                 <asp:Button ID="btnCalcular" runat="server" Text="Calcular y Generar Periodos" 
-                                OnClick="btnCalcular_Click" CssClass="submit" />
+                                OnClick="btnCalcular_Click" CssClass="submit EstiloGeneralBoton" />
                             </td>
                             <td>
                                 <asp:HiddenField ID="hdnPersonal_Id" runat="server" />

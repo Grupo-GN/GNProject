@@ -19,8 +19,7 @@
 
     <br />
   <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE CARGOS" CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
@@ -40,11 +39,11 @@
             </td>
             <td>
                 <asp:Button ID="btnListar" runat="server" Text="Listar" 
-                    onclick="btnListar_Click" CssClass="submit" />
+                    onclick="btnListar_Click" CssClass="submit EstiloGeneralBoton" />
             </td>
             <td>
                 <asp:Button ID="btnNuevo" runat="server" onclick="btnNuevo_Click" 
-                    Text="Nuevo"  CssClass="submit"/>
+                    Text="Nuevo"  CssClass="submit EstiloGeneralBoton btn-nuevo"/>
             </td>
         </tr>
     </table>
@@ -170,10 +169,10 @@
             <tr>
                 <td colspan="2" align="center">
                     <asp:Button ID="btnGrabar" runat="server" onclick="btnGrabar_Click" 
-                        Text="Grabar" ValidationGroup="ValidaGraba" CssClass="submit" />
+                        Text="Grabar" ValidationGroup="ValidaGraba" CssClass="submit EstiloGeneralBoton btn-nuevo" />
                     &nbsp;
                     <asp:Button ID="btnActualizar" runat="server" onclick="btnActualizar_Click"
-                        Text="Actualizar" ValidationGroup="ValidaGraba" CssClass="submit" />
+                        Text="Actualizar" ValidationGroup="ValidaGraba" CssClass="submit EstiloGeneralBoton" />
                 </td>
                 <td>
                     &nbsp;</td>

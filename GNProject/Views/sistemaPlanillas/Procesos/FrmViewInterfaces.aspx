@@ -92,13 +92,13 @@
 
                 <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height: 500px; overflow: hidden; border-radius: 8px 8px 0px 0px; /*border-top: solid 1px black;*/">
 
-                    <br />
+            
 
                     <asp:Label ID="Label9" runat="server"
                         Text="GENERADOR DE INTERFACES" CssClass="miTitulo"></asp:Label>
 
                     <br />
-                    <br />
+                  
 
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                         <ContentTemplate>
@@ -108,7 +108,7 @@
                                 <cc1:TabPanel HeaderText="T-Registro" ID="panel1" runat="server">
                                     <ContentTemplate>
 
-                                        <fieldset style="overflow: auto; border-style: outset; border-width: thin; height: 80%; min-height: 375px; width: 97%; background-color: White">
+                                        <fieldset style="overflow: auto; /*border-style: outset;*/ border-width: thin; height: 80%; min-height: 375px; width: 97%; background-color: White">
                                             <table width="100%">
                                                 <tr>
                                                     <td width="50"></td>
@@ -146,7 +146,7 @@
                                                     </td>
                                                     <td class="style1">
                                                         <asp:Button ID="btnGenerar" runat="server" Text="Generar"
-                                                            OnClick="btnGenerar_Click" CssClass="submit"
+                                                            OnClick="btnGenerar_Click" CssClass="submit EstiloGeneralBoton btn-nuevo"
                                                             OnClientClick="limpiaMSJ();" ToolTip="Sirve Para Generar Archivos Planos" />
                                                         <cc1:ConfirmButtonExtender ID="btnGenerar_ConfirmButtonExtender" runat="server"
                                                             ConfirmText="Desea Generar el Archivo???" Enabled="True"
@@ -163,7 +163,7 @@
                                 <cc1:TabPanel HeaderText="Archivos Plame" ID="TabPanel1" runat="server">
                                     <ContentTemplate>
 
-                                        <fieldset style="overflow: auto; border-style: outset; border-width: thin; height: 80%; min-height: 375px; width: 97%; background-color: White">
+                                        <fieldset style="overflow: auto; /*border-style: outset;*/ border-width: thin; height: 80%; min-height: 375px; width: 97%; background-color: White">
 
                                             <table width="100%">
                                                 <tr>
@@ -199,7 +199,7 @@
                                                     </td>
                                                     <td class="style1">
                                                         <asp:Button ID="btnGenerarPlame" runat="server" Text="Generar"
-                                                            CssClass="submit"
+                                                            CssClass="submit EstiloGeneralBoton btn-nuevo"
                                                             ToolTip="Sirve Para Generar Archivos Plame" OnClick="btnGenerarPlame_Click" />
                                                         <cc1:ConfirmButtonExtender ID="ConfirmButtonExtender1" runat="server"
                                                             ConfirmText="Desea Generar el Archivo???" Enabled="True"
@@ -217,7 +217,7 @@
                                 <cc1:TabPanel HeaderText="Afp y Telecredito" ID="TabPanel2" runat="server">
                                     <ContentTemplate>
 
-                                        <fieldset style="overflow: auto; border-style: outset; border-width: thin; height: 80%; min-height: 375px; width: 97%; background-color: White;">
+                                        <fieldset style="overflow: auto; /*border-style: outset;*/ border-width: thin; height: 80%; min-height: 375px; width: 97%; background-color: White;">
 
                                             <table>
                                                 <tr>
@@ -281,7 +281,7 @@
                                                         <td></td>
                                                         <td>
                                                             <asp:Button ID="btnGenerarTelecredito" runat="server" Text="Generar"
-                                                                CssClass="submit" ToolTip="Sirve Para Generar Archivos Planos" OnClick="btnGenerarTelecredito_Click" />
+                                                                CssClass="submit EstiloGeneralBoton btn-nuevo" ToolTip="Sirve Para Generar Archivos Planos" OnClick="btnGenerarTelecredito_Click" />
                                                         </td>
 
                                                     </tr>

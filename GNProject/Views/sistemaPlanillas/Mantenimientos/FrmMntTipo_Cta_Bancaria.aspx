@@ -13,10 +13,9 @@
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; */
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
 
-    <br />
+    
   <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE TIPO DE CUENTA BANCARIA" CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+    
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
@@ -43,7 +42,7 @@
                 </td>
                 <td>
                     <asp:Button ID="btnListar" runat="server" Text="Listar" 
-                onclick="btnListar_Click" CssClass="submit" />
+                onclick="btnListar_Click" CssClass="submit EstiloGeneralBoton" />
                 </td>
             </tr>
         </table>

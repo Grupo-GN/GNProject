@@ -19,25 +19,24 @@
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-<div class="tituloPagina">
+<div class="miTitulo">
     MANTENIMIENTO DE COMPAÑIAS EXTERNAS
 </div>
 
-<br />
-<br />
+
 
 <table>
     <tr>
         <td>
             <asp:Button ID="btnNuevo" runat="server" onclick="btnNuevo_Click" 
-                Text="Nuevo" />
+                Text="Nuevo" CssClass="EstiloGeneralBoton btn-nuevo" />
         </td>
         <td colspan="2" align="center">
             <asp:Button ID="btnGrabar" runat="server" onclick="btnGrabar_Click" 
-                Text="Grabar" ValidationGroup="ValidaGraba" />
+                Text="Grabar" ValidationGroup="ValidaGraba" CssClass="EstiloGeneralBoton" />
             &nbsp;
             <asp:Button ID="btnActualizar" runat="server" onclick="btnActualizar_Click"
-                Text="Actualizar" ValidationGroup="ValidaGraba" />
+                Text="Actualizar" ValidationGroup="ValidaGraba" CssClass="EstiloGeneralBoton" />
         </td>
         <td>
             &nbsp;</td>
@@ -66,7 +65,7 @@
     </table>
 </div>
 
-<div style="overflow: auto; width: 650px; ">
+<div style="overflow: auto; /*width: 650px;*/ ">
     <table class="gridSmallCabecera">
         <tr>
             <th width="58px"></th>
@@ -76,7 +75,7 @@
         </tr>
     </table>
 </div>
-        <div style="overflow: auto; width: 650px; height: 350px; border:solid 0px;">
+        <div style="overflow: auto; /*width: 650px;*/ height: 350px; border:solid 0px;">
             <asp:GridView ID="grvCompania_Externa" runat="server"
                 ShowHeader="false"
                 AutoGenerateColumns="False" CellPadding="4" CssClass="gridSmall" 

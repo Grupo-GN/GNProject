@@ -72,7 +72,7 @@
     <tr>
     <td style="width:50%;" valign="middle">
      <asp:Label ID="Label9" runat="server" 
-    Text="MANTENIMIENTO DE PLAN DE CUENTAS" CssClass="miTitulo" Width="300px"></asp:Label>   
+    Text="MANTENIMIENTO DE PLAN DE CUENTAS" CssClass="miTitulo" Width="100%"></asp:Label>   
     </td>
       <td style="width:50%;" align="right" valign="bottom">
        <asp:Panel ID="Panel1" runat="server" CssClass="elPanel">
@@ -119,7 +119,7 @@
                 <asp:TextBox ID="txtFindDescrip" runat="server" CssClass="miTextBox"></asp:TextBox>
             </td>
             <td>
-                <asp:Button ID="btnFind" runat="server" Text="Buscar" CssClass="submit"
+                <asp:Button ID="btnFind" runat="server" Text="Buscar" CssClass="submit EstiloGeneralBoton"
                 ToolTip="Digite la Descripcion y de Click en Buscar" onclick="btnFind_Click"/>
             </td>
     </tr>

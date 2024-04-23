@@ -15,10 +15,10 @@
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
-    <br />
+
     <asp:Label ID="Label9" runat="server" Text="VERIFICACION DE FORMULAS" CssClass="miTitulo"></asp:Label>
     <br />
-    <br />
+
    <asp:UpdatePanel runat="server" ID="UpdatePanel1">
         <ContentTemplate>
             

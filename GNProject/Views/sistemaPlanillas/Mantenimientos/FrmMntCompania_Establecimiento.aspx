@@ -18,7 +18,7 @@
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-<div class="tituloPagina">
+<div class="miTitulo">
     MANTENIMIENTO DE ESTABLECIMIENTOS
 </div>
 
@@ -39,17 +39,17 @@
             </td>
             <td>
                 <asp:Button ID="btnListar" runat="server" Text="Listar" 
-                    onclick="btnListar_Click" />
+                    onclick="btnListar_Click" CssClass="EstiloGeneralBoton" />
             </td>
             <td>
                 <asp:Button ID="btnNuevo" runat="server" onclick="btnNuevo_Click" 
-                    Text="Nuevo" />
+                    Text="Nuevo" CssClass="EstiloGeneralBoton btn-nuevo" />
             </td>
         </tr>
     </table>
 </div>
 
-<div style="overflow: auto; width: 610px; ">
+<div style="overflow: auto; /*width: 610px;*/ ">
     <table class="gridSmallCabecera">
         <tr>
             <th width="58px"></th>
@@ -59,7 +59,7 @@
     </table>
 </div>
     
-        <div style="overflow: auto; width: 610px; height: 400px; border:solid 0px;">
+        <div style="overflow: auto; /*width: 610px;*/ height: 400px; border:solid 0px;">
             <asp:GridView ID="grvCompania_Establecimiento" runat="server" 
                 ShowHeader="false"
                 AutoGenerateColumns="False" CellPadding="4" CssClass="gridSmall" 

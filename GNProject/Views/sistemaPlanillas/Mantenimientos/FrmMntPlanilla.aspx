@@ -17,12 +17,11 @@
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ 
             min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
-    <br />
+    
     
     <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE PLANILLAS" 
     CssClass="miTitulo"></asp:Label>
-    <br />
-    <br />
+    
     
          <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
@@ -49,10 +48,10 @@
                                             <asp:TextBox ID="txtPlanillaBuscar" CssClass="miTextbox" Width="300px" runat="server"></asp:TextBox>
                                         </td>
                                         <td>
-                                            <asp:Button ID="btnListar" runat="server" Text="Listar" CssClass="submit" OnClick="btnListar_Click" />
+                                            <asp:Button ID="btnListar" runat="server" Text="Listar" CssClass="submit EstiloGeneralBoton" OnClick="btnListar_Click" />
                                         </td>
                                         <td>
-                                            <asp:Button ID="btnNuevo" runat="server" OnClick="btnNuevo_Click" CssClass="submit"
+                                            <asp:Button ID="btnNuevo" runat="server" OnClick="btnNuevo_Click" CssClass="submit EstiloGeneralBoton btn-nuevo"
                                                 Text="Nuevo" />
                                         </td>
                                     </tr>
@@ -202,10 +201,10 @@
                             <tr>
                                 <td colspan="2" align="center">
                                     <asp:Button ID="btnGrabar" runat="server" OnClick="btnGrabar_Click" Text="Grabar"
-                                        ValidationGroup="ValidaGraba" />
+                                        ValidationGroup="ValidaGraba" CssClass="submit EstiloGeneralBoton" />
                                     &nbsp;
                                     <asp:Button ID="btnActualizar" runat="server" OnClick="btnActualizar_Click" Text="Actualizar"
-                                        ValidationGroup="ValidaGraba" />
+                                        ValidationGroup="ValidaGraba" CssClass="submit EstiloGeneralBoton" />
                                 </td>
                                 <td>
                                     &nbsp;

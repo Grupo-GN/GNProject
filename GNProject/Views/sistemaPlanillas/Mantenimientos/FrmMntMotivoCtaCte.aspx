@@ -5,10 +5,9 @@
     <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
 
     <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;/*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
-        <br />
+        
         <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE MOTIVOS" CssClass="miTitulo"></asp:Label>
-        <br />
-        <br />
+        
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <fieldset>
@@ -20,7 +19,7 @@
                             <td style="width:70px;"><label class="miLabel">Descripción : </label></td>
                             <td>
                                 <asp:TextBox ID="txtbuscar" runat="server" Width="280px" CssClass="txt"></asp:TextBox>&nbsp;&nbsp;
-                                <asp:Button ID="btnBuscar" runat="server" CssClass="btn" onclick="btnBuscar_Click" Text="Buscar" />
+                                <asp:Button ID="btnBuscar" runat="server" CssClass="EstiloGeneralBoton" onclick="btnBuscar_Click" Text="Buscar" />
                             </td>
 
                         </tr>

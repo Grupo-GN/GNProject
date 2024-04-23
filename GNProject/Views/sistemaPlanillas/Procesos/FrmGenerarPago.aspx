@@ -119,12 +119,12 @@
                     <%--@001 F--%>
                     <tr>
                         <td>
-                            <asp:Button ID="btnBuscar" runat="server" CssClass="submit" OnClick="btnBuscar_Click" Text="Buscar" />
+                            <asp:Button ID="btnBuscar" runat="server" CssClass="submit EstiloGeneralBoton btn-buscar" OnClick="btnBuscar_Click" Text="Buscar" />
                             &nbsp;</td>
                         <td>
                             <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
                                 <ContentTemplate>--%>
-                                    <asp:Button ID="btnGenerar" runat="server" CssClass="submit" OnClick="btnGenerar_Click" OnClientClick="return confirm('¿Está seguro(a) de continuar?')" Text="Generar" ToolTip="Sirve Para Generar Archivos Planos" />
+                                    <asp:Button ID="btnGenerar" runat="server" CssClass="submit EstiloGeneralBoton btn-nuevo" OnClick="btnGenerar_Click" OnClientClick="return confirm('¿Está seguro(a) de continuar?')" Text="Generar" ToolTip="Sirve Para Generar Archivos Planos" />
                                 <%--</ContentTemplate>
                                 <Triggers>
                                     <asp:PostBackTrigger ControlID="btnGenerar" />
@@ -133,7 +133,7 @@
                         </td>
                         <td>&nbsp;</td>
                         <td colspan="2" style="text-align: right;">
-                            <asp:Button ID="btnobs" runat="server" CssClass="submit" OnClick="btnobs_Click" OnClientClick="return confirm('¿Está seguro(a) de remplazar la información?')" Text="Reemplazar Observaciones" />
+                            <asp:Button ID="btnobs" runat="server" CssClass="submit EstiloGeneralBoton" OnClick="btnobs_Click" OnClientClick="return confirm('¿Está seguro(a) de remplazar la información?')" Text="Reemplazar Observaciones" />
                         </td>
                         <td>
                             <asp:TextBox ID="txtobstodos" runat="server" MaxLength="250"></asp:TextBox>

@@ -11,18 +11,17 @@
         
         <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px;
            /*border-right: solid 1px black; border-left: solid 1px black; border-bottom: solid 1px black; */
-            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; border-top: solid 1px black;">
+            min-height:500px; overflow:hidden; border-radius:8px 8px 0px 0px; /*border-top: solid 1px black;*/">
     
     <br />
     
 <asp:Label ID="Label1" runat="server" Text="PARAMETROS POR COMPAÑIA" CssClass="miTitulo" ></asp:Label> 
-<br />
-<br />
+
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-<fieldset style="overflow:auto; border-style: outset; border-width: thin; height:90%; min-height:410px; width: 97%; background-color:White">
+<fieldset style="overflow:auto; /*border-style: outset;*/ border-width: thin; height:90%; min-height:410px; width: 97%; background-color:White">
 
 <table>
 <tr>
@@ -50,7 +49,7 @@
                         ValidationGroup="ValidaGrabaVac" Width="25px" onclick="btnGrabar_Click" />
                 </td>
                 <td>
-                    <asp:Button ID="btnGenerar" runat="server" Text="Generar" CssClass="submit"
+                    <asp:Button ID="btnGenerar" runat="server" Text="Generar" CssClass="submit EstiloGeneralBoton"
                         onclick="btnGenerar_Click" />
                 </td>
             </tr>

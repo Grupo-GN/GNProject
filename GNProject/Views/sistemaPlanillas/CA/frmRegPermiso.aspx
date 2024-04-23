@@ -5,13 +5,15 @@
     <link href="../Controles/miEstilo.css" rel="stylesheet" type="text/css" />
     <link href="../jqueriUI/css/custom-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
     <link href="../css/StyleWilder.css" rel="stylesheet" type="text/css" />
-    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; border-right: solid 1px black;border-left: solid 1px black; border-bottom: solid 1px black; min-height: 500px;overflow: hidden; border-radius: 8px 8px 0px 0px; border-top: solid 1px black;">
+
+    <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
+    <fieldset style="width: 100%; background-color: White; margin: 0px 0px 0px 0px; /*border-right: solid 1px black;border-left: solid 1px black; border-bottom: solid 1px black;*/ min-height: 500px;overflow: hidden; border-radius: 8px 8px 0px 0px; /*border-top: solid 1px black;*/">
         <fieldset>
         <input type="hidden" id="empresaSession" value="<%= Session["EmpresaPlanilla"] %>" />
         <input type="hidden" id="periodoSession" value="<%= Session["PeriodoPlanilla"] %>" />
         <input type="hidden" id="planillaSession" value="<%= Session["planillaPlanilla"] %>" />
         <input type="hidden" id="anioSession" value="<%= Session["anioPlanilla"] %>" />
-            <legend>Filtar</legend>
+            <legend class="miTitulo">Filtar</legend>
             <table style="border-collapse:collapse;width:100%;">
                 <tr>
                     <td style="width:120px;">Localidad:</td>

@@ -9,9 +9,8 @@
         <tr>
             <td>
 
-                    <asp:Label ID="Label1" runat="server" Text="CONSULTAR CONTRATOS" CssClass="title"></asp:Label>
-                    <br />
-                    <br />
+                    <asp:Label ID="Label1" runat="server" Text="CONSULTAR CONTRATOS" CssClass="miTitulo"></asp:Label>
+                    
 
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="true">
                         <ContentTemplate>

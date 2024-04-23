@@ -112,7 +112,7 @@
                                 <tr>
                                     <td style="width: 50%;" valign="middle">
                                         <asp:Label ID="Label9" runat="server" Text="MANTENIMIENTO DE CONCEPTOS" CssClass="miTitulo"
-                                            Width="300px"></asp:Label>
+                                            Width="100%"></asp:Label>
                                     </td>
                                     <td style="width: 50%;" align="right" valign="bottom">
                                         <asp:Panel ID="Panel1" runat="server" CssClass="elPanel">
@@ -158,7 +158,7 @@
                                                     <asp:TextBox ID="txtConceptosBuscar" runat="server" CssClass="miTextBox"></asp:TextBox>
                                                 </td>
                                                 <td>
-                                                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="submit" OnClick="btnBuscar_Click"
+                                                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="submit EstiloGeneralBoton btn-buscar" OnClick="btnBuscar_Click"
                                                         ToolTip="Digite un Concepto y de Click en Buscar" />
                                                 </td>
                                             </tr>

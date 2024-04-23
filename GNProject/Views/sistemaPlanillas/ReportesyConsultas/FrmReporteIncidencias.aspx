@@ -9,7 +9,7 @@
       
 
 <link href="../Styles/EstiloKm.css" rel="stylesheet" type="text/css" />
-    <link href="../Controles/miEstilo.css" rel="stylesheet" type="text/css" />   
+    <link href="../Controles/miEstilo.css" rel="stylesheet" type="text/css" />
 
     <link href="../Styles/nuevoEstiloPlanilla.css" rel="stylesheet" type="text/css" />
 <table align="center" width="100%">

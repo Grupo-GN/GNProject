@@ -25,7 +25,7 @@
         </table>
     </fieldset>
         <label id="lblError" class="lblError"></label>
-        <div id="TabContainer" style="height:415px;width:100%;">
+        <div id="TabContainer" style="/*height:415px;*/width:100%;">
             <ul>
                 <li><a href="#Tab1">Lista</a></li>
                 <li><a href="#Tab2">Permiso</a></li>           

@@ -18,12 +18,11 @@
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
     
-<div class="tituloPagina">
+<div class="miTItulo">
     MANTENIMIENTO DE ESTABLECIMIENTOS EXTERNOS
 </div>
 
-<br />
-<br />
+
 
 <cc1:TabContainer ID="TabContainer1" Height="470px" runat="server" 
         ActiveTabIndex="0">
@@ -39,11 +38,11 @@
             </td>
             <td>
                 <asp:Button ID="btnListar" runat="server" Text="Listar" 
-                    onclick="btnListar_Click" />
+                    onclick="btnListar_Click" CssClass="EstiloGeneralBoton" />
             </td>
             <td>
                 <asp:Button ID="btnNuevo" runat="server" onclick="btnNuevo_Click" 
-                    Text="Nuevo" />
+                    Text="Nuevo" CssClass="EstiloGeneralBoton btn-nuevo" />
             </td>
         </tr>
     </table>
@@ -165,10 +164,10 @@
             <tr>
                 <td colspan="2" align="center">
                     <asp:Button ID="btnGrabar" runat="server" onclick="btnGrabar_Click" 
-                        Text="Grabar" ValidationGroup="ValidaGraba" />
+                        Text="Grabar" ValidationGroup="ValidaGraba" CssClass="EstiloGeneralBoton btn-nuevo" />
                     &nbsp;
                     <asp:Button ID="btnActualizar" runat="server" onclick="btnActualizar_Click"
-                        Text="Actualizar" ValidationGroup="ValidaGraba" />
+                        Text="Actualizar" ValidationGroup="ValidaGraba" CssClass="EstiloGeneralBoton" />
                 </td>
                 <td>
                     &nbsp;</td>
