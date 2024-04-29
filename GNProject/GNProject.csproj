@@ -55,8 +55,9 @@
     <Reference Include="ciloci.FormulaEngine, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ciloci.FormulaEngine.1.2.0\lib\net461\ciloci.FormulaEngine.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrystalDecisions.CrystalReports.Engine.1.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Engine.13.0.4000\lib\net40\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalReports.ReportAppServer.ClientDoc.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
@@ -105,14 +106,16 @@
       <HintPath>..\packages\CrystalReports.ReportAppServer.XmlSerialize.13.0.4003\lib\net40\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrystalDecisions.ReportSource.1.0.0\lib\CrystalDecisions.ReportSource.dll</HintPath>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ReportSource.13.0.4000\lib\net40\CrystalDecisions.ReportSource.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <HintPath>..\packages\CrystalReports.Shared.13.0.4001\lib\net40\CrystalDecisions.Shared.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrystalDecisions.Web.1.0.1\lib\CrystalDecisions.Web.dll</HintPath>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.Web.13.0.4000\lib\net40\CrystalDecisions.Web.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
@@ -1063,7 +1066,13 @@
     <Content Include="Views\sistemaPlanillas\ReportesyConsultas\scripts\ScriptReporteIncidencias.js" />
     <Content Include="Views\sistemaPlanillas\ReportesyConsultas\scripts\ScriptReportePlanilla.js" />
     <Content Include="Views\sistemaPlanillas\ReportesyConsultas\scripts\Script_ExportExcel.js" />
+    <Content Include="Views\sistemaPlanillas\Reportes\frmPlanillas.aspx" />
+    <Content Include="Views\sistemaPlanillas\Reportes\FrmPreview.aspx" />
     <Content Include="Views\sistemaPlanillas\Reportes\FrmPrint.aspx" />
+    <Content Include="Views\sistemaPlanillas\Reportes\frmProvisiones.aspx" />
+    <Content Include="Views\sistemaPlanillas\Reportes\FrmRepContratados.aspx" />
+    <Content Include="Views\sistemaPlanillas\Reportes\FrmRptContratados.aspx" />
+    <Content Include="Views\sistemaPlanillas\Reportes\PrintAsiento.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronico.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx" />
@@ -3469,6 +3478,12 @@
       <DependentUpon>crpCertifTrabajo.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\crpCertifTrabajoV2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpCertifTrabajoV2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Reportes\crpDeterminacionDeudaPDT.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -3529,12 +3544,47 @@
       <DependentUpon>crpPrueba.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\frmPlanillas.aspx.cs">
+      <DependentUpon>frmPlanillas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\frmPlanillas.aspx.designer.cs">
+      <DependentUpon>frmPlanillas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmPreview.aspx.cs">
+      <DependentUpon>FrmPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmPreview.aspx.designer.cs">
+      <DependentUpon>FrmPreview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\Reportes\FrmPrint.aspx.cs">
       <DependentUpon>FrmPrint.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Reportes\FrmPrint.aspx.designer.cs">
       <DependentUpon>FrmPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\frmProvisiones.aspx.cs">
+      <DependentUpon>frmProvisiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\frmProvisiones.aspx.designer.cs">
+      <DependentUpon>frmProvisiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmRepContratados.aspx.cs">
+      <DependentUpon>FrmRepContratados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmRepContratados.aspx.designer.cs">
+      <DependentUpon>FrmRepContratados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmRptContratados.aspx.cs">
+      <DependentUpon>FrmRptContratados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\FrmRptContratados.aspx.designer.cs">
+      <DependentUpon>FrmRptContratados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Reportes\Listado_ONP.cs">
       <AutoGen>True</AutoGen>
@@ -3607,6 +3657,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Plla_Aport_Previs_adic.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\PrintAsiento.aspx.cs">
+      <DependentUpon>PrintAsiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\Reportes\PrintAsiento.aspx.designer.cs">
+      <DependentUpon>PrintAsiento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\Reportes\Provision_CTS.cs">
       <AutoGen>True</AutoGen>
@@ -4028,6 +4085,10 @@
     <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpCertifTrabajo.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crpCertifTrabajo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpCertifTrabajoV2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpCertifTrabajoV2.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\sistemaPlanillas\Reportes\crpDeterminacionDeudaPDT.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -79,7 +79,7 @@
             </asp:ScriptManager>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-black" >
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3 slow-link" style="color:white" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand ps-3 slow-link" style="color:white" href="index.html">GN PROJECT</a>
             <!-- Sidebar Toggle-->
             <button runat="server" class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 slow-link text-warning"  id="sidebarToggle" href="#!"><i class="fas fa-bars" style="color:white"></i></button>
             <!-- Navbar Search-->
@@ -429,6 +429,7 @@
                   RRHH
                </button>
                   <ul class="dropdown-menu qwe">
+                      <asp:Literal ID="MenuHAdminMant" runat="server"></asp:Literal>  
                       <asp:Literal ID="MenuHCtrlDoc" runat="server"></asp:Literal>    
                       <asp:Literal ID="MenuHCtrlAsis" runat="server"></asp:Literal>    
                       <asp:Literal ID="MenuHPortal" runat="server"></asp:Literal>    
@@ -687,6 +688,9 @@
                </div>                                                                                                                                                              
            </nav>                                                                                                                                                                  
        </div>
+    <div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                  
+        <asp:Literal ID="MenuAdminMant" runat="server"></asp:Literal> 
+    </div>     
 	<div class="collapse" id="collapsePages6a" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">                                                                  
         <asp:Literal ID="MenuPlanillas" runat="server"></asp:Literal> 
        </div>                                                                                                                                                                      

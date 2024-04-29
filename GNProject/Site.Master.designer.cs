@@ -78,6 +78,15 @@ namespace GNProject
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hnav;
 
         /// <summary>
+        /// Control MenuHAdminMant.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal MenuHAdminMant;
+
+        /// <summary>
         /// Control MenuHCtrlDoc.
         /// </summary>
         /// <remarks>
@@ -148,6 +157,15 @@ namespace GNProject
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl MenuAdmin;
+
+        /// <summary>
+        /// Control MenuAdminMant.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal MenuAdminMant;
 
         /// <summary>
         /// Control MenuPlanillas.

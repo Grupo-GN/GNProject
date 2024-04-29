@@ -153,16 +153,18 @@ namespace GNProject
             MenuCtrlDoc.Text = AddMenu(oMenuBEList, 1);
             MenuCtrlAsis.Text = AddMenu(oMenuBEList, 2);
             MenuPortal.Text = AddMenu(oMenuBEList, 3);
-            MenuPlanillas.Text = AddMenu(oMenuBEList, 4);
+            MenuAdminMant.Text = AddMenu(oMenuBEList, 4);
             MenuCapacitacion.Text = AddMenu(oMenuBEList, 5);
             MenuIncidencia.Text = AddMenu(oMenuBEList, 6);
+            MenuPlanillas.Text = AddMenu(oMenuBEList, 7);
 
             MenuHCtrlDoc.Text = AddMenuH(oMenuBEList, 1);
             MenuHCtrlAsis.Text = AddMenuH(oMenuBEList, 2);
             MenuHPortal.Text = AddMenuH(oMenuBEList, 3);
-            MenuHPlanillas.Text = AddMenuH(oMenuBEList, 4);
+            MenuHPlanillas.Text = AddMenuH(oMenuBEList, 7);
             MenuHCapacitacion.Text = AddMenuH(oMenuBEList, 5);
             MenuHIncidencia.Text = AddMenuH(oMenuBEList, 6);
+            MenuHAdminMant.Text = AddMenu(oMenuBEList, 4);
 
 
         }
