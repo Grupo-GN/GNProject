@@ -4980,7 +4980,12 @@ textarea.form-control-lg {
             border-bottom-right-radius: var(--bs-accordion-border-radius);
             border-bottom-left-radius: var(--bs-accordion-border-radius);
         }
-
+a.nav-link.slow-link:not(.collapsed) {
+    background-color: #429ace1f;
+}
+a.nav-link.active:not(.collapsed) {
+    background-color: #429ace1f;
+}
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
 }
@@ -12596,6 +12601,7 @@ body {
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
                 position: relative;
+                font-size:15px;
             }
 
                 .sb-sidenav .sb-sidenav-menu .nav .nav-link .sb-nav-link-icon {
@@ -12647,8 +12653,13 @@ body {
         }
 
         .sb-sidenav-dark .sb-sidenav-menu .nav-link:hover {
-            color: #fff;
+            color: #1f3485 !important;
+            background-color: #429ace1f !important;
         }
+
+a.nav-link.sub:not(.collapsed) {
+    background-color: #429ace1f !important;
+}
 
         .sb-sidenav-dark .sb-sidenav-menu .nav-link.active {
             color: #fff;

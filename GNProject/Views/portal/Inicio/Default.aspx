@@ -72,11 +72,7 @@
             </div>
             
     <div id="contenedor" >
-                <div id="Welcome" style="width:100%;height:200px;">
-                    <div id="textWelcome" style="width:100%; text-align:center;top:50px;">
-                        
-                    </div>
-                </div>
+             
                 <div id="contenidos" >
                     <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
                         <tr>

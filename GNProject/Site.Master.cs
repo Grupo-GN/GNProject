@@ -23,10 +23,10 @@ namespace GNProject
            
             if (!Page.IsPostBack)
             {
-                ucFiltros1.fc_carga_Filtros();
                 int tipomenu;
                 if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
+                    ucFiltros1.fc_carga_Filtros();
                     lblNomUsuario_MP.Text = ClaseGlobal.Get_nombrecompleto_usuario();
                     this.initIncidenciaSession();
                     if (Session["tipomenu"] != null)
@@ -183,7 +183,7 @@ namespace GNProject
                     html_menu += $"<nav class=\"sb-sidenav-menu-nested nav accordion\" id=\"sidenavAccordionPages{ent.id_menu}\">";
 
                     // Inicio del enlace colapsable
-                    html_menu += $"<a class=\"nav-link collapsed\" href=\"#\" data-bs-toggle=\"collapse\" data-bs-target=\"#pagesCollapseAuthf4{ent.id_menu}\" aria-expanded=\"false\" aria-controls=\"pagesCollapseAuth{ent.id_menu}\">";
+                    html_menu += $"<a class=\"nav-link collapsed sub\" href=\"#\" data-bs-toggle=\"collapse\" data-bs-target=\"#pagesCollapseAuthf4{ent.id_menu}\" aria-expanded=\"false\" aria-controls=\"pagesCollapseAuth{ent.id_menu}\">";
                     html_menu += ent.tx_descripcion;
 
                     // Flecha indicadora de colapso
@@ -227,7 +227,7 @@ namespace GNProject
                     {
                         // Si el elemento actual tiene hijos, entonces es un enlace desplegable
                         var subMenuId = "submenu_" + ent.id_menu;
-                        html_menu += $"<a class=\"nav-link collapsed\" href=\"#\" data-bs-toggle=\"collapse\" data-bs-target=\"#{subMenuId}\" aria-expanded=\"false\" aria-controls=\"{subMenuId}\">";
+                        html_menu += $"<a class=\"nav-link collapsed sub\" href=\"#\" data-bs-toggle=\"collapse\" data-bs-target=\"#{subMenuId}\" aria-expanded=\"false\" aria-controls=\"{subMenuId}\">";
                         html_menu += $"{ent.tx_descripcion}<div class=\"sb-sidenav-collapse-arrow\"><i class=\"fas fa-angle-down\"></i></div></a>";
 
                         // Abrir el contenedor del submenú

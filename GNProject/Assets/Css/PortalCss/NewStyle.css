@@ -412,7 +412,7 @@ input[type="file"] {
 
 /**Estilo contenidos del portal*/
 #contenidos {
-    position: absolute !important;
+    /*position: absolute !important;*/
     top: 150px !important;
     width:100%;
 }

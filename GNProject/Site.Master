@@ -565,7 +565,7 @@
            </nav>                                                                                                                                                                  
        </div> 
 	</div>                                                                                                                                                                     
-       <a class="nav-link slow-link" href="index.html">                                                                                                                            
+       <a class="nav-link slow-link" href="index.html" style="background-color:#f8f9fd">                                                                                                                            
            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt text-info"></i></div>                                                                                     
            Dashboard                                                                                                                                                               
        </a>                                                                                                                                                                        
@@ -898,6 +898,15 @@
         if (menuHTML) {
             document.getElementById('nav11').innerHTML = menuHTML;
         }
+        var currentPath = window.location.pathname; // Esto obtiene la ruta actual de la página
+        $('.nav-link').each(function () { // Iterar sobre cada enlace del menú
+            var linkPath = new URL($(this).attr('href'), window.location.origin).pathname;
+            if (currentPath === linkPath) { // Comparar la ruta del enlace con la ruta actual
+                $(this).addClass('active'); // Añadir clase 'active'
+            } else {
+                $(this).removeClass('active'); // Remover clase 'active', en caso de que otra página se cargue
+            }
+        });
     }
 
     // Evento que se dispara cuando se carga la página
