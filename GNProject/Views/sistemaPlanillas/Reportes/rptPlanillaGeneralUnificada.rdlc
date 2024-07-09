@@ -8,6 +8,40 @@
             <TablixCornerRow>
               <TablixCornerCell>
                 <CellContents>
+                  <Textbox Name="Textbox1">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <Style>
+                              <FontSize>12pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox1</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
+              <TablixCornerCell>
+                <CellContents>
                   <Textbox Name="Textbox62">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
@@ -751,6 +785,41 @@
               </TablixCornerCell>
             </TablixCornerRow>
             <TablixCornerRow>
+              <TablixCornerCell>
+                <CellContents>
+                  <Textbox Name="Textbox9">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox9</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
               <TablixCornerCell>
                 <CellContents>
                   <Textbox Name="Textbox63">
@@ -1770,6 +1839,41 @@
             <TablixCornerRow>
               <TablixCornerCell>
                 <CellContents>
+                  <Textbox Name="Textbox26">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value />
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox26</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
+              <TablixCornerCell>
+                <CellContents>
                   <Textbox Name="Textbox64">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
@@ -2785,6 +2889,42 @@
               </TablixCornerCell>
             </TablixCornerRow>
             <TablixCornerRow>
+              <TablixCornerCell>
+                <CellContents>
+                  <Textbox Name="Textbox37">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Planilla</Value>
+                            <Style>
+                              <FontFamily>Calibri</FontFamily>
+                              <FontSize>8pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox37</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>WhiteSmoke</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
               <TablixCornerCell>
                 <CellContents>
                   <Textbox Name="Textbox68">
@@ -5025,14 +5165,14 @@
                       <TablixHeader>
                         <Size>2.5cm</Size>
                         <CellContents>
-                          <Textbox Name="Mes">
+                          <Textbox Name="Textbox55">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!Mes.Value</Value>
+                                    <Value>=IIf(Fields!Mes.Value = Fields!Periodo.Value,"EMPLEADO","OBRERO")</Value>
                                     <Style>
                                       <FontFamily>Calibri</FontFamily>
                                       <FontSize>8pt</FontSize>
@@ -5042,7 +5182,7 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Mes</rd:DefaultName>
+                            <rd:DefaultName>Textbox55</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Style>Solid</Style>
@@ -5060,14 +5200,14 @@
                           <TablixHeader>
                             <Size>2.5cm</Size>
                             <CellContents>
-                              <Textbox Name="Periodo1">
+                              <Textbox Name="Mes">
                                 <CanGrow>true</CanGrow>
                                 <KeepTogether>true</KeepTogether>
                                 <Paragraphs>
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>=Fields!Periodo.Value</Value>
+                                        <Value>=Fields!Mes.Value</Value>
                                         <Style>
                                           <FontFamily>Calibri</FontFamily>
                                           <FontSize>8pt</FontSize>
@@ -5077,7 +5217,7 @@
                                     <Style />
                                   </Paragraph>
                                 </Paragraphs>
-                                <rd:DefaultName>Periodo1</rd:DefaultName>
+                                <rd:DefaultName>Mes</rd:DefaultName>
                                 <Style>
                                   <Border>
                                     <Style>Solid</Style>
@@ -5093,16 +5233,16 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>1cm</Size>
+                                <Size>2.5cm</Size>
                                 <CellContents>
-                                  <Textbox Name="Textbox3">
+                                  <Textbox Name="Periodo1">
                                     <CanGrow>true</CanGrow>
                                     <KeepTogether>true</KeepTogether>
                                     <Paragraphs>
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>=RunningValue(Fields!Nro_Doc.Value, CountDistinct, "GrupoPeriodo")</Value>
+                                            <Value>=Fields!Periodo.Value</Value>
                                             <Style>
                                               <FontFamily>Calibri</FontFamily>
                                               <FontSize>8pt</FontSize>
@@ -5112,7 +5252,7 @@
                                         <Style />
                                       </Paragraph>
                                     </Paragraphs>
-                                    <rd:DefaultName>Textbox3</rd:DefaultName>
+                                    <rd:DefaultName>Periodo1</rd:DefaultName>
                                     <Style>
                                       <Border>
                                         <Style>Solid</Style>
@@ -5128,16 +5268,16 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>1.5cm</Size>
+                                    <Size>1cm</Size>
                                     <CellContents>
-                                      <Textbox Name="Nro_Doc">
+                                      <Textbox Name="Textbox3">
                                         <CanGrow>true</CanGrow>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Fields!Nro_Doc.Value</Value>
+                                                <Value>=RunningValue(Fields!Nro_Doc.Value, CountDistinct, "GrupoPeriodo")</Value>
                                                 <Style>
                                                   <FontFamily>Calibri</FontFamily>
                                                   <FontSize>8pt</FontSize>
@@ -5147,7 +5287,7 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Nro_Doc</rd:DefaultName>
+                                        <rd:DefaultName>Textbox3</rd:DefaultName>
                                         <Style>
                                           <Border>
                                             <Style>Solid</Style>
@@ -5163,16 +5303,16 @@
                                   <TablixMembers>
                                     <TablixMember>
                                       <TablixHeader>
-                                        <Size>4.99999cm</Size>
+                                        <Size>1.5cm</Size>
                                         <CellContents>
-                                          <Textbox Name="Nombre_Completo">
+                                          <Textbox Name="Nro_Doc">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!Nombre_Completo.Value</Value>
+                                                    <Value>=Fields!Nro_Doc.Value</Value>
                                                     <Style>
                                                       <FontFamily>Calibri</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5182,7 +5322,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Nombre_Completo</rd:DefaultName>
+                                            <rd:DefaultName>Nro_Doc</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>Solid</Style>
@@ -5198,16 +5338,16 @@
                                       <TablixMembers>
                                         <TablixMember>
                                           <TablixHeader>
-                                            <Size>2.49999cm</Size>
+                                            <Size>4.99999cm</Size>
                                             <CellContents>
-                                              <Textbox Name="Nro_cta">
+                                              <Textbox Name="Nombre_Completo">
                                                 <CanGrow>true</CanGrow>
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Fields!Nro_cta.Value</Value>
+                                                        <Value>=Fields!Nombre_Completo.Value</Value>
                                                         <Style>
                                                           <FontFamily>Calibri</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -5217,7 +5357,7 @@
                                                     <Style />
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Nro_cta</rd:DefaultName>
+                                                <rd:DefaultName>Nombre_Completo</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -5235,14 +5375,14 @@
                                               <TablixHeader>
                                                 <Size>2.49999cm</Size>
                                                 <CellContents>
-                                                  <Textbox Name="BANCOS">
+                                                  <Textbox Name="Nro_cta">
                                                     <CanGrow>true</CanGrow>
                                                     <KeepTogether>true</KeepTogether>
                                                     <Paragraphs>
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>=Fields!BANCOS.Value</Value>
+                                                            <Value>=Fields!Nro_cta.Value</Value>
                                                             <Style>
                                                               <FontFamily>Calibri</FontFamily>
                                                               <FontSize>8pt</FontSize>
@@ -5252,7 +5392,7 @@
                                                         <Style />
                                                       </Paragraph>
                                                     </Paragraphs>
-                                                    <rd:DefaultName>BANCOS</rd:DefaultName>
+                                                    <rd:DefaultName>Nro_cta</rd:DefaultName>
                                                     <Style>
                                                       <Border>
                                                         <Style>Solid</Style>
@@ -5270,14 +5410,14 @@
                                                   <TablixHeader>
                                                     <Size>2.49999cm</Size>
                                                     <CellContents>
-                                                      <Textbox Name="Nro_cta_cts">
+                                                      <Textbox Name="BANCOS">
                                                         <CanGrow>true</CanGrow>
                                                         <KeepTogether>true</KeepTogether>
                                                         <Paragraphs>
                                                           <Paragraph>
                                                             <TextRuns>
                                                               <TextRun>
-                                                                <Value>=Fields!Nro_cta_cts.Value</Value>
+                                                                <Value>=Fields!BANCOS.Value</Value>
                                                                 <Style>
                                                                   <FontFamily>Calibri</FontFamily>
                                                                   <FontSize>8pt</FontSize>
@@ -5287,7 +5427,7 @@
                                                             <Style />
                                                           </Paragraph>
                                                         </Paragraphs>
-                                                        <rd:DefaultName>Nro_cta_cts</rd:DefaultName>
+                                                        <rd:DefaultName>BANCOS</rd:DefaultName>
                                                         <Style>
                                                           <Border>
                                                             <Style>Solid</Style>
@@ -5305,14 +5445,14 @@
                                                       <TablixHeader>
                                                         <Size>2.49999cm</Size>
                                                         <CellContents>
-                                                          <Textbox Name="BancoCTS">
+                                                          <Textbox Name="Nro_cta_cts">
                                                             <CanGrow>true</CanGrow>
                                                             <KeepTogether>true</KeepTogether>
                                                             <Paragraphs>
                                                               <Paragraph>
                                                                 <TextRuns>
                                                                   <TextRun>
-                                                                    <Value>=Fields!BancoCTS.Value</Value>
+                                                                    <Value>=Fields!Nro_cta_cts.Value</Value>
                                                                     <Style>
                                                                       <FontFamily>Calibri</FontFamily>
                                                                       <FontSize>8pt</FontSize>
@@ -5322,7 +5462,7 @@
                                                                 <Style />
                                                               </Paragraph>
                                                             </Paragraphs>
-                                                            <rd:DefaultName>BancoCTS</rd:DefaultName>
+                                                            <rd:DefaultName>Nro_cta_cts</rd:DefaultName>
                                                             <Style>
                                                               <Border>
                                                                 <Style>Solid</Style>
@@ -5338,16 +5478,16 @@
                                                       <TablixMembers>
                                                         <TablixMember>
                                                           <TablixHeader>
-                                                            <Size>1.5cm</Size>
+                                                            <Size>2.49999cm</Size>
                                                             <CellContents>
-                                                              <Textbox Name="Fec_Ingreso">
+                                                              <Textbox Name="BancoCTS">
                                                                 <CanGrow>true</CanGrow>
                                                                 <KeepTogether>true</KeepTogether>
                                                                 <Paragraphs>
                                                                   <Paragraph>
                                                                     <TextRuns>
                                                                       <TextRun>
-                                                                        <Value>=Fields!Fec_Ingreso.Value</Value>
+                                                                        <Value>=Fields!BancoCTS.Value</Value>
                                                                         <Style>
                                                                           <FontFamily>Calibri</FontFamily>
                                                                           <FontSize>8pt</FontSize>
@@ -5357,7 +5497,7 @@
                                                                     <Style />
                                                                   </Paragraph>
                                                                 </Paragraphs>
-                                                                <rd:DefaultName>Fec_Ingreso</rd:DefaultName>
+                                                                <rd:DefaultName>BancoCTS</rd:DefaultName>
                                                                 <Style>
                                                                   <Border>
                                                                     <Style>Solid</Style>
@@ -5373,16 +5513,16 @@
                                                           <TablixMembers>
                                                             <TablixMember>
                                                               <TablixHeader>
-                                                                <Size>1.9973cm</Size>
+                                                                <Size>1.5cm</Size>
                                                                 <CellContents>
-                                                                  <Textbox Name="Fecha_ini_contrato">
+                                                                  <Textbox Name="Fec_Ingreso">
                                                                     <CanGrow>true</CanGrow>
                                                                     <KeepTogether>true</KeepTogether>
                                                                     <Paragraphs>
                                                                       <Paragraph>
                                                                         <TextRuns>
                                                                           <TextRun>
-                                                                            <Value>=Fields!Fecha_ini_contrato.Value</Value>
+                                                                            <Value>=Fields!Fec_Ingreso.Value</Value>
                                                                             <Style>
                                                                               <FontFamily>Calibri</FontFamily>
                                                                               <FontSize>8pt</FontSize>
@@ -5392,7 +5532,7 @@
                                                                         <Style />
                                                                       </Paragraph>
                                                                     </Paragraphs>
-                                                                    <rd:DefaultName>Fecha_ini_contrato</rd:DefaultName>
+                                                                    <rd:DefaultName>Fec_Ingreso</rd:DefaultName>
                                                                     <Style>
                                                                       <Border>
                                                                         <Style>Solid</Style>
@@ -5408,16 +5548,16 @@
                                                               <TablixMembers>
                                                                 <TablixMember>
                                                                   <TablixHeader>
-                                                                    <Size>2.18249cm</Size>
+                                                                    <Size>1.9973cm</Size>
                                                                     <CellContents>
-                                                                      <Textbox Name="Fecha_fin_contrato">
+                                                                      <Textbox Name="Fecha_ini_contrato">
                                                                         <CanGrow>true</CanGrow>
                                                                         <KeepTogether>true</KeepTogether>
                                                                         <Paragraphs>
                                                                           <Paragraph>
                                                                             <TextRuns>
                                                                               <TextRun>
-                                                                                <Value>=Fields!Fecha_fin_contrato.Value</Value>
+                                                                                <Value>=Fields!Fecha_ini_contrato.Value</Value>
                                                                                 <Style>
                                                                                   <FontFamily>Calibri</FontFamily>
                                                                                   <FontSize>8pt</FontSize>
@@ -5427,7 +5567,7 @@
                                                                             <Style />
                                                                           </Paragraph>
                                                                         </Paragraphs>
-                                                                        <rd:DefaultName>Fecha_fin_contrato</rd:DefaultName>
+                                                                        <rd:DefaultName>Fecha_ini_contrato</rd:DefaultName>
                                                                         <Style>
                                                                           <Border>
                                                                             <Style>Solid</Style>
@@ -5443,16 +5583,16 @@
                                                                   <TablixMembers>
                                                                     <TablixMember>
                                                                       <TablixHeader>
-                                                                        <Size>2.20896cm</Size>
+                                                                        <Size>2.18249cm</Size>
                                                                         <CellContents>
-                                                                          <Textbox Name="Fecha_Nacimiento">
+                                                                          <Textbox Name="Fecha_fin_contrato">
                                                                             <CanGrow>true</CanGrow>
                                                                             <KeepTogether>true</KeepTogether>
                                                                             <Paragraphs>
                                                                               <Paragraph>
                                                                                 <TextRuns>
                                                                                   <TextRun>
-                                                                                    <Value>=Fields!Fecha_Nacimiento.Value</Value>
+                                                                                    <Value>=Fields!Fecha_fin_contrato.Value</Value>
                                                                                     <Style>
                                                                                       <FontFamily>Calibri</FontFamily>
                                                                                       <FontSize>8pt</FontSize>
@@ -5462,7 +5602,7 @@
                                                                                 <Style />
                                                                               </Paragraph>
                                                                             </Paragraphs>
-                                                                            <rd:DefaultName>Fecha_Nacimiento</rd:DefaultName>
+                                                                            <rd:DefaultName>Fecha_fin_contrato</rd:DefaultName>
                                                                             <Style>
                                                                               <Border>
                                                                                 <Style>Solid</Style>
@@ -5478,16 +5618,16 @@
                                                                       <TablixMembers>
                                                                         <TablixMember>
                                                                           <TablixHeader>
-                                                                            <Size>2.49999cm</Size>
+                                                                            <Size>2.20896cm</Size>
                                                                             <CellContents>
-                                                                              <Textbox Name="Categoria">
+                                                                              <Textbox Name="Fecha_Nacimiento">
                                                                                 <CanGrow>true</CanGrow>
                                                                                 <KeepTogether>true</KeepTogether>
                                                                                 <Paragraphs>
                                                                                   <Paragraph>
                                                                                     <TextRuns>
                                                                                       <TextRun>
-                                                                                        <Value>=Fields!Categoria.Value</Value>
+                                                                                        <Value>=Fields!Fecha_Nacimiento.Value</Value>
                                                                                         <Style>
                                                                                           <FontFamily>Calibri</FontFamily>
                                                                                           <FontSize>8pt</FontSize>
@@ -5497,7 +5637,7 @@
                                                                                     <Style />
                                                                                   </Paragraph>
                                                                                 </Paragraphs>
-                                                                                <rd:DefaultName>Categoria</rd:DefaultName>
+                                                                                <rd:DefaultName>Fecha_Nacimiento</rd:DefaultName>
                                                                                 <Style>
                                                                                   <Border>
                                                                                     <Style>Solid</Style>
@@ -5515,14 +5655,14 @@
                                                                               <TablixHeader>
                                                                                 <Size>2.49999cm</Size>
                                                                                 <CellContents>
-                                                                                  <Textbox Name="Cargo">
+                                                                                  <Textbox Name="Categoria">
                                                                                     <CanGrow>true</CanGrow>
                                                                                     <KeepTogether>true</KeepTogether>
                                                                                     <Paragraphs>
                                                                                       <Paragraph>
                                                                                         <TextRuns>
                                                                                           <TextRun>
-                                                                                            <Value>=Fields!Cargo.Value</Value>
+                                                                                            <Value>=Fields!Categoria.Value</Value>
                                                                                             <Style>
                                                                                               <FontFamily>Calibri</FontFamily>
                                                                                               <FontSize>8pt</FontSize>
@@ -5532,7 +5672,7 @@
                                                                                         <Style />
                                                                                       </Paragraph>
                                                                                     </Paragraphs>
-                                                                                    <rd:DefaultName>Cargo</rd:DefaultName>
+                                                                                    <rd:DefaultName>Categoria</rd:DefaultName>
                                                                                     <Style>
                                                                                       <Border>
                                                                                         <Style>Solid</Style>
@@ -5550,14 +5690,14 @@
                                                                                   <TablixHeader>
                                                                                     <Size>2.49999cm</Size>
                                                                                     <CellContents>
-                                                                                      <Textbox Name="Localidad">
+                                                                                      <Textbox Name="Cargo">
                                                                                         <CanGrow>true</CanGrow>
                                                                                         <KeepTogether>true</KeepTogether>
                                                                                         <Paragraphs>
                                                                                           <Paragraph>
                                                                                             <TextRuns>
                                                                                               <TextRun>
-                                                                                                <Value>=Fields!Localidad.Value</Value>
+                                                                                                <Value>=Fields!Cargo.Value</Value>
                                                                                                 <Style>
                                                                                                   <FontFamily>Calibri</FontFamily>
                                                                                                   <FontSize>8pt</FontSize>
@@ -5567,7 +5707,7 @@
                                                                                             <Style />
                                                                                           </Paragraph>
                                                                                         </Paragraphs>
-                                                                                        <rd:DefaultName>Localidad</rd:DefaultName>
+                                                                                        <rd:DefaultName>Cargo</rd:DefaultName>
                                                                                         <Style>
                                                                                           <Border>
                                                                                             <Style>Solid</Style>
@@ -5583,16 +5723,16 @@
                                                                                   <TablixMembers>
                                                                                     <TablixMember>
                                                                                       <TablixHeader>
-                                                                                        <Size>2.5cm</Size>
+                                                                                        <Size>2.49999cm</Size>
                                                                                         <CellContents>
-                                                                                          <Textbox Name="PROYECTO">
+                                                                                          <Textbox Name="Localidad">
                                                                                             <CanGrow>true</CanGrow>
                                                                                             <KeepTogether>true</KeepTogether>
                                                                                             <Paragraphs>
                                                                                               <Paragraph>
                                                                                                 <TextRuns>
                                                                                                   <TextRun>
-                                                                                                    <Value>=Fields!PROYECTO.Value</Value>
+                                                                                                    <Value>=Fields!Localidad.Value</Value>
                                                                                                     <Style>
                                                                                                       <FontFamily>Calibri</FontFamily>
                                                                                                       <FontSize>8pt</FontSize>
@@ -5602,7 +5742,7 @@
                                                                                                 <Style />
                                                                                               </Paragraph>
                                                                                             </Paragraphs>
-                                                                                            <rd:DefaultName>PROYECTO</rd:DefaultName>
+                                                                                            <rd:DefaultName>Localidad</rd:DefaultName>
                                                                                             <Style>
                                                                                               <Border>
                                                                                                 <Style>Solid</Style>
@@ -5618,16 +5758,16 @@
                                                                                       <TablixMembers>
                                                                                         <TablixMember>
                                                                                           <TablixHeader>
-                                                                                            <Size>2.49999cm</Size>
+                                                                                            <Size>2.5cm</Size>
                                                                                             <CellContents>
-                                                                                              <Textbox Name="Area">
+                                                                                              <Textbox Name="PROYECTO">
                                                                                                 <CanGrow>true</CanGrow>
                                                                                                 <KeepTogether>true</KeepTogether>
                                                                                                 <Paragraphs>
                                                                                                   <Paragraph>
                                                                                                     <TextRuns>
                                                                                                       <TextRun>
-                                                                                                        <Value>=Fields!Area.Value</Value>
+                                                                                                        <Value>=Fields!PROYECTO.Value</Value>
                                                                                                         <Style>
                                                                                                           <FontFamily>Calibri</FontFamily>
                                                                                                           <FontSize>8pt</FontSize>
@@ -5637,7 +5777,7 @@
                                                                                                     <Style />
                                                                                                   </Paragraph>
                                                                                                 </Paragraphs>
-                                                                                                <rd:DefaultName>Area</rd:DefaultName>
+                                                                                                <rd:DefaultName>PROYECTO</rd:DefaultName>
                                                                                                 <Style>
                                                                                                   <Border>
                                                                                                     <Style>Solid</Style>
@@ -5655,14 +5795,14 @@
                                                                                               <TablixHeader>
                                                                                                 <Size>2.49999cm</Size>
                                                                                                 <CellContents>
-                                                                                                  <Textbox Name="Seccion">
+                                                                                                  <Textbox Name="Area">
                                                                                                     <CanGrow>true</CanGrow>
                                                                                                     <KeepTogether>true</KeepTogether>
                                                                                                     <Paragraphs>
                                                                                                       <Paragraph>
                                                                                                         <TextRuns>
                                                                                                           <TextRun>
-                                                                                                            <Value>=Fields!Seccion.Value</Value>
+                                                                                                            <Value>=Fields!Area.Value</Value>
                                                                                                             <Style>
                                                                                                               <FontFamily>Calibri</FontFamily>
                                                                                                               <FontSize>8pt</FontSize>
@@ -5672,7 +5812,7 @@
                                                                                                         <Style />
                                                                                                       </Paragraph>
                                                                                                     </Paragraphs>
-                                                                                                    <rd:DefaultName>Seccion</rd:DefaultName>
+                                                                                                    <rd:DefaultName>Area</rd:DefaultName>
                                                                                                     <Style>
                                                                                                       <Border>
                                                                                                         <Style>Solid</Style>
@@ -5690,14 +5830,14 @@
                                                                                                   <TablixHeader>
                                                                                                     <Size>2.49999cm</Size>
                                                                                                     <CellContents>
-                                                                                                      <Textbox Name="TipoContrato">
+                                                                                                      <Textbox Name="Seccion">
                                                                                                         <CanGrow>true</CanGrow>
                                                                                                         <KeepTogether>true</KeepTogether>
                                                                                                         <Paragraphs>
                                                                                                           <Paragraph>
                                                                                                             <TextRuns>
                                                                                                               <TextRun>
-                                                                                                                <Value>=Fields!TipoContrato.Value</Value>
+                                                                                                                <Value>=Fields!Seccion.Value</Value>
                                                                                                                 <Style>
                                                                                                                   <FontFamily>Calibri</FontFamily>
                                                                                                                   <FontSize>8pt</FontSize>
@@ -5707,7 +5847,7 @@
                                                                                                             <Style />
                                                                                                           </Paragraph>
                                                                                                         </Paragraphs>
-                                                                                                        <rd:DefaultName>TipoContrato</rd:DefaultName>
+                                                                                                        <rd:DefaultName>Seccion</rd:DefaultName>
                                                                                                         <Style>
                                                                                                           <Border>
                                                                                                             <Style>Solid</Style>
@@ -5725,14 +5865,14 @@
                                                                                                       <TablixHeader>
                                                                                                         <Size>2.49999cm</Size>
                                                                                                         <CellContents>
-                                                                                                          <Textbox Name="Direccion">
+                                                                                                          <Textbox Name="TipoContrato">
                                                                                                             <CanGrow>true</CanGrow>
                                                                                                             <KeepTogether>true</KeepTogether>
                                                                                                             <Paragraphs>
                                                                                                               <Paragraph>
                                                                                                                 <TextRuns>
                                                                                                                   <TextRun>
-                                                                                                                    <Value>=Fields!Direccion.Value</Value>
+                                                                                                                    <Value>=Fields!TipoContrato.Value</Value>
                                                                                                                     <Style>
                                                                                                                       <FontFamily>Calibri</FontFamily>
                                                                                                                       <FontSize>8pt</FontSize>
@@ -5742,7 +5882,7 @@
                                                                                                                 <Style />
                                                                                                               </Paragraph>
                                                                                                             </Paragraphs>
-                                                                                                            <rd:DefaultName>Direccion</rd:DefaultName>
+                                                                                                            <rd:DefaultName>TipoContrato</rd:DefaultName>
                                                                                                             <Style>
                                                                                                               <Border>
                                                                                                                 <Style>Solid</Style>
@@ -5760,14 +5900,14 @@
                                                                                                           <TablixHeader>
                                                                                                             <Size>2.49999cm</Size>
                                                                                                             <CellContents>
-                                                                                                              <Textbox Name="Fec_Cese">
+                                                                                                              <Textbox Name="Direccion">
                                                                                                                 <CanGrow>true</CanGrow>
                                                                                                                 <KeepTogether>true</KeepTogether>
                                                                                                                 <Paragraphs>
                                                                                                                   <Paragraph>
                                                                                                                     <TextRuns>
                                                                                                                       <TextRun>
-                                                                                                                        <Value>=Fields!Fec_Cese.Value</Value>
+                                                                                                                        <Value>=Fields!Direccion.Value</Value>
                                                                                                                         <Style>
                                                                                                                           <FontFamily>Calibri</FontFamily>
                                                                                                                           <FontSize>8pt</FontSize>
@@ -5777,7 +5917,7 @@
                                                                                                                     <Style />
                                                                                                                   </Paragraph>
                                                                                                                 </Paragraphs>
-                                                                                                                <rd:DefaultName>Fec_Cese</rd:DefaultName>
+                                                                                                                <rd:DefaultName>Direccion</rd:DefaultName>
                                                                                                                 <Style>
                                                                                                                   <Border>
                                                                                                                     <Style>Solid</Style>
@@ -5795,14 +5935,14 @@
                                                                                                               <TablixHeader>
                                                                                                                 <Size>2.49999cm</Size>
                                                                                                                 <CellContents>
-                                                                                                                  <Textbox Name="MCese">
+                                                                                                                  <Textbox Name="Fec_Cese">
                                                                                                                     <CanGrow>true</CanGrow>
                                                                                                                     <KeepTogether>true</KeepTogether>
                                                                                                                     <Paragraphs>
                                                                                                                       <Paragraph>
                                                                                                                         <TextRuns>
                                                                                                                           <TextRun>
-                                                                                                                            <Value>=Fields!MCese.Value</Value>
+                                                                                                                            <Value>=Fields!Fec_Cese.Value</Value>
                                                                                                                             <Style>
                                                                                                                               <FontFamily>Calibri</FontFamily>
                                                                                                                               <FontSize>8pt</FontSize>
@@ -5812,7 +5952,7 @@
                                                                                                                         <Style />
                                                                                                                       </Paragraph>
                                                                                                                     </Paragraphs>
-                                                                                                                    <rd:DefaultName>MCese</rd:DefaultName>
+                                                                                                                    <rd:DefaultName>Fec_Cese</rd:DefaultName>
                                                                                                                     <Style>
                                                                                                                       <Border>
                                                                                                                         <Style>Solid</Style>
@@ -5830,14 +5970,14 @@
                                                                                                                   <TablixHeader>
                                                                                                                     <Size>2.49999cm</Size>
                                                                                                                     <CellContents>
-                                                                                                                      <Textbox Name="AFP">
+                                                                                                                      <Textbox Name="MCese">
                                                                                                                         <CanGrow>true</CanGrow>
                                                                                                                         <KeepTogether>true</KeepTogether>
                                                                                                                         <Paragraphs>
                                                                                                                           <Paragraph>
                                                                                                                             <TextRuns>
                                                                                                                               <TextRun>
-                                                                                                                                <Value>=Fields!AFP.Value</Value>
+                                                                                                                                <Value>=Fields!MCese.Value</Value>
                                                                                                                                 <Style>
                                                                                                                                   <FontFamily>Calibri</FontFamily>
                                                                                                                                   <FontSize>8pt</FontSize>
@@ -5847,7 +5987,7 @@
                                                                                                                             <Style />
                                                                                                                           </Paragraph>
                                                                                                                         </Paragraphs>
-                                                                                                                        <rd:DefaultName>AFP</rd:DefaultName>
+                                                                                                                        <rd:DefaultName>MCese</rd:DefaultName>
                                                                                                                         <Style>
                                                                                                                           <Border>
                                                                                                                             <Style>Solid</Style>
@@ -5865,26 +6005,24 @@
                                                                                                                       <TablixHeader>
                                                                                                                         <Size>2.49999cm</Size>
                                                                                                                         <CellContents>
-                                                                                                                          <Textbox Name="fecha_ini_vac">
+                                                                                                                          <Textbox Name="AFP">
                                                                                                                             <CanGrow>true</CanGrow>
                                                                                                                             <KeepTogether>true</KeepTogether>
                                                                                                                             <Paragraphs>
                                                                                                                               <Paragraph>
                                                                                                                                 <TextRuns>
                                                                                                                                   <TextRun>
-                                                                                                                                    <Value>=Fields!fecha_ini_vac.Value</Value>
+                                                                                                                                    <Value>=Fields!AFP.Value</Value>
                                                                                                                                     <Style>
                                                                                                                                       <FontFamily>Calibri</FontFamily>
                                                                                                                                       <FontSize>8pt</FontSize>
                                                                                                                                     </Style>
                                                                                                                                   </TextRun>
                                                                                                                                 </TextRuns>
-                                                                                                                                <Style>
-                                                                                                                                  <TextAlign>Center</TextAlign>
-                                                                                                                                </Style>
+                                                                                                                                <Style />
                                                                                                                               </Paragraph>
                                                                                                                             </Paragraphs>
-                                                                                                                            <rd:DefaultName>fecha_ini_vac</rd:DefaultName>
+                                                                                                                            <rd:DefaultName>AFP</rd:DefaultName>
                                                                                                                             <Style>
                                                                                                                               <Border>
                                                                                                                                 <Style>Solid</Style>
@@ -5902,14 +6040,14 @@
                                                                                                                           <TablixHeader>
                                                                                                                             <Size>2.49999cm</Size>
                                                                                                                             <CellContents>
-                                                                                                                              <Textbox Name="fecha_fin_vac">
+                                                                                                                              <Textbox Name="fecha_ini_vac">
                                                                                                                                 <CanGrow>true</CanGrow>
                                                                                                                                 <KeepTogether>true</KeepTogether>
                                                                                                                                 <Paragraphs>
                                                                                                                                   <Paragraph>
                                                                                                                                     <TextRuns>
                                                                                                                                       <TextRun>
-                                                                                                                                        <Value>=Fields!fecha_fin_vac.Value</Value>
+                                                                                                                                        <Value>=Fields!fecha_ini_vac.Value</Value>
                                                                                                                                         <Style>
                                                                                                                                           <FontFamily>Calibri</FontFamily>
                                                                                                                                           <FontSize>8pt</FontSize>
@@ -5921,7 +6059,7 @@
                                                                                                                                     </Style>
                                                                                                                                   </Paragraph>
                                                                                                                                 </Paragraphs>
-                                                                                                                                <rd:DefaultName>fecha_fin_vac</rd:DefaultName>
+                                                                                                                                <rd:DefaultName>fecha_ini_vac</rd:DefaultName>
                                                                                                                                 <Style>
                                                                                                                                   <Border>
                                                                                                                                     <Style>Solid</Style>
@@ -5939,14 +6077,14 @@
                                                                                                                               <TablixHeader>
                                                                                                                                 <Size>2.49999cm</Size>
                                                                                                                                 <CellContents>
-                                                                                                                                  <Textbox Name="email">
+                                                                                                                                  <Textbox Name="fecha_fin_vac">
                                                                                                                                     <CanGrow>true</CanGrow>
                                                                                                                                     <KeepTogether>true</KeepTogether>
                                                                                                                                     <Paragraphs>
                                                                                                                                       <Paragraph>
                                                                                                                                         <TextRuns>
                                                                                                                                           <TextRun>
-                                                                                                                                            <Value>=Fields!email.Value</Value>
+                                                                                                                                            <Value>=Fields!fecha_fin_vac.Value</Value>
                                                                                                                                             <Style>
                                                                                                                                               <FontFamily>Calibri</FontFamily>
                                                                                                                                               <FontSize>8pt</FontSize>
@@ -5958,7 +6096,7 @@
                                                                                                                                         </Style>
                                                                                                                                       </Paragraph>
                                                                                                                                     </Paragraphs>
-                                                                                                                                    <rd:DefaultName>email</rd:DefaultName>
+                                                                                                                                    <rd:DefaultName>fecha_fin_vac</rd:DefaultName>
                                                                                                                                     <Style>
                                                                                                                                       <Border>
                                                                                                                                         <Style>Solid</Style>
@@ -5976,14 +6114,14 @@
                                                                                                                                   <TablixHeader>
                                                                                                                                     <Size>2.49999cm</Size>
                                                                                                                                     <CellContents>
-                                                                                                                                      <Textbox Name="email_personal">
+                                                                                                                                      <Textbox Name="email">
                                                                                                                                         <CanGrow>true</CanGrow>
                                                                                                                                         <KeepTogether>true</KeepTogether>
                                                                                                                                         <Paragraphs>
                                                                                                                                           <Paragraph>
                                                                                                                                             <TextRuns>
                                                                                                                                               <TextRun>
-                                                                                                                                                <Value>=Fields!email_personal.Value</Value>
+                                                                                                                                                <Value>=Fields!email.Value</Value>
                                                                                                                                                 <Style>
                                                                                                                                                   <FontFamily>Calibri</FontFamily>
                                                                                                                                                   <FontSize>8pt</FontSize>
@@ -5995,7 +6133,7 @@
                                                                                                                                             </Style>
                                                                                                                                           </Paragraph>
                                                                                                                                         </Paragraphs>
-                                                                                                                                        <rd:DefaultName>email_personal</rd:DefaultName>
+                                                                                                                                        <rd:DefaultName>email</rd:DefaultName>
                                                                                                                                         <Style>
                                                                                                                                           <Border>
                                                                                                                                             <Style>Solid</Style>
@@ -6013,14 +6151,14 @@
                                                                                                                                       <TablixHeader>
                                                                                                                                         <Size>2.49999cm</Size>
                                                                                                                                         <CellContents>
-                                                                                                                                          <Textbox Name="Personal_Codigo_Sap">
+                                                                                                                                          <Textbox Name="email_personal">
                                                                                                                                             <CanGrow>true</CanGrow>
                                                                                                                                             <KeepTogether>true</KeepTogether>
                                                                                                                                             <Paragraphs>
                                                                                                                                               <Paragraph>
                                                                                                                                                 <TextRuns>
                                                                                                                                                   <TextRun>
-                                                                                                                                                    <Value>=Fields!Personal_Codigo_Sap.Value</Value>
+                                                                                                                                                    <Value>=Fields!email_personal.Value</Value>
                                                                                                                                                     <Style>
                                                                                                                                                       <FontFamily>Calibri</FontFamily>
                                                                                                                                                       <FontSize>8pt</FontSize>
@@ -6032,7 +6170,7 @@
                                                                                                                                                 </Style>
                                                                                                                                               </Paragraph>
                                                                                                                                             </Paragraphs>
-                                                                                                                                            <rd:DefaultName>Personal_Codigo_Sap</rd:DefaultName>
+                                                                                                                                            <rd:DefaultName>email_personal</rd:DefaultName>
                                                                                                                                             <Style>
                                                                                                                                               <Border>
                                                                                                                                                 <Style>Solid</Style>
@@ -6045,6 +6183,45 @@
                                                                                                                                           </Textbox>
                                                                                                                                         </CellContents>
                                                                                                                                       </TablixHeader>
+                                                                                                                                      <TablixMembers>
+                                                                                                                                        <TablixMember>
+                                                                                                                                          <TablixHeader>
+                                                                                                                                            <Size>2.49999cm</Size>
+                                                                                                                                            <CellContents>
+                                                                                                                                              <Textbox Name="Personal_Codigo_Sap">
+                                                                                                                                                <CanGrow>true</CanGrow>
+                                                                                                                                                <KeepTogether>true</KeepTogether>
+                                                                                                                                                <Paragraphs>
+                                                                                                                                                  <Paragraph>
+                                                                                                                                                    <TextRuns>
+                                                                                                                                                      <TextRun>
+                                                                                                                                                        <Value>=Fields!Personal_Codigo_Sap.Value</Value>
+                                                                                                                                                        <Style>
+                                                                                                                                                          <FontFamily>Calibri</FontFamily>
+                                                                                                                                                          <FontSize>8pt</FontSize>
+                                                                                                                                                        </Style>
+                                                                                                                                                      </TextRun>
+                                                                                                                                                    </TextRuns>
+                                                                                                                                                    <Style>
+                                                                                                                                                      <TextAlign>Center</TextAlign>
+                                                                                                                                                    </Style>
+                                                                                                                                                  </Paragraph>
+                                                                                                                                                </Paragraphs>
+                                                                                                                                                <rd:DefaultName>Personal_Codigo_Sap</rd:DefaultName>
+                                                                                                                                                <Style>
+                                                                                                                                                  <Border>
+                                                                                                                                                    <Style>Solid</Style>
+                                                                                                                                                  </Border>
+                                                                                                                                                  <PaddingLeft>2pt</PaddingLeft>
+                                                                                                                                                  <PaddingRight>2pt</PaddingRight>
+                                                                                                                                                  <PaddingTop>2pt</PaddingTop>
+                                                                                                                                                  <PaddingBottom>2pt</PaddingBottom>
+                                                                                                                                                </Style>
+                                                                                                                                              </Textbox>
+                                                                                                                                            </CellContents>
+                                                                                                                                          </TablixHeader>
+                                                                                                                                        </TablixMember>
+                                                                                                                                      </TablixMembers>
                                                                                                                                     </TablixMember>
                                                                                                                                   </TablixMembers>
                                                                                                                                 </TablixMember>
@@ -6111,7 +6288,7 @@
         <DataSetName>dtReportePlanillaGeneral</DataSetName>
         <Top>0.635cm</Top>
         <Height>3cm</Height>
-        <Width>87.38855cm</Width>
+        <Width>89.88855cm</Width>
         <Style>
           <Border>
             <Style>None</Style>

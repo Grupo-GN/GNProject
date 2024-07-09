@@ -402,6 +402,9 @@ function ConfigFormulaGetLoadConceptosTreeView() {
     htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_COMISION</span></li>";
     htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_ONP</span></li>";
     htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_MENSUAL_ESSALUD</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMUN_SUBSIDIO</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_REMU_MES_ESSALUD_SEMANAL</span></li>";
+    htmlOther += "<li class='last' style='cursor:pointer'><span onclick='addtext(this)'>T_RETENCION_ESSALUD_SEMANAL</span></li>";
     htmlOther += "</ul>";
     htmlOther += "</li>";
 

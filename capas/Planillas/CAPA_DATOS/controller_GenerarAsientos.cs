@@ -145,7 +145,7 @@ namespace CAPA_DATOS
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@PeriodoId", xPeriodoId);
-                        cmd.Parameters.AddWithValue("@AsientoId", xPeriodoId);
+                        cmd.Parameters.AddWithValue("@AsientoId", xAsientoId);
                         cmd.Parameters.AddWithValue("@CodTipoAsiento", xCodTipoAsiento);
                         cn.Open();
                         int irow = cmd.ExecuteNonQuery();

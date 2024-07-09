@@ -279,6 +279,11 @@ namespace GNProject.Views.sistemaPlanillas.Procesos
             this.Engine.DefineVariable("T_REMUN_MENSUAL_COMISION");
             this.Engine.DefineVariable("T_REMUN_MENSUAL_ONP");
             this.Engine.DefineVariable("T_REMUN_MENSUAL_ESSALUD");
+
+            this.Engine.DefineVariable("T_REMUN_SUBSIDIO");
+
+            this.Engine.DefineVariable("T_REMU_MES_ESSALUD_SEMANAL");
+            this.Engine.DefineVariable("T_RETENCION_ESSALUD_SEMANAL");
             //FIN NUEVAS FORMULAS
         }
     }

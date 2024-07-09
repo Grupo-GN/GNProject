@@ -1,11 +1,15 @@
-﻿using CAPA_LOGICO;
+﻿using CAPA_DATOS;
+using CAPA_LOGICO;
 using GNProject.Assets.ctrlDoc.resources;
 using GNProject.Views.sistemaPlanillas.code;
 using Microsoft.Reporting.WebForms;
+using OfficeOpenXml;
+using OfficeOpenXml.Table.PivotTable;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.IO;
@@ -63,6 +67,31 @@ namespace GNProject.Views.sistemaPlanillas.Reportes
 
                             rptsource = new ReportDataSource("dtReportePlanillaGeneral", datosReportePlanillaGeneral.ToList());
                             ReportViewer1.LocalReport.DataSources.Add(rptsource);
+                            break;
+                        case "REP_PLANILLA_COMPLETA_RESUMEN":
+
+                            List<string> sheetNames = new List<string>
+                        {
+                            "Planilla Empleados",
+                            "Planilla Obreros",
+                            "Planilla Unificada",
+                            "DETALLE PLAME Y AFPNET SEMANAL",
+                            "DETALLE PLAME Y AFPNET MENSUAL"
+                        };
+                            string path1 = HttpContext.Current.Server.MapPath("~/Views/sistemaPlanillas/Reportes/Report1.xlsx");
+                            string path2 = HttpContext.Current.Server.MapPath("~/Views/sistemaPlanillas/Reportes/Report2.xlsx");
+                            string path3 = HttpContext.Current.Server.MapPath("~/Views/sistemaPlanillas/Reportes/Report3.xlsx");
+                            string path4 = HttpContext.Current.Server.MapPath("~/Views/sistemaPlanillas/Reportes/Report4.xlsx");
+                            string path5 = HttpContext.Current.Server.MapPath("~/Views/sistemaPlanillas/Reportes/Report5.xlsx");
+                            // Generate each report
+                            GenerateExcelReport("Views/sistemaPlanillas/Reportes/rptPlanillaGeneralDetalle.rdlc", "dtReportePlanillaGeneral", path1, "01");
+                            GenerateExcelReport("Views/sistemaPlanillas/Reportes/rptPlanillaGeneralDetalle.rdlc", "dtReportePlanillaGeneral", path2, "02");
+                            GenerateExcelReport("Views/sistemaPlanillas/Reportes/rptPlanillaGeneralUnificada.rdlc", "dtReportePlanillaGeneral", path3, "00");
+                            GenerateExcelReport("Views/sistemaPlanillas/Reportes/rptPlanillaGeneralUnificada.rdlc", "dtReportePlanillaGeneral", path4, "03");
+                            GenerateExcelReport("Views/sistemaPlanillas/Reportes/rptPlanillaPlameAFPMensual.rdlc", "dtReportePlanillaGeneral", path5, "04");
+                            // Combine Excel files into one
+                            CombineExcelFilesAndDownload(new List<string> { path1, path2, path3, path4, path5 }, sheetNames, "CombinedReports.xlsx");
+
                             break;
 
                         case "REP_PLANILLA_GENERAL_DETALLE": /*Reporte de Planilla General*/
@@ -829,6 +858,344 @@ namespace GNProject.Views.sistemaPlanillas.Reportes
                 }
                 m_streams = null;
             }
+        }
+        public void GenerateExcelReport(string reportPath, string dataSourceName, string outputPath, string tplanilla)
+        {
+            LocalReport report = new LocalReport();
+            report.ReportPath = reportPath;
+            String str_parametros = String.Empty;
+            String[] arr_parametros = null;
+            String[] arr_parametros2 = null;
+            str_parametros = Request.QueryString["prm"].ToString();
+            arr_parametros = new String[str_parametros.Split(':').Length];
+            arr_parametros = str_parametros.Split(':');
+
+            string mesini, mesfin, primerPeriodoId, ultimoPeriodoId;
+            using (SqlConnection cn = new SqlConnection(Conex.CadCon_String()))
+            {
+                cn.Open();
+                // Obtener mes_id para periodoini
+                mesini = GetMesId(cn, arr_parametros[0]);
+
+                // Obtener mes_id para periodofin
+                mesfin = GetMesId(cn, arr_parametros[1]);
+
+                // Obtener el primer periodo_id
+                primerPeriodoId = GetPrimerPeriodoId(cn, mesini);
+
+                // Obtener el último periodo_id
+                ultimoPeriodoId = GetUltimoPeriodoId(cn, mesfin);
+
+
+            }
+            if (reportPath == "Views/sistemaPlanillas/Reportes/rptPlanillaGeneralDetalle.rdlc" && tplanilla == "01")
+            {
+                ReportViewer1.LocalReport.ReportPath = reportPath;
+
+                code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter tablaPlanillaDet = new code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter();
+                ClaseGlobal.ChangeTableAdapterConnection_x_Empresa(ref tablaPlanillaDet);
+                SetAllCommandTimeouts(tablaPlanillaDet, 120); //120 seg = 2 min
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable datosReportePlanillaGeneralDet =
+                    tablaPlanillaDet.GetData(arr_parametros[0], arr_parametros[1], arr_parametros[2], arr_parametros[3], arr_parametros[4], arr_parametros[5], arr_parametros[6], arr_parametros[7], arr_parametros[8], arr_parametros[9], arr_parametros[10], arr_parametros[11]);
+
+                report.DataSources.Add(new ReportDataSource(dataSourceName, datosReportePlanillaGeneralDet.ToList()));
+            }
+            if (reportPath == "Views/sistemaPlanillas/Reportes/rptPlanillaGeneralDetalle.rdlc" && tplanilla == "02")
+            {
+                arr_parametros2 = arr_parametros;
+                arr_parametros2[0] = primerPeriodoId;
+                arr_parametros2[1] = ultimoPeriodoId;
+                ReportViewer1.LocalReport.ReportPath = reportPath;
+
+                code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter tablaPlanillaDet = new code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter();
+                ClaseGlobal.ChangeTableAdapterConnection_x_Empresa(ref tablaPlanillaDet);
+                SetAllCommandTimeouts(tablaPlanillaDet, 120); //120 seg = 2 min
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable datosReportePlanillaGeneralDet =
+                    tablaPlanillaDet.GetData(primerPeriodoId, ultimoPeriodoId, arr_parametros2[2], arr_parametros2[3], arr_parametros2[4], arr_parametros2[5], arr_parametros2[6], arr_parametros2[7], arr_parametros2[8], arr_parametros2[9], arr_parametros2[10], arr_parametros2[11]);
+
+                report.DataSources.Add(new ReportDataSource(dataSourceName, datosReportePlanillaGeneralDet.ToList()));
+            }
+            if (reportPath == "Views/sistemaPlanillas/Reportes/rptPlanillaGeneralUnificada.rdlc" && tplanilla == "00" || tplanilla == "03")
+            {
+                if (tplanilla == "03" && !arr_parametros[2].Contains("09"))
+                {
+                    arr_parametros[2] += ",09";
+                }
+
+                ReportViewer1.LocalReport.ReportPath = reportPath;
+                code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter tablaPlanillaDet = new code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter();
+                ClaseGlobal.ChangeTableAdapterConnection_x_Empresa(ref tablaPlanillaDet);
+                SetAllCommandTimeouts(tablaPlanillaDet, 120); //120 seg = 2 min
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable datosReportePlanillaGeneralDet1 =
+                    tablaPlanillaDet.GetData(arr_parametros[0], arr_parametros[1], arr_parametros[2], arr_parametros[3], arr_parametros[4], arr_parametros[5], arr_parametros[6], arr_parametros[7], arr_parametros[8], arr_parametros[9], arr_parametros[10], arr_parametros[11]);
+
+                arr_parametros2 = arr_parametros;
+                arr_parametros2[0] = primerPeriodoId;
+                arr_parametros2[1] = ultimoPeriodoId;
+
+                code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter tablaPlanillaDet2 = new code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter();
+                ClaseGlobal.ChangeTableAdapterConnection_x_Empresa(ref tablaPlanillaDet2);
+                SetAllCommandTimeouts(tablaPlanillaDet2, 120); //120 seg = 2 min
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable datosReportePlanillaGeneralDet2 =
+                    tablaPlanillaDet2.GetData(primerPeriodoId, ultimoPeriodoId, arr_parametros2[2], arr_parametros2[3], arr_parametros2[4], arr_parametros2[5], arr_parametros2[6], arr_parametros2[7], arr_parametros2[8], arr_parametros2[9], arr_parametros2[10], arr_parametros2[11]);
+
+                DataTable c1 = datosReportePlanillaGeneralDet1;
+                DataTable c2 = datosReportePlanillaGeneralDet2;
+                c1.Columns.Add("Planilla", typeof(string)).SetOrdinal(0);
+                foreach (DataRow row in c1.Rows)
+                {
+                    row["Planilla"] = "EMPLEADO";
+                }
+                c2.Columns.Add("Planilla", typeof(string)).SetOrdinal(0);
+                foreach (DataRow row in c2.Rows)
+                {
+                    row["Planilla"] = "OBRERO";
+                }
+                DataTable combinedDataTable = CombineDataTables(c1, c2);
+
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable dataTableEspecífico = new dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable();
+
+                // Copiar la estructura si es necesario (generalmente no lo es, ya que dataTableEspecífico ya debería tener la estructura correcta)
+                foreach (DataColumn column in combinedDataTable.Columns)
+                {
+                    if (!dataTableEspecífico.Columns.Contains(column.ColumnName))
+                    {
+                        dataTableEspecífico.Columns.Add(new DataColumn(column.ColumnName, column.DataType));
+                    }
+                }
+
+                // Copiar los datos
+                foreach (DataRow row in combinedDataTable.Rows)
+                {
+                    dataTableEspecífico.ImportRow(row);
+                }
+                report.DataSources.Add(new ReportDataSource(dataSourceName, dataTableEspecífico.ToList()));
+            }
+            if (reportPath == "Views/sistemaPlanillas/Reportes/rptPlanillaPlameAFPMensual.rdlc" && tplanilla == "04")
+            {
+                if (!arr_parametros[2].Contains("09"))
+                {
+                    arr_parametros[2] += ",09";
+                }
+                ReportViewer1.LocalReport.ReportPath = reportPath;
+                code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter tablaPlanillaDet = new code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter();
+                ClaseGlobal.ChangeTableAdapterConnection_x_Empresa(ref tablaPlanillaDet);
+                SetAllCommandTimeouts(tablaPlanillaDet, 120); //120 seg = 2 min
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable datosReportePlanillaGeneralDet1 =
+                    tablaPlanillaDet.GetData(arr_parametros[0], arr_parametros[1], arr_parametros[2], arr_parametros[3], arr_parametros[4], arr_parametros[5], arr_parametros[6], arr_parametros[7], arr_parametros[8], arr_parametros[9], arr_parametros[10], arr_parametros[11]);
+
+                arr_parametros2 = arr_parametros;
+                arr_parametros2[0] = primerPeriodoId;
+                arr_parametros2[1] = ultimoPeriodoId;
+
+                code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter tablaPlanillaDet2 = new code.dsReportePlanillaGeneralTableAdapters.dtReportePlanillaGeneralTableAdapter();
+                ClaseGlobal.ChangeTableAdapterConnection_x_Empresa(ref tablaPlanillaDet2);
+                SetAllCommandTimeouts(tablaPlanillaDet2, 120); //120 seg = 2 min
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable datosReportePlanillaGeneralDet2 =
+                    tablaPlanillaDet2.GetData(primerPeriodoId, ultimoPeriodoId, arr_parametros2[2], arr_parametros2[3], arr_parametros2[4], arr_parametros2[5], arr_parametros2[6], arr_parametros2[7], arr_parametros2[8], arr_parametros2[9], arr_parametros2[10], arr_parametros2[11]);
+
+                DataTable c1 = datosReportePlanillaGeneralDet1;
+                DataTable c2 = datosReportePlanillaGeneralDet2;
+
+                DataTable combinedDataTable = CombineDataTables(c1, c2);
+
+                dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable dataTableEspecífico = new dsReportePlanillaGeneral.dtReportePlanillaGeneralDataTable();
+
+                // Copiar la estructura si es necesario (generalmente no lo es, ya que dataTableEspecífico ya debería tener la estructura correcta)
+                foreach (DataColumn column in combinedDataTable.Columns)
+                {
+                    if (!dataTableEspecífico.Columns.Contains(column.ColumnName))
+                    {
+                        dataTableEspecífico.Columns.Add(new DataColumn(column.ColumnName, column.DataType));
+                    }
+                }
+
+                // Copiar los datos
+                foreach (DataRow row in combinedDataTable.Rows)
+                {
+                    dataTableEspecífico.ImportRow(row);
+                }
+                report.DataSources.Add(new ReportDataSource(dataSourceName, dataTableEspecífico.ToList()));
+            }
+
+            string mimeType, encoding, fileNameExtension;
+            Warning[] warnings;
+            string[] streams;
+            byte[] renderedBytes;
+
+
+            renderedBytes = report.Render(
+                "EXCELOPENXML",
+                null,
+                out mimeType,
+                out encoding,
+                out fileNameExtension,
+                out streams,
+                out warnings
+            );
+
+            File.WriteAllBytes(outputPath, renderedBytes);
+        }
+        public void CombineExcelFilesAndDownload(List<string> filePaths, List<string> sheetNames, string outputFilePath)
+        {
+            using (var package = new ExcelPackage())
+            {
+                for (int i = 0; i < filePaths.Count; i++)
+                {
+                    var path = filePaths[i];
+                    var sheetName = sheetNames[i];
+
+                    using (var tempPackage = new ExcelPackage(new FileInfo(path)))
+                    {
+                        foreach (var sheet in tempPackage.Workbook.Worksheets)
+                        {
+                            if (!package.Workbook.Worksheets.Any(ws => ws.Name == sheetName))
+                            {
+                                var ws = package.Workbook.Worksheets.Add(sheetName, sheet);
+                            }
+                            else
+                            {
+                                var newName = sheetName + "_" + (i + 1).ToString();
+                                var ws = package.Workbook.Worksheets.Add(newName, sheet);
+                            }
+                        }
+                    }
+
+                    File.Delete(path);
+                }
+
+
+                // Asegúrate de que hay al menos una hoja en la lista de nombres de hojas y que existe en el paquete
+                if (sheetNames.Count > 4 && package.Workbook.Worksheets.Any(ws => ws.Name == sheetNames[4]))
+                {
+                    var dataWorksheet = package.Workbook.Worksheets[sheetNames[4]];
+                    var pivotWorksheet = package.Workbook.Worksheets.Add("Resumen");
+
+                    // Definir el rango de datos a usar en la tabla dinámica
+                    var startRow = 7;
+                    var endRow = dataWorksheet.Dimension.End.Row;
+                    var startCell = "A" + startRow;
+                    var endCell = "AR" + endRow;
+                    var dataRange = dataWorksheet.Cells[startCell + ":" + endCell];
+
+                    // Rellenar celdas vacías con cadena vacía
+                    for (int row = startRow; row <= endRow; row++)
+                    {
+                        for (int col = 1; col <= 44; col++)
+                        {
+                            if (string.IsNullOrEmpty(dataWorksheet.Cells[row, col].Text))
+                            {
+                                dataWorksheet.Cells[row, col].Value = "  ";
+                            }
+                        }
+                    }
+
+                    // Asegúrate de que la primera fila contiene encabezados válidos
+                    var headerRange = dataWorksheet.Cells["A7:AR7"];
+                    foreach (var cell in headerRange)
+                    {
+                        if (string.IsNullOrEmpty(cell.Text))
+                        {
+                            throw new ArgumentException("First row of source range should contain the field headers and can't have blank cells.");
+                        }
+                    }
+
+
+                    var pivotTable = pivotWorksheet.PivotTables.Add(pivotWorksheet.Cells["A7"], dataRange, "PivotTableResumen");
+
+
+                    pivotTable.DataOnRows = false;
+
+                    pivotTable.RowFields.Add(pivotTable.Fields["PLANILLA"]);
+                    pivotTable.RowFields.Add(pivotTable.Fields["PROYECTO"]);
+                    //ExcelPivotTableDataField dataField;
+                    //dataField = pivotTable.DataFields.Add(pivotTable.Fields["RETENCION 5TA"]);
+                    //dataField = pivotTable.DataFields.Add(pivotTable.Fields["PRIMA DE SEGURO AFP"]);
+
+                    var dataField1 = pivotTable.DataFields.Add(pivotTable.Fields["RETENCION 5TA"]);
+                    dataField1.Name = "Total Retención 5TA";
+                    dataField1.Function = DataFieldFunctions.Sum;
+
+                    var dataField2 = pivotTable.DataFields.Add(pivotTable.Fields["PRIMA DE SEGURO AFP"]);
+                    dataField2.Name = "Total Prima de Seguro AFP";
+                    dataField2.Function = DataFieldFunctions.Sum;
+
+                    //pivotTable.ColumnFields.Add(pivotTable.Fields["_Values"]);
+
+                    //pivotTable.DataFields.Add(pivotTable.Fields["RETENCION 5TA"]);
+                    //pivotTable.ColumnFields.Add(pivotTable.Fields["RETENCION 5TA"]);
+
+                }
+
+
+                var ms = new MemoryStream();
+                package.SaveAs(ms);
+                ms.Position = 0;
+
+                HttpContext.Current.Response.Clear();
+                HttpContext.Current.Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                HttpContext.Current.Response.AddHeader("content-disposition", "attachment;filename=" + outputFilePath);
+                HttpContext.Current.Response.BinaryWrite(ms.ToArray());
+                HttpContext.Current.Response.Flush();
+                HttpContext.Current.Response.End();
+            }
+        }
+        private static string GetMesId(SqlConnection connection, string periodoId)
+        {
+            string mesId = "";
+            using (SqlCommand command = new SqlCommand("SELECT mes_id FROM periodo WHERE periodo_id = @periodoId", connection))
+            {
+                command.Parameters.AddWithValue("@periodoId", periodoId);
+                mesId = (string)command.ExecuteScalar();
+            }
+            return mesId;
+        }
+
+        private static string GetPrimerPeriodoId(SqlConnection connection, string mesId)
+        {
+            string periodoId = "";
+            using (SqlCommand command = new SqlCommand("SELECT TOP 1 periodo_id FROM periodo WHERE Mes_Id = @mesId AND Planilla_Id = '02' ORDER BY periodo_id ASC", connection))
+            {
+                command.Parameters.AddWithValue("@mesId", mesId);
+                periodoId = (string)command.ExecuteScalar();
+            }
+            return periodoId;
+        }
+
+        private static string GetUltimoPeriodoId(SqlConnection connection, string mesId)
+        {
+            string periodoId = "";
+            using (SqlCommand command = new SqlCommand("SELECT TOP 1 periodo_id FROM periodo WHERE Mes_Id = @mesId AND Planilla_Id = '02' ORDER BY Periodo_Id DESC", connection))
+            {
+                command.Parameters.AddWithValue("@mesId", mesId);
+                periodoId = (string)command.ExecuteScalar();
+            }
+            return periodoId;
+        }
+        private DataTable CombineDataTables(DataTable dt1, DataTable dt2)
+        {
+            // Crear un nuevo DataTable para el resultado combinado
+            DataTable combinedDataTable = new DataTable("CombinedDataTable");
+
+            // Suponiendo que ambos DataTables tienen la misma estructura
+            foreach (DataColumn column in dt1.Columns)
+            {
+                combinedDataTable.Columns.Add(column.ColumnName, column.DataType);
+            }
+
+            // Agregar filas de dt1
+            foreach (DataRow row in dt1.Rows)
+            {
+                combinedDataTable.ImportRow(row);
+            }
+
+            // Agregar filas de dt2
+            foreach (DataRow row in dt2.Rows)
+            {
+                combinedDataTable.ImportRow(row);
+            }
+
+            return combinedDataTable;
         }
     }
 }

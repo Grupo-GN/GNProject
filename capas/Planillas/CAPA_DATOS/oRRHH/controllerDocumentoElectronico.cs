@@ -1501,7 +1501,7 @@ namespace CAPA_DATOS.oRRHH
                 System.Text.StringBuilder strPlantillaHTML = new System.Text.StringBuilder();
                 FileStream stream = new FileStream(strRutaPlantilla_CTS, FileMode.Open, FileAccess.Read);
                 StreamReader reader = new StreamReader(stream);
-                
+
                 string linea = null;
                 while (reader.Peek() > -1)
                 {
@@ -1516,7 +1516,7 @@ namespace CAPA_DATOS.oRRHH
 
                     //Llenando valores al PDF
                     linea = linea.Replace("[_Cabecera_]", cabecera.ToString());
-                                        
+
                     linea = linea.Replace("[_Renta_]", "S/. " + decimal.Parse(dtReporte.Rows[0][6].ToString()).ToString("###,##0.00"));
                     linea = linea.Replace("[_Porcentaje_]", decimal.Parse(dtReporte.Rows[0][7].ToString()).ToString("###,##0.00") + " %");
                     linea = linea.Replace("[_Monto_]", "S/. " + decimal.Parse(dtReporte.Rows[0][8].ToString()).ToString("###,##0.00"));
@@ -1528,7 +1528,8 @@ namespace CAPA_DATOS.oRRHH
                     linea = linea.Replace("[_RemComputable_]", "S/. " + decimal.Parse(dtReporte.Rows[0][15].ToString()).ToString("###,##0.00"));
                     linea = linea.Replace("[_ParticipacionRem_]", "S/. " + decimal.Parse(dtReporte.Rows[0][16].ToString()).ToString("###,##0.00"));
                     linea = linea.Replace("[_TotParticipacion_]", "S/. " + decimal.Parse(dtReporte.Rows[0][17].ToString()).ToString("###,##0.00"));
-                    linea = linea.Replace("[_NetaParticipacion_]", "S/. " + decimal.Parse(dtReporte.Rows[0][17].ToString()).ToString("###,##0.00"));
+                    linea = linea.Replace("[_NetaParticipacion_]", "S/. " + decimal.Parse(dtReporte.Rows[0][21].ToString()).ToString("###,##0.00"));
+                    linea = linea.Replace("[_DSCTO5TAUTI_]", "S/. " + decimal.Parse(dtReporte.Rows[0][19].ToString()).ToString("###,##0.00"));
                     DateTime fecha = DateTime.UtcNow;
                     //linea = linea.Replace("[_Fecha_]", "Callao, 31 de Marzo del" + " " + fecha.Year.ToString());
                     linea = linea.Replace("[_Fecha_]", "Fecha de Emisión: Marzo del" + " " + fecha.Year.ToString());

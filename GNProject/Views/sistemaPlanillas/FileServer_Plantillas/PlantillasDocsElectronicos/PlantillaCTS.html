@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<style>
+			body
+			{
+				font-size:12px;
+			}
+			table 
+			{
+				width:100%;
+				font-size:12px;
+				/*font-family:Arial;*/ /*Hace que el pdf pese 50KB más*/
+				/*text-align:center;*/
+				border-collapse: collapse;
+			}
+			table, th, td {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				padding-left: 4px;
+				padding-right: 4px;
+			}
+			.bl
+			{
+				border-left: solid 1px;
+			}
+			.br
+			{
+				border-right: solid 1px;
+			}
+			.bt{
+				border-top: solid 1px;
+			}
+			.bb{
+				border-bottom: solid 1px;
+			}
+			.tl{
+				text-align:left;
+			}
+			.tr{
+				text-align:right;
+			}
+			.tc{
+				text-align:center;
+			}
+			.bold{
+				font-weight:bold;
+			}
+		</style>		
+	</head>
+	<body>
+		<table style="font-weight:bold;font-size:14px;">
+			<tr>
+				<td class="tc" style="padding-top:50px;">LIQUIDACION DE DEPÓSITO SEMESTRAL DE</td>
+			</tr>
+			<tr>
+				<td class="tc">COMPENSACIÓN POR TIEMPO DE SERVICIOS (CTS)</td>
+			</tr>
+		</table>
+		<div style="padding:20px;">
+			<table style="margin-top:20px;">
+				<tr>
+					<td style="text-align:justify;">[_Cabecera_]</td>
+				</tr>
+			</table>
+			<table style="margin-top:20px;">
+				<tr>
+					<td class="bold" style="width:80%;">Periodo que se cancela</td>
+					<td class="tr bold" style="width:20%;">[_Periodo_]</td>
+				</tr>
+				<tr>
+					<td style="padding-bottom:20px;">Fecha de Ingreso</td>
+					<td class="tr">[_FecIngreso_]</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="bt bb bold">REMUNERACIÓN COMPUTABLE</td>
+				</tr>
+				<tr id="tr_Basico">
+					<td>Básico</td>
+					<td class="tr">[_Basico_]</td>
+				</tr>
+				<tr id="tr_Asignacion">
+					<td>Asignación Familiar</td>
+					<td class="tr">[_Asignacion_]</td>
+				</tr>
+				<tr id="tr_Sobretiempo">
+					<td>Sobretiempo (Promedio Semestral)</td>
+					<td class="tr">[_Sobretiempo_]</td>
+				</tr>
+				<tr id="tr_BoniNocturna">
+					<td>Bonificación Nocturna (Promedio Semestral)</td>
+					<td class="tr">[_BoniNocturna_]</td>
+				</tr>
+				<tr id="tr_Comision">
+					<td>Comisión Venta (Promedio Semestral)</td>
+					<td class="tr">[_Comision_]</td>
+				</tr>
+				<tr id="tr_BoniTrabajo">
+					<td>Bonificación Trabajo</td>
+					<td class="tr">[_BoniTrabajo_]</td>
+				</tr>
+				<tr id="tr_Refrigerio">
+					<td>Refrigerio</td>
+					<td class="tr">[_Refrigerio_]</td>
+				</tr>
+				<tr id="tr_Gratificacion">
+					<td>1/6 Gratificación</td>
+					<td class="tr">[_Gratificacion_]</td>
+				</tr>
+				<tr id="tr_Total">
+					<td style="padding-bottom:20px;">Total Computable</td>
+					<td class="tr bt bold">[_Total_]</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="bt bb bold">FORMA CALCULO</td>
+				</tr>
+				<tr id="tr_CompletoMeses">
+					<td>Por los meses completos [_FormaCalculo_MesesCompleto_]</td>
+					<td class="tr bold">[_CompletoMeses_]</td>
+				</tr>
+				<tr id="tr_RetJuridica">
+					<td>Retención Judicial</td>
+					<td class="tr">[_RetJuridica_]</td>
+				</tr>
+				<tr id="tr_MontoCts">
+					<td>Total Monto CTS</td>
+					<td class="tr bt bold">[_MontoCts_]</td>
+				</tr>
+				<tr id="tr_TipoCambio">
+					<td>Tipo de Cambio</td>
+					<td class="tr">[_TipoCambio_]</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td style="border-bottom: 3px double #000000"></td>
+				</tr>
+				<tr id="tr_MontoDeposita">
+					<td>Monto Depositado en moneda [_TipoMonedaCTS_]</td>
+					<td class="tr bold">[_MontoDeposita_]</td>
+				</tr>
+				<tr>
+					<td style="padding-top:20px;">[_Fecha_]</td>
+					<td></td>
+				</tr>
+			</table>
+			<table style="margin-top:40px;">
+				<tr>
+					<td class="tc" style="width:50%">________________________________________</td>
+					<td class="tc" style="width:50%">________________________________________</td>
+				</tr>
+				<tr>
+					<td class="tc">[_Empleador_]</td>
+					<td class="tc">[_Trabajador_]</td>
+				</tr>
+				<tr>
+					<td class="tc"></td>
+					<td class="tc">[_Dni_]</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

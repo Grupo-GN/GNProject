@@ -119,10 +119,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
         color: #fff !important;
         font-size: 10px !important;
     }
-    .gridSmall tr:last-child {
-        background-color: #116FB4 !important;
+    /*.gridSmall tr:last-child {
+        background-color: #116FB4 !important;*/
         /*color: #fff !important;*/
-    }
+    /*}*/
     .gridSmall tr td span {
         font-size: 10px !important;
     }
@@ -133,10 +133,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 /*++++Estilos para la cabecera++++*/
 .gridSmallCabecera {
-    background-color: #116FB4 !important;
+    background-color: #192B70 !important;
     color: #fff !important;
-    text-align:center;
-    width:100% !important;
+    text-align: center;
+    width: 100% !important;
 }
 .gridSmallCabecera tr th span {
 
@@ -204,7 +204,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
 .EstiloGeneralBoton {
-    background-color: #116FB4;
+    background-color: #192B70;
     margin: 10px;
     padding: 5px 8px;
     text-align: center;
@@ -219,7 +219,22 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
     font-size: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-
+    .EstiloGeneralBoton:hover {
+        background-color: #FFA500;
+        margin: 10px;
+        padding: 5px 8px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: black;
+        /* box-shadow: 0 0 20px #eee; */
+        border-radius: 5px;
+        /*display: block;*/
+        border: none;
+        font-size: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
 .btn-buscar {
     background-color: rgba(64, 135, 236, 0.76) !important;
 }
@@ -239,10 +254,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 #divFiltros {
     padding: 10px !important;
-    margin: 1%;
+    margin-bottom: 1% !important;
     display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
-    width: fit-content !important;
+    width: 100% !important;
     width:100%;
 }
 

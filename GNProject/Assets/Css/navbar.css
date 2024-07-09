@@ -8967,8 +8967,7 @@ a.nav-link.active:not(.collapsed) {
 .bg-black {
     --bs-bg-opacity: 1;
     /*background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;*/
-    background-color:#1f3485;
-    background-color:#1f3485 !important;
+    background-color: #192B70 !important;
 }
 
 .bg-white {
@@ -12601,7 +12600,9 @@ body {
                 padding-top: 0.75rem;
                 padding-bottom: 0.75rem;
                 position: relative;
-                font-size:15px;
+                font-size: 15px;
+                font-family: "Dosis", sans-serif;
+                font-weight:500;
             }
 
                 .sb-sidenav .sb-sidenav-menu .nav .nav-link .sb-nav-link-icon {
@@ -12877,4 +12878,12 @@ a.nav-link.sub:not(.collapsed) {
 }
 .tittlendbuttom{
 
+}
+.container_main {
+    padding: 10px;
+    /* border: solid 3px; */
+    /* border-color: red; */
+    margin: 15px;
+    background-color: white;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, .5);
 }

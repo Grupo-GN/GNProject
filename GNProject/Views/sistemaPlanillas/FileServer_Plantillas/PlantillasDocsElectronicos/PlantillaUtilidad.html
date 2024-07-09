@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<style>
+			body
+			{
+				font-size:12px;
+			}
+			table 
+			{
+				width:100%;
+				font-size:12px;
+				/*font-family:Arial;*/ /*Hace que el pdf pese 50KB más*/
+				/*text-align:center;*/
+				border-collapse: collapse;
+			}
+			table, th, td {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				padding-left: 4px;
+				padding-right: 4px;
+			}
+			.bl
+			{
+				border-left: solid 1px;
+			}
+			.br
+			{
+				border-right: solid 1px;
+			}
+			.bt{
+				border-top: solid 1px;
+			}
+			.bb{
+				border-bottom: solid 1px;
+			}
+			.tl{
+				text-align:left;
+			}
+			.tr{
+				text-align:right;
+			}
+			.tc{
+				text-align:center;
+			}
+			.bold{
+				font-weight:bold;
+			}
+		</style>		
+	</head>
+	<body>
+		<table style="font-weight:bold;font-size:14px;">
+			<tr>
+				<td class="tc" style="padding-top:50px;">HOJA DE LIQUIDACION DE LA DISTRIBUCION DE LAS UTILIDADES</td>
+			</tr>
+		</table>
+		<div style="padding:20px;">
+			<table style="margin-top:20px;">
+				<tr>
+					<td style="text-align:justify;">[_Cabecera_]</td>
+				</tr>
+			</table>
+			<table style="margin-top:20px;">
+				<tr>
+					<td colspan="3" class="bold">CALCULO DEL MONTO DE LA PARTICIPACION EN LAS UTILIDADES</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td class="bold" style="width:4%; padding-top:10px;padding-bottom:10px;">1.</td>
+					<td class="bold" style="width:80%; padding-top:10px;padding-bottom:10px;">Utilidad por Distribuir</td>
+					<td class="tr" style="width:16%;"></td>
+				</tr>
+				<tr id="trRenta">
+					<td></td>
+					<td>- Renta anual de la empresa antes de impuestos:</td>
+					<td class="tr">[_Renta_]</td>
+				</tr>
+				<tr id="trPorcentaje">
+					<td></td>
+					<td>- Porcentaje a distribuir:</td>
+					<td class="tr">[_Porcentaje_]</td>
+				</tr>
+				<tr id="trMonto">
+					<td></td>
+					<td>- Monto a distribuir:</td>
+					<td class="tr">[_Monto_]</td>
+				</tr>
+				<tr>
+					<td class="bold" style="padding-top:10px;padding-bottom:10px;">2.</td>
+					<td colspan="2" class="bold" style="padding-top:10px;padding-bottom:10px;">Cálculo de la participación</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="bold">2.1. Según los días laborales</td>
+					<td class="tr"></td>
+				</tr>
+				<tr id="trTotalDias">
+					<td></td>
+					<td>- Número total de días laborados durante el ejercicio [_Ejercicio_] por todos los trabajadores de la empresa con derecho a percibir utilidades :</td>
+					<td class="tr">[_TotalDias_]</td>
+				</tr>
+				<tr id="trDiasLaborados">
+					<td></td>
+					<td>- Número de días laborales durante el ejercicio [_Ejercicio_] por el trabajador:</td>
+					<td class="tr">[_DiasLaborados_]</td>
+				</tr>
+				<tr id="trParticipacion">
+					<td></td>
+					<td>- Participación del trabajador según días laborados:</td>
+					<td class="tr">[_Participacion_]</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="bold">2.2. Según las remuneraciones percibidas</td>
+					<td class="tr"></td>
+				</tr>
+				<tr id="trRemuneracion">
+					<td></td>
+					<td>- Remuneración computable total pagada durante el ejercicio [_Ejercicio_] a todos los trabajadores de la empresa :</td>
+					<td class="tr">[_Remuneracion_]</td>
+				</tr>
+				<tr id="trRemComputable">
+					<td></td>
+					<td>- Remuneración computable percibida durante el ejercicio [_Ejercicio_] por el trabajador :</td>
+					<td class="tr">[_RemComputable_]</td>
+				</tr>
+				<tr id="trParticipacionRem">
+					<td></td>
+					<td>- Participación del trabajador según días laborados :</td>
+					<td class="tr">[_ParticipacionRem_]</td>
+				</tr>
+				<tr>
+					<td class="bold" style="padding-top:10px;padding-bottom:10px;">3.</td>
+					<td colspan="2" class="bold" style="padding-top:10px;padding-bottom:10px;">Monto del remanente generado por el trabajador</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>- Total de la participación del trabajador en las utilidades :</td>
+					<td class="tr" style="border-bottom: 3px double #000000">[_TotParticipacion_]</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>- Retenciones del impuesto a la Renta de 5ta Categoría :</td>
+					<td class="tr">[_DSCTO5TAUTI_]</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>- Participación neta :</td>
+					<td class="tr">[_NetaParticipacion_]</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="tr" style="padding-top:20px;">Fecha de emisión: Marzo 2024</td>
+					<td></td>
+				</tr>
+			</table>
+			<table style="margin-top:40px;">
+				<tr>
+					<td class="tc" style="width:50%">________________________________________</td>
+					<td class="tc" style="width:50%">________________________________________</td>
+				</tr>
+				<tr>
+					<td class="tc">[_Trabajador_]</td>
+					<td class="tc">Empleador</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

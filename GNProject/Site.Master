@@ -31,6 +31,9 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <%--<script src="../../Scripts/jquery/jquery-1.10.2.min.js" type="text/javascript"></script>--%>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <script src="/Scripts/jquery/session.js" type="text/javascript"></script>
     <script src="/Scripts/GN/GN_script.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" type="text/javascript"></script>
@@ -568,8 +571,11 @@
        <a class="nav-link slow-link" href="index.html" style="background-color:#f8f9fd">                                                                                                                            
            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt text-info"></i></div>                                                                                     
            Dashboard                                                                                                                                                               
-       </a>                                                                                                                                                                        
-																																							
+       </a>                                                                                                                                                                  
+	    <a class="nav-link slow-link" href="/Views/portal/Inicio/Default.aspx" style="background-color:#f8f9fd">                                                                                                                            
+           <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt text-info"></i></div>                                                                                     
+           Inicio                                                                                                                                                               
+       </a> 																																					
 	<a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages1a" aria-expanded="false" aria-controls="collapsePages">           
            <div class="sb-nav-link-icon"><i class="bi bi-briefcase-fill text-info"></i></div>                                                                                      
            Gerencia                                                                                                                                                                
@@ -811,15 +817,16 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
-                <main>
-                    <div id="divFiltros" runat="server" style="padding: 0px 0px; margin: 1%">
-                        <%-- Contenido dentro del div --%>
-                        <uc1:ucfiltros runat="server" id="ucFiltros1" />
-                    </div>
-                    <div class="container-fluid px-4">
-                         <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-                         </asp:ContentPlaceHolder>
+                <main style="background-color: #f8f9fd !important;">
+                    <div class="container_main">
+                        <div id="divFiltros" runat="server" style="padding: 0px 0px;">
+                            <%-- Contenido dentro del div --%>
+                            <uc1:ucFiltros runat="server" ID="ucFiltros1" />
+                        </div>
+                        <div class="container-fluid px-4">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
                     </div>
                 </main>                
             </div>

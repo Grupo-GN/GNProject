@@ -117,7 +117,7 @@ a {
     }
 
 td > a {
-    color: #4682B4 !important;
+   /* color: #4682B4 !important;*/
     text-decoration: underline;
 }
 /*#endregion **********CSS CONTROLES HTML**********/

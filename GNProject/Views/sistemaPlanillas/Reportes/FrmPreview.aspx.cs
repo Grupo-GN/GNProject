@@ -559,19 +559,36 @@ namespace GNProject.Views.sistemaPlanillas.Reportes
                                     if (oval1 != "")
                                     {
                                         string valor = dtBoletaPagos.Rows[xi][36].ToString().Trim();
-                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + oval1.Split('.')[0] + " DÍAS TRUNCOS)";
+                                        string diastruncos = ConvertirMMDD(oval1);
+                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + diastruncos + " TRUNCOS)";
                                     }; break;
                                 case "VACACIONES TRUNCAS":
                                     if (oval2 != "")
                                     {
                                         string valor = dtBoletaPagos.Rows[xi][36].ToString().Trim();
-                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + oval2.Split('.')[0] + " DÍAS TRUNCOS)";
+                                        string diastruncos = ConvertirMMDD(oval2);
+                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + diastruncos + " TRUNCOS)";
                                     }; break;
                                 case "GRATIFICACION ORDINARIA":
                                     if (oval3 != "")
                                     {
                                         string valor = dtBoletaPagos.Rows[xi][36].ToString().Trim();
-                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + oval3.Split('.')[0] + " DÍAS TRUNCOS)";
+                                        string diastruncos = ConvertirMMDD(oval3);
+                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + diastruncos + " TRUNCOS)";
+                                    }; break;
+                                case "GRATIFICACION TRUNCA":
+                                    if (oval3 != "")
+                                    {
+                                        string valor = dtBoletaPagos.Rows[xi][36].ToString().Trim();
+                                        string diastruncos = ConvertirMMDD(oval3);
+                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + diastruncos + " TRUNCOS)";
+                                    }; break;
+                                case "VACACIONES PENDIENTES":
+                                    if (oval4 != "")
+                                    {
+                                        string valor = dtBoletaPagos.Rows[xi][36].ToString().Trim();
+                                        string diastruncos = ConvertirMMDD(oval4);
+                                        dtBoletaPagos.Rows[xi][36] = valor + " ( " + diastruncos + " TRUNCOS)";
                                     }; break;
                             }
                         }
@@ -618,7 +635,7 @@ namespace GNProject.Views.sistemaPlanillas.Reportes
                                     dtRemComputable.Rows.Add(dr);
                                 }
 
-                                if (Convert.ToDecimal(row["STiempoCTS"]) != 0 && Convert.ToDecimal(row["PromHE"]) != 0 && Convert.ToDecimal(row["LiqPromSobre"]) != 0)
+                                if (Convert.ToDecimal(row["STiempoCTS"]) != 0 || Convert.ToDecimal(row["PromHE"]) != 0 || Convert.ToDecimal(row["LiqPromSobre"]) != 0)
                                 {
                                     dr = dtRemComputable.NewRow();
                                     dr["Trabajador"] = row["Trabajador"].ToString();
@@ -923,13 +940,37 @@ namespace GNProject.Views.sistemaPlanillas.Reportes
                         proceso_Id = Request.QueryString["proceso_Id"].ToString();
                         usuario_Id = "";
                         if (personal_Id == "0") personal_Id = "%"; //Para TODOS
+
+
+                        DataTable dtLiquidaBeneSocialesuti = new DataTable();
+                        dtLiquidaBeneSocialesuti = Log_Reportes.Lista_rpt_Reportes("0041", "", periodo_Id, "08", personal_Id);
+                        dtLiquidaBeneSocialesuti.Columns.Add("LogoEmp", System.Type.GetType("System.Byte[]"));
+                        dtLiquidaBeneSocialesuti.Columns.Add("imgFirma", System.Type.GetType("System.Byte[]"));
+                        dtLiquidaBeneSocialesuti.Columns.Add("Razon_Social", System.Type.GetType("System.String"));
+                        dtLiquidaBeneSocialesuti.Columns.Add("RUC", System.Type.GetType("System.String"));
+                        foreach (DataRow fila in dtLiquidaBeneSocialesuti.Rows)
+                        {
+                            fila["LogoEmp"] = Utils.fc_ConversionImagen(rutaLogoEmpresa);
+                            fila["imgFirma"] = Utils.fc_ConversionImagen(rutaImgFirma);
+
+                        }
                         DataTable dtUtilidades = new DataTable();
                         dtUtilidades = Log_Reportes.Lista_rpt_Reportes(reporte_Id, usuario_Id, periodo_Id, proceso_Id, personal_Id);
 
+                        if (dtUtilidades.Columns.Contains("DSCTO5TAUTI"))
+                        {
+                            dtUtilidades.Columns["DSCTO5TAUTI"].ColumnName = "UTIL_RET_5TA";
+                        }
+                        if (dtUtilidades.Columns.Contains("TOTNETOUTI"))
+                        {
+                            dtUtilidades.Columns["TOTNETOUTI"].ColumnName = "UTIL_NETO";
+                        }
                         rptSource = new ReportDocument();
                         rptSource.Load(Server.MapPath("Utilidades.rpt"));
 
-                        rptSource.SetDataSource(dtUtilidades);
+                        //rptSource.SetDataSource(dtUtilidades);
+                        rptSource.Database.Tables["PROC_SCIRE1_LISTAR_REPORTE;1"].SetDataSource(dtUtilidades);
+                        rptSource.Database.Tables["LiquidaBeneSociales"].SetDataSource(dtLiquidaBeneSocialesuti);
                         CrystalReportViewer1.DisplayGroupTree = false;
                         CrystalReportViewer1.ReportSource = rptSource;
                         dtUtilidades.Dispose();
@@ -1124,5 +1165,14 @@ namespace GNProject.Views.sistemaPlanillas.Reportes
             //////    Response.End();
             //////}
         }
+        private static string ConvertirMMDD(string stringdias)
+        {
+            int totalDays = int.Parse(stringdias.Split('.')[0]);
+            int months = totalDays / 30;
+            int days = totalDays % 30;
+            string resultado = months + " MESES Y " + days + " DIAS";
+            return resultado;
+        }
+
     }
 }

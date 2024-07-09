@@ -108,7 +108,8 @@
                     <input type="button" id="btnGenerarResumenIng" class="submit EstiloGeneralBoton" value="Reporte Ingresos CCosto" style="width:200px;" />
                     &nbsp;&nbsp;&nbsp;
                     <input type="button" id="btnGenerarResumenIngLocalidad" class="submit EstiloGeneralBoton" value="Reporte Ingresos Localidad" style="width:200px;" />
-                    
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="button" id="btnGenerarResumenCompleto" class="submit EstiloGeneralBoton" value="Reporte Consolidado General" style="width:200px;" />
                 </td>
             </tr>
         </table>
@@ -418,7 +419,49 @@
                 + ":" + ($("#chkDolares").prop("checked") ? "1" : "0");
             fc_OpenReport("REP_PLANILLA_GENERAL_COMPARATIVO", parametros, "1");
         });
+        $('#btnGenerarResumenCompleto').click(function () {
+            if ($("#cboProceso").multipleSelect("getSelects") == "") {
+                alert("Debe seleccionar un proceso.");
+                return;
+            }
+            if ($("#cboPlanilla").val() == "-1") {
+                alert("Debe seleccionar planilla.");
+                return;
+            }
+            if ($("#cboEjercicio").val() == "-1") {
+                alert("Debe seleccionar ejercicio.");
+                return;
+            }
+            //20180705
+            var ppersonal = $("#cboPersonalActivo").multipleSelect("getSelects");
+            var ppersonalcount = $('#cboPersonalActivo option').length;
+            var parperso;
+            if (ppersonal.length == ppersonalcount) {
+                parperso = 'all';
+            } else {
+                parperso = ppersonal;
+            }
 
+            var parametros = $("#cboPeriodoIni").val()
+                + ":" + $("#cboPeriodoFin").val()
+                + ":" + $("#cboProceso").multipleSelect("getSelects")
+                + ":" + $("#cboConcepto_Fijos").multipleSelect("getSelects")
+                + ":" + $("#cboConcepto_Variables").multipleSelect("getSelects")
+                + ":" + $("#cboConcepto_Directos").multipleSelect("getSelects")
+                + ":" + $("#cboConcepto_Acumulados").multipleSelect("getSelects")
+                + ":" + $("#cboArea").val()
+                + ":" + $("#cboCatAuxiliar").val()
+                //+ ":" + $("#cboPersonalActivo").multipleSelect("getSelects");
+                + ":" + $("#cboProyecto").val()
+                + ":" + parperso
+                + ":" + ($("#chkDolares").prop("checked") ? "1" : "0");
+            var nreporte = 'REP_PLANILLA_COMPLETA_RESUMEN';
+            if ($('#chkCentros').prop('checked') == true) {
+                nreporte = 'REP_PLANILLA_GENERAL_CENTROS';
+            }
+
+            fc_OpenReport(nreporte, parametros, "1");
+        });
         function CargarConceptos(combo_Id, Tipo_Concepto_ID) {
             var params = {
                 Tipo: Tipo_Concepto_ID

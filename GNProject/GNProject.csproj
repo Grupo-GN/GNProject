@@ -117,6 +117,9 @@
       <HintPath>..\packages\CrystalReports.Web.13.0.4000\lib\net40\CrystalDecisions.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EPPlus, Version=5.8.14.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.8.14\lib\net45\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
     </Reference>
@@ -127,6 +130,9 @@
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -151,9 +157,15 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -1075,7 +1087,11 @@
     <Content Include="Views\sistemaPlanillas\Reportes\PrintAsiento.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmContratoNuevo.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronico.aspx" />
+    <Content Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronicoRpt.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx" />
+    <Content Include="Views\sistemaPlanillas\RRHH\FrmProgramacionesVaca.aspx" />
+    <Content Include="Views\sistemaPlanillas\RRHH\FrmVerDocumentoElectronico.aspx" />
+    <Content Include="Views\sistemaPlanillas\RRHH\GenDocumentoOnline.aspx" />
     <Content Include="Views\sistemaPlanillas\RRHH\Scripts\Script_ContratoNuevo.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.js" />
     <Content Include="Views\sistemaPlanillas\Scripts\bootstrap.min.js" />
@@ -3745,12 +3761,40 @@
     <Compile Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronico.aspx.designer.cs">
       <DependentUpon>FrmDocumentoElectronico.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronicoRpt.aspx.cs">
+      <DependentUpon>FrmDocumentoElectronicoRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmDocumentoElectronicoRpt.aspx.designer.cs">
+      <DependentUpon>FrmDocumentoElectronicoRpt.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx.cs">
       <DependentUpon>FrmPlantillaContratoTrab.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\RRHH\FrmPlantillaContratoTrab.aspx.designer.cs">
       <DependentUpon>FrmPlantillaContratoTrab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmProgramacionesVaca.aspx.cs">
+      <DependentUpon>FrmProgramacionesVaca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmProgramacionesVaca.aspx.designer.cs">
+      <DependentUpon>FrmProgramacionesVaca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmVerDocumentoElectronico.aspx.cs">
+      <DependentUpon>FrmVerDocumentoElectronico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\FrmVerDocumentoElectronico.aspx.designer.cs">
+      <DependentUpon>FrmVerDocumentoElectronico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\GenDocumentoOnline.aspx.cs">
+      <DependentUpon>GenDocumentoOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sistemaPlanillas\RRHH\GenDocumentoOnline.aspx.designer.cs">
+      <DependentUpon>GenDocumentoOnline.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\sistemaPlanillas\UserControl\ucComboArea.ascx.cs">
       <DependentUpon>ucComboArea.ascx</DependentUpon>

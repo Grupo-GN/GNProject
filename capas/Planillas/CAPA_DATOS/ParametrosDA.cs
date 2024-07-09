@@ -49,7 +49,7 @@ namespace CAPA_DATOS
 
         private static string getFileServerPath_RUC()
         {
-            return ConfigurationManager.AppSettings["FileServerPath"].ToString().Replace("{RUC}", Conex.getRUCEmpresa());
+            return ConfigurationManager.AppSettings["P_FileServerPath"].ToString().Replace("{RUC}", Conex.getRUCEmpresa());
         }
         public static string FileServerPath
         {
@@ -66,17 +66,17 @@ namespace CAPA_DATOS
             throw new NotImplementedException();
         }
 
-        public static string FileServerPath_Plantilas { get { return HttpContext.Current.Server.MapPath(System.Configuration.ConfigurationManager.AppSettings["FileServerPath_Plantillas"].ToString()); } }
-        public static string FileServer_RutaPlantillas { get { return FileServerPath_Plantilas + ConfigurationManager.AppSettings["RutaPlantillas"].ToString(); } }
+        public static string FileServerPath_Plantilas { get { return HttpContext.Current.Server.MapPath(System.Configuration.ConfigurationManager.AppSettings["P_FileServerPath_Plantillas"].ToString()); } }
+        public static string FileServer_RutaPlantillas { get { return FileServerPath_Plantilas + ConfigurationManager.AppSettings["P_RutaPlantillas"].ToString(); } }
 
-        public static string FileServer_RutaDocumentos { get { return FileServerPath + ConfigurationManager.AppSettings["RutaDocumentos"].ToString(); } }
+        public static string FileServer_RutaDocumentos { get { return FileServerPath + ConfigurationManager.AppSettings["P_RutaDocumentos"].ToString(); } }
         public static string VirtualServer_RutaDocumentos
         {
             get
             {
                 return ConfigurationManager.AppSettings["RutaServidor"].ToString()
                       + getFileServerPath_RUC().Replace("~/", "")
-                      + ConfigurationManager.AppSettings["RutaDocumentos"].ToString();
+                      + ConfigurationManager.AppSettings["P_RutaDocumentos"].ToString();
             }
         }
 

@@ -14,11 +14,11 @@ function initilize() {
             fc_OpenReport("REPASIENTOSTAR", parametros, "1");
         }
         if ($('#rbExcel').prop('checked') == true) {
-            var parametros = $("#cboAsiento").val() + ":" + document.getElementById('periodoSession').value;
+            var parametros = $("#cboAsiento").val() + ":" + document.getElementById('periodoSession').value
             fc_OpenReport("REPASIENTOEXCEL", parametros, "1");
         }
         if ($('#rbGeneral2').prop('checked') == true) {
-            var parametros = $("#ctl00_ucFiltros1_cboPeriodo").val()
+            var parametros = document.getElementById('periodoSession').value
                 + ":" + $("#cboAsiento").val()
                 + ":" + ($("#chkDolares").prop("checked") ? "1" : "0");
 
@@ -28,12 +28,12 @@ function initilize() {
             else { alert("No existen asientos configurados para el ejercicio actual."); }
         }
         if ($('#rbConsisat').prop('checked') == true) {
-            var parametros = $("#ctl00_ucFiltros1_cboPeriodo").val()
+            var parametros = document.getElementById('periodoSession').value
                 + ":" + ($("#chkDolares").prop("checked") ? "1" : "0");
             fc_OpenReport("REPASIENTO_CONSISAT", parametros, "1");
         }
         if ($('#rbTipoGroup').prop('checked') == true) {
-            var parametros = $("#ctl00_ucFiltros1_cboPeriodo").val()
+            var parametros = document.getElementById('periodoSession').value
                 + ":" + $("#cboAsiento").val() 
                 + ":" + ($("#chkDolares").prop("checked") ? "1" : "0");
             fc_OpenReport("REPASIENTO_TIPOGROUP", parametros, "1");
@@ -112,7 +112,7 @@ function cargarCombo() {
     }
 }
 function CargarAsientos() {
-    var xEjercicio = document.getElementById('anioSession').value, xPlanilla = document.getElementById('planilllaSession').value;
+    var xEjercicio = document.getElementById('anioSession').value, xPlanilla = document.getElementById('planillaSession').value;
     var params = {
         xEjercicio: xEjercicio,
         xPlanilla: xPlanilla
