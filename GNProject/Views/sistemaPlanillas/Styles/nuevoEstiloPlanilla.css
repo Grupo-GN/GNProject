@@ -3,6 +3,11 @@
     padding: 4px;
     margin: 0;
     background: none !important;
+    border-top: #b1b1b1 solid 1px;
+    border-left: #b1b1b1 solid 1px;
+    border-right: #b1b1b1 solid 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .ajax__tab_xp .ajax__tab_active .ajax__tab_tab {
@@ -95,6 +100,8 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
     .table th, .table td {
+        color: White;
+        background-color: #192B70;
         padding: 4px !important;
         vertical-align: top;
         border-top: none !important;
@@ -115,7 +122,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 }
 
     .gridSmall tr th {
-        background-color: #116FB4 !important;
+        background-color: #192B70 !important;
         color: #fff !important;
         font-size: 10px !important;
     }
@@ -243,9 +250,9 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
     background-color: rgba(6, 49, 111, 0.76) !important;
 }
 
-.btn-nuevo {
+/*.btn-nuevo {
     background-color: #FFA92C;
-}
+}*/
 
 .btn-agregar-en-tablas {
     margin: 3px;
