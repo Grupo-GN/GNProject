@@ -75,7 +75,7 @@
             <table class="table">
                  <tfoot>
                 <tr>
-                <td class="tfoottd"  colspan="3">
+                <td class="tfoottd"  colspan="3" style="font-size: 10px;">
 
                     <label style="font-family: 'AENOR Fontana ND'; font-weight: bold; font-size: 1.1em;" >TOTAL REGISTROS: </label> &nbsp
                     <input id="txtnRegistros" type="text" value="0" class="TextPage" readonly="true" /> &nbsp &nbsp
