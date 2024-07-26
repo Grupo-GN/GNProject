@@ -269,8 +269,8 @@ input[type="file"] {
     /* Ocultar el input real */
     /*display: none;*/
 }
-.EstiloGeneralBoton, #MainContent_btnEliminarFoto  {
-    background-color: #116FB4;
+.EstiloGeneralBoton, #MainContent_btnEliminarFoto {
+    background-color: #192B70;
     margin: 10px;
     padding: 5px 8px;
     text-align: center;
@@ -285,11 +285,12 @@ input[type="file"] {
     font-size: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-.EstiloGeneralBoton:hover{
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-}
+    .EstiloGeneralBoton:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #000000;
+        background-color: #FFA500;
+        text-decoration: none;
+    }
 .btn-buscar::before {
     content: "\F52A"; /* Código Unicode del ícono de búsqueda */
     font-family: "Bootstrap Icons"; /* Fuente que contiene los iconos */
@@ -333,7 +334,7 @@ input[type="file"] {
 
 /***Titulosss*/
 .title {
-    color: #FFA92C;
+    color: #000080;
     font-weight: bold;
     font-size: 15px;
     border-bottom: 1px solid DarkOrange;

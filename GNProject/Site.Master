@@ -82,7 +82,7 @@
             </asp:ScriptManager>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-black" >
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3 slow-link" style="color:white" href="index.html">GN PROJECT</a>
+            <%--<a class="navbar-brand ps-3 slow-link" style="color:white" href="index.html">GN PROJECT</a>--%>
             <!-- Sidebar Toggle-->
             <button runat="server" class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 slow-link text-warning"  id="sidebarToggle" href="#!"><i class="fas fa-bars" style="color:white"></i></button>
             <!-- Navbar Search-->
@@ -818,8 +818,7 @@
             </div>
             <div id="layoutSidenav_content">
                 <main style="background-color: #f8f9fd !important;">
-                    <div class="container_main">
-                        <div id="divFiltros" runat="server" style="padding: 0px 0px;">
+                    <div id="divFiltros" runat="server" style="padding: 0px 0px;">
                             <%-- Contenido dentro del div --%>
                             <uc1:ucFiltros runat="server" ID="ucFiltros1" />
                         </div>
@@ -827,7 +826,6 @@
                             <asp:ContentPlaceHolder ID="MainContent" runat="server">
                             </asp:ContentPlaceHolder>
                         </div>
-                    </div>
                 </main>                
             </div>
         </div>

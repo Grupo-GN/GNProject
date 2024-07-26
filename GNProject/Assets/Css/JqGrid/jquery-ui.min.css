@@ -8,7 +8,7 @@
     .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
         border: 0px solid #c5dbec;
         /*background: #dfeffc url("images/ui-bg_glass_85_dfeffc_1x400.png") 50% 50% repeat-x;*/
-        background:#116fb4;
+        background: #192b70;
         font-weight: bold;
         color: white !important;
     }.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited,a.ui-button,a:link.ui-button,a:visited.ui-button,.ui-button{color:#2e6e9e;text-decoration:none}
