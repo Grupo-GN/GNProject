@@ -39,64 +39,53 @@ input[type=text], select {
         <%-- nuevo --%>
                 <tr>
             <td style="width:200px;text-align:right;">
-                <label class="miLabel">Planilla : </label></td>
+                <label class="miLabel">Planilla  </label></td>
             <td class="auto-style1">
                 &nbsp;
                    <asp:DropDownList ID="cboPlanilla" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cboPlanilla_SelectedIndexChanged" >
                 </asp:DropDownList>
             </td>
-            <td style="text-align:right;"><label class="miLabel">Periodo : </label></td>
+            <td style="text-align:right;"><label class="miLabel">Periodo  </label></td>
             <td>
                 <asp:DropDownList ID="CmbPeridos" runat="server" AutoPostBack="True" ></asp:DropDownList>
                 
             </td>
             <td style="text-align:right;"></td>
-            <td>
-            <asp:Button ID="btnCalcularHE" runat="server"  class="submit" Text="Calcular H.E dentro del Rango" 
-                    onclick="btnCalcularHE_Click" Width="233px" />
-            </td>
+            
         </tr>
         <%-- fin --%>
         <tr>
-            <td style="width:200px;text-align:right;"><label class="miLabel">Fecha Inicio : </label></td>
+            <td style="width:200px;text-align:right;"><label class="miLabel">Fecha Inicio  </label></td>
             <td class="auto-style1">
                 <asp:TextBox ID="txtfechaini" runat="server" 
                     ontextchanged="txtfechaini_TextChanged" AutoPostBack="True"></asp:TextBox>
             </td>
             <td style="text-align:right;">
-                <label class="miLabel">FECHA FIN : </label></td>
+                <label class="miLabel">FECHA FIN  </label></td>
             <td>
                 <asp:TextBox ID="txtfechafin" runat="server" CssClass="txt" 
                     ontextchanged="txtfechafin_TextChanged" AutoPostBack="True"></asp:TextBox>
             </td>
             <td style="text-align:right;"></td>
-            <td>
-                <asp:Button ID="btnRecalcular" runat="server"  class="submit" Text="Reprocesar Marcaciones" 
-                    Width="233px" OnClick="btnRecalcular_Click" />
-            </td>
+            
         </tr>
         <tr>
-            <td style="text-align:right;" class="auto-style1"><label class="miLabel">Localidad : </label></td>
+            <td style="text-align:right;" class="auto-style1"><label class="miLabel">Localidad  </label></td>
             <td class="auto-style1">
                 <asp:DropDownList ID="cboLocalidad" runat="server" AutoPostBack="True" 
                     onselectedindexchanged="cboLocalidad_SelectedIndexChanged">
                 </asp:DropDownList>
             </td>
-            <td style="text-align:right;" class="auto-style1"><label class="miLabel">Personal : </label></td>
+            <td style="text-align:right;" class="auto-style1"><label class="miLabel">Personal  </label></td>
             <td class="auto-style1">
                 <asp:DropDownList ID="cboPersonal" runat="server" AutoPostBack="True" 
                     onselectedindexchanged="cboPersonal_SelectedIndexChanged">
                 </asp:DropDownList>
             </td>
             <td style="text-align:right;" class="auto-style1"></td>
-             <td class="auto-style1">
-                 <asp:CheckBox ID="chkreprocesar" runat="server"  Text="Reprocesar Faltas" /> &nbsp;<asp:Button  runat="server" class="submit" Text="...." id="btnmos" style="width:10%"    OnClick="btnmos_Click" /><br />
-                <asp:Button ID="btnFalta" runat="server"  class="submit" Text="Reasignar Falta" 
-                    Width="233px" OnClick="btnFalta_Click"/>
-            </td>
         </tr>
         <tr>
-            <td style="text-align:right;"><label class="miLabel">Reemplazar Ingreso o Salida : </label></td>
+            <td style="text-align:right;"><label class="miLabel">Reemplazar Ingreso o Salida  </label></td>
             <td colspan="3" style="text-align:center;">
                 <table style="width:100%;border-collapse:collapse;">
                     <tr>
@@ -114,19 +103,17 @@ input[type=text], select {
                 </table>
             </td>            
             <td style="text-align:right;">&nbsp;</td>
-            <td>
-                <asp:Button ID="btnelimina" runat="server" class="submit"   Text="Eliminar Registro" Width="233px" OnClick="btnelimina_Click" />
-            </td>
+            
         </tr>
         <tr>
-            <td style="text-align:right;"><label class="miLabel">Asignar C. Costo : </label></td>
+            <td style="text-align:right;"><label class="miLabel">Asignar C. Costo  </label></td>
             <td class="auto-style1">
                 <asp:DropDownList ID="cboAsigCC" runat="server" >
                 </asp:DropDownList>
                 <asp:Button ID="btnAsig1" runat="server" Text="Asignar" class="submit" OnClientClick="return confirm('¿Está seguro(a) de continuar?');" OnClick="btnAsig1_Click"/>
                 &nbsp;
                 </td>
-            <td style="text-align:right;"><label class="miLabel">Asignar Turno : </label></td>
+            <td style="text-align:right;"><label class="miLabel">Asignar Turno  </label></td>
             <td>
                 <asp:DropDownList ID="cboAsigTurno" runat="server" >
                 </asp:DropDownList>
@@ -137,6 +124,13 @@ input[type=text], select {
             <td>&nbsp;</td>
         </tr>
     </table>
+    <div style="margin-top: 5em">
+        <asp:Button ID="btnCalcularHE" runat="server"  class="submit" Text="Calcular H.E dentro del Rango" onclick="btnCalcularHE_Click" Width="233px"/>
+        <asp:Button ID="btnRecalcular" runat="server"  class="submit" Text="Reprocesar Marcaciones" Width="233px" OnClick="btnRecalcular_Click" />
+        <asp:Button ID="btnelimina" runat="server" class="submit"   Text="Eliminar Registro" Width="233px" OnClick="btnelimina_Click" />
+        <asp:CheckBox ID="chkreprocesar" runat="server"  Text="Reprocesar Faltas" /> &nbsp;<asp:Button  runat="server" class="submit" Text="...." id="btnmos" style="width:10%"    OnClick="btnmos_Click" /><br />
+        <asp:Button ID="btnFalta" runat="server"  class="submit" Text="Reasignar Falta" Width="233px" OnClick="btnFalta_Click"/>
+    </div>
     <%--<table class="tableDialog">
         <tr>
             <td style="width:200px;text-align:right;"><label class="miLabel">Fecha : </label></td>

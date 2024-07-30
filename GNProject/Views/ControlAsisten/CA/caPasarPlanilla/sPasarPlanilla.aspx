@@ -47,38 +47,38 @@
     <table class="table" id="TblPasarPlanilla">
         <thead>
             <tr>
-                <th colspan="17" style="background-color:Green;">CONTROL DE ASISTENCIA</th>
-                <th colspan="5" style="background-color:Orange ;">EN PLANILLA</th>
-                <th colspan="3" style="background-color:Silver;">PERSONAL</th>
+                <th colspan="17" style="background-color:#192B70;">CONTROL DE ASISTENCIA</th>
+                <th colspan="5" style="background-color:#FFA500; color:black">EN PLANILLA</th>
+                <th colspan="3" style="background-color:#D9D9D9; color:black">PERSONAL</th>
             </tr>
-            <tr>
+            <tr style="background-color: white">
                 <th><input type="checkbox" id="chkAll" /></th>
-                <th>PLANILLA</th>
-                <th>LOCALIDAD</th>
-                <th>PERSONAL</th>
-                <th>H.E. TOT.</th>
-                <th>H.E. SIMP.</th>
-                <th>H.E. ADI.</th>
-                <th>H.E. DOB.</th>
-                <th>FALT.</th>
-                <th>TARD.</th>
+                <th style="color:black">PLANILLA</th>
+                <th style="color:black">LOCALIDAD</th>
+                <th style="color:black">PERSONAL</th>
+                <th style="color:black">H.E. TOT.</t>
+                <th style="color:black">H.E. SIMP.</th>
+                <th style="color:black">H.E. ADI.</th>
+                <th style="color:black">H.E. DOB.</t>
+                <th style="color:black">FALT.</th>
+                <th style="color:black">TARD.</th>
                <%-- <th>DIAS PERM.</th>--%>
-                <th>DIAS PERM DESCANSO MED.</th>
-                <th>DIAS PERM PERSONAL</th>
-                <th>DIAS PERM VAC</th>
-                <th>HORAS PERM.</th>
-                  <th>PERM. SIN GOCE</th>
-                <th>DOMINICAL</th>
-                 <th>T.ASIS</th>
-                 <th>COMPENSA</th>
-                <th>H. SIMP.</th>
-                <th>H. ADI.</th>
-                <th>H. DOB.</th>
-                <th>FALT.</th>
-                <th>TARD.</th>
-                <th>PERIODO</th>
-                <th>AREA</th>
-                <th>SECCION</th>
+                <th style="color:black">DIAS PERM DESCANSO MED.</th>
+                <th style="color:black">DIAS PERM PERSONAL</th>
+                <th style="color:black">DIAS PERM VAC</th>
+                <th style="color:black">HORAS PERM.</th>
+                <th style="color:black">PERM. SIN GOCE</th>
+                <th style="color:black">DOMINICAL</th>
+                <th style="color:black">T.ASIS</th>
+                <th style="color:black">COMPENSA</th>
+                <th style="color:black">H. SIMP.</th>
+                <th style="color:black">H. ADI.</th>
+                <th style="color:black">H. DOB.</th>
+                <th style="color:black">FALT.</th>
+                <th style="color:black">TARD.</th>
+                <th style="color:black">PERIODO</th>
+                <th style="color:black">AREA</th>
+                <th style="color:black">SECCION</th>
             </tr>
         </thead>
         <tbody id="tbodyNovedades"></tbody>

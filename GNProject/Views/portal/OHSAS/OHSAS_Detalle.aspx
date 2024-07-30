@@ -18,13 +18,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="contenerdorInicioPortal" style="width:100%;position:relative">
         <div id="errorMessageLabel" runat="server">
+            <br />
             </div>
         <div id="contenedor" >
-                <div id="Welcome" style="width:100%;height:200px;">
-                    <div id="textWelcome" style="width:100%; text-align:center;top:50px;">
-                        
-                    </div>
-                </div>
+                
             <div id="contenidos" >
                 <div class="roundframe vistaIntranet">
 
@@ -55,14 +52,14 @@
 
                 </div>
             </div>
-	<div id="pie" style="width:100%">
+<%--	<div id="pie" style="width:100%">
             <div style="text-align: center; font-size: 10px; padding-top: 0px;">
                 © <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreProyecto %> <%=GNProject.Acceso.App_code_portal.Parametros.I_NombreEmpresa %> <%= DateTime.Now.Year.ToString() %>
             </div>
             <div style="text-align:right;padding-right:5px;">
                 <a class="linkWeb" href="http://www.gestiondenegociosrs.com.pe" target="_blank">Desarrollado por: Gestión de Negocios S.A.C.</a>
             </div>
-        </div>
+        </div>--%>
         </div>
     </div>
 

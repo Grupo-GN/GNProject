@@ -42,15 +42,6 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         protected global::System.Web.UI.WebControls.DropDownList CmbPeridos;
 
         /// <summary>
-        /// Control btnCalcularHE.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCalcularHE;
-
-        /// <summary>
         /// Control txtfechaini.
         /// </summary>
         /// <remarks>
@@ -69,15 +60,6 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         protected global::System.Web.UI.WebControls.TextBox txtfechafin;
 
         /// <summary>
-        /// Control btnRecalcular.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRecalcular;
-
-        /// <summary>
         /// Control cboLocalidad.
         /// </summary>
         /// <remarks>
@@ -94,33 +76,6 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList cboPersonal;
-
-        /// <summary>
-        /// Control chkreprocesar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkreprocesar;
-
-        /// <summary>
-        /// Control btnmos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnmos;
-
-        /// <summary>
-        /// Control btnFalta.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFalta;
 
         /// <summary>
         /// Control rbtipo.
@@ -148,15 +103,6 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnactu;
-
-        /// <summary>
-        /// Control btnelimina.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnelimina;
 
         /// <summary>
         /// Control cboAsigCC.
@@ -193,6 +139,60 @@ namespace GNProject.Views.ControlAsisten.CA.caControlAsistencia
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAsig2;
+
+        /// <summary>
+        /// Control btnCalcularHE.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCalcularHE;
+
+        /// <summary>
+        /// Control btnRecalcular.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRecalcular;
+
+        /// <summary>
+        /// Control btnelimina.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnelimina;
+
+        /// <summary>
+        /// Control chkreprocesar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkreprocesar;
+
+        /// <summary>
+        /// Control btnmos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnmos;
+
+        /// <summary>
+        /// Control btnFalta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFalta;
 
         /// <summary>
         /// Control pnl01.
