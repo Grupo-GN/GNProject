@@ -263,10 +263,10 @@ namespace CAPA_DATOS.oRRHH
             String querySoloVacaciones = "";
             if (prms.First(f => f.Key == "id_documento").Value.ToString() == "BP" && prms.First(f => f.Key == "id_proceso").Value.ToString() == "03") //BOLETA | VACACIONES
             {
-                querySoloVacaciones += " and exists (" 
-                    + " select vp.Vacaciones_pagadas_id from Vacaciones v " 
-                    + " inner join Vacaciones_Pagadas vp on vp.Vacaciones_id = v.Vacaciones_id " 
-                    + " where v.Personal_id = pa.personal_id And vp.Periodo_id = pa.Periodo_Id " 
+                querySoloVacaciones += " and exists ("
+                    + " select vp.Vacaciones_pagadas_id from Vacaciones v "
+                    + " inner join Vacaciones_Pagadas vp on vp.Vacaciones_id = v.Vacaciones_id "
+                    + " where v.Personal_id = pa.personal_id And vp.Periodo_id = pa.Periodo_Id "
                     + ")";
             }
 
@@ -370,7 +370,7 @@ namespace CAPA_DATOS.oRRHH
             var serializedResult = serializer.Serialize(lstPersonal);
             return serializedResult;
         }
-        
+
         //boleta de pago
         public string Get_ImprimeBoleta_HTML(object strParametros, String encryptRUC)
         {
@@ -385,7 +385,7 @@ namespace CAPA_DATOS.oRRHH
             String Periodo_Id_Desde = prms[11].ToString();
             String fl_guardar_archivo = prms[12].ToString();
             String rucEmpresa = ""; //Se obtiene al obtener la boleta desde la autenticación del usuario
-            
+
             Int32 qt_envios = 0; //@004 I/F
             foreach (string Personal_Id in (object[])prms[4])
             {
@@ -576,7 +576,66 @@ namespace CAPA_DATOS.oRRHH
                     msg_retorno = "- " + Nombre_Completo + " no tiene datos.";
                     return;
                 }
+                using (SqlConnection cn = new SqlConnection(string.IsNullOrEmpty(rucEmpresa) ? Conex.CadCon_String() : Conex.CadCon_String(rucEmpresa)))
+                {
+                    double d_feriado, d_he, d_d1, d_d2;
 
+                    using (SqlCommand command = new SqlCommand("select Convert(decimal(10,2),valor) from D_variables where Concepto_Id = '001356' and Personal_Id = @personalId and Periodo_Id = @periodoId", cn))
+                    {
+                        command.Parameters.AddWithValue("@periodoId", Periodo_Id);
+                        command.Parameters.AddWithValue("@personalId", Personal_Id);
+                        cn.Open();
+                        d_feriado = Convert.ToDouble(command.ExecuteScalar());
+                        cn.Close();
+                    }
+                    using (SqlCommand command = new SqlCommand("select Convert(decimal(10,2),valor) from D_variables where Concepto_Id = '000038' and Personal_Id = @personalId and Periodo_Id = @periodoId", cn))
+                    {
+                        command.Parameters.AddWithValue("@periodoId", Periodo_Id);
+                        command.Parameters.AddWithValue("@personalId", Personal_Id);
+                        cn.Open();
+                        d_he = Convert.ToDouble(command.ExecuteScalar());
+                        cn.Close();
+                    }
+                    using (SqlCommand command = new SqlCommand("select Convert(decimal(10,2),valor) from D_variables where Concepto_Id = '000036' and Personal_Id = @personalId and Periodo_Id = @periodoId", cn))
+                    {
+                        command.Parameters.AddWithValue("@periodoId", Periodo_Id);
+                        command.Parameters.AddWithValue("@personalId", Personal_Id);
+                        cn.Open();
+                        d_d1 = Convert.ToDouble(command.ExecuteScalar());
+                        cn.Close();
+                    }
+                    using (SqlCommand command = new SqlCommand("select Convert(decimal(10,2),valor) from D_variables where Concepto_Id = '000037' and Personal_Id = @personalId and Periodo_Id = @periodoId", cn))
+                    {
+                        command.Parameters.AddWithValue("@periodoId", Periodo_Id);
+                        command.Parameters.AddWithValue("@personalId", Personal_Id);
+                        cn.Open();
+                        d_d2 = Convert.ToDouble(command.ExecuteScalar());
+                        cn.Close();
+                    }
+
+                    foreach (DataRow fila in dtBoleta.Rows)
+                    {
+                        if (fila["Personal_Id"].ToString() == Personal_Id)
+                        {
+                            if (fila["Concepto_id1"].ToString() == "FERIADOS")
+                            {
+                                fila["Concepto_id1"] = "FERIADOS (" + d_feriado + " horas)";
+                            }
+                            if (fila["Concepto_id1"].ToString() == "H.E. 60%")
+                            {
+                                fila["Concepto_id1"] = "H.E. 60% (" + d_d1 + " horas)";
+                            }
+                            if (fila["Concepto_id1"].ToString() == "H.E. 100%")
+                            {
+                                fila["Concepto_id1"] = "H.E. 100% (" + d_d2 + " horas)";
+                            }
+                            if (fila["Concepto_id1"].ToString() == "HE DOMINGO / HE FERIADO")
+                            {
+                                fila["Concepto_id1"] = "HE DOMINGO / HE FERIADO (" + d_he + " horas)";
+                            }
+                        }
+                    }
+                }
                 #region "Genera documento PDF"
                 #region "Obtiene plantilla HTML y reemplaza datos"
                 string nombrePlantilla_HTML = "PlantillaBoleta.html";
@@ -761,7 +820,7 @@ namespace CAPA_DATOS.oRRHH
                 Document document = new Document(PageSize.A4, 30.0F, 30.0F, 30.0F, 0.0F);
                 memoryStream = new MemoryStream();
                 PdfWriter writer = PdfWriter.GetInstance(document, memoryStream);
-                
+
                 //Agrega contraseña al PDF
                 string nro_doc_personal = Nro_Doc;
                 writer.SetEncryption(true, nro_doc_personal, nro_doc_personal, PdfWriter.AllowCopy | PdfWriter.AllowPrinting);
@@ -848,9 +907,9 @@ namespace CAPA_DATOS.oRRHH
             {
                 retorno = false;
                 msg_retorno = "- " + Nombre_Completo + " no se pudo generar el documento: " + ex.Message;
-            }            
+            }
         }
-        
+
         //cts
         public string Get_ImprimeCTS_HTML(object strParametros, String encryptRUC)
         {
@@ -926,7 +985,7 @@ namespace CAPA_DATOS.oRRHH
                     strPersonalSinEnviar += "- " + Nombre_Completo + " no tiene email configurado.\n";
                     continue;
                 }
-                
+
                 #region "Inserta envío de documento y envía correo"
                 DateTime fecha_reg = DateTime.Today;
                 int cod_envio = 0;
@@ -1132,7 +1191,8 @@ namespace CAPA_DATOS.oRRHH
                 reader.Close();
                 Int32 qt_filas_ocultas = 0;
                 #region "Oculta líneas sin importe"
-                if(decimal.Parse(dtReporte.Rows[0][20].ToString()) == 0) {
+                if (decimal.Parse(dtReporte.Rows[0][20].ToString()) == 0)
+                {
                     strPlantillaHTML = ocultarEtiqueta(strPlantillaHTML, "tr", "tr_Basico");
                     qt_filas_ocultas++;
                 }
@@ -1355,7 +1415,7 @@ namespace CAPA_DATOS.oRRHH
                     strPersonalSinEnviar += "- " + Nombre_Completo + " no tiene email configurado.\n";
                     continue;
                 }
-                
+
                 #region "Inserta envío de documento y envía correo"
                 DateTime fecha_reg = DateTime.Today;
                 int cod_envio = 0;
@@ -1733,7 +1793,7 @@ namespace CAPA_DATOS.oRRHH
                     strPersonalSinEnviar += "- " + Nombre_Completo + " no tiene email configurado.\n";
                     continue;
                 }
-                
+
                 #region "Inserta envío de documento y envía correo"
                 DateTime fecha_reg = DateTime.Today;
                 int cod_envio = 0;
@@ -2058,7 +2118,7 @@ namespace CAPA_DATOS.oRRHH
                     strPersonalSinEnviar += "- " + Nombre_Completo + " no tiene email configurado.\n";
                     continue;
                 }
-                
+
                 #region "Inserta envío de documento y envía correo"
                 DateTime fecha_reg = DateTime.Today;
                 int cod_envio = 0;
@@ -2227,8 +2287,8 @@ namespace CAPA_DATOS.oRRHH
                         fechaImpresion = Convert.ToDateTime(dtReporte.Rows[0][8]).ToString("dd 'de' MMMM 'de' yyyy");
                     }
                     String distritoEmpresa = dtReporte.Rows[0]["Dpto"].ToString();
-                    distritoEmpresa= distritoEmpresa.Substring(0, 1).ToUpper() + distritoEmpresa.Substring(1).ToLower();
-                                        
+                    distritoEmpresa = distritoEmpresa.Substring(0, 1).ToUpper() + distritoEmpresa.Substring(1).ToLower();
+
                     linea = linea.Replace("[_Empresa_]", dtReporte.Rows[0][2].ToString());
                     linea = linea.Replace("[_Trabajador_]", dtReporte.Rows[0][0].ToString());
                     linea = linea.Replace("[_txtLaborado_1_]", txtLaborado_1);
@@ -2395,7 +2455,7 @@ namespace CAPA_DATOS.oRRHH
                     strPersonalSinEnviar += "- " + Nombre_Completo + " no tiene email configurado.\n";
                     continue;
                 }
-                
+
                 #region "Inserta envío de documento y envía correo"
                 DateTime fecha_reg = DateTime.Today;
                 int cod_envio = 0;
@@ -2694,7 +2754,7 @@ namespace CAPA_DATOS.oRRHH
                             cmd.Parameters.AddWithValue("@cPeriodo", prms[2].ToString());
                             cmd.Parameters.AddWithValue("@cProceso", "08");
                             cmd.Parameters.AddWithValue("@Personal", personalid.ToString());
-                             
+
                             cn.Open();
                             using (SqlDataAdapter da = new SqlDataAdapter(cmd)) { da.Fill(dtLiquidaBeneSociales); }
                         }
@@ -2715,7 +2775,7 @@ namespace CAPA_DATOS.oRRHH
                             cmd.Parameters.AddWithValue("@Personal", personalid.ToString());
                             cmd.Parameters.AddWithValue("@cPeriodo", prms[2].ToString());
                             cmd.Parameters.AddWithValue("@cProceso", "08");
-                          
+
 
                             cn.Open();
                             using (SqlDataAdapter da = new SqlDataAdapter(cmd)) { da.Fill(dtBoleta); }
@@ -2799,7 +2859,7 @@ namespace CAPA_DATOS.oRRHH
                     DateTime fecha = DateTime.Today;
                     //primera parte
                     pdfStamper.AcroFields.SetField("txtnombre", dtLiquidaBeneSociales.Rows[0]["TRABAJADOR"].ToString());
-                    pdfStamper.AcroFields.SetField("txtfechaI", String.Format("{0:d}", DateTime.Parse(dtLiquidaBeneSociales.Rows[0]["FINGRESO"].ToString()))  );
+                    pdfStamper.AcroFields.SetField("txtfechaI", String.Format("{0:d}", DateTime.Parse(dtLiquidaBeneSociales.Rows[0]["FINGRESO"].ToString())));
                     pdfStamper.AcroFields.SetField("txtfechaF", String.Format("{0:d}", DateTime.Parse(dtLiquidaBeneSociales.Rows[0]["FCESE"].ToString())));
                     pdfStamper.AcroFields.SetField("txtcargo", dtLiquidaBeneSociales.Rows[0]["CARGO"].ToString());
                     pdfStamper.AcroFields.SetField("txtservicio", dtLiquidaBeneSociales.Rows[0]["TIEMPOSERVICIO"].ToString());
@@ -2870,8 +2930,8 @@ namespace CAPA_DATOS.oRRHH
                         b3 = 0;
                         foreach (DataRow item in dtBoleta.Rows)
                         {
-                            pdfStamper.AcroFields.SetField("txtb1", item["Concepto_Id1"].ToString() +"                                                                        "+ item["Valor1"].ToString());
-                            b1 = b1 +float.Parse( item["Valor1"].ToString());
+                            pdfStamper.AcroFields.SetField("txtb1", item["Concepto_Id1"].ToString() + "                                                                        " + item["Valor1"].ToString());
+                            b1 = b1 + float.Parse(item["Valor1"].ToString());
                             pdfStamper.AcroFields.SetField("txtb2", item["Concepto_Id2"].ToString() + "                                                                        " + item["Valor2"].ToString());
                             b2 = b2 + float.Parse(item["Valor2"].ToString());
                             pdfStamper.AcroFields.SetField("txtb3", item["Concepto_Id3"].ToString() + "                                                                        " + item["Valor3"].ToString());
@@ -2885,21 +2945,21 @@ namespace CAPA_DATOS.oRRHH
                     else
                     {
                         pdfStamper.AcroFields.SetField("txtb1", "");
-                        pdfStamper.AcroFields.SetField("txtb2","");
+                        pdfStamper.AcroFields.SetField("txtb2", "");
                         pdfStamper.AcroFields.SetField("txtb3", "");
                         //totales
-                        pdfStamper.AcroFields.SetField("txtTotalIngreso","0.00");
+                        pdfStamper.AcroFields.SetField("txtTotalIngreso", "0.00");
                         pdfStamper.AcroFields.SetField("txtTotalDeducciones", "0.00");
                         pdfStamper.AcroFields.SetField("txtTotalNeto", "0.00");
                     }
-                   
+
 
 
                     // ultima parte
 
                     pdfStamper.AcroFields.SetField("txtdni", dtLiquidaBeneSociales.Rows[0]["DNI"].ToString());
                     pdfStamper.AcroFields.SetField("txtempresa2", dtLogo.Rows[0]["descripcion"].ToString());
-                    pdfStamper.AcroFields.SetField("txtimpresion",   "Lima " + String.Format("{0:D}", fecha));
+                    pdfStamper.AcroFields.SetField("txtimpresion", "Lima " + String.Format("{0:D}", fecha));
 
                     //DateTime fecha = DateTime.Parse(dtBoleta.Rows[0][1].ToString());
                     //pdfStamper.AcroFields.SetField("tbFecha", "LIMA" + " " + String.Format("{0:D}", fecha));
@@ -2967,7 +3027,7 @@ namespace CAPA_DATOS.oRRHH
                 oParamEnvio[8] = copiaOcultaCorreo;
                 string rptaCorreo = Get_EnvioCorreo(oParamEnvio);
                 if (rptaCorreo == "") { strPersonalEnviado += "- " + Nombre_Completo + " OK enviado correctamente.\n"; }
-                
+
                 //@004 I
                 qt_envios++;
                 if (qt_envios >= qt_corte_correo_delay)
@@ -2979,25 +3039,26 @@ namespace CAPA_DATOS.oRRHH
             rpt = strPersonalSinEnviar;
             return rpt;
         }
-                       
-        public string Get_Fecha() {
+
+        public string Get_Fecha()
+        {
             DateTime hoy = DateTime.UtcNow;
             string fecha = hoy.ToString("yyyyMMdd");
             string hora = hoy.ToString("HHmmss");
             return fecha + hora;
-        } 
+        }
 
         public string Get_EnvioCorreo(string[] oParametros)
         {
             string rpt = "";
             System.Net.Mail.MailMessage msg = new System.Net.Mail.MailMessage();
             string[] Arr_Correos = oParametros[1].Split(';');
-            foreach(string para in Arr_Correos)
+            foreach (string para in Arr_Correos)
             {
                 if (para.Trim() != "") { msg.To.Add(para.Trim()); }
             }
 
-            string[] Arr_CorreosCopia= oParametros[7].Split(';');
+            string[] Arr_CorreosCopia = oParametros[7].Split(';');
             foreach (string copia in Arr_CorreosCopia)
             {
                 if (copia.Trim() != "") { msg.CC.Add(copia.Trim()); }
@@ -3036,14 +3097,14 @@ namespace CAPA_DATOS.oRRHH
                 client.SendAsync(msg, userState);
                 rpt = "";
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 rpt = ex.Message;
             }
             return rpt;
         }
 
-        static  bool mailSent = false;
+        static bool mailSent = false;
         private static void SendCompletedCallback(object sender, AsyncCompletedEventArgs e)
         {
             List<object> obj = new List<object>();
@@ -3179,16 +3240,16 @@ namespace CAPA_DATOS.oRRHH
                 //using (PdfStamper stamper = PdfStamper.CreateSignature(reader, fout, '\0'))
                 //{
                 // appearance
-                    PdfSignatureAppearance appearance = stamper.SignatureAppearance;
-                    //appearance.Image = new iTextSharp.text.pdf.PdfImage();
-                    appearance.Reason = reason;
-                    appearance.Location = location;
-                    appearance.SetVisibleSignature(new iTextSharp.text.Rectangle(20, 10, 170, 60), 1, "Icsi - Vendor");
-                    // digital signature
-                    iTextSharp.text.pdf.security.IExternalSignature es = new iTextSharp.text.pdf.security.PrivateKeySignature(pk, "SHA-256");
-                    iTextSharp.text.pdf.security.MakeSignature.SignDetached(appearance, es, new X509Certificate[] { pk12.GetCertificate(alias).Certificate }, null, null, null, 0, iTextSharp.text.pdf.security.CryptoStandard.CMS);
+                PdfSignatureAppearance appearance = stamper.SignatureAppearance;
+                //appearance.Image = new iTextSharp.text.pdf.PdfImage();
+                appearance.Reason = reason;
+                appearance.Location = location;
+                appearance.SetVisibleSignature(new iTextSharp.text.Rectangle(20, 10, 170, 60), 1, "Icsi - Vendor");
+                // digital signature
+                iTextSharp.text.pdf.security.IExternalSignature es = new iTextSharp.text.pdf.security.PrivateKeySignature(pk, "SHA-256");
+                iTextSharp.text.pdf.security.MakeSignature.SignDetached(appearance, es, new X509Certificate[] { pk12.GetCertificate(alias).Certificate }, null, null, null, 0, iTextSharp.text.pdf.security.CryptoStandard.CMS);
 
-                    stamper.Close();
+                stamper.Close();
                 reader.Close();
                 fout.Close();
                 //}
