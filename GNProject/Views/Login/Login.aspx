@@ -26,9 +26,8 @@
     <div class="container">
         <div class="login-logo">
             <a href="index.html">
-                <img src="images/logo.png" alt="" /></a>
+                <img src="../../Assets/images/logo.png" alt="" /></a>
         </div>
-        <h2 class="form-heading">login</h2>
         <div class="app-cam">
             
                 <input type="text" class="text" value="RUC" id="txtruc" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'RUC';}" name="Ruc" />

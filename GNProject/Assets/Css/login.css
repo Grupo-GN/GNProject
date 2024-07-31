@@ -34,7 +34,7 @@ body a {
     text-transform: uppercase;
     display: inline-block;
     width: 100%;
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 h2.form-heading {
@@ -59,67 +59,71 @@ body#login {
 }
 
 .app-cam {
-    width: 22%;
-    margin: 3em auto auto auto;
+    width: 80%;
+    margin: 1em auto auto auto;
+    padding-bottom: 3em;
 }
 
 
-.app-cam input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    color: #999;
-    font-size: 0.85em;
-    outline: none;
-    font-weight: 300;
-    border: none;
-    background: #222224;
-    margin: 0 0 1em 0;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -o-border-radius: 2px;
-    box-sizing: border-box;
-}
+    .app-cam input[type="text"] {
+        width: 100%;
+        padding: 15px;
+        color: #999;
+        font-size: 0.85em;
+        outline: none;
+        font-weight: 300;
+        border: none;
+        background: #D9D9D9;
+        margin: 0 0 1em 0;
+        border-radius: 2px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        box-sizing: border-box;
+    }
 
-    
-.app-cam input[type="password"] {    
-    width: 100%;
-    padding: 15px;
-    color: #999;
-    font-size: 0.85em;
-    outline: none;
-    font-weight: 300;
-    border: none;
-    background: #222224;
-    margin: 0 0 1em 0;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -o-border-radius: 2px;
-    box-sizing: border-box;
-}
 
-.app-cam input[type="submit"], .btn-success1 {
-    font-size: 14px;
-    font-weight: 300 !important;
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-    padding: 10px 15px;
-    width: 100%;
-    border: none;
-    background: rgb(6, 217, 149);
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -o-border-radius: 2px;
-    text-transform: uppercase;
-}
+    .app-cam input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        color: #999;
+        font-size: 0.85em;
+        outline: none;
+        font-weight: 300;
+        border: none;
+        background: #D9D9D9;
+        margin: 0 0 1em 0;
+        border-radius: 2px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        box-sizing: border-box;
+    }
 
-.app-cam input[type="submit"]:hover, .btn-success1:hover {
-    background: rgb(1, 200, 136);
-    color: #fff !important;
-}
+    .app-cam input[type="submit"], .btn-success1 {
+        font-size: 14px;
+        font-weight: 300 !important;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        padding: 10px 15px;
+        width: 50%;
+        border: none;
+        background: #01027B;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -o-border-radius: 2px;
+        text-transform: uppercase;
+        border-radius: 14px;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+
+        .app-cam input[type="submit"]:hover, .btn-success1:hover {
+            background: #FFA500;
+            color: #fff !important;
+        }
 
 .login-social-link {
     display: inline-block;
@@ -212,7 +216,9 @@ ul.new li.new_right {
 
 /*Container*/
 .container {
-    /*background-color: rgba(0, 0, 0, 0.7);*/ /* Color negro con 70% de opacidad */
-    border-radius: 4px;
+    background-color: rgb(255 255 255);
+    border-radius: 14px;
     margin-top: 12vh;
+    margin-right: 37%;
+    margin-left: 37%;
 }

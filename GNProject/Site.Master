@@ -576,7 +576,7 @@
            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt text-info"></i></div>                                                                                     
            Inicio                                                                                                                                                               
        </a> 																																					
-	<a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages1a" aria-expanded="false" aria-controls="collapsePages">           
+	<%--<a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages1a" aria-expanded="false" aria-controls="collapsePages">           
            <div class="sb-nav-link-icon"><i class="bi bi-briefcase-fill text-info"></i></div>                                                                                      
            Gerencia                                                                                                                                                                
            <div class="sb-sidenav-collapse-arrow text-warning"><i class="fas fa-angle-down"></i></div>                                                                             
@@ -673,7 +673,7 @@
                    </nav>                                                                                                                                                          
                </div>                                                                                                                                                              
            </nav>                                                                                                                                                                  
-       </div>                                                                                                                                                                      
+       </div>       --%>                                                                                                                                                               
 	<a class="nav-link collapsed slow-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages6a" aria-expanded="false" aria-controls="collapsePages">           
            <div class="sb-nav-link-icon text-info"><i class="bi bi-person-bounding-box"></i></div>                                                                                 
            Recursos Humanos	                                                                                                                                                    
